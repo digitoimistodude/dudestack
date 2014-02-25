@@ -30,7 +30,10 @@ I assume you use and know these tools in your workflow:
 
 ## Getting started
 
-Clone this repo to your home directory by running `git clone git@github.com:ronilaukkarinen/wpstack-rolle.git ~/`, then make my bash script global `mv createproject.sh /usr/bin/createproject && sudo chmod +x /usr/bin/createproject`
+1. This assumes your projects are in ~/Projects. You should make sure that folder exists.
+2. Run MAMP Pro server with project name as your server name
+3. Clone this repo to your home directory by running `git clone git@github.com:ronilaukkarinen/wpstack-rolle.git ~/`
+4. Make the bash script global `mv createproject.sh /usr/bin/createproject && sudo chmod +x /usr/bin/createproject`
 
 To use, run `createproject` and have fun.
 
