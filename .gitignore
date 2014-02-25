@@ -1,31 +1,19 @@
-# WordPress
 wp
 .htaccess
-
-# WP-CLI
+createproject.sh
 db-sync
 sql-dump-*.sql
-
-# Dotenv
 .env
 .env.*
 !.env.example
-
-# Application
 content/uploads
 content/upgrade
 content/plugins/*
 !content/plugins/.gitkeep
 content/mu-plugins/*
 !content/mu-plugins/register-theme-directory.php
-
-# Vendor (e.g. Composer)
 vendor/*
 !vendor/.gitkeep
-
-# Node Package Manager
 node_modules
-
-# Vagrant
 bin
 .vagrant
