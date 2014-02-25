@@ -22,7 +22,7 @@ if (file_exists($env_config)) {
 /**
  * Custom Content Directory
  */
-define('CONTENT_DIR', '/app');
+define('CONTENT_DIR', '/content');
 define('WP_CONTENT_DIR', $root_dir . CONTENT_DIR);
 define('WP_CONTENT_URL', WP_HOME . CONTENT_DIR);
 
@@ -37,7 +37,7 @@ $table_prefix = 'wp_';
  * WordPress Localized Language
  * Default: English
  *
- * A corresponding MO file for the chosen language must be installed to app/languages
+ * A corresponding MO file for the chosen language must be installed to content/languages
  */
 define('WPLANG', 'fi');
 
