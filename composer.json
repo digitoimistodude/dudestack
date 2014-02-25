@@ -1,0 +1,79 @@
+{
+  "name": "roots/bedrock",
+  "type": "project",
+  "license": "MIT",
+  "description": "A modern WordPress stack",
+  "homepage": "http://roots.io/wordpress-stack/",
+  "authors": [
+    {
+      "name": "Scott Walkinshaw",
+      "email": "scott.walkinshaw@gmail.com",
+      "homepage": "https://github.com/swalkinshaw"
+    },
+    {
+      "name": "Ben Word",
+      "email": "ben@benword.com",
+      "homepage": "https://github.com/retlehs"
+    }
+  ],
+  "keywords": [
+    "wordpress", "stack", "capistrano", "composer", "vagrant", "wp"
+  ],
+  "support": {
+    "issues": "https://github.com/roots/bedrock/issues",
+    "forum": "http://discourse.roots.io/category/bedrock"
+  },
+  "config": {
+    "preferred-install": "dist",
+    "generate-salts": true
+  },
+  "autoload": {
+    "psr-0": {"Bedrock\\Installer": "scripts"}
+  },
+  "scripts": {
+    "post-root-package-install": ["Bedrock\\Installer::addSalts"]
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "wordpress",
+        "version": "3.8.1",
+        "type": "webroot",
+        "dist": {
+          "type": "zip",
+          "url": "http://sv.wordpress.org/wordpress-3.8.1-fi.zip"
+        },
+        "require" : {
+          "fancyguy/webroot-installer": "1.1.0"
+        }
+      }
+    }
+  ],
+  "require": {
+    "php": ">=5.3.2",
+    "wordpress": "3.8.1",
+    "fancyguy/webroot-installer": "1.1.0",
+    "composer/installers": "v1.0.6",
+    "wp-cli/wp-cli": "v0.13.0",
+    "vlucas/phpdotenv": "~1.0.5",
+    "wpackagist/advanced-custom-fields":"*",
+    "wpackagist/posts-to-posts":"1.6.*",
+    "wpackagist/easy-responsive-carousel":"0.4.5",
+    "wpackagist-plugin/akismet":"dev-trunk",
+    "wpackagist-plugin/wordpress-seo":"*"
+  },
+  "extra": {
+    "installer-paths": {
+      "app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "app/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "webroot-dir": "wp",
+    "webroot-package": "wordpress"
+  }
+}
