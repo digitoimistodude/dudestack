@@ -30,7 +30,9 @@ I assume you use and know these tools in your workflow:
 
 ## Getting started
 
-`mv createproject.sh /usr/bin/createproject && sudo chmod +x /usr/bin/createproject`, run `createproject` and have fun.
+Clone this repo to your home directory by running `git clone git@github.com:ronilaukkarinen/wpstack-rolle.git ~/`, then make my bash script global `mv createproject.sh /usr/bin/createproject && sudo chmod +x /usr/bin/createproject`
+
+To use, run `createproject` and have fun.
 
 ## Requirements
 

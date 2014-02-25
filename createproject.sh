@@ -22,7 +22,7 @@ LOCAL_IP=$(ifconfig | grep -Eo "inet (addr:)?([0-9]*\.){3}[0-9]*" | grep -Eo "([
 
 echo "${boldyellow}Project name in lowercase:${txtreset} "
 read -e PROJECTNAME
-cd $HOME/bedrock-rolle-localfork
+cd $HOME/wpstack-rolle
 composer create-project -n roots/bedrock $HOME/Projects/${PROJECTNAME} dev-master
 cd $HOME/Projects/${PROJECTNAME}
 composer update
@@ -137,7 +137,7 @@ if (!defined('ABSPATH')) {
 " > config/application.php
 echo "${boldgreen}deploy.rb generated${txtreset}"
 echo "${yellow}Updating WordPress related stuff...:${txtreset}"
-cp $HOME/bedrock-rolle-localfork/composer.json "$HOME/Projects/$PROJECTNAME/composer.json"
+cp $HOME/wpstack-rolle/composer.json "$HOME/Projects/$PROJECTNAME/composer.json"
 cd "$HOME/Projects/$PROJECTNAME/"
 composer update
 echo "${yellow}Copy these to .env:${txtreset}"
