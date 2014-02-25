@@ -18,6 +18,9 @@
     "issues": "https://github.com/roots/bedrock/issues",
     "forum": "http://discourse.roots.io/category/bedrock"
   },
+  "require": {
+    "ronilaukkarinen/wpstack-rolle": "dev-master"
+  },
   "config": {
     "preferred-install": "dist",
     "generate-salts": true
