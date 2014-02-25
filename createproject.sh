@@ -41,7 +41,7 @@ SSHKit.config.command_map[:composer] = \"/home/dude/bin/composer\"
 set :branch, :master
 set :log_level, :info
 set :linked_files, %w{.env}
-set :linked_dirs, %w{app/uploads}
+set :linked_dirs, %w{content/uploads}
 #set :composer_install_flags, '--no-dev --prefer-dist --no-scripts --quiet --optimize-autoloader'
 #set :composer_roles, :all
 
@@ -60,7 +60,7 @@ end
 " > "$HOME/Projects/$PROJECTNAME/config/deploy.rb"
 echo "${yellow}Copying languages...${txtreset}"
 cd wp/wp-content
-cp -R languages "/Users/rolle/Projects/$PROJECTNAME/app/"
+cp -R languages "/Users/rolle/Projects/$PROJECTNAME/content/"
 cd "$HOME/Projects/$PROJECTNAME/"
 rm CHANGELOG.md
 rm CONTRIBUTING.md
@@ -90,7 +90,7 @@ if (file_exists(\$env_config)) {
 /**
  * Custom Content Directory
  */
-define('CONTENT_DIR', '/app');
+define('CONTENT_DIR', '/content');
 define('WP_CONTENT_DIR', \$root_dir . CONTENT_DIR);
 define('WP_CONTENT_URL', WP_HOME . CONTENT_DIR);
 
@@ -105,7 +105,7 @@ define('DB_COLLATE', '');
  * WordPress Localized Language
  * Default: English
  *
- * A corresponding MO file for the chosen language must be installed to app/languages
+ * A corresponding MO file for the chosen language must be installed to content/languages
  */
 define('WPLANG', 'fi');
 
