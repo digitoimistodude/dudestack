@@ -23,7 +23,7 @@ LOCAL_IP=$(ifconfig | grep -Eo "inet (addr:)?([0-9]*\.){3}[0-9]*" | grep -Eo "([
 echo "${boldyellow}Project name in lowercase:${txtreset} "
 read -e PROJECTNAME
 cd $HOME/wpstack-rolle
-composer create-project -n roots/bedrock $HOME/Projects/${PROJECTNAME} dev-master
+composer create-project -n ronilaukkarinen/wpstack-rolle $HOME/Projects/${PROJECTNAME} dev-master
 cd $HOME/Projects/${PROJECTNAME}
 composer update
 echo "${yellow}Creating a MySQL database for ${PROJECTNAME}${txtreset}"

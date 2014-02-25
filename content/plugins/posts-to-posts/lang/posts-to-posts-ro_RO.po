@@ -1,0 +1,198 @@
+# Translation of the WordPress plugin Posts 2 Posts 0.3 by scribu.
+# Copyright (C) 2010 scribu
+# This file is distributed under the same license as the Posts 2 Posts package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Posts 2 Posts\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/p2p\n"
+"POT-Creation-Date: 2013-02-17 08:06:11+00:00\n"
+"PO-Revision-Date: 2013-02-17 10:07+0200\n"
+"Last-Translator: scribu <mail@scribu.net>\n"
+"Language-Team: ROMANIAN <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: admin/box.php:45
+msgid "Are you sure you want to delete all connections?"
+msgstr "Sigur vreți să ștergeți toate conexiunile?"
+
+#: admin/box.php:136
+msgid "Search"
+msgstr "Căutare"
+
+#: admin/box.php:213
+msgid "previous"
+msgstr "anterioare"
+
+#: admin/box.php:214
+msgid "next"
+msgstr "următoare"
+
+#: admin/box.php:215
+msgid "of"
+msgstr "din"
+
+#: admin/dropdown-user.php:32
+msgid "Filter"
+msgstr "Filtru"
+
+#: admin/factory.php:88
+msgid " (from)"
+msgstr "(de la)"
+
+#: admin/factory.php:89
+msgid " (to)"
+msgstr "(la)"
+
+#: admin/field-delete.php:7
+msgid "Delete all connections"
+msgstr "Șterge toate conexiunile"
+
+#: admin/field-delete.php:16
+msgid "Delete connection"
+msgstr "Șterge conexiune"
+
+#: admin/tools-page.php:7
+msgid "Connection Types"
+msgstr "Tipuri de conexiuni"
+
+#: admin/tools-page.php:41
+msgid "<em>%s</em> is not a registered connection type."
+msgstr "<em>%s</em> nu e un tip de conexiune înregistrat."
+
+#: admin/tools-page.php:50
+msgid "Converted %1$s connections from <em>%2$s</em> to <em>%3$s</em>."
+msgstr "Am convertit %1$s conexiuni din <em>%2$s</em> în <em>%3$s</em>."
+
+#: admin/tools-page.php:64
+msgid "Name"
+msgstr "Nume"
+
+#: admin/tools-page.php:65
+msgid "Information"
+msgstr "Informații"
+
+#: admin/tools-page.php:66
+msgid "Connections"
+msgstr "Conexiuni"
+
+#: admin/tools-page.php:74
+msgid "No connection types registered."
+msgstr "Nu există tipuri de conexiuni înregistrate."
+
+#: admin/tools-page.php:76
+msgid "To register a connection type, see <a href=\"%s\">the wiki</a>."
+msgstr "Pentru a înregistra un tip de conexiune, vezi <a href=\"%s\">wiki-ul</a>."
+
+#: admin/tools-page.php:93
+msgid "Convert to registered connection type:"
+msgstr "Convertește într-un tip de conexiune înregistrat:"
+
+#: admin/tools-page.php:129
+msgid "Go"
+msgstr "Go"
+
+#: core/connection-type.php:102
+msgid "Create connections"
+msgstr "Creează conexiuni"
+
+#: core/connection-type.php:120
+msgid "Connected %s"
+msgstr "%s conectate"
+
+#: core/side-user.php:16
+msgid "Users"
+msgstr "Utilizatori"
+
+#: core/side-user.php:25
+msgid "User"
+msgstr "Utilizator"
+
+#: core/side-user.php:26
+msgid "Search Users"
+msgstr "Caută utilizatori"
+
+#: core/side-user.php:27
+msgid "No users found."
+msgstr "Niciun utilizator găsit."
+
+#: core/widget.php:16
+msgid "Posts 2 Posts"
+msgstr "Posts 2 Posts"
+
+#: core/widget.php:17
+msgid "A list of posts connected to the current post"
+msgstr "O lista de postări conectate la postarea curentă"
+
+#: core/widget.php:34
+msgid "Title:"
+msgstr "Titlu:"
+
+#: core/widget.php:41
+msgid "Connection type:"
+msgstr "Tipul conexiunii:"
+
+#: core/widget.php:46
+msgid "Connection listing:"
+msgstr "Conexiuni de listat:"
+
+#: core/widget.php:52
+msgid "connected"
+msgstr "conectate"
+
+#: core/widget.php:53
+msgid "related"
+msgstr "înrudite"
+
+#: scb/AdminPage.php:227
+msgid "Settings <strong>saved</strong>."
+msgstr "Setări <strong>salvate</strong>."
+
+#: scb/AdminPage.php:466
+msgid "Settings"
+msgstr "Setări"
+
+#~ msgid "Can't create connection: %s"
+#~ msgstr "Conexiunea nu poate fi creată: %s"
+
+#~ msgid "Save Changes"
+#~ msgstr "Salvează schimbările"
+
+#~ msgid "View All"
+#~ msgstr "Vezi toate"
+
+#~ msgid "Create connection"
+#~ msgstr "Crează conexiune"
+
+#~ msgid "Upgraded %d connections."
+#~ msgstr "Am actualizat %d conexiuni."
+
+#~ msgid ""
+#~ "The Posts 2 Posts connections need to be upgraded. <a href=\"%s\">Proceed."
+#~ "</a>"
+#~ msgstr ""
+#~ "Conexiunile Posts 2 Posts trebuie actualizate. <a href=\"%s\">Pornește.</"
+#~ "a>"
+
+#~ msgid "Related %s"
+#~ msgstr "%s înrudite"
+
+#~ msgid "Recent"
+#~ msgstr "Recente"
+
+#~ msgid "Next"
+#~ msgstr "Următoare"
+
+#~ msgid ""
+#~ "Start typing the title of a post you want to connect and then click on to "
+#~ "connect it."
+#~ msgstr ""
+#~ "Începe să scrii titlul post-ului de conectat și apoi fă click pentru a-l "
+#~ "conecta."
+
+#~ msgid "Enter IDs of posts to connect, separated by commas."
+#~ msgstr "Intrdu ID-uri ale post-urilor de conectat, separate prin virgulă."

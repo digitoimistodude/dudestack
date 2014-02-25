@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "19f7d976ed9af8ee301f62be8f1e853f",
+    "hash": "1b73994910afbca64f4cf7d216b2bac1",
     "packages": [
         {
             "name": "composer/installers",
@@ -46,7 +46,7 @@
                 {
                     "name": "Kyle Robinson Young",
                     "email": "kyle@dontkry.com",
-                    "homepage": "http://dontkry.com",
+                    "homepage": "https://github.com/shama",
                     "role": "Developer"
                 }
             ],
@@ -255,17 +255,17 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v2.4.1",
+            "version": "v2.4.2",
             "target-dir": "Symfony/Component/Finder",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Finder.git",
-                "reference": "6904345cf2b3bbab1f6d6e4ce1724cb99df9f00a"
+                "reference": "b6735d1fc16da13c4c7dddfe78366a4a098cf011"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/6904345cf2b3bbab1f6d6e4ce1724cb99df9f00a",
-                "reference": "6904345cf2b3bbab1f6d6e4ce1724cb99df9f00a",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/b6735d1fc16da13c4c7dddfe78366a4a098cf011",
+                "reference": "b6735d1fc16da13c4c7dddfe78366a4a098cf011",
                 "shasum": ""
             },
             "require": {
@@ -289,7 +289,9 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Symfony Community",
@@ -298,20 +300,20 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "http://symfony.com",
-            "time": "2014-01-01 08:14:50"
+            "time": "2014-01-07 13:28:54"
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "d19becb682abb5954b71a6ef2e93804302484f39"
+                "reference": "2821c024b4c14c7e6d1ff99e063ae9532620beb2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/d19becb682abb5954b71a6ef2e93804302484f39",
-                "reference": "d19becb682abb5954b71a6ef2e93804302484f39",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/2821c024b4c14c7e6d1ff99e063ae9532620beb2",
+                "reference": "2821c024b4c14c7e6d1ff99e063ae9532620beb2",
                 "shasum": ""
             },
             "require": {
@@ -344,14 +346,14 @@
                 "env",
                 "environment"
             ],
-            "time": "2014-01-14 16:37:15"
+            "time": "2014-01-31 16:18:39"
         },
         {
             "name": "wordpress",
             "version": "3.8.1",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/WordPress/WordPress/archive/3.8.1.zip",
+                "url": "http://sv.wordpress.org/wordpress-3.8.1-fi.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -454,6 +456,113 @@
                 "wordpress"
             ],
             "time": "2013-11-30 13:14:44"
+        },
+        {
+            "name": "wpackagist-plugin/akismet",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/akismet/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/akismet.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/akismet": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/akismet/",
+            "time": "2014-02-14 21:17:09"
+        },
+        {
+            "name": "wpackagist-plugin/wordpress-seo",
+            "version": "1.4.24",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
+                "reference": "tags/1.4.24"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.4.24.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/wordpress-seo": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/wordpress-seo/"
+        },
+        {
+            "name": "wpackagist/advanced-custom-fields",
+            "version": "4.3.4",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/advanced-custom-fields/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/advanced-custom-fields.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/advanced-custom-fields/"
+        },
+        {
+            "name": "wpackagist/easy-responsive-carousel",
+            "version": "0.4.5",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/easy-responsive-carousel/",
+                "reference": "tags/0.4.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/easy-responsive-carousel.0.4.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/easy-responsive-carousel/"
+        },
+        {
+            "name": "wpackagist/posts-to-posts",
+            "version": "1.6.2",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/posts-to-posts/",
+                "reference": "tags/1.6.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/posts-to-posts.1.6.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/posts-to-posts/"
         }
     ],
     "packages-dev": [
@@ -463,9 +572,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "wpackagist-plugin/akismet": 20
+    },
     "platform": {
         "php": ">=5.3.2"
     },

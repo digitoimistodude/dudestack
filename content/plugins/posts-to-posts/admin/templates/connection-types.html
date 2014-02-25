@@ -1,0 +1,24 @@
+{{#has-rows}}
+<table class="widefat">
+	<thead>
+		<tr>
+			{{#columns}}
+			<th>{{.}}</th>
+			{{/columns}}
+		</tr>
+	</thead>
+	<tbody>
+		{{#rows}}
+		<tr class="{{class}}">
+			<td>{{p2p_type}}</td>
+			<td>{{{desc}}}</td>
+			<td>{{count}}</td>
+		</tr>
+		{{/rows}}
+	</tbody>
+</table>
+{{/has-rows}}
+{{^has-rows}}
+	<p>{{{no-rows}}}</p>
+	<p>{{{no-rows2}}}</p>
+{{/has-rows}}

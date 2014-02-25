@@ -1,23 +1,18 @@
 {
-  "name": "roots/bedrock",
+  "name": "ronilaukkarinen/wpstack-rolle",
   "type": "project",
   "license": "MIT",
   "description": "A modern WordPress stack",
-  "homepage": "http://roots.io/wordpress-stack/",
+  "homepage": "https://github.com/ronilaukkarinen/wpstack-rolle",
   "authors": [
     {
-      "name": "Scott Walkinshaw",
-      "email": "scott.walkinshaw@gmail.com",
-      "homepage": "https://github.com/swalkinshaw"
-    },
-    {
-      "name": "Ben Word",
-      "email": "ben@benword.com",
-      "homepage": "https://github.com/retlehs"
+      "name": "Roni Laukkarinen",
+      "email": "roni.laukkarinen@gmail.com",
+      "homepage": "https://github.com/ronilaukkarinen"
     }
   ],
   "keywords": [
-    "wordpress", "stack", "capistrano", "composer", "vagrant", "wp"
+    "wordpress", "stack", "capistrano", "composer", "wp"
   ],
   "support": {
     "issues": "https://github.com/roots/bedrock/issues",
