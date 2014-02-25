@@ -17,3 +17,4 @@ vendor/*
 node_modules
 bin
 .vagrant
+config/
