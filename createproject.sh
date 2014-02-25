@@ -58,6 +58,77 @@ namespace :deploy do
 
 end
 " > "$HOME/Projects/$PROJECTNAME/config/deploy.rb"
+echo "${yellow}Generating staging.rb${txtreset}"
+echo "role :app, %w{username@yourserver.com}
+
+set :ssh_options, {
+    auth_methods: %w(password),
+    password: \"yourpassword\",
+    forward_agent: \"true\"
+}
+
+set :deploy_to, \"/path/to/customers/projects/#{fetch(:application)}\"
+set :deploy_via, :remote_cache
+set :use_sudo, false
+set :keep_releases, 3
+
+namespace :deploy do
+
+    desc \"Build\"
+    after :updated, :build do
+        on roles(:app) do
+            within release_path  do
+ 
+           end
+        end
+    end
+    
+  desc \"Fix symlinks\"
+    task :finished do
+        on roles(:app) do
+
+            execute \"rm -f /path/to/customers/public_html/#{fetch(:application)} && ln -nfs #{current_path} /path/to/customers/public_html/#{fetch(:application)}\"
+
+        end
+    end
+
+end" > "$HOME/Projects/$PROJECTNAME/config/deploy/staging.rb"
+echo "${yellow}Generating production.rb${txtreset}"
+echo "role :app, %w{username@yourserver.com}
+
+set :ssh_options, {
+    auth_methods: %w(password),
+    password: \"yourpassword\",
+    forward_agent: \"true\"
+}
+
+set :deploy_to, \"/home/#{fetch(:application)}/deploy\"
+set :deploy_via, :remote_cache
+set :use_sudo, false
+set :keep_releases, 3
+
+namespace :deploy do
+
+    desc \"Build\"
+    after :updated, :build do
+        on roles(:app) do
+            within release_path  do
+ 
+           end
+        end
+    end
+    
+  desc \"Fix symlinks\"
+    task :finished do
+        on roles(:app) do
+
+            # set this up:
+            #execute \"rm -f /home/#{fetch(:application)}/path/to/public_html && ln -nfs #{current_path} /path/to/public_html\"
+
+        end
+    end
+
+end" > "$HOME/Projects/$PROJECTNAME/config/deploy/production.rb"
 echo "${yellow}Copying languages...${txtreset}"
 cd wp/wp-content
 cp -R languages "/Users/rolle/Projects/$PROJECTNAME/content/"
