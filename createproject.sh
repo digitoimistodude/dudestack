@@ -42,8 +42,8 @@ set :branch, :master
 set :log_level, :info
 set :linked_files, %w{.env}
 set :linked_dirs, %w{content/uploads}
-#set :composer_install_flags, '--no-dev --prefer-dist --no-scripts --quiet --optimize-autoloader'
-#set :composer_roles, :all
+set :composer_install_flags, '--no-dev --prefer-dist --no-scripts --optimize-autoloader'
+set :composer_roles, :all
 
 namespace :deploy do
 
@@ -56,6 +56,18 @@ namespace :deploy do
     end
   end
 
+
+    desc 'composer install'
+    task :composer_install do
+        on roles(:app) do
+            within release_path do
+                execute 'composer', 'install', '--no-dev', '--optimize-autoloader'
+            end
+        end
+    end
+
+    after :updated, 'deploy:composer_install'
+    
 end
 " > "$HOME/Projects/$PROJECTNAME/config/deploy.rb"
 echo "${yellow}Generating staging.rb${txtreset}"
