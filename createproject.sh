@@ -11,14 +11,23 @@ white=$(tput setaf 7)
 txtreset=$(tput sgr0)
 LOCAL_IP=$(ifconfig | grep -Eo "inet (addr:)?([0-9]*\.){3}[0-9]*" | grep -Eo "([0-9]*\.){3}[0-9]*" | grep -v "127.0.0.1")
 
- while true; do
- read -p "${boldyellow}MAMP properly set up and running? (y/n)${txtreset} " yn
-     case $yn in
-         [Yy]* ) break;;
-         [Nn]* ) exit;;
-         * ) echo "Please answer y or n.";;
-     esac
- done
+while true; do
+read -p "${boldyellow}MAMP properly set up and running? (y/n)${txtreset} " yn
+    case $yn in
+        [Yy]* ) break;;
+        [Nn]* ) exit;;
+        * ) echo "Please answer y or n.";;
+    esac
+done
+
+while true; do
+read -p "${boldyellow}Created Bitbucket/Github repo? (y/n)${txtreset} " yn
+    case $yn in
+        [Yy]* ) break;;
+        [Nn]* ) exit;;
+        * ) echo "Please answer y or n.";;
+    esac
+done
 
 echo "${boldyellow}Project name in lowercase:${txtreset} "
 read -e PROJECTNAME
@@ -29,15 +38,15 @@ composer update
 echo "${yellow}Creating a MySQL database for ${PROJECTNAME}${txtreset}"
 /Applications/MAMP/Library/bin/mysql -u root -p -e "create database ${PROJECTNAME}"
 echo "${boldgreen}MySQL database created${txtreset}"
-echo "${yellow}Installing Capistrano${txtreset}"
+echo "${yellow}Installing Capistrano in the project directory${txtreset}"
 #bundle install
 #bundle exec cap install
 cap install
 echo "${boldgreen}Capistrano installed${txtreset}"
 echo "${yellow}Generating config/deploy.rb${txtreset}"
 echo "set :application, \"$PROJECTNAME\"
-set :repo_url,  \"git@bitbucket.org:ronilaukkarinen/$PROJECTNAME.git\"
-SSHKit.config.command_map[:composer] = \"/home/dude/bin/composer\"
+set :repo_url,  \"git@bitbucket.org:YOUR_BITBUCKET_ACCOUNT_HERE/$PROJECTNAME.git\"
+SSHKit.config.command_map[:composer] = \"/home/#{fetch(:application)}/bin/composer\"
 set :branch, :master
 set :log_level, :info
 set :linked_files, %w{.env}
@@ -56,11 +65,53 @@ namespace :deploy do
     end
   end
 
+end" > "$HOME/Projects/$PROJECTNAME/config/deploy.rb"
+echo "${yellow}Generating staging.rb${txtreset}"
+echo "role :app, %w{YOUR_STAGING_USERNAME_HERE@YOUR_STAGING_SERVER_HERE}
+
+set :ssh_options, {
+    auth_methods: %w(password),
+    password: \"YOUR_STAGING_SERVER_PASSWORD_HERE\",
+    forward_agent: \"true\"
+}
+
+set :deploy_to, \"/YOUR_STAGING_SERVER_HOME_PATH_HERE/projects/#{fetch(:application)}\"
+set :deploy_via, :remote_cache
+set :use_sudo, false
+set :keep_releases, 3
+
+namespace :deploy do
+
+    desc \"Build\"
+    after :updated, :build do
+        on roles(:app) do
+            within release_path  do
+ 
+           end
+        end
+    end
+    
+  desc \"Set up symlinks\"
+    task :finished do
+        on roles(:app) do
+
+            execute \"mkdir -p /YOUR_STAGING_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}\"
+            execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/content && ln -nfs #{current_path}/content /YOUR_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/content\"
+            execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/index.php && ln -nfs #{current_path}/index.php /YOUR_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/index.php\"
+            execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/wp-config.php && ln -nfs #{current_path}/wp-config.php /YOUR_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/wp-config.php\"
+            execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/wp && ln -nfs #{current_path}/wp /YOUR_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/wp\"
+            execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/.env && ln -nfs #{current_path}/.env /YOUR_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/.env\"
+            execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/vendor && ln -nfs #{current_path}/vendor /YOUR_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/vendor\"
+            execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/config && ln -nfs #{current_path}/config /YOUR_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/config\"
+
+        end
+    end
 
     desc 'composer install'
     task :composer_install do
         on roles(:app) do
             within release_path do
+                execute 'composer', 'update'
                 execute 'composer', 'install', '--no-dev', '--optimize-autoloader'
             end
         end
@@ -68,55 +119,22 @@ namespace :deploy do
 
     after :updated, 'deploy:composer_install'
     
-end
-" > "$HOME/Projects/$PROJECTNAME/config/deploy.rb"
-echo "${yellow}Generating staging.rb${txtreset}"
-echo "role :app, %w{dude@kettu.skyred.fi}
-
-set :ssh_options, {
-    auth_methods: %w(password),
-    password: \"cr7d3truNajuvu5\",
-    forward_agent: \"true\"
-}
-
-set :deploy_to, \"/home/dude/sites/asiakas.dude.fi/projects/#{fetch(:application)}\"
-set :deploy_via, :remote_cache
-set :use_sudo, false
-set :keep_releases, 3
-
-namespace :deploy do
-
-    desc \"Build\"
-    after :updated, :build do
-        on roles(:app) do
-            within release_path  do
- 
-           end
-        end
-    end
-    
-  desc \"Fix symlinks\"
-    task :finished do
-        on roles(:app) do
-
-
-        end
-    end
-
 end" > "$HOME/Projects/$PROJECTNAME/config/deploy/staging.rb"
 echo "${yellow}Generating production.rb${txtreset}"
-echo "role :app, %w{username@yourserver.com}
+echo "role :app, %w{$PROJECTNAME@YOUR_PRODUCTION_SERVER_HERE}
 
 set :ssh_options, {
     auth_methods: %w(password),
-    password: \"yourpassword\",
+    password: \"YOUR_PRODUCTION_SERVER_PASSWORD_HERE\",
     forward_agent: \"true\"
 }
 
-set :deploy_to, \"/home/#{fetch(:application)}/deploy\"
+set :deploy_to, \"/home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/\"
 set :deploy_via, :remote_cache
 set :use_sudo, false
 set :keep_releases, 3
+set :tmp_dir, \"/home/#{fetch(:application)}/tmp\"
+SSHKit.config.command_map[:composer] = \"/home/#{fetch(:application)}/bin/composer\"
 
 namespace :deploy do
 
@@ -133,12 +151,31 @@ namespace :deploy do
     task :finished do
         on roles(:app) do
 
-            # set this up:
-            #execute \"rm -f /home/#{fetch(:application)}/path/to/public_html && ln -nfs #{current_path} /path/to/public_html\"
+            execute \"rm -f /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/content && ln -nfs #{current_path}/content /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/content\"
+            execute \"rm -f /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/index.php && ln -nfs #{current_path}/index.php /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/index.php\"
+            execute \"rm -f /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/wp-config.php && ln -nfs #{current_path}/wp-config.php /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/wp-config.php\"
+            execute \"rm -f /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/wp && ln -nfs #{current_path}/wp /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/wp\"
+            execute \"rm -f /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/.env && ln -nfs #{current_path}/.env /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/.env\"
+            execute \"rm -f /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/vendor && ln -nfs #{current_path}/vendor /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/vendor\"
+            execute \"rm -f /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/config && ln -nfs #{current_path}/config /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/config\"
 
         end
     end
 
+
+    desc 'composer install'
+    task :composer_install do
+        on roles(:app) do
+            within release_path do
+                execute \"mkdir -p /home/#{fetch(:application)}/bin/ && curl -sS https://getcomposer.org/installer | php && mv composer.phar /home/#{fetch(:application)}/bin/composer && chmod +x /home/#{fetch(:application)}/bin/composer\"
+                execute 'composer', 'update'
+                execute 'composer', 'install', '--no-dev', '--optimize-autoloader'
+            end
+        end
+    end
+
+    after :updated, 'deploy:composer_install'
+    
 end" > "$HOME/Projects/$PROJECTNAME/config/deploy/production.rb"
 echo "${yellow}Copying languages...${txtreset}"
 cd wp/wp-content

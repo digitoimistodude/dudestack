@@ -28,17 +28,42 @@ I assume you use and know these tools in your workflow:
 - WordPress Cli
 - Nginx
 
+## createproject.sh
+
+Creating a new project has a lot of configs to do. I wanted to automate some of it by creating a bash script. The script assumes:
+
+- You are using staging server like customer.example.com and you store your customers' sites like customer.example.com/customerone. Your staging server user has proper permissions like making changes to /tmp
+- You are using separate production server that may necessarily not have all the permissions like writing in /tmp dir
+- You use MAMP Pro and Bitbucket
+- WordPress is controlled by Composer
+- Your project's name is your customer's name and also the server's account name
+- Executables are stored in your server's $HOME/bin
+
+To use, please edit all the caps written information in the file (don't touch variables, like $PROJECTNAME!):
+
+YOUR_BITBUCKET_ACCOUNT_HERE
+YOUR_STAGING_USERNAME_HERE
+YOUR_STAGING_SERVER_HERE
+YOUR_STAGING_SERVER_PASSWORD_HERE
+YOUR_STAGING_SERVER_HOME_PATH_HERE
+YOUR_PRODUCTION_SERVER_HERE
+YOUR_PRODUCTION_SERVER_PASSWORD_HERE
+
+You also will need to edit define('WPLANG', 'fi'); unless you want to use finnish language.
+
 ## Getting started
 
 1. This assumes your projects are in ~/Projects. You should make sure that folder exists.
 2. Run MAMP Pro server with project name as your server name
 3. Clone this repo to your home directory by running `git clone git@github.com:ronilaukkarinen/wpstack-rolle.git ~/`
 4. Make the bash script global `mv createproject.sh /usr/bin/createproject && sudo chmod +x /usr/bin/createproject`
+5. Remember to edit createproject.sh and composer.json based on your own needs
 
 To use, run `createproject` and have fun.
 
 ## Requirements
 
+* Basic knowledge of Capistrano, bash scripting and Composer
 * Git
 * PHP >= 5.3.2 (for Composer)
 * Ruby >= 1.9 (for Capistrano)
