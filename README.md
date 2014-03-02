@@ -41,14 +41,6 @@ Creating a new project has a lot of configs to do. I wanted to automate some of 
 
 To use, please edit all the caps written information in the file (don't touch variables, like $PROJECTNAME!):
 
-YOUR_BITBUCKET_ACCOUNT_HERE
-YOUR_STAGING_USERNAME_HERE
-YOUR_STAGING_SERVER_HERE
-YOUR_STAGING_SERVER_PASSWORD_HERE
-YOUR_STAGING_SERVER_HOME_PATH_HERE
-YOUR_PRODUCTION_SERVER_HERE
-YOUR_PRODUCTION_SERVER_PASSWORD_HERE
-
 You also will need to edit define('WPLANG', 'fi'); unless you want to use finnish language.
 
 ## Getting started
