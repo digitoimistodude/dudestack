@@ -76,7 +76,7 @@ set :ssh_options, {
 }
 
 set :deploy_to, \"/YOUR_STAGING_SERVER_HOME_PATH_HERE/projects/#{fetch(:application)}\"
-set :tmp_dir, "/YOUR_STAGING_SERVER_HOME_PATH_HERE/tmp"
+set :tmp_dir, \"/YOUR_STAGING_SERVER_HOME_PATH_HERE/tmp\"
 set :deploy_via, :remote_cache
 set :use_sudo, false
 set :keep_releases, 3
