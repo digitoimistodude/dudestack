@@ -60,8 +60,6 @@
     "wp-cli/wp-cli": "v0.13.0",
     "vlucas/phpdotenv": "~1.0.5",
     "wpackagist/advanced-custom-fields":"*",
-    "wpackagist/posts-to-posts":"1.6.*",
-    "wpackagist/easy-responsive-carousel":"0.4.5",
     "wpackagist-plugin/akismet":"dev-trunk",
     "wpackagist-plugin/wordpress-seo":"*"
   },
