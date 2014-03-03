@@ -101,7 +101,6 @@ namespace :deploy do
             execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/index.php && ln -nfs #{current_path}/index.php /YOUR_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/index.php\"
             execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/wp-config.php && ln -nfs #{current_path}/wp-config.php /YOUR_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/wp-config.php\"
             execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/wp && ln -nfs #{current_path}/wp /YOUR_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/wp\"
-            execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/.env && ln -nfs #{current_path}/.env /YOUR_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/.env\"
             execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/vendor && ln -nfs #{current_path}/vendor /YOUR_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/vendor\"
             execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/config && ln -nfs #{current_path}/config /YOUR_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/config\"
 
@@ -156,7 +155,6 @@ namespace :deploy do
             execute \"rm -f /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/index.php && ln -nfs #{current_path}/index.php /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/index.php\"
             execute \"rm -f /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/wp-config.php && ln -nfs #{current_path}/wp-config.php /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/wp-config.php\"
             execute \"rm -f /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/wp && ln -nfs #{current_path}/wp /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/wp\"
-            execute \"rm -f /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/.env && ln -nfs #{current_path}/.env /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/.env\"
             execute \"rm -f /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/vendor && ln -nfs #{current_path}/vendor /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/vendor\"
             execute \"rm -f /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/config && ln -nfs #{current_path}/config /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/config\"
 
