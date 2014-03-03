@@ -130,7 +130,7 @@ set :ssh_options, {
     forward_agent: \"true\"
 }
 
-set :deploy_to, \"/home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/\"
+set :deploy_to, \"/home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/deploy/\"
 set :deploy_via, :remote_cache
 set :use_sudo, false
 set :keep_releases, 3
