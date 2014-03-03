@@ -60,6 +60,8 @@
     "wp-cli/wp-cli": "v0.13.0",
     "vlucas/phpdotenv": "~1.0.5",
     "wpackagist/advanced-custom-fields":"*",
+    "wpackagist/quick-cache":"*",
+    "wpackagist/wp-smushit":"*",
     "wpackagist-plugin/akismet":"dev-trunk",
     "wpackagist-plugin/wordpress-seo":"*"
   },
