@@ -46,7 +46,6 @@ echo "${boldgreen}Capistrano installed${txtreset}"
 echo "${yellow}Generating config/deploy.rb${txtreset}"
 echo "set :application, \"$PROJECTNAME\"
 set :repo_url,  \"git@bitbucket.org:YOUR_BITBUCKET_ACCOUNT_HERE/$PROJECTNAME.git\"
-SSHKit.config.command_map[:composer] = \"/home/#{fetch(:application)}/bin/composer\"
 set :branch, :master
 set :log_level, :info
 set :linked_files, %w{.env}
@@ -77,6 +76,7 @@ set :ssh_options, {
 
 set :deploy_to, \"/YOUR_STAGING_SERVER_HOME_PATH_HERE/projects/#{fetch(:application)}\"
 set :tmp_dir, \"/YOUR_STAGING_SERVER_HOME_PATH_HERE/tmp\"
+SSHKit.config.command_map[:composer] = \"PATH_TO_STAGING_BIN_COMPOSER\"
 set :deploy_via, :remote_cache
 set :use_sudo, false
 set :keep_releases, 3
@@ -111,6 +111,7 @@ namespace :deploy do
     task :composer_install do
         on roles(:app) do
             within release_path do
+                execute \"mkdir -p STAGING_HOME_BIN_PATH && curl -sS https://getcomposer.org/installer | php && mv composer.phar PATH_TO_STAGING_BIN_COMPOSER && chmod +x PATH_TO_STAGING_BIN_COMPOSER"
                 execute 'composer', 'update'
                 execute 'composer', 'install', '--no-dev', '--optimize-autoloader'
             end

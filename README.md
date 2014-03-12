@@ -4,6 +4,8 @@ I'm constantly developing my development workflow. Honestly, I think I've been t
 
 I love [Bedrock](https://github.com/roots/bedrock), which is a is a modern WordPress stack that helps you get started with the best development tools and project structure. Bedrock contains the tools I've been already using, but more.
 
+**You should modify things to your needs.**
+
 ## Why not just fork and go?
 
 Despite the fact I love most of bedrock, I noticed there's some things I don't like. Maybe little things for you, but some things matter to me. And I just want everything to be _mine_.
@@ -39,7 +41,18 @@ Creating a new project has a lot of configs to do. I wanted to automate some of 
 - Your project's name is your customer's name and also the server's account name
 - Executables are stored in your server's $HOME/bin
 
-To use, please edit all the caps written information in the file (don't touch variables, like $PROJECTNAME!):
+**This needs rough editing, so please copy createproject.sh to desired path and modify to your needs!**
+
+To use, please edit all the caps written information in the file (don't touch variables, like $PROJECTNAME!), like these:
+YOUR_BITBUCKET_ACCOUNT_HERE
+YOUR_STAGING_USERNAME_HERE
+YOUR_STAGING_SERVER_HERE
+YOUR_STAGING_SERVER_PASSWORD_HERE
+YOUR_STAGING_SERVER_HOME_PATH_HERE
+PATH_TO_STAGING_BIN_COMPOSER
+STAGING_HOME_BIN_PATH
+YOUR_PRODUCTION_SERVER_HERE
+YOUR_PRODUCTION_SERVER_PASSWORD_HERE
 
 You also will need to edit define('WPLANG', 'fi'); unless you want to use finnish language.
 
