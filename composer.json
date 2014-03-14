@@ -62,7 +62,7 @@
     "wpackagist/advanced-custom-fields":"*",
     "wpackagist/quick-cache":"*",
     "wpackagist/wp-smushit":"*",
-    "wpackagist-plugin/akismet":"dev-trunk",
+    "wpackagist-plugin/akismet":"*",
     "wpackagist-plugin/wordpress-seo":"*"
   },
   "extra": {
