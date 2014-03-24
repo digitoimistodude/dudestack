@@ -267,7 +267,7 @@ DB_PASSWORD=yourpassword
 DB_HOST=localhost
 
 WP_ENV=development
-WP_HOME=http://${LOCAL_IP}
-WP_SITEURL=http://${LOCAL_IP}/wp
+WP_HOME=http://${PROJECTNAME}.dev
+WP_SITEURL=http://${PROJECTNAME}.dev/wp
 "
 echo "${boldgreen}All done! Install WP and start coding at http://${LOCAL_IP}! Remember to make a repo on Bitbucket, eventually.${txtreset}"

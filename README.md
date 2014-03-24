@@ -37,6 +37,8 @@ Creating a new project has a lot of configs to do. I wanted to automate some of 
 - You are using staging server like customer.example.com and you store your customers' sites like customer.example.com/customerone. Your staging server user has proper permissions like making changes to /tmp
 - You are using separate production server that may necessarily not have all the permissions like writing in /tmp dir
 - You use MAMP Pro and Bitbucket
+- Your project hostname is project.dev
+- You use CodeKit version 2+
 - WordPress is controlled by Composer
 - Your project's name is your customer's name and also the server's account name
 - Executables are stored in your server's $HOME/bin
@@ -44,15 +46,15 @@ Creating a new project has a lot of configs to do. I wanted to automate some of 
 **This needs rough editing, so please copy createproject.sh to desired path and modify to your needs!**
 
 To use, please edit all the caps written information in the file (don't touch variables, like $PROJECTNAME!), like these:
-YOUR_BITBUCKET_ACCOUNT_HERE
-YOUR_STAGING_USERNAME_HERE
-YOUR_STAGING_SERVER_HERE
-YOUR_STAGING_SERVER_PASSWORD_HERE
-YOUR_STAGING_SERVER_HOME_PATH_HERE
-PATH_TO_STAGING_BIN_COMPOSER
-STAGING_HOME_BIN_PATH
-YOUR_PRODUCTION_SERVER_HERE
-YOUR_PRODUCTION_SERVER_PASSWORD_HERE
+ - YOUR_BITBUCKET_ACCOUNT_HERE
+ - YOUR_STAGING_USERNAME_HERE
+ - YOUR_STAGING_SERVER_HERE
+ - YOUR_STAGING_SERVER_PASSWORD_HERE
+ - YOUR_STAGING_SERVER_HOME_PATH_HERE
+ - PATH_TO_STAGING_BIN_COMPOSER
+ - STAGING_HOME_BIN_PATH
+ - YOUR_PRODUCTION_SERVER_HERE
+ - YOUR_PRODUCTION_SERVER_PASSWORD_HERE
 
 You also will need to edit define('WPLANG', 'fi'); unless you want to use finnish language.
 
