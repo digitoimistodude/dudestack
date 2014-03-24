@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "1b73994910afbca64f4cf7d216b2bac1",
+    "hash": "c125425f73a67add771a7b595c82e24f",
     "packages": [
         {
             "name": "composer/installers",
@@ -459,15 +459,15 @@
         },
         {
             "name": "wpackagist-plugin/akismet",
-            "version": "dev-trunk",
+            "version": "2.6.0",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/akismet/",
-                "reference": "trunk"
+                "reference": "tags/2.6.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/akismet.zip",
+                "url": "http://downloads.wordpress.org/plugin/akismet.2.6.0.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -478,20 +478,19 @@
                 "wpackagist/akismet": "self.version"
             },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/akismet/",
-            "time": "2014-02-14 21:17:09"
+            "homepage": "http://wordpress.org/plugins/akismet/"
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "1.4.24",
+            "version": "1.5.2.5",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/1.4.24"
+                "reference": "tags/1.5.2.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.4.24.zip",
+                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.5.2.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -506,7 +505,7 @@
         },
         {
             "name": "wpackagist/advanced-custom-fields",
-            "version": "4.3.4",
+            "version": "4.3.5",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/advanced-custom-fields/",
@@ -525,16 +524,16 @@
             "homepage": "http://wordpress.org/plugins/advanced-custom-fields/"
         },
         {
-            "name": "wpackagist/easy-responsive-carousel",
-            "version": "0.4.5",
+            "name": "wpackagist/quick-cache",
+            "version": 140104,
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/easy-responsive-carousel/",
-                "reference": "tags/0.4.5"
+                "url": "http://plugins.svn.wordpress.org/quick-cache/",
+                "reference": "tags/140104"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/easy-responsive-carousel.0.4.5.zip",
+                "url": "http://downloads.wordpress.org/plugin/quick-cache.140104.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -542,19 +541,19 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/easy-responsive-carousel/"
+            "homepage": "http://wordpress.org/plugins/quick-cache/"
         },
         {
-            "name": "wpackagist/posts-to-posts",
-            "version": "1.6.2",
+            "name": "wpackagist/wp-smushit",
+            "version": "1.6.5.4",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/posts-to-posts/",
-                "reference": "tags/1.6.2"
+                "url": "http://plugins.svn.wordpress.org/wp-smushit/",
+                "reference": "tags/1.6.5.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/posts-to-posts.1.6.2.zip",
+                "url": "http://downloads.wordpress.org/plugin/wp-smushit.1.6.5.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -562,7 +561,7 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/posts-to-posts/"
+            "homepage": "http://wordpress.org/plugins/wp-smushit/"
         }
     ],
     "packages-dev": [
@@ -572,9 +571,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "wpackagist-plugin/akismet": 20
-    },
+    "stability-flags": [
+
+    ],
     "platform": {
         "php": ">=5.3.2"
     },
