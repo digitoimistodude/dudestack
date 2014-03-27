@@ -60,10 +60,11 @@
     "wp-cli/wp-cli": "v0.13.0",
     "vlucas/phpdotenv": "~1.0.5",
     "wpackagist/advanced-custom-fields":"*",
-    "wpackagist/quick-cache":"*",
+    "wpackagist/w3-total-cache":"*",
     "wpackagist/wp-smushit":"*",
     "wpackagist-plugin/akismet":"*",
-    "wpackagist-plugin/wordpress-seo":"*"
+    "wpackagist-plugin/wordpress-seo":"*",
+    "wpackagist-plugin/mail-subscribe-list":"*"
   },
   "extra": {
     "installer-paths": {

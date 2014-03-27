@@ -18,3 +18,5 @@ node_modules
 bin
 .vagrant
 config/deploy/
+dandelion.yml
+.config.codekit
