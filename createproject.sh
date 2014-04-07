@@ -286,4 +286,7 @@ core install:
   admin_email: YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE
   title: \"${PROJECTNAME}\"" > wp-cli.local.yml
 ./vendor/wp-cli/wp-cli/bin/wp core install
+echo "${yellow}Removing default WordPress posts...:${txtreset}"
+./vendor/wp-cli/wp-cli/bin/wp post delete 1 --force
+./vendor/wp-cli/wp-cli/bin/wp post delete 2 --force
 echo "${boldgreen}All done! Install WP and start coding at http://${LOCAL_IP}! Remember to make a repo on Bitbucket, eventually.${txtreset}"
