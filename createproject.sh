@@ -274,8 +274,8 @@ sed -i -e "s/database_name/${PROJECTNAME}/g" .env
 sed -i -e "s/database_user/YOUR_DEFAULT_DATABASE_USERNAME_HERE/g" .env
 sed -i -e "s/database_password/YOUR_DEFAULT_DATABASE_PASSWORD_HERE/g" .env
 sed -i -e "s/database_host/localhost/g" .env
-sed -i -e "s/example.com/${PROJECTNAME}.dev/g" .env
-sed -i -e "s/example.com/${PROJECTNAME}/g" .env
+sed -i -e "s/example.com/${PROJECTNAME}.dev.${LOCAL_IP}.xip.io/g" .env
+sed -i -e "s/example.com/${PROJECTNAME}.dev.${LOCAL_IP}.xip.io/g" .env
 echo "${yellow}Installing WordPress...:${txtreset}"
 echo "path: wp
 url: http://${PROJECTNAME}.dev
@@ -289,4 +289,4 @@ core install:
 echo "${yellow}Removing default WordPress posts...:${txtreset}"
 ./vendor/wp-cli/wp-cli/bin/wp post delete 1 --force
 ./vendor/wp-cli/wp-cli/bin/wp post delete 2 --force
-echo "${boldgreen}All done! Install WP and start coding at http://${LOCAL_IP}! Remember to make a repo on Bitbucket, eventually.${txtreset}"
+echo "${boldgreen}All done! Install WP and start coding at http://${PROJECTNAME}.dev.${LOCAL_IP}.xip.io! Remember to make a repo on Bitbucket, eventually.${txtreset}"
