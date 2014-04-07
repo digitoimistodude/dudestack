@@ -63,8 +63,7 @@
     "wpackagist/w3-total-cache":"*",
     "wpackagist/wp-smushit":"*",
     "wpackagist-plugin/akismet":"*",
-    "wpackagist-plugin/wordpress-seo":"*",
-    "wpackagist-plugin/mail-subscribe-list":"*"
+    "wpackagist-plugin/wordpress-seo":"*"
   },
   "extra": {
     "installer-paths": {
