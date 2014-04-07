@@ -11,6 +11,16 @@ white=$(tput setaf 7)
 txtreset=$(tput sgr0)
 LOCAL_IP=$(ifconfig | grep -Eo "inet (addr:)?([0-9]*\.){3}[0-9]*" | grep -Eo "([0-9]*\.){3}[0-9]*" | grep -v "127.0.0.1")
 
+# Comment this out after editing this file:
+while true; do
+read -p "${boldyellow}Edited this file (createproject.sh) to your needs with your credentials etc. (OTHERWISE THIS SCRIPT WON'T WORK)? (y/n)${txtreset} " yn
+    case $yn in
+        [Yy]* ) break;;
+        [Nn]* ) exit;;
+        * ) echo "Please answer y or n.";;
+    esac
+done
+
 while true; do
 read -p "${boldyellow}MAMP properly set up and running? (y/n)${txtreset} " yn
     case $yn in
@@ -259,15 +269,21 @@ echo "${yellow}Updating WordPress related stuff...:${txtreset}"
 cp $HOME/wpstack-rolle/composer.json "$HOME/Projects/$PROJECTNAME/composer.json"
 cd "$HOME/Projects/$PROJECTNAME/"
 composer update
-echo "${yellow}Copy these to .env:${txtreset}"
-echo "
-DB_NAME=${PROJECTNAME}
-DB_USER=root
-DB_PASSWORD=yourpassword
-DB_HOST=localhost
+echo "${yellow}Updating .env (db credentials)...:${txtreset}"
+sed -i -e "s/database_name/${PROJECTNAME}/g" .env
+sed -i -e "s/database_user/YOUR_DEFAULT_DATABASE_USERNAME_HERE/g" .env
+sed -i -e "s/database_password/YOUR_DEFAULT_DATABASE_PASSWORD_HERE/g" .env
+sed -i -e "s/database_host/localhost/g" .env
+sed -i -e "s/example.com/${PROJECTNAME}.dev/g" .env
+sed -i -e "s/example.com/${PROJECTNAME}/g" .env
+echo "${yellow}Installing WordPress...:${txtreset}"
+echo "path: wp
+url: http://${PROJECTNAME}.dev
 
-WP_ENV=development
-WP_HOME=http://${PROJECTNAME}.dev
-WP_SITEURL=http://${PROJECTNAME}.dev/wp
-"
+core install:
+  admin_user: YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE
+  admin_password: YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE
+  admin_email: YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE
+  title: \"${PROJECTNAME}\"" > wp-cli.local.yml
+./vendor/wp-cli/wp-cli/bin/wp core install
 echo "${boldgreen}All done! Install WP and start coding at http://${LOCAL_IP}! Remember to make a repo on Bitbucket, eventually.${txtreset}"
