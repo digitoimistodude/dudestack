@@ -40,11 +40,11 @@
       "type": "package",
       "package": {
         "name": "wordpress",
-        "version": "3.8.2",
+        "version": "3.9",
         "type": "webroot",
         "dist": {
           "type": "zip",
-          "url": "http://sv.wordpress.org/wordpress-3.8.2-fi.zip"
+          "url": "http://sv.wordpress.org/wordpress-3.9-fi.zip"
         },
         "require" : {
           "fancyguy/webroot-installer": "1.1.0"
@@ -54,7 +54,7 @@
   ],
   "require": {
     "php": ">=5.3.2",
-    "wordpress": "3.8.2",
+    "wordpress": "3.9",
     "fancyguy/webroot-installer": "1.1.0",
     "composer/installers": "v1.0.6",
     "wp-cli/wp-cli": "v0.13.0",
