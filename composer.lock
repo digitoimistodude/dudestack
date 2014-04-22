@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "c125425f73a67add771a7b595c82e24f",
+    "hash": "d4a53872c346d6d19c1f0897a740a80b",
     "packages": [
         {
             "name": "composer/installers",
@@ -122,16 +122,16 @@
         },
         {
             "name": "mustache/mustache",
-            "version": "v2.5.1",
+            "version": "v2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/mustache.php.git",
-                "reference": "996c944fa2ddedddfaf0d276b913809d6a32fd85"
+                "reference": "43dc9457a2089cf86c0f7fdb79fcdc516293a4b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/996c944fa2ddedddfaf0d276b913809d6a32fd85",
-                "reference": "996c944fa2ddedddfaf0d276b913809d6a32fd85",
+                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/43dc9457a2089cf86c0f7fdb79fcdc516293a4b6",
+                "reference": "43dc9457a2089cf86c0f7fdb79fcdc516293a4b6",
                 "shasum": ""
             },
             "require": {
@@ -163,7 +163,7 @@
                 "mustache",
                 "templating"
             ],
-            "time": "2014-01-09 00:36:09"
+            "time": "2014-04-14 01:24:40"
         },
         {
             "name": "rhumsaa/array_column",
@@ -255,17 +255,17 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "target-dir": "Symfony/Component/Finder",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Finder.git",
-                "reference": "b6735d1fc16da13c4c7dddfe78366a4a098cf011"
+                "reference": "ab301c7d21f536c34ab6c2c79dba8d465104c518"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/b6735d1fc16da13c4c7dddfe78366a4a098cf011",
-                "reference": "b6735d1fc16da13c4c7dddfe78366a4a098cf011",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/ab301c7d21f536c34ab6c2c79dba8d465104c518",
+                "reference": "ab301c7d21f536c34ab6c2c79dba8d465104c518",
                 "shasum": ""
             },
             "require": {
@@ -300,7 +300,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "http://symfony.com",
-            "time": "2014-01-07 13:28:54"
+            "time": "2014-03-01 17:35:04"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -350,10 +350,10 @@
         },
         {
             "name": "wordpress",
-            "version": "3.8.1",
+            "version": "3.9",
             "dist": {
                 "type": "zip",
-                "url": "http://sv.wordpress.org/wordpress-3.8.1-fi.zip",
+                "url": "http://sv.wordpress.org/wordpress-3.9-fi.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -459,15 +459,15 @@
         },
         {
             "name": "wpackagist-plugin/akismet",
-            "version": "2.6.0",
+            "version": "3.0.0",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/akismet/",
-                "reference": "tags/2.6.0"
+                "reference": "tags/3.0.0-RC1"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/akismet.2.6.0.zip",
+                "url": "http://downloads.wordpress.org/plugin/akismet.3.0.0.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -482,15 +482,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "1.5.2.5",
+            "version": "1.5.2.7",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/1.5.2.5"
+                "reference": "tags/1.5.2.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.5.2.5.zip",
+                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.5.2.7.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -505,7 +505,7 @@
         },
         {
             "name": "wpackagist/advanced-custom-fields",
-            "version": "4.3.5",
+            "version": "4.3.7",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/advanced-custom-fields/",
@@ -524,16 +524,16 @@
             "homepage": "http://wordpress.org/plugins/advanced-custom-fields/"
         },
         {
-            "name": "wpackagist/quick-cache",
-            "version": 140104,
+            "name": "wpackagist/w3-total-cache",
+            "version": "0.9.4",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/quick-cache/",
-                "reference": "tags/140104"
+                "url": "http://plugins.svn.wordpress.org/w3-total-cache/",
+                "reference": "tags/0.9.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/quick-cache.140104.zip",
+                "url": "http://downloads.wordpress.org/plugin/w3-total-cache.0.9.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -541,7 +541,7 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/quick-cache/"
+            "homepage": "http://wordpress.org/plugins/w3-total-cache/"
         },
         {
             "name": "wpackagist/wp-smushit",
