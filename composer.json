@@ -61,9 +61,12 @@
     "vlucas/phpdotenv": "~1.0.5",
     "wpackagist/advanced-custom-fields":"*",
     "wpackagist/w3-total-cache":"*",
-    "wpackagist/wp-smushit":"*",
     "wpackagist-plugin/akismet":"*",
-    "wpackagist-plugin/wordpress-seo":"*"
+    "wpackagist-plugin/wordpress-seo":"*",
+    "wpackagist-plugin/w3-total-cache":"*",
+    "wpackagist-plugin/ewww-image-optimizer":"*",
+    "wpackagist-plugin/headwp":"*",
+    "wpackagist-plugin/autoptimize":"*"
   },
   "extra": {
     "installer-paths": {

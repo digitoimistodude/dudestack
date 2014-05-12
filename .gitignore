@@ -21,3 +21,13 @@ config/deploy/
 *.yml
 *.codekit
 createproject.todo
+content/w3-total-cache-config.php
+content/w3-total-cache-config-preview.php
+content/w3tc/objectcache/*
+content/w3tc/min/*
+!content/w3tc/min/.htaccess
+!content/w3tc/min/index.php
+content/w3tc/dbcache/*
+!content/w3tc/dbcache/.htaccess
+!content/w3tc/dbcache/index.php
+content/w3tc/pgcache/*
