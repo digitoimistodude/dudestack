@@ -27,6 +27,13 @@ define('WP_CONTENT_DIR', $root_dir . CONTENT_DIR);
 define('WP_CONTENT_URL', WP_HOME . CONTENT_DIR);
 
 /**
+ * Cache
+ */
+
+define('WP_CACHE', true);
+define('WPCACHEHOME', $root_dir . CONTENT_DIR .'/plugins/wp-super-cache/' );
+
+/**
  * DB settings
  */
 define('DB_CHARSET', 'utf8');
