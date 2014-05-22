@@ -268,6 +268,7 @@ echo "${boldgreen}deploy.rb generated${txtreset}"
 echo "${yellow}Updating WordPress related stuff...:${txtreset}"
 cp $HOME/wpstack-rolle/composer.json "$HOME/Projects/$PROJECTNAME/composer.json"
 cd "$HOME/Projects/$PROJECTNAME/"
+rm -rf .git
 composer update
 echo "${yellow}Updating .env (db credentials)...:${txtreset}"
 sed -i -e "s/database_name/${PROJECTNAME}/g" .env

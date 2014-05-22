@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "d4a53872c346d6d19c1f0897a740a80b",
+    "hash": "9e6fdc02a5de9a20cecce70a5fec2963",
     "packages": [
         {
             "name": "composer/installers",
@@ -206,16 +206,16 @@
         },
         {
             "name": "rmccue/requests",
-            "version": "v1.6.0",
+            "version": "v1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rmccue/Requests.git",
-                "reference": "756374edd59ac69268ed35481a506ebd4e732525"
+                "reference": "6aac485666c2955077d77b796bbdd25f0013a4ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rmccue/Requests/zipball/756374edd59ac69268ed35481a506ebd4e732525",
-                "reference": "756374edd59ac69268ed35481a506ebd4e732525",
+                "url": "https://api.github.com/repos/rmccue/Requests/zipball/6aac485666c2955077d77b796bbdd25f0013a4ea",
+                "reference": "6aac485666c2955077d77b796bbdd25f0013a4ea",
                 "shasum": ""
             },
             "require": {
@@ -251,21 +251,21 @@
                 "iri",
                 "sockets"
             ],
-            "time": "2013-10-06 13:30:32"
+            "time": "2014-05-18 04:59:02"
         },
         {
             "name": "symfony/finder",
-            "version": "v2.4.3",
+            "version": "v2.4.4",
             "target-dir": "Symfony/Component/Finder",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Finder.git",
-                "reference": "ab301c7d21f536c34ab6c2c79dba8d465104c518"
+                "reference": "25e1e7d5e7376f8a92ae3b1d714d956edf33a730"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/ab301c7d21f536c34ab6c2c79dba8d465104c518",
-                "reference": "ab301c7d21f536c34ab6c2c79dba8d465104c518",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/25e1e7d5e7376f8a92ae3b1d714d956edf33a730",
+                "reference": "25e1e7d5e7376f8a92ae3b1d714d956edf33a730",
                 "shasum": ""
             },
             "require": {
@@ -300,7 +300,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "http://symfony.com",
-            "time": "2014-03-01 17:35:04"
+            "time": "2014-04-27 13:34:57"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -350,10 +350,10 @@
         },
         {
             "name": "wordpress",
-            "version": "3.9",
+            "version": "3.9.1",
             "dist": {
                 "type": "zip",
-                "url": "http://sv.wordpress.org/wordpress-3.9-fi.zip",
+                "url": "https://sv.wordpress.org/wordpress-3.9.1-fi.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -481,16 +481,108 @@
             "homepage": "http://wordpress.org/plugins/akismet/"
         },
         {
-            "name": "wpackagist-plugin/wordpress-seo",
-            "version": "1.5.2.7",
+            "name": "wpackagist-plugin/autoptimize",
+            "version": "1.8.4",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/1.5.2.7"
+                "url": "http://plugins.svn.wordpress.org/autoptimize/",
+                "reference": "tags/1.8.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.5.2.7.zip",
+                "url": "http://downloads.wordpress.org/plugin/autoptimize.1.8.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/autoptimize": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/autoptimize/"
+        },
+        {
+            "name": "wpackagist-plugin/ewww-image-optimizer",
+            "version": "1.9.0",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/ewww-image-optimizer/",
+                "reference": "tags/1.9.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/ewww-image-optimizer.1.9.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/ewww-image-optimizer": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/ewww-image-optimizer/"
+        },
+        {
+            "name": "wpackagist-plugin/headwp",
+            "version": "2.0.3",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/headwp/",
+                "reference": "tags/2.0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/headwp.2.0.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/headwp": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/headwp/"
+        },
+        {
+            "name": "wpackagist-plugin/w3-total-cache",
+            "version": "0.9.3",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/w3-total-cache/",
+                "reference": "tags/0.9.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/w3-total-cache.0.9.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/w3-total-cache": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/w3-total-cache/"
+        },
+        {
+            "name": "wpackagist-plugin/wordpress-seo",
+            "version": "1.5.3.2",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
+                "reference": "tags/1.5.3.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.5.3.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -505,7 +597,7 @@
         },
         {
             "name": "wpackagist/advanced-custom-fields",
-            "version": "4.3.7",
+            "version": "4.3.8",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/advanced-custom-fields/",
@@ -542,26 +634,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/w3-total-cache/"
-        },
-        {
-            "name": "wpackagist/wp-smushit",
-            "version": "1.6.5.4",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wp-smushit/",
-                "reference": "tags/1.6.5.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wp-smushit.1.6.5.4.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/wp-smushit/"
         }
     ],
     "packages-dev": [
