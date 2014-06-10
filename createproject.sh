@@ -290,4 +290,11 @@ core install:
 echo "${yellow}Removing default WordPress posts...:${txtreset}"
 ./vendor/wp-cli/wp-cli/bin/wp post delete 1 --force
 ./vendor/wp-cli/wp-cli/bin/wp post delete 2 --force
+./vendor/wp-cli/wp-cli/bin/wp option update blogdescription ''
+./vendor/wp-cli/wp-cli/bin/wp theme delete twentytwelve
+./vendor/wp-cli/wp-cli/bin/wp theme delete twentythirteen
+./vendor/wp-cli/wp-cli/bin/wp theme delete twentyfourteen
+./vendor/wp-cli/wp-cli/bin/wp plugin delete hello
+./vendor/wp-cli/wp-cli/bin/wp option update permalink_structure '/%postname%'
+./vendor/wp-cli/wp-cli/bin/wp option update timezone_string 'Europe/Helsinki'
 echo "${boldgreen}All done! Start coding at http://${PROJECTNAME}.dev! Remember to make a repo on Bitbucket, eventually.${txtreset}"
