@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "9e6fdc02a5de9a20cecce70a5fec2963",
+    "hash": "ad05e637386434dc6185cc766b1f93a4",
     "packages": [
         {
             "name": "composer/installers",
@@ -255,17 +255,17 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v2.4.4",
+            "version": "v2.5.0",
             "target-dir": "Symfony/Component/Finder",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Finder.git",
-                "reference": "25e1e7d5e7376f8a92ae3b1d714d956edf33a730"
+                "reference": "307aad2c541bbdf43183043645e186ef2cd6b973"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/25e1e7d5e7376f8a92ae3b1d714d956edf33a730",
-                "reference": "25e1e7d5e7376f8a92ae3b1d714d956edf33a730",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/307aad2c541bbdf43183043645e186ef2cd6b973",
+                "reference": "307aad2c541bbdf43183043645e186ef2cd6b973",
                 "shasum": ""
             },
             "require": {
@@ -274,7 +274,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4-dev"
+                    "dev-master": "2.5-dev"
                 }
             },
             "autoload": {
@@ -300,7 +300,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "http://symfony.com",
-            "time": "2014-04-27 13:34:57"
+            "time": "2014-05-22 13:47:45"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -482,15 +482,15 @@
         },
         {
             "name": "wpackagist-plugin/autoptimize",
-            "version": "1.8.4",
+            "version": "1.8.5",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/autoptimize/",
-                "reference": "tags/1.8.4"
+                "reference": "tags/1.8.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/autoptimize.1.8.4.zip",
+                "url": "http://downloads.wordpress.org/plugin/autoptimize.1.8.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -505,15 +505,15 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "1.9.0",
+            "version": "1.9.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/1.9.0"
+                "reference": "tags/1.9.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/ewww-image-optimizer.1.9.0.zip",
+                "url": "http://downloads.wordpress.org/plugin/ewww-image-optimizer.1.9.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -527,62 +527,16 @@
             "homepage": "http://wordpress.org/plugins/ewww-image-optimizer/"
         },
         {
-            "name": "wpackagist-plugin/headwp",
-            "version": "2.0.3",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/headwp/",
-                "reference": "tags/2.0.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/headwp.2.0.3.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "replace": {
-                "wpackagist/headwp": "self.version"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/headwp/"
-        },
-        {
-            "name": "wpackagist-plugin/w3-total-cache",
-            "version": "0.9.3",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/w3-total-cache/",
-                "reference": "tags/0.9.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/w3-total-cache.0.9.3.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "replace": {
-                "wpackagist/w3-total-cache": "self.version"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/w3-total-cache/"
-        },
-        {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "1.5.3.2",
+            "version": "1.5.3.3",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/1.5.3.2"
+                "reference": "tags/1.5.3.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.5.3.2.zip",
+                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.5.3.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -614,26 +568,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/advanced-custom-fields/"
-        },
-        {
-            "name": "wpackagist/w3-total-cache",
-            "version": "0.9.4",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/w3-total-cache/",
-                "reference": "tags/0.9.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/w3-total-cache.0.9.4.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/w3-total-cache/"
         }
     ],
     "packages-dev": [
