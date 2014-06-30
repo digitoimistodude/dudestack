@@ -38,10 +38,12 @@ Creating a new project has a lot of configs to do. I wanted to automate some of 
 - You are using separate production server that may necessarily not have all the permissions like writing in /tmp dir
 - You use MAMP Pro and Bitbucket
 - Your project hostname is project.dev
-- You use CodeKit version 2+
-- WordPress is controlled by Composer
-- Your project's name is your customer's name and also the server's account name
+- You use CodeKit2+, gulp or grunt
+- WordPress dependencies are controlled by composer
+- You feel comfy using bundle
+- Your project's name is your customer's name and also the server's account name (can be easily changed per project though, like everything else in this stack)
 - Executables are stored in your server's $HOME/bin
+- You are accepting the fact this is only one of the ways to do things and things are not staying this way forever, everything changes as you read this :)
 
 **This needs rough editing, so please copy createproject.sh to desired path and modify to your needs!**
 
@@ -65,17 +67,18 @@ You also will need to edit define('WPLANG', 'fi'); unless you want to use finnis
 
 ## Getting started
 
-1. This assumes your projects are in ~/Projects. You should make sure that folder exists.
+1. This assumes your projects are in ~/Projects. You should make sure that folder exists. Or decide to use another folder, but then you need a lot of search&replace and using this would be quite pointless.
 2. Run MAMP Pro server with project name as your server name
 3. Clone this repo to your home directory by running `git clone git@github.com:ronilaukkarinen/wpstack-rolle.git ~/`
 4. Make the bash script global `mv createproject.sh /usr/bin/createproject && sudo chmod +x /usr/bin/createproject`
 5. Remember to edit createproject.sh and composer.json based on your own needs
+6. Please do a lot of other editing if you need. It will eventually shape to the right form.
 
-To use, run `createproject` and have fun.
+To start a project, run `createproject` and have fun.
 
 ## Requirements
 
-* Basic knowledge of Capistrano, bash scripting and Composer
+* Basic knowledge of capistrano, bundle, gulp, bash scripting and composer and other possible tools like this
 * Git
 * PHP >= 5.3.2 (for Composer)
 * Ruby >= 1.9 (for Capistrano)
