@@ -43,6 +43,10 @@ Creating a new project has a lot of configs to do. I wanted to automate some of 
 - You feel comfy using bundle
 - Your project's name is your customer's name and also the server's account name (can be easily changed per project though, like everything else in this stack)
 - Executables are stored in your server's $HOME/bin
+
+Note:
+- If you are using gulp, you should check out [my gulpfile](https://github.com/ronilaukkarinen/gulpfile-rolle)
+- This is a starter package without theme configs. I leave theme development to you entirely. I have my own starter theme that relies on this package but I'm not (yet) willing to share it
 - You are accepting the fact this is only one of the ways to do things and things are not staying this way forever, everything changes as you read this :)
 
 **This needs rough editing, so please copy createproject.sh to desired path and modify to your needs!**
