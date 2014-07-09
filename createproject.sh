@@ -187,6 +187,35 @@ namespace :deploy do
     after :updated, 'deploy:composer_install'
     
 end" > "$HOME/Projects/$PROJECTNAME/config/deploy/production.rb"
+echo "${yellow}Creating Sublime Text project...${txtreset}"
+echo "{
+    \"folders\":
+    [
+        {
+            \"follow_symlinks\": true,
+            \"path\": \".\",
+            \"file_exclude_patterns\":[
+                \"*.jpg\",
+                \"*.png\",
+                \"*.ico\",
+                \"*.tar\",
+                \"*.tgz\",
+                \"*.zip\"
+            ],
+            \"folder_exclude_patterns\": [
+                \"images\",
+                \"wp\",
+                \".sass-cache\",
+                \"node_modules\",
+                \"lib\",
+                \"scripts\",
+                \"vendor\",
+                \"uploads\"
+            ]
+        }
+    ]
+}
+" > "$PROJECTNAME.sublime-project"
 echo "${yellow}Copying languages...${txtreset}"
 cd wp/wp-content
 cp -R languages "/Users/rolle/Projects/$PROJECTNAME/content/"
