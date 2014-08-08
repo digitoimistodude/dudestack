@@ -1,9 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
-    "hash": "ad05e637386434dc6185cc766b1f93a4",
+    "hash": "79ab2f44fdac148b2e513f3e72928387",
     "packages": [
         {
             "name": "composer/installers",
@@ -122,16 +123,16 @@
         },
         {
             "name": "mustache/mustache",
-            "version": "v2.6.0",
+            "version": "v2.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/mustache.php.git",
-                "reference": "43dc9457a2089cf86c0f7fdb79fcdc516293a4b6"
+                "reference": "1430ca884912eaba2b3830856b45685733b16789"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/43dc9457a2089cf86c0f7fdb79fcdc516293a4b6",
-                "reference": "43dc9457a2089cf86c0f7fdb79fcdc516293a4b6",
+                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/1430ca884912eaba2b3830856b45685733b16789",
+                "reference": "1430ca884912eaba2b3830856b45685733b16789",
                 "shasum": ""
             },
             "require": {
@@ -163,7 +164,7 @@
                 "mustache",
                 "templating"
             ],
-            "time": "2014-04-14 01:24:40"
+            "time": "2014-06-20 19:34:49"
         },
         {
             "name": "rhumsaa/array_column",
@@ -255,17 +256,17 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v2.5.0",
+            "version": "v2.5.3",
             "target-dir": "Symfony/Component/Finder",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Finder.git",
-                "reference": "307aad2c541bbdf43183043645e186ef2cd6b973"
+                "reference": "090fe4eaff414d8f2171c7a4748ea868d530775f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/307aad2c541bbdf43183043645e186ef2cd6b973",
-                "reference": "307aad2c541bbdf43183043645e186ef2cd6b973",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/090fe4eaff414d8f2171c7a4748ea868d530775f",
+                "reference": "090fe4eaff414d8f2171c7a4748ea868d530775f",
                 "shasum": ""
             },
             "require": {
@@ -288,19 +289,17 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
                     "name": "Symfony Community",
                     "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Symfony Finder Component",
             "homepage": "http://symfony.com",
-            "time": "2014-05-22 13:47:45"
+            "time": "2014-07-28 13:20:46"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -350,10 +349,10 @@
         },
         {
             "name": "wordpress",
-            "version": "3.9.1",
+            "version": "3.9.2",
             "dist": {
                 "type": "zip",
-                "url": "https://sv.wordpress.org/wordpress-3.9.1-fi.zip",
+                "url": "https://sv.wordpress.org/wordpress-3.9.2-fi.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -459,15 +458,15 @@
         },
         {
             "name": "wpackagist-plugin/akismet",
-            "version": "3.0.0",
+            "version": "3.0.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/akismet/",
-                "reference": "tags/3.0.0-RC1"
+                "reference": "tags/3.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/akismet.3.0.0.zip",
+                "url": "http://downloads.wordpress.org/plugin/akismet.3.0.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -505,15 +504,15 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "1.9.1",
+            "version": "1.9.3",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/1.9.1"
+                "reference": "tags/1.9.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/ewww-image-optimizer.1.9.1.zip",
+                "url": "http://downloads.wordpress.org/plugin/ewww-image-optimizer.1.9.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -528,15 +527,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "1.5.3.3",
+            "version": "1.5.4.2",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/1.5.3.3"
+                "reference": "tags/1.5.4.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.5.3.3.zip",
+                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.5.4.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -580,6 +579,7 @@
     "stability-flags": [
 
     ],
+    "prefer-stable": false,
     "platform": {
         "php": ">=5.3.2"
     },
