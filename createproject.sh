@@ -121,7 +121,7 @@ namespace :deploy do
     task :composer_install do
         on roles(:app) do
             within release_path do
-                execute \"mkdir -p STAGING_HOME_BIN_PATH && curl -sS https://getcomposer.org/installer | php && mv composer.phar PATH_TO_STAGING_BIN_COMPOSER && chmod +x PATH_TO_STAGING_BIN_COMPOSER"
+                execute \"mkdir -p STAGING_HOME_BIN_PATH && curl -sS https://getcomposer.org/installer | php && mv composer.phar PATH_TO_STAGING_BIN_COMPOSER && chmod +x PATH_TO_STAGING_BIN_COMPOSER\"
                 execute 'composer', 'update'
                 execute 'composer', 'install', '--no-dev', '--optimize-autoloader'
             end
@@ -216,6 +216,18 @@ echo "{
     ]
 }
 " > "$PROJECTNAME.sublime-project"
+echo "# Compass Config
+preferred_syntax = :scss
+http_path = '/'
+css_dir = 'content/themes/$PROJECTNAME/css'
+sass_dir = 'content/themes/$PROJECTNAME/sass'
+images_dir = 'content/themes/$PROJECTNAME/images'
+fonts_dir = 'content/themes/$PROJECTNAME/fonts'
+relative_assets = true
+line_comments = true
+output_style = :compressed
+line_comments = false
+color_output = false" > "$HOME/Projects/$PROJECTNAME/config.rb"
 echo "${yellow}Copying languages...${txtreset}"
 cd wp/wp-content
 cp -R languages "/Users/rolle/Projects/$PROJECTNAME/content/"
