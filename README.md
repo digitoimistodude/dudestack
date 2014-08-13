@@ -21,7 +21,9 @@ At best this wpstack saves you hours when starting a new project.
  - [Composer](https://getcomposer.org/) to take care of WordPress installation and plugin dependencies and updates
  - dotenv-Environments for development, staging and production
 
-## How it's different?
+## How it's different, why should I use this?
+
+Well, this is mainly for myself for backup purposes or to show off how I roll. You should use this if you really like how I do things.
 
 Despite the fact I love most of bedrock, I noticed there's some things I don't like. Maybe little things for you, but some things matter to me. And I just want everything to be _mine_.
 
@@ -29,21 +31,6 @@ Despite the fact I love most of bedrock, I noticed there's some things I don't l
 * I mostly use WordPress in finnish language, so WPLANG must be set to fi
 * Composer modifications, getting latest finnish WordPress from sv.wordpress.org.
 * Automation. I mean composer create-project is awesome, but I want everything else automated as well when I start a new project
-
-I assume you use and know these tools in your workflow:
-
-- Sublime Text 3
-- CodeKit
-- Sequel Pro
-- MAMP Pro
-- GitHub for Mac
-- Flow
-- CodeBox
-- Adobe Edge Inspect
-- Capistrano
-- Composer
-- WordPress Cli
-- Nginx
 
 ## createproject.sh
 
