@@ -247,12 +247,10 @@ echo "{
     \"gulp-util\": \"^3.0.0\",
     \"gulp-minify-css\": \"0.3.7\",
     \"gulp-autoprefixer\": \"0.0.8\",
-    \"gulp-combine-media-queries\": \"0.1.0\",
     \"gulp-uglify\": \"0.3.1\",
     \"gulp-cache\": \"0.2.0\",
     \"gulp-concat\": \"2.3.4\",
     \"gulp-header\": \"1.0.5\",
-    \"gulp-order\": \"1.1.1\",
     \"normalize-css\": \"2.3.1\",
     \"require-dir\": \"^0.1.0\"
   },
@@ -279,13 +277,11 @@ var reload      = browserSync.reload;
 var notify      = require('gulp-notify');
 var prefix      = require('gulp-autoprefixer');
 var minifycss   = require('gulp-minify-css');
-var cmq         = require('gulp-combine-media-queries');
 var uglify      = require('gulp-uglify');
 var cache       = require('gulp-cache');
 var concat      = require('gulp-concat');
 var util        = require('gulp-util');
 var header      = require('gulp-header');
-var order       = require('gulp-order');
 
 /* 
 
@@ -364,17 +360,29 @@ SASS
 
 gulp.task('sass', function() {
   gulp.src(sassFile)
+
+  // gulp-ruby-sass:
+
   .pipe(sass({
     compass: true,
     bundleExec: true,
     sourcemap: false,
     style: 'compressed'
   })) 
+
+  // gulp-compass:
+
+  // .pipe(sass({
+  //   config_file: './config.rb',
+  //   css: themeDir + '/css',
+  //   sass: themeDir + '/sass',
+  //   image: themeDir + '/images'
+  // }))
+
   .on('error', handleErrors)
   .on('error', util.log)
   .on('error', util.beep)
   .pipe(prefix('last 3 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4')) //adds browser prefixes (eg. -webkit, -moz, etc.)
-  .pipe(cmq()) //combines media queries
   .pipe(minifycss({keepBreaks:false,keepSpecialComments:0,}))
   .pipe(gulp.dest(themeDir + '/css'))
   .pipe(reload({stream:true}));
@@ -410,21 +418,18 @@ var pkg       = require('./package.json');
 var banner      = '/*! <%= pkg.name %> <%= currentDate %> - <%= pkg.author %> */\n';
 
 gulp.task('js', function() {
-    gulp.src(customjs)
-        .pipe(src(jsSrc, themeDir + '/inc/js/*.js'))
-        .pipe(order([
 
-                themeDir + '/js/src/jquery.js',
-                themeDir + '/js/src/unslider.min.js',
-                themeDir + '/js/src/jquery.event.swipe.js',
-                themeDir + '/js/src/bootstrap.js',
-                themeDir + '/js/src/functions.min.js',
-                themeDir + '/inc/js/wow.js',
-                themeDir + '/js/scripts.js'
-
-            ], { base: './' }))
+      gulp.src(
+        [
+          themeDir + '/js/src/jquery.js',
+          themeDir + '/js/src/unslider.min.js',
+          themeDir + '/js/src/bootstrap.js',
+          themeDir + '/js/src/functions.min.js',
+          themeDir + '/js/src/wow.js',
+          themeDir + '/js/src/scripts.js'
+        ])
         .pipe(concat('all.js'))
-        .pipe(uglify({preserveComments: false, compress: true, mangle: true}).on('error', function(e) { console.log('\x07',e.message); return this.end(); }))
+        .pipe(uglify({preserveComments: false, compress: true, mangle: true}).on('error',function(e){console.log('\x07',e.message);return this.end();}))
         .pipe(header(banner, {pkg: pkg, currentDate: currentDate}))
         .pipe(gulp.dest(jsDest));
 });
