@@ -4,9 +4,24 @@ I'm constantly developing my development workflow. Honestly, I think I've been t
 
 I love [Bedrock](https://github.com/roots/bedrock), which is a is a modern WordPress stack that helps you get started with the best development tools and project structure. Bedrock contains the tools I've been already using, but more.
 
+At best this wpstack saves you hours when starting a new project.
+
 **You should modify things to your needs.**
 
-## Why not just fork and go?
+## Features
+
+ - Designed for pure WordPress development
+ - Fast and easy templates
+ - Customizable bash script for creating new WordPress projects
+ - Automatic MySQL-database generation
+ - Cleaning default WordPress stuff with wp-cli
+ - Gulp template with various magical gulp pieces and [BrowserSync](http://www.browsersync.io/)
+ - [Compass](http://compass-style.org) with [gulp-ruby-sass](https://github.com/sindresorhus/gulp-ruby-sass)
+ - [Capistrano 3](http://capistranorb.com/) deployment templates
+ - [Composer](https://getcomposer.org/) to take care of WordPress installation and plugin dependencies and updates
+ - dotenv-Environments for development, staging and production
+
+## How it's different?
 
 Despite the fact I love most of bedrock, I noticed there's some things I don't like. Maybe little things for you, but some things matter to me. And I just want everything to be _mine_.
 
