@@ -216,7 +216,10 @@ echo "{
     ]
 }
 " > "$PROJECTNAME.sublime-project"
-echo "# Compass Config
+echo "${yellow}Setting up compass${txtreset}"
+echo "require 'breakpoint';
+require 'sassy-buttons';
+
 preferred_syntax = :scss
 http_path = '/'
 css_dir = 'content/themes/$PROJECTNAME/css'
@@ -224,10 +227,254 @@ sass_dir = 'content/themes/$PROJECTNAME/sass'
 images_dir = 'content/themes/$PROJECTNAME/images'
 fonts_dir = 'content/themes/$PROJECTNAME/fonts'
 relative_assets = true
-line_comments = true
 output_style = :compressed
 line_comments = false
 color_output = false" > "$HOME/Projects/$PROJECTNAME/config.rb"
+echo "${yellow}Setting up package.json${txtreset}"
+echo "{
+  \"name\": \"$PROJECTNAME\",
+  \"version\": \"1.0.0\",
+  \"description\": \"$PROJECTNAME powered by wpstack-rolle + gulp\",
+  \"author\": \"Digitoimisto Dude Oy (moro@dude.fi)\",
+  \"devDependencies\": {
+    \"browser-sync\": \"~0.8.2\",
+    \"gulp\": \"^3.8.0\",
+    \"gulp-changed\": \"^0.4.1\",
+    \"gulp-imagemin\": \"^0.6.2\",
+    \"gulp-notify\": \"^1.4.2\",
+    \"gulp-ruby-sass\": \"^0.7.1\",
+    \"gulp-compass\": \"^1.2.0\",
+    \"gulp-util\": \"^3.0.0\",
+    \"gulp-minify-css\": \"0.3.7\",
+    \"gulp-autoprefixer\": \"0.0.8\",
+    \"gulp-combine-media-queries\": \"0.1.0\",
+    \"gulp-uglify\": \"0.3.1\",
+    \"gulp-cache\": \"0.2.0\",
+    \"gulp-concat\": \"2.3.4\",
+    \"gulp-header\": \"1.0.5\",
+    \"gulp-order\": \"1.1.1\",
+    \"normalize-css\": \"2.3.1\",
+    \"require-dir\": \"^0.1.0\"
+  },
+  \"dependencies\": {
+    \"backbone\": \"~1.1.2\",
+    \"jquery\": \"~2.1.0\"
+  }
+}" > "$HOME/Projects/$PROJECTNAME/package.json"
+echo "${yellow}Installing local node.js packages (may take a while)${txtreset}"
+npm install
+echo "${yellow}Generating gulpfile...${txtreset}"
+echo "/* 
+
+REQUIRED STUFF
+==============
+*/
+
+var changed     = require('gulp-changed');
+var gulp        = require('gulp');
+var imagemin    = require('gulp-imagemin');
+var sass        = require('gulp-ruby-sass');
+var browserSync = require('browser-sync');
+var reload      = browserSync.reload;
+var notify      = require('gulp-notify');
+var prefix      = require('gulp-autoprefixer');
+var minifycss   = require('gulp-minify-css');
+var cmq         = require('gulp-combine-media-queries');
+var uglify      = require('gulp-uglify');
+var cache       = require('gulp-cache');
+var concat      = require('gulp-concat');
+var util        = require('gulp-util');
+var header      = require('gulp-header');
+var order       = require('gulp-order');
+
+/* 
+
+ERROR HANDLING
+==============
+*/
+
+var handleErrors = function() {
+module.exports = function() {
+
+  var args = Array.prototype.slice.call(arguments);
+
+  // Send error to notification center with gulp-notify
+  notify.onError({
+    title: \"Compile Error\",
+    message: \"<%= error.message %>\"
+  }).apply(this, args);
+
+  // Keep gulp from hanging on this task
+  this.emit('end');
+};
+};
+
+/* 
+
+FILE PATHS
+==========
+*/
+
+var themeDir = 'content/themes/$PROJECTNAME'
+var imgSrc = themeDir + '/images/**/*.{png,jpg,jpeg,gif}';
+var imgDest = themeDir + '/images/optimized';
+var sassSrc = themeDir + '/sass/**/*.{sass,scss}';
+var sassFile = themeDir + '/sass/layout.scss';
+var cssDest = themeDir + '/css';
+var customjs = themeDir + '/js/scripts.js';
+var jsSrc = themeDir + '/js/src/**/*.js';
+var jsDest = themeDir + '/js/';
+var phpSrc = [themeDir + '/**/*.php', !'vendor/**/*.php'];
+
+/* 
+
+BROWSERSYNC
+===========
+*/
+
+var devEnvironment = '$PROJECTNAME.dev'
+var hostname = 'localhost'
+var localURL = 'http://' + devEnvironment;
+
+gulp.task('browserSync', function () {
+    
+    //declare files to watch + look for files in assets directory (from watch task)
+    var files = [
+    cssDest + '/**/*.{sass,scss}',
+    jsSrc + '/**/*.js',
+    imgDest + '/**/*.{png,jpg,jpeg,gif}',
+    '**/*.php'
+    ];
+
+    browserSync.init(files, {
+    proxy: localURL,
+    host: hostname,
+    agent: false,
+    browser: \"firefox\"
+    });
+
+});
+
+
+/* 
+
+SASS
+====
+*/
+
+gulp.task('sass', function() {
+  gulp.src(sassFile)
+  .pipe(sass({
+    compass: true,
+    bundleExec: true,
+    sourcemap: false,
+    style: 'compressed'
+  })) 
+  .on('error', handleErrors)
+  .on('error', util.log)
+  .on('error', util.beep)
+  .pipe(prefix('last 3 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4')) //adds browser prefixes (eg. -webkit, -moz, etc.)
+  .pipe(cmq()) //combines media queries
+  .pipe(minifycss({keepBreaks:false,keepSpecialComments:0,}))
+  .pipe(gulp.dest(themeDir + '/css'))
+  .pipe(reload({stream:true}));
+  });
+
+/* 
+
+IMAGES
+======
+*/
+
+
+gulp.task('images', function() {
+  var dest = imgDest;
+
+  return gulp.src(imgSrc)
+
+    .pipe(changed(dest)) // Ignore unchanged files
+    .pipe(cache(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true }))) //use cache to only target new/changed files, then optimize the images
+    .pipe(gulp.dest(imgDest));
+
+});
+
+
+/* 
+
+SCRIPTS
+=======
+*/
+
+var currentDate   = util.date(new Date(), 'dd-mm-yyyy HH:ss');
+var pkg       = require('./package.json');
+var banner      = '/*! <%= pkg.name %> <%= currentDate %> - <%= pkg.author %> */\n';
+
+gulp.task('js', function() {
+    gulp.src(customjs)
+        .pipe(src(jsSrc, themeDir + '/inc/js/*.js'))
+        .pipe(order([
+
+                themeDir + '/js/src/jquery.js',
+                themeDir + '/js/src/unslider.min.js',
+                themeDir + '/js/src/jquery.event.swipe.js',
+                themeDir + '/js/src/bootstrap.js',
+                themeDir + '/js/src/functions.min.js',
+                themeDir + '/inc/js/wow.js',
+                themeDir + '/js/scripts.js'
+
+            ], { base: './' }))
+        .pipe(concat('all.js'))
+        .pipe(uglify({preserveComments: false, compress: true, mangle: true}).on('error', function(e) { console.log('\x07',e.message); return this.end(); }))
+        .pipe(header(banner, {pkg: pkg, currentDate: currentDate}))
+        .pipe(gulp.dest(jsDest));
+});
+
+/*
+
+WATCH
+=====
+
+Notes:
+   - browserSync automatically reloads any files
+     that change within the directory it's serving from
+*/
+
+gulp.task('setWatch', function() {
+  global.isWatching = true;
+});
+
+gulp.task('watch', ['setWatch', 'browserSync'], function() {
+  gulp.watch(sassSrc, ['sass']);
+  gulp.watch(imgSrc, ['images']);
+  gulp.watch(jsSrc, ['js', browserSync.reload]);
+});
+
+
+/* 
+
+BUILD
+=====
+*/
+
+gulp.task('build', function(cb) {
+  runSequence('sass', 'images', cb);
+});
+
+/* 
+
+DEFAULT
+=======
+*/
+
+gulp.task('default', function(cb) {
+    runSequence(
+    'images',
+    'sass',
+    'browserSync',
+    'watch',
+    cb
+    );
+});" > "$HOME/Projects/$PROJECTNAME/gulpfile.js"
 echo "${yellow}Copying languages...${txtreset}"
 cd wp/wp-content
 cp -R languages "/Users/rolle/Projects/$PROJECTNAME/content/"
