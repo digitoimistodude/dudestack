@@ -252,6 +252,7 @@ echo "{
     \"gulp-concat\": \"2.3.4\",
     \"gulp-header\": \"1.0.5\",
     \"normalize-css\": \"2.3.1\",
+    \"gulp-pixrem\": \"^0.1.1\",
     \"require-dir\": \"^0.1.0\"
   },
   \"dependencies\": {
@@ -282,6 +283,7 @@ var cache       = require('gulp-cache');
 var concat      = require('gulp-concat');
 var util        = require('gulp-util');
 var header      = require('gulp-header');
+var pixrem      = require('gulp-pixrem');
 
 /* 
 
@@ -364,7 +366,7 @@ gulp.task('sass', function() {
   // gulp-ruby-sass:
 
   .pipe(sass({
-    compass: true,
+    compass: false,
     bundleExec: true,
     sourcemap: false,
     style: 'compressed'
@@ -379,11 +381,21 @@ gulp.task('sass', function() {
   //   image: themeDir + '/images'
   // }))
 
+  // gulp-sass:
+
+  // .pipe(sass({
+  //   style: 'compressed', 
+  //   errLogToConsole: true,
+  //   sourceComments: 'normal'
+  //   }
+  //   ))
+
   .on('error', handleErrors)
   .on('error', util.log)
   .on('error', util.beep)
   .pipe(prefix('last 3 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4')) //adds browser prefixes (eg. -webkit, -moz, etc.)
   .pipe(minifycss({keepBreaks:false,keepSpecialComments:0,}))
+  .pipe(pixrem())
   .pipe(gulp.dest(themeDir + '/css'))
   .pipe(reload({stream:true}));
   });
