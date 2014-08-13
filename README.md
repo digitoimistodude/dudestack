@@ -47,7 +47,7 @@ Creating a new project has a lot of configs to do. I wanted to automate some of 
 - Executables are stored in your server's $HOME/bin
 
 Note:
-- If you are using gulp, you should check out [my gulpfile](https://github.com/ronilaukkarinen/gulpfile-rolle)
+~~- If you are using gulp, you should check out [my gulpfile](https://github.com/ronilaukkarinen/gulpfile-rolle)~~ Gulpfile generator is now integrated in createproject.sh
 - This is a starter package without theme configs. I leave theme development to you entirely. I have my own starter theme that relies on this package but I'm not (yet) willing to share it
 - You are accepting the fact this is only one of the ways to do things and things are not staying this way forever, everything changes as you read this :)
 
