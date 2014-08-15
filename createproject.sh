@@ -314,7 +314,7 @@ FILE PATHS
 */
 
 var themeDir = 'content/themes/$PROJECTNAME'
-var imgSrc = themeDir + '/images/**/*.{png,jpg,jpeg,gif}';
+var imgSrc = themeDir + '/images/*.{png,jpg,jpeg,gif}';
 var imgDest = themeDir + '/images/optimized';
 var sassSrc = themeDir + '/sass/**/*.{sass,scss}';
 var sassFile = themeDir + '/sass/layout.scss';
@@ -340,7 +340,7 @@ gulp.task('browserSync', function () {
     var files = [
     cssDest + '/**/*.{sass,scss}',
     jsSrc + '/**/*.js',
-    imgDest + '/**/*.{png,jpg,jpeg,gif}',
+    imgDest + '/*.{png,jpg,jpeg,gif}',
     '**/*.php'
     ];
 
