@@ -57,13 +57,15 @@
     "wordpress": "3.9.2",
     "fancyguy/webroot-installer": "1.1.0",
     "composer/installers": "v1.0.6",
-    "wp-cli/wp-cli": "v0.13.0",
+    "wp-cli/wp-cli": "*",
     "vlucas/phpdotenv": "~1.0.5",
     "wpackagist/advanced-custom-fields":"*",
     "wpackagist-plugin/akismet":"*",
     "wpackagist-plugin/wordpress-seo":"*",
     "wpackagist-plugin/ewww-image-optimizer":"*",
-    "wpackagist-plugin/autoptimize":"*"
+    "wpackagist-plugin/w3-total-cache":"*",
+    "wpackagist-plugin/google-analytics-dashboard-for-wp":"*",
+    "wpackagist-plugin/jetpack":"*"
   },
   "extra": {
     "installer-paths": {
