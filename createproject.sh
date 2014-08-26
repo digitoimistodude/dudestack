@@ -603,6 +603,8 @@ echo "${yellow}Removing default WordPress posts...:${txtreset}"
 ./vendor/wp-cli/wp-cli/bin/wp theme delete twentythirteen
 ./vendor/wp-cli/wp-cli/bin/wp option update permalink_structure '/%postname%'
 ./vendor/wp-cli/wp-cli/bin/wp option update timezone_string 'Europe/Helsinki'
+echo "${yellow}Activating necessary plugins for theme development...:${txtreset}"
+./vendor/wp-cli/wp-cli/bin/wp plugin activate advanced-custom-fields
 echo "${yellow}Setting uploads permissions...:${txtreset}"
 chmod -Rv 777 "$HOME/Projects/$PROJECTNAME/content/uploads"
 echo "${boldgreen}All done! Start coding at http://${PROJECTNAME}.dev! Remember to make a repo on Bitbucket, eventually.${txtreset}"
