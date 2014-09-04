@@ -11,3 +11,4 @@ define('WP_SITEURL', getenv('WP_SITEURL'));
 define('SAVEQUERIES', false);
 define('WP_DEBUG', false);
 define('SCRIPT_DEBUG', false);
+define('FS_METHOD', 'direct');
