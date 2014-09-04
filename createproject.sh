@@ -286,6 +286,7 @@ var util        = require('gulp-util');
 var header      = require('gulp-header');
 var pixrem      = require('gulp-pixrem');
 var jsValidate  = require('gulp-jsvalidate');
+var pagespeed   = require('psi');
 
 /* 
 
@@ -402,6 +403,7 @@ gulp.task('sass', function() {
   .pipe(reload({stream:true}));
   });
 
+
 /* 
 
 IMAGES
@@ -436,10 +438,8 @@ gulp.task('js', function() {
       gulp.src(
         [
           themeDir + '/js/src/jquery.js',
-          themeDir + '/js/src/unslider.min.js',
-          themeDir + '/js/src/bootstrap.js',
-          themeDir + '/js/src/functions.min.js',
-          themeDir + '/js/src/wow.js',
+          themeDir + '/js/src/jquery.flexnav.js',
+          themeDir + '/js/src/trunk.js',
           themeDir + '/js/src/scripts.js'
         ])
         .pipe(jsValidate())
@@ -448,6 +448,24 @@ gulp.task('js', function() {
         .pipe(header(banner, {pkg: pkg, currentDate: currentDate}))
         .pipe(gulp.dest(jsDest));
 });
+
+
+/*
+
+PAGESPEED
+=====
+
+Notes:
+   - This runs Google PageSpeed Insights just like here http://developers.google.com/speed/pagespeed/insights/
+   - You can use Google Developer API key if you have one, see: http://goo.gl/RkN0vE
+
+*/
+
+gulp.task('pagespeed', pagespeed.bind(null, {
+  url: 'http://' + projectName + '.fi',
+  strategy: 'mobile'
+}));
+
 
 /*
 
