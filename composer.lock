@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d3ce9fa022cf4e8d680df31a7de7ef70",
+    "hash": "b843a3c54415d51b1d79c755f9fe102e",
     "packages": [
         {
             "name": "composer/installers",
@@ -297,17 +297,17 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v2.5.3",
+            "version": "v2.5.4",
             "target-dir": "Symfony/Component/Finder",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Finder.git",
-                "reference": "090fe4eaff414d8f2171c7a4748ea868d530775f"
+                "reference": "f40854d1a19c339c7f969f8f6d6d6e9153311c4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/090fe4eaff414d8f2171c7a4748ea868d530775f",
-                "reference": "090fe4eaff414d8f2171c7a4748ea868d530775f",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/f40854d1a19c339c7f969f8f6d6d6e9153311c4c",
+                "reference": "f40854d1a19c339c7f969f8f6d6d6e9153311c4c",
                 "shasum": ""
             },
             "require": {
@@ -340,7 +340,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "http://symfony.com",
-            "time": "2014-07-28 13:20:46"
+            "time": "2014-09-03 09:00:14"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -390,10 +390,10 @@
         },
         {
             "name": "wordpress",
-            "version": "3.9.2",
+            "version": "4.0",
             "dist": {
                 "type": "zip",
-                "url": "https://sv.wordpress.org/wordpress-3.9.2-fi.zip",
+                "url": "https://sv.wordpress.org/wordpress-4.0-fi.zip",
                 "reference": null,
                 "shasum": null
             },
