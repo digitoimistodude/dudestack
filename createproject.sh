@@ -250,7 +250,7 @@ echo "{
     \"gulp-uglify\": \"0.3.1\",
     \"gulp-cache\": \"0.2.0\",
     \"gulp-concat\": \"2.3.4\",
-    \"gulp-header\": \"1.0.5\",
+    \"gulp-header\": \"1.1.1\",
     \"normalize-css\": \"2.3.1\",
     \"gulp-pixrem\": \"^0.1.1\",
     \"gulp-jsvalidate\": \"^1.0.0\",
