@@ -603,6 +603,11 @@ sed -i -e "s/database_password/YOUR_DEFAULT_DATABASE_PASSWORD_HERE/g" .env
 sed -i -e "s/database_host/localhost/g" .env
 sed -i -e "s/example.com/${PROJECTNAME}.dev/g" .env
 sed -i -e "s/example.com/${PROJECTNAME}.dev/g" .env
+echo "${yellow}Installing wp-cli...:${txtreset}"
+curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+chmod +x wp-cli.phar
+mkdir wp-cli
+mv wp-cli.phar wp-cli/wp
 echo "${yellow}Installing WordPress...:${txtreset}"
 echo "path: wp
 url: http://${PROJECTNAME}.dev
@@ -612,17 +617,17 @@ core install:
   admin_password: YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE
   admin_email: YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE
   title: \"${PROJECTNAME}\"" > wp-cli.yml
-./vendor/wp-cli/wp-cli/bin/wp core install
+./wp-cli/wp core install
 echo "${yellow}Removing default WordPress posts...:${txtreset}"
-./vendor/wp-cli/wp-cli/bin/wp post delete 1 --force
-./vendor/wp-cli/wp-cli/bin/wp post delete 2 --force
-./vendor/wp-cli/wp-cli/bin/wp option update blogdescription ''
-./vendor/wp-cli/wp-cli/bin/wp theme delete twentytwelve
-./vendor/wp-cli/wp-cli/bin/wp theme delete twentythirteen
-./vendor/wp-cli/wp-cli/bin/wp option update permalink_structure '/%postname%'
-./vendor/wp-cli/wp-cli/bin/wp option update timezone_string 'Europe/Helsinki'
+./wp-cli/wp post delete 1 --force
+./wp-cli/wp post delete 2 --force
+./wp-cli/wp option update blogdescription ''
+./wp-cli/wp theme delete twentytwelve
+./wp-cli/wp theme delete twentythirteen
+./wp-cli/wp option update permalink_structure '/%postname%'
+./wp-cli/wp option update timezone_string 'Europe/Helsinki'
 echo "${yellow}Activating necessary plugins for theme development...:${txtreset}"
-./vendor/wp-cli/wp-cli/bin/wp plugin activate advanced-custom-fields
+./wp-cli/wp plugin activate advanced-custom-fields
 echo "${yellow}Setting uploads permissions...:${txtreset}"
 chmod -Rv 777 "$HOME/Projects/$PROJECTNAME/content/uploads"
 echo "${boldgreen}All done! Start coding at http://${PROJECTNAME}.dev! Remember to make a repo on Bitbucket, eventually.${txtreset}"
