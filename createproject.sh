@@ -611,7 +611,7 @@ core install:
   admin_user: YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE
   admin_password: YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE
   admin_email: YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE
-  title: \"${PROJECTNAME}\"" > wp-cli.local.yml
+  title: \"${PROJECTNAME}\"" > wp-cli.yml
 ./vendor/wp-cli/wp-cli/bin/wp core install
 echo "${yellow}Removing default WordPress posts...:${txtreset}"
 ./vendor/wp-cli/wp-cli/bin/wp post delete 1 --force
