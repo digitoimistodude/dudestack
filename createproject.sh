@@ -629,6 +629,16 @@ echo "${yellow}Activating necessary plugins, mainly for theme development...:${t
 ./wp-cli/wp plugin activate wordpress-seo
 chmod 777 "$HOME/Projects/$PROJECTNAME/content"
 ./wp-cli/wp plugin activate ewww-image-optimizer
+echo "${yellow}Set up .htaccess for pretty urls...:${txtreset}"
+echo"<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>" > .htaccess
+chmod 777 .htaccess
 echo "${yellow}Setting uploads permissions...:${txtreset}"
 chmod -Rv 777 "$HOME/Projects/$PROJECTNAME/content/uploads"
 echo "${boldgreen}All done! Start coding at http://${PROJECTNAME}.dev! Remember to make a repo on Bitbucket, eventually.${txtreset}"
