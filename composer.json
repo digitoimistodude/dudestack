@@ -57,7 +57,7 @@
     "wordpress": "4.0",
     "fancyguy/webroot-installer": "1.1.0",
     "composer/installers": "v1.0.6",
-    "vlucas/phpdotenv": "~1.0.5",
+    "vlucas/phpdotenv": "~1.0.6",
     "wpackagist/advanced-custom-fields":"*",
     "wpackagist-plugin/akismet":"*",
     "wpackagist-plugin/wordpress-seo":"*",
