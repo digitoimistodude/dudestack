@@ -253,7 +253,6 @@ echo "{
     \"gulp-header\": \"1.1.1\",
     \"normalize-css\": \"2.3.1\",
     \"gulp-pixrem\": \"^0.1.1\",
-    \"gulp-jsvalidate\": \"^1.0.0\",
     \"require-dir\": \"^0.1.0\",
     \"psi\": \"^0.1.2\"
   },
@@ -286,7 +285,6 @@ var concat      = require('gulp-concat');
 var util        = require('gulp-util');
 var header      = require('gulp-header');
 var pixrem      = require('gulp-pixrem');
-var jsValidate  = require('gulp-jsvalidate');
 var pagespeed   = require('psi');
 
 /* 
@@ -443,7 +441,6 @@ gulp.task('js', function() {
           themeDir + '/js/src/trunk.js',
           themeDir + '/js/src/scripts.js'
         ])
-        .pipe(jsValidate())
         .pipe(concat('all.js'))
         .pipe(uglify({preserveComments: false, compress: true, mangle: true}).on('error',function(e){console.log('\x07',e.message);return this.end();}))
         .pipe(header(banner, {pkg: pkg, currentDate: currentDate}))
