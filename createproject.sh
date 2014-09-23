@@ -254,7 +254,8 @@ echo "{
     \"normalize-css\": \"2.3.1\",
     \"gulp-pixrem\": \"^0.1.1\",
     \"gulp-jsvalidate\": \"^1.0.0\",
-    \"require-dir\": \"^0.1.0\"
+    \"require-dir\": \"^0.1.0\",
+    \"psi\": \"^0.1.2\"
   },
   \"dependencies\": {
     \"backbone\": \"~1.1.2\",
