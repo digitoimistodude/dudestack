@@ -630,7 +630,7 @@ echo "${yellow}Activating necessary plugins, mainly for theme development...:${t
 chmod 777 "$HOME/Projects/$PROJECTNAME/content"
 ./wp-cli/wp plugin activate ewww-image-optimizer
 echo "${yellow}Set up .htaccess for pretty urls...:${txtreset}"
-echo"<IfModule mod_rewrite.c>
+echo "<IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
 RewriteRule ^index\.php$ - [L]
