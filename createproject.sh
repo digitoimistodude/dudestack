@@ -637,7 +637,18 @@ RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
-</IfModule>" > .htaccess
+</IfModule>
+
+AddType font/ttf .ttf
+AddType font/eot .eot
+AddType font/otf .otf
+AddType font/woff .woff
+
+<FilesMatch "\.(ttf|otf|eot|woff)$">
+    <IfModule mod_headers.c>
+        Header set Access-Control-Allow-Origin "*"
+    </IfModule>
+</FilesMatch>" > .htaccess
 chmod 777 .htaccess
 echo "${yellow}Setting uploads permissions...:${txtreset}"
 chmod -Rv 777 "$HOME/Projects/$PROJECTNAME/content/uploads"
