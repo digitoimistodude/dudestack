@@ -68,6 +68,7 @@ To use, please edit all the caps written information in the file (don't touch va
  - YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE
  - YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE
  - YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE
+ - YOUR_BITBUCKET_USERNAME_HERE
 
 You also will need to edit define('WPLANG', 'fi'); unless you want to use finnish language.
 

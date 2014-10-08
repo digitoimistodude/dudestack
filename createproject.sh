@@ -629,6 +629,16 @@ echo "${yellow}Activating necessary plugins, mainly for theme development...:${t
 ./wp-cli/wp plugin activate wordpress-seo
 chmod 777 "$HOME/Projects/$PROJECTNAME/content"
 ./wp-cli/wp plugin activate ewww-image-optimizer
+
+## You can set up your users here - if you want, uncomment next lines
+#####################################################################
+
+#echo "${yellow}Setting up users...:${txtreset}"
+#./wp-cli/wp user update admin --display_name="Your Company Ltd"
+#./wp-cli/wp user update admin --first_name="Your Company Ltd"
+#./wp-cli/wp user create user1 user1@yourcompanyltd.com --role=administrator --user_pass=somepass --first_name=John --last_name=Doe --display_name=John
+#./wp-cli/wp user create user2 user2@yourcompanyltd.com --role=administrator --user_pass=somepass --first_name=Marilyn --last_name=Manson --display_name=Marilyn
+
 echo "${yellow}Set up .htaccess for pretty urls...:${txtreset}"
 echo "<IfModule mod_rewrite.c>
 RewriteEngine On
@@ -644,7 +654,7 @@ AddType font/eot .eot
 AddType font/otf .otf
 AddType font/woff .woff
 
-<FilesMatch "\.(ttf|otf|eot|woff)$">
+<FilesMatch \"\.(ttf|otf|eot|woff)$\">
     <IfModule mod_headers.c>
         Header set Access-Control-Allow-Origin "*"
     </IfModule>
@@ -688,5 +698,9 @@ echo "{
 
 echo "${yellow}Installing local node.js packages (may take a while)${txtreset}"
 npm install
-
+rm "$HOME/Projects/$PROJECTNAME/createproject.js"
+echo "${yellow}Initializing bitbucket repo...${txtreset}"
+cd "$HOME/Projects/$PROJECTNAME"
+git init
+git remote add origin git@bitbucket.org:YOUR_BITBUCKET_USERNAME_HERE/$PROJECTNAME.git
 echo "${boldgreen}All done! Start coding at http://${PROJECTNAME}.dev! Remember to make a repo on Bitbucket, eventually.${txtreset}"
