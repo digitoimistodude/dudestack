@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "387abb50704e8cef108458d6997937f7",
+    "hash": "2f628943ffd7688588fe214a59c928d5",
     "packages": [
         {
             "name": "composer/installers",
@@ -217,15 +217,15 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/2.0.1"
+                "reference": "tags/2.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/ewww-image-optimizer.2.0.1.zip",
+                "url": "http://downloads.wordpress.org/plugin/ewww-image-optimizer.2.0.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -240,15 +240,15 @@
         },
         {
             "name": "wpackagist-plugin/google-analytics-dashboard-for-wp",
-            "version": "4.3.3",
+            "version": "4.3.4",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/google-analytics-dashboard-for-wp/",
-                "reference": "tags/4.3.3"
+                "reference": "tags/4.3.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.4.3.3.zip",
+                "url": "http://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.4.3.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -309,15 +309,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "1.6.1",
+            "version": "1.6.2",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/1.6.1"
+                "reference": "tags/1.6.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.6.1.zip",
+                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.6.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -351,21 +351,13 @@
             "homepage": "http://wordpress.org/plugins/advanced-custom-fields/"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": [],
     "prefer-stable": false,
     "platform": {
         "php": ">=5.3.2"
     },
-    "platform-dev": [
-
-    ]
+    "platform-dev": []
 }
