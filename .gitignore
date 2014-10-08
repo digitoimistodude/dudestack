@@ -24,6 +24,7 @@ config/deploy/
 *.yml
 *.codekit
 createproject.todo
+project.todo
 content/w3-total-cache-config.php
 content/w3-total-cache-config-preview.php
 content/w3tc/objectcache/*
