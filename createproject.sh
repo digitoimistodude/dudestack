@@ -627,6 +627,7 @@ echo "${yellow}Removing default WordPress posts...:${txtreset}"
 echo "${yellow}Activating necessary plugins, mainly for theme development...:${txtreset}"
 ./wp-cli/wp plugin activate advanced-custom-fields
 ./wp-cli/wp plugin activate wordpress-seo
+./wp-cli/wp plugin activate wp-last-login
 chmod 777 "$HOME/Projects/$PROJECTNAME/content"
 ./wp-cli/wp plugin activate ewww-image-optimizer
 

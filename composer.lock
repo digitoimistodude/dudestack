@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2f628943ffd7688588fe214a59c928d5",
+    "hash": "f84e12c7a84a2b1ca8742658124b8797",
     "packages": [
         {
             "name": "composer/installers",
@@ -285,6 +285,29 @@
             "homepage": "http://wordpress.org/plugins/jetpack/"
         },
         {
+            "name": "wpackagist-plugin/stream",
+            "version": "2.0.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/stream/",
+                "reference": "tags/2.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/stream.2.0.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/stream": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/stream/"
+        },
+        {
             "name": "wpackagist-plugin/w3-total-cache",
             "version": "0.9.4",
             "source": {
@@ -309,15 +332,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "1.6.2",
+            "version": "1.6.3",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/1.6.2"
+                "reference": "tags/1.6.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.6.2.zip",
+                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.6.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -329,6 +352,29 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/wordpress-seo/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-last-login",
+            "version": "1.3.0",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/wp-last-login/",
+                "reference": "tags/1.3.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/wp-last-login.1.3.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/wp-last-login": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/wp-last-login/"
         },
         {
             "name": "wpackagist/advanced-custom-fields",
