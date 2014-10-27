@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f84e12c7a84a2b1ca8742658124b8797",
+    "hash": "80b725a89b70872f4305cb9eadb4f2fc",
     "packages": [
         {
             "name": "composer/installers",
@@ -134,25 +134,30 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "1.0.6",
+            "version": "v1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "2821c024b4c14c7e6d1ff99e063ae9532620beb2"
+                "reference": "56c252d48dce336da97926591aed71805203815b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/2821c024b4c14c7e6d1ff99e063ae9532620beb2",
-                "reference": "2821c024b4c14c7e6d1ff99e063ae9532620beb2",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/56c252d48dce336da97926591aed71805203815b",
+                "reference": "56c252d48dce336da97926591aed71805203815b",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
             "require-dev": {
-                "phpunit/phpunit": "*"
+                "phpunit/phpunit": "~4.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Dotenv": "src/"
@@ -176,7 +181,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2014-01-31 16:18:39"
+            "time": "2014-10-16 14:50:21"
         },
         {
             "name": "wordpress",
@@ -214,29 +219,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/akismet/"
-        },
-        {
-            "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "2.0.2",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/2.0.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/ewww-image-optimizer.2.0.2.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "replace": {
-                "wpackagist/ewww-image-optimizer": "self.version"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/ewww-image-optimizer/"
         },
         {
             "name": "wpackagist-plugin/google-analytics-dashboard-for-wp",
