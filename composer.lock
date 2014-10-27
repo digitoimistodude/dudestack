@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "80b725a89b70872f4305cb9eadb4f2fc",
+    "hash": "06f1a10fc6d368cefb2f9f94895e471c",
     "packages": [
         {
             "name": "composer/installers",
@@ -196,98 +196,6 @@
                 "fancyguy/webroot-installer": "1.1.0"
             },
             "type": "webroot"
-        },
-        {
-            "name": "wpackagist-plugin/akismet",
-            "version": "3.0.2",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/akismet/",
-                "reference": "tags/3.0.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/akismet.3.0.2.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "replace": {
-                "wpackagist/akismet": "self.version"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/akismet/"
-        },
-        {
-            "name": "wpackagist-plugin/google-analytics-dashboard-for-wp",
-            "version": "4.3.4",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/google-analytics-dashboard-for-wp/",
-                "reference": "tags/4.3.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.4.3.4.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "replace": {
-                "wpackagist/google-analytics-dashboard-for-wp": "self.version"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/google-analytics-dashboard-for-wp/"
-        },
-        {
-            "name": "wpackagist-plugin/jetpack",
-            "version": "3.1.1",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/3.1.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/jetpack.3.1.1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "replace": {
-                "wpackagist/jetpack": "self.version"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/jetpack/"
-        },
-        {
-            "name": "wpackagist-plugin/stream",
-            "version": "2.0.1",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/stream/",
-                "reference": "tags/2.0.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/stream.2.0.1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "replace": {
-                "wpackagist/stream": "self.version"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/stream/"
         },
         {
             "name": "wpackagist-plugin/w3-total-cache",

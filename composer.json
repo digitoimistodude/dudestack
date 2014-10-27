@@ -59,13 +59,9 @@
     "composer/installers": "v1.0.12",
     "vlucas/phpdotenv": "~1.0.6",
     "wpackagist/advanced-custom-fields":"*",
-    "wpackagist-plugin/akismet":"*",
     "wpackagist-plugin/wordpress-seo":"*",
     "wpackagist-plugin/w3-total-cache":"*",
-    "wpackagist-plugin/google-analytics-dashboard-for-wp":"*",
-    "wpackagist-plugin/jetpack":"~3.1.1",
-    "wpackagist-plugin/wp-last-login":"*",
-    "wpackagist-plugin/stream":"*"
+    "wpackagist-plugin/wp-last-login":"*"
   },
   "extra": {
     "installer-paths": {
