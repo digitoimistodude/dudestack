@@ -58,6 +58,12 @@
     "fancyguy/webroot-installer": "1.1.0",
     "composer/installers": "v1.0.12",
     "vlucas/phpdotenv": "~1.0.6",
+
+        "phpunit/phpunit": "3.7.*",
+        "mockery/mockery": "dev-master",
+        "guzzlehttp/guzzle": "~4.0",
+        "facebook/php-sdk-v4": "*",
+
     "wpackagist/advanced-custom-fields":"*",
     "wpackagist-plugin/wordpress-seo":"*",
     "wpackagist-plugin/wp-last-login":"*"
