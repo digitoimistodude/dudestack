@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "65eeb89c7603fdd75481a1eec93baadd",
+    "hash": "e97b5669a1c9766385bafe0c212cc76a",
     "packages": [
         {
             "name": "composer/installers",
@@ -92,16 +92,16 @@
         },
         {
             "name": "facebook/php-sdk-v4",
-            "version": "4.0.11",
+            "version": "4.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facebook/facebook-php-sdk-v4.git",
-                "reference": "e2dc662c4ab4da680434b6b777d56461a9bd2563"
+                "reference": "0683838b6966446b2cbef841f01f1d447ae7a5f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facebook/facebook-php-sdk-v4/zipball/e2dc662c4ab4da680434b6b777d56461a9bd2563",
-                "reference": "e2dc662c4ab4da680434b6b777d56461a9bd2563",
+                "url": "https://api.github.com/repos/facebook/facebook-php-sdk-v4/zipball/0683838b6966446b2cbef841f01f1d447ae7a5f9",
+                "reference": "0683838b6966446b2cbef841f01f1d447ae7a5f9",
                 "shasum": ""
             },
             "require": {
@@ -137,7 +137,7 @@
                 "facebook",
                 "sdk"
             ],
-            "time": "2014-08-25 18:58:37"
+            "time": "2014-10-30 23:02:36"
         },
         {
             "name": "fancyguy/webroot-installer",
@@ -305,12 +305,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/padraic/mockery.git",
-                "reference": "8e567de2249a8f7eb8051a855b9d0a6472d38c8e"
+                "reference": "83fd9101183547a3a8cd68c155a5a6f63e7baefb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/padraic/mockery/zipball/8e567de2249a8f7eb8051a855b9d0a6472d38c8e",
-                "reference": "8e567de2249a8f7eb8051a855b9d0a6472d38c8e",
+                "url": "https://api.github.com/repos/padraic/mockery/zipball/83fd9101183547a3a8cd68c155a5a6f63e7baefb",
+                "reference": "83fd9101183547a3a8cd68c155a5a6f63e7baefb",
                 "shasum": ""
             },
             "require": {
@@ -363,7 +363,7 @@
                 "test double",
                 "testing"
             ],
-            "time": "2014-10-16 09:15:15"
+            "time": "2014-10-31 12:40:15"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -888,6 +888,29 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/wp-last-login/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-nested-pages",
+            "version": "1.0",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/wp-nested-pages/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/wp-nested-pages.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/wp-nested-pages": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/wp-nested-pages/"
         },
         {
             "name": "wpackagist/advanced-custom-fields",
