@@ -243,7 +243,7 @@ echo "{
     \"gulp-imagemin\": \"^0.6.2\",
     \"gulp-notify\": \"^1.4.2\",
     \"gulp-ruby-sass\": \"^0.7.1\",
-    \"gulp-compass\": \"^1.2.0\",
+    \"gulp-sass\": \"^1.2.2\",
     \"gulp-util\": \"^3.0.0\",
     \"gulp-minify-css\": \"0.3.7\",
     \"gulp-autoprefixer\": \"0.0.8\",
