@@ -628,6 +628,7 @@ echo "${yellow}Activating necessary plugins, mainly for theme development...:${t
 ./wp-cli/wp plugin activate advanced-custom-fields
 ./wp-cli/wp plugin activate wordpress-seo
 ./wp-cli/wp plugin activate wp-last-login
+./wp-cli/wp plugin activate wp-nested-pages
 chmod 777 "$HOME/Projects/$PROJECTNAME/content"
 ./wp-cli/wp plugin activate ewww-image-optimizer
 
