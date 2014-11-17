@@ -53,16 +53,13 @@
     }
   ],
   "require": {
-    "php": ">=5.4.0",
+    "php": ">=5.3.10",
     "wordpress": "4.0",
     "fancyguy/webroot-installer": "1.1.0",
     "composer/installers": "v1.0.12",
     "vlucas/phpdotenv": "~1.0.6",
 
-        "phpunit/phpunit": "3.7.*",
-        "mockery/mockery": "dev-master",
-        "guzzlehttp/guzzle": "~4.0",
-        "facebook/php-sdk-v4": "*",
+        "facebook/php-sdk": "*",
 
     "wpackagist/advanced-custom-fields":"*",
     "wpackagist-plugin/wordpress-seo":"*",
