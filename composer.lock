@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "209e72a7e39f16667c19ea308a69dfe4",
+    "hash": "ad37f00a5c0c931850b8b66c29275247",
     "packages": [
         {
             "name": "composer/installers",
@@ -92,16 +92,16 @@
         },
         {
             "name": "facebook/php-sdk",
-            "version": "v3.2.3",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facebook/facebook-php-sdk.git",
-                "reference": "6714042fa2f5979d4c64c7d11fb4bcab16bdf6cb"
+                "reference": "3388ec541761b93651614b48766608c22daad981"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facebook/facebook-php-sdk/zipball/6714042fa2f5979d4c64c7d11fb4bcab16bdf6cb",
-                "reference": "6714042fa2f5979d4c64c7d11fb4bcab16bdf6cb",
+                "url": "https://api.github.com/repos/facebook/facebook-php-sdk/zipball/3388ec541761b93651614b48766608c22daad981",
+                "reference": "3388ec541761b93651614b48766608c22daad981",
                 "shasum": ""
             },
             "require": {
@@ -134,7 +134,7 @@
                 "facebook",
                 "sdk"
             ],
-            "time": "2013-11-19 23:11:14"
+            "time": "2014-06-19 19:18:38"
         },
         {
             "name": "fancyguy/webroot-installer",
@@ -245,15 +245,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "1.6.3",
+            "version": "1.7",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/1.6.3"
+                "reference": "tags/1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.6.3.zip",
+                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.7.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -336,7 +336,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "facebook/php-sdk": 20
+    },
     "prefer-stable": false,
     "platform": {
         "php": ">=5.3.10"

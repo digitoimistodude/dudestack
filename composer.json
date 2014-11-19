@@ -59,7 +59,7 @@
     "composer/installers": "v1.0.12",
     "vlucas/phpdotenv": "~1.0.6",
 
-        "facebook/php-sdk": "*",
+        "facebook/php-sdk": "dev-master",
 
     "wpackagist/advanced-custom-fields":"*",
     "wpackagist-plugin/wordpress-seo":"*",
