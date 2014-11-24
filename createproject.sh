@@ -700,7 +700,7 @@ echo "{
 
 echo "${yellow}Installing local node.js packages (may take a while)${txtreset}"
 npm install
-rm "$HOME/Projects/$PROJECTNAME/createproject.js"
+rm "$HOME/Projects/$PROJECTNAME/createproject.sh"
 echo "${yellow}Initializing bitbucket repo...${txtreset}"
 cd "$HOME/Projects/$PROJECTNAME"
 git init
