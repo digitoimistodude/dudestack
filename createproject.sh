@@ -89,7 +89,7 @@ set :tmp_dir, \"/YOUR_STAGING_SERVER_HOME_PATH_HERE/tmp\"
 SSHKit.config.command_map[:composer] = \"PATH_TO_STAGING_BIN_COMPOSER\"
 set :deploy_via, :remote_cache
 set :use_sudo, false
-set :keep_releases, 3
+set :keep_releases, 2
 
 namespace :deploy do
 
@@ -143,7 +143,7 @@ set :ssh_options, {
 set :deploy_to, \"/home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/deploy/\"
 set :deploy_via, :remote_cache
 set :use_sudo, false
-set :keep_releases, 3
+set :keep_releases, 2
 set :tmp_dir, \"/home/#{fetch(:application)}/tmp\"
 SSHKit.config.command_map[:composer] = \"/home/#{fetch(:application)}/bin/composer\"
 
