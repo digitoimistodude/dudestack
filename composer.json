@@ -64,7 +64,10 @@
     "wpackagist/advanced-custom-fields":"*",
     "wpackagist-plugin/wordpress-seo":"*",
     "wpackagist-plugin/wp-last-login":"*",
-    "wpackagist-plugin/wp-nested-pages":"*"
+    "wpackagist-plugin/wp-nested-pages":"*",
+    "wpackagist-plugin/wp-html-compression":"*",
+    "wpackagist-plugin/wp-super-cache":"*"
+
   },
   "extra": {
     "installer-paths": {

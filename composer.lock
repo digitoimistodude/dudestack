@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2e4efcfbed38300c339e25a965bc4c9f",
+    "hash": "c8ed2ad78920287c7bea73c8e62ddffe",
     "packages": [
         {
             "name": "composer/installers",
@@ -245,15 +245,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "1.7",
+            "version": "1.7.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/1.7"
+                "reference": "tags/1.7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.7.zip",
+                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.7.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -265,6 +265,29 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/wordpress-seo/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-html-compression",
+            "version": "0.5.8",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/wp-html-compression/",
+                "reference": "tags/0.5.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/wp-html-compression.0.5.8.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/wp-html-compression": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/wp-html-compression/"
         },
         {
             "name": "wpackagist-plugin/wp-last-login",
@@ -291,15 +314,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-nested-pages",
-            "version": "1.1.5",
+            "version": "1.1.6",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wp-nested-pages/",
-                "reference": "tags/1.1.5"
+                "reference": "tags/1.1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wp-nested-pages.1.1.5.zip",
+                "url": "http://downloads.wordpress.org/plugin/wp-nested-pages.1.1.6.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -311,6 +334,29 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/wp-nested-pages/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-super-cache",
+            "version": "1.4.2",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/wp-super-cache/",
+                "reference": "tags/1.4.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/wp-super-cache.1.4.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/wp-super-cache": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/wp-super-cache/"
         },
         {
             "name": "wpackagist/advanced-custom-fields",
