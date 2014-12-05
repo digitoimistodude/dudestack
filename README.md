@@ -16,10 +16,10 @@ At best this wpstack saves you hours when starting a new project.
  - Automatic MySQL-database generation
  - Cleaning default WordPress stuff with wp-cli
  - Gulp template with various magical gulp pieces and [BrowserSync](http://www.browsersync.io/)
- - [Compass](http://compass-style.org) with [gulp-ruby-sass](https://github.com/sindresorhus/gulp-ruby-sass)
- - [Capistrano 3](http://capistranorb.com/) deployment templates
+ - [Compass](http://compass-style.org) with [libsass (gulp-sass)](https://github.com/dlmanning/gulp-sass)
+ - [Capistrano 3](http://capistranorb.com/) deployment templates bundled in createproject.sh
  - [Composer](https://getcomposer.org/) to take care of WordPress installation and plugin dependencies and updates
- - dotenv-Environments for development, staging and production
+ - [Dotenv](https://github.com/vlucas/phpdotenv)-environments for development, staging and production
 
 ## How it's different, why should I use this?
 
