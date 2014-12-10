@@ -242,7 +242,6 @@ echo "{
     \"gulp-changed\": \"^0.4.1\",
     \"gulp-imagemin\": \"^0.6.2\",
     \"gulp-notify\": \"^1.4.2\",
-    \"gulp-ruby-sass\": \"^0.7.1\",
     \"gulp-sass\": \"^1.2.2\",
     \"gulp-util\": \"^3.0.0\",
     \"gulp-minify-css\": \"0.3.7\",
@@ -273,7 +272,7 @@ REQUIRED STUFF
 var changed     = require('gulp-changed');
 var gulp        = require('gulp');
 var imagemin    = require('gulp-imagemin');
-var sass        = require('gulp-ruby-sass');
+var sass        = require('gulp-sass');
 var browserSync = require('browser-sync');
 var reload      = browserSync.reload;
 var notify      = require('gulp-notify');
