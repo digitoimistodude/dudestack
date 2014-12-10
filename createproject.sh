@@ -253,8 +253,7 @@ echo "{
     \"normalize-css\": \"2.3.1\",
     \"gulp-pixrem\": \"^0.1.1\",
     \"require-dir\": \"^0.1.0\",
-    \"psi\": \"^0.1.2\",
-    \"gulp-watch-network\": \"0.0.3\"
+    \"psi\": \"^0.1.2\"
   },
   \"dependencies\": {
     \"backbone\": \"~1.1.2\",
