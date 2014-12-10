@@ -237,8 +237,8 @@ echo "{
   \"description\": \"$PROJECTNAME powered by wpstack-rolle + gulp\",
   \"author\": \"Digitoimisto Dude Oy (moro@dude.fi)\",
   \"devDependencies\": {
-    \"browser-sync\": \"~0.8.2\",
-    \"gulp\": \"^3.8.0\",
+    \"browser-sync\": \"^1.7.2\",
+    \"gulp\": \"^3.8.10\",
     \"gulp-changed\": \"^0.4.1\",
     \"gulp-imagemin\": \"^0.6.2\",
     \"gulp-notify\": \"^1.4.2\",
