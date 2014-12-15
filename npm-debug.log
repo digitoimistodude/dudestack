@@ -1,0 +1,1860 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'update' ]
+2 info using npm@1.4.14
+3 info using node@v0.10.29
+4 verbose url raw gulp-clean
+5 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-clean' ]
+6 verbose url resolved https://registry.npmjs.org/gulp-clean
+7 info trying registry request attempt 1 at 12:02:14
+8 http GET https://registry.npmjs.org/gulp-clean
+9 verbose url raw grunt-cli
+10 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-cli' ]
+11 verbose url resolved https://registry.npmjs.org/grunt-cli
+12 info trying registry request attempt 1 at 12:02:14
+13 http GET https://registry.npmjs.org/grunt-cli
+14 verbose url raw bower
+15 verbose url resolving [ 'https://registry.npmjs.org/', './bower' ]
+16 verbose url resolved https://registry.npmjs.org/bower
+17 info trying registry request attempt 1 at 12:02:14
+18 http GET https://registry.npmjs.org/bower
+19 verbose url raw gulp-livereload
+20 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-livereload' ]
+21 verbose url resolved https://registry.npmjs.org/gulp-livereload
+22 info trying registry request attempt 1 at 12:02:14
+23 http GET https://registry.npmjs.org/gulp-livereload
+24 verbose url raw gulp-rimraf
+25 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-rimraf' ]
+26 verbose url resolved https://registry.npmjs.org/gulp-rimraf
+27 info trying registry request attempt 1 at 12:02:14
+28 http GET https://registry.npmjs.org/gulp-rimraf
+29 verbose url raw marked
+30 verbose url resolving [ 'https://registry.npmjs.org/', './marked' ]
+31 verbose url resolved https://registry.npmjs.org/marked
+32 info trying registry request attempt 1 at 12:02:14
+33 http GET https://registry.npmjs.org/marked
+34 verbose url raw tiny-lr
+35 verbose url resolving [ 'https://registry.npmjs.org/', './tiny-lr' ]
+36 verbose url resolved https://registry.npmjs.org/tiny-lr
+37 info trying registry request attempt 1 at 12:02:14
+38 http GET https://registry.npmjs.org/tiny-lr
+39 verbose url raw uncss
+40 verbose url resolving [ 'https://registry.npmjs.org/', './uncss' ]
+41 verbose url resolved https://registry.npmjs.org/uncss
+42 info trying registry request attempt 1 at 12:02:14
+43 http GET https://registry.npmjs.org/uncss
+44 verbose url raw pngquant
+45 verbose url resolving [ 'https://registry.npmjs.org/', './pngquant' ]
+46 verbose url resolved https://registry.npmjs.org/pngquant
+47 info trying registry request attempt 1 at 12:02:14
+48 http GET https://registry.npmjs.org/pngquant
+49 verbose url raw gulp-rename
+50 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-rename' ]
+51 verbose url resolved https://registry.npmjs.org/gulp-rename
+52 info trying registry request attempt 1 at 12:02:14
+53 verbose etag "8TTXOUQ9QM0H301EGVA9RS7YD"
+54 http GET https://registry.npmjs.org/gulp-rename
+55 verbose url raw gulp
+56 verbose url resolving [ 'https://registry.npmjs.org/', './gulp' ]
+57 verbose url resolved https://registry.npmjs.org/gulp
+58 info trying registry request attempt 1 at 12:02:14
+59 verbose etag "4DHEVFA8S8YQWMB2TOO4FFVP6"
+60 http GET https://registry.npmjs.org/gulp
+61 http 200 https://registry.npmjs.org/gulp-clean
+62 silly registry.get cb [ 200,
+62 silly registry.get   { date: 'Thu, 11 Dec 2014 10:02:14 GMT',
+62 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+62 silly registry.get     etag: '"BE3X793YRQV8771AQQXOGL9DG"',
+62 silly registry.get     'content-type': 'application/json',
+62 silly registry.get     'cache-control': 'max-age=60',
+62 silly registry.get     'content-length': '13989',
+62 silly registry.get     'accept-ranges': 'bytes',
+62 silly registry.get     via: '1.1 varnish',
+62 silly registry.get     age: '16',
+62 silly registry.get     'x-served-by': 'cache-fra1229-FRA',
+62 silly registry.get     'x-cache': 'HIT',
+62 silly registry.get     'x-cache-hits': '1',
+62 silly registry.get     'x-timer': 'S1418292134.661369,VS0,VE0',
+62 silly registry.get     vary: 'Accept',
+62 silly registry.get     'keep-alive': 'timeout=10, max=50',
+62 silly registry.get     connection: 'Keep-Alive' } ]
+63 http 200 https://registry.npmjs.org/grunt-cli
+64 silly registry.get cb [ 200,
+64 silly registry.get   { date: 'Thu, 11 Dec 2014 10:02:14 GMT',
+64 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+64 silly registry.get     etag: '"144EV0P9Q8KYOW49ORWJFI4MU"',
+64 silly registry.get     'content-type': 'application/json',
+64 silly registry.get     'cache-control': 'max-age=60',
+64 silly registry.get     'content-length': '20022',
+64 silly registry.get     'accept-ranges': 'bytes',
+64 silly registry.get     via: '1.1 varnish',
+64 silly registry.get     age: '54',
+64 silly registry.get     'x-served-by': 'cache-fra1239-FRA',
+64 silly registry.get     'x-cache': 'HIT',
+64 silly registry.get     'x-cache-hits': '1',
+64 silly registry.get     'x-timer': 'S1418292134.662039,VS0,VE0',
+64 silly registry.get     vary: 'Accept',
+64 silly registry.get     'keep-alive': 'timeout=10, max=50',
+64 silly registry.get     connection: 'Keep-Alive' } ]
+65 verbose url raw nopt
+66 verbose url resolving [ 'https://registry.npmjs.org/', './nopt' ]
+67 verbose url resolved https://registry.npmjs.org/nopt
+68 info trying registry request attempt 1 at 12:02:14
+69 verbose etag "BQR8XT6GIEPHVBGXQTRY2PCHJ"
+70 http GET https://registry.npmjs.org/nopt
+71 verbose url raw findup-sync
+72 verbose url resolving [ 'https://registry.npmjs.org/', './findup-sync' ]
+73 verbose url resolved https://registry.npmjs.org/findup-sync
+74 info trying registry request attempt 1 at 12:02:14
+75 verbose etag "4LEKH44R5GDQN14Q3HPISN3QW"
+76 http GET https://registry.npmjs.org/findup-sync
+77 verbose url raw resolve
+78 verbose url resolving [ 'https://registry.npmjs.org/', './resolve' ]
+79 verbose url resolved https://registry.npmjs.org/resolve
+80 info trying registry request attempt 1 at 12:02:14
+81 verbose etag "2G81YKHNNMXXEUBHFDHVXRJBW"
+82 http GET https://registry.npmjs.org/resolve
+83 http 200 https://registry.npmjs.org/gulp-livereload
+84 silly registry.get cb [ 200,
+84 silly registry.get   { date: 'Thu, 11 Dec 2014 10:02:14 GMT',
+84 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+84 silly registry.get     etag: '"APF2LNCGEQ2JQI7NHE7FM477R"',
+84 silly registry.get     'content-type': 'application/json',
+84 silly registry.get     'cache-control': 'max-age=60',
+84 silly registry.get     'content-length': '21397',
+84 silly registry.get     'accept-ranges': 'bytes',
+84 silly registry.get     via: '1.1 varnish',
+84 silly registry.get     age: '16',
+84 silly registry.get     'x-served-by': 'cache-fra1248-FRA',
+84 silly registry.get     'x-cache': 'HIT',
+84 silly registry.get     'x-cache-hits': '1',
+84 silly registry.get     'x-timer': 'S1418292134.682860,VS0,VE0',
+84 silly registry.get     vary: 'Accept',
+84 silly registry.get     'keep-alive': 'timeout=10, max=50',
+84 silly registry.get     connection: 'Keep-Alive' } ]
+85 http 200 https://registry.npmjs.org/tiny-lr
+86 silly registry.get cb [ 200,
+86 silly registry.get   { date: 'Thu, 11 Dec 2014 10:02:14 GMT',
+86 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+86 silly registry.get     etag: '"SUQ9EFCZXUPP06525DG2QSFL"',
+86 silly registry.get     'content-type': 'application/json',
+86 silly registry.get     'cache-control': 'max-age=60',
+86 silly registry.get     'content-length': '26006',
+86 silly registry.get     'accept-ranges': 'bytes',
+86 silly registry.get     via: '1.1 varnish',
+86 silly registry.get     age: '59',
+86 silly registry.get     'x-served-by': 'cache-fra1239-FRA',
+86 silly registry.get     'x-cache': 'HIT',
+86 silly registry.get     'x-cache-hits': '1',
+86 silly registry.get     'x-timer': 'S1418292134.841789,VS0,VE0',
+86 silly registry.get     vary: 'Accept',
+86 silly registry.get     'keep-alive': 'timeout=10, max=49',
+86 silly registry.get     connection: 'Keep-Alive' } ]
+87 http 200 https://registry.npmjs.org/bower
+88 silly registry.get cb [ 200,
+88 silly registry.get   { date: 'Thu, 11 Dec 2014 10:02:14 GMT',
+88 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+88 silly registry.get     etag: '"DCGZM0J022KAQ04655ONEHMK2"',
+88 silly registry.get     'content-type': 'application/json',
+88 silly registry.get     'cache-control': 'max-age=60',
+88 silly registry.get     'content-length': '105650',
+88 silly registry.get     'accept-ranges': 'bytes',
+88 silly registry.get     via: '1.1 varnish',
+88 silly registry.get     age: '9',
+88 silly registry.get     'x-served-by': 'cache-fra1246-FRA',
+88 silly registry.get     'x-cache': 'HIT',
+88 silly registry.get     'x-cache-hits': '2',
+88 silly registry.get     'x-timer': 'S1418292134.683181,VS0,VE0',
+88 silly registry.get     vary: 'Accept',
+88 silly registry.get     'keep-alive': 'timeout=10, max=50',
+88 silly registry.get     connection: 'Keep-Alive' } ]
+89 http 304 https://registry.npmjs.org/gulp-rename
+90 silly registry.get cb [ 304,
+90 silly registry.get   { date: 'Thu, 11 Dec 2014 10:02:15 GMT',
+90 silly registry.get     server: 'Apache',
+90 silly registry.get     via: '1.1 varnish',
+90 silly registry.get     'last-modified': 'Thu, 11 Dec 2014 10:02:15 GMT',
+90 silly registry.get     'cache-control': 'max-age=60',
+90 silly registry.get     etag: '"8TTXOUQ9QM0H301EGVA9RS7YD"',
+90 silly registry.get     age: '10',
+90 silly registry.get     'x-served-by': 'cache-fra1246-FRA',
+90 silly registry.get     'x-cache': 'HIT',
+90 silly registry.get     'x-cache-hits': '1',
+90 silly registry.get     'x-timer': 'S1418292135.063816,VS0,VE0',
+90 silly registry.get     vary: 'Accept',
+90 silly registry.get     'content-length': '0',
+90 silly registry.get     'keep-alive': 'timeout=10, max=49',
+90 silly registry.get     connection: 'Keep-Alive' } ]
+91 verbose etag gulp-rename from cache
+92 http 200 https://registry.npmjs.org/pngquant
+93 silly registry.get cb [ 200,
+93 silly registry.get   { date: 'Thu, 11 Dec 2014 10:02:15 GMT',
+93 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+93 silly registry.get     etag: '"36ILS7MNGLN0YF1UFXIJ60HNH"',
+93 silly registry.get     'content-type': 'application/json',
+93 silly registry.get     'cache-control': 'max-age=60',
+93 silly registry.get     'content-length': '14771',
+93 silly registry.get     'accept-ranges': 'bytes',
+93 silly registry.get     via: '1.1 varnish',
+93 silly registry.get     age: '0',
+93 silly registry.get     'x-served-by': 'cache-fra1239-FRA',
+93 silly registry.get     'x-cache': 'MISS',
+93 silly registry.get     'x-cache-hits': '0',
+93 silly registry.get     'x-timer': 'S1418292135.019370,VS0,VE423',
+93 silly registry.get     vary: 'Accept',
+93 silly registry.get     'keep-alive': 'timeout=10, max=48',
+93 silly registry.get     connection: 'Keep-Alive' } ]
+94 http 200 https://registry.npmjs.org/gulp-rimraf
+95 silly registry.get cb [ 200,
+95 silly registry.get   { date: 'Thu, 11 Dec 2014 10:02:15 GMT',
+95 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+95 silly registry.get     etag: '"2TUHKK3K4EFR550LJB3ZPPLDH"',
+95 silly registry.get     'content-type': 'application/json',
+95 silly registry.get     'cache-control': 'max-age=60',
+95 silly registry.get     'content-length': '18392',
+95 silly registry.get     'accept-ranges': 'bytes',
+95 silly registry.get     via: '1.1 varnish',
+95 silly registry.get     age: '0',
+95 silly registry.get     'x-served-by': 'cache-fra1245-FRA',
+95 silly registry.get     'x-cache': 'HIT',
+95 silly registry.get     'x-cache-hits': '1',
+95 silly registry.get     'x-timer': 'S1418292134.662773,VS0,VE716',
+95 silly registry.get     vary: 'Accept',
+95 silly registry.get     'keep-alive': 'timeout=10, max=50',
+95 silly registry.get     connection: 'Keep-Alive' } ]
+96 http 304 https://registry.npmjs.org/findup-sync
+97 silly registry.get cb [ 304,
+97 silly registry.get   { date: 'Thu, 11 Dec 2014 10:02:15 GMT',
+97 silly registry.get     server: 'Apache',
+97 silly registry.get     via: '1.1 varnish',
+97 silly registry.get     'last-modified': 'Thu, 11 Dec 2014 10:02:04 GMT',
+97 silly registry.get     'cache-control': 'max-age=60',
+97 silly registry.get     etag: '"4LEKH44R5GDQN14Q3HPISN3QW"',
+97 silly registry.get     age: '42',
+97 silly registry.get     'x-served-by': 'cache-fra1245-FRA',
+97 silly registry.get     'x-cache': 'HIT',
+97 silly registry.get     'x-cache-hits': '2',
+97 silly registry.get     'x-timer': 'S1418292135.542953,VS0,VE0',
+97 silly registry.get     vary: 'Accept',
+97 silly registry.get     'content-length': '0',
+97 silly registry.get     'keep-alive': 'timeout=10, max=49',
+97 silly registry.get     connection: 'Keep-Alive' } ]
+98 verbose etag findup-sync from cache
+99 verbose url raw glob
+100 verbose url resolving [ 'https://registry.npmjs.org/', './glob' ]
+101 verbose url resolved https://registry.npmjs.org/glob
+102 info trying registry request attempt 1 at 12:02:15
+103 verbose etag "DG2PHFB3FZXOOFMHXGNYOC9T9"
+104 http GET https://registry.npmjs.org/glob
+105 http 304 https://registry.npmjs.org/nopt
+106 silly registry.get cb [ 304,
+106 silly registry.get   { date: 'Thu, 11 Dec 2014 10:02:15 GMT',
+106 silly registry.get     server: 'Apache',
+106 silly registry.get     via: '1.1 varnish',
+106 silly registry.get     'last-modified': 'Thu, 11 Dec 2014 10:02:15 GMT',
+106 silly registry.get     'cache-control': 'max-age=60',
+106 silly registry.get     etag: '"BQR8XT6GIEPHVBGXQTRY2PCHJ"',
+106 silly registry.get     age: '7',
+106 silly registry.get     'x-served-by': 'cache-fra1239-FRA',
+106 silly registry.get     'x-cache': 'HIT',
+106 silly registry.get     'x-cache-hits': '1',
+106 silly registry.get     'x-timer': 'S1418292135.542225,VS0,VE0',
+106 silly registry.get     vary: 'Accept',
+106 silly registry.get     'content-length': '0',
+106 silly registry.get     'keep-alive': 'timeout=10, max=47',
+106 silly registry.get     connection: 'Keep-Alive' } ]
+107 verbose etag nopt from cache
+108 verbose url raw lodash
+109 verbose url resolving [ 'https://registry.npmjs.org/', './lodash' ]
+110 verbose url resolved https://registry.npmjs.org/lodash
+111 info trying registry request attempt 1 at 12:02:15
+112 verbose etag "UK16WGOI5PRV0Q90DO2YCFP8"
+113 http GET https://registry.npmjs.org/lodash
+114 http 304 https://registry.npmjs.org/gulp
+115 silly registry.get cb [ 304,
+115 silly registry.get   { date: 'Thu, 11 Dec 2014 10:02:15 GMT',
+115 silly registry.get     server: 'Apache',
+115 silly registry.get     via: '1.1 varnish',
+115 silly registry.get     'last-modified': 'Thu, 11 Dec 2014 10:02:15 GMT',
+115 silly registry.get     'cache-control': 'max-age=60',
+115 silly registry.get     etag: '"4DHEVFA8S8YQWMB2TOO4FFVP6"',
+115 silly registry.get     age: '0',
+115 silly registry.get     'x-served-by': 'cache-fra1246-FRA',
+115 silly registry.get     'x-cache': 'HIT',
+115 silly registry.get     'x-cache-hits': '1',
+115 silly registry.get     'x-timer': 'S1418292135.162882,VS0,VE421',
+115 silly registry.get     vary: 'Accept',
+115 silly registry.get     'content-length': '0',
+115 silly registry.get     'keep-alive': 'timeout=10, max=48',
+115 silly registry.get     connection: 'Keep-Alive' } ]
+116 verbose etag gulp from cache
+117 http 304 https://registry.npmjs.org/resolve
+118 silly registry.get cb [ 304,
+118 silly registry.get   { date: 'Thu, 11 Dec 2014 10:02:15 GMT',
+118 silly registry.get     server: 'Apache',
+118 silly registry.get     via: '1.1 varnish',
+118 silly registry.get     'last-modified': 'Thu, 11 Dec 2014 10:01:30 GMT',
+118 silly registry.get     'cache-control': 'max-age=60',
+118 silly registry.get     etag: '"2G81YKHNNMXXEUBHFDHVXRJBW"',
+118 silly registry.get     age: '55',
+118 silly registry.get     'x-served-by': 'cache-fra1245-FRA',
+118 silly registry.get     'x-cache': 'HIT',
+118 silly registry.get     'x-cache-hits': '3',
+118 silly registry.get     'x-timer': 'S1418292135.622608,VS0,VE0',
+118 silly registry.get     vary: 'Accept',
+118 silly registry.get     'content-length': '0',
+118 silly registry.get     'keep-alive': 'timeout=10, max=48',
+118 silly registry.get     connection: 'Keep-Alive' } ]
+119 verbose etag resolve from cache
+120 http 304 https://registry.npmjs.org/glob
+121 silly registry.get cb [ 304,
+121 silly registry.get   { date: 'Thu, 11 Dec 2014 10:02:15 GMT',
+121 silly registry.get     server: 'Apache',
+121 silly registry.get     via: '1.1 varnish',
+121 silly registry.get     'last-modified': 'Thu, 11 Dec 2014 10:01:36 GMT',
+121 silly registry.get     'cache-control': 'max-age=60',
+121 silly registry.get     etag: '"DG2PHFB3FZXOOFMHXGNYOC9T9"',
+121 silly registry.get     age: '54',
+121 silly registry.get     'x-served-by': 'cache-fra1239-FRA',
+121 silly registry.get     'x-cache': 'HIT',
+121 silly registry.get     'x-cache-hits': '4',
+121 silly registry.get     'x-timer': 'S1418292135.638974,VS0,VE0',
+121 silly registry.get     vary: 'Accept',
+121 silly registry.get     'content-length': '0',
+121 silly registry.get     'keep-alive': 'timeout=10, max=46',
+121 silly registry.get     connection: 'Keep-Alive' } ]
+122 verbose etag glob from cache
+123 http 304 https://registry.npmjs.org/lodash
+124 silly registry.get cb [ 304,
+124 silly registry.get   { date: 'Thu, 11 Dec 2014 10:02:15 GMT',
+124 silly registry.get     server: 'Apache',
+124 silly registry.get     via: '1.1 varnish',
+124 silly registry.get     'last-modified': 'Thu, 11 Dec 2014 10:01:55 GMT',
+124 silly registry.get     'cache-control': 'max-age=60',
+124 silly registry.get     etag: '"UK16WGOI5PRV0Q90DO2YCFP8"',
+124 silly registry.get     age: '35',
+124 silly registry.get     'x-served-by': 'cache-fra1246-FRA',
+124 silly registry.get     'x-cache': 'HIT',
+124 silly registry.get     'x-cache-hits': '3',
+124 silly registry.get     'x-timer': 'S1418292135.665721,VS0,VE0',
+124 silly registry.get     vary: 'Accept',
+124 silly registry.get     'content-length': '0',
+124 silly registry.get     'keep-alive': 'timeout=10, max=47',
+124 silly registry.get     connection: 'Keep-Alive' } ]
+125 verbose etag lodash from cache
+126 http 200 https://registry.npmjs.org/marked
+127 silly registry.get cb [ 200,
+127 silly registry.get   { date: 'Thu, 11 Dec 2014 10:02:15 GMT',
+127 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+127 silly registry.get     etag: '"7PT0774U9X22KE3OSND3PQ1XW"',
+127 silly registry.get     'content-type': 'application/json',
+127 silly registry.get     'cache-control': 'max-age=60',
+127 silly registry.get     'content-length': '44181',
+127 silly registry.get     'accept-ranges': 'bytes',
+127 silly registry.get     via: '1.1 varnish',
+127 silly registry.get     age: '0',
+127 silly registry.get     'x-served-by': 'cache-fra1229-FRA',
+127 silly registry.get     'x-cache': 'HIT',
+127 silly registry.get     'x-cache-hits': '1',
+127 silly registry.get     'x-timer': 'S1418292134.821118,VS0,VE694',
+127 silly registry.get     vary: 'Accept',
+127 silly registry.get     'keep-alive': 'timeout=10, max=49',
+127 silly registry.get     connection: 'Keep-Alive' } ]
+128 http 200 https://registry.npmjs.org/uncss
+129 silly registry.get cb [ 200,
+129 silly registry.get   { date: 'Thu, 11 Dec 2014 10:02:15 GMT',
+129 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+129 silly registry.get     etag: '"663UQ8LTSOBDOBHPFFJX3A4MU"',
+129 silly registry.get     'content-type': 'application/json',
+129 silly registry.get     'cache-control': 'max-age=60',
+129 silly registry.get     'content-length': '55126',
+129 silly registry.get     'accept-ranges': 'bytes',
+129 silly registry.get     via: '1.1 varnish',
+129 silly registry.get     age: '0',
+129 silly registry.get     'x-served-by': 'cache-fra1248-FRA',
+129 silly registry.get     'x-cache': 'HIT',
+129 silly registry.get     'x-cache-hits': '1',
+129 silly registry.get     'x-timer': 'S1418292134.860318,VS0,VE710',
+129 silly registry.get     vary: 'Accept',
+129 silly registry.get     'keep-alive': 'timeout=10, max=49',
+129 silly registry.get     connection: 'Keep-Alive' } ]
+130 info outdated updating [ [ '/Users/rolle', 'gulp-clean', '0.3.0', '0.3.1', '0.3.1', '*' ],
+130 info outdated   [ '/Users/rolle',
+130 info outdated     'gulp-livereload',
+130 info outdated     '2.1.0',
+130 info outdated     '2.1.1',
+130 info outdated     '2.1.1',
+130 info outdated     '*' ],
+130 info outdated   [ '/Users/rolle', 'tiny-lr', '0.0.7', '0.1.4', '0.1.4', '*' ],
+130 info outdated   [ '/Users/rolle', 'bower', '1.3.5', '1.3.12', '1.3.12', '*' ],
+130 info outdated   [ '/Users/rolle', 'pngquant', '0.1.5', '0.4.0', '0.4.0', '*' ],
+130 info outdated   [ '/Users/rolle', 'gulp-rimraf', '0.1.0', '0.1.1', '0.1.1', '*' ],
+130 info outdated   [ '/Users/rolle', 'gulp', '3.8.7', '3.8.10', '3.8.10', '*' ],
+130 info outdated   [ '/Users/rolle/node_modules/grunt-cli',
+130 info outdated     'nopt',
+130 info outdated     '1.0.10',
+130 info outdated     '1.0.10',
+130 info outdated     '3.0.1',
+130 info outdated     '~1.0.10' ],
+130 info outdated   [ '/Users/rolle/node_modules/grunt-cli',
+130 info outdated     'resolve',
+130 info outdated     '0.3.1',
+130 info outdated     '0.3.1',
+130 info outdated     '1.0.0',
+130 info outdated     '~0.3.1' ],
+130 info outdated   [ '/Users/rolle/node_modules/grunt-cli/node_modules/findup-sync',
+130 info outdated     'glob',
+130 info outdated     '3.2.11',
+130 info outdated     '3.2.11',
+130 info outdated     '4.3.1',
+130 info outdated     '~3.2.9' ],
+130 info outdated   [ '/Users/rolle', 'uncss', '0.8.1', '0.10.0', '0.10.0', '*' ] ]
+131 verbose install where,what [ '/Users/rolle', [ 'gulp-clean@0.3.1' ] ]
+132 verbose install where,what [ '/Users/rolle', [ 'gulp-livereload@2.1.1' ] ]
+133 verbose install where,what [ '/Users/rolle', [ 'tiny-lr@0.1.4' ] ]
+134 verbose install where,what [ '/Users/rolle', [ 'bower@1.3.12' ] ]
+135 verbose install where,what [ '/Users/rolle', [ 'pngquant@0.4.0' ] ]
+136 verbose install where,what [ '/Users/rolle', [ 'gulp-rimraf@0.1.1' ] ]
+137 verbose install where,what [ '/Users/rolle', [ 'gulp@3.8.10' ] ]
+138 verbose install where,what [ '/Users/rolle/node_modules/grunt-cli', [ 'nopt@1.0.10' ] ]
+139 verbose install where,what [ '/Users/rolle/node_modules/grunt-cli', [ 'resolve@0.3.1' ] ]
+140 verbose install where,what [ '/Users/rolle/node_modules/grunt-cli/node_modules/findup-sync',
+140 verbose install   [ 'glob@3.2.11' ] ]
+141 verbose install where,what [ '/Users/rolle', [ 'uncss@0.10.0' ] ]
+142 verbose readDependencies using package.json deps
+143 verbose cache add [ 'nopt@1.0.10', null ]
+144 verbose cache add name=undefined spec="nopt@1.0.10" args=["nopt@1.0.10",null]
+145 verbose parsed url { protocol: null,
+145 verbose parsed url   slashes: null,
+145 verbose parsed url   auth: null,
+145 verbose parsed url   host: null,
+145 verbose parsed url   port: null,
+145 verbose parsed url   hostname: null,
+145 verbose parsed url   hash: null,
+145 verbose parsed url   search: null,
+145 verbose parsed url   query: null,
+145 verbose parsed url   pathname: 'nopt@1.0.10',
+145 verbose parsed url   path: 'nopt@1.0.10',
+145 verbose parsed url   href: 'nopt@1.0.10' }
+146 verbose readDependencies using package.json deps
+147 verbose cache add [ 'resolve@0.3.1', null ]
+148 verbose cache add name=undefined spec="resolve@0.3.1" args=["resolve@0.3.1",null]
+149 verbose parsed url { protocol: null,
+149 verbose parsed url   slashes: null,
+149 verbose parsed url   auth: null,
+149 verbose parsed url   host: null,
+149 verbose parsed url   port: null,
+149 verbose parsed url   hostname: null,
+149 verbose parsed url   hash: null,
+149 verbose parsed url   search: null,
+149 verbose parsed url   query: null,
+149 verbose parsed url   pathname: 'resolve@0.3.1',
+149 verbose parsed url   path: 'resolve@0.3.1',
+149 verbose parsed url   href: 'resolve@0.3.1' }
+150 verbose readDependencies using package.json deps
+151 verbose cache add [ 'glob@3.2.11', null ]
+152 verbose cache add name=undefined spec="glob@3.2.11" args=["glob@3.2.11",null]
+153 verbose parsed url { protocol: null,
+153 verbose parsed url   slashes: null,
+153 verbose parsed url   auth: null,
+153 verbose parsed url   host: null,
+153 verbose parsed url   port: null,
+153 verbose parsed url   hostname: null,
+153 verbose parsed url   hash: null,
+153 verbose parsed url   search: null,
+153 verbose parsed url   query: null,
+153 verbose parsed url   pathname: 'glob@3.2.11',
+153 verbose parsed url   path: 'glob@3.2.11',
+153 verbose parsed url   href: 'glob@3.2.11' }
+154 verbose cache add name="nopt" spec="1.0.10" args=["nopt","1.0.10"]
+155 verbose parsed url { protocol: null,
+155 verbose parsed url   slashes: null,
+155 verbose parsed url   auth: null,
+155 verbose parsed url   host: null,
+155 verbose parsed url   port: null,
+155 verbose parsed url   hostname: null,
+155 verbose parsed url   hash: null,
+155 verbose parsed url   search: null,
+155 verbose parsed url   query: null,
+155 verbose parsed url   pathname: '1.0.10',
+155 verbose parsed url   path: '1.0.10',
+155 verbose parsed url   href: '1.0.10' }
+156 verbose addNamed [ 'nopt', '1.0.10' ]
+157 verbose addNamed [ '1.0.10', '1.0.10' ]
+158 verbose cache add name="resolve" spec="0.3.1" args=["resolve","0.3.1"]
+159 verbose parsed url { protocol: null,
+159 verbose parsed url   slashes: null,
+159 verbose parsed url   auth: null,
+159 verbose parsed url   host: null,
+159 verbose parsed url   port: null,
+159 verbose parsed url   hostname: null,
+159 verbose parsed url   hash: null,
+159 verbose parsed url   search: null,
+159 verbose parsed url   query: null,
+159 verbose parsed url   pathname: '0.3.1',
+159 verbose parsed url   path: '0.3.1',
+159 verbose parsed url   href: '0.3.1' }
+160 verbose addNamed [ 'resolve', '0.3.1' ]
+161 verbose addNamed [ '0.3.1', '0.3.1' ]
+162 verbose cache add name="glob" spec="3.2.11" args=["glob","3.2.11"]
+163 verbose parsed url { protocol: null,
+163 verbose parsed url   slashes: null,
+163 verbose parsed url   auth: null,
+163 verbose parsed url   host: null,
+163 verbose parsed url   port: null,
+163 verbose parsed url   hostname: null,
+163 verbose parsed url   hash: null,
+163 verbose parsed url   search: null,
+163 verbose parsed url   query: null,
+163 verbose parsed url   pathname: '3.2.11',
+163 verbose parsed url   path: '3.2.11',
+163 verbose parsed url   href: '3.2.11' }
+164 verbose addNamed [ 'glob', '3.2.11' ]
+165 verbose addNamed [ '3.2.11', '3.2.11' ]
+166 silly lockFile 1be903a1-nopt-1-0-10 nopt@1.0.10
+167 verbose lock nopt@1.0.10 /Users/rolle/.npm/1be903a1-nopt-1-0-10.lock
+168 silly lockFile 95464470-resolve-0-3-1 resolve@0.3.1
+169 verbose lock resolve@0.3.1 /Users/rolle/.npm/95464470-resolve-0-3-1.lock
+170 silly lockFile 3fffafa6-glob-3-2-11 glob@3.2.11
+171 verbose lock glob@3.2.11 /Users/rolle/.npm/3fffafa6-glob-3-2-11.lock
+172 verbose cache add [ 'gulp-clean@0.3.1', null ]
+173 verbose cache add name=undefined spec="gulp-clean@0.3.1" args=["gulp-clean@0.3.1",null]
+174 verbose parsed url { protocol: null,
+174 verbose parsed url   slashes: null,
+174 verbose parsed url   auth: null,
+174 verbose parsed url   host: null,
+174 verbose parsed url   port: null,
+174 verbose parsed url   hostname: null,
+174 verbose parsed url   hash: null,
+174 verbose parsed url   search: null,
+174 verbose parsed url   query: null,
+174 verbose parsed url   pathname: 'gulp-clean@0.3.1',
+174 verbose parsed url   path: 'gulp-clean@0.3.1',
+174 verbose parsed url   href: 'gulp-clean@0.3.1' }
+175 verbose cache add [ 'gulp-livereload@2.1.1', null ]
+176 verbose cache add name=undefined spec="gulp-livereload@2.1.1" args=["gulp-livereload@2.1.1",null]
+177 verbose parsed url { protocol: null,
+177 verbose parsed url   slashes: null,
+177 verbose parsed url   auth: null,
+177 verbose parsed url   host: null,
+177 verbose parsed url   port: null,
+177 verbose parsed url   hostname: null,
+177 verbose parsed url   hash: null,
+177 verbose parsed url   search: null,
+177 verbose parsed url   query: null,
+177 verbose parsed url   pathname: 'gulp-livereload@2.1.1',
+177 verbose parsed url   path: 'gulp-livereload@2.1.1',
+177 verbose parsed url   href: 'gulp-livereload@2.1.1' }
+178 verbose cache add [ 'tiny-lr@0.1.4', null ]
+179 verbose cache add name=undefined spec="tiny-lr@0.1.4" args=["tiny-lr@0.1.4",null]
+180 verbose parsed url { protocol: null,
+180 verbose parsed url   slashes: null,
+180 verbose parsed url   auth: null,
+180 verbose parsed url   host: null,
+180 verbose parsed url   port: null,
+180 verbose parsed url   hostname: null,
+180 verbose parsed url   hash: null,
+180 verbose parsed url   search: null,
+180 verbose parsed url   query: null,
+180 verbose parsed url   pathname: 'tiny-lr@0.1.4',
+180 verbose parsed url   path: 'tiny-lr@0.1.4',
+180 verbose parsed url   href: 'tiny-lr@0.1.4' }
+181 verbose cache add [ 'bower@1.3.12', null ]
+182 verbose cache add name=undefined spec="bower@1.3.12" args=["bower@1.3.12",null]
+183 verbose parsed url { protocol: null,
+183 verbose parsed url   slashes: null,
+183 verbose parsed url   auth: null,
+183 verbose parsed url   host: null,
+183 verbose parsed url   port: null,
+183 verbose parsed url   hostname: null,
+183 verbose parsed url   hash: null,
+183 verbose parsed url   search: null,
+183 verbose parsed url   query: null,
+183 verbose parsed url   pathname: 'bower@1.3.12',
+183 verbose parsed url   path: 'bower@1.3.12',
+183 verbose parsed url   href: 'bower@1.3.12' }
+184 verbose cache add [ 'pngquant@0.4.0', null ]
+185 verbose cache add name=undefined spec="pngquant@0.4.0" args=["pngquant@0.4.0",null]
+186 verbose parsed url { protocol: null,
+186 verbose parsed url   slashes: null,
+186 verbose parsed url   auth: null,
+186 verbose parsed url   host: null,
+186 verbose parsed url   port: null,
+186 verbose parsed url   hostname: null,
+186 verbose parsed url   hash: null,
+186 verbose parsed url   search: null,
+186 verbose parsed url   query: null,
+186 verbose parsed url   pathname: 'pngquant@0.4.0',
+186 verbose parsed url   path: 'pngquant@0.4.0',
+186 verbose parsed url   href: 'pngquant@0.4.0' }
+187 verbose cache add [ 'gulp-rimraf@0.1.1', null ]
+188 verbose cache add name=undefined spec="gulp-rimraf@0.1.1" args=["gulp-rimraf@0.1.1",null]
+189 verbose parsed url { protocol: null,
+189 verbose parsed url   slashes: null,
+189 verbose parsed url   auth: null,
+189 verbose parsed url   host: null,
+189 verbose parsed url   port: null,
+189 verbose parsed url   hostname: null,
+189 verbose parsed url   hash: null,
+189 verbose parsed url   search: null,
+189 verbose parsed url   query: null,
+189 verbose parsed url   pathname: 'gulp-rimraf@0.1.1',
+189 verbose parsed url   path: 'gulp-rimraf@0.1.1',
+189 verbose parsed url   href: 'gulp-rimraf@0.1.1' }
+190 verbose cache add [ 'gulp@3.8.10', null ]
+191 verbose cache add name=undefined spec="gulp@3.8.10" args=["gulp@3.8.10",null]
+192 verbose parsed url { protocol: null,
+192 verbose parsed url   slashes: null,
+192 verbose parsed url   auth: null,
+192 verbose parsed url   host: null,
+192 verbose parsed url   port: null,
+192 verbose parsed url   hostname: null,
+192 verbose parsed url   hash: null,
+192 verbose parsed url   search: null,
+192 verbose parsed url   query: null,
+192 verbose parsed url   pathname: 'gulp@3.8.10',
+192 verbose parsed url   path: 'gulp@3.8.10',
+192 verbose parsed url   href: 'gulp@3.8.10' }
+193 verbose cache add [ 'uncss@0.10.0', null ]
+194 verbose cache add name=undefined spec="uncss@0.10.0" args=["uncss@0.10.0",null]
+195 verbose parsed url { protocol: null,
+195 verbose parsed url   slashes: null,
+195 verbose parsed url   auth: null,
+195 verbose parsed url   host: null,
+195 verbose parsed url   port: null,
+195 verbose parsed url   hostname: null,
+195 verbose parsed url   hash: null,
+195 verbose parsed url   search: null,
+195 verbose parsed url   query: null,
+195 verbose parsed url   pathname: 'uncss@0.10.0',
+195 verbose parsed url   path: 'uncss@0.10.0',
+195 verbose parsed url   href: 'uncss@0.10.0' }
+196 verbose cache add name="gulp-clean" spec="0.3.1" args=["gulp-clean","0.3.1"]
+197 verbose parsed url { protocol: null,
+197 verbose parsed url   slashes: null,
+197 verbose parsed url   auth: null,
+197 verbose parsed url   host: null,
+197 verbose parsed url   port: null,
+197 verbose parsed url   hostname: null,
+197 verbose parsed url   hash: null,
+197 verbose parsed url   search: null,
+197 verbose parsed url   query: null,
+197 verbose parsed url   pathname: '0.3.1',
+197 verbose parsed url   path: '0.3.1',
+197 verbose parsed url   href: '0.3.1' }
+198 verbose addNamed [ 'gulp-clean', '0.3.1' ]
+199 verbose addNamed [ '0.3.1', '0.3.1' ]
+200 silly lockFile 72b2b8e8-gulp-clean-0-3-1 gulp-clean@0.3.1
+201 verbose lock gulp-clean@0.3.1 /Users/rolle/.npm/72b2b8e8-gulp-clean-0-3-1.lock
+202 verbose cache add name="gulp-livereload" spec="2.1.1" args=["gulp-livereload","2.1.1"]
+203 verbose parsed url { protocol: null,
+203 verbose parsed url   slashes: null,
+203 verbose parsed url   auth: null,
+203 verbose parsed url   host: null,
+203 verbose parsed url   port: null,
+203 verbose parsed url   hostname: null,
+203 verbose parsed url   hash: null,
+203 verbose parsed url   search: null,
+203 verbose parsed url   query: null,
+203 verbose parsed url   pathname: '2.1.1',
+203 verbose parsed url   path: '2.1.1',
+203 verbose parsed url   href: '2.1.1' }
+204 verbose addNamed [ 'gulp-livereload', '2.1.1' ]
+205 verbose addNamed [ '2.1.1', '2.1.1' ]
+206 silly lockFile e881b615-gulp-livereload-2-1-1 gulp-livereload@2.1.1
+207 verbose lock gulp-livereload@2.1.1 /Users/rolle/.npm/e881b615-gulp-livereload-2-1-1.lock
+208 verbose cache add name="tiny-lr" spec="0.1.4" args=["tiny-lr","0.1.4"]
+209 verbose parsed url { protocol: null,
+209 verbose parsed url   slashes: null,
+209 verbose parsed url   auth: null,
+209 verbose parsed url   host: null,
+209 verbose parsed url   port: null,
+209 verbose parsed url   hostname: null,
+209 verbose parsed url   hash: null,
+209 verbose parsed url   search: null,
+209 verbose parsed url   query: null,
+209 verbose parsed url   pathname: '0.1.4',
+209 verbose parsed url   path: '0.1.4',
+209 verbose parsed url   href: '0.1.4' }
+210 verbose addNamed [ 'tiny-lr', '0.1.4' ]
+211 verbose addNamed [ '0.1.4', '0.1.4' ]
+212 silly lockFile f28b0f88-tiny-lr-0-1-4 tiny-lr@0.1.4
+213 verbose lock tiny-lr@0.1.4 /Users/rolle/.npm/f28b0f88-tiny-lr-0-1-4.lock
+214 verbose cache add name="bower" spec="1.3.12" args=["bower","1.3.12"]
+215 verbose parsed url { protocol: null,
+215 verbose parsed url   slashes: null,
+215 verbose parsed url   auth: null,
+215 verbose parsed url   host: null,
+215 verbose parsed url   port: null,
+215 verbose parsed url   hostname: null,
+215 verbose parsed url   hash: null,
+215 verbose parsed url   search: null,
+215 verbose parsed url   query: null,
+215 verbose parsed url   pathname: '1.3.12',
+215 verbose parsed url   path: '1.3.12',
+215 verbose parsed url   href: '1.3.12' }
+216 verbose addNamed [ 'bower', '1.3.12' ]
+217 verbose addNamed [ '1.3.12', '1.3.12' ]
+218 silly lockFile 9819431c-bower-1-3-12 bower@1.3.12
+219 verbose lock bower@1.3.12 /Users/rolle/.npm/9819431c-bower-1-3-12.lock
+220 verbose cache add name="pngquant" spec="0.4.0" args=["pngquant","0.4.0"]
+221 verbose parsed url { protocol: null,
+221 verbose parsed url   slashes: null,
+221 verbose parsed url   auth: null,
+221 verbose parsed url   host: null,
+221 verbose parsed url   port: null,
+221 verbose parsed url   hostname: null,
+221 verbose parsed url   hash: null,
+221 verbose parsed url   search: null,
+221 verbose parsed url   query: null,
+221 verbose parsed url   pathname: '0.4.0',
+221 verbose parsed url   path: '0.4.0',
+221 verbose parsed url   href: '0.4.0' }
+222 verbose addNamed [ 'pngquant', '0.4.0' ]
+223 verbose addNamed [ '0.4.0', '0.4.0' ]
+224 silly lockFile 0ab9fe1b-pngquant-0-4-0 pngquant@0.4.0
+225 verbose lock pngquant@0.4.0 /Users/rolle/.npm/0ab9fe1b-pngquant-0-4-0.lock
+226 verbose cache add name="gulp-rimraf" spec="0.1.1" args=["gulp-rimraf","0.1.1"]
+227 verbose parsed url { protocol: null,
+227 verbose parsed url   slashes: null,
+227 verbose parsed url   auth: null,
+227 verbose parsed url   host: null,
+227 verbose parsed url   port: null,
+227 verbose parsed url   hostname: null,
+227 verbose parsed url   hash: null,
+227 verbose parsed url   search: null,
+227 verbose parsed url   query: null,
+227 verbose parsed url   pathname: '0.1.1',
+227 verbose parsed url   path: '0.1.1',
+227 verbose parsed url   href: '0.1.1' }
+228 verbose addNamed [ 'gulp-rimraf', '0.1.1' ]
+229 verbose addNamed [ '0.1.1', '0.1.1' ]
+230 silly lockFile 3dd822d6-gulp-rimraf-0-1-1 gulp-rimraf@0.1.1
+231 verbose lock gulp-rimraf@0.1.1 /Users/rolle/.npm/3dd822d6-gulp-rimraf-0-1-1.lock
+232 verbose cache add name="gulp" spec="3.8.10" args=["gulp","3.8.10"]
+233 verbose parsed url { protocol: null,
+233 verbose parsed url   slashes: null,
+233 verbose parsed url   auth: null,
+233 verbose parsed url   host: null,
+233 verbose parsed url   port: null,
+233 verbose parsed url   hostname: null,
+233 verbose parsed url   hash: null,
+233 verbose parsed url   search: null,
+233 verbose parsed url   query: null,
+233 verbose parsed url   pathname: '3.8.10',
+233 verbose parsed url   path: '3.8.10',
+233 verbose parsed url   href: '3.8.10' }
+234 verbose addNamed [ 'gulp', '3.8.10' ]
+235 verbose addNamed [ '3.8.10', '3.8.10' ]
+236 silly lockFile f843d0d7-gulp-3-8-10 gulp@3.8.10
+237 verbose lock gulp@3.8.10 /Users/rolle/.npm/f843d0d7-gulp-3-8-10.lock
+238 verbose cache add name="uncss" spec="0.10.0" args=["uncss","0.10.0"]
+239 verbose parsed url { protocol: null,
+239 verbose parsed url   slashes: null,
+239 verbose parsed url   auth: null,
+239 verbose parsed url   host: null,
+239 verbose parsed url   port: null,
+239 verbose parsed url   hostname: null,
+239 verbose parsed url   hash: null,
+239 verbose parsed url   search: null,
+239 verbose parsed url   query: null,
+239 verbose parsed url   pathname: '0.10.0',
+239 verbose parsed url   path: '0.10.0',
+239 verbose parsed url   href: '0.10.0' }
+240 verbose addNamed [ 'uncss', '0.10.0' ]
+241 verbose addNamed [ '0.10.0', '0.10.0' ]
+242 silly lockFile 0a6b8c6d-uncss-0-10-0 uncss@0.10.0
+243 verbose lock uncss@0.10.0 /Users/rolle/.npm/0a6b8c6d-uncss-0-10-0.lock
+244 verbose registry.get nopt not expired, no request
+245 verbose registry.get resolve not expired, no request
+246 verbose registry.get glob not expired, no request
+247 silly lockFile e92308c0-js-org-resolve-resolve-0-3-1-tgz https://registry.npmjs.org/resolve/-/resolve-0.3.1.tgz
+248 verbose lock https://registry.npmjs.org/resolve/-/resolve-0.3.1.tgz /Users/rolle/.npm/e92308c0-js-org-resolve-resolve-0-3-1-tgz.lock
+249 verbose registry.get gulp-clean not expired, no request
+250 warn deprecated gulp-clean@0.3.1: use gulp-rimraf instead
+251 verbose registry.get gulp-livereload not expired, no request
+252 verbose addRemoteTarball [ 'https://registry.npmjs.org/resolve/-/resolve-0.3.1.tgz',
+252 verbose addRemoteTarball   '34c63447c664c70598d1c9b126fc43b2a24310a4' ]
+253 verbose registry.get tiny-lr not expired, no request
+254 verbose registry.get bower not expired, no request
+255 verbose registry.get pngquant not expired, no request
+256 verbose registry.get gulp-rimraf not expired, no request
+257 warn deprecated gulp-rimraf@0.1.1: Use npmjs.org/del instead, see https://github.com/gulpjs/gulp/blob/master/docs/recipes/delete-files-folder.md
+258 silly lockFile 07b87985--gulp-clean-gulp-clean-0-3-1-tgz https://registry.npmjs.org/gulp-clean/-/gulp-clean-0.3.1.tgz
+259 verbose lock https://registry.npmjs.org/gulp-clean/-/gulp-clean-0.3.1.tgz /Users/rolle/.npm/07b87985--gulp-clean-gulp-clean-0-3-1-tgz.lock
+260 verbose registry.get gulp not expired, no request
+261 silly lockFile 854919d4-reload-gulp-livereload-2-1-1-tgz https://registry.npmjs.org/gulp-livereload/-/gulp-livereload-2.1.1.tgz
+262 verbose lock https://registry.npmjs.org/gulp-livereload/-/gulp-livereload-2.1.1.tgz /Users/rolle/.npm/854919d4-reload-gulp-livereload-2-1-1-tgz.lock
+263 silly lockFile c5346e68-js-org-tiny-lr-tiny-lr-0-1-4-tgz https://registry.npmjs.org/tiny-lr/-/tiny-lr-0.1.4.tgz
+264 verbose lock https://registry.npmjs.org/tiny-lr/-/tiny-lr-0.1.4.tgz /Users/rolle/.npm/c5346e68-js-org-tiny-lr-tiny-lr-0-1-4-tgz.lock
+265 silly lockFile b05fd70b-npmjs-org-bower-bower-1-3-12-tgz https://registry.npmjs.org/bower/-/bower-1.3.12.tgz
+266 verbose lock https://registry.npmjs.org/bower/-/bower-1.3.12.tgz /Users/rolle/.npm/b05fd70b-npmjs-org-bower-bower-1-3-12-tgz.lock
+267 silly lockFile a1d545b1--org-pngquant-pngquant-0-4-0-tgz https://registry.npmjs.org/pngquant/-/pngquant-0.4.0.tgz
+268 verbose lock https://registry.npmjs.org/pngquant/-/pngquant-0.4.0.tgz /Users/rolle/.npm/a1d545b1--org-pngquant-pngquant-0-4-0-tgz.lock
+269 silly lockFile ef3d1ef5-ulp-rimraf-gulp-rimraf-0-1-1-tgz https://registry.npmjs.org/gulp-rimraf/-/gulp-rimraf-0.1.1.tgz
+270 verbose lock https://registry.npmjs.org/gulp-rimraf/-/gulp-rimraf-0.1.1.tgz /Users/rolle/.npm/ef3d1ef5-ulp-rimraf-gulp-rimraf-0-1-1-tgz.lock
+271 verbose registry.get uncss not expired, no request
+272 silly lockFile ddc06ffd-npmjs-org-uncss-uncss-0-10-0-tgz https://registry.npmjs.org/uncss/-/uncss-0.10.0.tgz
+273 verbose lock https://registry.npmjs.org/uncss/-/uncss-0.10.0.tgz /Users/rolle/.npm/ddc06ffd-npmjs-org-uncss-uncss-0-10-0-tgz.lock
+274 silly lockFile 3fffafa6-glob-3-2-11 glob@3.2.11
+275 silly lockFile 3fffafa6-glob-3-2-11 glob@3.2.11
+276 silly lockFile 1be903a1-nopt-1-0-10 nopt@1.0.10
+277 silly lockFile 1be903a1-nopt-1-0-10 nopt@1.0.10
+278 verbose addRemoteTarball [ 'https://registry.npmjs.org/gulp-clean/-/gulp-clean-0.3.1.tgz',
+278 verbose addRemoteTarball   '52b08a6dfab27a81c67826eeb97affb4aa5f756d' ]
+279 verbose addRemoteTarball [ 'https://registry.npmjs.org/gulp-livereload/-/gulp-livereload-2.1.1.tgz',
+279 verbose addRemoteTarball   'e47f4c71e96b40dbfc13521d287bad8e23f6559e' ]
+280 verbose addRemoteTarball [ 'https://registry.npmjs.org/tiny-lr/-/tiny-lr-0.1.4.tgz',
+280 verbose addRemoteTarball   '6e41d7e67dfd0878e5e0b37e37a06d67e309ff4d' ]
+281 verbose addRemoteTarball [ 'https://registry.npmjs.org/bower/-/bower-1.3.12.tgz',
+281 verbose addRemoteTarball   '37de0edb3904baf90aee13384a1a379a05ee214c' ]
+282 verbose addRemoteTarball [ 'https://registry.npmjs.org/pngquant/-/pngquant-0.4.0.tgz',
+282 verbose addRemoteTarball   '95d9e0d156176229befefa6f948addeae6b0af22' ]
+283 verbose addRemoteTarball [ 'https://registry.npmjs.org/gulp-rimraf/-/gulp-rimraf-0.1.1.tgz',
+283 verbose addRemoteTarball   '5aaba8f870559ca4885c044385f9926c0f863f10' ]
+284 verbose addRemoteTarball [ 'https://registry.npmjs.org/uncss/-/uncss-0.10.0.tgz',
+284 verbose addRemoteTarball   'c2f85587527de5ff4f9c52b4a7f130924aeca69a' ]
+285 info retry fetch attempt 1 at 12:02:15
+286 verbose fetch to= /var/folders/_h/qwyn4r654fq72pkl_lr0sw_m0000gn/T/npm-6174-pE-r9El8/registry.npmjs.org/gulp-livereload/-/gulp-livereload-2.1.1.tgz
+287 info retry fetch attempt 1 at 12:02:15
+288 verbose fetch to= /var/folders/_h/qwyn4r654fq72pkl_lr0sw_m0000gn/T/npm-6174-pE-r9El8/registry.npmjs.org/pngquant/-/pngquant-0.4.0.tgz
+289 info retry fetch attempt 1 at 12:02:15
+290 verbose fetch to= /var/folders/_h/qwyn4r654fq72pkl_lr0sw_m0000gn/T/npm-6174-pE-r9El8/registry.npmjs.org/tiny-lr/-/tiny-lr-0.1.4.tgz
+291 info retry fetch attempt 1 at 12:02:15
+292 verbose fetch to= /var/folders/_h/qwyn4r654fq72pkl_lr0sw_m0000gn/T/npm-6174-pE-r9El8/registry.npmjs.org/bower/-/bower-1.3.12.tgz
+293 info retry fetch attempt 1 at 12:02:15
+294 verbose fetch to= /var/folders/_h/qwyn4r654fq72pkl_lr0sw_m0000gn/T/npm-6174-pE-r9El8/registry.npmjs.org/gulp-rimraf/-/gulp-rimraf-0.1.1.tgz
+295 silly lockFile f843d0d7-gulp-3-8-10 gulp@3.8.10
+296 silly lockFile f843d0d7-gulp-3-8-10 gulp@3.8.10
+297 info retry fetch attempt 1 at 12:02:15
+298 verbose fetch to= /var/folders/_h/qwyn4r654fq72pkl_lr0sw_m0000gn/T/npm-6174-pE-r9El8/registry.npmjs.org/resolve/-/resolve-0.3.1.tgz
+299 info retry fetch attempt 1 at 12:02:15
+300 verbose fetch to= /var/folders/_h/qwyn4r654fq72pkl_lr0sw_m0000gn/T/npm-6174-pE-r9El8/registry.npmjs.org/uncss/-/uncss-0.10.0.tgz
+301 http GET https://registry.npmjs.org/gulp-livereload/-/gulp-livereload-2.1.1.tgz
+302 http GET https://registry.npmjs.org/tiny-lr/-/tiny-lr-0.1.4.tgz
+303 http GET https://registry.npmjs.org/pngquant/-/pngquant-0.4.0.tgz
+304 http GET https://registry.npmjs.org/bower/-/bower-1.3.12.tgz
+305 http GET https://registry.npmjs.org/gulp-rimraf/-/gulp-rimraf-0.1.1.tgz
+306 info retry fetch attempt 1 at 12:02:15
+307 verbose fetch to= /var/folders/_h/qwyn4r654fq72pkl_lr0sw_m0000gn/T/npm-6174-pE-r9El8/registry.npmjs.org/gulp-clean/-/gulp-clean-0.3.1.tgz
+308 http GET https://registry.npmjs.org/resolve/-/resolve-0.3.1.tgz
+309 http GET https://registry.npmjs.org/uncss/-/uncss-0.10.0.tgz
+310 silly resolved [ { author:
+310 silly resolved      { name: 'Isaac Z. Schlueter',
+310 silly resolved        email: 'i@izs.me',
+310 silly resolved        url: 'http://blog.izs.me/' },
+310 silly resolved     name: 'glob',
+310 silly resolved     description: 'a little globber',
+310 silly resolved     version: '3.2.11',
+310 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/node-glob.git' },
+310 silly resolved     main: 'glob.js',
+310 silly resolved     engines: { node: '*' },
+310 silly resolved     dependencies: { inherits: '2', minimatch: '0.3' },
+310 silly resolved     devDependencies: { tap: '~0.4.0', mkdirp: '0', rimraf: '1' },
+310 silly resolved     scripts:
+310 silly resolved      { test: 'tap test/*.js',
+310 silly resolved        'test-regen': 'TEST_REGEN=1 node test/00-setup.js' },
+310 silly resolved     license: 'BSD',
+310 silly resolved     gitHead: '73f57e99510582b2024b762305970ebcf9b70aa2',
+310 silly resolved     bugs: { url: 'https://github.com/isaacs/node-glob/issues' },
+310 silly resolved     homepage: 'https://github.com/isaacs/node-glob',
+310 silly resolved     _id: 'glob@3.2.11',
+310 silly resolved     _shasum: '4a973f635b9190f715d10987d5c00fd2815ebe3d',
+310 silly resolved     _from: 'glob@3.2.11',
+310 silly resolved     _npmVersion: '1.4.10',
+310 silly resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+310 silly resolved     maintainers: [ [Object] ],
+310 silly resolved     dist:
+310 silly resolved      { shasum: '4a973f635b9190f715d10987d5c00fd2815ebe3d',
+310 silly resolved        tarball: 'http://registry.npmjs.org/glob/-/glob-3.2.11.tgz' },
+310 silly resolved     directories: {},
+310 silly resolved     _resolved: 'https://registry.npmjs.org/glob/-/glob-3.2.11.tgz',
+310 silly resolved     readme: 'ERROR: No README data found!' } ]
+311 info install glob@3.2.11 into /Users/rolle/node_modules/grunt-cli/node_modules/findup-sync
+312 info installOne glob@3.2.11
+313 silly resolved [ { name: 'nopt',
+313 silly resolved     version: '1.0.10',
+313 silly resolved     description: 'Option parsing for Node, supporting types, shorthands, etc. Used by npm.',
+313 silly resolved     author:
+313 silly resolved      { name: 'Isaac Z. Schlueter',
+313 silly resolved        email: 'i@izs.me',
+313 silly resolved        url: 'http://blog.izs.me/' },
+313 silly resolved     main: 'lib/nopt.js',
+313 silly resolved     scripts: { test: 'node lib/nopt.js' },
+313 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/nopt.git' },
+313 silly resolved     bin: { nopt: './bin/nopt.js' },
+313 silly resolved     license:
+313 silly resolved      { type: 'MIT',
+313 silly resolved        url: 'https://github.com/isaacs/nopt/raw/master/LICENSE' },
+313 silly resolved     dependencies: { abbrev: '1' },
+313 silly resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+313 silly resolved     _id: 'nopt@1.0.10',
+313 silly resolved     devDependencies: {},
+313 silly resolved     engines: { node: '*' },
+313 silly resolved     _engineSupported: true,
+313 silly resolved     _npmVersion: '1.0.93',
+313 silly resolved     _nodeVersion: 'v0.5.9-pre',
+313 silly resolved     _defaultsLoaded: true,
+313 silly resolved     dist:
+313 silly resolved      { shasum: '6ddd21bd2a31417b92727dd585f8a6f37608ebee',
+313 silly resolved        tarball: 'http://registry.npmjs.org/nopt/-/nopt-1.0.10.tgz' },
+313 silly resolved     maintainers: [ [Object] ],
+313 silly resolved     directories: {},
+313 silly resolved     _shasum: '6ddd21bd2a31417b92727dd585f8a6f37608ebee',
+313 silly resolved     _from: 'nopt@1.0.10',
+313 silly resolved     _resolved: 'https://registry.npmjs.org/nopt/-/nopt-1.0.10.tgz',
+313 silly resolved     bugs: { url: 'https://github.com/isaacs/nopt/issues' },
+313 silly resolved     readme: 'ERROR: No README data found!',
+313 silly resolved     homepage: 'https://github.com/isaacs/nopt' } ]
+314 info install nopt@1.0.10 into /Users/rolle/node_modules/grunt-cli
+315 info installOne nopt@1.0.10
+316 http GET https://registry.npmjs.org/gulp-clean/-/gulp-clean-0.3.1.tgz
+317 info /Users/rolle/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob unbuild
+318 info preuninstall glob@3.2.11
+319 info /Users/rolle/node_modules/grunt-cli/node_modules/nopt unbuild
+320 info preuninstall nopt@1.0.10
+321 info uninstall glob@3.2.11
+322 info uninstall nopt@1.0.10
+323 silly resolved [ { name: 'gulp',
+323 silly resolved     description: 'The streaming build system',
+323 silly resolved     version: '3.8.10',
+323 silly resolved     homepage: 'http://gulpjs.com',
+323 silly resolved     repository: { type: 'git', url: 'https://github.com/gulpjs/gulp' },
+323 silly resolved     author:
+323 silly resolved      { name: 'Fractal',
+323 silly resolved        email: 'contact@wearefractal.com',
+323 silly resolved        url: 'http://wearefractal.com/' },
+323 silly resolved     tags: [ 'build', 'stream', 'system', 'make', 'tool', 'asset', 'pipeline' ],
+323 silly resolved     files: [ 'index.js', 'lib', 'bin', 'completion' ],
+323 silly resolved     bin: { gulp: './bin/gulp.js' },
+323 silly resolved     man: [ 'gulp.1' ],
+323 silly resolved     dependencies:
+323 silly resolved      { archy: '^1.0.0',
+323 silly resolved        chalk: '^0.5.0',
+323 silly resolved        deprecated: '^0.0.1',
+323 silly resolved        'gulp-util': '^3.0.0',
+323 silly resolved        interpret: '^0.3.2',
+323 silly resolved        liftoff: '^0.13.2',
+323 silly resolved        minimist: '^1.1.0',
+323 silly resolved        orchestrator: '^0.3.0',
+323 silly resolved        'pretty-hrtime': '^0.2.0',
+323 silly resolved        semver: '^4.1.0',
+323 silly resolved        tildify: '^1.0.0',
+323 silly resolved        v8flags: '^1.0.1',
+323 silly resolved        'vinyl-fs': '^0.3.0' },
+323 silly resolved     devDependencies:
+323 silly resolved      { coveralls: '^2.7.0',
+323 silly resolved        'graceful-fs': '^3.0.0',
+323 silly resolved        istanbul: '^0.3.0',
+323 silly resolved        jshint: '^2.5.0',
+323 silly resolved        'jshint-stylish': '^1.0.0',
+323 silly resolved        'marked-man': '^0.1.3',
+323 silly resolved        mkdirp: '^0.5.0',
+323 silly resolved        mocha: '^2.0.1',
+323 silly resolved        'mocha-lcov-reporter': '^0.0.1',
+323 silly resolved        q: '^1.0.0',
+323 silly resolved        rimraf: '^2.2.5',
+323 silly resolved        should: '^4.0.0' },
+323 silly resolved     scripts:
+323 silly resolved      { prepublish: 'marked-man --name gulp docs/CLI.md > gulp.1',
+323 silly resolved        lint: 'jshint lib bin index.js --reporter node_modules/jshint-stylish/stylish.js --exclude node_modules',
+323 silly resolved        test: 'npm run-script lint && mocha --reporter spec',
+323 silly resolved        coveralls: 'istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage' },
+323 silly resolved     engineStrict: true,
+323 silly resolved     engines: { node: '>= 0.9' },
+323 silly resolved     licenses: [ [Object] ],
+323 silly resolved     gitHead: '0203bccdc7397991da68ea3e51fef7b2df75a46f',
+323 silly resolved     bugs: { url: 'https://github.com/gulpjs/gulp/issues' },
+323 silly resolved     _id: 'gulp@3.8.10',
+323 silly resolved     _shasum: 'bfb8fc156be97820f02a7f8b3af61a86666f9e31',
+323 silly resolved     _from: 'gulp@3.8.10',
+323 silly resolved     _npmVersion: '2.1.6',
+323 silly resolved     _nodeVersion: '0.10.33',
+323 silly resolved     _npmUser: { name: 'fractal', email: 'contact@wearefractal.com' },
+323 silly resolved     maintainers: [ [Object] ],
+323 silly resolved     dist:
+323 silly resolved      { shasum: 'bfb8fc156be97820f02a7f8b3af61a86666f9e31',
+323 silly resolved        tarball: 'http://registry.npmjs.org/gulp/-/gulp-3.8.10.tgz' },
+323 silly resolved     directories: {},
+323 silly resolved     _resolved: 'https://registry.npmjs.org/gulp/-/gulp-3.8.10.tgz',
+323 silly resolved     readme: 'ERROR: No README data found!' } ]
+324 info install gulp@3.8.10 into /Users/rolle
+325 info installOne gulp@3.8.10
+326 verbose false,/Users/rolle/node_modules,/Users/rolle/node_modules/grunt-cli/node_modules/findup-sync/node_modules unbuild glob@3.2.11
+327 info postuninstall glob@3.2.11
+328 verbose false,/Users/rolle/node_modules,/Users/rolle/node_modules/grunt-cli/node_modules unbuild nopt@1.0.10
+329 verbose /Users/rolle/node_modules/grunt-cli/node_modules/.bin,[object Object] binRoot
+330 info /Users/rolle/node_modules/gulp unbuild
+331 info preuninstall gulp@3.8.7
+332 info uninstall gulp@3.8.7
+333 info postuninstall nopt@1.0.10
+334 verbose true,/Users/rolle/node_modules,/Users/rolle/node_modules unbuild gulp@3.8.7
+335 verbose /Users/rolle/node_modules/.bin,[object Object] binRoot
+336 info postuninstall gulp@3.8.7
+337 verbose tar unpack /Users/rolle/.npm/gulp/3.8.10/package.tgz
+338 silly lockFile 7c7297bc-ar-Users-rolle-node-modules-gulp tar:///Users/rolle/node_modules/gulp
+339 verbose lock tar:///Users/rolle/node_modules/gulp /Users/rolle/.npm/7c7297bc-ar-Users-rolle-node-modules-gulp.lock
+340 silly lockFile 6ab355ee-olle-npm-gulp-3-8-10-package-tgz tar:///Users/rolle/.npm/gulp/3.8.10/package.tgz
+341 verbose lock tar:///Users/rolle/.npm/gulp/3.8.10/package.tgz /Users/rolle/.npm/6ab355ee-olle-npm-gulp-3-8-10-package-tgz.lock
+342 silly gunzTarPerm modes [ '755', '644' ]
+343 verbose tar unpack /Users/rolle/.npm/nopt/1.0.10/package.tgz
+344 silly lockFile 9cd47993-ules-grunt-cli-node-modules-nopt tar:///Users/rolle/node_modules/grunt-cli/node_modules/nopt
+345 verbose lock tar:///Users/rolle/node_modules/grunt-cli/node_modules/nopt /Users/rolle/.npm/9cd47993-ules-grunt-cli-node-modules-nopt.lock
+346 silly lockFile f72a2303-olle-npm-nopt-1-0-10-package-tgz tar:///Users/rolle/.npm/nopt/1.0.10/package.tgz
+347 verbose lock tar:///Users/rolle/.npm/nopt/1.0.10/package.tgz /Users/rolle/.npm/f72a2303-olle-npm-nopt-1-0-10-package-tgz.lock
+348 silly gunzTarPerm modes [ '755', '644' ]
+349 silly gunzTarPerm extractEntry package.json
+350 silly gunzTarPerm extractEntry README.md
+351 silly gunzTarPerm extractEntry LICENSE
+352 verbose tar unpack /Users/rolle/.npm/glob/3.2.11/package.tgz
+353 silly lockFile f78d9f83-es-findup-sync-node-modules-glob tar:///Users/rolle/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob
+354 verbose lock tar:///Users/rolle/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob /Users/rolle/.npm/f78d9f83-es-findup-sync-node-modules-glob.lock
+355 silly lockFile 81f6d0cc-olle-npm-glob-3-2-11-package-tgz tar:///Users/rolle/.npm/glob/3.2.11/package.tgz
+356 verbose lock tar:///Users/rolle/.npm/glob/3.2.11/package.tgz /Users/rolle/.npm/81f6d0cc-olle-npm-glob-3-2-11-package-tgz.lock
+357 silly gunzTarPerm extractEntry .gitignore
+358 silly gunzTarPerm modes [ '755', '644' ]
+359 silly gunzTarPerm extractEntry LICENSE
+360 silly gunzTarPerm extractEntry package.json
+361 silly gunzTarPerm extractEntry package.json
+362 silly gunzTarPerm extractEntry index.js
+363 silly gunzTarPerm extractEntry CHANGELOG.md
+364 silly gunzTarPerm extractEntry README.md
+365 silly gunzTarPerm extractEntry bin/nopt.js
+366 silly gunzTarPerm extractEntry .npmignore
+367 silly gunzTarPerm extractEntry README.md
+368 silly gunzTarPerm extractEntry examples/my-program.js
+369 silly gunzTarPerm extractEntry lib/nopt.js
+370 silly gunzTarPerm extractEntry LICENSE
+371 silly gunzTarPerm extractEntry glob.js
+372 silly gunzTarPerm extractEntry bin/gulp.js
+373 silly gunzTarPerm extractEntry .travis.yml
+374 silly gunzTarPerm extractEntry completion/README.md
+375 silly gunzTarPerm extractEntry completion/bash
+376 silly gunzTarPerm extractEntry completion/fish
+377 silly gunzTarPerm extractEntry completion/powershell
+378 silly gunzTarPerm extractEntry examples/g.js
+379 silly gunzTarPerm extractEntry examples/usr-local.js
+380 silly gunzTarPerm extractEntry completion/zsh
+381 silly gunzTarPerm extractEntry lib/completion.js
+382 silly gunzTarPerm extractEntry test/00-setup.js
+383 silly gunzTarPerm extractEntry test/cwd-test.js
+384 silly gunzTarPerm extractEntry lib/taskTree.js
+385 silly gunzTarPerm extractEntry test/globstar-match.js
+386 silly gunzTarPerm extractEntry test/mark.js
+387 silly lockFile 9cd47993-ules-grunt-cli-node-modules-nopt tar:///Users/rolle/node_modules/grunt-cli/node_modules/nopt
+388 silly lockFile 9cd47993-ules-grunt-cli-node-modules-nopt tar:///Users/rolle/node_modules/grunt-cli/node_modules/nopt
+389 silly gunzTarPerm extractEntry test/stat.js
+390 silly gunzTarPerm extractEntry test/bash-comparison.js
+391 silly lockFile f72a2303-olle-npm-nopt-1-0-10-package-tgz tar:///Users/rolle/.npm/nopt/1.0.10/package.tgz
+392 silly lockFile f72a2303-olle-npm-nopt-1-0-10-package-tgz tar:///Users/rolle/.npm/nopt/1.0.10/package.tgz
+393 info preinstall nopt@1.0.10
+394 silly gunzTarPerm extractEntry test/pause-resume.js
+395 silly gunzTarPerm extractEntry test/readme-issue.js
+396 verbose readDependencies using package.json deps
+397 verbose readDependencies using package.json deps
+398 verbose cache add [ 'abbrev@1', null ]
+399 verbose cache add name=undefined spec="abbrev@1" args=["abbrev@1",null]
+400 verbose parsed url { protocol: null,
+400 verbose parsed url   slashes: null,
+400 verbose parsed url   auth: null,
+400 verbose parsed url   host: null,
+400 verbose parsed url   port: null,
+400 verbose parsed url   hostname: null,
+400 verbose parsed url   hash: null,
+400 verbose parsed url   search: null,
+400 verbose parsed url   query: null,
+400 verbose parsed url   pathname: 'abbrev@1',
+400 verbose parsed url   path: 'abbrev@1',
+400 verbose parsed url   href: 'abbrev@1' }
+401 verbose cache add name="abbrev" spec="1" args=["abbrev","1"]
+402 verbose parsed url { protocol: null,
+402 verbose parsed url   slashes: null,
+402 verbose parsed url   auth: null,
+402 verbose parsed url   host: null,
+402 verbose parsed url   port: null,
+402 verbose parsed url   hostname: null,
+402 verbose parsed url   hash: null,
+402 verbose parsed url   search: null,
+402 verbose parsed url   query: null,
+402 verbose parsed url   pathname: '1',
+402 verbose parsed url   path: '1',
+402 verbose parsed url   href: '1' }
+403 verbose addNamed [ 'abbrev', '1' ]
+404 verbose addNamed [ null, '>=1.0.0-0 <2.0.0-0' ]
+405 silly lockFile 6830b531-abbrev-1 abbrev@1
+406 verbose lock abbrev@1 /Users/rolle/.npm/6830b531-abbrev-1.lock
+407 silly gunzTarPerm extractEntry test/root-nomount.js
+408 silly gunzTarPerm extractEntry test/root.js
+409 silly addNameRange { name: 'abbrev', range: '>=1.0.0-0 <2.0.0-0', hasData: false }
+410 verbose url raw abbrev
+411 verbose url resolving [ 'https://registry.npmjs.org/', './abbrev' ]
+412 verbose url resolved https://registry.npmjs.org/abbrev
+413 info trying registry request attempt 1 at 12:02:16
+414 verbose etag "4QNDPDFWVPQ9QQL4E8ZPN4JMY"
+415 http GET https://registry.npmjs.org/abbrev
+416 silly gunzTarPerm extractEntry test/new-glob-optional-options.js
+417 silly gunzTarPerm extractEntry test/zz-cleanup.js
+418 silly gunzTarPerm extractEntry test/nocase-nomagic.js
+419 silly gunzTarPerm extractEntry test/bash-results.json
+420 silly lockFile 7c7297bc-ar-Users-rolle-node-modules-gulp tar:///Users/rolle/node_modules/gulp
+421 silly lockFile 7c7297bc-ar-Users-rolle-node-modules-gulp tar:///Users/rolle/node_modules/gulp
+422 silly lockFile 6ab355ee-olle-npm-gulp-3-8-10-package-tgz tar:///Users/rolle/.npm/gulp/3.8.10/package.tgz
+423 silly lockFile 6ab355ee-olle-npm-gulp-3-8-10-package-tgz tar:///Users/rolle/.npm/gulp/3.8.10/package.tgz
+424 info preinstall gulp@3.8.10
+425 verbose readDependencies using package.json deps
+426 verbose readDependencies using package.json deps
+427 verbose cache add [ 'archy@^1.0.0', null ]
+428 verbose cache add name=undefined spec="archy@^1.0.0" args=["archy@^1.0.0",null]
+429 verbose parsed url { protocol: null,
+429 verbose parsed url   slashes: null,
+429 verbose parsed url   auth: null,
+429 verbose parsed url   host: null,
+429 verbose parsed url   port: null,
+429 verbose parsed url   hostname: null,
+429 verbose parsed url   hash: null,
+429 verbose parsed url   search: null,
+429 verbose parsed url   query: null,
+429 verbose parsed url   pathname: 'archy@^1.0.0',
+429 verbose parsed url   path: 'archy@^1.0.0',
+429 verbose parsed url   href: 'archy@^1.0.0' }
+430 verbose cache add [ 'chalk@^0.5.0', null ]
+431 verbose cache add name=undefined spec="chalk@^0.5.0" args=["chalk@^0.5.0",null]
+432 verbose parsed url { protocol: null,
+432 verbose parsed url   slashes: null,
+432 verbose parsed url   auth: null,
+432 verbose parsed url   host: null,
+432 verbose parsed url   port: null,
+432 verbose parsed url   hostname: null,
+432 verbose parsed url   hash: null,
+432 verbose parsed url   search: null,
+432 verbose parsed url   query: null,
+432 verbose parsed url   pathname: 'chalk@^0.5.0',
+432 verbose parsed url   path: 'chalk@^0.5.0',
+432 verbose parsed url   href: 'chalk@^0.5.0' }
+433 verbose cache add name="archy" spec="^1.0.0" args=["archy","^1.0.0"]
+434 verbose parsed url { protocol: null,
+434 verbose parsed url   slashes: null,
+434 verbose parsed url   auth: null,
+434 verbose parsed url   host: null,
+434 verbose parsed url   port: null,
+434 verbose parsed url   hostname: null,
+434 verbose parsed url   hash: null,
+434 verbose parsed url   search: null,
+434 verbose parsed url   query: null,
+434 verbose parsed url   pathname: '^1.0.0',
+434 verbose parsed url   path: '^1.0.0',
+434 verbose parsed url   href: '^1.0.0' }
+435 verbose addNamed [ 'archy', '^1.0.0' ]
+436 verbose addNamed [ null, '>=1.0.0-0 <2.0.0-0' ]
+437 silly lockFile 91d41a90-archy-1-0-0 archy@^1.0.0
+438 verbose lock archy@^1.0.0 /Users/rolle/.npm/91d41a90-archy-1-0-0.lock
+439 verbose cache add [ 'deprecated@^0.0.1', null ]
+440 verbose cache add name=undefined spec="deprecated@^0.0.1" args=["deprecated@^0.0.1",null]
+441 verbose parsed url { protocol: null,
+441 verbose parsed url   slashes: null,
+441 verbose parsed url   auth: null,
+441 verbose parsed url   host: null,
+441 verbose parsed url   port: null,
+441 verbose parsed url   hostname: null,
+441 verbose parsed url   hash: null,
+441 verbose parsed url   search: null,
+441 verbose parsed url   query: null,
+441 verbose parsed url   pathname: 'deprecated@^0.0.1',
+441 verbose parsed url   path: 'deprecated@^0.0.1',
+441 verbose parsed url   href: 'deprecated@^0.0.1' }
+442 verbose cache add [ 'gulp-util@^3.0.0', null ]
+443 verbose cache add name=undefined spec="gulp-util@^3.0.0" args=["gulp-util@^3.0.0",null]
+444 verbose parsed url { protocol: null,
+444 verbose parsed url   slashes: null,
+444 verbose parsed url   auth: null,
+444 verbose parsed url   host: null,
+444 verbose parsed url   port: null,
+444 verbose parsed url   hostname: null,
+444 verbose parsed url   hash: null,
+444 verbose parsed url   search: null,
+444 verbose parsed url   query: null,
+444 verbose parsed url   pathname: 'gulp-util@^3.0.0',
+444 verbose parsed url   path: 'gulp-util@^3.0.0',
+444 verbose parsed url   href: 'gulp-util@^3.0.0' }
+445 verbose cache add [ 'interpret@^0.3.2', null ]
+446 verbose cache add name=undefined spec="interpret@^0.3.2" args=["interpret@^0.3.2",null]
+447 verbose parsed url { protocol: null,
+447 verbose parsed url   slashes: null,
+447 verbose parsed url   auth: null,
+447 verbose parsed url   host: null,
+447 verbose parsed url   port: null,
+447 verbose parsed url   hostname: null,
+447 verbose parsed url   hash: null,
+447 verbose parsed url   search: null,
+447 verbose parsed url   query: null,
+447 verbose parsed url   pathname: 'interpret@^0.3.2',
+447 verbose parsed url   path: 'interpret@^0.3.2',
+447 verbose parsed url   href: 'interpret@^0.3.2' }
+448 verbose cache add [ 'liftoff@^0.13.2', null ]
+449 verbose cache add name=undefined spec="liftoff@^0.13.2" args=["liftoff@^0.13.2",null]
+450 verbose parsed url { protocol: null,
+450 verbose parsed url   slashes: null,
+450 verbose parsed url   auth: null,
+450 verbose parsed url   host: null,
+450 verbose parsed url   port: null,
+450 verbose parsed url   hostname: null,
+450 verbose parsed url   hash: null,
+450 verbose parsed url   search: null,
+450 verbose parsed url   query: null,
+450 verbose parsed url   pathname: 'liftoff@^0.13.2',
+450 verbose parsed url   path: 'liftoff@^0.13.2',
+450 verbose parsed url   href: 'liftoff@^0.13.2' }
+451 verbose cache add [ 'minimist@^1.1.0', null ]
+452 verbose cache add name=undefined spec="minimist@^1.1.0" args=["minimist@^1.1.0",null]
+453 verbose parsed url { protocol: null,
+453 verbose parsed url   slashes: null,
+453 verbose parsed url   auth: null,
+453 verbose parsed url   host: null,
+453 verbose parsed url   port: null,
+453 verbose parsed url   hostname: null,
+453 verbose parsed url   hash: null,
+453 verbose parsed url   search: null,
+453 verbose parsed url   query: null,
+453 verbose parsed url   pathname: 'minimist@^1.1.0',
+453 verbose parsed url   path: 'minimist@^1.1.0',
+453 verbose parsed url   href: 'minimist@^1.1.0' }
+454 verbose cache add [ 'orchestrator@^0.3.0', null ]
+455 verbose cache add name=undefined spec="orchestrator@^0.3.0" args=["orchestrator@^0.3.0",null]
+456 verbose parsed url { protocol: null,
+456 verbose parsed url   slashes: null,
+456 verbose parsed url   auth: null,
+456 verbose parsed url   host: null,
+456 verbose parsed url   port: null,
+456 verbose parsed url   hostname: null,
+456 verbose parsed url   hash: null,
+456 verbose parsed url   search: null,
+456 verbose parsed url   query: null,
+456 verbose parsed url   pathname: 'orchestrator@^0.3.0',
+456 verbose parsed url   path: 'orchestrator@^0.3.0',
+456 verbose parsed url   href: 'orchestrator@^0.3.0' }
+457 verbose cache add [ 'pretty-hrtime@^0.2.0', null ]
+458 verbose cache add name=undefined spec="pretty-hrtime@^0.2.0" args=["pretty-hrtime@^0.2.0",null]
+459 verbose parsed url { protocol: null,
+459 verbose parsed url   slashes: null,
+459 verbose parsed url   auth: null,
+459 verbose parsed url   host: null,
+459 verbose parsed url   port: null,
+459 verbose parsed url   hostname: null,
+459 verbose parsed url   hash: null,
+459 verbose parsed url   search: null,
+459 verbose parsed url   query: null,
+459 verbose parsed url   pathname: 'pretty-hrtime@^0.2.0',
+459 verbose parsed url   path: 'pretty-hrtime@^0.2.0',
+459 verbose parsed url   href: 'pretty-hrtime@^0.2.0' }
+460 verbose cache add name="chalk" spec="^0.5.0" args=["chalk","^0.5.0"]
+461 verbose parsed url { protocol: null,
+461 verbose parsed url   slashes: null,
+461 verbose parsed url   auth: null,
+461 verbose parsed url   host: null,
+461 verbose parsed url   port: null,
+461 verbose parsed url   hostname: null,
+461 verbose parsed url   hash: null,
+461 verbose parsed url   search: null,
+461 verbose parsed url   query: null,
+461 verbose parsed url   pathname: '^0.5.0',
+461 verbose parsed url   path: '^0.5.0',
+461 verbose parsed url   href: '^0.5.0' }
+462 verbose addNamed [ 'chalk', '^0.5.0' ]
+463 verbose addNamed [ null, '>=0.5.0-0 <0.6.0-0' ]
+464 silly lockFile c513ee84-chalk-0-5-0 chalk@^0.5.0
+465 verbose lock chalk@^0.5.0 /Users/rolle/.npm/c513ee84-chalk-0-5-0.lock
+466 verbose cache add name="deprecated" spec="^0.0.1" args=["deprecated","^0.0.1"]
+467 verbose parsed url { protocol: null,
+467 verbose parsed url   slashes: null,
+467 verbose parsed url   auth: null,
+467 verbose parsed url   host: null,
+467 verbose parsed url   port: null,
+467 verbose parsed url   hostname: null,
+467 verbose parsed url   hash: null,
+467 verbose parsed url   search: null,
+467 verbose parsed url   query: null,
+467 verbose parsed url   pathname: '^0.0.1',
+467 verbose parsed url   path: '^0.0.1',
+467 verbose parsed url   href: '^0.0.1' }
+468 verbose addNamed [ 'deprecated', '^0.0.1' ]
+469 verbose addNamed [ null, '=0.0.1' ]
+470 silly lockFile 0e32a569-deprecated-0-0-1 deprecated@^0.0.1
+471 verbose lock deprecated@^0.0.1 /Users/rolle/.npm/0e32a569-deprecated-0-0-1.lock
+472 verbose cache add name="gulp-util" spec="^3.0.0" args=["gulp-util","^3.0.0"]
+473 verbose parsed url { protocol: null,
+473 verbose parsed url   slashes: null,
+473 verbose parsed url   auth: null,
+473 verbose parsed url   host: null,
+473 verbose parsed url   port: null,
+473 verbose parsed url   hostname: null,
+473 verbose parsed url   hash: null,
+473 verbose parsed url   search: null,
+473 verbose parsed url   query: null,
+473 verbose parsed url   pathname: '^3.0.0',
+473 verbose parsed url   path: '^3.0.0',
+473 verbose parsed url   href: '^3.0.0' }
+474 verbose addNamed [ 'gulp-util', '^3.0.0' ]
+475 verbose addNamed [ null, '>=3.0.0-0 <4.0.0-0' ]
+476 silly lockFile dfa9a863-gulp-util-3-0-0 gulp-util@^3.0.0
+477 verbose lock gulp-util@^3.0.0 /Users/rolle/.npm/dfa9a863-gulp-util-3-0-0.lock
+478 verbose cache add name="interpret" spec="^0.3.2" args=["interpret","^0.3.2"]
+479 verbose parsed url { protocol: null,
+479 verbose parsed url   slashes: null,
+479 verbose parsed url   auth: null,
+479 verbose parsed url   host: null,
+479 verbose parsed url   port: null,
+479 verbose parsed url   hostname: null,
+479 verbose parsed url   hash: null,
+479 verbose parsed url   search: null,
+479 verbose parsed url   query: null,
+479 verbose parsed url   pathname: '^0.3.2',
+479 verbose parsed url   path: '^0.3.2',
+479 verbose parsed url   href: '^0.3.2' }
+480 verbose addNamed [ 'interpret', '^0.3.2' ]
+481 verbose addNamed [ null, '>=0.3.2-0 <0.4.0-0' ]
+482 silly lockFile e5ecc112-interpret-0-3-2 interpret@^0.3.2
+483 verbose lock interpret@^0.3.2 /Users/rolle/.npm/e5ecc112-interpret-0-3-2.lock
+484 verbose cache add name="liftoff" spec="^0.13.2" args=["liftoff","^0.13.2"]
+485 verbose parsed url { protocol: null,
+485 verbose parsed url   slashes: null,
+485 verbose parsed url   auth: null,
+485 verbose parsed url   host: null,
+485 verbose parsed url   port: null,
+485 verbose parsed url   hostname: null,
+485 verbose parsed url   hash: null,
+485 verbose parsed url   search: null,
+485 verbose parsed url   query: null,
+485 verbose parsed url   pathname: '^0.13.2',
+485 verbose parsed url   path: '^0.13.2',
+485 verbose parsed url   href: '^0.13.2' }
+486 verbose addNamed [ 'liftoff', '^0.13.2' ]
+487 verbose addNamed [ null, '>=0.13.2-0 <0.14.0-0' ]
+488 silly lockFile 6823cb60-liftoff-0-13-2 liftoff@^0.13.2
+489 verbose lock liftoff@^0.13.2 /Users/rolle/.npm/6823cb60-liftoff-0-13-2.lock
+490 verbose cache add name="minimist" spec="^1.1.0" args=["minimist","^1.1.0"]
+491 verbose parsed url { protocol: null,
+491 verbose parsed url   slashes: null,
+491 verbose parsed url   auth: null,
+491 verbose parsed url   host: null,
+491 verbose parsed url   port: null,
+491 verbose parsed url   hostname: null,
+491 verbose parsed url   hash: null,
+491 verbose parsed url   search: null,
+491 verbose parsed url   query: null,
+491 verbose parsed url   pathname: '^1.1.0',
+491 verbose parsed url   path: '^1.1.0',
+491 verbose parsed url   href: '^1.1.0' }
+492 verbose addNamed [ 'minimist', '^1.1.0' ]
+493 verbose addNamed [ null, '>=1.1.0-0 <2.0.0-0' ]
+494 silly lockFile b7cda548-minimist-1-1-0 minimist@^1.1.0
+495 verbose lock minimist@^1.1.0 /Users/rolle/.npm/b7cda548-minimist-1-1-0.lock
+496 verbose cache add name="orchestrator" spec="^0.3.0" args=["orchestrator","^0.3.0"]
+497 verbose parsed url { protocol: null,
+497 verbose parsed url   slashes: null,
+497 verbose parsed url   auth: null,
+497 verbose parsed url   host: null,
+497 verbose parsed url   port: null,
+497 verbose parsed url   hostname: null,
+497 verbose parsed url   hash: null,
+497 verbose parsed url   search: null,
+497 verbose parsed url   query: null,
+497 verbose parsed url   pathname: '^0.3.0',
+497 verbose parsed url   path: '^0.3.0',
+497 verbose parsed url   href: '^0.3.0' }
+498 verbose addNamed [ 'orchestrator', '^0.3.0' ]
+499 verbose addNamed [ null, '>=0.3.0-0 <0.4.0-0' ]
+500 silly lockFile 74d9c599-orchestrator-0-3-0 orchestrator@^0.3.0
+501 verbose lock orchestrator@^0.3.0 /Users/rolle/.npm/74d9c599-orchestrator-0-3-0.lock
+502 verbose cache add name="pretty-hrtime" spec="^0.2.0" args=["pretty-hrtime","^0.2.0"]
+503 verbose parsed url { protocol: null,
+503 verbose parsed url   slashes: null,
+503 verbose parsed url   auth: null,
+503 verbose parsed url   host: null,
+503 verbose parsed url   port: null,
+503 verbose parsed url   hostname: null,
+503 verbose parsed url   hash: null,
+503 verbose parsed url   search: null,
+503 verbose parsed url   query: null,
+503 verbose parsed url   pathname: '^0.2.0',
+503 verbose parsed url   path: '^0.2.0',
+503 verbose parsed url   href: '^0.2.0' }
+504 verbose addNamed [ 'pretty-hrtime', '^0.2.0' ]
+505 verbose addNamed [ null, '>=0.2.0-0 <0.3.0-0' ]
+506 silly lockFile 3ac7556f-pretty-hrtime-0-2-0 pretty-hrtime@^0.2.0
+507 verbose lock pretty-hrtime@^0.2.0 /Users/rolle/.npm/3ac7556f-pretty-hrtime-0-2-0.lock
+508 verbose cache add [ 'semver@^4.1.0', null ]
+509 verbose cache add name=undefined spec="semver@^4.1.0" args=["semver@^4.1.0",null]
+510 verbose parsed url { protocol: null,
+510 verbose parsed url   slashes: null,
+510 verbose parsed url   auth: null,
+510 verbose parsed url   host: null,
+510 verbose parsed url   port: null,
+510 verbose parsed url   hostname: null,
+510 verbose parsed url   hash: null,
+510 verbose parsed url   search: null,
+510 verbose parsed url   query: null,
+510 verbose parsed url   pathname: 'semver@^4.1.0',
+510 verbose parsed url   path: 'semver@^4.1.0',
+510 verbose parsed url   href: 'semver@^4.1.0' }
+511 verbose cache add [ 'tildify@^1.0.0', null ]
+512 verbose cache add name=undefined spec="tildify@^1.0.0" args=["tildify@^1.0.0",null]
+513 verbose parsed url { protocol: null,
+513 verbose parsed url   slashes: null,
+513 verbose parsed url   auth: null,
+513 verbose parsed url   host: null,
+513 verbose parsed url   port: null,
+513 verbose parsed url   hostname: null,
+513 verbose parsed url   hash: null,
+513 verbose parsed url   search: null,
+513 verbose parsed url   query: null,
+513 verbose parsed url   pathname: 'tildify@^1.0.0',
+513 verbose parsed url   path: 'tildify@^1.0.0',
+513 verbose parsed url   href: 'tildify@^1.0.0' }
+514 verbose cache add [ 'v8flags@^1.0.1', null ]
+515 verbose cache add name=undefined spec="v8flags@^1.0.1" args=["v8flags@^1.0.1",null]
+516 verbose parsed url { protocol: null,
+516 verbose parsed url   slashes: null,
+516 verbose parsed url   auth: null,
+516 verbose parsed url   host: null,
+516 verbose parsed url   port: null,
+516 verbose parsed url   hostname: null,
+516 verbose parsed url   hash: null,
+516 verbose parsed url   search: null,
+516 verbose parsed url   query: null,
+516 verbose parsed url   pathname: 'v8flags@^1.0.1',
+516 verbose parsed url   path: 'v8flags@^1.0.1',
+516 verbose parsed url   href: 'v8flags@^1.0.1' }
+517 verbose cache add [ 'vinyl-fs@^0.3.0', null ]
+518 verbose cache add name=undefined spec="vinyl-fs@^0.3.0" args=["vinyl-fs@^0.3.0",null]
+519 verbose parsed url { protocol: null,
+519 verbose parsed url   slashes: null,
+519 verbose parsed url   auth: null,
+519 verbose parsed url   host: null,
+519 verbose parsed url   port: null,
+519 verbose parsed url   hostname: null,
+519 verbose parsed url   hash: null,
+519 verbose parsed url   search: null,
+519 verbose parsed url   query: null,
+519 verbose parsed url   pathname: 'vinyl-fs@^0.3.0',
+519 verbose parsed url   path: 'vinyl-fs@^0.3.0',
+519 verbose parsed url   href: 'vinyl-fs@^0.3.0' }
+520 silly addNameRange { name: 'archy', range: '>=1.0.0-0 <2.0.0-0', hasData: false }
+521 verbose cache add name="semver" spec="^4.1.0" args=["semver","^4.1.0"]
+522 verbose parsed url { protocol: null,
+522 verbose parsed url   slashes: null,
+522 verbose parsed url   auth: null,
+522 verbose parsed url   host: null,
+522 verbose parsed url   port: null,
+522 verbose parsed url   hostname: null,
+522 verbose parsed url   hash: null,
+522 verbose parsed url   search: null,
+522 verbose parsed url   query: null,
+522 verbose parsed url   pathname: '^4.1.0',
+522 verbose parsed url   path: '^4.1.0',
+522 verbose parsed url   href: '^4.1.0' }
+523 verbose addNamed [ 'semver', '^4.1.0' ]
+524 verbose addNamed [ null, '>=4.1.0-0 <5.0.0-0' ]
+525 silly lockFile 3aa770ad-semver-4-1-0 semver@^4.1.0
+526 verbose lock semver@^4.1.0 /Users/rolle/.npm/3aa770ad-semver-4-1-0.lock
+527 verbose cache add name="tildify" spec="^1.0.0" args=["tildify","^1.0.0"]
+528 verbose parsed url { protocol: null,
+528 verbose parsed url   slashes: null,
+528 verbose parsed url   auth: null,
+528 verbose parsed url   host: null,
+528 verbose parsed url   port: null,
+528 verbose parsed url   hostname: null,
+528 verbose parsed url   hash: null,
+528 verbose parsed url   search: null,
+528 verbose parsed url   query: null,
+528 verbose parsed url   pathname: '^1.0.0',
+528 verbose parsed url   path: '^1.0.0',
+528 verbose parsed url   href: '^1.0.0' }
+529 verbose addNamed [ 'tildify', '^1.0.0' ]
+530 verbose addNamed [ null, '>=1.0.0-0 <2.0.0-0' ]
+531 silly lockFile b323af2b-tildify-1-0-0 tildify@^1.0.0
+532 verbose lock tildify@^1.0.0 /Users/rolle/.npm/b323af2b-tildify-1-0-0.lock
+533 verbose cache add name="v8flags" spec="^1.0.1" args=["v8flags","^1.0.1"]
+534 verbose parsed url { protocol: null,
+534 verbose parsed url   slashes: null,
+534 verbose parsed url   auth: null,
+534 verbose parsed url   host: null,
+534 verbose parsed url   port: null,
+534 verbose parsed url   hostname: null,
+534 verbose parsed url   hash: null,
+534 verbose parsed url   search: null,
+534 verbose parsed url   query: null,
+534 verbose parsed url   pathname: '^1.0.1',
+534 verbose parsed url   path: '^1.0.1',
+534 verbose parsed url   href: '^1.0.1' }
+535 verbose addNamed [ 'v8flags', '^1.0.1' ]
+536 verbose addNamed [ null, '>=1.0.1-0 <2.0.0-0' ]
+537 silly lockFile e8e5fda9-v8flags-1-0-1 v8flags@^1.0.1
+538 verbose lock v8flags@^1.0.1 /Users/rolle/.npm/e8e5fda9-v8flags-1-0-1.lock
+539 verbose cache add name="vinyl-fs" spec="^0.3.0" args=["vinyl-fs","^0.3.0"]
+540 verbose parsed url { protocol: null,
+540 verbose parsed url   slashes: null,
+540 verbose parsed url   auth: null,
+540 verbose parsed url   host: null,
+540 verbose parsed url   port: null,
+540 verbose parsed url   hostname: null,
+540 verbose parsed url   hash: null,
+540 verbose parsed url   search: null,
+540 verbose parsed url   query: null,
+540 verbose parsed url   pathname: '^0.3.0',
+540 verbose parsed url   path: '^0.3.0',
+540 verbose parsed url   href: '^0.3.0' }
+541 verbose addNamed [ 'vinyl-fs', '^0.3.0' ]
+542 verbose addNamed [ null, '>=0.3.0-0 <0.4.0-0' ]
+543 silly lockFile f9e5bbec-vinyl-fs-0-3-0 vinyl-fs@^0.3.0
+544 verbose lock vinyl-fs@^0.3.0 /Users/rolle/.npm/f9e5bbec-vinyl-fs-0-3-0.lock
+545 silly addNameRange { name: 'chalk', range: '>=0.5.0-0 <0.6.0-0', hasData: false }
+546 silly addNameRange { name: 'deprecated', range: '=0.0.1', hasData: false }
+547 silly addNameRange { name: 'gulp-util',
+547 silly addNameRange   range: '>=3.0.0-0 <4.0.0-0',
+547 silly addNameRange   hasData: false }
+548 silly addNameRange { name: 'interpret',
+548 silly addNameRange   range: '>=0.3.2-0 <0.4.0-0',
+548 silly addNameRange   hasData: false }
+549 silly addNameRange { name: 'liftoff',
+549 silly addNameRange   range: '>=0.13.2-0 <0.14.0-0',
+549 silly addNameRange   hasData: false }
+550 silly addNameRange { name: 'minimist', range: '>=1.1.0-0 <2.0.0-0', hasData: false }
+551 silly addNameRange { name: 'orchestrator',
+551 silly addNameRange   range: '>=0.3.0-0 <0.4.0-0',
+551 silly addNameRange   hasData: false }
+552 silly addNameRange { name: 'pretty-hrtime',
+552 silly addNameRange   range: '>=0.2.0-0 <0.3.0-0',
+552 silly addNameRange   hasData: false }
+553 silly addNameRange { name: 'semver', range: '>=4.1.0-0 <5.0.0-0', hasData: false }
+554 silly addNameRange { name: 'tildify', range: '>=1.0.0-0 <2.0.0-0', hasData: false }
+555 silly addNameRange { name: 'v8flags', range: '>=1.0.1-0 <2.0.0-0', hasData: false }
+556 silly addNameRange { name: 'vinyl-fs', range: '>=0.3.0-0 <0.4.0-0', hasData: false }
+557 verbose url raw archy
+558 verbose url resolving [ 'https://registry.npmjs.org/', './archy' ]
+559 verbose url resolved https://registry.npmjs.org/archy
+560 info trying registry request attempt 1 at 12:02:16
+561 verbose etag "6BMD8BL2PPGK4YRJ2M2KO58QJ"
+562 http GET https://registry.npmjs.org/archy
+563 verbose url raw deprecated
+564 verbose url resolving [ 'https://registry.npmjs.org/', './deprecated' ]
+565 verbose url resolved https://registry.npmjs.org/deprecated
+566 info trying registry request attempt 1 at 12:02:16
+567 verbose etag "COB5QI8XPTQRTPBUIWG8OOYD0"
+568 http GET https://registry.npmjs.org/deprecated
+569 verbose url raw gulp-util
+570 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-util' ]
+571 verbose url resolved https://registry.npmjs.org/gulp-util
+572 info trying registry request attempt 1 at 12:02:16
+573 verbose etag "4EZ2GQGFO9UKGQEFRLX4NG8X5"
+574 http GET https://registry.npmjs.org/gulp-util
+575 verbose url raw interpret
+576 verbose url resolving [ 'https://registry.npmjs.org/', './interpret' ]
+577 verbose url resolved https://registry.npmjs.org/interpret
+578 info trying registry request attempt 1 at 12:02:16
+579 verbose etag "2DRP666XS2KPIRKO9IYO48LBF"
+580 http GET https://registry.npmjs.org/interpret
+581 verbose url raw liftoff
+582 verbose url resolving [ 'https://registry.npmjs.org/', './liftoff' ]
+583 verbose url resolved https://registry.npmjs.org/liftoff
+584 info trying registry request attempt 1 at 12:02:16
+585 verbose etag "12LUHH0AAV3CKF7XJYCBXKVC1"
+586 http GET https://registry.npmjs.org/liftoff
+587 verbose registry.get minimist not expired, no request
+588 silly addNameRange number 2 { name: 'minimist', range: '>=1.1.0-0 <2.0.0-0', hasData: true }
+589 silly addNameRange versions [ 'minimist',
+589 silly addNameRange   [ '0.0.0',
+589 silly addNameRange     '0.0.1',
+589 silly addNameRange     '0.0.2',
+589 silly addNameRange     '0.0.3',
+589 silly addNameRange     '0.0.4',
+589 silly addNameRange     '0.0.5',
+589 silly addNameRange     '0.0.6',
+589 silly addNameRange     '0.0.7',
+589 silly addNameRange     '0.0.8',
+589 silly addNameRange     '0.0.9',
+589 silly addNameRange     '0.0.10',
+589 silly addNameRange     '0.1.0',
+589 silly addNameRange     '0.2.0',
+589 silly addNameRange     '1.0.0',
+589 silly addNameRange     '1.1.0' ] ]
+590 verbose addNamed [ 'minimist', '1.1.0' ]
+591 verbose addNamed [ '1.1.0', '1.1.0' ]
+592 silly lockFile f1c95b3a-minimist-1-1-0 minimist@1.1.0
+593 verbose lock minimist@1.1.0 /Users/rolle/.npm/f1c95b3a-minimist-1-1-0.lock
+594 verbose url raw orchestrator
+595 verbose url resolving [ 'https://registry.npmjs.org/', './orchestrator' ]
+596 verbose url resolved https://registry.npmjs.org/orchestrator
+597 info trying registry request attempt 1 at 12:02:16
+598 verbose etag "1E35VLBA1K4FPAMHBHX1PLGGQ"
+599 http GET https://registry.npmjs.org/orchestrator
+600 verbose url raw pretty-hrtime
+601 verbose url resolving [ 'https://registry.npmjs.org/', './pretty-hrtime' ]
+602 verbose url resolved https://registry.npmjs.org/pretty-hrtime
+603 info trying registry request attempt 1 at 12:02:16
+604 verbose etag "B1VCXZET8NWXJTM49JDEFLYCT"
+605 http GET https://registry.npmjs.org/pretty-hrtime
+606 verbose url raw chalk
+607 verbose url resolving [ 'https://registry.npmjs.org/', './chalk' ]
+608 verbose url resolved https://registry.npmjs.org/chalk
+609 info trying registry request attempt 1 at 12:02:16
+610 verbose etag "28WT9TD4YOWD1VWI8I8BYIMT6"
+611 http GET https://registry.npmjs.org/chalk
+612 verbose url raw semver
+613 verbose url resolving [ 'https://registry.npmjs.org/', './semver' ]
+614 verbose url resolved https://registry.npmjs.org/semver
+615 info trying registry request attempt 1 at 12:02:16
+616 verbose etag "AQLQ3A8CCL2VZ1C1UBYYZ15GT"
+617 http GET https://registry.npmjs.org/semver
+618 verbose url raw tildify
+619 verbose url resolving [ 'https://registry.npmjs.org/', './tildify' ]
+620 verbose url resolved https://registry.npmjs.org/tildify
+621 info trying registry request attempt 1 at 12:02:16
+622 verbose etag "2JE1KRFER7QQ9BZAYAJISAI0V"
+623 http GET https://registry.npmjs.org/tildify
+624 verbose url raw v8flags
+625 verbose url resolving [ 'https://registry.npmjs.org/', './v8flags' ]
+626 verbose url resolved https://registry.npmjs.org/v8flags
+627 info trying registry request attempt 1 at 12:02:16
+628 verbose etag "212GX7RICRT3NZ2LQA66MPVTD"
+629 http GET https://registry.npmjs.org/v8flags
+630 verbose url raw vinyl-fs
+631 verbose url resolving [ 'https://registry.npmjs.org/', './vinyl-fs' ]
+632 verbose url resolved https://registry.npmjs.org/vinyl-fs
+633 info trying registry request attempt 1 at 12:02:16
+634 verbose etag "860GZ38FRRB9BR81CGBUCD96O"
+635 http GET https://registry.npmjs.org/vinyl-fs
+636 silly lockFile f1c95b3a-minimist-1-1-0 minimist@1.1.0
+637 silly lockFile f1c95b3a-minimist-1-1-0 minimist@1.1.0
+638 silly lockFile b7cda548-minimist-1-1-0 minimist@^1.1.0
+639 silly lockFile b7cda548-minimist-1-1-0 minimist@^1.1.0
+640 silly lockFile f78d9f83-es-findup-sync-node-modules-glob tar:///Users/rolle/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob
+641 silly lockFile f78d9f83-es-findup-sync-node-modules-glob tar:///Users/rolle/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob
+642 silly lockFile 81f6d0cc-olle-npm-glob-3-2-11-package-tgz tar:///Users/rolle/.npm/glob/3.2.11/package.tgz
+643 silly lockFile 81f6d0cc-olle-npm-glob-3-2-11-package-tgz tar:///Users/rolle/.npm/glob/3.2.11/package.tgz
+644 info preinstall glob@3.2.11
+645 verbose readDependencies using package.json deps
+646 verbose readDependencies using package.json deps
+647 verbose cache add [ 'inherits@2', null ]
+648 verbose cache add name=undefined spec="inherits@2" args=["inherits@2",null]
+649 verbose parsed url { protocol: null,
+649 verbose parsed url   slashes: null,
+649 verbose parsed url   auth: null,
+649 verbose parsed url   host: null,
+649 verbose parsed url   port: null,
+649 verbose parsed url   hostname: null,
+649 verbose parsed url   hash: null,
+649 verbose parsed url   search: null,
+649 verbose parsed url   query: null,
+649 verbose parsed url   pathname: 'inherits@2',
+649 verbose parsed url   path: 'inherits@2',
+649 verbose parsed url   href: 'inherits@2' }
+650 verbose cache add [ 'minimatch@0.3', null ]
+651 verbose cache add name=undefined spec="minimatch@0.3" args=["minimatch@0.3",null]
+652 verbose parsed url { protocol: null,
+652 verbose parsed url   slashes: null,
+652 verbose parsed url   auth: null,
+652 verbose parsed url   host: null,
+652 verbose parsed url   port: null,
+652 verbose parsed url   hostname: null,
+652 verbose parsed url   hash: null,
+652 verbose parsed url   search: null,
+652 verbose parsed url   query: null,
+652 verbose parsed url   pathname: 'minimatch@0.3',
+652 verbose parsed url   path: 'minimatch@0.3',
+652 verbose parsed url   href: 'minimatch@0.3' }
+653 verbose cache add name="inherits" spec="2" args=["inherits","2"]
+654 verbose parsed url { protocol: null,
+654 verbose parsed url   slashes: null,
+654 verbose parsed url   auth: null,
+654 verbose parsed url   host: null,
+654 verbose parsed url   port: null,
+654 verbose parsed url   hostname: null,
+654 verbose parsed url   hash: null,
+654 verbose parsed url   search: null,
+654 verbose parsed url   query: null,
+654 verbose parsed url   pathname: '2',
+654 verbose parsed url   path: '2',
+654 verbose parsed url   href: '2' }
+655 verbose addNamed [ 'inherits', '2' ]
+656 verbose addNamed [ null, '>=2.0.0-0 <3.0.0-0' ]
+657 silly lockFile 1f7ff4de-inherits-2 inherits@2
+658 verbose lock inherits@2 /Users/rolle/.npm/1f7ff4de-inherits-2.lock
+659 verbose cache add name="minimatch" spec="0.3" args=["minimatch","0.3"]
+660 verbose parsed url { protocol: null,
+660 verbose parsed url   slashes: null,
+660 verbose parsed url   auth: null,
+660 verbose parsed url   host: null,
+660 verbose parsed url   port: null,
+660 verbose parsed url   hostname: null,
+660 verbose parsed url   hash: null,
+660 verbose parsed url   search: null,
+660 verbose parsed url   query: null,
+660 verbose parsed url   pathname: '0.3',
+660 verbose parsed url   path: '0.3',
+660 verbose parsed url   href: '0.3' }
+661 verbose addNamed [ 'minimatch', '0.3' ]
+662 verbose addNamed [ null, '>=0.3.0-0 <0.4.0-0' ]
+663 silly lockFile d43e9cee-minimatch-0-3 minimatch@0.3
+664 verbose lock minimatch@0.3 /Users/rolle/.npm/d43e9cee-minimatch-0-3.lock
+665 silly addNameRange { name: 'inherits', range: '>=2.0.0-0 <3.0.0-0', hasData: false }
+666 silly addNameRange { name: 'minimatch',
+666 silly addNameRange   range: '>=0.3.0-0 <0.4.0-0',
+666 silly addNameRange   hasData: false }
+667 verbose registry.get inherits not expired, no request
+668 silly addNameRange number 2 { name: 'inherits', range: '>=2.0.0-0 <3.0.0-0', hasData: true }
+669 silly addNameRange versions [ 'inherits', [ '1.0.0', '2.0.0', '2.0.1' ] ]
+670 verbose addNamed [ 'inherits', '2.0.1' ]
+671 verbose addNamed [ '2.0.1', '2.0.1' ]
+672 silly lockFile 2b2e8f1b-inherits-2-0-1 inherits@2.0.1
+673 verbose lock inherits@2.0.1 /Users/rolle/.npm/2b2e8f1b-inherits-2-0-1.lock
+674 verbose url raw minimatch
+675 verbose url resolving [ 'https://registry.npmjs.org/', './minimatch' ]
+676 verbose url resolved https://registry.npmjs.org/minimatch
+677 info trying registry request attempt 1 at 12:02:16
+678 verbose etag "6RAFQUO1Q3A7GTG25N34H7NUT"
+679 http GET https://registry.npmjs.org/minimatch
+680 silly lockFile 2b2e8f1b-inherits-2-0-1 inherits@2.0.1
+681 silly lockFile 2b2e8f1b-inherits-2-0-1 inherits@2.0.1
+682 silly lockFile 1f7ff4de-inherits-2 inherits@2
+683 silly lockFile 1f7ff4de-inherits-2 inherits@2
+684 http 200 https://registry.npmjs.org/bower/-/bower-1.3.12.tgz
+685 http 200 https://registry.npmjs.org/gulp-livereload/-/gulp-livereload-2.1.1.tgz
+686 silly lockFile 854919d4-reload-gulp-livereload-2-1-1-tgz https://registry.npmjs.org/gulp-livereload/-/gulp-livereload-2.1.1.tgz
+687 silly lockFile 854919d4-reload-gulp-livereload-2-1-1-tgz https://registry.npmjs.org/gulp-livereload/-/gulp-livereload-2.1.1.tgz
+688 silly lockFile e881b615-gulp-livereload-2-1-1 gulp-livereload@2.1.1
+689 silly lockFile e881b615-gulp-livereload-2-1-1 gulp-livereload@2.1.1
+690 http 200 https://registry.npmjs.org/tiny-lr/-/tiny-lr-0.1.4.tgz
+691 silly resolved [ { name: 'gulp-livereload',
+691 silly resolved     description: 'Gulp plugin for livereload.',
+691 silly resolved     version: '2.1.1',
+691 silly resolved     main: 'gulp-livereload.js',
+691 silly resolved     scripts: { test: 'mocha' },
+691 silly resolved     repository:
+691 silly resolved      { type: 'git',
+691 silly resolved        url: 'git://github.com/vohof/gulp-livereload.git' },
+691 silly resolved     license: 'MIT',
+691 silly resolved     keywords: [ 'gulpplugin', 'livereload' ],
+691 silly resolved     dependencies:
+691 silly resolved      { 'gulp-util': '^3.0.0',
+691 silly resolved        'lodash.assign': '^2.4.1',
+691 silly resolved        'tiny-lr': '^0.1.0' },
+691 silly resolved     devDependencies:
+691 silly resolved      { should: '^4.0.4',
+691 silly resolved        mocha: '^1.21.4',
+691 silly resolved        sinon: '^1.10.3',
+691 silly resolved        pem: '^1.4.0' },
+691 silly resolved     gitHead: 'd1a7d5e6586cad155ed759e25dd7b37d9590c58b',
+691 silly resolved     bugs: { url: 'https://github.com/vohof/gulp-livereload/issues' },
+691 silly resolved     homepage: 'https://github.com/vohof/gulp-livereload',
+691 silly resolved     _id: 'gulp-livereload@2.1.1',
+691 silly resolved     _shasum: 'e47f4c71e96b40dbfc13521d287bad8e23f6559e',
+691 silly resolved     _from: 'gulp-livereload@2.1.1',
+691 silly resolved     _npmVersion: '1.4.14',
+691 silly resolved     _npmUser: { name: 'vohof', email: 'david@jcyr.us' },
+691 silly resolved     maintainers: [ [Object] ],
+691 silly resolved     dist:
+691 silly resolved      { shasum: 'e47f4c71e96b40dbfc13521d287bad8e23f6559e',
+691 silly resolved        tarball: 'http://registry.npmjs.org/gulp-livereload/-/gulp-livereload-2.1.1.tgz' },
+691 silly resolved     directories: {},
+691 silly resolved     _resolved: 'https://registry.npmjs.org/gulp-livereload/-/gulp-livereload-2.1.1.tgz' } ]
+692 info install gulp-livereload@2.1.1 into /Users/rolle
+693 info installOne gulp-livereload@2.1.1
+694 info /Users/rolle/node_modules/gulp-livereload unbuild
+695 info preuninstall gulp-livereload@2.1.0
+696 info uninstall gulp-livereload@2.1.0
+697 verbose true,/Users/rolle/node_modules,/Users/rolle/node_modules unbuild gulp-livereload@2.1.0
+698 info postuninstall gulp-livereload@2.1.0
+699 http 200 https://registry.npmjs.org/gulp-rimraf/-/gulp-rimraf-0.1.1.tgz
+700 info /Users/rolle/node_modules/gulp-livereload unbuild
+701 http 200 https://registry.npmjs.org/resolve/-/resolve-0.3.1.tgz
+702 silly lockFile ef3d1ef5-ulp-rimraf-gulp-rimraf-0-1-1-tgz https://registry.npmjs.org/gulp-rimraf/-/gulp-rimraf-0.1.1.tgz
+703 silly lockFile ef3d1ef5-ulp-rimraf-gulp-rimraf-0-1-1-tgz https://registry.npmjs.org/gulp-rimraf/-/gulp-rimraf-0.1.1.tgz
+704 silly lockFile 3dd822d6-gulp-rimraf-0-1-1 gulp-rimraf@0.1.1
+705 silly lockFile 3dd822d6-gulp-rimraf-0-1-1 gulp-rimraf@0.1.1
+706 http 200 https://registry.npmjs.org/uncss/-/uncss-0.10.0.tgz
+707 silly resolved [ { name: 'gulp-rimraf',
+707 silly resolved     description: 'rimraf plugin for gulp',
+707 silly resolved     version: '0.1.1',
+707 silly resolved     homepage: 'https://github.com/robrich/gulp-rimraf',
+707 silly resolved     repository: { type: 'git', url: 'git://github.com/robrich/gulp-rimraf.git' },
+707 silly resolved     author: { name: 'Rob Richardson', url: 'http://robrich.org/' },
+707 silly resolved     main: './index.js',
+707 silly resolved     keywords:
+707 silly resolved      [ 'gulpplugin',
+707 silly resolved        'rimraf',
+707 silly resolved        'clean',
+707 silly resolved        'remove',
+707 silly resolved        'delete',
+707 silly resolved        'gulp-clean' ],
+707 silly resolved     dependencies: { 'gulp-util': '^3.0.1', rimraf: '^2.2.8', through2: '~0.6.2' },
+707 silly resolved     devDependencies:
+707 silly resolved      { jshint: '^2.5.6',
+707 silly resolved        mocha: '^1.21.4',
+707 silly resolved        should: '^4.0.4',
+707 silly resolved        vinyl: '~0.4.3' },
+707 silly resolved     scripts: { test: 'mocha && jshint ./index.js ./test/.' },
+707 silly resolved     engines: { node: '>= 0.10.0' },
+707 silly resolved     licenses: [ [Object] ],
+707 silly resolved     gitHead: '7d0ba5d970f8c10b1ac6e719b1b7458b3fe5bb22',
+707 silly resolved     bugs: { url: 'https://github.com/robrich/gulp-rimraf/issues' },
+707 silly resolved     _id: 'gulp-rimraf@0.1.1',
+707 silly resolved     _shasum: '5aaba8f870559ca4885c044385f9926c0f863f10',
+707 silly resolved     _from: 'gulp-rimraf@0.1.1',
+707 silly resolved     _npmVersion: '1.5.0-alpha-4',
+707 silly resolved     _npmUser: { name: 'robrich', email: 'robrich@robrich.org' },
+707 silly resolved     maintainers: [ [Object] ],
+707 silly resolved     dist:
+707 silly resolved      { shasum: '5aaba8f870559ca4885c044385f9926c0f863f10',
+707 silly resolved        tarball: 'http://registry.npmjs.org/gulp-rimraf/-/gulp-rimraf-0.1.1.tgz' },
+707 silly resolved     deprecated: 'Use npmjs.org/del instead, see https://github.com/gulpjs/gulp/blob/master/docs/recipes/delete-files-folder.md',
+707 silly resolved     directories: {},
+707 silly resolved     _resolved: 'https://registry.npmjs.org/gulp-rimraf/-/gulp-rimraf-0.1.1.tgz' } ]
+708 info install gulp-rimraf@0.1.1 into /Users/rolle
+709 info installOne gulp-rimraf@0.1.1
+710 http 304 https://registry.npmjs.org/abbrev
+711 silly registry.get cb [ 304,
+711 silly registry.get   { date: 'Thu, 11 Dec 2014 10:02:16 GMT',
+711 silly registry.get     server: 'Apache',
+711 silly registry.get     via: '1.1 varnish',
+711 silly registry.get     'last-modified': 'Thu, 11 Dec 2014 10:02:13 GMT',
+711 silly registry.get     'cache-control': 'max-age=60',
+711 silly registry.get     etag: '"4QNDPDFWVPQ9QQL4E8ZPN4JMY"',
+711 silly registry.get     age: '28',
+711 silly registry.get     'x-served-by': 'cache-fra1228-FRA',
+711 silly registry.get     'x-cache': 'HIT',
+711 silly registry.get     'x-cache-hits': '2',
+711 silly registry.get     'x-timer': 'S1418292136.322248,VS0,VE0',
+711 silly registry.get     vary: 'Accept',
+711 silly registry.get     'content-length': '0',
+711 silly registry.get     'keep-alive': 'timeout=10, max=50',
+711 silly registry.get     connection: 'Keep-Alive' } ]
+712 verbose etag abbrev from cache
+713 info /Users/rolle/node_modules/gulp-rimraf unbuild
+714 info preuninstall gulp-rimraf@0.1.0
+715 info uninstall gulp-rimraf@0.1.0
+716 silly lockFile e92308c0-js-org-resolve-resolve-0-3-1-tgz https://registry.npmjs.org/resolve/-/resolve-0.3.1.tgz
+717 silly lockFile e92308c0-js-org-resolve-resolve-0-3-1-tgz https://registry.npmjs.org/resolve/-/resolve-0.3.1.tgz
+718 silly lockFile 95464470-resolve-0-3-1 resolve@0.3.1
+719 silly lockFile 95464470-resolve-0-3-1 resolve@0.3.1
+720 verbose true,/Users/rolle/node_modules,/Users/rolle/node_modules unbuild gulp-rimraf@0.1.0
+721 info postuninstall gulp-rimraf@0.1.0
+722 error error rolling back Error: EACCES, unlink '/Users/rolle/node_modules/gulp-livereload/node_modules/gulp-util/node_modules/chalk/node_modules/.bin/strip-ansi'
+722 error error rolling back  gulp-livereload@2.1.1 { [Error: EACCES, unlink '/Users/rolle/node_modules/gulp-livereload/node_modules/gulp-util/node_modules/chalk/node_modules/.bin/strip-ansi']
+722 error error rolling back   errno: 3,
+722 error error rolling back   code: 'EACCES',
+722 error error rolling back   path: '/Users/rolle/node_modules/gulp-livereload/node_modules/gulp-util/node_modules/chalk/node_modules/.bin/strip-ansi' }
+723 error Error: EACCES, unlink '/Users/rolle/node_modules/gulp-livereload/node_modules/gulp-util/node_modules/chalk/node_modules/.bin/strip-ansi'
+723 error  { [Error: EACCES, unlink '/Users/rolle/node_modules/gulp-livereload/node_modules/gulp-util/node_modules/chalk/node_modules/.bin/strip-ansi']
+723 error   errno: 3,
+723 error   code: 'EACCES',
+723 error   path: '/Users/rolle/node_modules/gulp-livereload/node_modules/gulp-util/node_modules/chalk/node_modules/.bin/strip-ansi' }
+724 error Please try running this command again as root/Administrator.
+725 error System Darwin 14.0.0
+726 error command "node" "/usr/local/bin/npm" "update"
+727 error cwd /Users/rolle/wpstack-rolle
+728 error node -v v0.10.29
+729 error npm -v 1.4.14
+730 error path /Users/rolle/node_modules/gulp-livereload/node_modules/gulp-util/node_modules/chalk/node_modules/.bin/strip-ansi
+731 error code EACCES
+732 error errno 3
+733 error stack Error: EACCES, unlink '/Users/rolle/node_modules/gulp-livereload/node_modules/gulp-util/node_modules/chalk/node_modules/.bin/strip-ansi'
+734 verbose exit [ 3, true ]
