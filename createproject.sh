@@ -106,13 +106,13 @@ namespace :deploy do
     task :finished do
         on roles(:app) do
 
-            execute \"mkdir -p /YOUR_STAGING_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}\"
-            execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/content && ln -nfs #{current_path}/content /YOUR_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/content\"
-            execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/index.php && ln -nfs #{current_path}/index.php /YOUR_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/index.php\"
-            execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/wp-config.php && ln -nfs #{current_path}/wp-config.php /YOUR_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/wp-config.php\"
-            execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/wp && ln -nfs #{current_path}/wp /YOUR_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/wp\"
-            execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/vendor && ln -nfs #{current_path}/vendor /YOUR_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/vendor\"
-            execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/config && ln -nfs #{current_path}/config /YOUR_SERVER_HOME_PATH_HERE/public_html/#{fetch(:application)}/config\"
+            execute \"mkdir -p /YOUR_STAGING_SERVER_HOME_PATH_HERE/#{fetch(:application)}\"
+            execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/#{fetch(:application)}/content && ln -nfs #{current_path}/content /YOUR_SERVER_HOME_PATH_HERE/#{fetch(:application)}/content\"
+            execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/#{fetch(:application)}/index.php && ln -nfs #{current_path}/index.php /YOUR_SERVER_HOME_PATH_HERE/#{fetch(:application)}/index.php\"
+            execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/#{fetch(:application)}/wp-config.php && ln -nfs #{current_path}/wp-config.php /YOUR_SERVER_HOME_PATH_HERE/#{fetch(:application)}/wp-config.php\"
+            execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/#{fetch(:application)}/wp && ln -nfs #{current_path}/wp /YOUR_SERVER_HOME_PATH_HERE/#{fetch(:application)}/wp\"
+            execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/#{fetch(:application)}/vendor && ln -nfs #{current_path}/vendor /YOUR_SERVER_HOME_PATH_HERE/#{fetch(:application)}/vendor\"
+            execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/#{fetch(:application)}/config && ln -nfs #{current_path}/config /YOUR_SERVER_HOME_PATH_HERE/#{fetch(:application)}/config\"
 
         end
     end
@@ -121,9 +121,14 @@ namespace :deploy do
     task :composer_install do
         on roles(:app) do
             within release_path do
-                execute \"mkdir -p STAGING_HOME_BIN_PATH && curl -sS https://getcomposer.org/installer | php && mv composer.phar PATH_TO_STAGING_BIN_COMPOSER && chmod +x PATH_TO_STAGING_BIN_COMPOSER\"
-                execute 'composer', 'update'
-                execute 'composer', 'install', '--no-dev', '--optimize-autoloader'
+                if test(\"[ -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/bin/composer ]\")
+                    puts \"Composer already exists, running update only...\"
+                    execute 'composer', 'update'
+                else
+                    execute \"mkdir -p STAGING_HOME_BIN_PATH && curl -sS https://getcomposer.org/installer | php && mv composer.phar PATH_TO_STAGING_BIN_COMPOSER && chmod +x PATH_TO_STAGING_BIN_COMPOSER\"
+                    execute 'composer', 'update'
+                    execute 'composer', 'install', '--no-dev', '--optimize-autoloader'
+                end
             end
         end
     end
@@ -140,7 +145,7 @@ set :ssh_options, {
     forward_agent: \"true\"
 }
 
-set :deploy_to, \"/home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/deploy/\"
+set :deploy_to, \"/home/#{fetch(:application)}/deploy/\"
 set :deploy_via, :remote_cache
 set :use_sudo, false
 set :keep_releases, 2
@@ -162,12 +167,12 @@ namespace :deploy do
     task :finished do
         on roles(:app) do
 
-            execute \"rm -f /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/content && ln -nfs #{current_path}/content /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/content\"
-            execute \"rm -f /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/index.php && ln -nfs #{current_path}/index.php /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/index.php\"
-            execute \"rm -f /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/wp-config.php && ln -nfs #{current_path}/wp-config.php /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/wp-config.php\"
-            execute \"rm -f /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/wp && ln -nfs #{current_path}/wp /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/wp\"
-            execute \"rm -f /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/vendor && ln -nfs #{current_path}/vendor /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/vendor\"
-            execute \"rm -f /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/config && ln -nfs #{current_path}/config /home/#{fetch(:application)}/sites/#{fetch(:application)}.fi/public_html/config\"
+            execute \"rm -f /home/#{fetch(:application)}/www.#{fetch(:application)}.fi/content && ln -nfs #{current_path}/content /home/#{fetch(:application)}/www.#{fetch(:application)}.fi/content\"
+            execute \"rm -f /home/#{fetch(:application)}/www.#{fetch(:application)}.fi/index.php && ln -nfs #{current_path}/index.php /home/#{fetch(:application)}/www.#{fetch(:application)}.fi/index.php\"
+            execute \"rm -f /home/#{fetch(:application)}/www.#{fetch(:application)}.fi/wp-config.php && ln -nfs #{current_path}/wp-config.php /home/#{fetch(:application)}/www.#{fetch(:application)}.fi/wp-config.php\"
+            execute \"rm -f /home/#{fetch(:application)}/www.#{fetch(:application)}.fi/wp && ln -nfs #{current_path}/wp /home/#{fetch(:application)}/www.#{fetch(:application)}.fi/wp\"
+            execute \"rm -f /home/#{fetch(:application)}/www.#{fetch(:application)}.fi/vendor && ln -nfs #{current_path}/vendor /home/#{fetch(:application)}/www.#{fetch(:application)}.fi/vendor\"
+            execute \"rm -f /home/#{fetch(:application)}/www.#{fetch(:application)}.fi/config && ln -nfs #{current_path}/config /home/#{fetch(:application)}/www.#{fetch(:application)}.fi/config\"
 
         end
     end
@@ -177,9 +182,14 @@ namespace :deploy do
     task :composer_install do
         on roles(:app) do
             within release_path do
-                execute \"mkdir -p /home/#{fetch(:application)}/bin/ && curl -sS https://getcomposer.org/installer | php && mv composer.phar /home/#{fetch(:application)}/bin/composer && chmod +x /home/#{fetch(:application)}/bin/composer\"
-                execute 'composer', 'update'
-                execute 'composer', 'install', '--no-dev', '--optimize-autoloader'
+                if test(\"[ -f /home/USERNAME/bin/composer ]\")
+                    puts \"Composer already exists, running update only...\"
+                    execute 'composer', 'update'
+                else
+                    execute \"mkdir -p /home/#{fetch(:application)}/bin/ && curl -sS https://getcomposer.org/installer | php && mv composer.phar /home/#{fetch(:application)}/bin/composer && chmod +x /home/#{fetch(:application)}/bin/composer\"
+                    execute 'composer', 'update'
+                    execute 'composer', 'install', '--no-dev', '--optimize-autoloader'
+                end
             end
         end
     end
