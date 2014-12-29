@@ -716,4 +716,4 @@ echo "${yellow}Initializing bitbucket repo...${txtreset}"
 cd "$HOME/Projects/$PROJECTNAME"
 git init
 git remote add origin git@bitbucket.org:YOUR_BITBUCKET_USERNAME_HERE/$PROJECTNAME.git
-echo "${boldgreen}All done! Start coding at http://${PROJECTNAME}.dev! Remember to make a repo on Bitbucket, eventually.${txtreset}"
+echo "${boldgreen}All done! Start coding at http://${PROJECTNAME}.dev!${txtreset}"
