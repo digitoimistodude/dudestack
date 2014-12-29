@@ -1,3 +1,5 @@
+access.log
+error.log
 .sass-cache/
 .git/
 wp
