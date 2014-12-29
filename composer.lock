@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c8ed2ad78920287c7bea73c8e62ddffe",
+    "hash": "c8ff9ad30e363065ac1c4d389791265d",
     "packages": [
         {
             "name": "composer/installers",
@@ -231,10 +231,10 @@
         },
         {
             "name": "wordpress",
-            "version": "4.0.1",
+            "version": "4.1",
             "dist": {
                 "type": "zip",
-                "url": "https://sv.wordpress.org/wordpress-4.0.1-fi.zip",
+                "url": "https://sv.wordpress.org/wordpress-4.1-fi.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -242,6 +242,27 @@
                 "fancyguy/webroot-installer": "1.1.0"
             },
             "type": "webroot"
+        },
+        {
+            "name": "wpackagist-plugin/advanced-custom-fields",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/advanced-custom-fields/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/advanced-custom-fields.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/advanced-custom-fields/",
+            "time": "2014-09-12 01:22:41"
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
@@ -260,11 +281,8 @@
             "require": {
                 "composer/installers": "~1.0"
             },
-            "replace": {
-                "wpackagist/wordpress-seo": "self.version"
-            },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/wordpress-seo/"
+            "homepage": "https://wordpress.org/plugins/wordpress-seo/"
         },
         {
             "name": "wpackagist-plugin/wp-html-compression",
@@ -283,11 +301,8 @@
             "require": {
                 "composer/installers": "~1.0"
             },
-            "replace": {
-                "wpackagist/wp-html-compression": "self.version"
-            },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/wp-html-compression/"
+            "homepage": "https://wordpress.org/plugins/wp-html-compression/"
         },
         {
             "name": "wpackagist-plugin/wp-last-login",
@@ -306,34 +321,28 @@
             "require": {
                 "composer/installers": "~1.0"
             },
-            "replace": {
-                "wpackagist/wp-last-login": "self.version"
-            },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/wp-last-login/"
+            "homepage": "https://wordpress.org/plugins/wp-last-login/"
         },
         {
             "name": "wpackagist-plugin/wp-nested-pages",
-            "version": "1.1.6",
+            "version": "1.3.0",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wp-nested-pages/",
-                "reference": "tags/1.1.6"
+                "reference": "tags/1.3.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wp-nested-pages.1.1.6.zip",
+                "url": "http://downloads.wordpress.org/plugin/wp-nested-pages.1.3.0.zip",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
             },
-            "replace": {
-                "wpackagist/wp-nested-pages": "self.version"
-            },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/wp-nested-pages/"
+            "homepage": "https://wordpress.org/plugins/wp-nested-pages/"
         },
         {
             "name": "wpackagist-plugin/wp-super-cache",
@@ -352,40 +361,19 @@
             "require": {
                 "composer/installers": "~1.0"
             },
-            "replace": {
-                "wpackagist/wp-super-cache": "self.version"
-            },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/wp-super-cache/"
-        },
-        {
-            "name": "wpackagist/advanced-custom-fields",
-            "version": "4.3.9",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/advanced-custom-fields/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/advanced-custom-fields.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/advanced-custom-fields/"
+            "homepage": "https://wordpress.org/plugins/wp-super-cache/"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "facebook/php-sdk": 20
+        "facebook/php-sdk": 20,
+        "wpackagist-plugin/advanced-custom-fields": 20
     },
     "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": {
         "php": ">=5.3.10"
     },
