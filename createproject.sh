@@ -48,7 +48,8 @@ composer update
 echo "${yellow}Creating a MySQL database for ${PROJECTNAME}${txtreset}"
 # NOTE: this needs auto-login to local vm
 ssh vagrant@10.1.2.3 "mysql -u root -pvagrant -e \"CREATE DATABASE ${PROJECTNAME}\""
-#/Applications/MAMP/Library/bin/mysql -u root -p -e "create database ${PROJECTNAME}"
+# For MAMP:
+#/Applications/MAMP/Library/bin/mysql -u root -pYOURMAMPMYSQLPASSWORD -e "create database ${PROJECTNAME}"
 echo "${boldgreen}MySQL database created${txtreset}"
 echo "${yellow}Installing Capistrano in the project directory${txtreset}"
 #bundle install
@@ -354,14 +355,14 @@ gulp.task('browserSync', function () {
     cssDest + '/**/*.{sass,scss}',
     jsSrc + '/**/*.js',
     imgDest + '/*.{png,jpg,jpeg,gif}',
-    '**/*.php'
+    themeDir + '**/*.php'
     ];
 
     browserSync.init(files, {
     proxy: localURL,
     host: hostname,
     agent: false,
-    browser: \"firefox\"
+    browser: \"Google Chrome Canary\"
     });
 
 });
@@ -725,5 +726,24 @@ rm "$HOME/Projects/$PROJECTNAME/createproject.sh"
 echo "${yellow}Initializing bitbucket repo...${txtreset}"
 cd "$HOME/Projects/$PROJECTNAME"
 git init
-git remote add origin git@bitbucket.org:YOUR_BITBUCKET_USERNAME_HERE/$PROJECTNAME.git
+# If you are using MAMP instead of jolliest-vagrant, please comment out all but the last line:
+echo "<VirtualHost *:80>
+
+  ServerAdmin webmaster@$PROJECTNAME
+  ServerName  $PROJECTNAME.dev
+  ServerAlias www.$PROJECTNAME.dev
+  DirectoryIndex index.html index.php
+  DocumentRoot /var/www/$PROJECTNAME
+  LogLevel warn
+  ErrorLog  /var/www/$PROJECTNAME/error.log
+  CustomLog /var/www/$PROJECTNAME/access.log combined
+
+</VirtualHost>" > "$HOME/jolliest-vagrant/vhosts/$PROJECTNAME.dev.conf"
+echo "${boldgreen}Added vhost, $PROJECTNAME.dev.conf added to vagrant sites-enabled.${txtreset}"
+echo "${yellow}Reprovisioning vagrant...${txtreset}"
+cd ~/jolliest-vagrant
+vagrant provision
+echo "${boldgreen}VM provisioned, local environment up and running.${txtreset}"
+echo "${yellow}Updating hosts file...${txtreset}"
+sudo -- sh -c "echo 10.1.2.3 ${PROJECTNAME}.dev >> /etc/hosts"
 echo "${boldgreen}All done! Start coding at http://${PROJECTNAME}.dev!${txtreset}"
