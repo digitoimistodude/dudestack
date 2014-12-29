@@ -612,11 +612,17 @@ sed -i -e "s/database_password/YOUR_DEFAULT_DATABASE_PASSWORD_HERE/g" .env
 sed -i -e "s/database_host/localhost/g" .env
 sed -i -e "s/example.com/${PROJECTNAME}.dev/g" .env
 sed -i -e "s/example.com/${PROJECTNAME}.dev/g" .env
-echo "${yellow}Installing wp-cli...:${txtreset}"
-curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
-chmod +x wp-cli.phar
-mkdir wp-cli
-mv wp-cli.phar wp-cli/wp
+
+# If you are using MAMP you may want to enable these:
+
+# echo "${yellow}Installing wp-cli...:${txtreset}"
+# curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+# chmod +x wp-cli.phar
+# mkdir wp-cli
+# mv wp-cli.phar wp-cli/wp
+
+# But if you are using vagrant, you should be using these:
+
 echo "${yellow}Installing WordPress...:${txtreset}"
 echo "path: wp
 url: http://${PROJECTNAME}.dev
@@ -626,31 +632,35 @@ core install:
   admin_password: YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE
   admin_email: YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE
   title: \"${PROJECTNAME}\"" > wp-cli.yml
-./wp-cli/wp core install
+
+# The command is following for MAMP:
+#./wp-cli/wp core install
+
+# These syntaxes are for vagrant:
+
 echo "${yellow}Removing default WordPress posts...:${txtreset}"
-./wp-cli/wp post delete 1 --force
-./wp-cli/wp post delete 2 --force
-./wp-cli/wp option update blogdescription ''
-./wp-cli/wp theme delete twentytwelve
-./wp-cli/wp theme delete twentythirteen
-./wp-cli/wp option update permalink_structure '/%postname%'
-./wp-cli/wp option update timezone_string 'Europe/Helsinki'
+ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp post delete 1 --force"
+ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp post delete 2 --force"
+ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp option update blogdescription ''"
+ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp theme delete twentytwelve"
+ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp theme delete twentythirteen"
+ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp option update permalink_structure '/%postname%'"
+ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp option update timezone_string 'Europe/Helsinki'"
 echo "${yellow}Activating necessary plugins, mainly for theme development...:${txtreset}"
-./wp-cli/wp plugin activate advanced-custom-fields
-./wp-cli/wp plugin activate wordpress-seo
-./wp-cli/wp plugin activate wp-last-login
-./wp-cli/wp plugin activate wp-nested-pages
+ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp plugin activate advanced-custom-fields"
+ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp plugin activate wordpress-seo"
+ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp plugin activate wp-last-login"
+ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp plugin activate wp-nested-pages"
 chmod 777 "$HOME/Projects/$PROJECTNAME/content"
-./wp-cli/wp plugin activate ewww-image-optimizer
 
 ## You can set up your users here - if you want, uncomment next lines
 #####################################################################
 
 #echo "${yellow}Setting up users...:${txtreset}"
-#./wp-cli/wp user update admin --display_name="Your Company Ltd"
-#./wp-cli/wp user update admin --first_name="Your Company Ltd"
-#./wp-cli/wp user create user1 user1@yourcompanyltd.com --role=administrator --user_pass=somepass --first_name=John --last_name=Doe --display_name=John
-#./wp-cli/wp user create user2 user2@yourcompanyltd.com --role=administrator --user_pass=somepass --first_name=Marilyn --last_name=Manson --display_name=Marilyn
+#ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp user update admin --display_name=\"Your Company Ltd\""
+#ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp user update admin --first_name=\"Your Company Ltd\""
+#ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp user create user1 user1@yourcompanyltd.com --role=administrator --user_pass=somepass --first_name=John --last_name=Doe --display_name=John"
+#ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp user create user2 user2@yourcompanyltd.com --role=administrator --user_pass=somepass --first_name=Marilyn --last_name=Manson --display_name=Marilyn"
 
 echo "${yellow}Set up .htaccess for pretty urls...:${txtreset}"
 echo "<IfModule mod_rewrite.c>
