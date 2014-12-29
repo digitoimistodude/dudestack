@@ -567,14 +567,6 @@ define('DB_COLLATE', '');
 \$table_prefix = 'wp_';
 
 /**
- * WordPress Localized Language
- * Default: English
- *
- * A corresponding MO file for the chosen language must be installed to content/languages
- */
-define('WPLANG', 'fi');
-
-/**
  * Authentication Unique Keys and Salts
  */
 define('AUTH_KEY',         getenv('AUTH_KEY'));

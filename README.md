@@ -29,7 +29,6 @@ Well, this is mainly for myself for backup purposes or to show off how I roll. Y
 Despite the fact I love most of bedrock, I noticed there's some things I don't like. Maybe little things for you, but some things matter to me. And I just want everything to be _mine_.
 
 * Stuff are in app/ by default. I prefer content/. It describes it better, since I'm not a programmer and developing WordPress themes or plugins (that's what I do) is not exactly programming in my mind.
-* I mostly use WordPress in finnish language, so WPLANG must be set to fi
 * Composer modifications, getting latest finnish WordPress from sv.wordpress.org.
 * Automation. I mean composer create-project is awesome, but I want everything else automated as well when I start a new project
 
@@ -82,8 +81,6 @@ To use, please edit all the caps written information in the file (don't touch va
  - YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE
  - YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE
  - YOUR_BITBUCKET_USERNAME_HERE
-
-You also will need to edit define('WPLANG', 'fi'); unless you want to use finnish language.
 
 ## Getting started
 
