@@ -21,14 +21,14 @@ read -p "${boldyellow}Edited this file (createproject.sh) to your needs with you
     esac
 done
 
-while true; do
-read -p "${boldyellow}MAMP properly set up and running? (y/n)${txtreset} " yn
-    case $yn in
-        [Yy]* ) break;;
-        [Nn]* ) exit;;
-        * ) echo "Please answer y or n.";;
-    esac
-done
+# while true; do
+# read -p "${boldyellow}MAMP properly set up and running? (y/n)${txtreset} " yn
+#     case $yn in
+#         [Yy]* ) break;;
+#         [Nn]* ) exit;;
+#         * ) echo "Please answer y or n.";;
+#     esac
+# done
 
 while true; do
 read -p "${boldyellow}Created Bitbucket/Github repo? (y/n)${txtreset} " yn
@@ -46,7 +46,9 @@ composer create-project -n ronilaukkarinen/wpstack-rolle $HOME/Projects/${PROJEC
 cd $HOME/Projects/${PROJECTNAME}
 composer update
 echo "${yellow}Creating a MySQL database for ${PROJECTNAME}${txtreset}"
-/Applications/MAMP/Library/bin/mysql -u root -p -e "create database ${PROJECTNAME}"
+# NOTE: this needs auto-login to local vm
+ssh vagrant@10.1.2.3 "mysql -u root -pvagrant -e \"CREATE DATABASE ${PROJECTNAME}\""
+#/Applications/MAMP/Library/bin/mysql -u root -p -e "create database ${PROJECTNAME}"
 echo "${boldgreen}MySQL database created${txtreset}"
 echo "${yellow}Installing Capistrano in the project directory${txtreset}"
 #bundle install
