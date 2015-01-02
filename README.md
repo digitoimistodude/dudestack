@@ -91,6 +91,41 @@ To use, please edit all the caps written information in the file (don't touch va
 
 To start a project, run `createproject` and have fun.
 
+## Paid or Premium plugins
+
+Edit your `composer.json` and add these lines inside respository, separated by commas:
+
+### Advanced Custom Fields Pro
+
+    {
+      "type": "package",
+      "package": {
+        "name": "advanced-custom-fields/advanced-custom-fields-pro",
+        "version": "5.0",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "YOUR_DOWNLOAD_URL (get it from ACF website)"
+        }
+      }
+    }
+
+### WPML
+
+    {
+      "type": "package",
+      "package": {
+        "name": "wpml/sitepress-multilingual-cms",
+        "type": "wordpress-plugin",
+        "version": "3.1.8.4",
+        "dist": {
+          "type": "zip",
+          "url": "YOUR_DOWNLOAD_URL (get it from WPML website)"
+        }
+      }
+
+In the similar manner you can add other plugins. I've covered with this almost every plugin I use.
+
 ## Requirements
 
 * Basic knowledge of capistrano, bundle, gulp, bash scripting and composer and other possible tools like this
