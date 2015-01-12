@@ -684,31 +684,29 @@ echo "{
   \"name\": \"$PROJECTNAME\",
   \"version\": \"1.0.0\",
   \"description\": \"$PROJECTNAME powered by wpstack-rolle + gulp\",
-  \"author\": \"Digitoimisto Dude Oy (moro@dude.fi)\",
+  \"author\": \"Your company (your@email.com)\",
   \"devDependencies\": {
-    \"browser-sync\": \"~0.8.2\",
-    \"gulp\": \"^3.8.0\",
-    \"gulp-changed\": \"^0.4.1\",
-    \"gulp-imagemin\": \"^0.6.2\",
-    \"gulp-notify\": \"^1.4.2\",
-    \"gulp-ruby-sass\": \"^0.7.1\",
-    \"gulp-compass\": \"^1.2.0\",
-    \"gulp-util\": \"^3.0.0\",
-    \"gulp-minify-css\": \"0.3.7\",
-    \"gulp-autoprefixer\": \"0.0.8\",
-    \"gulp-combine-media-queries\": \"0.1.0\",
-    \"gulp-uglify\": \"0.3.1\",
-    \"gulp-cache\": \"0.2.0\",
-    \"gulp-concat\": \"2.3.4\",
-    \"gulp-header\": \"1.1.1\",
-    \"normalize-css\": \"2.3.1\",
-    \"gulp-pixrem\": \"^0.1.1\",
-    \"require-dir\": \"^0.1.0\",
-    \"psi\": \"^0.1.2\"
+    \"browser-sync\": \"*\",
+    \"gulp\": \"*\",
+    \"gulp-changed\": \"*\",
+    \"gulp-imagemin\": \"*\",
+    \"gulp-notify\": \"*\",
+    \"gulp-sass\": \"*\",
+    \"gulp-util\": \"*\",
+    \"gulp-minify-css\": \"*\",
+    \"gulp-autoprefixer\": \"*\",
+    \"gulp-uglify\": \"*\",
+    \"gulp-cache\": \"*\",
+    \"gulp-concat\": \"*\",
+    \"gulp-header\": \"*\",
+    \"normalize-css\": \"*\",
+    \"gulp-pixrem\": \"*\",
+    \"require-dir\": \"*\",
+    \"psi\": \"*\"
   },
   \"dependencies\": {
-    \"backbone\": \"~1.1.2\",
-    \"jquery\": \"~2.1.0\"
+    \"backbone\": \"*\",
+    \"jquery\": \"*\"
   }
 }" > "$HOME/Projects/$PROJECTNAME/package.json"
 
