@@ -123,8 +123,32 @@ Edit your `composer.json` and add these lines inside respository, separated by c
           "url": "YOUR_DOWNLOAD_URL (get it from WPML website)"
         }
       }
+    }
+
+### Gravity Forms
+
+Gravityforms and some other plugins have urls that expire after some time, so to not having always get the url after new version, use your own private plugin repository to store zip files on remote server with basic HTTP auth and add package like this:
+
+      {
+        "type": "package",
+        "package": {
+          "name": "gravityforms",
+          "type": "wordpress-plugin",
+          "version": "1.8.20.5",
+          "dist": {
+            "type": "zip",
+            "url": "http://YOURUSERNAME:YOURPASSWORD@www.yoursite.com/path/to/plugins/gravityforms_1.8.20.5.zip"
+          }
+        }
+      }
 
 In the similar manner you can add other plugins. I've covered with this almost every plugin I use.
+
+When getting the new zip, I use this function in my `~/.bashrc`:
+
+    function plugin() { scp -r $@ 'username@yoursite.com:~/path/to/plugins/'; }
+
+So with simple ssh-pairing (passwordless login), I can upload a plugin by simple command: `plugin gravityforms_1.8.20.5.zip` and then just change version and `composer update`. DRY, you see.
 
 ## Requirements
 
