@@ -1,25 +1,24 @@
 #!/bin/bash
-# Project starting bash script by rolle
+# Project starting bash script by rolle.
 
+# Helpers:
+currentfile=`basename $0`
 txtbold=$(tput bold)
 boldyellow=${txtbold}$(tput setaf 3)
 boldgreen=${txtbold}$(tput setaf 2)
 boldwhite=${txtbold}$(tput setaf 7)
 yellow=$(tput setaf 3)
+red=$(tput setaf 1)
 green=$(tput setaf 2)
 white=$(tput setaf 7)
 txtreset=$(tput sgr0)
 LOCAL_IP=$(ifconfig | grep -Eo "inet (addr:)?([0-9]*\.){3}[0-9]*" | grep -Eo "([0-9]*\.){3}[0-9]*" | grep -v "127.0.0.1")
 
-# Comment this out after editing this file:
-while true; do
-read -p "${boldyellow}Edited this file (createproject.sh) to your needs with your credentials etc. (OTHERWISE THIS SCRIPT WON'T WORK)? (y/n)${txtreset} " yn
-    case $yn in
-        [Yy]* ) break;;
-        [Nn]* ) exit;;
-        * ) echo "Please answer y or n.";;
-    esac
-done
+# Did you run setup.sh first? let's see about that...
+if [ ! -f /usr/bin/createproject ]; then
+  echo "${red}It seems you did not run setup.sh. Run sh setup.sh and try again.${txtreset}"
+  exit
+else
 
 # while true; do
 # read -p "${boldyellow}MAMP properly set up and running? (y/n)${txtreset} " yn
@@ -50,7 +49,7 @@ echo "${yellow}Creating a MySQL database for ${PROJECTNAME}${txtreset}"
 ssh vagrant@10.1.2.3 "mysql -u root -pvagrant -e \"CREATE DATABASE ${PROJECTNAME}\""
 # For MAMP:
 #/Applications/MAMP/Library/bin/mysql -u root -pYOURMAMPMYSQLPASSWORD -e "create database ${PROJECTNAME}"
-echo "${boldgreen}MySQL database created${txtreset}"
+echo "${boldgreen}Attempt to create MySQL database successful.${txtreset}"
 echo "${yellow}Installing Capistrano in the project directory${txtreset}"
 #bundle install
 #bundle exec cap install
@@ -89,7 +88,7 @@ set :ssh_options, {
 
 set :deploy_to, \"/YOUR_STAGING_SERVER_HOME_PATH_HERE/projects/#{fetch(:application)}\"
 set :tmp_dir, \"/YOUR_STAGING_SERVER_HOME_PATH_HERE/tmp\"
-SSHKit.config.command_map[:composer] = \"PATH_TO_STAGING_BIN_COMPOSER\"
+SSHKit.config.command_map[:composer] = \"/YOUR_STAGING_SERVER_HOME_PATH_HERE/bin/composer\"
 set :deploy_via, :remote_cache
 set :use_sudo, false
 set :keep_releases, 2
@@ -128,7 +127,7 @@ namespace :deploy do
                     puts \"Composer already exists, running update only...\"
                     execute 'composer', 'update'
                 else
-                    execute \"mkdir -p STAGING_HOME_BIN_PATH && curl -sS https://getcomposer.org/installer | php && mv composer.phar PATH_TO_STAGING_BIN_COMPOSER && chmod +x PATH_TO_STAGING_BIN_COMPOSER\"
+                    execute \"mkdir -p /YOUR_STAGING_SERVER_HOME_PATH_HERE/bin && curl -sS https://getcomposer.org/installer | php && mv composer.phar /YOUR_STAGING_SERVER_HOME_PATH_HERE/bin/composer && chmod +x /YOUR_STAGING_SERVER_HOME_PATH_HERE/bin/composer\"
                     execute 'composer', 'update'
                     execute 'composer', 'install', '--no-dev', '--optimize-autoloader'
                 end
@@ -229,20 +228,6 @@ echo "{
     ]
 }
 " > "$PROJECTNAME.sublime-project"
-echo "${yellow}Setting up compass${txtreset}"
-echo "require 'breakpoint';
-require 'sassy-buttons';
-
-preferred_syntax = :scss
-http_path = '/'
-css_dir = 'content/themes/$PROJECTNAME/css'
-sass_dir = 'content/themes/$PROJECTNAME/sass'
-images_dir = 'content/themes/$PROJECTNAME/images'
-fonts_dir = 'content/themes/$PROJECTNAME/fonts'
-relative_assets = true
-output_style = :compressed
-line_comments = false
-color_output = false" > "$HOME/Projects/$PROJECTNAME/config.rb"
 echo "${yellow}Setting up package.json${txtreset}"
 echo "{
   \"name\": \"$PROJECTNAME\",
@@ -737,3 +722,4 @@ echo "${boldgreen}VM provisioned, local environment up and running.${txtreset}"
 echo "${yellow}Updating hosts file...${txtreset}"
 sudo -- sh -c "echo 10.1.2.3 ${PROJECTNAME}.dev >> /etc/hosts"
 echo "${boldgreen}All done! Start coding at http://${PROJECTNAME}.dev!${txtreset}"
+fi
