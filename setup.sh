@@ -25,9 +25,6 @@ done
 echo "${boldyellow}Bitbucket account:${txtreset} "
 read -e YOUR_BITBUCKET_ACCOUNT_HERE
 
-echo "${boldyellow}Bitbucket account:${txtreset} "
-read -e YOUR_BITBUCKET_ACCOUNT_HERE
-
 echo "${boldyellow}Staging server hostname:${txtreset} "
 read -e YOUR_STAGING_SERVER_HERE
 
@@ -52,15 +49,12 @@ read -e YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE
 echo "${boldyellow}Default admin password for WordPress:${txtreset} "
 read -e YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE
 
-echo "${boldyellow}Default admin password for WordPress:${txtreset} "
-read -e YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE
-
 echo "${boldyellow}Default admin email for WordPress:${txtreset} "
 read -e YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE
 
-echo "${boldyellow}Default admin email for WordPress:${txtreset} "
-read -e YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE
+echo "${boldyellow}Generating createscript with your information (requires root):${txtreset} "
+sudo bash -c 'sed -e "s/\YOUR_BITBUCKET_ACCOUNT_HERE/'"${YOUR_BITBUCKET_ACCOUNT_HERE}"'/" -e "s/\YOUR_STAGING_SERVER_HERE/'"${YOUR_STAGING_SERVER_HERE}"'/" -e "s/\YOUR_STAGING_USERNAME_HERE/'"${YOUR_STAGING_USERNAME_HERE}"'/" -e "s/\YOUR_STAGING_SERVER_PASSWORD_HERE/'"${YOUR_STAGING_SERVER_PASSWORD_HERE}"'/" -e "s/\YOUR_STAGING_SERVER_HOME_PATH_HERE/'"${YOUR_STAGING_SERVER_HOME_PATH_HERE}"'/" -e "s/\YOUR_DEFAULT_DATABASE_USERNAME_HERE/'"${YOUR_DEFAULT_DATABASE_USERNAME_HERE}"'/" -e "s/\YOUR_DEFAULT_DATABASE_PASSWORD_HERE/'"${YOUR_DEFAULT_DATABASE_PASSWORD_HERE}"'/" -e "s/\YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE/'"${YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE}"'/" -e "s/\YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE/'"${YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE}"'/" -e "s/\YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE/'"${YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE}"'/" createproject.sh > /usr/bin/createproject'
+sudo bash -c 'chmod +x /usr/bin/createproject'
 
-
-echo "${boldgreen}Setup successful."
-echo "${red}WARNING! ${boldwhite}Don't trust blindly in your deploy configs, they contain remove commands! Please check them twice before deploying\!${txtreset}"
+echo "${boldgreen}Setup successful. Please run createproject before starting a project."
+echo "${red}WARNING! ${boldwhite}Don't trust blindly in your deploy configs, they contain remove commands! Please check them twice before deploying!${txtreset}"
