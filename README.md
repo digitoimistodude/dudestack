@@ -12,15 +12,15 @@ At best this wpstack saves you hours when starting a new project.
 
  - Designed for pure WordPress development
  - Fast and easy templates for development and deployment
- - Gulp template with various magical gulp pieces and [BrowserSync](http://www.browsersync.io/)
  - Customizable bash script for creating new WordPress projects
  - Automatic MySQL-database generation
+ - Automatic Bitbucket repo initializition
+ - Automatic Project-related host settings for vagrant
  - Cleaning default WordPress stuff with wp-cli
- - [Compass](http://compass-style.org) with [libsass (gulp-sass)](https://github.com/dlmanning/gulp-sass)
  - [Capistrano 3](http://capistranorb.com/) deployment templates bundled in createproject.sh
  - [Composer](https://getcomposer.org/) to take care of WordPress installation and plugin dependencies and updates
  - [Dotenv](https://github.com/vlucas/phpdotenv)-environments for development, staging and production
- - MAMP and vagrant support
+ - Support for MAMP and vagrant development environments
 
 ## How it's different, why should I use this?
 
@@ -30,7 +30,19 @@ Despite the fact I love most of bedrock, I noticed there's some things I don't l
 
 * Stuff are in app/ by default. I prefer content/. It describes it better, since I'm not a programmer and developing WordPress themes or plugins (that's what I do) is not exactly programming in my mind.
 * Composer modifications, getting latest finnish WordPress from sv.wordpress.org.
-* Automation. I mean composer create-project is awesome, but I want everything else automated as well when I start a new project
+* Automation. I mean composer's `create-project` is awesome, but I need more. You still need to do stuff after `create-project` and my createproject.sh is for designed for automating the rest.
+
+## Requirements
+
+* Basic knowledge about bash scripting, deployment with capistrano, npm packages, bundle, composer etc.
+* Vagrant ([jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant)), but can be configured for MAMP too
+* Bitbucket account
+* Unix-based OS (built for Mac OS X by default)
+* Access to staging and production servers that supports sftp and git
+* Projects located under $HOME/Projects
+* Git
+* PHP >= 5.3.2 (for Composer)
+* Ruby >= 1.9 (for Capistrano)
 
 # Installation 
 
@@ -49,17 +61,39 @@ Creating a new project has a lot of configs to do. I wanted to automate most of 
 
 - You are using staging server like customer.example.com and you store your customers' sites like customer.example.com/customerone. Your staging server user has proper permissions like making changes to /tmp
 - You are using separate production server that may necessarily not have all the permissions like writing in /tmp dir
-- You use MAMP Pro or [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant)
+- You use [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant) or MAMP Pro
 - Your repositories are stored in Bitbucket
 - Your project hostname is project.dev
-- You use CodeKit2+, gulp or grunt
+- You use gulp, grunt or CodeKit2+
 - WordPress dependencies are controlled by composer
-- You feel comfy using bundle
 - Your project's name is your customer's name and also the server's account name (can be easily changed per project though, like everything else in this stack)
 - Executables are stored in your server's $HOME/bin
 
+### What createproject.sh does
+
+1. First it runs `composer create-project` with wpstack-rolle settings
+2. Installs default WordPress plugins and updates them
+3. Creates MySQL repository automatically with project name (assumes by default that you have [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant)) installed with default settings and paired with your host computer, for MAMP you'll need to edit createproject.sh and edit `YOURMAMPMYSQLPASSWORD`)
+4. Installs capistrano
+5. Generates capistrano configs (config/deploy.rb, config/deploy/staging.rb, config/deploy/production.rb) with your bitbucket details and paths
+6. Creates a Sublime Text 3 project
+7. Sets up WordPress configs and salts automatically
+8. Installs WordPress under its own subdirectory /wp (thus, admin located in example.dev/wp/wp-admin)
+9. Sets up default admin user (extra users can be configured in createproject.sh)
+10. Removes default WordPress posts, themes and plugins
+11. Activates default plugins, timezones, permalinks
+12. Updates .htaccess, adds support for mod_rewrite/permalinks and webfonts
+13. Sets up file permissions
+14. Inits bitbucket repository
+15. Sets up a vagrant virtual host
+16. Updates /etc/hosts file
+
+### What you most probably need to edit in every project
+
+- Production server SSH-credentials and paths in config/deploy/production.rb because they are usually different in every project. If you have the same directory structure on your servers, you can edit createproject.sh so you don't repeat yourself in every project.
+- You will need gulp or grunt, feel free to use [my gulpfile and npm package settings](https://github.com/ronilaukkarinen/gulpfile-rolle) designed for this purpose
+
 Note:
-~~- If you are using gulp, you should check out [my gulpfile](https://github.com/ronilaukkarinen/gulpfile-rolle)~~ Gulpfile generator is now integrated in createproject.sh
 - This is a starter package without theme configs. I leave theme development up to you entirely. I have my own starter theme that relies on this package but I'm not (yet) willing to share it
 - You are accepting the fact this is only one of the ways to do things and things are not staying this way forever, everything changes as you read this :)
 
@@ -149,10 +183,3 @@ When getting the new zip, I use this function in my `~/.bashrc`:
     function plugin() { scp -r $@ 'username@yoursite.com:~/path/to/plugins/'; }
 
 So with simple ssh-pairing (passwordless login), I can upload a plugin by simple command: `plugin gravityforms_1.8.20.5.zip` and then just change version and `composer update`. DRY, you see.
-
-## Requirements
-
-* Basic knowledge of capistrano, bundle, gulp, bash scripting and composer and other possible tools like this
-* Git
-* PHP >= 5.3.2 (for Composer)
-* Ruby >= 1.9 (for Capistrano)

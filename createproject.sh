@@ -87,11 +87,11 @@ set :ssh_options, {
 }
 
 set :deploy_to, \"/YOUR_STAGING_SERVER_HOME_PATH_HERE/projects/#{fetch(:application)}\"
-set :tmp_dir, \"/YOUR_STAGING_SERVER_HOME_PATH_HERE/tmp\"
 SSHKit.config.command_map[:composer] = \"/YOUR_STAGING_SERVER_HOME_PATH_HERE/bin/composer\"
 set :deploy_via, :remote_cache
 set :use_sudo, false
 set :keep_releases, 2
+set :tmp_dir, \"/YOUR_STAGING_SERVER_HOME_PATH_HERE/tmp\"
 
 namespace :deploy do
 
@@ -228,286 +228,6 @@ echo "{
     ]
 }
 " > "$PROJECTNAME.sublime-project"
-echo "${yellow}Setting up package.json${txtreset}"
-echo "{
-  \"name\": \"$PROJECTNAME\",
-  \"version\": \"1.0.0\",
-  \"description\": \"$PROJECTNAME powered by wpstack-rolle + gulp\",
-  \"author\": \"Digitoimisto Dude Oy (moro@dude.fi)\",
-  \"devDependencies\": {
-    \"browser-sync\": \"*\",
-    \"gulp\": \"*\",
-    \"gulp-changed\": \"*\",
-    \"gulp-imagemin\": \"*\",
-    \"gulp-notify\": \"*\",
-    \"gulp-sass\": \"*\",
-    \"gulp-util\": \"*\",
-    \"gulp-minify-css\": \"*\",
-    \"gulp-autoprefixer\": \"*\",
-    \"gulp-uglify\": \"*\",
-    \"gulp-cache\": \"*\",
-    \"gulp-concat\": \"*\",
-    \"gulp-header\": \"*\",
-    \"normalize-css\": \"*\",
-    \"gulp-pixrem\": \"*\",
-    \"require-dir\": \"*\",
-    \"psi\": \"*\"
-  },
-  \"dependencies\": {
-    \"backbone\": \"*\",
-    \"jquery\": \"*\"
-  }
-}" > "$HOME/Projects/$PROJECTNAME/package.json"
-echo "${yellow}Installing local node.js packages (may take a while)${txtreset}"
-npm install
-echo "${yellow}Generating gulpfile...${txtreset}"
-echo "/* 
-
-REQUIRED STUFF
-==============
-*/
-
-var changed     = require('gulp-changed');
-var gulp        = require('gulp');
-var imagemin    = require('gulp-imagemin');
-var sass        = require('gulp-sass');
-var browserSync = require('browser-sync');
-var reload      = browserSync.reload;
-var notify      = require('gulp-notify');
-var prefix      = require('gulp-autoprefixer');
-var minifycss   = require('gulp-minify-css');
-var uglify      = require('gulp-uglify');
-var cache       = require('gulp-cache');
-var concat      = require('gulp-concat');
-var util        = require('gulp-util');
-var header      = require('gulp-header');
-var pixrem      = require('gulp-pixrem');
-var pagespeed   = require('psi');
-
-/* 
-
-ERROR HANDLING
-==============
-*/
-
-var handleErrors = function() {
-module.exports = function() {
-
-  var args = Array.prototype.slice.call(arguments);
-
-  // Send error to notification center with gulp-notify
-  notify.onError({
-    title: \"Compile Error\",
-    message: \"<%= error.message %>\"
-  }).apply(this, args);
-
-  // Keep gulp from hanging on this task
-  this.emit('end');
-};
-};
-
-/* 
-
-FILE PATHS
-==========
-*/
-
-var themeDir = 'content/themes/$PROJECTNAME'
-var imgSrc = themeDir + '/images/*.{png,jpg,jpeg,gif}';
-var imgDest = themeDir + '/images/optimized';
-var sassSrc = themeDir + '/sass/**/*.{sass,scss}';
-var sassFile = themeDir + '/sass/layout.scss';
-var cssDest = themeDir + '/css';
-var customjs = themeDir + '/js/scripts.js';
-var jsSrc = themeDir + '/js/src/**/*.js';
-var jsDest = themeDir + '/js/';
-var phpSrc = [themeDir + '/**/*.php', !'vendor/**/*.php'];
-
-/* 
-
-BROWSERSYNC
-===========
-*/
-
-var devEnvironment = '$PROJECTNAME.dev'
-var hostname = 'localhost'
-var localURL = 'http://' + devEnvironment;
-
-gulp.task('browserSync', function () {
-    
-    //declare files to watch + look for files in assets directory (from watch task)
-    var files = [
-    cssDest + '/**/*.{sass,scss}',
-    jsSrc + '/**/*.js',
-    imgDest + '/*.{png,jpg,jpeg,gif}',
-    themeDir + '**/*.php'
-    ];
-
-    browserSync.init(files, {
-    proxy: localURL,
-    host: hostname,
-    agent: false,
-    browser: \"Google Chrome Canary\"
-    });
-
-});
-
-
-/* 
-
-SASS
-====
-*/
-
-gulp.task('sass', function() {
-  gulp.src(sassFile)
-
-  // gulp-ruby-sass:
-
-  .pipe(sass({
-    compass: false,
-    bundleExec: true,
-    sourcemap: false,
-    style: 'compressed'
-  })) 
-
-  // gulp-compass:
-
-  // .pipe(sass({
-  //   config_file: './config.rb',
-  //   css: themeDir + '/css',
-  //   sass: themeDir + '/sass',
-  //   image: themeDir + '/images'
-  // }))
-
-  // gulp-sass:
-
-  // .pipe(sass({
-  //   style: 'compressed', 
-  //   errLogToConsole: true,
-  //   sourceComments: 'normal'
-  //   }
-  //   ))
-
-  .on('error', handleErrors)
-  .on('error', util.log)
-  .on('error', util.beep)
-  .pipe(prefix('last 3 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4')) //adds browser prefixes (eg. -webkit, -moz, etc.)
-  .pipe(minifycss({keepBreaks:false,keepSpecialComments:0,}))
-  .pipe(pixrem())
-  .pipe(gulp.dest(themeDir + '/css'))
-  .pipe(reload({stream:true}));
-  });
-
-
-/* 
-
-IMAGES
-======
-*/
-
-
-gulp.task('images', function() {
-  var dest = imgDest;
-
-  return gulp.src(imgSrc)
-
-    .pipe(changed(dest)) // Ignore unchanged files
-    .pipe(cache(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true }))) //use cache to only target new/changed files, then optimize the images
-    .pipe(gulp.dest(imgDest));
-
-});
-
-
-/* 
-
-SCRIPTS
-=======
-*/
-
-var currentDate   = util.date(new Date(), 'dd-mm-yyyy HH:ss');
-var pkg       = require('./package.json');
-var banner      = '/*! <%= pkg.name %> <%= currentDate %> - <%= pkg.author %> */\n';
-
-gulp.task('js', function() {
-
-      gulp.src(
-        [
-          themeDir + '/js/src/jquery.js',
-          themeDir + '/js/src/jquery.flexnav.js',
-          themeDir + '/js/src/trunk.js',
-          themeDir + '/js/src/scripts.js'
-        ])
-        .pipe(concat('all.js'))
-        .pipe(uglify({preserveComments: false, compress: true, mangle: true}).on('error',function(e){console.log('\x07',e.message);return this.end();}))
-        .pipe(header(banner, {pkg: pkg, currentDate: currentDate}))
-        .pipe(gulp.dest(jsDest));
-});
-
-
-/*
-
-PAGESPEED
-=====
-
-Notes:
-   - This runs Google PageSpeed Insights just like here http://developers.google.com/speed/pagespeed/insights/
-   - You can use Google Developer API key if you have one, see: http://goo.gl/RkN0vE
-
-*/
-
-gulp.task('pagespeed', pagespeed.bind(null, {
-  url: 'http://' + projectName + '.fi',
-  strategy: 'mobile'
-}));
-
-
-/*
-
-WATCH
-=====
-
-Notes:
-   - browserSync automatically reloads any files
-     that change within the directory it's serving from
-*/
-
-gulp.task('setWatch', function() {
-  global.isWatching = true;
-});
-
-gulp.task('watch', ['setWatch', 'browserSync'], function() {
-  gulp.watch(sassSrc, ['sass']);
-  gulp.watch(imgSrc, ['images']);
-  gulp.watch(jsSrc, ['js', browserSync.reload]);
-});
-
-
-/* 
-
-BUILD
-=====
-*/
-
-gulp.task('build', function(cb) {
-  runSequence('sass', 'images', cb);
-});
-
-/* 
-
-DEFAULT
-=======
-*/
-
-gulp.task('default', function(cb) {
-    runSequence(
-    'images',
-    'sass',
-    'browserSync',
-    'watch',
-    cb
-    );
-});" > "$HOME/Projects/$PROJECTNAME/gulpfile.js"
 echo "${yellow}Copying languages...${txtreset}"
 cd wp/wp-content
 cp -R languages "/Users/rolle/Projects/$PROJECTNAME/content/"
@@ -567,7 +287,7 @@ define('NONCE_SALT',       getenv('NONCE_SALT'));
  * Custom Settings
  */
 define('AUTOMATIC_UPDATER_DISABLED', true);
-define('DISABLE_WP_CRON', true);
+define('DISABLE_WP_CRON', false);
 define('DISALLOW_FILE_EDIT', true);
 
 /**
@@ -616,6 +336,8 @@ core install:
 
 # These syntaxes are for vagrant:
 
+ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp core install"
+
 echo "${yellow}Removing default WordPress posts...:${txtreset}"
 ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp post delete 1 --force"
 ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp post delete 2 --force"
@@ -631,7 +353,7 @@ ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp plugin activate wp-last-login
 ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp plugin activate wp-nested-pages"
 chmod 777 "$HOME/Projects/$PROJECTNAME/content"
 
-## You can set up your users here - if you want, uncomment next lines
+## You can set up extra users here - if you want, uncomment next lines
 #####################################################################
 
 #echo "${yellow}Setting up users...:${txtreset}"
@@ -664,43 +386,11 @@ chmod 777 .htaccess
 echo "${yellow}Setting uploads permissions...:${txtreset}"
 chmod -Rv 777 "$HOME/Projects/$PROJECTNAME/content/uploads"
 
-echo "${yellow}Setting up package.json${txtreset}"
-echo "{
-  \"name\": \"$PROJECTNAME\",
-  \"version\": \"1.0.0\",
-  \"description\": \"$PROJECTNAME powered by wpstack-rolle + gulp\",
-  \"author\": \"Your company (your@email.com)\",
-  \"devDependencies\": {
-    \"browser-sync\": \"*\",
-    \"gulp\": \"*\",
-    \"gulp-changed\": \"*\",
-    \"gulp-imagemin\": \"*\",
-    \"gulp-notify\": \"*\",
-    \"gulp-sass\": \"*\",
-    \"gulp-util\": \"*\",
-    \"gulp-minify-css\": \"*\",
-    \"gulp-autoprefixer\": \"*\",
-    \"gulp-uglify\": \"*\",
-    \"gulp-cache\": \"*\",
-    \"gulp-concat\": \"*\",
-    \"gulp-header\": \"*\",
-    \"normalize-css\": \"*\",
-    \"gulp-pixrem\": \"*\",
-    \"require-dir\": \"*\",
-    \"psi\": \"*\"
-  },
-  \"dependencies\": {
-    \"backbone\": \"*\",
-    \"jquery\": \"*\"
-  }
-}" > "$HOME/Projects/$PROJECTNAME/package.json"
-
-echo "${yellow}Installing local node.js packages (may take a while)${txtreset}"
-npm install
 rm "$HOME/Projects/$PROJECTNAME/createproject.sh"
 echo "${yellow}Initializing bitbucket repo...${txtreset}"
 cd "$HOME/Projects/$PROJECTNAME"
 git init
+git remote add origin git@bitbucket.org:YOUR_BITBUCKET_ACCOUNT_HERE/$PROJECTNAME.git
 # If you are using MAMP instead of jolliest-vagrant, please comment out all but the last line:
 echo "<VirtualHost *:80>
 
