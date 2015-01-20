@@ -44,17 +44,6 @@ Despite the fact I love most of bedrock, I noticed there's some things I don't l
 * PHP >= 5.3.2 (for Composer)
 * Ruby >= 1.9 (for Capistrano)
 
-# Installation 
-
-1. Clone this repo to your home directory
-2. Make the bash script global by `sudo cp ~/wpstack-rolle/createproject.sh /usr/bin/createproject && sudo chmod +x /usr/bin/createproject`
-3. Edit createproject.sh with your favourite editor. For Sublime Text, use `subl ~/wpstack-rolle/createproject.sh`
-4. Start tuning up to your needs. See instructions and **Getting started** below.
-
-If you are using [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant), you need to "pair" your machine with the VM (I presume you are already set up keypairs, if not, run without password: `ssh-keygen -t rsa`):
-
-    cat ~/.ssh/id_rsa.pub | ssh vagrant@10.1.2.3 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys' && chmod -Rv 755 ~/.ssh && chmod 400 ~/.ssh/id_rsa
-
 ## createproject.sh
 
 Creating a new project has a lot of configs to do. I wanted to automate most of it by creating a bash script. The script assumes:
@@ -88,42 +77,34 @@ Creating a new project has a lot of configs to do. I wanted to automate most of 
 15. Sets up a vagrant virtual host
 16. Updates /etc/hosts file
 
+# Installation 
+
+1. Clone this repo to your home directory
+2. Go to wpstack-directory (`cd ~/wpstack-rolle && sh setup.sh`)
+4. Edit `/usr/bin/createproject` to your needs. See instructions and **Getting started** below.
+
+If you are using [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant), you need to "pair" your machine with the VM (I presume you are already set up keypairs, if not, run without password: `ssh-keygen -t rsa`):
+
+    cat ~/.ssh/id_rsa.pub | ssh vagrant@10.1.2.3 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys' && chmod -Rv 755 ~/.ssh && chmod 400 ~/.ssh/id_rsa
+
 ### What you most probably need to edit in every project
 
 - Production server SSH-credentials and paths in config/deploy/production.rb because they are usually different in every project. If you have the same directory structure on your servers, you can edit createproject.sh so you don't repeat yourself in every project.
 - You will need gulp or grunt, feel free to use [my gulpfile and npm package settings](https://github.com/ronilaukkarinen/gulpfile-rolle) designed for this purpose
 
-Note:
+**Note:**
 - This is a starter package without theme configs. I leave theme development up to you entirely. I have my own starter theme that relies on this package but I'm not (yet) willing to share it
 - You are accepting the fact this is only one of the ways to do things and things are not staying this way forever, everything changes as you read this :)
 
-**This needs rough editing, so please copy createproject.sh to desired path and modify to your needs!**
-
-To use, please edit all the caps written information in the file (don't touch variables, like $PROJECTNAME!), like these:
- - YOUR_BITBUCKET_ACCOUNT_HERE
- - YOUR_STAGING_USERNAME_HERE
- - YOUR_STAGING_SERVER_HERE
- - YOUR_STAGING_SERVER_PASSWORD_HERE
- - YOUR_STAGING_SERVER_HOME_PATH_HERE
- - PATH_TO_STAGING_BIN_COMPOSER
- - STAGING_HOME_BIN_PATH
- - YOUR_PRODUCTION_SERVER_HERE
- - YOUR_PRODUCTION_SERVER_PASSWORD_HERE
- - YOUR_DEFAULT_DATABASE_USERNAME_HERE
- - YOUR_DEFAULT_DATABASE_PASSWORD_HERE
- - YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE
- - YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE
- - YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE
- - YOUR_BITBUCKET_USERNAME_HERE
-
 ## Getting started
 
-1. This assumes your projects are in ~/Projects. You should make sure that folder exists. Or decide to use another folder, but then you need a lot of search&replace and using this would be quite pointless.
-2. Run MAMP Pro server or [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant)
-3. Remember to edit createproject.sh and composer.json based on your own needs
+1. This assumes your projects are in ~/Projects. You should make sure that folder exists. You can also decide to use another folder, but then you need a lot of search&replace and using this would be quite pointless.
+2. Run [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant) (if you use MAMP Pro server, you need to edit createproject.sh accordingly)
+3. Edit createproject.sh and composer.json based on your own needs
 4. Please do a lot of other editing if you need. It will eventually shape to the right form.
+5. **Optional**: Get gulpfile.js and package.json [here](https://github.com/ronilaukkarinen/gulpfile-rolle), edit them to your needs, run `npm install && npm-check-updates -u && npm update && gulp watch` and start developing your theme/plugin!
 
-To start a project, run `createproject` and have fun.
+To start a new project, run `createproject` and have fun.
 
 ## Paid or Premium plugins
 
@@ -183,3 +164,5 @@ When getting the new zip, I use this function in my `~/.bashrc`:
     function plugin() { scp -r $@ 'username@yoursite.com:~/path/to/plugins/'; }
 
 So with simple ssh-pairing (passwordless login), I can upload a plugin by simple command: `plugin gravityforms_1.8.20.5.zip` and then just change version and `composer update`. DRY, you see.
+
+Feel free to post any issue or question if you are actually using this...
