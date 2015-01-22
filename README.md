@@ -85,7 +85,9 @@ Creating a new project has a lot of configs to do. I wanted to automate most of 
 
 If you are using [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant), you need to "pair" your machine with the VM (I presume you are already set up keypairs, if not, run without password: `ssh-keygen -t rsa`):
 
-    cat ~/.ssh/id_rsa.pub | ssh vagrant@10.1.2.3 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys' && chmod -Rv 755 ~/.ssh && chmod 400 ~/.ssh/id_rsa
+```shell
+cat ~/.ssh/id_rsa.pub | ssh vagrant@10.1.2.3 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys' && chmod -Rv 755 ~/.ssh && chmod 400 ~/.ssh/id_rsa
+```
 
 ### What you most probably need to edit in every project
 
@@ -112,6 +114,7 @@ Edit your `composer.json` and add these lines inside respository, separated by c
 
 ### Advanced Custom Fields Pro
 
+```json
     {
       "type": "package",
       "package": {
@@ -124,9 +127,11 @@ Edit your `composer.json` and add these lines inside respository, separated by c
         }
       }
     }
+```
 
 ### WPML
 
+```json
     {
       "type": "package",
       "package": {
@@ -139,11 +144,13 @@ Edit your `composer.json` and add these lines inside respository, separated by c
         }
       }
     }
+```
 
 ### Gravity Forms
 
 Gravityforms and some other plugins have urls that expire after some time, so to not having always get the url after new version, use your own private plugin repository to store zip files on remote server with basic HTTP auth and add package like this:
 
+```json
       {
         "type": "package",
         "package": {
@@ -156,12 +163,15 @@ Gravityforms and some other plugins have urls that expire after some time, so to
           }
         }
       }
+```
 
 In the similar manner you can add other plugins. I've covered with this almost every plugin I use.
 
 When getting the new zip, I use this function in my `~/.bashrc`:
 
-    function plugin() { scp -r $@ 'username@yoursite.com:~/path/to/plugins/'; }
+```shell
+function plugin() { scp -r $@ 'username@yoursite.com:~/path/to/plugins/'; }
+```
 
 So with simple ssh-pairing (passwordless login), I can upload a plugin by simple command: `plugin gravityforms_1.8.20.5.zip` and then just change version and `composer update`. DRY, you see.
 
