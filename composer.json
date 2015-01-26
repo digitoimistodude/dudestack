@@ -61,10 +61,8 @@
 
         "facebook/php-sdk": "dev-master",
 
-    "wpackagist-plugin/advanced-custom-fields":"*@dev",
     "wpackagist-plugin/wordpress-seo":"*",
     "wpackagist-plugin/wp-last-login":"*",
-    "wpackagist-plugin/wp-nested-pages":"*",
     "wpackagist-plugin/wp-html-compression":"*",
     "wpackagist-plugin/wp-super-cache":"*"
 
