@@ -64,7 +64,8 @@
     "wpackagist-plugin/wordpress-seo":"*",
     "wpackagist-plugin/wp-last-login":"*",
     "wpackagist-plugin/wp-html-compression":"*",
-    "wpackagist-plugin/wp-super-cache":"*"
+    "wpackagist-plugin/wp-super-cache":"*",
+    "wpackagist-plugin/google-analyticator":"*"
 
   },
   "extra": {
