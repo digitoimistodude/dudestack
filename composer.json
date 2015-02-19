@@ -76,7 +76,6 @@
     "wpackagist-plugin/wp-html-compression":"*",
     "wpackagist-plugin/wp-super-cache":"*",
     "wpackagist-plugin/google-analyticator":"*"
-
   },
   "extra": {
     "dropin-paths": {
