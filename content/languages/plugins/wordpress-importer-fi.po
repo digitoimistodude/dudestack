@@ -1,0 +1,204 @@
+# Translation of Development (trunk) in Finnish
+# This file is distributed under the same license as the Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2013-07-25 11:38:04+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/1.0-alpha-1000\n"
+"Project-Id-Version: Development (trunk)\n"
+
+#: wordpress-importer.php:1017
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr "Valitse WXR (.xml) -tiedosto, napsauta sitten Siirrä tiedosto."
+
+#: wordpress-importer.php:889
+msgid "Zero size file downloaded"
+msgstr "Tyhjä tiedosto ladattu"
+
+#: wordpress-importer.php:877
+msgid "Remote server returned error response %1$d %2$s"
+msgstr "Palvelin antoi virheilmoituksen %1$d %2$s"
+
+#: wordpress-importer.php:235
+msgid "Failed to import author %s. Their posts will be attributed to the current user."
+msgstr "Käyttäjän %s tuonti ei onnistunut. Hänen kirjoituksensa merkitään nykyiselle käyttäjälle."
+
+#: wordpress-importer.php:262
+msgid "To make it easier for you to edit and save the imported content, you may want to reassign the author of the imported item to an existing user of this site. For example, you may want to import all the entries as <code>admin</code>s entries."
+msgstr "Tuodun sisällön muokkaamisen ja tallentamisen helpottamiseksi voi olla hyvä ajatus merkitä tuotujen sisältöjen kirjoittajaksi jokin sivuston olemassa oleva käyttäjä, esimerkiksi <code>admin</code>."
+
+#: wordpress-importer.php:522
+msgid "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+msgstr "Sisällön &#8221;%s&#8221; tuonti epäonnistui: virheellinen sisältötyyppi %s"
+
+#: wordpress-importer.php:500 wordpress-importer.php:626
+msgid "Failed to import %s %s"
+msgstr "Tuonti epäonnistui: %s %s"
+
+#: wordpress-importer.php:418
+msgid "Failed to import category %s"
+msgstr "Kategorian %s tuonti epäonnistui"
+
+#: wordpress-importer.php:456
+msgid "Failed to import post tag %s"
+msgstr "Avainsanan %s tuonti epäonnistui"
+
+#: wordpress-importer.php:543
+msgid "%s &#8220;%s&#8221; already exists."
+msgstr "%s &#8221;%s&#8221; on jo olemassa."
+
+#: wordpress-importer.php:744
+msgid "Menu item skipped due to missing menu slug"
+msgstr "Valikkokohde ohitettiin puuttuvan polkutunnuksen vuoksi"
+
+#: wordpress-importer.php:598
+msgid "Failed to import %s &#8220;%s&#8221;"
+msgstr "Tuonti epäonnistui: %s &#8221;%s&#8221;"
+
+#: wordpress-importer.php:316
+msgid "assign posts to an existing user:"
+msgstr "aseta kirjoittajaksi olemassa oleva käyttäjä:"
+
+#: wordpress-importer.php:308
+msgid "as a new user:"
+msgstr "uutena käyttäjänä:"
+
+#: wordpress-importer.php:210
+msgid "This WXR file (version %s) may not be supported by this version of the importer. Please consider updating."
+msgstr "Tämä WXR-tiedosto (versio %s) ei välttämättä ole tuettu tässä tuontityökalun versiossa. Suosittelemme päivittämään."
+
+#: wordpress-importer.php:264
+msgid "If a new user is created by WordPress, a new password will be randomly generated and the new user&#8217;s role will be set as %s. Manually changing the new user&#8217;s details will be necessary."
+msgstr "Jos WordPress luo uuden käyttäjän, tälle luodaan satunnainen salasana ja käyttäjän rooliksi asetetaan %s. Käyttäjän tietojen muokkaaminen käsin on tarpeen."
+
+#: wordpress-importer.php:751
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr "Valikkokohde ohitettiin virheellisen polkutunnuksen vuoksi: %s"
+
+#: wordpress-importer.php:814
+msgid "Fetching attachments is not enabled"
+msgstr "Liitetiedostojen nouto ei ole käytössä"
+
+#: wordpress-importer.php:179
+msgid "Remember to update the passwords and roles of imported users."
+msgstr "Muista päivittää tuotujen käyttäjien salasanat ja roolit."
+
+#: wordpress-importer.php:135
+msgid "The file does not exist, please try again."
+msgstr "Tiedostoa ei ole olemassa, kokeile uudelleen."
+
+#: parsers.php:67 parsers.php:72 parsers.php:262 parsers.php:451
+msgid "This does not appear to be a WXR file, missing/invalid WXR version number"
+msgstr "Tämä ei vaikuta olevan WXR-tiedosto, WXR-versionumero puuttuu tai on virheellinen"
+
+#: parsers.php:43
+msgid "Details are shown above. The importer will now try again with a different parser..."
+msgstr "Tiedot näkyvät yläpuolella. Tuontityökalu yrittää uudelleen eri parserilla..."
+
+#. Description of the plugin/theme
+msgid "Import posts, pages, comments, custom fields, categories, tags and more from a WordPress export file."
+msgstr "Tuo artikkelit, sivut, kommentit, avainkentät, kategoriat, avainsanat ja muut WordPress-vientitiedostosta."
+
+#: wordpress-importer.php:1001
+msgid "A new version of this importer is available. Please update to version %s to ensure compatibility with newer export files."
+msgstr "Uusi versio tästä tuontityökalusta on saatavilla. Päivitä versioon %s varmistaaksesi yhteensopivuuden uudempien vientitiedostojen kanssa."
+
+#: parsers.php:42 parsers.php:63
+msgid "There was an error when reading this WXR file"
+msgstr "WXR-tiedoston lukemisessa tapahtui virhe"
+
+#: wordpress-importer.php:305
+msgid "or create new user with login name:"
+msgstr "tai luo uusi käyttäjä tunnuksella:"
+
+#: wordpress-importer.php:369
+msgid "Failed to create new user for %s. Their posts will be attributed to the current user."
+msgstr "Uuden käyttäjän %s luominen epäonnistui. Sisällöt merkitään nykyiselle käyttäjälle."
+
+#: wordpress-importer.php:318
+msgid "or assign posts to an existing user:"
+msgstr "tai aseta kirjoittajaksi olemassa oleva käyttäjä:"
+
+#: wordpress-importer.php:319
+msgid "- Select -"
+msgstr "- Valitse -"
+
+#: wordpress-importer.php:261
+msgid "Assign Authors"
+msgstr "Määritä kirjoittajat"
+
+#: wordpress-importer.php:994
+msgid "Import WordPress"
+msgstr "WordPress-tuonti"
+
+#: wordpress-importer.php:294
+msgid "Import author:"
+msgstr "Tuo kirjoittaja:"
+
+#: wordpress-importer.php:274
+msgid "Import Attachments"
+msgstr "Tuo liitteet"
+
+#: wordpress-importer.php:277
+msgid "Download and import file attachments"
+msgstr "Lataa ja tuo liitetiedostot"
+
+#: wordpress-importer.php:178
+msgid "All done."
+msgstr "Valmista."
+
+#: wordpress-importer.php:178
+msgid "Have fun!"
+msgstr "Pidä hauskaa!"
+
+#: wordpress-importer.php:871
+msgid "Remote server did not respond"
+msgstr "Etäpalvelin ei vastaa"
+
+#: wordpress-importer.php:134 wordpress-importer.php:143
+#: wordpress-importer.php:194 wordpress-importer.php:202
+msgid "Sorry, there has been an error."
+msgstr "Valitettavasti on tapahtunut virhe."
+
+#. Author URI of the plugin/theme
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
+
+#. Plugin Name of the plugin/theme
+msgid "WordPress Importer"
+msgstr "WordPress-tuontiohjelma"
+
+#: wordpress-importer.php:281
+msgid "Submit"
+msgstr "Lähetä"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wordpress.org/extend/plugins/wordpress-importer/"
+msgstr "http://wordpress.org/extend/plugins/wordpress-importer/"
+
+#. Author of the plugin/theme
+msgid "wordpressdotorg"
+msgstr "wordpresspisteorg"
+
+#: wordpress-importer.php:884
+msgid "Remote file is incorrect size"
+msgstr "Tiedosto on väärän kokoinen."
+
+#: wordpress-importer.php:895
+msgid "Remote file is too large, limit is %s"
+msgstr "Tiedosto on liian suuri, raja on %s."
+
+#: wordpress-importer.php:827
+msgid "Invalid file type"
+msgstr "Tiedoston tyyppi ei kelpaa."
+
+#: wordpress-importer.php:1091
+msgid "Import <strong>posts, pages, comments, custom fields, categories, and tags</strong> from a WordPress export file."
+msgstr "Tuo <strong>artikkelit, sivut, kommentit, avainkentät, kategoriat ja avainsanat</strong> WordPress-vientitiedostosta."
+
+#: wordpress-importer.php:1016
+msgid "Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import the posts, pages, comments, custom fields, categories, and tags into this site."
+msgstr "Moikka! Lataa WordPressin eXtended RSS (WXR)-tiedostosi ja tuontiohjelma tuo WordPress-blogistasi kaikki artikkelit, sivut, kommentit, mukautetut kentät, kategoriat ja avainsanat tälle sivustolle."

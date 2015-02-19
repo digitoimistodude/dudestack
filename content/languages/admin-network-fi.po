@@ -1,0 +1,1095 @@
+# Translation of Network Admin in Finnish
+# This file is distributed under the same license as the Network Admin package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2014-10-06 08:32:55+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/1.0-alpha-1000\n"
+"Project-Id-Version: Network Admin\n"
+
+#. translators: 1: a filename like .htaccess. 2: a file path.
+#: wp-admin/network.php:479 wp-admin/network.php:516
+msgid "Add the following to your %1$s file in %2$s, <strong>replacing</strong> other WordPress rules:"
+msgstr "Lisää seuraavat rivit %1$s-tiedostoon hakemistoon %2$s, ja <strong>korvaa</strong> muut WordPress-säännöt:"
+
+#: wp-admin/network/users.php:48
+msgid "What should be done with content owned by %s?"
+msgstr "Mitä tehdään käyttäjälle %s kuuluvalle sisällölle?"
+
+#: wp-admin/network/index.php:54 wp-admin/network/site-info.php:33
+#: wp-admin/network/site-new.php:30 wp-admin/network/site-settings.php:33
+#: wp-admin/network/site-themes.php:33 wp-admin/network/site-users.php:36
+#: wp-admin/network/sites.php:46 wp-admin/network/user-new.php:30
+#: wp-admin/network/users.php:243
+msgid "<a href=\"https://wordpress.org/support/forum/multisite/\" target=\"_blank\">Support Forums</a>"
+msgstr "<a href=\"http://fi.forums.wordpress.org/forum/multisite\" target=\"_blank\">Tukifoorumi (multisite)</a>"
+
+#: wp-admin/network/sites.php:70
+msgid "Confirm your action"
+msgstr "Vahvista toiminto"
+
+#: wp-admin/network/users.php:25
+msgid "Transfer or delete content before deleting users."
+msgstr "Siirrä tai poista sisällöt ennen kuin poistat käyttäjiä."
+
+#: wp-admin/network/settings.php:139
+msgid "This email address will receive notifications. Registration and support emails will also come from this address."
+msgstr "Ilmoitukset lähetetään tähän sähköpostiosoitteeseen. Rekisteröinti- ja tukisähköpostit lähetetään tästä sähköpostiosoitteesta."
+
+#: wp-admin/network/users.php:233
+msgid "Hover over any user on the list to make the edit links appear. The Edit link on the left will take you to their Edit User profile page; the Edit link on the right by any site name goes to an Edit Site screen for that site."
+msgstr "Liikuta hiiren kursoria käyttäjälistan päällä ja muokkauslinkit tulevat näkyviin. Vasemmanpuoleinen muokkaa-linkki vie kyseisen käyttäjän profiilisivulle. Oikeanpuoleinen linkki sivuston vieressä vie sivuston muokkausnäkymään. "
+
+#: wp-admin/network/index.php:39
+msgid "To add a new user, <strong>click Create a New User</strong>."
+msgstr "Lisää uusi käyttäjä <strong>klikkaamalla Lisää uusi käyttäjä</strong>."
+
+#: wp-admin/network/index.php:40
+msgid "To add a new site, <strong>click Create a New Site</strong>."
+msgstr "Lisää uusi sivusto <strong>klikkaamalla Lisää uusi sivusto</strong>."
+
+#: wp-admin/network/index.php:42
+msgid "To search for a user, <strong>enter an email address or username</strong>. Use a wildcard to search for a partial username, such as user&#42;."
+msgstr "Hae käyttäjää <strong>kirjoittamalla hakukenttään sähköpostiosoite tai käyttäjätunnus</strong>. Voit myös hakea käyttäjätunnuksen osaa (esimerkki: tunnus&#42;)."
+
+#: wp-admin/network/index.php:43
+msgid "To search for a site, <strong>enter the path or domain</strong>."
+msgstr "Hae sivustoa <strong>kirjoittamalla sivuston polku tai verkkotunnus</strong>."
+
+#: wp-admin/network/upgrade.php:106
+msgid "The database upgrade process may take a little while, so please be patient."
+msgstr "Tietokannan päivitys voi kestää jonkin aikaa, kärsivällisyyttä siis!"
+
+#: wp-admin/network/settings.php:117
+msgid "Options saved."
+msgstr "Asetukset on tallennettu."
+
+#: wp-admin/network/index.php:47
+msgid "Quick Tasks"
+msgstr "Pikatoiminnot"
+
+#: wp-admin/network/index.php:25
+msgid "Welcome to your Network Admin. This area of the Administration Screens is used for managing all aspects of your Multisite Network."
+msgstr "Tervetuloa verkon hallintaan. Tätä hallinnan puolta käytetään multisite-verkon asetusten muokkaamiseksi."
+
+#: wp-admin/network/index.php:26
+msgid "From here you can:"
+msgstr "Täältä käsin voit:"
+
+#: wp-admin/network/index.php:27
+msgid "Add and manage sites or users"
+msgstr "Lisätä ja hallinnoida sivustoja tai käyttäjiä"
+
+#: wp-admin/network/index.php:28
+msgid "Install and activate themes or plugins"
+msgstr "Asentaa ja ottaa käyttöön teemoja tai lisäosia"
+
+#: wp-admin/network/index.php:29
+msgid "Update your network"
+msgstr "Päivittää verkon uuteen versioon"
+
+#: wp-admin/network/index.php:30
+msgid "Modify global network settings"
+msgstr "Muokata globaaleja verkon asetuksia"
+
+#: wp-admin/network/index.php:38
+msgid "The Right Now widget on this screen provides current user and site counts on your network."
+msgstr "Juuri nyt -vimpain tällä sivulla kertoo ajantasaista tietoa sivustojen ja käyttäjien lukumäärästä tässä verkossa."
+
+#: wp-admin/network/index.php:41
+msgid "To search for a user or site, use the search boxes."
+msgstr "Käytä hakukenttiä käyttäjän tai sivuston löytämiseksi."
+
+#: wp-admin/network/menu.php:59 wp-admin/network/upgrade.php:18
+#: wp-admin/network/upgrade.php:42 wp-admin/network/upgrade.php:107
+msgid "Upgrade Network"
+msgstr "Päivitä verkko"
+
+#: wp-admin/network/upgrade.php:102
+msgid "Database Upgrade Required"
+msgstr "Tietokanta on päivitettävä"
+
+#: wp-admin/network/upgrade.php:103
+msgid "WordPress has been updated! Before we send you on your way, we need to individually upgrade the sites in your network."
+msgstr "WordPress on päivitetty! Ennen kuin pääset jatkamaan, yksittäiset verkon sivustot on vielä päivitettävä."
+
+#: wp-admin/network/upgrade.php:25
+msgid "Only use this screen once you have updated to a new version of WordPress through Updates/Available Updates (via the Network Administration navigation menu or the Toolbar). Clicking the Upgrade Network button will step through each site in the network, five at a time, and make sure any database updates are applied."
+msgstr "Käytä tätä sivua vain päivitettyäsi WordPressin uuteen versioon Päivitykset-sivulta. Päivitä kaikki sivustot -painikkeen napsauttaminen käy läpi jokaisen verkkoon kuuluvan sivuston (5 kerrallaan) ja varmistaa että tarvittavat tietokantapäivitykset suoritetaan."
+
+#: wp-admin/network/upgrade.php:32
+msgid "<a href=\"http://codex.wordpress.org/Network_Admin_Updates_Screen\" target=\"_blank\">Documentation on Upgrade Network</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Network_Admin_Updates_Screen\" target=\"_blank\">Documentation on Upgrade Network</a>"
+
+#: wp-admin/network/site-new.php:91
+msgid ""
+"New site created by %1$s\n"
+"\n"
+"Address: %2$s\n"
+"Name: %3$s"
+msgstr ""
+"Käyttäjä %1$s on luonut uuden sivuston\n"
+"\n"
+"Osoite: %2$s\n"
+"Nimi: %3$s"
+
+#: wp-admin/network.php:119
+msgid "Add the designated lines of code to wp-config.php (just before <code>/*...stop editing...*/</code>) and <code>.htaccess</code> (replacing the existing WordPress rules)."
+msgstr "Lisää oheiset rivit tiedostoon wp-config.php (juuri ennen riviä<code>/*...stop editing...*/</code>) ja <code>.htaccess</code> (ja poista nykyiset WordPress-säännöt)."
+
+#: wp-admin/network.php:238 wp-admin/network.php:483 wp-admin/network.php:520
+msgid "Subdirectory networks may not be fully compatible with custom wp-content directories."
+msgstr "Alihakemistoasennukset eivät välttämättä toimi oikein, jos wp-content-hakemisto on siirretty."
+
+#: wp-admin/network/site-users.php:230
+msgid "Enter the username and email."
+msgstr "Syötä käyttäjätunnus ja salasana."
+
+#: wp-admin/network/site-users.php:218
+msgid "Select a user to change role."
+msgstr "Valitse käyttäjä, jonka roolin haluat vaihtaa."
+
+#: wp-admin/network/site-users.php:224
+msgid "Select a user to remove."
+msgstr "Valitse poistettava käyttäjä."
+
+#: wp-admin/network/site-users.php:227
+msgid "User created."
+msgstr "Käyttäjä on luotu."
+
+#: wp-admin/network/users.php:41
+msgid "Warning! User cannot be deleted. The user %s is a network administrator."
+msgstr "Varoitus! Käyttäjää ei voida poistaa. Käyttäjä %s on verkon ylläpitäjä."
+
+#: wp-admin/network/users.php:66
+msgid "Site: %s"
+msgstr "Sivusto: %s"
+
+#: wp-admin/network/site-users.php:278 wp-admin/network/user-new.php:102
+msgid "Add User"
+msgstr "Lisää käyttäjä"
+
+#: wp-admin/network/user-new.php:51
+msgid "Cannot add user."
+msgstr "Käyttäjän lisääminen ei onnistu."
+
+#: wp-admin/network/sites.php:118
+msgid "You are not allowed to delete the site."
+msgstr "Sinulla ei ole oikeutta poistaa tätä sivustoa."
+
+#: wp-admin/network/site-users.php:209
+msgid "User is already a member of this site."
+msgstr "Käyttäjä on jo jäsenenä tällä sivustolla."
+
+#: wp-admin/network/site-info.php:85
+msgid "Site info updated."
+msgstr "Sivuston tiedot päivitetty."
+
+#: wp-admin/network/users.php:38
+msgid "Warning! User %s cannot be deleted."
+msgstr "Varoitus! Käyttäjää %s ei voida poistaa."
+
+#: wp-admin/network/site-users.php:212
+msgid "Enter the username of an existing user."
+msgstr "Syötä olemassa olevan käyttäjän käyttäjätunnus."
+
+#: wp-admin/network/themes.php:265
+msgid "You cannot delete a theme while it is active on the main site."
+msgstr "Et voi poistaa teemaa jos se on käytössä pääsivustolla."
+
+#: wp-admin/network/site-new.php:110 wp-admin/network/site-new.php:120
+msgid "Add New Site"
+msgstr "Lisää uusi sivusto"
+
+#: wp-admin/network/themes.php:261
+msgctxt "network"
+msgid "Theme deleted."
+msgid_plural "%s themes deleted."
+msgstr[0] "Teema poistettu."
+msgstr[1] "%s teemaa poistettu."
+
+#: wp-admin/network/site-info.php:104 wp-admin/network/site-settings.php:94
+#: wp-admin/network/site-themes.php:146 wp-admin/network/site-users.php:191
+msgid "Info"
+msgstr "Tiedot"
+
+#: wp-admin/network/themes.php:165
+msgid "Are you sure you wish to delete these themes?"
+msgstr "Haluatko varmasti poistaa nämä teemat?"
+
+#: wp-admin/network/themes.php:175
+msgid "Yes, Delete this theme"
+msgid_plural "Yes, Delete these themes"
+msgstr[0] "Kyllä, poista tämä teema"
+msgstr[1] "Kyllä, poista nämä teemat"
+
+#: wp-admin/network/themes.php:156
+msgid "You are about to remove the following theme:"
+msgid_plural "You are about to remove the following themes:"
+msgstr[0] "Olet poistamassa seuraavaa teemaa:"
+msgstr[1] "Olet poistamassa seuraavia teemoja:"
+
+#: wp-admin/network/themes.php:155
+msgid "This theme may be active on other sites in the network."
+msgid_plural "These themes may be active on other sites in the network."
+msgstr[0] "Tämä teema saattaa olla käytössä muilla tämän verkon sivustoilla."
+msgstr[1] "Nämä teemat saattavat olla käytössä muilla tämän verkon sivustoilla."
+
+#: wp-admin/network/themes.php:153
+msgid "Delete Theme"
+msgid_plural "Delete Themes"
+msgstr[0] "Poista teema"
+msgstr[1] "Poista teemat"
+
+#: wp-admin/network/menu.php:46 wp-admin/network/settings.php:22
+msgid "Network Settings"
+msgstr "Verkon asetukset"
+
+#: wp-admin/network/site-themes.php:168
+msgid "Network enabled themes are not shown on this screen."
+msgstr "Verkon laajuisia teemoja ei näy tällä sivulla."
+
+#: wp-admin/network/themes.php:17
+msgid "You do not have sufficient permissions to manage network themes."
+msgstr "Sinulla ei ole riittäviä oikeuksia verkkoteemojen ylläpitoon."
+
+#: wp-admin/network/menu.php:58
+msgid "Available Updates"
+msgstr "Saatavilla olevat päivitykset"
+
+#: wp-admin/network/site-info.php:89 wp-admin/network/site-settings.php:79
+#: wp-admin/network/site-themes.php:133 wp-admin/network/site-users.php:161
+msgid "Edit Site: <a href=\"%1$s\">%2$s</a>"
+msgstr "Muokkaa sivustoa: <a href=\"%1$s\">%2$s</a>"
+
+#: wp-admin/network/themes.php:100
+msgid "You do not have sufficient permissions to delete themes for this site."
+msgstr "Sinulla ei ole riittäviä oikeuksia teemojen poistamiseen tältä sivustolta."
+
+#: wp-admin/network/site-themes.php:163 wp-admin/network/themes.php:258
+msgid "Theme disabled."
+msgid_plural "%s themes disabled."
+msgstr[0] "Teema on poistettu käytöstä."
+msgstr[1] "%s teemaa poistettu käytöstä."
+
+#: wp-admin/network/site-info.php:39 wp-admin/network/site-settings.php:39
+#: wp-admin/network/site-themes.php:54 wp-admin/network/site-users.php:49
+msgid "Invalid site ID."
+msgstr "Väärä sivuston ID."
+
+#: wp-admin/network/site-themes.php:160 wp-admin/network/themes.php:255
+msgid "Theme enabled."
+msgid_plural "%s themes enabled."
+msgstr[0] "Teema on otettu käyttöön."
+msgstr[1] "%s teemaa on otettu käyttöön."
+
+#: wp-admin/network/site-themes.php:165 wp-admin/network/themes.php:263
+msgid "No theme selected."
+msgstr "Teemaa ei ole valittu."
+
+#: wp-admin/network/site-info.php:90 wp-admin/network/site-settings.php:80
+#: wp-admin/network/site-themes.php:134 wp-admin/network/site-users.php:162
+msgid "Edit Site: %s"
+msgstr "Muokkaa sivustoa: %s"
+
+#: wp-admin/network/themes.php:178
+msgid "No, Return me to the theme list"
+msgstr "Palaa takaisin teemalistaukseen"
+
+#: wp-admin/network/site-themes.php:130 wp-admin/network/themes.php:220
+msgctxt "themes per page (screen options)"
+msgid "Themes"
+msgstr "Teemat"
+
+#: wp-admin/network/settings.php:180
+msgid "Allow site administrators to add new users to their site via the \"Users &rarr; Add New\" page."
+msgstr "Sivustojen pääkäyttäjät voivat lisätä uusia käyttäjiä sivustolleen \"Käyttäjät &rarr; Lisää uusi\" -sivun kautta."
+
+#: wp-admin/network/settings.php:316
+msgid "Language Settings"
+msgstr "Kieliasetukset"
+
+#: wp-admin/network/site-settings.php:75
+msgid "Site options updated."
+msgstr "Sivuston asetukset päivitetty."
+
+#: wp-admin/network/menu.php:31
+msgid "Installed Themes"
+msgstr "Asennetut teemat"
+
+#: wp-admin/network/menu.php:27
+msgid "Themes %s"
+msgstr "Teemat %s"
+
+#: wp-admin/network/menu.php:18 wp-admin/network/sites.php:254
+msgctxt "site"
+msgid "Add New"
+msgstr "Lisää uusi"
+
+#: wp-admin/network/menu.php:17
+msgid "All Sites"
+msgstr "Kaikki sivustot"
+
+#: wp-admin/network/site-themes.php:17
+msgid "You do not have sufficient permissions to manage themes for this site."
+msgstr "Sinulla ei ole riittäviä oikeuksia teemojen hallinnointiin tällä sivustolla."
+
+#: wp-admin/network/site-new.php:107
+msgid "Site added. <a href=\"%1$s\">Visit Dashboard</a> or <a href=\"%2$s\">Edit Site</a>"
+msgstr "Sivusto luotu. <a href=\"%1$s\">Näytä ohjauspaneeli</a> tai <a href=\"%2$s\">muokkaa sivustoa</a>"
+
+#: wp-admin/network/user-new.php:17
+msgid "You do not have sufficient permissions to add users to this network."
+msgstr "Sinulla ei ole riittäviä oikeuksia käyttäjien lisäämiseksi tähän verkkoon."
+
+#: wp-admin/network/sites.php:25
+msgctxt "sites per page (screen options)"
+msgid "Sites"
+msgstr "Sivustoja"
+
+#: wp-admin/network/sites.php:206
+msgid "You do not have permission to delete that site."
+msgstr "Sinulla ei ole riittäviä oikeuksia sivuston poistamiseen."
+
+#: wp-admin/network/site-new.php:17
+msgid "You do not have sufficient permissions to add sites to this network."
+msgstr "Sinulla ei ole riittäviä oikeuksia sivustojen luomiseksi."
+
+#: wp-admin/network/menu.php:32 wp-admin/network/themes.php:247
+msgctxt "theme"
+msgid "Add New"
+msgstr "Lisää uusi"
+
+#: wp-admin/network/menu.php:53
+msgid "Updates"
+msgstr "Päivitykset"
+
+#: wp-admin/network/settings.php:64
+msgid "<a href=\"http://codex.wordpress.org/Network_Admin_Settings_Screen\" target=\"_blank\">Documentation on Network Settings</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Network_Admin_Settings_Screen\" target=\"_blank\">Documentation on Network Settings</a>"
+
+#: wp-admin/network/themes.php:233
+msgid "<a href=\"http://codex.wordpress.org/Network_Admin_Themes_Screen\" target=\"_blank\">Documentation on Network Themes</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Network_Admin_Themes_Screen\" target=\"_blank\">Documentation on Network Themes</a>"
+
+#: wp-admin/network/user-new.php:23
+msgid "Add User will set up a new user account on the network and send that person an email with username and password."
+msgstr "Lisää käyttäjä luo uuden käyttäjätilin multisite-verkkoon ja lähettää kyseiselle henkilölle sähköpostin, jossa on tämän tunnus ja salasana."
+
+#: wp-admin/network/site-info.php:26 wp-admin/network/site-settings.php:26
+#: wp-admin/network/site-themes.php:26 wp-admin/network/site-users.php:29
+msgid "<strong>Themes</strong> - This area shows themes that are not already enabled across the network. Enabling a theme in this menu makes it accessible to this site. It does not activate the theme, but allows it to show in the site&#8217;s Appearance menu. To enable a theme for the entire network, see the <a href=\"%s\">Network Themes</a> screen."
+msgstr "<strong>Teemat</strong> - Tämä sivu näyttää teemat, joita ei ole jo sallittu kaikille sivustoilla. Teeman salliminen tässä valikossa mahdollistaa sen ottamisen käyttöön kyseisellä sivustolla. Se ei siis ota sitä käyttöön, mutta se tulee näkyviin sivuston Ulkoasu-valikkoon. Jos haluat sallia teeman kaikille sivustoille kerralla, siirry <a href=\"%s\">Verkon teemat</a>-näkymään."
+
+#: wp-admin/network/site-info.php:27 wp-admin/network/site-settings.php:27
+#: wp-admin/network/site-themes.php:27 wp-admin/network/site-users.php:30
+msgid "<strong>Settings</strong> - This page shows a list of all settings associated with this site. Some are created by WordPress and others are created by plugins you activate. Note that some fields are grayed out and say Serialized Data. You cannot modify these values due to the way the setting is stored in the database."
+msgstr "<strong>Asetukset</strong> - Tämä sivu näyttää listan kaikista sivustoon liittyvistä asetuksista. Jotkut niistä ovat WordPressin luomia ja jotkut ovat lisäosien asetuksia. Jotkut kentät näkyvät harmaina, ja niissä on teksti SERIALIZED DATA. Näitä asetuksia ei voi muokata suoraan johtuen tavasta, jolla ne on tallennettu tietokantaan."
+
+#: wp-admin/network/site-info.php:24 wp-admin/network/site-settings.php:24
+#: wp-admin/network/site-themes.php:24 wp-admin/network/site-users.php:27
+msgid "<strong>Info</strong> - The domain and path are rarely edited as this can cause the site to not work properly. The Registered date and Last Updated date are displayed. Network admins can mark a site as archived, spam, deleted and mature, to remove from public listings or disable."
+msgstr "<strong>Tiedot</strong> - Verkkotunnusta ja polkua ei yleensä kannata muokata, koska se voi estää sivuston toiminnan. Sivulla näkyy päivämäärät ja ajat, jolloin sivusto on rekisteröity ja milloin sitä on viimeksi päivitetty. Verkon järjestelmänvalvojat voivat arkistoida sivuston, merkitä sen roskapostiksi, poistetuksi tai K-18-materiaaliksi. Julkinen-asetus vaikuttaa sivuston näkyvyyteen julkisissa listauksissa."
+
+#: wp-admin/network/site-info.php:25 wp-admin/network/site-settings.php:25
+#: wp-admin/network/site-themes.php:25 wp-admin/network/site-users.php:28
+msgid "<strong>Users</strong> - This displays the users associated with this site. You can also change their role, reset their password, or remove them from the site. Removing the user from the site does not remove the user from the network."
+msgstr "<strong>Käyttäjät</strong> - Tämä välilehti näyttää sivustoon liitetyt käyttäjät. Voit muuttaa heidän rooliaan, nollata salasanan tai poistaa käyttäjiä sivustolta. Käyttäjän poistaminen yksittäiseltä sivustolta ei poista kyseisen henkilön käyttäjätiliä."
+
+#: wp-admin/network/site-info.php:23 wp-admin/network/site-settings.php:23
+#: wp-admin/network/site-themes.php:23 wp-admin/network/site-users.php:26
+msgid "The menu is for editing information specific to individual sites, particularly if the admin area of a site is unavailable."
+msgstr "Tämä valikko on tarkoitettu yksittäisten sivustojen tietojen muokkaamiseen, erityisesti silloin jos sivuston ohjauspaneeliin ei jostain syystä pääse."
+
+#: wp-admin/network/sites.php:35
+msgid "Dashboard leads to the Dashboard for that site."
+msgstr "Ohjauspaneeli-linkki vie kyseisen sivuston ohjauspaneeliin."
+
+#: wp-admin/network/site-info.php:32 wp-admin/network/site-new.php:29
+#: wp-admin/network/site-settings.php:32 wp-admin/network/site-themes.php:32
+#: wp-admin/network/site-users.php:35 wp-admin/network/sites.php:45
+msgid "<a href=\"http://codex.wordpress.org/Network_Admin_Sites_Screen\" target=\"_blank\">Documentation on Site Management</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Network_Admin_Sites_Screen\" target=\"_blank\">Documentation on Site Management</a>"
+
+#: wp-admin/network/index.php:53
+msgid "<a href=\"http://codex.wordpress.org/Network_Admin\" target=\"_blank\">Documentation on the Network Admin</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Network_Admin\" target=\"_blank\">Documentation on the Network Admin</a>"
+
+#: wp-admin/network/sites.php:31
+msgid "Add New takes you to the Add New Site screen. You can search for a site by Name, ID number, or IP address. Screen Options allows you to choose how many sites to display on one page."
+msgstr "Lisää uusi vie uuden sivuston lisäämiseen. Voit hakea hakea sivustoa nimellä, ID:llä tai IP-osoitteella. Näyttöasetukset-välilehdeltä voit valita, montako sivustoa näytetään kerralla."
+
+#: wp-admin/network/user-new.php:29 wp-admin/network/users.php:242
+msgid "<a href=\"http://codex.wordpress.org/Network_Admin_Users_Screen\" target=\"_blank\">Documentation on Network Users</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Network_Admin_Users_Screen\" target=\"_blank\">Documentation on Network Users</a>"
+
+#: wp-admin/network/sites.php:40
+msgid "Clicking on bold headings can re-sort this table."
+msgstr "Lihavoitujen sarakeotsikoiden napsauttaminen järjestää taulukon uudelleen."
+
+#: wp-admin/network/sites.php:37
+msgid "Delete which is a permanent action after the confirmation screens."
+msgstr "Poista-toiminto pyytää vahvistusta, mutta on peruuttamaton."
+
+#: wp-admin/network/themes.php:228
+msgid "Themes can be enabled on a site by site basis by the network admin on the Edit Site screen (which has a Themes tab); get there via the Edit action link on the All Sites screen. Only network admins are able to install or edit themes."
+msgstr "Järjestelmänvalvoja voi aktivoida teemoja sivustokohtaisesti Muokkaa sivustoa -näkymässä, jossa on Teemat-välilehti. Pääset sinne Kaikki sivustot -näkymästä napsauttamalla Muokkaa-linkkiä haluamasi sivuston kohdalla. Vain järjestelmänvalvojat voivat asentaa tai muokata teemoja."
+
+#: wp-admin/network/sites.php:34
+msgid "An Edit link to a separate Edit Site screen."
+msgstr "Muokkaa-linkki erilliseen sivuston muokkausnäkymään."
+
+#: wp-admin/network/site-new.php:23
+msgid "This screen is for Super Admins to add new sites to the network. This is not affected by the registration settings."
+msgstr "Järjestelmänvalvojat voivat lisätä uusia sivustoja tässä näkymässä. Rekisteröitymisasetuksilla ei ole tähän vaikutusta."
+
+#: wp-admin/network/settings.php:59
+msgid "Super admins can no longer be added on the Options screen. You must now go to the list of existing users on Network Admin > Users and click on Username or the Edit action link below that name. This goes to an Edit User page where you can check a box to grant super admin privileges."
+msgstr "Järjestelmänvalvojia ei voi enää lisätä Asetukset-näkymästä. Mene olemassa olevien käyttäjien listaukseen (Verkon hallinta > Käyttäjät) ja napsauta käyttäjätunnusta tai sen alla olevaa muokkaa-linkkiä. Pääset tästä muokkaamaan käyttäjän profiilia, jossa voit tehdä käyttäjästä verkon järjestelmänvalvojan. "
+
+#: wp-admin/network.php:230
+msgctxt "subdirectory examples"
+msgid "like <code>%1$s/site1</code> and <code>%1$s/site2</code>"
+msgstr "esim: <code>%1$s/site1</code> ja <code>%1$s/site2</code>"
+
+#: wp-admin/network.php:261
+msgid "Because you are using <code>localhost</code>, the sites in your WordPress network must use sub-directories. Consider using <code>localhost.localdomain</code> if you wish to use sub-domains."
+msgstr "Koska WordPress-asennuksesi osoite on <code>localhost</code>, alasivustojen on käytettävä alihakemistoja. Jos haluat käyttää aliverkkotunnuksia, vaihda asennuksen osoitteeksi esimerkiksi <code>localhost.localdomain</code>."
+
+#: wp-admin/network.php:264 wp-admin/network.php:274 wp-admin/network.php:281
+msgid "The main site in a sub-directory install will need to use a modified permalink structure, potentially breaking existing links."
+msgstr "Alihakemistoja käyttävässä asennuksessa pääsivuston osoiterakennetta on muutettava, mikä saattaa rikkoa nykyisiä linkkejä."
+
+#: wp-admin/network.php:271
+msgid "Because your install is in a directory, the sites in your WordPress network must use sub-directories."
+msgstr "Koska WordPress on asennettu alihakemistoon, verkon alasivustojen on oltava myös alihakemistoissa."
+
+#: wp-admin/network.php:279
+msgid "Sub-domain Install"
+msgstr "Alihakemistoasennus"
+
+#: wp-admin/network.php:243 wp-admin/network.php:247 wp-admin/network.php:287
+msgid "Server Address"
+msgstr "Palvelimen osoite"
+
+#: wp-admin/network.php:280
+msgid "Because your install is not new, the sites in your WordPress network must use sub-domains."
+msgstr "Koska asennuksesi ei ole uusi, WordPress-verkon sivustojen on käytettävä aliverkkotunnuksia."
+
+#: wp-admin/network/settings.php:128 wp-admin/network.php:294
+msgid "Network Title"
+msgstr "Verkon nimi"
+
+#: wp-admin/network.php:298
+msgid "What would you like to call your network?"
+msgstr "Minkä nimen haluat antaa verkolle?"
+
+#: wp-admin/network.php:307
+msgid "Your email address."
+msgstr "Sinun sähköpostiosoitteesi."
+
+#: wp-admin/network.php:354
+msgid "The original configuration steps are shown here for reference."
+msgstr "Alkuperäiset asetusvaiheet ovat tässä näkyvissä referenssinä."
+
+#: wp-admin/network.php:371
+msgid "Enabling the Network"
+msgstr "Verkon käyttöönotto"
+
+#: wp-admin/network.php:372
+msgid "Complete the following steps to enable the features for creating a network of sites."
+msgstr "Käy läpi seuraavat vaiheet verkon luomiseksi."
+
+#: wp-admin/network.php:375 wp-admin/network.php:377
+msgid "<strong>Caution:</strong> We recommend you back up your existing <code>wp-config.php</code> and <code>%s</code> files."
+msgstr "<strong>HUOM:</strong> Suosittelemme varmuuskopion ottamista nykyisestä <code>wp-config.php</code>-tiedostosta ja <code>%s</code> -tiedostoista."
+
+#: wp-admin/network.php:379
+msgid "<strong>Caution:</strong> We recommend you back up your existing <code>wp-config.php</code> file."
+msgstr "<strong>HUOM:</strong> Suosittelemme varmuuskopion ottamista nykyisestä <code>wp-config.php</code>-tiedostosta."
+
+#: wp-admin/network.php:359
+msgid "An existing WordPress network was detected."
+msgstr "WordPress-verkko on jo asennettu."
+
+#: wp-admin/network.php:360
+msgid "Please complete the configuration steps. To create a new network, you will need to empty or remove the network database tables."
+msgstr "Tee seuraavat toimenpiteet. Uuden verkon luomiseksi sinun on poistettava tai tyhjennettävä verkkoon liittyvät tietokantataulut."
+
+#: wp-admin/network.php:385
+msgid "Add the following to your <code>wp-config.php</code> file in <code>%s</code> <strong>above</strong> the line reading <code>/* That&#8217;s all, stop editing! Happy blogging. */</code>:"
+msgstr "Lisää seuraavat rivit tiedostoon <code>wp-config.php</code> sijainnissa <code>%s</code> sen rivin <strong>yläpuolelle</strong>, jossa lukee <code>/* Siinä kaikki, älä jatka pidemmälle! */</code>:"
+
+#: wp-admin/network.php:199
+msgid "Fill in the information below and you&#8217;ll be on your way to creating a network of WordPress sites. We will create configuration files in the next step."
+msgstr "Täytä alla olevat tiedot ja pääset alkuun WordPress-sivustoverkon luomisessa. Seuraavassa vaiheessa luomme tarvittavat asetustiedostot."
+
+#: wp-admin/network.php:211
+msgid "Please make sure the Apache <code>mod_rewrite</code> module is installed as it will be used at the end of this installation."
+msgstr "Varmista että Apachen <code>mod_rewrite</code>-laajennus on asennettu ja käytössä, koska sitä tarvitaan asennuksen lopussa. "
+
+#: wp-admin/network.php:417
+msgid "This unique authentication key is also missing from your <code>wp-config.php</code> file."
+msgid_plural "These unique authentication keys are also missing from your <code>wp-config.php</code> file."
+msgstr[0] "Tämä yksilöllinen varmistusavain puuttuu <code>wp-config.php</code>-tiedostostasi."
+msgstr[1] "Nämä yksilölliset varmistusavaimet puuttuvat <code>wp-config.php</code>-tiedostostasi."
+
+#: wp-admin/network.php:195
+msgctxt "Default network name"
+msgid "%s Sites"
+msgstr "%s Sivustot"
+
+#: wp-admin/network.php:174
+msgid "You cannot install a network of sites with your server address."
+msgstr "Et voi asentaa sivustoverkkoa tähän osoitteeseen."
+
+#: wp-admin/network.php:175
+msgid "You cannot use port numbers such as <code>%s</code>."
+msgstr "Et voi käyttää porttinumeroita kuten <code>%s</code>."
+
+#: wp-admin/network.php:221
+msgid "You will need a wildcard DNS record if you are going to use the virtual host (sub-domain) functionality."
+msgstr "Tarvitset ns. wildcard DNS-merkinnän jos aiot käyttää aliverkkotunnuksia."
+
+#: wp-admin/network.php:249 wp-admin/network.php:289
+msgid "The internet address of your network will be <code>%s</code>."
+msgstr "Verkkosi internet-osoite on <code>%s</code>."
+
+#: wp-admin/network.php:213 wp-admin/network.php:238 wp-admin/network.php:264
+#: wp-admin/network.php:274
+msgid "Warning!"
+msgstr "Varoitus!"
+
+#: wp-admin/network.php:225
+msgid "Sub-domains"
+msgstr "Aliverkkotunnukset"
+
+#: wp-admin/network.php:417
+msgid "To make your installation more secure, you should also add:"
+msgstr "Asennuksesi tietoturvan parantamiseksi lisää myös seuraavat:"
+
+#: wp-admin/network.php:255
+msgid "Network Details"
+msgstr "Verkon tiedot"
+
+#: wp-admin/network.php:198
+msgid "Welcome to the Network installation process!"
+msgstr "Tervetuloa asentamaan WordPress-verkkoa!"
+
+#: wp-admin/network.php:213
+msgid "It looks like the Apache <code>mod_rewrite</code> module is not installed."
+msgstr "Näyttää siltä, ettei Apachen <code>mod_rewrite</code>-moduulia ole asennettu."
+
+#: wp-admin/network.php:165
+msgid "Once the network is created, you may reactivate your plugins."
+msgstr "Kun verkko on luotu, voit ottaa lisäosat uudelleen käyttöön."
+
+#: wp-admin/network.php:165
+msgid "Please <a href=\"%s\">deactivate your plugins</a> before enabling the Network feature."
+msgstr "<a href=\"%s\">Poista lisäosat käytöstä</a> ennen Verkon käyttöönottoa."
+
+#: wp-admin/network.php:112
+msgid "Create a Network of WordPress Sites"
+msgstr "Luo WordPress-sivustojen verkko"
+
+#: wp-admin/network.php:176
+msgid "Return to Dashboard"
+msgstr "Palaa ohjauspaneeliin"
+
+#: wp-admin/network.php:165 wp-admin/network.php:359 wp-admin/network.php:483
+#: wp-admin/network.php:520
+msgid "Warning:"
+msgstr "Varoitus:"
+
+#: wp-admin/network.php:220
+msgid "Please choose whether you would like sites in your WordPress network to use sub-domains or sub-directories. <strong>You cannot change this later.</strong>"
+msgstr "Valitse, haluatko alisivustojen käyttävän aliverkkotunnuksia vai alihakemistoja osoitteenaan. <strong>Et voi muuttaa tätä myöhemmin.</strong>"
+
+#: wp-admin/network.php:219
+msgid "Addresses of Sites in your Network"
+msgstr "Verkkosi sivustojen osoitteita"
+
+#: wp-admin/network.php:188
+msgid "ERROR: The network could not be created."
+msgstr "VIRHE: verkkoa ei voitu luoda."
+
+#: wp-admin/network.php:128
+msgid "Network"
+msgstr "Verkko"
+
+#: wp-admin/network.php:229
+msgid "Sub-directories"
+msgstr "Alihakemistot"
+
+#: wp-admin/network.php:106
+msgid "You must define the <code>WP_ALLOW_MULTISITE</code> constant as true in your wp-config.php file to allow creation of a Network."
+msgstr "Sinun on määriteltävä <code>WP_ALLOW_MULTISITE</code>-vakion arvoksi true wp-config.php-tiedostossasi."
+
+#: wp-admin/network.php:226
+msgctxt "subdomain examples"
+msgid "like <code>site1.%1$s</code> and <code>site2.%1$s</code>"
+msgstr "esim <code>site1.%1$s</code> ja <code>site2.%1$s</code>"
+
+#: wp-admin/network.php:529
+msgid "Once you complete these steps, your network is enabled and configured. You will have to log in again."
+msgstr "Kun olet suorittanut nämä vaiheet, verkkosi on käyttövalmis. Sinun on kirjauduttava sisään uudelleen."
+
+#: wp-admin/network.php:157
+msgid "The constant DO_NOT_UPGRADE_GLOBAL_TABLES cannot be defined when creating a network."
+msgstr "Vakiota DO_NOT_UPGRADE_GLOBAL_TABLES ei voi määritellä verkkoa luodessa."
+
+#: wp-admin/network.php:259 wp-admin/network.php:269
+msgid "Sub-directory Install"
+msgstr "Alihakemistoasennus"
+
+#: wp-admin/network.php:244
+msgid "We recommend you change your siteurl to <code>%1$s</code> before enabling the network feature. It will still be possible to visit your site using the <code>www</code> prefix with an address like <code>%2$s</code> but any links will not have the <code>www</code> prefix."
+msgstr "Suosittelemme vaihtamaan sivustosi osoitteen (siteurl) muotoon <code>%1$s</code> ennen verkko-ominaisuuden käyttöönottoa. Pääset silti sivuillesi <code>www</code>-etuliitteellä, esim. osoitteella <code>%2$s</code>, mutta linkeissä ei käytetä <code>www</code>-etuliitettä."
+
+#: wp-admin/network.php:215
+msgid "If <code>mod_rewrite</code> is disabled, ask your administrator to enable that module, or look at the <a href=\"http://httpd.apache.org/docs/mod/mod_rewrite.html\">Apache documentation</a> or <a href=\"http://www.google.com/search?q=apache+mod_rewrite\">elsewhere</a> for help setting it up."
+msgstr "Jos <code>mod_rewrite</code> ei ole käytössä, pyydä palvelimen ylläpitäjää aktivoimaan se, tai lue <a href=\"http://httpd.apache.org/docs/mod/mod_rewrite.html\">Apachen dokumentaatiosta</a> tai <a href=\"http://www.google.com/search?q=apache+mod_rewrite\">muualta</a> saadaksesi apua sen käyttöönotossa."
+
+#: wp-admin/network.php:117
+msgid "Choose subdomains or subdirectories; this can only be switched afterwards by reconfiguring your install. Fill out the network details, and click install. If this does not work, you may have to add a wildcard DNS record (for subdomains) or change to another setting in Permalinks (for subdirectories)."
+msgstr "Valitse alidomainit tai alihakemistot; tämä voidaan vaihtaa jälkikäteen vain konfiguroimalla asennus kokonaan uudelleen. Täytä verkon tiedot ja napsauta Asenna. Jos asennus ei toimi, saatat joutua lisämään wildcard DNS-asetuksen (alidomaineille) tai vaihtamaan osoiterakennetta (alihakemistoille)."
+
+#: wp-admin/network.php:123 wp-admin/network.php:134
+msgid "<a href=\"http://codex.wordpress.org/Create_A_Network\" target=\"_blank\">Documentation on Creating a Network</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Create_A_Network\" target=\"_blank\">Documentation on Creating a Network</a>"
+
+#: wp-admin/network.php:124 wp-admin/network.php:135
+msgid "<a href=\"http://codex.wordpress.org/Tools_Network_Screen\" target=\"_blank\">Documentation on the Network Screen</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Tools_Network_Screen\" target=\"_blank\">Documentation on the Network Screen</a>"
+
+#: wp-admin/network.php:27
+msgid "The Network creation panel is not for WordPress MU networks."
+msgstr "Verkon luontitoiminto ei ole WordPress MU-verkoille."
+
+#: wp-admin/network.php:118
+msgid "The next screen for Network Setup will give you individually-generated lines of code to add to your wp-config.php and .htaccess files. Make sure the settings of your FTP client make files starting with a dot visible, so that you can find .htaccess; you may have to create this file if it really is not there. Make backup copies of those two files."
+msgstr "Seuraavalta sivulta saat verkon asennuksessa tarvitsemasi koodit wp-config.php- ja .htaccess-tiedostoihin. Varmista että FTP-ohjelmasi asetuksissä pisteellä alkavat tiedostot on asetettu näkyviksi. Saatat joutua luomaan kyseisen tiedoston jos sitä ei ole lainkaan olemassa. Tee ensin varmuuskopiot näistä kahdesta tiedostosta."
+
+#: wp-admin/network.php:121
+msgid "The choice of subdirectory sites is disabled if this setup is more than a month old because of permalink problems with &#8220;/blog/&#8221; from the main site. This disabling will be addressed in a future version."
+msgstr "Yli kuukauden ikäisissä asennuksissa alihakemisto-vaihtoehto on pois käytöstä, johtuen yhteensopivuusongelmista pääsivuston osoiterakenteen kanssa. Tämä ongelma pyritään korjaamaan myöhemmässä WordPressin versiossa."
+
+#: wp-admin/network.php:116
+msgid "This screen allows you to configure a network as having subdomains (<code>site1.example.com</code>) or subdirectories (<code>example.com/site1</code>). Subdomains require wildcard subdomains to be enabled in Apache and DNS records, if your host allows it."
+msgstr "Tässä näkymässä voit valita, haluatko käyttää multisite-verkossa alidomaineja (<code>sivusto1.example.com</code>) vai alihakemistoja (<code>example.com/sivusto1</code>). Alidomainien käyttö edellyttää wildcard-asetusta sekä Apachessa että DNS-asetuksissa, jos palveluntarjoajasi sallii sen."
+
+#: wp-admin/network.php:120
+msgid "Once you add this code and refresh your browser, multisite should be enabled. This screen, now in the Network Admin navigation menu, will keep an archive of the added code. You can toggle between Network Admin and Site Admin by clicking on the Network Admin or an individual site name under the My Sites dropdown in the Toolbar."
+msgstr "Kun olet lisännyt tämän koodin ja päivittänyt sivun selaimessasi, multisite-verkon pitäisi olla käytössä. Tämä sivu säilyy lisäämäsi koodin arkistona ja löytyy jatkossa Verkon hallinnasta. Voit vaihtaa verkon hallinnan ja sivuston hallinnan välillä klikkaamalla Verkon hallinta-linkkiä tai yksittäisen sivuston nimeä Minun sivustoni-valikossa työkalupalkissa."
+
+#: wp-admin/network/site-info.php:17 wp-admin/network/site-settings.php:17
+#: wp-admin/network/site-users.php:17
+msgid "You do not have sufficient permissions to edit this site."
+msgstr "Sinulla ei ole riittäviä oikeuksia tämän sivuston muokkaamiseen."
+
+#: wp-admin/network/users.php:144
+msgid "Warning! User cannot be modified. The user %s is a network administrator."
+msgstr "Varoitus! Käyttäjää ei voi muuttaa. Käyttäjä %s on verkon ylläpitäjä."
+
+#: wp-admin/network/site-new.php:24
+msgid "If the admin email for the new site does not exist in the database, a new user will also be created."
+msgstr "Jos ylläpitäjän sähköpostiosoitetta ei löydy tietokannasta, luodaan myös uusi käyttäjä."
+
+#: wp-admin/network/sites.php:39
+msgid "The site ID is used internally, and is not shown on the front end of the site or to users/viewers."
+msgstr "Sivuston ID on käytössä sisäisesti. Se ei näy sivustolla vieraileville käyttäjille."
+
+#: wp-admin/network/sites.php:36
+msgid "Deactivate, Archive, and Spam which lead to confirmation screens. These actions can be reversed later."
+msgstr "Poista käytöstä-, arkistoi- ja merkitse roskaksi-toiminnot johtavat varmistukseen. Nämä toiminnot voidaan perua myöhemmin."
+
+#: wp-admin/network/sites.php:33
+msgid "Hovering over each site reveals seven options (three for the primary site):"
+msgstr "Hiiren vieminen sivuston päälle paljastaa seitsemän vaihtoehtoa (kolme ensisijaiselle sivustolle):"
+
+#: wp-admin/network/settings.php:53
+msgid "Operational settings has fields for the network&#8217;s name and admin email."
+msgstr "Toiminnalliset asetukset sisältävät kentät verkon nimelle ja ylläpidon sähköpostiosoitteelle."
+
+#: wp-admin/network/users.php:234
+msgid "You can also go to the user&#8217;s profile page by clicking on the individual username."
+msgstr "Voit siirtyä käyttäjätietoihin klikkaamalla yksittäistä käyttäjänimeä."
+
+#: wp-admin/network/users.php:236
+msgid "The bulk action will permanently delete selected users, or mark/unmark those selected as spam. Spam users will have posts removed and will be unable to sign up again with the same email addresses."
+msgstr "Massatoiminto poistaa pysyvästi valitut käyttäjät tai lisää/poistaa roskamerkinnän valituilta. Roskapostikäyttäjiltä poistetaan artikkelit ja he eivät voi rekisteröityä samalla sähköpostiosoitteella."
+
+#: wp-admin/network/settings.php:56
+msgid "Upload settings control the size of the uploaded files and the amount of available upload space for each site. You can change the default value for specific sites when you edit a particular site. Allowed file types are also listed (space separated only)."
+msgstr "Lataamisen asetukset hallinnoivat palvelimelle ladattavien tiedostojen kokoa ja saatavilla olevan tilan määrää sivustokohtaisesti. Voit vaihtaa oletusarvon tietyille sivustoille muokkaamalla kyseisen sivuston asetuksia. Sallitut tiedostojen tyypit ovat myös listattuna (vain välilyönneillä)."
+
+#: wp-admin/network/sites.php:38
+msgid "Visit to go to the frontend site live."
+msgstr "Vieraile mennäksesi varsinaiselle muille näkyvälle sivustolle."
+
+#: wp-admin/network/users.php:237
+msgid "You can make an existing user an additional super admin by going to the Edit User profile page and checking the box to grant that privilege."
+msgstr "Voit tehdä olemassa olevasta käyttäjästä järjestelmänvalvojan menemällä Muokkaa käyttäjää ja ruksaamalla valinnan, joka myöntää kyseisen oikeuden."
+
+#: wp-admin/network/user-new.php:24
+msgid "Users who are signed up to the network without a site are added as subscribers to the main or primary dashboard site, giving them profile pages to manage their accounts. These users will only see Dashboard and My Sites in the main navigation until a site is created for them."
+msgstr "Käyttäjät jotka ovat rekisteröityneet verkkoon ilman sivustoa ovat lisätty ensisijaisen sivuston tilaajiksi. Tämä antaa heille profiili-sivun tunnustensa hallintaan. Nämä käyttäjät näkevät vain Ohjausnäkymän ja Omat sivustot -sivun, kunnes heille on luotu sivusto."
+
+#: wp-admin/network/users.php:235
+msgid "You can sort the table by clicking on any of the bold headings and switch between list and excerpt views by using the icons in the upper right."
+msgstr "Voit järjestää taulukon klikkaamalla mitä tahansa lihavoitua otsikkoa ja vaihtaa lista- ja otenäkymien välillä käyttämällä kuvakkeita oikealla ylhäällä."
+
+#: wp-admin/network/users.php:232
+msgid "This table shows all users across the network and the sites to which they are assigned."
+msgstr "Tämä taulukko näyttää kaikki käyttäjät verkossa ja sivustot, joihin heidät on liitetty."
+
+#: wp-admin/network/upgrade.php:27
+msgid "If this process fails for any reason, users logging in to their sites will force the same update."
+msgstr "Jos tämä toimenpide epäonnistuu jostain syystä, käyttäjien kirjautuminen sivustolleen pakottaa saman päivityksen."
+
+#: wp-admin/network/upgrade.php:26
+msgid "If a version update to core has not happened, clicking this button won&#8217;t affect anything."
+msgstr "Jos ytimeen ei ole tullut versiopäivitystä, tämän painikkeen klikkaaminen ei vaikuta mihinkään."
+
+#: wp-admin/network/themes.php:227
+msgid "If the network admin disables a theme that is in use, it can still remain selected on that site. If another theme is chosen, the disabled theme will not appear in the site&#8217;s Appearance > Themes screen."
+msgstr "Jos verkon ylläpitäjä poistaa käytöstä teeman joka on käytössä, se voi silti jäädä valituksi sivustoilla. Jos sivustolla vaihdetaan teemaa, käytöstä poistettu teema ei näy sivuston Ulkoasu > Teemat -sivulla."
+
+#: wp-admin/network/themes.php:226
+msgid "This screen enables and disables the inclusion of themes available to choose in the Appearance menu for each site. It does not activate or deactivate which theme a site is currently using."
+msgstr "Tällä sivulla voit sallia ja estää teemojen näkymisen jokaisen sivuston Ulkoasu -valikossa. Se ei ota käyttöön tai poista käytöstä teemoja jotka on tällä hetkellä käytössä."
+
+#: wp-admin/network/sites.php:32
+msgid "This is the main table of all sites on this network. Switch between list and excerpt views by using the icons above the right side of the table."
+msgstr "Tämä on päätaulukko kaikista sivustoista tässä verkossa. Vaihda lista- ja otenäkymien välillä käyttämällä taulukon oikealla yläpuolella olevia kuvakkeita."
+
+#: wp-admin/network/settings.php:58
+msgid "Menu setting enables/disables the plugin menus from appearing for non super admins, so that only super admins, not site admins, have access to activate plugins."
+msgstr "Valikon valinta sallii/estää lisäosavalikoiden näkymisen muille kuin järjestelmänvalvojille, niin että vain järjestelmänvalvojat, ei sivuston ylläpitäjät, pääsevät hallitsemaan lisäosia."
+
+#: wp-admin/network/settings.php:55
+msgid "New site settings are defaults applied when a new site is created in the network. These include welcome email for when a new site or user account is registered, and what&#8127;s put in the first post, page, comment, comment author, and comment URL."
+msgstr "Uuden sivuston asetukset ovat oletuksilla, kun uusi sivusto luodaan verkossa. Oletusasetukset sisältävät tervetuloa-viestin uuden sivuston tai käyttäjätunnuksen rekisteröinnin yhteydessä, ensimmäisen artikkelin, sivun, kommentin, kommentin kirjoittajan ja kommentin URL-osoitteen."
+
+#: wp-admin/network/settings.php:54
+msgid "Registration settings can disable/enable public signups. If you let others sign up for a site, install spam plugins. Spaces, not commas, should separate names banned as sites for this network."
+msgstr "Rekisteröinnin asetuksissa voit estää tai sallia julkisen rekisteröinnin. Jos annat käyttäjien rekisteröidä sivustoja itselleen, asenna roskasuodattimia. Erota tässä verkossa estetyt sivustojen nimet välilyönneillä (ei pilkkuja). "
+
+#: wp-admin/network/settings.php:52
+msgid "This screen sets and changes options for the network as a whole. The first site is the main site in the network and network options are pulled from that original site&#8217;s options."
+msgstr "Tämä ruutu asettaa ja muuttaa asetuksia koko verkolle. Ensimmäinen sivusto on verkon pääsivusto ja verkon asetukset haetaan kyseisen alkuperäisen sivuston asetuksista."
+
+#: wp-admin/network/site-new.php:49
+msgid "The following words are reserved for use by WordPress functions and cannot be used as blog names: <code>%s</code>"
+msgstr "Seuraavat sanat on varattu WordPressin toiminnoilla, eikä niitä voida käyttää sivuston nimenä: <code>%s</code>"
+
+#: wp-admin/network/upgrade.php:69
+msgid "Warning! Problem updating %1$s. Your server may not be able to connect to sites running on it. Error message: <em>%2$s</em>"
+msgstr "Varoitus! Virhe päivitettäessä sivustoa %1$s. Palvelimesi ei ehkä saa sillä pyöriviin sivustoihin yhteyttä. Virheilmoitus: <em>%2$s</em>"
+
+#: wp-admin/network/settings.php:202
+msgid "If you want to limit site registrations to certain domains. One domain per line."
+msgstr "Jos haluat rajoittaa sivustojen luomisen tiettyihin verkkotunnuksiin. Yksi verkkotunnus per rivi."
+
+#: wp-admin/network/settings.php:213
+msgid "If you want to ban domains from site registrations. One domain per line."
+msgstr "Jos haluat estää sivustojen perustamisen tietyiltä verkkotunnuksilta. Yksi verkkotunnus per rivi."
+
+#: wp-admin/network/settings.php:160
+msgid "If registration is disabled, please set <code>NOBLOGREDIRECT</code> in <code>wp-config.php</code> to a URL you will redirect visitors to if they visit a non-existent site."
+msgstr "Jos rekisteröityminen on pois käytöstä, aseta <code>NOBLOGREDIRECT</code>:n arvoksi <code>wp-config.php</code>-tiedostossa sellainen URL, johon haluat ohjata kävijät silloin, kun he yrittävät mennä sivustolle, jota ei ole olemassa."
+
+#: wp-admin/network/site-new.php:37
+msgid "Can&#8217;t create an empty site."
+msgstr "En voi luoda tyhjää sivustoa."
+
+#: wp-admin/network/upgrade.php:88
+msgid "If your browser doesn&#8217;t start loading the next page automatically, click this link:"
+msgstr "Jos selaimesi ei siirry seuraavalle sivulle automaattisesti, napsauta tätä linkkiä:"
+
+#: wp-admin/network/sites.php:224
+msgid "Site marked as spam."
+msgstr "Sivusto on merkitty roskaksi."
+
+#: wp-admin/network/sites.php:197
+msgid "Sites marked as spam."
+msgstr "Sivustot merkitty roskaksi."
+
+#: wp-admin/network/sites.php:194
+msgid "Sites removed from spam."
+msgstr "Sivustot palautettiin."
+
+#: wp-admin/network/sites.php:221
+msgid "Site removed from spam."
+msgstr "Sivusto palautettiin."
+
+#: wp-admin/network/users.php:260
+msgid "Users removed from spam."
+msgstr "Käyttäjät palautettu."
+
+#: wp-admin/network/sites.php:200
+msgid "Sites deleted."
+msgstr "Sivustot poistettu."
+
+#: wp-admin/network/sites.php:203
+msgid "Site deleted."
+msgstr "Sivusto poistettu."
+
+#: wp-admin/network/users.php:263
+msgid "Users deleted."
+msgstr "Käyttäjät poistettu."
+
+#: wp-admin/network/site-info.php:142
+msgid "Update <code>siteurl</code> and <code>home</code> as well."
+msgstr "Päivitä myös <code>siteurl</code> ja <code>home</code>."
+
+#: wp-admin/network/sites.php:218
+msgid "Site deactivated."
+msgstr "Sivusto on poistettu käytöstä."
+
+#: wp-admin/network/sites.php:215
+msgid "Site activated."
+msgstr "Sivusto on otettu käyttöön."
+
+#: wp-admin/network/sites.php:212
+msgid "Site unarchived."
+msgstr "Sivusto on palautettu."
+
+#: wp-admin/network/sites.php:209
+msgid "Site archived."
+msgstr "Sivusto on arkistoitu."
+
+#: wp-admin/network/users.php:257
+msgid "Users marked as spam."
+msgstr "Käyttäjät merkitty roskapostittajiksi."
+
+#: wp-admin/network/site-new.php:63
+msgid "Invalid email address."
+msgstr "Virheellinen sähköpostiosoite."
+
+#: wp-admin/network/site-new.php:80
+msgid "There was an error creating the user."
+msgstr "Virhe käyttäjän luonnissa."
+
+#: wp-admin/network/sites.php:64 wp-admin/network/sites.php:131
+msgid "You are not allowed to change the current site."
+msgstr "Sinulla ei ole sivuston muuttamiseen tarvittavaa oikeutta."
+
+#: wp-admin/network/settings.php:307
+msgctxt "File size in kilobytes"
+msgid "%s KB"
+msgstr "%s Kt"
+
+#: wp-admin/network/settings.php:301
+msgid "Upload file types"
+msgstr "Sallitut tiedostotyypit"
+
+#: wp-admin/network/settings.php:296
+msgid "Limit total size of files uploaded to %s MB"
+msgstr "Rajoita ladattujen tiedostojen yhteenlaskettu koko %s megatavuun"
+
+#: wp-admin/network/settings.php:258
+msgid "The first page on a new site."
+msgstr "Ensimmäinen sivu uudella sivustolla."
+
+#: wp-admin/network/settings.php:277
+msgid "The author of the first comment on a new site."
+msgstr "Ensimmäisen kommentin kirjoittaja uudella sivustolla."
+
+#: wp-admin/network/settings.php:268
+msgid "The first comment on a new site."
+msgstr "Ensimmäinen kommentti uudella sivustolla."
+
+#: wp-admin/network/settings.php:248
+msgid "The first post on a new site."
+msgstr "Uuden sivuston ensimmäinen artikkeli."
+
+#: wp-admin/network/settings.php:286
+msgid "The URL for the first comment on a new site."
+msgstr "Sivuston ensimmäisen kommentin URL."
+
+#: wp-admin/network/upgrade.php:57
+msgid "All done!"
+msgstr "Valmista tuli!"
+
+#: wp-admin/network/settings.php:154
+msgid "Registration is disabled."
+msgstr "Rekisteröinti on suljettu."
+
+#: wp-admin/network/settings.php:155
+msgid "User accounts may be registered."
+msgstr "Käyttäjätilejä voidaan rekisteröidä."
+
+#: wp-admin/network/settings.php:156
+msgid "Logged in users may register new sites."
+msgstr "Kirjautuneet käyttäjät voivat rekisteröidä uusia sivustoja."
+
+#: wp-admin/network/settings.php:157
+msgid "Both sites and user accounts can be registered."
+msgstr "Sekä sivustoja että käyttäjätilejä voidaan rekisteröidä."
+
+#: wp-admin/network/settings.php:346
+msgid "Enable administration menus"
+msgstr "Salli hallintavalikot"
+
+#: wp-admin/network/settings.php:291
+msgid "Upload Settings"
+msgstr "Tiedostonsiirtoasetukset"
+
+#: wp-admin/network/settings.php:219
+msgid "New Site Settings"
+msgstr "Uuden sivuston asetukset"
+
+#: wp-admin/network/settings.php:144
+msgid "Registration Settings"
+msgstr "Rekisteröintiasetukset"
+
+#: wp-admin/network/settings.php:125
+msgid "Operational Settings"
+msgstr "Toiminnalliset asetukset"
+
+#: wp-admin/network/site-new.php:58
+msgid "Missing email address."
+msgstr "Sähköpostiosoite puuttuu."
+
+#: wp-admin/network/site-new.php:55
+msgid "Missing or invalid site address."
+msgstr "Sivuston osoite puuttuu tai on virheellinen."
+
+#: wp-admin/network/settings.php:228
+msgid "The welcome email sent to new site owners."
+msgstr "Tervetulosähköposti uusille sivustoille."
+
+#: wp-admin/network/settings.php:294
+msgid "Site upload space"
+msgstr "Sivuston käytössä oleva levytila"
+
+#: wp-admin/network/settings.php:189
+msgid "Users are not allowed to register these sites. Separate names by spaces."
+msgstr "Käyttäjät eivät saa rekisteröidä näitä sivustoja. Erota nimet välilyönneillä."
+
+#: wp-admin/network/site-new.php:95
+msgid "[%s] New Site Created"
+msgstr "[%s] Uusi sivusto luotu"
+
+#: wp-admin/network/settings.php:135 wp-admin/network.php:303
+msgid "Network Admin Email"
+msgstr "Verkon ylläpitäjän sähköpostiosoite"
+
+#: wp-admin/network/settings.php:173
+msgid "Send the network admin an email notification every time someone registers a site or user account."
+msgstr "Lähetä Verkon ylläpitäjälle sähköposti-ilmoitus kun joku rekisteröi uuden sivuston tai käyttäjätunnuksen."
+
+#: wp-admin/network/upgrade.php:88
+msgid "Next Sites"
+msgstr "Seuraavat sivustot"
+
+#: wp-admin/network/index.php:20 wp-admin/network/settings.php:20
+#: wp-admin/network/site-info.php:43 wp-admin/network/site-settings.php:43
+#: wp-admin/network/site-themes.php:60 wp-admin/network/site-users.php:53
+#: wp-admin/network/sites.php:17 wp-admin/network/sites.php:100
+#: wp-admin/network/upgrade.php:39 wp-admin/network/user-new.php:36
+#: wp-admin/network/users.php:17 wp-admin/network/users.php:97
+#: wp-admin/network/users.php:118 wp-admin/network/users.php:131
+#: wp-admin/network/users.php:180
+msgid "You do not have permission to access this page."
+msgstr "Sinulla ei ole lupaa tämän sivun katsomiseen."
+
+#: wp-admin/network/site-new.php:130
+msgid "Site Address"
+msgstr "Sivuston osoite"
+
+#: wp-admin/network/site-new.php:153
+msgid "Add Site"
+msgstr "Lisää sivusto"
+
+#: wp-admin/network/site-new.php:146
+msgid "Admin Email"
+msgstr "Pääkäyttäjän sähköpostiosoite"
+
+#: wp-admin/network/site-new.php:150
+msgid "The username and password will be mailed to this email address."
+msgstr "Käyttäjätunnus ja salasana lähetetään tähän sähköpostiosoitteeseen."
+
+#: wp-admin/network/site-users.php:310 wp-admin/network/user-new.php:98
+msgid "Username and password will be mailed to the above email address."
+msgstr "Käyttäjätunnus ja salasana lähetetään yllä olevaan sähköpostiosoitteeseen."
+
+#: wp-admin/network/settings.php:147
+msgid "Allow new registrations"
+msgstr "Salli uudet rekisteröitymiset"
+
+#: wp-admin/network/settings.php:185
+msgid "Banned Names"
+msgstr "Kielletyt nimet"
+
+#: wp-admin/network/settings.php:208
+msgid "Banned Email Domains"
+msgstr "Kielletyt sähköpostien verkkotunnukset"
+
+#: wp-admin/network/settings.php:178
+msgid "Add New Users"
+msgstr "Uusien käyttäjien lisääminen"
+
+#: wp-admin/network/settings.php:195
+msgid "Limited Email Registrations"
+msgstr "Rajaa rekisteröinnit näihin osoitteisiin"
+
+#: wp-admin/network/settings.php:223
+msgid "Welcome Email"
+msgstr "Tervetulosähköposti"
+
+#: wp-admin/network/settings.php:238
+msgid "The welcome email sent to new users."
+msgstr "Tervetulosähköposti uusille käyttäjille."
+
+#: wp-admin/network/settings.php:253
+msgid "First Page"
+msgstr "Ensimmäinen sivu"
+
+#: wp-admin/network/settings.php:263
+msgid "First Comment"
+msgstr "Ensimmäinen kommentti"
+
+#: wp-admin/network/settings.php:273
+msgid "First Comment Author"
+msgstr "Ensimmäisen kommentin kirjoittaja"
+
+#: wp-admin/network/settings.php:282
+msgid "First Comment URL"
+msgstr "Ensimmäisen kommentin URL"
+
+#: wp-admin/network/settings.php:306
+msgid "Max upload file size"
+msgstr "Siirrettävien tiedostojen maksimikoko"
+
+#: wp-admin/network/settings.php:319
+msgid "Default Language"
+msgstr "Oletuskieli"
+
+#: wp-admin/network/sites.php:77
+msgid "Confirm"
+msgstr "Vahvista"
+
+#: wp-admin/network/user-new.php:39
+msgid "Cannot create an empty user."
+msgstr "Tyhjää käyttäjää ei voida luoda."
+
+#: wp-admin/network/site-users.php:233
+msgid "Duplicated username or email address."
+msgstr "Kahdennettu käyttäjätunnus tai sähköpostiosoite."
+
+#: wp-admin/network/settings.php:167
+msgid "Registration notification"
+msgstr "Rekisteröinti-ilmoitukset"
+
+#: wp-admin/network/settings.php:233
+msgid "Welcome User Email"
+msgstr "Tervetuloviesti käyttäjälle"
+
+#: wp-admin/network/site-new.php:150
+msgid "A new user will be created if the above email address is not in the database."
+msgstr "Uusi käyttäjä luodaan jos yllä olevaa sähköpostiosoitetta ei löydy tietokannasta."

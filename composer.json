@@ -34,7 +34,16 @@
   "repositories": [
     {
       "type": "composer",
-      "url": "http://wpackagist.org"
+      "url": "http://wpackagist.org",
+      "minimum-stability": "dev"
+    },
+    {
+      "type": "composer",
+      "url": "http://languages.koodimonni.fi"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/koodimonni/composer-dropin-installer"
     },
     {
       "type": "package",
@@ -53,8 +62,11 @@
     }
   ],
   "require": {
+    "koodimonni/composer-dropin-installer": "*",
     "php": ">=5.3.10",
     "wordpress": "4.1",
+    "koodimonni-language/fi": "*",
+    "koodimonni-language/en_gb": "*",
     "fancyguy/webroot-installer": "1.1.0",
     "composer/installers": "v1.0.12",
     "vlucas/phpdotenv": "~1.0.6",
@@ -69,6 +81,11 @@
 
   },
   "extra": {
+    "dropin-paths": {
+      "content/languages/": ["vendor:koodimonni-language"],
+      "content/languages/plugins/": ["vendor:koodimonni-plugin-language"],
+      "content/languages/themes/": ["vendor:koodimonni-theme-language"]
+    },
     "installer-paths": {
       "content/plugins/{$name}/": ["type:wordpress-plugin"],
       "content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
