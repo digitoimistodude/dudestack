@@ -64,10 +64,9 @@
   "require": {
     "koodimonni/composer-dropin-installer": "*",
     "php": ">=5.3.10",
-    "wordpress": "4.1",
+    "johnpbloch/wordpress": "4.1.1",
     "koodimonni-language/fi": "*",
     "koodimonni-language/en_gb": "*",
-    "fancyguy/webroot-installer": "1.1.0",
     "composer/installers": "v1.0.12",
     "vlucas/phpdotenv": "~1.0.6",
     "facebook/php-sdk": "dev-master",
@@ -88,7 +87,6 @@
       "content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
       "content/themes/{$name}/": ["type:wordpress-theme"]
     },
-    "webroot-dir": "wp",
-    "webroot-package": "wordpress"
+    "wordpress-install-dir": "wp"
   }
 }

@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3e503e0e2b84c101e503d9485dcadffd",
+    "hash": "44e23a8a22f102f560699e1a6577212f",
     "packages": [
         {
             "name": "composer/installers",
@@ -138,46 +138,86 @@
             "time": "2015-01-13 19:27:37"
         },
         {
-            "name": "fancyguy/webroot-installer",
-            "version": "1.1.0",
+            "name": "johnpbloch/wordpress",
+            "version": "4.1.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fancyguy/webroot-installer.git",
-                "reference": "a2d5c2e149d837e5580a62a91d3c91577aa30d28"
+                "url": "https://github.com/johnpbloch/wordpress.git",
+                "reference": "b6a0e3c2ef178f97ce8b709897fd4411420b3ccb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fancyguy/webroot-installer/zipball/a2d5c2e149d837e5580a62a91d3c91577aa30d28",
-                "reference": "a2d5c2e149d837e5580a62a91d3c91577aa30d28",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/b6a0e3c2ef178f97ce8b709897fd4411420b3ccb",
+                "reference": "b6a0e3c2ef178f97ce8b709897fd4411420b3ccb",
                 "shasum": ""
             },
-            "require-dev": {
-                "composer/composer": "1.0.*@dev",
-                "phpunit/phpunit": "3.7.*"
+            "require": {
+                "johnpbloch/wordpress-core-installer": "~0.2",
+                "php": ">=5.3.2"
             },
-            "type": "composer-installer",
+            "type": "wordpress-core",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "WordPress Community",
+                    "homepage": "http://wordpress.org/about/"
+                }
+            ],
+            "description": "WordPress is web software you can use to create a beautiful website or blog.",
+            "homepage": "http://wordpress.org/",
+            "keywords": [
+                "blog",
+                "cms"
+            ],
+            "time": "2015-02-18 22:16:06"
+        },
+        {
+            "name": "johnpbloch/wordpress-core-installer",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnpbloch/wordpress-core-installer.git",
+                "reference": "a4c08e91be99e858c7778c2f52a4d73820147c2e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/a4c08e91be99e858c7778c2f52a4d73820147c2e",
+                "reference": "a4c08e91be99e858c7778c2f52a4d73820147c2e",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "1.0.0"
+            },
+            "conflict": {
+                "composer/installers": "<1.0.6"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev"
+            },
+            "type": "composer-plugin",
             "extra": {
-                "class": "FancyGuy\\Composer\\WebrootInstaller"
+                "class": "johnpbloch\\Composer\\WordPressCorePlugin"
             },
             "autoload": {
                 "psr-0": {
-                    "FancyGuy\\Composer\\": "src/"
+                    "johnpbloch\\Composer\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD-3-Clause"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
-                    "name": "Steve Buzonas",
-                    "email": "steve@fancyguy.com",
-                    "homepage": "http://www.stevebuzonas.com"
+                    "name": "John P. Bloch",
+                    "email": "me@johnpbloch.com"
                 }
             ],
-            "description": "A composer installer for libraries that live in an application webroot.",
-            "homepage": "http://fancyguy.github.com/webroot-installer/",
-            "time": "2013-03-15 17:51:14"
+            "description": "A custom installer to handle deploying WordPress with composer",
+            "time": "2013-09-09 15:04:54"
         },
         {
             "name": "koodimonni-language/en_gb",
@@ -645,20 +685,6 @@
                 "environment"
             ],
             "time": "2014-10-16 14:50:21"
-        },
-        {
-            "name": "wordpress",
-            "version": "4.1",
-            "dist": {
-                "type": "zip",
-                "url": "https://sv.wordpress.org/wordpress-4.1-fi.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "fancyguy/webroot-installer": "1.1.0"
-            },
-            "type": "webroot"
         },
         {
             "name": "wpackagist-plugin/google-analyticator",
