@@ -44,21 +44,6 @@
     {
       "type": "vcs",
       "url": "https://github.com/koodimonni/composer-dropin-installer"
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "wordpress",
-        "version": "4.1",
-        "type": "webroot",
-        "dist": {
-          "type": "zip",
-          "url": "https://sv.wordpress.org/wordpress-4.1-fi.zip"
-        },
-        "require" : {
-          "fancyguy/webroot-installer": "1.1.0"
-        }
-      }
     }
   ],
   "require": {
