@@ -43,7 +43,7 @@
     },
     {
       "type": "vcs",
-      "url": "https://github.com/koodimonni/composer-dropin-installer"
+      "url": "git@github.com:Koodimonni/Composer-Dropin-Installer.git"
     }
   ],
   "require": {
