@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b4195a683cf0ac700f3c7cfccce0dd26",
+    "hash": "29b19ff29f6d718c8cd0e9b59e6c75e7",
     "packages": [
         {
             "name": "composer/installers",
@@ -322,10 +322,10 @@
         },
         {
             "name": "koodimonni-plugin-language/woocommerce-en_gb",
-            "version": "v2.3.4",
+            "version": "v2.3.5",
             "dist": {
                 "type": "zip",
-                "url": "https://raw.githubusercontent.com/woothemes/woocommerce-language-packs/b04d986c35eca773ba295bc3eefcaa87284fcc17/packages/en_GB.zip",
+                "url": "https://raw.githubusercontent.com/woothemes/woocommerce-language-packs/3dc29edf84831eaf228d8218c067d5224924f824/packages/en_GB.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -343,10 +343,10 @@
         },
         {
             "name": "koodimonni-plugin-language/woocommerce-fi",
-            "version": "v2.3.4",
+            "version": "v2.3.5",
             "dist": {
                 "type": "zip",
-                "url": "https://raw.githubusercontent.com/woothemes/woocommerce-language-packs/b04d986c35eca773ba295bc3eefcaa87284fcc17/packages/fi.zip",
+                "url": "https://raw.githubusercontent.com/woothemes/woocommerce-language-packs/3dc29edf84831eaf228d8218c067d5224924f824/packages/fi.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -707,16 +707,36 @@
             "homepage": "https://wordpress.org/plugins/google-analyticator/"
         },
         {
-            "name": "wpackagist-plugin/wordpress-seo",
-            "version": "1.7.3.1",
+            "name": "wpackagist-plugin/wonderm00ns-simple-facebook-open-graph-tags",
+            "version": "1.5.2",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/1.7.3.1"
+                "url": "http://plugins.svn.wordpress.org/wonderm00ns-simple-facebook-open-graph-tags/",
+                "reference": "tags/1.5.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.7.3.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/wonderm00ns-simple-facebook-open-graph-tags.1.5.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wonderm00ns-simple-facebook-open-graph-tags/"
+        },
+        {
+            "name": "wpackagist-plugin/wordpress-seo",
+            "version": "1.7.3.3",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
+                "reference": "tags/1.7.3.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.1.7.3.3.zip",
                 "reference": null,
                 "shasum": null
             },

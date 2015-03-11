@@ -59,7 +59,8 @@
     "wpackagist-plugin/wp-last-login":"*",
     "wpackagist-plugin/wp-html-compression":"*",
     "wpackagist-plugin/wp-super-cache":"*",
-    "wpackagist-plugin/google-analyticator":"*"
+    "wpackagist-plugin/google-analyticator":"*",
+    "wpackagist-plugin/wonderm00ns-simple-facebook-open-graph-tags":"*"
   },
   "extra": {
     "dropin-paths": {
