@@ -6,7 +6,7 @@ I love [Bedrock](https://github.com/roots/bedrock), which is a is a modern WordP
 
 At best this wpstack saves you hours when starting a new project.
 
-**You should modify things to your needs.**
+**You should modify things to your needs. Please note: This is not in any way tested with other people or or in different environments. Yet. Please address an issue if something goes south.** 
 
 ## Features
 
