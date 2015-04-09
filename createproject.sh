@@ -40,7 +40,7 @@ done
 
 echo "${boldyellow}Project name in lowercase:${txtreset} "
 read -e PROJECTNAME
-cd $HOME/wpstack-rolle
+cd $HOME/Projects/wpstack-rolle
 composer create-project -n ronilaukkarinen/wpstack-rolle $HOME/Projects/${PROJECTNAME} dev-master
 cd $HOME/Projects/${PROJECTNAME}
 composer update
@@ -299,7 +299,7 @@ if (!defined('ABSPATH')) {
 " > config/application.php
 echo "${boldgreen}deploy.rb generated${txtreset}"
 echo "${yellow}Updating WordPress related stuff...:${txtreset}"
-cp $HOME/wpstack-rolle/composer.json "$HOME/Projects/$PROJECTNAME/composer.json"
+cp $HOME/Projects/wpstack-rolle/composer.json "$HOME/Projects/$PROJECTNAME/composer.json"
 cd "$HOME/Projects/$PROJECTNAME/"
 rm -rf .git
 composer update
@@ -405,7 +405,7 @@ echo "<VirtualHost *:80>
 </VirtualHost>" > "$HOME/jolliest-vagrant/vhosts/$PROJECTNAME.dev.conf"
 echo "${boldgreen}Added vhost, $PROJECTNAME.dev.conf added to vagrant sites-enabled.${txtreset}"
 echo "${yellow}Reprovisioning vagrant...${txtreset}"
-cd ~/jolliest-vagrant
+cd ~/Projects/jolliest-vagrant
 vagrant provision
 echo "${boldgreen}VM provisioned, local environment up and running.${txtreset}"
 echo "${yellow}Updating hosts file...${txtreset}"

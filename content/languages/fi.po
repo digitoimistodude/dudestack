@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-12-16 12:37:30+0000\n"
+"PO-Revision-Date: 2015-03-18 08:12:21+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -15,6 +15,16 @@ msgstr ""
 msgctxt "text direction"
 msgid "ltr"
 msgstr "ltr"
+
+#: wp-includes/link-template.php:2313
+msgctxt "previous post"
+msgid "Previous"
+msgstr "Edellinen"
+
+#: wp-includes/link-template.php:2314
+msgctxt "next post"
+msgid "Next"
+msgstr "Seuraava"
 
 #: wp-includes/class-wp-editor.php:998
 #: wp-includes/js/tinymce/wp-mce-help.php:118 wp-includes/script-loader.php:98
@@ -63,7 +73,7 @@ msgid "Rich Text Area. Press Alt-Shift-H for help"
 msgstr "Graafinen muokkain. Näytä aputoiminto painamalla Alt-Shift-H."
 
 #. translators: 1: month, 2: day of month
-#: wp-includes/date.php:437
+#: wp-includes/date.php:449
 msgid "The following values do not describe a valid date: month %1$s, day %2$s."
 msgstr "Tämä ei kuvaa todellista päivämäärää: kuukausi %1$s, päivä %2$s."
 
@@ -111,7 +121,7 @@ msgstr "Termi, jolla on tämä nimi, polkutunnus ja vanhempi, on jo olemassa."
 msgid "A term with the name and slug already exists in this taxonomy."
 msgstr "Termi tällä nimellä ja polkutunnuksella on jo olemassa tässä taksonomiassa."
 
-#: wp-includes/wp-db.php:1077
+#: wp-includes/wp-db.php:1042
 msgid "%s must set a database connection for use with escaping."
 msgstr "%s must set a database connection for use with escaping."
 
@@ -159,10 +169,6 @@ msgstr "Roskakori"
 #: wp-includes/media-template.php:578
 msgid "Edit Selection"
 msgstr "Muokkaa valintaa"
-
-#: wp-includes/link-template.php:2313
-msgid "Previous"
-msgstr "Edellinen"
 
 #: wp-includes/link-template.php:2259
 msgid "Newer posts"
@@ -279,7 +285,7 @@ msgid "Do not pass style tags to wp_add_inline_style()."
 msgstr "Älä käytä style-tageja kutsun wp_add_inline_style() kanssa."
 
 #. translators: 1: year, 2: month, 3: day of month
-#: wp-includes/date.php:420
+#: wp-includes/date.php:432
 msgid "The following values do not describe a valid date: year %1$s, month %2$s, day %3$s."
 msgstr "Tämä ei kuvaa todellista päivämäärää: vuosi %1$s, kuukausi %2$s, päivä %3$s."
 
@@ -307,7 +313,7 @@ msgstr "Lisää sanakirjaan"
 
 #. translators: Date query invalid date message: 1: invalid value, 2: type of
 #. value, 3: minimum valid value, 4: maximum valid value
-#: wp-includes/date.php:391
+#: wp-includes/date.php:402
 msgid "Invalid value %1$s for %2$s. Expected value should be between %3$s and %4$s."
 msgstr " %2$s:lla on väärä arvo %1$s. Arvon tulisi olla välillä %3$s ja %4$s."
 
@@ -1222,7 +1228,7 @@ msgstr "Lisää videosoittolistaan"
 msgid "Invalid menu ID."
 msgstr "Virheellinen valikon ID."
 
-#: wp-includes/wp-db.php:1022
+#: wp-includes/wp-db.php:987
 msgid ""
 "<h1>Can&#8217;t select database</h1>\n"
 "<p>We were able to connect to the database server (which means your username and password is okay) but not able to select the <code>%1$s</code> database.</p>\n"
@@ -1242,11 +1248,11 @@ msgstr ""
 "</ul>\n"
 "<p>Jos et tiedä miten tietokanta otetaan käyttöön, <strong>ota yhteys palveluntarjoajaasi</strong>. Jos mikään muu ei tuota tulosta, voit koittaa hakea neuvoa <a href=\"https://fi.forums.wordpress.org\">WordPress-tukifoorumilta</a>.</p>"
 
-#: wp-includes/wp-db.php:1193
+#: wp-includes/wp-db.php:1158
 msgid "The query argument of %s must have a placeholder."
 msgstr "The query argument of %s must have a placeholder."
 
-#: wp-includes/wp-db.php:1466
+#: wp-includes/wp-db.php:1431
 msgid ""
 "\n"
 "<h1>Error establishing a database connection</h1>\n"
@@ -1540,22 +1546,22 @@ msgstr "Näytä piilotetut merkit"
 msgid "Insert Read More tag"
 msgstr "Lue lisää -tagi"
 
-#: wp-includes/general-template.php:2780
+#: wp-includes/general-template.php:2793
 msgctxt "admin color scheme"
 msgid "Sunrise"
 msgstr "Auringonnousu"
 
-#: wp-includes/general-template.php:2786
+#: wp-includes/general-template.php:2799
 msgctxt "admin color scheme"
 msgid "Ectoplasm"
 msgstr "Ektoplasma"
 
-#: wp-includes/general-template.php:2792
+#: wp-includes/general-template.php:2805
 msgctxt "admin color scheme"
 msgid "Ocean"
 msgstr "Valtameri"
 
-#: wp-includes/general-template.php:2798
+#: wp-includes/general-template.php:2811
 msgctxt "admin color scheme"
 msgid "Coffee"
 msgstr "Kahvi"
@@ -1613,7 +1619,7 @@ msgid "Add a custom menu to your sidebar."
 msgstr "Mukautettu valikko."
 
 #. translators: If there are characters in your language that are not supported
-#. * by Open Sans, translate this to 'off'. Do not translate into your own
+#. by Open Sans, translate this to 'off'. Do not translate into your own
 #. language.
 #: wp-includes/script-loader.php:590
 msgctxt "Open Sans font: on or off"
@@ -1621,9 +1627,8 @@ msgid "on"
 msgstr "on"
 
 #. translators: To add an additional Open Sans character subset specific to
-#. your language,
-#. * translate this to 'greek', 'cyrillic' or 'vietnamese'. Do not translate
-#. into your own language.
+#. your language, translate this to 'greek', 'cyrillic' or 'vietnamese'. Do not
+#. translate into your own language.
 #: wp-includes/script-loader.php:596
 msgctxt "Open Sans font: add new subset (greek, cyrillic, vietnamese)"
 msgid "no-subset"
@@ -1633,17 +1638,17 @@ msgstr "no-subset"
 msgid "Use commas instead of %s to separate excluded terms."
 msgstr "Käytä \"%s\":n sijaan pilkkuja termien erottamiseen."
 
-#: wp-includes/general-template.php:2774
+#: wp-includes/general-template.php:2787
 msgctxt "admin color scheme"
 msgid "Midnight"
 msgstr "Keskiyö"
 
-#: wp-includes/general-template.php:2762
+#: wp-includes/general-template.php:2775
 msgctxt "admin color scheme"
 msgid "Light"
 msgstr "Vaalea"
 
-#: wp-includes/general-template.php:2752
+#: wp-includes/general-template.php:2765
 msgctxt "admin color scheme"
 msgid "Default"
 msgstr "Oletus"
@@ -1652,7 +1657,7 @@ msgstr "Oletus"
 msgid "Menu"
 msgstr "Valikko"
 
-#: wp-includes/update.php:555
+#: wp-includes/update.php:553
 msgid "Translation Updates"
 msgstr "Käännöspäivitykset"
 
@@ -1681,11 +1686,10 @@ msgid "In <code>%1$s</code>, use the <code>%2$s</code> method, not the <code>%3$
 msgstr "Käytä <code>%1$s</code>:n kanssa <code>%2$s</code>-metodia, älä <code>%3$s</code>-funktiota. Katso %4$s."
 
 #. translators: This is a comma-separated list of very common words that should
-#. be excluded from a search,
-#. * like a, an, and the. These are usually called "stopwords". You should
-#. not simply translate these individual
-#. * words into your language. Instead, look for and provide commonly
-#. accepted stopwords in your language.
+#. be excluded from a search, like a, an, and the. These are usually called
+#. "stopwords". You should not simply translate these individual words into
+#. your language. Instead, look for and provide commonly accepted stopwords in
+#. your language.
 #: wp-includes/query.php:2147
 msgctxt "Comma-separated list of search stopwords in your language"
 msgid "about,an,are,as,at,be,by,com,for,from,how,in,is,it,of,on,or,that,the,this,to,was,what,when,where,who,will,with,www"
@@ -1934,10 +1938,9 @@ msgid "Caption this image&hellip;"
 msgstr "Lisää kuvateksti&hellip;"
 
 #. translators: This is a would-be plural string used in the media manager.
-#. If there is not a word you can use in your language to avoid issues
-#. with the
-#. lack of plural support here, turn it into "selected: %d" then translate
-#. it.
+#. If there is not a word you can use in your language to avoid issues with
+#. the 		   lack of plural support here, turn it into "selected: %d" then
+#. translate it.
 #: wp-includes/media.php:2920
 msgid "%d selected"
 msgstr "%d valittu"
@@ -2417,11 +2420,11 @@ msgstr "Siirry työkalupalkkiin"
 msgid "Hex Value"
 msgstr "Hex-arvo"
 
-#: wp-includes/class-wp-customize-manager.php:1033
+#: wp-includes/class-wp-customize-manager.php:1056
 msgid "Header Text Color"
 msgstr "Otsakkeen tekstin väri"
 
-#: wp-includes/class-wp-customize-manager.php:1011
+#: wp-includes/class-wp-customize-manager.php:1034
 msgid "Colors"
 msgstr "Värit"
 
@@ -2454,12 +2457,12 @@ msgstr "Tälle XML-RPC-metodille ei annettu tarpeeksi argumentteja."
 msgid "Sorry, you cannot stick a private post."
 msgstr "Yksityistä artikkelia ei voi kiinnittää etusivulle."
 
-#: wp-includes/class-wp-customize-manager.php:1158
+#: wp-includes/class-wp-customize-manager.php:1181
 msgid "You can edit your menu content on the Menus screen in the Appearance section."
 msgstr "Voit muokata valikon sisältöä kohdasta Ulkoasu > Asetukset."
 
 #: wp-includes/class-wp-customize-control.php:925
-#: wp-includes/class-wp-customize-manager.php:1056
+#: wp-includes/class-wp-customize-manager.php:1079
 msgid "Header Image"
 msgstr "Otsakekuva"
 
@@ -2503,32 +2506,32 @@ msgstr "Nimi ei kelpaa."
 msgid "Username must be at least 4 characters."
 msgstr "Käyttäjänimessä on oltava ainakin 4 merkkiä."
 
-#: wp-includes/class-wp-customize-manager.php:1207
+#: wp-includes/class-wp-customize-manager.php:1230
 msgid "A static page"
 msgstr "Staattinen sivu"
 
-#: wp-includes/class-wp-customize-manager.php:1027
+#: wp-includes/class-wp-customize-manager.php:1050
 msgid "Display Header Text"
 msgstr "Näytä otsakkeen teksti"
 
-#: wp-includes/class-wp-customize-manager.php:1048
+#: wp-includes/class-wp-customize-manager.php:1071
 msgid "Background Color"
 msgstr "Taustaväri"
 
 #: wp-includes/class-wp-customize-control.php:894
-#: wp-includes/class-wp-customize-manager.php:1076
+#: wp-includes/class-wp-customize-manager.php:1099
 msgid "Background Image"
 msgstr "Taustakuva"
 
-#: wp-includes/class-wp-customize-manager.php:1098
+#: wp-includes/class-wp-customize-manager.php:1121
 msgid "Background Repeat"
 msgstr "Kuvan toisto"
 
-#: wp-includes/class-wp-customize-manager.php:1115
+#: wp-includes/class-wp-customize-manager.php:1138
 msgid "Background Position"
 msgstr "Sijainti"
 
-#: wp-includes/class-wp-customize-manager.php:1131
+#: wp-includes/class-wp-customize-manager.php:1154
 msgid "Background Attachment"
 msgstr "Kuvan asettelu"
 
@@ -2540,35 +2543,35 @@ msgstr "Vaihda kuva"
 msgid "Sorry, you are not allowed to edit this post type."
 msgstr "Valitettavasti et voi muokata tätä tiedostomuotoa."
 
-#: wp-includes/class-wp-customize-manager.php:1135
+#: wp-includes/class-wp-customize-manager.php:1158
 msgid "Scroll"
 msgstr "Kuva vierii sivun mukana"
 
-#: wp-includes/class-wp-customize-manager.php:1136
+#: wp-includes/class-wp-customize-manager.php:1159
 msgid "Fixed"
 msgstr "Kuva pysyy paikallaan"
 
-#: wp-includes/class-wp-customize-manager.php:1102
+#: wp-includes/class-wp-customize-manager.php:1125
 msgid "No Repeat"
 msgstr "Ei toistoa"
 
-#: wp-includes/class-wp-customize-manager.php:1103
+#: wp-includes/class-wp-customize-manager.php:1126
 msgid "Tile"
 msgstr "Toista vaaka- ja pystysuunnassa"
 
-#: wp-includes/class-wp-customize-manager.php:1104
+#: wp-includes/class-wp-customize-manager.php:1127
 msgid "Tile Horizontally"
 msgstr "Toista vaakasuunnassa"
 
-#: wp-includes/class-wp-customize-manager.php:1105
+#: wp-includes/class-wp-customize-manager.php:1128
 msgid "Tile Vertically"
 msgstr "Toista pystysuunnassa"
 
-#: wp-includes/class-wp-customize-manager.php:1218
+#: wp-includes/class-wp-customize-manager.php:1241
 msgid "Front page"
 msgstr "Etusivu"
 
-#: wp-includes/class-wp-customize-manager.php:1230
+#: wp-includes/class-wp-customize-manager.php:1253
 msgid "Posts page"
 msgstr "Artikkeleiden sivu"
 
@@ -2676,42 +2679,42 @@ msgstr "Tyylitiedostoa ei voida lukea."
 msgid "The \"%s\" theme is not a valid parent theme."
 msgstr "\"%s\"-teema ei ole kelvollinen isäntäteema (parent theme)."
 
-#: wp-includes/class-wp-customize-manager.php:1155
+#: wp-includes/class-wp-customize-manager.php:1178
 msgid "Navigation"
 msgstr "Navigointi"
 
-#: wp-includes/class-wp-customize-manager.php:1158
+#: wp-includes/class-wp-customize-manager.php:1181
 msgid "Your theme supports %s menu. Select which menu you would like to use."
 msgid_plural "Your theme supports %s menus. Select which menu appears in each location."
 msgstr[0] "Teemasi tukee %s valikkoa. Valitse mitä valikkoa haluat käyttää."
 msgstr[1] "Teemasi tukee %s valikkoa. Valitse mikä valikko näytetään kussakin paikassa."
 
-#: wp-includes/class-wp-customize-manager.php:1188
+#: wp-includes/class-wp-customize-manager.php:1211
 msgid "Static Front Page"
 msgstr "Staattinen etusivu"
 
-#: wp-includes/class-wp-customize-manager.php:1191
+#: wp-includes/class-wp-customize-manager.php:1214
 msgid "Your theme supports a static front page."
 msgstr "Teemasi tukee staattista etusivua"
 
-#: wp-includes/class-wp-customize-manager.php:1206
+#: wp-includes/class-wp-customize-manager.php:1229
 msgid "Your latest posts"
 msgstr "Uusimmat artikkelisi"
 
-#: wp-includes/class-wp-customize-manager.php:1202
+#: wp-includes/class-wp-customize-manager.php:1225
 msgid "Front page displays"
 msgstr "Etusivulla näytetään"
 
-#: wp-includes/class-wp-customize-manager.php:982
+#: wp-includes/class-wp-customize-manager.php:1005
 msgid "Site Title & Tagline"
 msgstr "Sivuston otsikko ja kuvaus"
 
-#: wp-includes/class-wp-customize-manager.php:1004
+#: wp-includes/class-wp-customize-manager.php:1027
 msgid "Tagline"
 msgstr "Kuvaus"
 
 #: wp-includes/class-wp-customize-control.php:475
-#: wp-includes/class-wp-customize-manager.php:1162
+#: wp-includes/class-wp-customize-manager.php:1185
 #: wp-includes/default-widgets.php:1362
 msgid "&mdash; Select &mdash;"
 msgstr "&mdash; Valitse &mdash;"
@@ -2721,13 +2724,11 @@ msgid "Refresh"
 msgstr "Päivitä"
 
 #. translators: If your word count is based on single characters (East Asian
-#. characters),
-#. enter 'characters'. Otherwise, enter 'words'. Do not translate into your
-#. own language.
+#. characters), 	   enter 'characters'. Otherwise, enter 'words'. Do not
+#. translate into your own language.
 #. translators: If your word count is based on single characters (East Asian
-#. characters),
-#. enter 'characters'. Otherwise, enter 'words'. Do not translate into
-#. your own language.
+#. characters), 		   enter 'characters'. Otherwise, enter 'words'. Do not
+#. translate into your own language.
 #: wp-includes/formatting.php:2603 wp-includes/script-loader.php:374
 msgctxt "word count: words or characters?"
 msgid "words"
@@ -3029,7 +3030,7 @@ msgstr "Dokumentaatio"
 msgid "Support Forums"
 msgstr "Tukifoorumit"
 
-#: wp-includes/formatting.php:2598 wp-includes/general-template.php:2678
+#: wp-includes/formatting.php:2598 wp-includes/general-template.php:2691
 msgid "&hellip;"
 msgstr "&hellip;"
 
@@ -3105,7 +3106,7 @@ msgstr "Tämä ei ole kuvatiedosto. Kokeilethan jotain muuta."
 msgid "This is larger than the maximum size. Please try another."
 msgstr "Tämä on maksimikokoa suurempi. Yritä pienemmällä uudestaan."
 
-#: wp-includes/general-template.php:2768
+#: wp-includes/general-template.php:2781
 msgctxt "admin color scheme"
 msgid "Blue"
 msgstr "Sininen"
@@ -4117,17 +4118,17 @@ msgstr ""
 msgid "This is the short link."
 msgstr "Tämä on pikalinkki."
 
-#: wp-includes/update.php:549
+#: wp-includes/update.php:547
 msgid "%d WordPress Update"
 msgstr "%d WordPress-päivitys"
 
-#: wp-includes/update.php:551
+#: wp-includes/update.php:549
 msgid "%d Plugin Update"
 msgid_plural "%d Plugin Updates"
 msgstr[0] "%d lisäosapäivitys"
 msgstr[1] "%d lisäosapäivitystä"
 
-#: wp-includes/update.php:553
+#: wp-includes/update.php:551
 msgid "%d Theme Update"
 msgid_plural "%d Theme Updates"
 msgstr[0] "%d teemapäivitys"
@@ -4428,11 +4429,11 @@ msgstr "Päivitysilmoitus %1$s artikkeliin %2$s havaittu."
 msgid "The specified target URL does not exist."
 msgstr "Kohdeosoitetta (URL) ei ole olemassa."
 
-#: wp-includes/wp-db.php:1262
+#: wp-includes/wp-db.php:1227
 msgid "WordPress database error %1$s for query %2$s made by %3$s"
 msgstr "WordPress-tietokannan virhe %1$s kyselylle %2$s Tekijä: %3$s"
 
-#: wp-includes/wp-db.php:1264
+#: wp-includes/wp-db.php:1229
 msgid "WordPress database error %1$s for query %2$s"
 msgstr "WordPress-tietokannan virhe %1$s kyselylle %2$s"
 
@@ -4792,11 +4793,11 @@ msgstr "Kirjoittajan %3$s artikkelit sivustolla %1$s %2$s RSS-syöte"
 msgid "%1$s %2$s Search Results for &#8220;%3$s&#8221; Feed"
 msgstr "%1$s %2$s haun tulokset haulle &#8220;%3$s&#8221; RSS-syöte"
 
-#: wp-includes/general-template.php:2614
+#: wp-includes/general-template.php:2612
 msgid "&laquo; Previous"
 msgstr "&laquo; Edellinen"
 
-#: wp-includes/general-template.php:2615
+#: wp-includes/general-template.php:2613
 msgid "Next &raquo;"
 msgstr "Seuraava &raquo;"
 
@@ -5947,7 +5948,7 @@ msgstr "Vireillä"
 msgid "<strong>ERROR</strong>: Your account has been marked as a spammer."
 msgstr "<strong>VIRHE</strong>: Käyttäjätunnuksesi on merkitty roskapostittajien listalle."
 
-#: wp-includes/wp-db.php:2714
+#: wp-includes/wp-db.php:2100
 msgid "<strong>ERROR</strong>: WordPress %1$s requires MySQL %2$s or higher"
 msgstr "<strong>VIRHE</strong>: WordPress %1$s tarvitsee MySQL-ohjelmasta vähintään version %2$s"
 
@@ -5975,7 +5976,7 @@ msgstr "Luo oma %s käyttäjätilisi hetkessä"
 msgid "Just a username, please."
 msgstr "Vain käyttäjänimi, kiitos."
 
-#: wp-includes/link-template.php:2314 wp-signup.php:453
+#: wp-signup.php:453
 msgid "Next"
 msgstr "Seuraava"
 
@@ -6399,79 +6400,6 @@ msgstr "Päivitetty: %s"
 msgid "Bookmarks"
 msgstr "Kirjanmerkit"
 
-#: wp-includes/class-pop3.php:82
-msgid "No server specified"
-msgstr "Palvelinta ei määritelty"
-
-#: wp-includes/class-pop3.php:90 wp-includes/class-pop3.php:102
-#: wp-includes/class-pop3.php:123 wp-includes/class-pop3.php:246
-#: wp-includes/class-pop3.php:300 wp-includes/class-pop3.php:311
-#: wp-includes/class-pop3.php:359 wp-includes/class-pop3.php:393
-#: wp-includes/class-pop3.php:426 wp-includes/class-pop3.php:525
-#: wp-includes/class-pop3.php:548
-msgid "Error "
-msgstr "Virhe"
-
-#: wp-includes/class-pop3.php:115
-msgid "no login ID submitted"
-msgstr "käyttäjätunnusta ei ole annettu"
-
-#: wp-includes/class-pop3.php:118 wp-includes/class-pop3.php:138
-msgid "connection not established"
-msgstr "yhteyttä ei muodostettu"
-
-#: wp-includes/class-pop3.php:135 wp-includes/class-pop3.php:171
-msgid "No password submitted"
-msgstr "salasanaa ei ole annettu"
-
-#: wp-includes/class-pop3.php:143
-msgid "Authentication failed"
-msgstr "Autentikointi epäonnistui "
-
-#: wp-includes/class-pop3.php:162 wp-includes/class-pop3.php:205
-#: wp-includes/class-pop3.php:230 wp-includes/class-pop3.php:272
-#: wp-includes/class-pop3.php:346 wp-includes/class-pop3.php:386
-#: wp-includes/class-pop3.php:416 wp-includes/class-pop3.php:450
-#: wp-includes/class-pop3.php:513 wp-includes/class-pop3.php:578
-msgid "No connection to server"
-msgstr "Ei yhteyttä palvelimeen"
-
-#: wp-includes/class-pop3.php:168
-msgid "No login ID submitted"
-msgstr "käyttäjätunnusta ei ole annettu"
-
-#: wp-includes/class-pop3.php:176
-msgid "No server banner"
-msgstr "Palvelin ei lähettänyt omaa tunnistettaan"
-
-#: wp-includes/class-pop3.php:176 wp-includes/class-pop3.php:186
-msgid "abort"
-msgstr "keskeytetään"
-
-#: wp-includes/class-pop3.php:186
-msgid "apop authentication failed"
-msgstr "apop-autentikointi epäonnistui"
-
-#: wp-includes/class-pop3.php:323
-msgid "Premature end of list"
-msgstr "Lista päättyi ennenaikaisesti"
-
-#: wp-includes/class-pop3.php:456
-msgid "Empty command string"
-msgstr "Tyhjä komento"
-
-#: wp-includes/class-pop3.php:476
-msgid "connection does not exist"
-msgstr "yhteyttä ei ole olemassa"
-
-#: wp-includes/class-pop3.php:583
-msgid "No msg number submitted"
-msgstr "Viestin numeroa ei ole annettu."
-
-#: wp-includes/class-pop3.php:589
-msgid "Command failed "
-msgstr "Komento epäonnistui "
-
 #: wp-includes/comment-template.php:1282
 msgid "Comments Off"
 msgstr "Kommentit poissa käytöstä"
@@ -6534,7 +6462,7 @@ msgstr "Heikko"
 msgid "Strong"
 msgstr "Erinomainen"
 
-#: wp-includes/class-wp-customize-manager.php:993
+#: wp-includes/class-wp-customize-manager.php:1016
 #: wp-includes/class-wp-xmlrpc-server.php:430
 msgid "Site Title"
 msgstr "Sivuston otsikko"
@@ -6904,19 +6832,19 @@ msgstr "Lisää media"
 msgid "Saved."
 msgstr "Tallennettu."
 
-#: wp-includes/class-wp-customize-manager.php:1119
+#: wp-includes/class-wp-customize-manager.php:1142
 #: wp-includes/class-wp-editor.php:952 wp-includes/media-template.php:600
 #: wp-includes/media-template.php:831 wp-includes/media-template.php:897
 msgid "Left"
 msgstr "Vasemmalle"
 
-#: wp-includes/class-wp-customize-manager.php:1120
+#: wp-includes/class-wp-customize-manager.php:1143
 #: wp-includes/class-wp-editor.php:953 wp-includes/media-template.php:603
 #: wp-includes/media-template.php:834 wp-includes/media-template.php:900
 msgid "Center"
 msgstr "Keskelle"
 
-#: wp-includes/class-wp-customize-manager.php:1121
+#: wp-includes/class-wp-customize-manager.php:1144
 #: wp-includes/class-wp-editor.php:954 wp-includes/media-template.php:606
 #: wp-includes/media-template.php:837 wp-includes/media-template.php:903
 msgid "Right"

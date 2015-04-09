@@ -250,10 +250,10 @@
         },
         {
             "name": "koodimonni-language/fi",
-            "version": "4.1",
+            "version": "4.1.1",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/4.1/fi.zip",
+                "url": "https://downloads.wordpress.org/translation/core/4.1.1/fi.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -280,10 +280,10 @@
         },
         {
             "name": "koodimonni-plugin-language/akismet-en_gb",
-            "version": "3.0",
+            "version": "3.1",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/plugin/akismet/3.0/en_GB.zip",
+                "url": "https://downloads.wordpress.org/translation/plugin/akismet/3.1/en_GB.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -322,10 +322,10 @@
         },
         {
             "name": "koodimonni-plugin-language/woocommerce-en_gb",
-            "version": "v2.3.5",
+            "version": "v2.3.7",
             "dist": {
                 "type": "zip",
-                "url": "https://raw.githubusercontent.com/woothemes/woocommerce-language-packs/3dc29edf84831eaf228d8218c067d5224924f824/packages/en_GB.zip",
+                "url": "https://raw.githubusercontent.com/woothemes/woocommerce-language-packs/638eff6883a3f2333ecb1aa60acfcc4f4695b9f3/packages/en_GB.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -343,10 +343,10 @@
         },
         {
             "name": "koodimonni-plugin-language/woocommerce-fi",
-            "version": "v2.3.5",
+            "version": "v2.3.7",
             "dist": {
                 "type": "zip",
-                "url": "https://raw.githubusercontent.com/woothemes/woocommerce-language-packs/3dc29edf84831eaf228d8218c067d5224924f824/packages/fi.zip",
+                "url": "https://raw.githubusercontent.com/woothemes/woocommerce-language-packs/638eff6883a3f2333ecb1aa60acfcc4f4695b9f3/packages/fi.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -728,15 +728,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "1.7.3.3",
+            "version": "2.0.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/1.7.3.3"
+                "reference": "tags/2.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.1.7.3.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.2.0.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -788,15 +788,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-super-cache",
-            "version": "1.4.2",
+            "version": "1.4.4",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wp-super-cache/",
-                "reference": "tags/1.4.2"
+                "reference": "tags/1.4.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wp-super-cache.1.4.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-super-cache.1.4.4.zip",
                 "reference": null,
                 "shasum": null
             },
