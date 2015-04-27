@@ -1,10 +1,25 @@
-# Rolle's WP-Stack
+# Dudestack
+## Tools for modern WordPress development
 
-I'm constantly developing my development workflow. Honestly, I think I've been through hundreds of articles, tools and scripts. Went with regular WordPress structure, different wp-configs and [Dandelion](https://github.com/scttnlsn/dandelion) for a long time, but realized in some point I have to get some sense to it all. Still too much hassle with setting up things.
+Dudestack is a modern WordPress stack that helps you get started with the best development tools and project structure - just like [Bedrock](https://github.com/roots/bedrock).
 
-I love [Bedrock](https://github.com/roots/bedrock), which is a is a modern WordPress stack that helps you get started with the best development tools and project structure. Bedrock contains the tools I've been already using, but more.
+#### Background
 
-At best this wpstack saves you hours when starting a new project.
+I'm constantly developing my development workflow. Honestly, I think I've been through hundreds of articles, tools and scripts. Went with regular WordPress structure, different wp-configs and [Dandelion](https://github.com/scttnlsn/dandelion) for a long time, but realized in some point I have to get some sense to it all. Setting up things should not be the most time consuming task when starting a new project.
+
+I love [Bedrock](https://github.com/roots/bedrock), which is a is a modern WordPress stack that helps you get started with the best development tools and project structure. Bedrock contains the tools I've been already using, but more. In fact, I'm proud to say that most of this stack is based on [Bedrock](https://github.com/roots/bedrock).
+
+Like bedrock, dudestack saves you hours when starting a new project.
+
+#### How it's different, why should I use this?
+
+Well, this is mainly for myself for backup purposes or to show off how I roll. You should use this if you really like how I do things.
+
+Despite the fact I love most of bedrock, I noticed there's some things I don't like. Maybe little things for you, but some things matter to me. And I just want everything to be _mine_.
+
+* Stuff are in app/ by default. I prefer content/. It describes it better, since I'm not a programmer and developing WordPress themes or plugins (that's what I do) is not exactly programming in my mind.
+* Composer modifications, getting latest finnish WordPress from sv.wordpress.org.
+* Automation. I mean composer's `create-project` is awesome, but I need more. You still need to do stuff after `create-project` and my createproject.sh is for designed for automating the rest.
 
 **You should modify things to your needs. Please note: This is not in any way tested with other people or or in different environments. Yet. Please address an issue if something goes south.** 
 
@@ -22,16 +37,6 @@ At best this wpstack saves you hours when starting a new project.
  - [Dotenv](https://github.com/vlucas/phpdotenv)-environments for development, staging and production
  - Support for MAMP and vagrant development environments
 
-## How it's different, why should I use this?
-
-Well, this is mainly for myself for backup purposes or to show off how I roll. You should use this if you really like how I do things.
-
-Despite the fact I love most of bedrock, I noticed there's some things I don't like. Maybe little things for you, but some things matter to me. And I just want everything to be _mine_.
-
-* Stuff are in app/ by default. I prefer content/. It describes it better, since I'm not a programmer and developing WordPress themes or plugins (that's what I do) is not exactly programming in my mind.
-* Composer modifications, getting latest finnish WordPress from sv.wordpress.org.
-* Automation. I mean composer's `create-project` is awesome, but I need more. You still need to do stuff after `create-project` and my createproject.sh is for designed for automating the rest.
-
 ## Requirements
 
 * Basic knowledge about bash scripting, deployment with capistrano, npm packages, bundle, composer etc.
@@ -41,12 +46,31 @@ Despite the fact I love most of bedrock, I noticed there's some things I don't l
 * Access to staging and production servers that supports sftp and git
 * Projects located under $HOME/Projects
 * Git
-* PHP >= 5.3.2 (for Composer)
-* Ruby >= 1.9 (for Capistrano)
+* PHP >= 5.3.2
+* Ruby >= 1.9
 
-## createproject.sh
+# Installation 
 
-Creating a new project has a lot of configs to do. I wanted to automate most of it by creating a bash script. The script assumes:
+1. Clone this repo to your home directory
+2. Go to wpstack-directory (`cd ~/wpstack-rolle && sh setup.sh`)
+4. Edit `/usr/bin/createproject` to your needs. See instructions and **Getting started** below.
+
+If you are using [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant), you need to "pair" your machine with the VM (I presume you are already set up keypairs, if not, run without password: `ssh-keygen -t rsa`):
+
+```shell
+cat ~/.ssh/id_rsa.pub | ssh vagrant@10.1.2.3 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys' && chmod -Rv 755 ~/.ssh && chmod 400 ~/.ssh/id_rsa
+```
+
+# Documentation 
+1. [Starting a new project with createproject bash script](#starting-a-new-project-with-createproject-bash-script)
+  1. [What createproject.sh does](#what-createprojectsh-does)
+2. [What you most probably need to edit in every project](#what-you-most-probably-need-to-edit-in-every-project)
+3. [Getting started](#getting-started)
+4. [Paid or Premium plugins](#paid-or-premium-plugins)
+
+## Starting a new project with createproject bash script
+
+Creating a new project has a lot of configs to do. I wanted to automate most of it by creating a bash script called `createproject.sh`. The script assumes:
 
 - You are using staging server like customer.example.com and you store your customers' sites like customer.example.com/customerone. Your staging server user has proper permissions like making changes to /tmp
 - You are using separate production server that may necessarily not have all the permissions like writing in /tmp dir
@@ -77,18 +101,6 @@ Creating a new project has a lot of configs to do. I wanted to automate most of 
 15. Sets up a vagrant virtual host
 16. Updates /etc/hosts file
 
-# Installation 
-
-1. Clone this repo to your home directory
-2. Go to wpstack-directory (`cd ~/wpstack-rolle && sh setup.sh`)
-4. Edit `/usr/bin/createproject` to your needs. See instructions and **Getting started** below.
-
-If you are using [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant), you need to "pair" your machine with the VM (I presume you are already set up keypairs, if not, run without password: `ssh-keygen -t rsa`):
-
-```shell
-cat ~/.ssh/id_rsa.pub | ssh vagrant@10.1.2.3 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys' && chmod -Rv 755 ~/.ssh && chmod 400 ~/.ssh/id_rsa
-```
-
 ### What you most probably need to edit in every project
 
 - Production server SSH-credentials and paths in config/deploy/production.rb because they are usually different in every project. If you have the same directory structure on your servers, you can edit createproject.sh so you don't repeat yourself in every project.
@@ -102,9 +114,9 @@ cat ~/.ssh/id_rsa.pub | ssh vagrant@10.1.2.3 'mkdir -p ~/.ssh && cat >> ~/.ssh/a
 
 1. This assumes your projects are in ~/Projects. You should make sure that folder exists. You can also decide to use another folder, but then you need a lot of search&replace and using this would be quite pointless.
 2. Run [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant) (if you use MAMP Pro server, you need to edit createproject.sh accordingly)
-3. Edit createproject.sh and composer.json based on your own needs
+3. Edit `createproject.sh` and `composer.json` based on your own needs
 4. Please do a lot of other editing if you need. It will eventually shape to the right form.
-5. **Optional**: Get gulpfile.js and package.json [here](https://github.com/ronilaukkarinen/gulpfile-rolle), edit them to your needs, run `npm install && npm-check-updates -u && npm update && gulp watch` and start developing your theme/plugin!
+5. **Optional**: Get gulpfile.js and package.json from [devpackages](https://github.com/ronilaukkarinen/devpackages), edit them to your needs, run `npm install && npm-check-updates -u && npm update && gulp watch` and start developing your theme/plugin.
 
 To start a new project, run `createproject` and have fun.
 
