@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce\n"
 "Report-Msgid-Bugs-To: https://github.com/woothemes/woocommerce/issues\n"
-"POT-Creation-Date: 2015-03-18 12:39:44+00:00\n"
-"PO-Revision-Date: 2015-03-18 12:46+0000\n"
+"POT-Creation-Date: 2015-04-17 15:06:22+00:00\n"
+"PO-Revision-Date: 2015-04-17 15:10+0000\n"
 "Last-Translator: Claudio Sanches <contato@claudiosmweb.com>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/woocommerce/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -4678,11 +4678,11 @@ msgstr "Asetukset"
 msgid "Backordered"
 msgstr "Jälkitoimitus"
 
-#: includes/abstracts/abstract-wc-order.php:1675
+#: includes/abstracts/abstract-wc-order.php:1676
 msgid "&nbsp;<small>%svia %s</small>"
 msgstr "&nbsp;<small>%s-- %s</small>"
 
-#: includes/abstracts/abstract-wc-order.php:1680
+#: includes/abstracts/abstract-wc-order.php:1681
 #: includes/abstracts/abstract-wc-product.php:968
 #: includes/abstracts/abstract-wc-product.php:974
 #: includes/class-wc-cart.php:1534 includes/class-wc-product-variable.php:322
@@ -4690,31 +4690,31 @@ msgstr "&nbsp;<small>%s-- %s</small>"
 msgid "Free!"
 msgstr "Maksuton!"
 
-#: includes/abstracts/abstract-wc-order.php:1743
+#: includes/abstracts/abstract-wc-order.php:1744
 msgid "Subtotal:"
 msgstr "Välisumma:"
 
-#: includes/abstracts/abstract-wc-order.php:1750
+#: includes/abstracts/abstract-wc-order.php:1751
 msgid "Discount:"
 msgstr "Alennus:"
 
-#: includes/abstracts/abstract-wc-order.php:1757
+#: includes/abstracts/abstract-wc-order.php:1758
 msgid "Shipping:"
 msgstr "Toimitus:"
 
-#: includes/abstracts/abstract-wc-order.php:1810
+#: includes/abstracts/abstract-wc-order.php:1811
 #: includes/shortcodes/class-wc-shortcode-checkout.php:144
 #: templates/checkout/thankyou.php:53
 msgid "Payment Method:"
 msgstr "Maksutapa:"
 
-#: includes/abstracts/abstract-wc-order.php:1816
+#: includes/abstracts/abstract-wc-order.php:1817
 #: includes/shortcodes/class-wc-shortcode-checkout.php:139
 #: templates/checkout/thankyou.php:48
 msgid "Total:"
 msgstr "Yhteensä:"
 
-#: includes/abstracts/abstract-wc-order.php:1836
+#: includes/abstracts/abstract-wc-order.php:1837
 #: includes/wc-cart-functions.php:247 templates/order/order-details.php:126
 #: templates/order/order-details.php:130
 msgid "(Includes %s)"
@@ -4724,20 +4724,20 @@ msgstr "(Sisältää %s)"
 msgid "WooCommerce"
 msgstr "WooCommerce"
 
-#: includes/abstracts/abstract-wc-order.php:2135
+#: includes/abstracts/abstract-wc-order.php:2136
 msgid "Order status changed from %s to %s."
 msgstr "Tilaus vaihtui %s -tilasta %s -tilaan."
 
-#: includes/abstracts/abstract-wc-order.php:2397
+#: includes/abstracts/abstract-wc-order.php:2398
 msgid "Item's #%s variation #%s stock reduced from %s to %s."
 msgstr "Tuotteen #%s muunnelman varastoa vähennetty määrästä %s määrään %s."
 
-#: includes/abstracts/abstract-wc-order.php:2399
+#: includes/abstracts/abstract-wc-order.php:2400
 #: includes/class-wc-ajax.php:1201 includes/class-wc-ajax.php:1202
 msgid "Item #%s stock reduced from %s to %s."
 msgstr "Tuotteen #%s varastoa vähennetty määrästä %s määrään %s."
 
-#: includes/abstracts/abstract-wc-order.php:2411
+#: includes/abstracts/abstract-wc-order.php:2412
 msgid "Order item stock reduced successfully."
 msgstr "Tilauksessa olevien tuotteiden vähennys varastosta onnistui."
 
@@ -5184,30 +5184,30 @@ msgstr "Et voi luoda tuotteita. Tarvitset laajemmat oikeudet."
 msgid "Invalid product type - the product type must be any of these: %s"
 msgstr "Tuotteen laji ei kelpaa - tuotteen laji on oltava joku näistä: %s"
 
-#: includes/api/class-wc-api-products.php:426
-#: includes/api/class-wc-api-products.php:462
+#: includes/api/class-wc-api-products.php:420
+#: includes/api/class-wc-api-products.php:456
 msgid "You do not have permission to read product categories"
 msgstr "Et voi lukea osastoja. Tarvitset laajemmat oikeudet."
 
-#: includes/api/class-wc-api-products.php:457
+#: includes/api/class-wc-api-products.php:451
 msgid "Invalid product category ID"
 msgstr "Osaston tunnus -ID- ei kelpaa"
 
-#: includes/api/class-wc-api-products.php:468
+#: includes/api/class-wc-api-products.php:462
 msgid "A product category with the provided ID could not be found"
 msgstr "Annetulla osaston tunnuksella -ID- ei löytynyt osastoa"
 
-#: includes/api/class-wc-api-products.php:731
-#: includes/api/class-wc-api-products.php:1189
+#: includes/api/class-wc-api-products.php:725
+#: includes/api/class-wc-api-products.php:1183
 msgid "The SKU already exists on another product"
 msgstr "Tuotetunnus -SKU- on jo toisella tuotteella"
 
-#: includes/api/class-wc-api-products.php:1142
+#: includes/api/class-wc-api-products.php:1136
 msgid "Variation #%s of %s"
 msgstr "Muunnelma nro.%s / %s"
 
-#: includes/api/class-wc-api-products.php:1617
-#: includes/api/class-wc-api-products.php:1618
+#: includes/api/class-wc-api-products.php:1611
+#: includes/api/class-wc-api-products.php:1612
 #: includes/api/v1/class-wc-api-products.php:461
 #: includes/api/v1/class-wc-api-products.php:462
 #: includes/wc-product-functions.php:272
@@ -5215,19 +5215,19 @@ msgstr "Muunnelma nro.%s / %s"
 msgid "Placeholder"
 msgstr "Paikanvaraus"
 
-#: includes/api/class-wc-api-products.php:1692
+#: includes/api/class-wc-api-products.php:1686
 msgid "Invalid URL %s"
 msgstr "Verkko-osoite URL %s ei kelpaa"
 
-#: includes/api/class-wc-api-products.php:1704
+#: includes/api/class-wc-api-products.php:1698
 msgid "Error getting remote image %s"
 msgstr "Virhe noudettaessa toisaalla oleva kuva %s"
 
-#: includes/api/class-wc-api-products.php:1733
+#: includes/api/class-wc-api-products.php:1727
 msgid "Zero size file downloaded"
 msgstr "Ladatun tiedoston koko on 0, siis tyhjä."
 
-#: includes/api/class-wc-api-products.php:1867
+#: includes/api/class-wc-api-products.php:1861
 msgid "Invalid product SKU"
 msgstr "Tuotetunnus -SKU- ei ole kelvollinen"
 
@@ -5459,37 +5459,37 @@ msgid ""
 "in W3 Total Cache settings <a href=\"%s\">here</a>."
 msgstr "Jotta  W3 Total Cache lisäosan <strong>tietokanta välimuisti / database caching</strong> toimisi WooCommercen kanssa, on <code>_wc_session_</code>lisättävä 'Ignored Query Strings' kohtaan lisäosan asetuksissa <a href=\"%s\">täällä</a>."
 
-#: includes/class-wc-cart.php:236
+#: includes/class-wc-cart.php:237
 msgid ""
 "%s has been removed from your cart because it can no longer be purchased. "
 "Please contact us if you need assistance."
 msgstr "%s on poistettu ostoskorista koska sitä ei voi enää ostaa. Ota yhteyttä, jos tarvitset ohjeita."
 
-#: includes/class-wc-cart.php:430
+#: includes/class-wc-cart.php:431
 msgid "An item which is no longer available was removed from your cart."
 msgstr "Ostoskorista poistettiin tuote, jote ei ole enää saatavilla."
 
-#: includes/class-wc-cart.php:456
+#: includes/class-wc-cart.php:457
 msgid ""
 "Sorry, \"%s\" is not in stock. Please edit your cart and try again. We "
 "apologise for any inconvenience caused."
 msgstr "'%s' ei ole varastossa. Muokkaa tilausta ja yritä uudelleen, ole hyvä. Pahoittelemme aiheutunutta haittaa."
 
-#: includes/class-wc-cart.php:470
+#: includes/class-wc-cart.php:471
 msgid ""
 "Sorry, we do not have enough \"%s\" in stock to fulfill your order (%s in "
 "stock). Please edit your cart and try again. We apologise for any "
 "inconvenience caused."
 msgstr "Varastossa ei ole tarpeeksi '%s' tuotetta. Voimme korkeintaan toimittaa varastossa olevat %s kpl. Ole hyvä ja muokkaa tilausta ja yritä uudelleen. Pahoittelemme aiheutunutta haittaa."
 
-#: includes/class-wc-cart.php:505
+#: includes/class-wc-cart.php:506
 msgid ""
 "Sorry, we do not have enough \"%s\" in stock to fulfill your order right "
 "now. Please try again in %d minutes or edit your cart and try again. We "
 "apologise for any inconvenience caused."
 msgstr "Varastossa ei ole tarpeeksi '%s' tuotetta joten emme voi nyt täyttää tilausta.  Ole hyvä ja yritä uudelleen %d minuutin kuluttua tai muokkaa tilausta ja yritä uudelleen. Pahoittelemme aiheutunutta haittaa."
 
-#: includes/class-wc-cart.php:684
+#: includes/class-wc-cart.php:685
 msgid "Get cart should not be called before the wp_loaded action."
 msgstr "Hae ostoskori -Get cart- ei pitäisi kutsua ennen wp_loaded toimintoa."
 
@@ -5545,59 +5545,59 @@ msgstr "Asiakastilin salasana"
 msgid "Order Notes"
 msgstr "Tilauksen kommentit"
 
-#: includes/class-wc-checkout.php:202 includes/class-wc-checkout.php:213
-#: includes/class-wc-checkout.php:238 includes/class-wc-checkout.php:250
-#: includes/class-wc-checkout.php:263 includes/class-wc-checkout.php:274
-#: includes/class-wc-checkout.php:281
+#: includes/class-wc-checkout.php:203 includes/class-wc-checkout.php:214
+#: includes/class-wc-checkout.php:239 includes/class-wc-checkout.php:251
+#: includes/class-wc-checkout.php:264 includes/class-wc-checkout.php:275
+#: includes/class-wc-checkout.php:282
 msgid "Error %d: Unable to create order. Please try again."
 msgstr "Virhe %d: Tilausta ei voitu luoda, yritä uudelleen."
 
-#: includes/class-wc-checkout.php:353
+#: includes/class-wc-checkout.php:354
 msgid "We were unable to process your order, please try again."
 msgstr "Virhe: Tilausta ei voitu käsitellä, yritä uudelleen."
 
-#: includes/class-wc-checkout.php:366
+#: includes/class-wc-checkout.php:367
 msgid ""
 "Sorry, your session has expired. <a href=\"%s\" class=\"wc-backward\">Return"
 " to homepage</a>"
 msgstr "Pahoittelemme. Istunto on umpeutunut. <a href=\"%s\" class=\"wc-backward\">Palaa etusivulle</a>"
 
-#: includes/class-wc-checkout.php:446 includes/class-wc-form-handler.php:85
+#: includes/class-wc-checkout.php:447 includes/class-wc-form-handler.php:85
 msgid "is a required field."
 msgstr "on vaadittu tieto."
 
-#: includes/class-wc-checkout.php:459 includes/class-wc-form-handler.php:98
+#: includes/class-wc-checkout.php:460 includes/class-wc-form-handler.php:98
 #: includes/shortcodes/class-wc-shortcode-cart.php:27
 msgid "Please enter a valid postcode/ZIP."
 msgstr "Kirjoita kelvollinen postinumero."
 
-#: includes/class-wc-checkout.php:468 includes/class-wc-form-handler.php:107
+#: includes/class-wc-checkout.php:469 includes/class-wc-form-handler.php:107
 msgid "is not a valid phone number."
 msgstr "ei ole kelvollinen puhelinnumero."
 
-#: includes/class-wc-checkout.php:474 includes/class-wc-form-handler.php:114
+#: includes/class-wc-checkout.php:475 includes/class-wc-form-handler.php:114
 msgid "is not a valid email address."
 msgstr "ei ole kelvollinen sähköpostiosoite."
 
-#: includes/class-wc-checkout.php:492
+#: includes/class-wc-checkout.php:493
 msgid "is not valid. Please enter one of the following:"
 msgstr "ei ole kelvollinen. Ole hyvä, valitse joku näistä:"
 
-#: includes/class-wc-checkout.php:548
+#: includes/class-wc-checkout.php:549
 msgid "You must accept our Terms &amp; Conditions."
 msgstr "Pyydämme hyväksymään Tilaus- ja sopimusehtomme. Kiitos."
 
-#: includes/class-wc-checkout.php:554
+#: includes/class-wc-checkout.php:555
 msgid ""
 "Unfortunately <strong>we do not ship %s</strong>. Please enter an "
 "alternative shipping address."
 msgstr "Valitettavasti <strong>emme toimita osoitteeseen %s</strong>. Kirjoita muu toimitusosoite, ole hyvä."
 
-#: includes/class-wc-checkout.php:563
+#: includes/class-wc-checkout.php:564
 msgid "Invalid shipping method."
 msgstr "Toimitustapa ei kelpaa."
 
-#: includes/class-wc-checkout.php:575
+#: includes/class-wc-checkout.php:576
 msgid "Invalid payment method."
 msgstr "Maksutapa ei kelpaa."
 
@@ -5669,147 +5669,143 @@ msgstr "Kaupunki"
 msgid "State / County"
 msgstr "Lääni / alue ym."
 
-#: includes/class-wc-countries.php:523
-msgid "Make a selection"
-msgstr ""
-
-#: includes/class-wc-countries.php:529 includes/class-wc-countries.php:530
+#: includes/class-wc-countries.php:528 includes/class-wc-countries.php:529
 #: templates/cart/shipping-calculator.php:82
 msgid "Postcode / Zip"
 msgstr "Postinumero"
 
-#: includes/class-wc-countries.php:585 includes/class-wc-countries.php:586
+#: includes/class-wc-countries.php:584 includes/class-wc-countries.php:585
 msgid "Suburb"
 msgstr "Lähiö"
 
-#: includes/class-wc-countries.php:589 includes/class-wc-countries.php:590
-#: includes/class-wc-countries.php:866 includes/class-wc-countries.php:867
+#: includes/class-wc-countries.php:588 includes/class-wc-countries.php:589
+#: includes/class-wc-countries.php:865 includes/class-wc-countries.php:866
 msgid "Postcode"
 msgstr "Postinumero"
 
-#: includes/class-wc-countries.php:593 includes/class-wc-countries.php:860
+#: includes/class-wc-countries.php:592 includes/class-wc-countries.php:859
 msgid "State"
 msgstr "Osavaltio"
 
-#: includes/class-wc-countries.php:602 includes/class-wc-countries.php:780
+#: includes/class-wc-countries.php:601 includes/class-wc-countries.php:779
 msgid "District"
 msgstr "Alue"
 
-#: includes/class-wc-countries.php:610 includes/class-wc-countries.php:633
-#: includes/class-wc-countries.php:659 includes/class-wc-countries.php:724
-#: includes/class-wc-countries.php:744 includes/class-wc-countries.php:762
-#: includes/class-wc-countries.php:824 includes/class-wc-countries.php:850
-#: includes/class-wc-countries.php:897
+#: includes/class-wc-countries.php:609 includes/class-wc-countries.php:632
+#: includes/class-wc-countries.php:658 includes/class-wc-countries.php:723
+#: includes/class-wc-countries.php:743 includes/class-wc-countries.php:761
+#: includes/class-wc-countries.php:823 includes/class-wc-countries.php:849
+#: includes/class-wc-countries.php:896
 msgid "Province"
 msgstr "Provinssi"
 
-#: includes/class-wc-countries.php:640
+#: includes/class-wc-countries.php:639
 msgid "Canton"
 msgstr "Piirikunta"
 
-#: includes/class-wc-countries.php:653 includes/class-wc-countries.php:712
+#: includes/class-wc-countries.php:652 includes/class-wc-countries.php:711
 msgid "Region"
 msgstr "Alue"
 
-#: includes/class-wc-countries.php:708 includes/class-wc-countries.php:709
+#: includes/class-wc-countries.php:707 includes/class-wc-countries.php:708
 msgid "Town / District"
 msgstr "Kaupunki / alue"
 
-#: includes/class-wc-countries.php:718 includes/class-wc-countries.php:870
+#: includes/class-wc-countries.php:717 includes/class-wc-countries.php:869
 msgid "County"
 msgstr "Kunta"
 
-#: includes/class-wc-countries.php:750
+#: includes/class-wc-countries.php:749
 msgid "Prefecture"
 msgstr "Prefektuuri"
 
-#: includes/class-wc-countries.php:831
+#: includes/class-wc-countries.php:830
 msgid "Municipality"
 msgstr "Kunta"
 
-#: includes/class-wc-countries.php:856 includes/class-wc-countries.php:857
+#: includes/class-wc-countries.php:855 includes/class-wc-countries.php:856
 msgid "Zip"
 msgstr "Postinumero"
 
-#: includes/class-wc-countries.php:956
+#: includes/class-wc-countries.php:955
 msgid "Email Address"
 msgstr "Sähköpostiosoite"
 
-#: includes/class-wc-countries.php:963
+#: includes/class-wc-countries.php:962
 msgid "Phone"
 msgstr "Puhelin"
 
-#: includes/class-wc-coupon.php:685
+#: includes/class-wc-coupon.php:683
 msgid "Coupon code applied successfully."
 msgstr "Alennuskoodi otettiin käyttöön."
 
-#: includes/class-wc-coupon.php:688
+#: includes/class-wc-coupon.php:686
 msgid "Coupon code removed successfully."
 msgstr "Alennuskoodi on poistettu."
 
-#: includes/class-wc-coupon.php:706
+#: includes/class-wc-coupon.php:704
 msgid "Coupon is not valid."
 msgstr "Kuponki ei ole kelvollinen."
 
-#: includes/class-wc-coupon.php:709 includes/class-wc-coupon.php:792
+#: includes/class-wc-coupon.php:707 includes/class-wc-coupon.php:790
 msgid "Coupon does not exist!"
 msgstr "Kuponkia ei ole olemassa!"
 
-#: includes/class-wc-coupon.php:712
+#: includes/class-wc-coupon.php:710
 msgid ""
 "Sorry, it seems the coupon \"%s\" is invalid - it has now been removed from "
 "your order."
 msgstr "Pahoittelemme, kuponki '%s' ei kelpaa – se on nyt irrotettu tilauksesta."
 
-#: includes/class-wc-coupon.php:715
+#: includes/class-wc-coupon.php:713
 msgid ""
 "Sorry, it seems the coupon \"%s\" is not yours - it has now been removed "
 "from your order."
 msgstr "Pahoittelemme, kuponki '%s' ei liity tiliisi – se on nyt irrotettu tilauksesta."
 
-#: includes/class-wc-coupon.php:718
+#: includes/class-wc-coupon.php:716
 msgid "Coupon code already applied!"
 msgstr "Alennuskoodi on jo käytetty!"
 
-#: includes/class-wc-coupon.php:721
+#: includes/class-wc-coupon.php:719
 msgid ""
 "Sorry, coupon \"%s\" has already been applied and cannot be used in "
 "conjunction with other coupons."
 msgstr "Pahoittelemme, \"%s\" kuponki on jo asetettu ja sitä ei voi käyttää muun kupongin kanssa."
 
-#: includes/class-wc-coupon.php:724
+#: includes/class-wc-coupon.php:722
 msgid "Coupon usage limit has been reached."
 msgstr "Kupongin käyttöraja on saavutettu."
 
-#: includes/class-wc-coupon.php:727
+#: includes/class-wc-coupon.php:725
 msgid "This coupon has expired."
 msgstr "Kupongin voimassaolo on päättynyt."
 
-#: includes/class-wc-coupon.php:730
+#: includes/class-wc-coupon.php:728
 msgid "The minimum spend for this coupon is %s."
 msgstr "Kupongin (hyväksymisen) minimiostos on %s."
 
-#: includes/class-wc-coupon.php:733
+#: includes/class-wc-coupon.php:731
 msgid "The maximum spend for this coupon is %s."
 msgstr "Kupongilla kulutettava maksimi on %s."
 
-#: includes/class-wc-coupon.php:736
+#: includes/class-wc-coupon.php:734
 msgid "Sorry, this coupon is not applicable to your cart contents."
 msgstr "Pahoittelemme, kuponkia ei voi käyttää ostoskorissa oleville tuotteille."
 
-#: includes/class-wc-coupon.php:749
+#: includes/class-wc-coupon.php:747
 msgid "Sorry, this coupon is not applicable to the products: %s."
 msgstr "Pahoittelemme, kuponkia ei voi käyttää tuotteille: %s."
 
-#: includes/class-wc-coupon.php:769
+#: includes/class-wc-coupon.php:767
 msgid "Sorry, this coupon is not applicable to the categories: %s."
 msgstr "Pahoittelemme, kuponkia ei voi käyttää osaston %s tuotteille."
 
-#: includes/class-wc-coupon.php:772
+#: includes/class-wc-coupon.php:770
 msgid "Sorry, this coupon is not valid for sale items."
 msgstr "Pahoittelemme, kuponkia ei voi käyttää tarjoustuotteille."
 
-#: includes/class-wc-coupon.php:795
+#: includes/class-wc-coupon.php:793
 msgid "Please enter a coupon code."
 msgstr "Kirjoita kupongin koodi, ole hyvä"
 
@@ -6568,7 +6564,7 @@ msgstr "Tilaus vastaanotettu"
 
 #: includes/class-wc-query.php:116
 msgid "Order %s"
-msgstr "Järjestä %s"
+msgstr "Tilaus %s"
 
 #: includes/class-wc-query.php:119
 msgid "Edit Account Details"
@@ -7179,38 +7175,38 @@ msgstr "Ota käyttöön Maksu toimitettaessa (COD) palvelujen tilauksille"
 msgid "Payment to be made upon delivery."
 msgstr "Maksu toimituksen yhteydessä. Hyväksytään käteinen, mielellään tasaraha, maksukortit: aa, bb, cc, jne."
 
-#: includes/gateways/paypal/class-wc-gateway-paypal.php:26
+#: includes/gateways/paypal/class-wc-gateway-paypal.php:32
 msgid "Proceed to PayPal"
 msgstr "Siirry PayPal-maksuun"
 
-#: includes/gateways/paypal/class-wc-gateway-paypal.php:27
+#: includes/gateways/paypal/class-wc-gateway-paypal.php:33
 #: includes/gateways/paypal/includes/settings-paypal.php:21
 msgid "PayPal"
 msgstr "PayPal"
 
-#: includes/gateways/paypal/class-wc-gateway-paypal.php:28
+#: includes/gateways/paypal/class-wc-gateway-paypal.php:34
 msgid ""
 "PayPal standard works by sending customers to PayPal where they can enter "
 "their payment information."
 msgstr "PayPal standard -maksutavassa asiakas ohjataan PayPal'in sivulle jonne he voivat kirjoittaa maksamisessa tarvittavat tiedot."
 
-#: includes/gateways/paypal/class-wc-gateway-paypal.php:85
+#: includes/gateways/paypal/class-wc-gateway-paypal.php:93
 msgid "PayPal Acceptance Mark"
 msgstr "PayPal hyväksyntämerkki -Acceptance Mark"
 
-#: includes/gateways/paypal/class-wc-gateway-paypal.php:88
+#: includes/gateways/paypal/class-wc-gateway-paypal.php:96
 msgid "What is PayPal?"
 msgstr "Mikä PayPal on?"
 
-#: includes/gateways/paypal/class-wc-gateway-paypal.php:195
+#: includes/gateways/paypal/class-wc-gateway-paypal.php:203
 msgid "Gateway Disabled"
 msgstr "Maksukäytävä ei ole käytössä"
 
-#: includes/gateways/paypal/class-wc-gateway-paypal.php:195
+#: includes/gateways/paypal/class-wc-gateway-paypal.php:203
 msgid "PayPal does not support your store currency."
 msgstr "PayPal ei tue verkkokauppasi käyttämää valuuttaa."
 
-#: includes/gateways/paypal/class-wc-gateway-paypal.php:283
+#: includes/gateways/paypal/class-wc-gateway-paypal.php:291
 msgid "Refunded %s - Refund ID: %s"
 msgstr "Hyvitetty %s - Hyvityksen tunnus ID: %s"
 
@@ -7463,7 +7459,7 @@ msgid "API Signature"
 msgstr "API allekirjoitus"
 
 #: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:90
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:174
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:169
 #: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:317
 msgid ""
 "Please make sure your card details have been entered correctly and that your"
@@ -7471,7 +7467,7 @@ msgid ""
 msgstr "Varmista, että kortin tiedot on syötetty oikein ja että selaimesi tukee JavaScriptiä."
 
 #: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:93
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:177
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:172
 #: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:320
 msgid ""
 "Developers: Please make sure that you're including jQuery and there are no "
@@ -7479,63 +7475,63 @@ msgid ""
 msgstr "Kehittäjät: Varmista, että liität mukaan jQuery ja että sivulla ei ole JavaScript virheitä."
 
 #: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:113
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:197
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:192
 msgid "Error creating user in Simplify Commerce."
 msgstr "Simplify Commerce käyttäjän luominen ei onnistunut."
 
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:168
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:274
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:163
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:272
 msgid ""
 "Sorry, the minimum allowed order total is 0.50 to use this payment method."
 msgstr "Pahoittelemme, pienin tilauksen kokonaissumma tällä maksutavalla on 0,50."
 
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:271
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:277
 msgid "%s - Subscription for \"%s\""
 msgstr "%s - Tilaus kohteelle \"%s\""
 
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:271
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:391
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:277
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:393
 msgid "(Order #%s)"
 msgstr "(Tilaus #%s)"
 
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:280
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:396
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:282
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:398
 msgid "Customer not found"
 msgstr "Asiakasta ei löytynyt"
 
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:310
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:312
 msgid "Simplify payment error: %s"
 msgstr "Virhe Simplify maksussa: %s"
 
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:320
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:419
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:322
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:421
 #: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:486
 msgid "Simplify payment approved (ID: %s, Auth Code: %s)"
 msgstr "Simplify Commerce maksu hyväksyttiin (ID: %s, Auth Code: %s)"
 
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:324
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:326
 #: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:349
 msgid "Simplify payment declined"
 msgstr "Simplify Commerce ei hyväksynyt maksua"
 
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:326
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:328
 #: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:351
 msgid "Payment was declined - please try another card."
 msgstr "Maksua ei hyväksytty - kokeile toista korttia, ole hyvä."
 
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:391
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:393
 msgid "%s - Pre-order for \"%s\""
 msgstr "%s - Ennakkotilaus tuotteelle \"%s\""
 
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:421
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:423
 msgid "Payment was declined - the customer need to try another card."
 msgstr "Maksua ei hyväksytty - asiakkaan on kokeiltava toista korttia."
 
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:424
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:426
 msgid "Simplify Transaction Failed (%s)"
 msgstr "Simplify tapahtuma epäonnistui (%s)"
 
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:468
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:470
 #: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:458
 msgid "Payment was declined by Simplify Commerce."
 msgstr "Simplify Commerce ei hyväksynyt maksua."
@@ -8194,199 +8190,199 @@ msgstr "[Poista]"
 msgid "Free"
 msgstr "Maksuton"
 
-#: includes/wc-core-functions.php:76
+#: includes/wc-core-functions.php:78
 msgid "Order &ndash; %s"
 msgstr "Tilaus &ndash; %s"
 
-#: includes/wc-core-functions.php:81
+#: includes/wc-core-functions.php:84
 msgid "Invalid order status"
 msgstr "Tilauksen tila ei kelpaa"
 
-#: includes/wc-core-functions.php:126
+#: includes/wc-core-functions.php:129
 msgid "Invalid order ID"
 msgstr "Tilauksen tunnus -ID- ei kelpaa"
 
-#: includes/wc-core-functions.php:256
+#: includes/wc-core-functions.php:259
 msgid "United Arab Emirates Dirham"
 msgstr "Yhdistyneet Arabiemiirikunnat Dirham AED "
 
-#: includes/wc-core-functions.php:257
+#: includes/wc-core-functions.php:260
 msgid "Australian Dollars"
 msgstr "Australian dollari AUD"
 
-#: includes/wc-core-functions.php:258
+#: includes/wc-core-functions.php:261
 msgid "Bangladeshi Taka"
 msgstr "Bangladeshin taka BDT"
 
-#: includes/wc-core-functions.php:259
+#: includes/wc-core-functions.php:262
 msgid "Brazilian Real"
 msgstr "Brasilian real BRL"
 
-#: includes/wc-core-functions.php:260
+#: includes/wc-core-functions.php:263
 msgid "Bulgarian Lev"
 msgstr "Bulgarian lev BGN"
 
-#: includes/wc-core-functions.php:261
+#: includes/wc-core-functions.php:264
 msgid "Canadian Dollars"
 msgstr "Kanadan dollari CAD"
 
-#: includes/wc-core-functions.php:262
+#: includes/wc-core-functions.php:265
 msgid "Chilean Peso"
 msgstr "Chilen peso CLP"
 
-#: includes/wc-core-functions.php:263
+#: includes/wc-core-functions.php:266
 msgid "Chinese Yuan"
 msgstr "Kiinan renminbi yuan CNY"
 
-#: includes/wc-core-functions.php:264
+#: includes/wc-core-functions.php:267
 msgid "Colombian Peso"
 msgstr "Columbian peso COP"
 
-#: includes/wc-core-functions.php:265
+#: includes/wc-core-functions.php:268
 msgid "Czech Koruna"
 msgstr "Tsekin koruna CZK"
 
-#: includes/wc-core-functions.php:266
+#: includes/wc-core-functions.php:269
 msgid "Danish Krone"
 msgstr "Tanskan kruunu DKK"
 
-#: includes/wc-core-functions.php:267
+#: includes/wc-core-functions.php:270
 msgid "Dominican Peso"
 msgstr "Dominikaanien peso DOP"
 
-#: includes/wc-core-functions.php:268
+#: includes/wc-core-functions.php:271
 msgid "Euros"
 msgstr "Euro EUR"
 
-#: includes/wc-core-functions.php:269
+#: includes/wc-core-functions.php:272
 msgid "Hong Kong Dollar"
 msgstr "Hong Kongin dollari HKD"
 
-#: includes/wc-core-functions.php:270
+#: includes/wc-core-functions.php:273
 msgid "Croatia kuna"
 msgstr "Kroatian kuna HRK"
 
-#: includes/wc-core-functions.php:271
+#: includes/wc-core-functions.php:274
 msgid "Hungarian Forint"
 msgstr "Unkarin forintti HUF"
 
-#: includes/wc-core-functions.php:272
+#: includes/wc-core-functions.php:275
 msgid "Icelandic krona"
 msgstr "Islannin kruunu ISK"
 
-#: includes/wc-core-functions.php:273
+#: includes/wc-core-functions.php:276
 msgid "Indonesia Rupiah"
 msgstr "Indonesian rupia IDR"
 
-#: includes/wc-core-functions.php:274
+#: includes/wc-core-functions.php:277
 msgid "Indian Rupee"
 msgstr "Intian rupia INR"
 
-#: includes/wc-core-functions.php:275
+#: includes/wc-core-functions.php:278
 msgid "Nepali Rupee"
 msgstr "Nepalin rupia NPR"
 
-#: includes/wc-core-functions.php:276
+#: includes/wc-core-functions.php:279
 msgid "Israeli Shekel"
 msgstr "Israelin sekeli ILS"
 
-#: includes/wc-core-functions.php:277
+#: includes/wc-core-functions.php:280
 msgid "Japanese Yen"
 msgstr "Japanin jeni JPY"
 
-#: includes/wc-core-functions.php:278
+#: includes/wc-core-functions.php:281
 msgid "Lao Kip"
 msgstr "Laosin kip LAK"
 
-#: includes/wc-core-functions.php:279
+#: includes/wc-core-functions.php:282
 msgid "South Korean Won"
 msgstr "Etelä-Korean won KRW"
 
-#: includes/wc-core-functions.php:280
+#: includes/wc-core-functions.php:283
 msgid "Malaysian Ringgits"
 msgstr "Malesian ringgits MYR"
 
-#: includes/wc-core-functions.php:281
+#: includes/wc-core-functions.php:284
 msgid "Mexican Peso"
 msgstr "Meksikon peso MXN"
 
-#: includes/wc-core-functions.php:282
+#: includes/wc-core-functions.php:285
 msgid "Nigerian Naira"
 msgstr "Nigerian naira NGN"
 
-#: includes/wc-core-functions.php:283
+#: includes/wc-core-functions.php:286
 msgid "Norwegian Krone"
 msgstr "Norjan kruunu NOK"
 
-#: includes/wc-core-functions.php:284
+#: includes/wc-core-functions.php:287
 msgid "New Zealand Dollar"
 msgstr "Uuden-Seelannin dollari NZD"
 
-#: includes/wc-core-functions.php:285
+#: includes/wc-core-functions.php:288
 msgid "Paraguayan Guaraní"
 msgstr "Paraguayan guaraní PYG"
 
-#: includes/wc-core-functions.php:286
+#: includes/wc-core-functions.php:289
 msgid "Philippine Pesos"
 msgstr "Filippiinien peso PHP"
 
-#: includes/wc-core-functions.php:287
+#: includes/wc-core-functions.php:290
 msgid "Polish Zloty"
 msgstr "Puolan zloty PLN"
 
-#: includes/wc-core-functions.php:288
+#: includes/wc-core-functions.php:291
 msgid "Pounds Sterling"
 msgstr "Punta GBP"
 
-#: includes/wc-core-functions.php:289
+#: includes/wc-core-functions.php:292
 msgid "Romanian Leu"
 msgstr "Romanian lei RON"
 
-#: includes/wc-core-functions.php:290
+#: includes/wc-core-functions.php:293
 msgid "Russian Ruble"
 msgstr "Venäjän rupla RUB"
 
-#: includes/wc-core-functions.php:291
+#: includes/wc-core-functions.php:294
 msgid "Singapore Dollar"
 msgstr "Singaporen dollari SGD"
 
-#: includes/wc-core-functions.php:292
+#: includes/wc-core-functions.php:295
 msgid "South African rand"
 msgstr "Etelä-Afrikan randi ZAR"
 
-#: includes/wc-core-functions.php:293
+#: includes/wc-core-functions.php:296
 msgid "Swedish Krona"
 msgstr "Ruotsin kruunu SEK"
 
-#: includes/wc-core-functions.php:294
+#: includes/wc-core-functions.php:297
 msgid "Swiss Franc"
 msgstr "Sveitsin frangi CHF"
 
-#: includes/wc-core-functions.php:295
+#: includes/wc-core-functions.php:298
 msgid "Taiwan New Dollars"
 msgstr "Taiwanin uusi dollari TWD"
 
-#: includes/wc-core-functions.php:296
+#: includes/wc-core-functions.php:299
 msgid "Thai Baht"
 msgstr "Thaimaan baht THB"
 
-#: includes/wc-core-functions.php:297
+#: includes/wc-core-functions.php:300
 msgid "Turkish Lira"
 msgstr "Turkin liira TRY"
 
-#: includes/wc-core-functions.php:298
+#: includes/wc-core-functions.php:301
 msgid "Ukrainian Hryvnia"
 msgstr "Ukrainan hryvnia UAH"
 
-#: includes/wc-core-functions.php:299
+#: includes/wc-core-functions.php:302
 msgid "US Dollars"
 msgstr "Yhdysvaltain dollari USD"
 
-#: includes/wc-core-functions.php:300
+#: includes/wc-core-functions.php:303
 msgid "Vietnamese Dong"
 msgstr "Vietnamin dong VND"
 
-#: includes/wc-core-functions.php:301
+#: includes/wc-core-functions.php:304
 msgid "Egyptian Pound"
 msgstr "Egyptin punta EGP"
 
@@ -8428,7 +8424,7 @@ msgstr "Tätä toimintoa ei pitäisi kutsua ennen woocommerce_init."
 msgid "Unpaid order cancelled - time limit reached."
 msgstr "Maksamaton tilaus peruutettu – aikaraja ylittyi."
 
-#: includes/wc-order-functions.php:614
+#: includes/wc-order-functions.php:615
 msgid "Refund &ndash; %s"
 msgstr "Hyvitys &ndash; %s"
 
@@ -9915,7 +9911,7 @@ msgstr "tuote-avainsana"
 
 #: includes/class-wc-post-types.php:227
 #: includes/updates/woocommerce-update-2.0.php:55
-#: includes/wc-core-functions.php:608 includes/wc-core-functions.php:643
+#: includes/wc-core-functions.php:611 includes/wc-core-functions.php:646
 msgctxt "slug"
 msgid "product"
 msgstr "tuote"
@@ -9988,7 +9984,7 @@ msgctxt "Tax status"
 msgid "None"
 msgstr "Ei mitään"
 
-#: includes/wc-core-functions.php:76 includes/wc-order-functions.php:614
+#: includes/wc-core-functions.php:78 includes/wc-order-functions.php:615
 msgctxt "Order date parsed by strftime"
 msgid "%b %d, %Y @ %I:%M %p"
 msgstr "%d %b %Y @ %k:%M"

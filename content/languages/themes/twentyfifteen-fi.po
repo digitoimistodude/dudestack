@@ -2,13 +2,17 @@
 # This file is distributed under the same license as the Twenty Fifteen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-12-15 14:25:21+0000\n"
+"PO-Revision-Date: 2015-03-27 14:46:23+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: GlotPress/1.0-alpha-1000\n"
 "Project-Id-Version: Twenty Fifteen\n"
+
+#. Theme URI of the plugin/theme
+msgid "https://wordpress.org/themes/twentyfifteen/"
+msgstr "https://wordpress.org/themes/twentyfifteen/"
 
 #: single.php:37
 msgid "Previous post:"
@@ -18,7 +22,7 @@ msgstr "Edellinen artikkeli:"
 msgid "Next post:"
 msgstr "Seuraava artikkeli:"
 
-#: inc/customizer.php:52 inc/customizer.php:68 inc/customizer.php:73
+#: inc/customizer.php:47 inc/customizer.php:63 inc/customizer.php:68
 msgid "Applied to the header on small screens and the sidebar on wide screens."
 msgstr "Käytetään otsakkeessa pienillä näytöillä ja sivupalkissa isoilla näytöillä."
 
@@ -77,43 +81,43 @@ msgctxt "Used between list items, there is a space after the comma."
 msgid ", "
 msgstr ", "
 
-#: inc/customizer.php:152
+#: inc/customizer.php:147
 msgid "Blue"
 msgstr "Sininen"
 
-#: inc/customizer.php:141
+#: inc/customizer.php:136
 msgid "Purple"
 msgstr "Violetti"
 
-#: inc/customizer.php:130
+#: inc/customizer.php:125
 msgid "Pink"
 msgstr "Vaaleanpunainen"
 
-#: inc/customizer.php:108
+#: inc/customizer.php:103
 msgid "Dark"
 msgstr "Tumma"
 
-#: inc/customizer.php:119
+#: inc/customizer.php:114
 msgid "Yellow"
 msgstr "Keltainen"
 
-#: inc/customizer.php:97
+#: inc/customizer.php:92
 msgid "Default"
 msgstr "Oletus"
 
-#: inc/customizer.php:67
+#: inc/customizer.php:62
 msgid "Header and Sidebar Background Color"
 msgstr "Otsakkeen ja sivupalkin taustaväri"
 
-#: inc/customizer.php:51
+#: inc/customizer.php:46
 msgid "Header and Sidebar Text Color"
 msgstr "Otsakkeen ja sivupalkin tekstin väri"
 
-#: inc/customizer.php:36
+#: inc/customizer.php:31
 msgid "Base Color Scheme"
 msgstr "Väriteema"
 
-#: header.php:44
+#: header.php:43
 msgid "Menu and widgets"
 msgstr "Valikko ja vimpaimet"
 
@@ -144,10 +148,6 @@ msgstr "Vanhemmat kommentit"
 msgid "Featured"
 msgstr "Suositeltu"
 
-#. Theme URI of the plugin/theme
-msgid "https://wordpress.org/themes/twentyfifteen"
-msgstr "https://wordpress.org/themes/twentyfifteen"
-
 #: inc/template-tags.php:113
 msgctxt "Used before full size attachment link."
 msgid "Full size"
@@ -170,6 +170,13 @@ msgstr "Vuoden 2015 oletusteemamme on siisti ja suunniteltu blogeille. Twenty Fi
 msgid "Twenty Fifteen"
 msgstr "Twenty Fifteen"
 
+#: comments.php:28
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Yksi vastaus artikkeliin &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s vastausta artikkeliin &ldquo;%2$s&rdquo;"
+
 #: comments.php:53
 msgid "Comments are closed."
 msgstr "Kommentointi on suljettu."
@@ -191,7 +198,7 @@ msgstr "Voimanlähteenä %s"
 msgid "Primary Menu"
 msgstr "Ensisijainen valikko"
 
-#: header.php:27
+#: header.php:26
 msgid "Skip to content"
 msgstr "Siirry sisältöön"
 
@@ -211,11 +218,11 @@ msgstr "Pahoittelut mutta mitään ei löytynyt hakuehdoillasi. Kokeile uudellee
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr "Emme valitettavasti löytäneet etsimääsi. Ehkä hakutoiminnosta on apua."
 
-#: functions.php:231
+#: functions.php:255
 msgid "expand child menu"
 msgstr "näytä alavalikko"
 
-#: functions.php:232
+#: functions.php:256
 msgid "collapse child menu"
 msgstr "piilota alavalikko"
 
@@ -231,7 +238,7 @@ msgstr "Vimpainalue"
 msgid "Social Links Menu"
 msgstr "Some-valikko"
 
-#. #-#-#-#-#  twentyfifteen.pot (Twenty Fifteen 1.0)  #-#-#-#-#
+#. #-#-#-#-#  twentyfifteen.pot (Twenty Fifteen 1.1)  #-#-#-#-#
 #. Author URI of the plugin/theme
 #: footer.php:25
 msgid "https://wordpress.org/"
@@ -242,41 +249,34 @@ msgstr "https://wordpress.org/"
 msgid "Continue reading %s"
 msgstr "Jatka artikkeliin %s"
 
-#: comments.php:28
-msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "Yksi vastaus artikkeliiin &ldquo;%2$s&rdquo;"
-msgstr[1] "%1$s vastausta artikkeliin &ldquo;%2$s&rdquo;"
-
-#. translators: To add an additional character subset specific to your
+#. Translators: To add an additional character subset specific to your
 #. language, translate this to 'greek', 'cyrillic', 'devanagari' or
 #. 'vietnamese'. Do not translate into your own language.
-#: functions.php:173
+#: functions.php:185
 msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
 msgid "no-subset"
 msgstr "no-subset"
 
-#. translators: If there are characters in your language that are not supported
+#. Translators: If there are characters in your language that are not supported
 #. by Inconsolata, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:168
+#: functions.php:177
 msgctxt "Inconsolata font: on or off"
 msgid "on"
 msgstr "on"
 
-#. translators: If there are characters in your language that are not supported
+#. Translators: If there are characters in your language that are not supported
 #. by Noto Sans, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:158
+#: functions.php:161
 msgctxt "Noto Sans font: on or off"
 msgid "on"
 msgstr "on"
 
-#. translators: If there are characters in your language that are not supported
+#. Translators: If there are characters in your language that are not supported
 #. by Noto Serif, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:163
+#: functions.php:169
 msgctxt "Noto Serif font: on or off"
 msgid "on"
 msgstr "on"

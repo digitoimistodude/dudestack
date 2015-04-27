@@ -2,13 +2,17 @@
 # This file is distributed under the same license as the Twenty Fifteen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-12-14 22:22:09+0000\n"
+"PO-Revision-Date: 2015-03-30 10:11:43+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: GlotPress/1.0-alpha-1000\n"
 "Project-Id-Version: Twenty Fifteen\n"
+
+#. Theme URI of the plugin/theme
+msgid "https://wordpress.org/themes/twentyfifteen/"
+msgstr "https://wordpress.org/themes/twentyfifteen/"
 
 #: single.php:37
 msgid "Previous post:"
@@ -18,7 +22,7 @@ msgstr "Previous post:"
 msgid "Next post:"
 msgstr "Next post:"
 
-#: inc/customizer.php:52 inc/customizer.php:68 inc/customizer.php:73
+#: inc/customizer.php:47 inc/customizer.php:63 inc/customizer.php:68
 msgid "Applied to the header on small screens and the sidebar on wide screens."
 msgstr "Applied to the header on small screens and the sidebar on wide screens."
 
@@ -71,10 +75,6 @@ msgstr "the WordPress team"
 msgid "Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty Fifteen's simple, straightforward typography is readable on a wide variety of screen sizes, and suitable for multiple languages. We designed it using a mobile-first approach, meaning your content takes center-stage, regardless of whether your visitors arrive by smartphone, tablet, laptop, or desktop computer."
 msgstr "Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty Fifteen's simple, straightforward typography is readable on a wide variety of screen sizes, and suitable for multiple languages. We designed it using a mobile-first approach, meaning your content takes centere-stage, regardless of whether your visitors arrive by smartphone, tablet, laptop, or desktop computer."
 
-#. Theme URI of the plugin/theme
-msgid "https://wordpress.org/themes/twentyfifteen"
-msgstr "https://wordpress.org/themes/twentyfifteen"
-
 #. Theme Name of the plugin/theme
 msgid "Twenty Fifteen"
 msgstr "Twenty Fifteen"
@@ -121,39 +121,39 @@ msgstr "Newer Comments"
 msgid "Featured"
 msgstr "Featured"
 
-#: inc/customizer.php:152
+#: inc/customizer.php:147
 msgid "Blue"
 msgstr "Blue"
 
-#: inc/customizer.php:141
+#: inc/customizer.php:136
 msgid "Purple"
 msgstr "Purple"
 
-#: inc/customizer.php:130
+#: inc/customizer.php:125
 msgid "Pink"
 msgstr "Pink"
 
-#: inc/customizer.php:108
+#: inc/customizer.php:103
 msgid "Dark"
 msgstr "Dark"
 
-#: inc/customizer.php:119
+#: inc/customizer.php:114
 msgid "Yellow"
 msgstr "Yellow"
 
-#: inc/customizer.php:97
+#: inc/customizer.php:92
 msgid "Default"
 msgstr "Default"
 
-#: inc/customizer.php:67
+#: inc/customizer.php:62
 msgid "Header and Sidebar Background Color"
 msgstr "Header and Sidebar Background Color"
 
-#: inc/customizer.php:36
+#: inc/customizer.php:31
 msgid "Base Color Scheme"
 msgstr "Base Color Scheme"
 
-#: inc/customizer.php:51
+#: inc/customizer.php:46
 msgid "Header and Sidebar Text Color"
 msgstr "Header and Sidebar Text Color"
 
@@ -166,7 +166,7 @@ msgctxt "Parent post link"
 msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%title</span>"
 msgstr "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%title</span>"
 
-#: header.php:44
+#: header.php:43
 msgid "Menu and widgets"
 msgstr "Menu and widgets"
 
@@ -191,7 +191,7 @@ msgstr "Proudly powered by %s"
 msgid "Primary Menu"
 msgstr "Primary Menu"
 
-#: header.php:27
+#: header.php:26
 msgid "Skip to content"
 msgstr "Skip to content"
 
@@ -216,42 +216,42 @@ msgstr "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps sear
 msgid "Continue reading %s"
 msgstr "Continue reading %s"
 
-#: functions.php:231
+#: functions.php:255
 msgid "expand child menu"
 msgstr "expand child menu"
 
-#: functions.php:232
+#: functions.php:256
 msgid "collapse child menu"
 msgstr "collapse child menu"
 
-#. translators: To add an additional character subset specific to your
+#. Translators: To add an additional character subset specific to your
 #. language, translate this to 'greek', 'cyrillic', 'devanagari' or
 #. 'vietnamese'. Do not translate into your own language.
-#: functions.php:173
+#: functions.php:185
 msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
 msgid "no-subset"
 msgstr "no-subset"
 
-#. translators: If there are characters in your language that are not supported
+#. Translators: If there are characters in your language that are not supported
 #. by Inconsolata, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:168
+#: functions.php:177
 msgctxt "Inconsolata font: on or off"
 msgid "on"
 msgstr "on"
 
-#. translators: If there are characters in your language that are not supported
+#. Translators: If there are characters in your language that are not supported
 #. by Noto Sans, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:158
+#: functions.php:161
 msgctxt "Noto Sans font: on or off"
 msgid "on"
 msgstr "on"
 
-#. translators: If there are characters in your language that are not supported
+#. Translators: If there are characters in your language that are not supported
 #. by Noto Serif, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:163
+#: functions.php:169
 msgctxt "Noto Serif font: on or off"
 msgid "on"
 msgstr "on"
@@ -268,7 +268,7 @@ msgstr "Widget Area"
 msgid "Social Links Menu"
 msgstr "Social Links Menu"
 
-#. #-#-#-#-#  twentyfifteen.pot (Twenty Fifteen 1.0)  #-#-#-#-#
+#. #-#-#-#-#  twentyfifteen.pot (Twenty Fifteen 1.1)  #-#-#-#-#
 #. Author URI of the plugin/theme
 #: footer.php:25
 msgid "https://wordpress.org/"
