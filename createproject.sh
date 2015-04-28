@@ -40,8 +40,8 @@ done
 
 echo "${boldyellow}Project name in lowercase:${txtreset} "
 read -e PROJECTNAME
-cd $HOME/Projects/wpstack-rolle
-composer create-project -n ronilaukkarinen/wpstack-rolle $HOME/Projects/${PROJECTNAME} dev-master
+cd $HOME/Projects/dudestack
+composer create-project -n ronilaukkarinen/dudestack $HOME/Projects/${PROJECTNAME} dev-master
 cd $HOME/Projects/${PROJECTNAME}
 composer update
 echo "${yellow}Creating a MySQL database for ${PROJECTNAME}${txtreset}"
@@ -271,7 +271,7 @@ if (!defined('ABSPATH')) {
 " > config/application.php
 echo "${boldgreen}deploy.rb generated${txtreset}"
 echo "${yellow}Updating WordPress related stuff...:${txtreset}"
-cp $HOME/Projects/wpstack-rolle/composer.json "$HOME/Projects/$PROJECTNAME/composer.json"
+cp $HOME/Projects/dudestack/composer.json "$HOME/Projects/$PROJECTNAME/composer.json"
 cd "$HOME/Projects/$PROJECTNAME/"
 rm -rf .git
 composer update
