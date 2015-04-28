@@ -1,9 +1,9 @@
 {
-  "name": "ronilaukkarinen/wpstack-rolle",
+  "name": "ronilaukkarinen/dudestack",
   "type": "project",
   "license": "MIT",
   "description": "A modern WordPress stack",
-  "homepage": "https://github.com/ronilaukkarinen/wpstack-rolle",
+  "homepage": "https://github.com/ronilaukkarinen/dudestack",
   "authors": [
     {
       "name": "Roni Laukkarinen",
@@ -19,7 +19,7 @@
     "forum": "http://discourse.roots.io/category/bedrock"
   },
   "require": {
-    "ronilaukkarinen/wpstack-rolle": "dev-master"
+    "ronilaukkarinen/dudestack": "dev-master"
   },
   "config": {
     "preferred-install": "dist",

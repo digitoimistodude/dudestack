@@ -6113,7 +6113,7 @@ msgstr "Vireillä"
 msgid "<strong>ERROR</strong>: Your account has been marked as a spammer."
 msgstr "<strong>VIRHE</strong>: Käyttäjätunnuksesi on merkitty roskapostittajien listalle."
 
-#: wp-includes/wp-db.php:2835
+#: wp-includes/wp-db.php:2949
 msgid "<strong>ERROR</strong>: WordPress %1$s requires MySQL %2$s or higher"
 msgstr "<strong>VIRHE</strong>: WordPress %1$s tarvitsee MySQL-ohjelmasta vähintään version %2$s"
 

@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2540c169ef488ca3b3a47f025065ed7e",
+    "hash": "122e07f799108f9b40eb4fe70b5a5d1a",
     "packages": [
         {
             "name": "composer/installers",
@@ -221,10 +221,10 @@
         },
         {
             "name": "koodimonni-language/en_gb",
-            "version": "4.2",
+            "version": "4.2.1",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/4.2/en_GB.zip",
+                "url": "https://downloads.wordpress.org/translation/core/4.2.1/en_GB.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -250,10 +250,10 @@
         },
         {
             "name": "koodimonni-language/fi",
-            "version": "4.2",
+            "version": "4.2.1",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/4.2/fi.zip",
+                "url": "https://downloads.wordpress.org/translation/core/4.2.1/fi.zip",
                 "reference": null,
                 "shasum": null
             },
