@@ -32,7 +32,7 @@ read -p "${boldyellow}Have you created a public key for SSH (keygen -t rsa)? (y/
 done
 
 echo "${boldyellow}Pairing vagrant with your computer...${txtreset} "
-cat ~/.ssh/id_rsa.pub | ssh vagrant@10.1.2.3 'mkdir -p ~/.ssh && cat » ~/.ssh/authorized_keys' && chmod -Rv 755 ~/.ssh && chmod 400 ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub | ssh vagrant@10.1.2.3 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys' && chmod -Rv 755 ~/.ssh && chmod 400 ~/.ssh/id_rsa
 
 echo "${boldyellow}Bitbucket account:${txtreset} "
 read -e YOUR_BITBUCKET_ACCOUNT_HERE
