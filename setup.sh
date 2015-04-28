@@ -22,6 +22,18 @@ read -p "${boldyellow}Have you installed jolliest-vagrant as instructed? (y/n)${
     esac
 done
 
+while true; do
+read -p "${boldyellow}Have you created a public key for SSH (keygen -t rsa)? (y/n)${txtreset} " yn
+    case $yn in
+        [Yy]* ) break;;
+        [Nn]* ) echo "${red}Please do so. Run keygen -t rsa, add password for extra security.${txtreset}"; exit;;
+        * ) echo "${boldwhite}Please answer y or n.${txtreset}";;
+    esac
+done
+
+echo "${boldyellow}Pairing vagrant with your computer...${txtreset} "
+cat ~/.ssh/id_rsa.pub | ssh vagrant@10.1.2.3 'mkdir -p ~/.ssh && cat » ~/.ssh/authorized_keys' && chmod -Rv 755 ~/.ssh && chmod 400 ~/.ssh/id_rsa
+
 echo "${boldyellow}Bitbucket account:${txtreset} "
 read -e YOUR_BITBUCKET_ACCOUNT_HERE
 
