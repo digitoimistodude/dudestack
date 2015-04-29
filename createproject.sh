@@ -200,9 +200,6 @@ namespace :deploy do
     
 end" > "$HOME/Projects/$PROJECTNAME/config/deploy/production.rb"
 
-echo "${yellow}Copying languages...${txtreset}"
-cd wp/wp-content
-cp -R languages "/Users/rolle/Projects/$PROJECTNAME/content/"
 cd "$HOME/Projects/$PROJECTNAME/"
 #rm CHANGELOG.md
 #rm CONTRIBUTING.md
