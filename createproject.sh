@@ -305,8 +305,7 @@ core install:
 
 # These syntaxes are for vagrant:
 
-ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp core install"
-
+ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp core install --title=$PROJECTNAME --admin_email=YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE"
 echo "${yellow}Removing default WordPress posts...:${txtreset}"
 ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp post delete 1 --force"
 ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp post delete 2 --force"
