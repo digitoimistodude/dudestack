@@ -61,6 +61,8 @@ If you are using [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-
 cat ~/.ssh/id_rsa.pub | ssh vagrant@10.1.2.3 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys' && chmod -Rv 755 ~/.ssh && chmod 400 ~/.ssh/id_rsa
 ```
 
+If you are starting from clean slate, better yet, run Bitbucket's tutorial for [Set up SSH for Git](https://confluence.atlassian.com/display/BITBUCKET/Set+up+SSH+for+Git).
+
 # Documentation 
 1. [Starting a new project with createproject bash script](#starting-a-new-project-with-createproject-bash-script)
   1. [What createproject.sh does](#what-createprojectsh-does)
