@@ -52,7 +52,7 @@ Despite the fact I love most of bedrock, I noticed there's some things I don't l
 # Installation 
 
 1. Clone this repo to your home directory
-2. Go to wpstack-directory (`cd ~/wpstack-rolle && sh setup.sh`)
+2. Go to dudestack directory (`cd ~/dudestack && sh setup.sh`)
 4. Edit `/usr/bin/createproject` to your needs. See instructions and **Getting started** below.
 
 If you are using [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant), you need to "pair" your machine with the VM (I presume you are already set up keypairs, if not, run without password: `ssh-keygen -t rsa`):
@@ -84,7 +84,7 @@ Creating a new project has a lot of configs to do. I wanted to automate most of 
 
 ### What createproject.sh does
 
-1. First it runs `composer create-project` with wpstack-rolle settings
+1. First it runs `composer create-project` with dudestack settings
 2. Installs default WordPress plugins and updates them
 3. Creates MySQL repository automatically with project name (assumes by default that you have [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant)) installed with default settings and paired with your host computer, for MAMP you'll need to edit createproject.sh and edit `YOURMAMPMYSQLPASSWORD`)
 4. Installs capistrano
