@@ -371,7 +371,7 @@ echo "<VirtualHost *:80>
   ErrorLog  /var/www/$PROJECTNAME/error.log
   CustomLog /var/www/$PROJECTNAME/access.log combined
 
-</VirtualHost>" > "$HOME/jolliest-vagrant/vhosts/$PROJECTNAME.dev.conf"
+</VirtualHost>" > "$HOME/Projects/jolliest-vagrant/vhosts/$PROJECTNAME.dev.conf"
 echo "${boldgreen}Added vhost, $PROJECTNAME.dev.conf added to vagrant sites-enabled.${txtreset}"
 echo "${yellow}Reprovisioning vagrant...${txtreset}"
 cd ~/Projects/jolliest-vagrant

@@ -164,7 +164,7 @@ msgstr "Samanniminen termi samalla yläkategorialla on jo olemassa."
 msgid "Taxonomy names must be between 1 and 32 characters in length."
 msgstr "Taksonomian nimen on oltava 1-32 merkkiä pitkä."
 
-#: wp-includes/taxonomy.php:4173
+#: wp-includes/taxonomy.php:4169
 msgid "Could not split shared term."
 msgstr "Jaettua termiä ei voitu jakaa."
 
@@ -736,7 +736,7 @@ msgstr "(ei otsikkoa)"
 
 #. translators: %s: taxonomy label, %l: list of terms formatted as per
 #. $term_template
-#: wp-includes/taxonomy.php:4483
+#: wp-includes/taxonomy.php:4479
 msgid "%s: %l."
 msgstr "%s: %l."
 
@@ -4700,7 +4700,7 @@ msgstr "Hylätyt"
 msgid "Duplicate comment detected; it looks as though you&#8217;ve already said that!"
 msgstr "Identtinen kommentti on jo olemassa; taisit sanoa samat sanat jo aiemmin!"
 
-#: wp-includes/comment.php:2368
+#: wp-includes/comment.php:2375
 msgid "Could not update comment status"
 msgstr "Kommenttia ei voitu päivittää"
 
@@ -5834,7 +5834,7 @@ msgid "Invalid Taxonomy"
 msgstr "Luokittelu ei kelpaa"
 
 #: wp-includes/taxonomy.php:1318 wp-includes/taxonomy.php:3382
-#: wp-includes/taxonomy.php:4351
+#: wp-includes/taxonomy.php:4347
 msgid "Empty Term"
 msgstr "Tyhjä termi"
 
@@ -5846,7 +5846,7 @@ msgstr "Termin lisääminen tietokantaan epäonnistui"
 msgid "The slug &#8220;%s&#8221; is already in use by another term"
 msgstr "Polkutunnus \"%s\" on jo käytössä."
 
-#: wp-includes/taxonomy.php:4554
+#: wp-includes/taxonomy.php:4550
 msgid "Invalid object ID"
 msgstr "Objektin tunnus ei kelpaa."
 
@@ -6113,7 +6113,7 @@ msgstr "Vireillä"
 msgid "<strong>ERROR</strong>: Your account has been marked as a spammer."
 msgstr "<strong>VIRHE</strong>: Käyttäjätunnuksesi on merkitty roskapostittajien listalle."
 
-#: wp-includes/wp-db.php:2949
+#: wp-includes/wp-db.php:2991
 msgid "<strong>ERROR</strong>: WordPress %1$s requires MySQL %2$s or higher"
 msgstr "<strong>VIRHE</strong>: WordPress %1$s tarvitsee MySQL-ohjelmasta vähintään version %2$s"
 

@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f0f5a84913a5e3c5366954b0f6755020",
+    "hash": "df293cebceead030d9b7a0016e007d28",
     "packages": [
         {
             "name": "composer/installers",
@@ -139,16 +139,16 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.2.1",
+            "version": "4.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "c1cefa55c50dadb75b5e9f0e4844e420c794ab48"
+                "reference": "998358f3b7a2c75caae11ff3c79e514951aac7f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/c1cefa55c50dadb75b5e9f0e4844e420c794ab48",
-                "reference": "c1cefa55c50dadb75b5e9f0e4844e420c794ab48",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/998358f3b7a2c75caae11ff3c79e514951aac7f6",
+                "reference": "998358f3b7a2c75caae11ff3c79e514951aac7f6",
                 "shasum": ""
             },
             "require": {
@@ -172,7 +172,7 @@
                 "blog",
                 "cms"
             ],
-            "time": "2015-04-27 17:16:13"
+            "time": "2015-05-07 01:46:09"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -221,10 +221,10 @@
         },
         {
             "name": "koodimonni-language/en_gb",
-            "version": "4.2.1",
+            "version": "4.2.2",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/4.2.1/en_GB.zip",
+                "url": "https://downloads.wordpress.org/translation/core/4.2.2/en_GB.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -250,10 +250,10 @@
         },
         {
             "name": "koodimonni-language/fi",
-            "version": "4.2.1",
+            "version": "4.2.2",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/4.2.1/fi.zip",
+                "url": "https://downloads.wordpress.org/translation/core/4.2.2/fi.zip",
                 "reference": null,
                 "shasum": null
             },

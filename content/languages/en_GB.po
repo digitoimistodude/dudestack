@@ -176,7 +176,7 @@ msgstr "Customiser"
 msgid "A term with the name already exists in this taxonomy."
 msgstr "A term with the name already exists in this taxonomy."
 
-#: wp-includes/taxonomy.php:4173
+#: wp-includes/taxonomy.php:4169
 msgid "Could not split shared term."
 msgstr "Could not split shared term."
 
@@ -736,7 +736,7 @@ msgstr "(no label)"
 
 #. translators: %s: taxonomy label, %l: list of terms formatted as per
 #. $term_template
-#: wp-includes/taxonomy.php:4483
+#: wp-includes/taxonomy.php:4479
 msgid "%s: %l."
 msgstr "%s: %l."
 
@@ -4723,7 +4723,7 @@ msgstr "Table properties"
 msgid "Comment on %1$s by %2$s"
 msgstr "Comment on %1$s by %2$s"
 
-#: wp-includes/comment.php:2368
+#: wp-includes/comment.php:2375
 msgid "Could not update comment status"
 msgstr "Could not update comment status"
 
@@ -6107,7 +6107,7 @@ msgid "Invalid Taxonomy"
 msgstr "Invalid Taxonomy"
 
 #: wp-includes/taxonomy.php:1318 wp-includes/taxonomy.php:3382
-#: wp-includes/taxonomy.php:4351
+#: wp-includes/taxonomy.php:4347
 msgid "Empty Term"
 msgstr "Empty Term"
 
@@ -6130,7 +6130,7 @@ msgstr "Could not insert term into the database"
 msgid "The slug &#8220;%s&#8221; is already in use by another term"
 msgstr "The slug &#8220;%s&#8221; is already in use by another term"
 
-#: wp-includes/taxonomy.php:4554
+#: wp-includes/taxonomy.php:4550
 msgid "Invalid object ID"
 msgstr "Invalid object ID"
 
@@ -6166,7 +6166,7 @@ msgstr "Please log in again."
 msgid "Sidebar %d"
 msgstr "Sidebar %d"
 
-#: wp-includes/wp-db.php:2949
+#: wp-includes/wp-db.php:2991
 msgid "<strong>ERROR</strong>: WordPress %1$s requires MySQL %2$s or higher"
 msgstr "<strong>ERROR</strong>: WordPress %1$s requires MySQL %2$s or higher"
 
