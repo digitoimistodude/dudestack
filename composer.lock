@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "df293cebceead030d9b7a0016e007d28",
+    "hash": "f092877284ab68f0c2340ba920080fad",
     "packages": [
         {
             "name": "composer/installers",
@@ -707,6 +707,46 @@
             "homepage": "https://wordpress.org/plugins/google-analyticator/"
         },
         {
+            "name": "wpackagist-plugin/simple-history",
+            "version": "2.0.30",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/simple-history/",
+                "reference": "tags/2.0.30"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/simple-history.2.0.30.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/simple-history/"
+        },
+        {
+            "name": "wpackagist-plugin/w3-total-cache",
+            "version": "0.9.4.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/w3-total-cache/",
+                "reference": "tags/0.9.4.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/w3-total-cache.0.9.4.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/w3-total-cache/"
+        },
+        {
             "name": "wpackagist-plugin/wonderm00ns-simple-facebook-open-graph-tags",
             "version": "1.5.2",
             "source": {
@@ -785,26 +825,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-last-login/"
-        },
-        {
-            "name": "wpackagist-plugin/wp-super-cache",
-            "version": "1.4.4",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wp-super-cache/",
-                "reference": "tags/1.4.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-super-cache.1.4.4.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wp-super-cache/"
         }
     ],
     "packages-dev": [],
