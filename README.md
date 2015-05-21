@@ -53,7 +53,7 @@ Despite the fact I love most of bedrock, I noticed there's some things I don't l
 
 1. Clone this repo to your home directory
 2. Go to dudestack directory (`cd ~/dudestack && sh setup.sh`)
-4. Edit `/usr/bin/createproject` to your needs. See instructions and **Getting started** below.
+4. Edit `/usr/bin/createproject` to your needs. See [documentation](#documentation) and **[Getting started](#getting-started)**.
 
 If you are using [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant), you need to "pair" your machine with the VM (I presume you are already set up keypairs, if not, run without password: `ssh-keygen -t rsa`):
 
@@ -76,7 +76,7 @@ Creating a new project has a lot of configs to do. I wanted to automate most of 
 
 - You are using staging server like customer.example.com and you store your customers' sites like customer.example.com/customerone. Your staging server user has proper permissions like making changes to /tmp
 - You are using separate production server that may necessarily not have all the permissions like writing in /tmp dir
-- You use [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant) or MAMP Pro
+- You use [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant) or MAMP Pro (MAMP needs extensive editing and testing, [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant) works out of the box)
 - Your repositories are stored in Bitbucket
 - Your project hostname is project.dev
 - You use gulp, grunt or CodeKit2+
