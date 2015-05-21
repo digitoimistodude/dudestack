@@ -8,7 +8,7 @@ createproject.sh
 db-sync
 sql-dump-*.sql
 .env
-.env.*
+.env*
 !.env.example
 content/uploads
 tiedostot
