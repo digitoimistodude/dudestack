@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce\n"
 "Report-Msgid-Bugs-To: https://github.com/woothemes/woocommerce/issues\n"
-"POT-Creation-Date: 2015-04-17 15:06:22+00:00\n"
-"PO-Revision-Date: 2015-04-17 15:10+0000\n"
+"POT-Creation-Date: 2015-05-19 20:00:59+00:00\n"
+"PO-Revision-Date: 2015-05-19 20:03+0000\n"
 "Last-Translator: Claudio Sanches <contato@claudiosmweb.com>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/woocommerce/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -5180,34 +5180,34 @@ msgid "You do not have permission to create products"
 msgstr "Et voi luoda tuotteita. Tarvitset laajemmat oikeudet."
 
 #: includes/api/class-wc-api-products.php:212
-#: includes/api/class-wc-api-products.php:326
+#: includes/api/class-wc-api-products.php:327
 msgid "Invalid product type - the product type must be any of these: %s"
 msgstr "Tuotteen laji ei kelpaa - tuotteen laji on oltava joku näistä: %s"
 
-#: includes/api/class-wc-api-products.php:420
-#: includes/api/class-wc-api-products.php:456
+#: includes/api/class-wc-api-products.php:421
+#: includes/api/class-wc-api-products.php:457
 msgid "You do not have permission to read product categories"
 msgstr "Et voi lukea osastoja. Tarvitset laajemmat oikeudet."
 
-#: includes/api/class-wc-api-products.php:451
+#: includes/api/class-wc-api-products.php:452
 msgid "Invalid product category ID"
 msgstr "Osaston tunnus -ID- ei kelpaa"
 
-#: includes/api/class-wc-api-products.php:462
+#: includes/api/class-wc-api-products.php:463
 msgid "A product category with the provided ID could not be found"
 msgstr "Annetulla osaston tunnuksella -ID- ei löytynyt osastoa"
 
-#: includes/api/class-wc-api-products.php:725
-#: includes/api/class-wc-api-products.php:1183
+#: includes/api/class-wc-api-products.php:726
+#: includes/api/class-wc-api-products.php:1184
 msgid "The SKU already exists on another product"
 msgstr "Tuotetunnus -SKU- on jo toisella tuotteella"
 
-#: includes/api/class-wc-api-products.php:1136
+#: includes/api/class-wc-api-products.php:1137
 msgid "Variation #%s of %s"
 msgstr "Muunnelma nro.%s / %s"
 
-#: includes/api/class-wc-api-products.php:1611
-#: includes/api/class-wc-api-products.php:1612
+#: includes/api/class-wc-api-products.php:1613
+#: includes/api/class-wc-api-products.php:1614
 #: includes/api/v1/class-wc-api-products.php:461
 #: includes/api/v1/class-wc-api-products.php:462
 #: includes/wc-product-functions.php:272
@@ -5215,19 +5215,19 @@ msgstr "Muunnelma nro.%s / %s"
 msgid "Placeholder"
 msgstr "Paikanvaraus"
 
-#: includes/api/class-wc-api-products.php:1686
+#: includes/api/class-wc-api-products.php:1688
 msgid "Invalid URL %s"
 msgstr "Verkko-osoite URL %s ei kelpaa"
 
-#: includes/api/class-wc-api-products.php:1698
+#: includes/api/class-wc-api-products.php:1700
 msgid "Error getting remote image %s"
 msgstr "Virhe noudettaessa toisaalla oleva kuva %s"
 
-#: includes/api/class-wc-api-products.php:1727
+#: includes/api/class-wc-api-products.php:1729
 msgid "Zero size file downloaded"
 msgstr "Ladatun tiedoston koko on 0, siis tyhjä."
 
-#: includes/api/class-wc-api-products.php:1861
+#: includes/api/class-wc-api-products.php:1863
 msgid "Invalid product SKU"
 msgstr "Tuotetunnus -SKU- ei ole kelvollinen"
 
@@ -5735,77 +5735,81 @@ msgstr "Sähköpostiosoite"
 msgid "Phone"
 msgstr "Puhelin"
 
-#: includes/class-wc-coupon.php:683
+#: includes/class-wc-coupon.php:681
 msgid "Coupon code applied successfully."
 msgstr "Alennuskoodi otettiin käyttöön."
 
-#: includes/class-wc-coupon.php:686
+#: includes/class-wc-coupon.php:684
 msgid "Coupon code removed successfully."
 msgstr "Alennuskoodi on poistettu."
 
-#: includes/class-wc-coupon.php:704
+#: includes/class-wc-coupon.php:702
 msgid "Coupon is not valid."
 msgstr "Kuponki ei ole kelvollinen."
 
-#: includes/class-wc-coupon.php:707 includes/class-wc-coupon.php:790
-msgid "Coupon does not exist!"
-msgstr "Kuponkia ei ole olemassa!"
+#: includes/class-wc-coupon.php:705
+msgid "Coupon \"%s\" does not exist!"
+msgstr ""
 
-#: includes/class-wc-coupon.php:710
+#: includes/class-wc-coupon.php:708
 msgid ""
 "Sorry, it seems the coupon \"%s\" is invalid - it has now been removed from "
 "your order."
 msgstr "Pahoittelemme, kuponki '%s' ei kelpaa – se on nyt irrotettu tilauksesta."
 
-#: includes/class-wc-coupon.php:713
+#: includes/class-wc-coupon.php:711
 msgid ""
 "Sorry, it seems the coupon \"%s\" is not yours - it has now been removed "
 "from your order."
 msgstr "Pahoittelemme, kuponki '%s' ei liity tiliisi – se on nyt irrotettu tilauksesta."
 
-#: includes/class-wc-coupon.php:716
+#: includes/class-wc-coupon.php:714
 msgid "Coupon code already applied!"
 msgstr "Alennuskoodi on jo käytetty!"
 
-#: includes/class-wc-coupon.php:719
+#: includes/class-wc-coupon.php:717
 msgid ""
 "Sorry, coupon \"%s\" has already been applied and cannot be used in "
 "conjunction with other coupons."
 msgstr "Pahoittelemme, \"%s\" kuponki on jo asetettu ja sitä ei voi käyttää muun kupongin kanssa."
 
-#: includes/class-wc-coupon.php:722
+#: includes/class-wc-coupon.php:720
 msgid "Coupon usage limit has been reached."
 msgstr "Kupongin käyttöraja on saavutettu."
 
-#: includes/class-wc-coupon.php:725
+#: includes/class-wc-coupon.php:723
 msgid "This coupon has expired."
 msgstr "Kupongin voimassaolo on päättynyt."
 
-#: includes/class-wc-coupon.php:728
+#: includes/class-wc-coupon.php:726
 msgid "The minimum spend for this coupon is %s."
 msgstr "Kupongin (hyväksymisen) minimiostos on %s."
 
-#: includes/class-wc-coupon.php:731
+#: includes/class-wc-coupon.php:729
 msgid "The maximum spend for this coupon is %s."
 msgstr "Kupongilla kulutettava maksimi on %s."
 
-#: includes/class-wc-coupon.php:734
+#: includes/class-wc-coupon.php:732
 msgid "Sorry, this coupon is not applicable to your cart contents."
 msgstr "Pahoittelemme, kuponkia ei voi käyttää ostoskorissa oleville tuotteille."
 
-#: includes/class-wc-coupon.php:747
+#: includes/class-wc-coupon.php:745
 msgid "Sorry, this coupon is not applicable to the products: %s."
 msgstr "Pahoittelemme, kuponkia ei voi käyttää tuotteille: %s."
 
-#: includes/class-wc-coupon.php:767
+#: includes/class-wc-coupon.php:765
 msgid "Sorry, this coupon is not applicable to the categories: %s."
 msgstr "Pahoittelemme, kuponkia ei voi käyttää osaston %s tuotteille."
 
-#: includes/class-wc-coupon.php:770
+#: includes/class-wc-coupon.php:768
 msgid "Sorry, this coupon is not valid for sale items."
 msgstr "Pahoittelemme, kuponkia ei voi käyttää tarjoustuotteille."
 
-#: includes/class-wc-coupon.php:793
+#: includes/class-wc-coupon.php:788
+msgid "Coupon does not exist!"
+msgstr "Kuponkia ei ole olemassa!"
+
+#: includes/class-wc-coupon.php:791
 msgid "Please enter a coupon code."
 msgstr "Kirjoita kupongin koodi, ole hyvä"
 
@@ -7198,15 +7202,15 @@ msgstr "PayPal hyväksyntämerkki -Acceptance Mark"
 msgid "What is PayPal?"
 msgstr "Mikä PayPal on?"
 
-#: includes/gateways/paypal/class-wc-gateway-paypal.php:203
+#: includes/gateways/paypal/class-wc-gateway-paypal.php:204
 msgid "Gateway Disabled"
 msgstr "Maksukäytävä ei ole käytössä"
 
-#: includes/gateways/paypal/class-wc-gateway-paypal.php:203
+#: includes/gateways/paypal/class-wc-gateway-paypal.php:204
 msgid "PayPal does not support your store currency."
 msgstr "PayPal ei tue verkkokauppasi käyttämää valuuttaa."
 
-#: includes/gateways/paypal/class-wc-gateway-paypal.php:291
+#: includes/gateways/paypal/class-wc-gateway-paypal.php:292
 msgid "Refunded %s - Refund ID: %s"
 msgstr "Hyvitetty %s - Hyvityksen tunnus ID: %s"
 
@@ -9989,12 +9993,12 @@ msgctxt "Order date parsed by strftime"
 msgid "%b %d, %Y @ %I:%M %p"
 msgstr "%d %b %Y @ %k:%M"
 
-#: includes/wc-page-functions.php:106
+#: includes/wc-page-functions.php:112
 msgctxt "edit-address-slug"
 msgid "billing"
 msgstr "laskutus"
 
-#: includes/wc-page-functions.php:107
+#: includes/wc-page-functions.php:113
 msgctxt "edit-address-slug"
 msgid "shipping"
 msgstr "toimitus"
