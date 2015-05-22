@@ -77,6 +77,7 @@ namespace :deploy do
   end
 
 end" > "$HOME/Projects/$PROJECTNAME/config/deploy.rb"
+echo "${boldgreen}deploy.rb generated${txtreset}"
 echo "${yellow}Generating staging.rb${txtreset}"
 echo "role :app, %w{YOUR_STAGING_USERNAME_HERE@YOUR_STAGING_SERVER_HERE}
 
@@ -147,12 +148,12 @@ set :ssh_options, {
     forward_agent: \"true\"
 }
 
-set :deploy_to, \"/home/#{fetch(:application)}/deploy/\"
+set :deploy_to, \"/home/$PROJECTNAME/deploy/\"
 set :deploy_via, :remote_cache
 set :use_sudo, false
 set :keep_releases, 2
-set :tmp_dir, \"/home/#{fetch(:application)}/tmp\"
-SSHKit.config.command_map[:composer] = \"/home/#{fetch(:application)}/bin/composer\"
+set :tmp_dir, \"/home/$PROJECTNAME/tmp\"
+SSHKit.config.command_map[:composer] = \"/home/$PROJECTNAME/bin/composer\"
 
 namespace :deploy do
 
@@ -169,12 +170,26 @@ namespace :deploy do
     task :finished do
         on roles(:app) do
 
-            execute \"rm -f /home/#{fetch(:application)}/www.#{fetch(:application)}.fi/content && ln -nfs #{current_path}/content /home/#{fetch(:application)}/www.#{fetch(:application)}.fi/content\"
-            execute \"rm -f /home/#{fetch(:application)}/www.#{fetch(:application)}.fi/index.php && ln -nfs #{current_path}/index.php /home/#{fetch(:application)}/www.#{fetch(:application)}.fi/index.php\"
-            execute \"rm -f /home/#{fetch(:application)}/www.#{fetch(:application)}.fi/wp-config.php && ln -nfs #{current_path}/wp-config.php /home/#{fetch(:application)}/www.#{fetch(:application)}.fi/wp-config.php\"
-            execute \"rm -f /home/#{fetch(:application)}/www.#{fetch(:application)}.fi/wp && ln -nfs #{current_path}/wp /home/#{fetch(:application)}/www.#{fetch(:application)}.fi/wp\"
-            execute \"rm -f /home/#{fetch(:application)}/www.#{fetch(:application)}.fi/vendor && ln -nfs #{current_path}/vendor /home/#{fetch(:application)}/www.#{fetch(:application)}.fi/vendor\"
-            execute \"rm -f /home/#{fetch(:application)}/www.#{fetch(:application)}.fi/config && ln -nfs #{current_path}/config /home/#{fetch(:application)}/www.#{fetch(:application)}.fi/config\"
+            execute \"rm -f /home/$PROJECTNAME/www.$PROJECTNAME.fi/content && ln -nfs #{current_path}/content /home/$PROJECTNAME/www.$PROJECTNAME.fi/content\"
+            execute \"rm -f /home/$PROJECTNAME/www.$PROJECTNAME.fi/index.php && ln -nfs #{current_path}/index.php /home/$PROJECTNAME/www.$PROJECTNAME.fi/index.php\"
+            execute \"rm -f /home/$PROJECTNAME/www.$PROJECTNAME.fi/wp-config.php && ln -nfs #{current_path}/wp-config.php /home/$PROJECTNAME/www.$PROJECTNAME.fi/wp-config.php\"
+            execute \"rm -f /home/$PROJECTNAME/www.$PROJECTNAME.fi/wp && ln -nfs #{current_path}/wp /home/$PROJECTNAME/www.$PROJECTNAME.fi/wp\"
+            execute \"rm -f /home/$PROJECTNAME/www.$PROJECTNAME.fi/vendor && ln -nfs #{current_path}/vendor /home/$PROJECTNAME/www.$PROJECTNAME.fi/vendor\"
+            execute \"rm -f /home/$PROJECTNAME/www.$PROJECTNAME.fi/config && ln -nfs #{current_path}/config /home/$PROJECTNAME/www.$PROJECTNAME.fi/config\"
+
+            # Media library:
+            execute \"rm -f /home/$PROJECTNAME/www.$PROJECTNAME.fi/media && ln -nfs #{current_path}/media /home/$PROJECTNAME/www.$PROJECTNAME.fi/media\"
+            execute \"chmod -R 775 #{current_path}/media\"
+
+            # Permissions:
+            execute \"chmod 755 #{current_path}/content\"
+            #execute \"chmod -Rv 755 #{current_path}/content/wp-rocket-config\"
+
+            # WP-CLI (optional):
+            #within release_path do
+            #    execute \"cd #{current_path} && vendor/wp-cli/wp-cli/bin/wp --path=/home/$PROJECTNAME/www.$PROJECTNAME.fi/wp rocket regenerate --file=advanced-cache\"
+            #    execute \"cd #{current_path} && vendor/wp-cli/wp-cli/bin/wp --path=//home/$PROJECTNAME/www.$PROJECTNAME.fi/wp rocket regenerate --file=htaccess\"
+            #end
 
         end
     end
@@ -266,7 +281,7 @@ if (!defined('ABSPATH')) {
   define('ABSPATH', \$root_dir . '/wp/');
 }
 " > config/application.php
-echo "${boldgreen}deploy.rb generated${txtreset}"
+echo "${boldgreen}application.php (modern wp-config) generated${txtreset}"
 echo "${yellow}Updating WordPress related stuff...:${txtreset}"
 cp $HOME/Projects/dudestack/composer.json "$HOME/Projects/$PROJECTNAME/composer.json"
 cd "$HOME/Projects/$PROJECTNAME/"

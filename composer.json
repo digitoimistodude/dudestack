@@ -53,6 +53,7 @@
     "koodimonni-language/fi": "*",
     "koodimonni-language/en_gb": "*",
     "composer/installers": "v1.0.12",
+    "wp-cli/wp-cli": "*",
     "vlucas/phpdotenv": "~1.0.6",
     "facebook/php-sdk": "dev-master",
     "wpackagist-plugin/wordpress-seo":"*",
