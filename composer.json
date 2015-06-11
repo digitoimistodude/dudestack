@@ -20,7 +20,7 @@
   "require": {
     "ronilaukkarinen/dudestack": "dev-master"
   },
-  "config": {
+   "config": {
     "preferred-install": "dist",
     "generate-salts": true
   },
@@ -28,8 +28,8 @@
     "psr-4": {"Roots\\Bedrock\\": "scripts/Roots/Bedrock"}
   },
   "scripts": {
-    "post-root-package-install": ["Bedrock\\Installer::addSalts"]
-  },
+    "post-root-package-install": ["Roots\\Bedrock\\Installer::addSalts"]
+   },
   "repositories": [
     {
       "type": "composer",
