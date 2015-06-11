@@ -5,7 +5,7 @@ Dudestack is a modern WordPress stack that helps you get started with the best d
 
 #### Background
 
-We're constantly developing our development workflow. Honestly, I think I've been through hundreds of articles, tools and scripts. Went with regular WordPress structure, different wp-configs and [Dandelion](https://github.com/scttnlsn/dandelion) for a long time, but realized in some point I have to get some sense to it all. Setting up things should not be the most time consuming task when starting a new project.
+We're constantly developing our development workflow. Honestly, I think we've been through hundreds of articles, tools and scripts. Went with regular WordPress structure, different wp-configs and [Dandelion](https://github.com/scttnlsn/dandelion) for a long time, but realized in some point we have to get some sense to it all. Setting up things should not be the most time consuming task when starting a new project.
 
 I love [Bedrock](https://github.com/roots/bedrock), which is a is a modern WordPress stack that helps you get started with the best development tools and project structure. Bedrock contains the tools I've been already using, but more. In fact, I'm proud to say that most of this stack is based on [Bedrock](https://github.com/roots/bedrock).
 
@@ -15,9 +15,9 @@ Like bedrock, dudestack saves you hours when starting a new project.
 
 Well, this is mainly a toolbox for a web agency Digitoimisto Dude Oy as well as for backup purposes and to show off how we roll. You should use this if you really like how we do things.
 
-Despite the fact I love most of Bedrock, I noticed there are some things we don't like.
+Despite the fact we love most of Bedrock, we noticed there are some things we don't like.
 
-* Stuff were originally in app/ by default. I prefer content/. It describes it better, since we do not want this to be too programming-oriented, but more front end developer -friendly (for developing WordPress themes and functions)
+* Stuff were originally in app/ by default. We prefer content/, like it was `wp-content` for a reason. It describes it better, since we do not want this to be too programming-oriented, but more front end developer -friendly (for developing WordPress themes and functions)
 * Composer modifications, for installing more packages, like Finnish based language packs etc. that are not originally part of Bedrock
 * Automation. I mean composer's `create-project` is awesome, but we need more. You still need to do stuff after `create-project` and our createproject -starting script is designed for automating the rest.
 
@@ -72,7 +72,7 @@ If you are starting from clean slate, better yet, run Bitbucket's tutorial [Set 
 
 ## Starting a new project with createproject bash script
 
-Creating a new project has a lot of configs to do. I wanted to automate most of it by creating a bash script called `createproject.sh`. The script assumes:
+Creating a new project has a lot of configs to do. We wanted to automate most of it by creating a bash script called `createproject.sh`. The script assumes:
 
 - You are using staging server like customer.example.com and you store your customers' sites like customer.example.com/customerone. Your staging server user has proper permissions like making changes to /tmp
 - You are using separate production server that may necessarily not have all the permissions like writing in /tmp dir
@@ -109,7 +109,7 @@ Creating a new project has a lot of configs to do. I wanted to automate most of 
 - You will need gulp or grunt, feel free to use [our devpackages - gulpfile and npm package settings etc.](https://github.com/digitoimistodude/devpackages) designed for this purpose
 
 **Note:**
-- This is a starter package without theme configs. I leave theme development up to you entirely. We have our own starter theme that relies on this package but we're not (at least yet) willing to share it
+- This is a starter package without theme configs. We leave theme development up to you entirely. We have our own starter theme that relies on this package but we're not (at least yet) willing to share it
 - You are accepting the fact this is only one of the ways to do things and things are not staying this way forever, everything changes as you read this :)
 
 ## Getting started
@@ -179,7 +179,7 @@ Gravityforms and some other plugins have urls that expire after some time, so to
       }
 ```
 
-In the similar manner you can add other plugins. I've covered with this almost every plugin I use.
+In the similar manner you can add other plugins. I've covered with this almost every plugin we use.
 
 When getting the new zip, I use this function in my `~/.bashrc`:
 
