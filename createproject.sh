@@ -320,28 +320,28 @@ core install:
 
 # These syntaxes are for vagrant:
 
-ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp core install --title=$PROJECTNAME --admin_email=YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE"
+ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp core install --title=$PROJECTNAME --admin_email=YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE"
 echo "${yellow}Removing default WordPress posts...:${txtreset}"
-ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp post delete 1 --force"
-ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp post delete 2 --force"
-ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp option update blogdescription ''"
-ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp theme delete twentytwelve"
-ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp theme delete twentythirteen"
-ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp option update permalink_structure '/%postname%'"
-ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp option update timezone_string 'Europe/Helsinki'"
+ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp post delete 1 --force"
+ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp post delete 2 --force"
+ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update blogdescription ''"
+ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp theme delete twentytwelve"
+ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp theme delete twentythirteen"
+ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update permalink_structure '/%postname%'"
+ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update timezone_string 'Europe/Helsinki'"
 echo "${yellow}Activating necessary plugins, mainly for theme development...:${txtreset}"
-ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp plugin activate wordpress-seo"
-ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp plugin activate wp-last-login"
+ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin activate wordpress-seo"
+ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin activate wp-last-login"
 chmod 777 "$HOME/Projects/$PROJECTNAME/content"
 
 ## You can set up extra users here - if you want, uncomment next lines
 #####################################################################
 
 #echo "${yellow}Setting up users...:${txtreset}"
-#ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp user update admin --display_name=\"Your Company Ltd\""
-#ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp user update admin --first_name=\"Your Company Ltd\""
-#ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp user create user1 user1@yourcompanyltd.com --role=administrator --user_pass=somepass --first_name=John --last_name=Doe --display_name=John"
-#ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;wp user create user2 user2@yourcompanyltd.com --role=administrator --user_pass=somepass --first_name=Marilyn --last_name=Manson --display_name=Marilyn"
+#ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp user update admin --display_name=\"Your Company Ltd\""
+#ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp user update admin --first_name=\"Your Company Ltd\""
+#ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp user create user1 user1@yourcompanyltd.com --role=administrator --user_pass=somepass --first_name=John --last_name=Doe --display_name=John"
+#ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp user create user2 user2@yourcompanyltd.com --role=administrator --user_pass=somepass --first_name=Marilyn --last_name=Manson --display_name=Marilyn"
 
 echo "${yellow}Set up .htaccess for pretty urls...:${txtreset}"
 echo "<IfModule mod_rewrite.c>
@@ -366,6 +366,8 @@ AddType font/woff .woff
 chmod 777 .htaccess
 echo "${yellow}Setting uploads permissions...:${txtreset}"
 chmod -Rv 777 "$HOME/Projects/$PROJECTNAME/content/uploads"
+# mkdir -p "$HOME/Projects/$PROJECTNAME/media"
+# chmod -Rv 777 "$HOME/Projects/$PROJECTNAME/media"
 
 rm "$HOME/Projects/$PROJECTNAME/createproject.sh"
 rm "$HOME/Projects/$PROJECTNAME/setup.sh"
