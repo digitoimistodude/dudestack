@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce\n"
 "Report-Msgid-Bugs-To: https://github.com/woothemes/woocommerce/issues\n"
-"POT-Creation-Date: 2015-06-01 14:24:01+00:00\n"
-"PO-Revision-Date: 2015-06-01 14:26+0000\n"
-"Last-Translator: Claudio Sanches <contato@claudiosmweb.com>\n"
+"POT-Creation-Date: 2015-06-09 14:43:59+00:00\n"
+"PO-Revision-Date: 2015-06-01 16:09+0000\n"
+"Last-Translator: Arhi Paivarinta <info@swratkaisut.com>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/woocommerce/language/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: fi\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: grunt-wp-i18n 0.4.9\n"
+"X-Generator: grunt-wp-i18n 0.5.2\n"
 
 #. Plugin Name of the plugin/theme
 msgid "WooCommerce"
@@ -720,7 +720,7 @@ msgstr "Toiminto ei onnistunut. Päivitä sivu ja yritä uudelleen."
 
 #: includes/admin/class-wc-admin-notices.php:105
 msgid "Cheatin&#8217; huh?"
-msgstr ""
+msgstr "Huijaatko?"
 
 #: includes/admin/class-wc-admin-permalink-settings.php:36
 msgid "Product permalink base"
@@ -3047,13 +3047,13 @@ msgstr "Tuotetunnuksen (SKU) täytyy olla muista poikkeava."
 msgid ""
 "The downloadable file %s cannot be used as it does not have an allowed file "
 "type. Allowed types include: %s"
-msgstr ""
+msgstr "Ladattavaa tiedostoa %s ei voi käyttää koska tiedoston muotoa ei hyväksytä. Hyväksyttyjä tiedostomuotoja ovat: %s"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:1266
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:1538
 msgid ""
 "The downloadable file %s cannot be used as it does not exist on the server."
-msgstr ""
+msgstr "Ladattavaa tiedostoa %s ei voi käyttää koska sitä ei ole palvelimella."
 
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:1367
 msgid "Variation #%s of %s"

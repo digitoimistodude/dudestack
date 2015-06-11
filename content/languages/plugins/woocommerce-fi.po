@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce\n"
 "Report-Msgid-Bugs-To: https://github.com/woothemes/woocommerce/issues\n"
-"POT-Creation-Date: 2015-06-01 14:24:00+00:00\n"
-"PO-Revision-Date: 2015-06-01 14:26+0000\n"
+"POT-Creation-Date: 2015-06-09 14:43:59+00:00\n"
+"PO-Revision-Date: 2015-06-09 14:49+0000\n"
 "Last-Translator: Claudio Sanches <contato@claudiosmweb.com>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/woocommerce/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -16,11 +16,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: fi\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: grunt-wp-i18n 0.4.9\n"
+"X-Generator: grunt-wp-i18n 0.5.2\n"
 
 #: i18n/countries.php:18
 msgid "Afghanistan"
-msgstr ""
+msgstr "Afghanistan"
 
 #: i18n/countries.php:19
 msgid "&#197;land Islands"
@@ -1519,8 +1519,8 @@ msgid "New Brunswick"
 msgstr "New Brunswick"
 
 #: i18n/states/CA.php:17
-msgid "Newfoundland"
-msgstr "Newfoundland"
+msgid "Newfoundland and Labrador"
+msgstr ""
 
 #: i18n/states/CA.php:18
 msgid "Northwest Territories"
@@ -2172,7 +2172,7 @@ msgstr "Länsi-Papua"
 
 #: i18n/states/IN.php:13
 msgid "Andhra Pradesh"
-msgstr ""
+msgstr "Andhra Pradesh"
 
 #: i18n/states/IN.php:14
 msgid "Arunachal Pradesh"
@@ -3720,331 +3720,331 @@ msgstr "Ucayali"
 
 #: i18n/states/PH.php:12
 msgid "Abra"
-msgstr ""
+msgstr "Abra"
 
 #: i18n/states/PH.php:13
 msgid "Agusan del Norte"
-msgstr ""
+msgstr "Agusan del Norte"
 
 #: i18n/states/PH.php:14
 msgid "Agusan del Sur"
-msgstr ""
+msgstr "Agusan del Sur"
 
 #: i18n/states/PH.php:15
 msgid "Aklan"
-msgstr ""
+msgstr "Aklan"
 
 #: i18n/states/PH.php:16
 msgid "Albay"
-msgstr ""
+msgstr "Albay"
 
 #: i18n/states/PH.php:17
 msgid "Antique"
-msgstr ""
+msgstr "Antique"
 
 #: i18n/states/PH.php:18
 msgid "Apayao"
-msgstr ""
+msgstr "Apayao"
 
 #: i18n/states/PH.php:19
 msgid "Aurora"
-msgstr ""
+msgstr "Aurora"
 
 #: i18n/states/PH.php:20
 msgid "Basilan"
-msgstr ""
+msgstr "Basilan"
 
 #: i18n/states/PH.php:21
 msgid "Bataan"
-msgstr ""
+msgstr "Bataan"
 
 #: i18n/states/PH.php:22
 msgid "Batanes"
-msgstr ""
+msgstr "Batanes"
 
 #: i18n/states/PH.php:23
 msgid "Batangas"
-msgstr ""
+msgstr "Batangas"
 
 #: i18n/states/PH.php:24
 msgid "Benguet"
-msgstr ""
+msgstr "Benguet"
 
 #: i18n/states/PH.php:25
 msgid "Biliran"
-msgstr ""
+msgstr "Biliran"
 
 #: i18n/states/PH.php:26
 msgid "Bohol"
-msgstr ""
+msgstr "Bohol"
 
 #: i18n/states/PH.php:27
 msgid "Bukidnon"
-msgstr ""
+msgstr "Bukidnon"
 
 #: i18n/states/PH.php:28
 msgid "Bulacan"
-msgstr ""
+msgstr "Bulacan"
 
 #: i18n/states/PH.php:29
 msgid "Cagayan"
-msgstr ""
+msgstr "Cagayan"
 
 #: i18n/states/PH.php:30
 msgid "Camarines Norte"
-msgstr ""
+msgstr "Camarines Norte"
 
 #: i18n/states/PH.php:31
 msgid "Camarines Sur"
-msgstr ""
+msgstr "Camarines Sur"
 
 #: i18n/states/PH.php:32
 msgid "Camiguin"
-msgstr ""
+msgstr "Camiguin"
 
 #: i18n/states/PH.php:33
 msgid "Capiz"
-msgstr ""
+msgstr "Capiz"
 
 #: i18n/states/PH.php:34
 msgid "Catanduanes"
-msgstr ""
+msgstr "Catanduanes"
 
 #: i18n/states/PH.php:35
 msgid "Cavite"
-msgstr ""
+msgstr "Cavite"
 
 #: i18n/states/PH.php:36
 msgid "Cebu"
-msgstr ""
+msgstr "Cebu"
 
 #: i18n/states/PH.php:37
 msgid "Compostela Valley"
-msgstr ""
+msgstr "Compostela Valley"
 
 #: i18n/states/PH.php:38
 msgid "Cotabato"
-msgstr ""
+msgstr "Cotabato"
 
 #: i18n/states/PH.php:39
 msgid "Davao del Norte"
-msgstr ""
+msgstr "Davao del Norte"
 
 #: i18n/states/PH.php:40
 msgid "Davao del Sur"
-msgstr ""
+msgstr "Davao del Sur"
 
 #: i18n/states/PH.php:41
 msgid "Davao Occidental"
-msgstr ""
+msgstr "Davao Occidental"
 
 #: i18n/states/PH.php:42
 msgid "Davao Oriental"
-msgstr ""
+msgstr "Davao Oriental"
 
 #: i18n/states/PH.php:43
 msgid "Dinagat Islands"
-msgstr ""
+msgstr "Dinagat Islands"
 
 #: i18n/states/PH.php:44
 msgid "Eastern Samar"
-msgstr ""
+msgstr "Eastern Samar"
 
 #: i18n/states/PH.php:45
 msgid "Guimaras"
-msgstr ""
+msgstr "Guimaras"
 
 #: i18n/states/PH.php:46
 msgid "Ifugao"
-msgstr ""
+msgstr "Ifugao"
 
 #: i18n/states/PH.php:47
 msgid "Ilocos Norte"
-msgstr ""
+msgstr "Ilocos Norte"
 
 #: i18n/states/PH.php:48
 msgid "Ilocos Sur"
-msgstr ""
+msgstr "Ilocos Sur"
 
 #: i18n/states/PH.php:49
 msgid "Iloilo"
-msgstr ""
+msgstr "Iloilo"
 
 #: i18n/states/PH.php:50
 msgid "Isabela"
-msgstr ""
+msgstr "Isabela"
 
 #: i18n/states/PH.php:51
 msgid "Kalinga"
-msgstr ""
+msgstr "Kalinga"
 
 #: i18n/states/PH.php:52
 msgid "La Union"
-msgstr ""
+msgstr "La Union"
 
 #: i18n/states/PH.php:53
 msgid "Laguna"
-msgstr ""
+msgstr "Laguna"
 
 #: i18n/states/PH.php:54
 msgid "Lanao del Norte"
-msgstr ""
+msgstr "Lanao del Norte"
 
 #: i18n/states/PH.php:55
 msgid "Lanao del Sur"
-msgstr ""
+msgstr "Lanao del Sur"
 
 #: i18n/states/PH.php:56
 msgid "Leyte"
-msgstr ""
+msgstr "Leyte"
 
 #: i18n/states/PH.php:57
 msgid "Maguindanao"
-msgstr ""
+msgstr "Maguindanao"
 
 #: i18n/states/PH.php:58
 msgid "Marinduque"
-msgstr ""
+msgstr "Marinduque"
 
 #: i18n/states/PH.php:59
 msgid "Masbate"
-msgstr ""
+msgstr "Masbate"
 
 #: i18n/states/PH.php:60
 msgid "Misamis Occidental"
-msgstr ""
+msgstr "Misamis Occidental"
 
 #: i18n/states/PH.php:61
 msgid "Misamis Oriental"
-msgstr ""
+msgstr "Misamis Oriental"
 
 #: i18n/states/PH.php:62
 msgid "Mountain Province"
-msgstr ""
+msgstr "Mountain Province"
 
 #: i18n/states/PH.php:63
 msgid "Negros Occidental"
-msgstr ""
+msgstr "Negros Occidental"
 
 #: i18n/states/PH.php:64
 msgid "Negros Oriental"
-msgstr ""
+msgstr "Negros Oriental"
 
 #: i18n/states/PH.php:65
 msgid "Northern Samar"
-msgstr ""
+msgstr "Northern Samar"
 
 #: i18n/states/PH.php:66
 msgid "Nueva Ecija"
-msgstr ""
+msgstr "Nueva Ecija"
 
 #: i18n/states/PH.php:67
 msgid "Nueva Vizcaya"
-msgstr ""
+msgstr "Nueva Vizcaya"
 
 #: i18n/states/PH.php:68
 msgid "Occidental Mindoro"
-msgstr ""
+msgstr "Occidental Mindoro"
 
 #: i18n/states/PH.php:69
 msgid "Oriental Mindoro"
-msgstr ""
+msgstr "Oriental Mindoro"
 
 #: i18n/states/PH.php:70
 msgid "Palawan"
-msgstr ""
+msgstr "Palawan"
 
 #: i18n/states/PH.php:71
 msgid "Pampanga"
-msgstr ""
+msgstr "Pampanga"
 
 #: i18n/states/PH.php:72
 msgid "Pangasinan"
-msgstr ""
+msgstr "Pangasinan"
 
 #: i18n/states/PH.php:73
 msgid "Quezon"
-msgstr ""
+msgstr "Quezon"
 
 #: i18n/states/PH.php:74
 msgid "Quirino"
-msgstr ""
+msgstr "Quirino"
 
 #: i18n/states/PH.php:75
 msgid "Rizal"
-msgstr ""
+msgstr "Rizal"
 
 #: i18n/states/PH.php:76
 msgid "Romblon"
-msgstr ""
+msgstr "Romblon"
 
 #: i18n/states/PH.php:77
 msgid "Samar"
-msgstr ""
+msgstr "Samar"
 
 #: i18n/states/PH.php:78
 msgid "Sarangani"
-msgstr ""
+msgstr "Sarangani"
 
 #: i18n/states/PH.php:79
 msgid "Siquijor"
-msgstr ""
+msgstr "Siquijor"
 
 #: i18n/states/PH.php:80
 msgid "Sorsogon"
-msgstr ""
+msgstr "Sorsogon"
 
 #: i18n/states/PH.php:81
 msgid "South Cotabato"
-msgstr ""
+msgstr "South Cotabato"
 
 #: i18n/states/PH.php:82
 msgid "Southern Leyte"
-msgstr ""
+msgstr "Southern Leyte"
 
 #: i18n/states/PH.php:83
 msgid "Sultan Kudarat"
-msgstr ""
+msgstr "Sultan Kudarat"
 
 #: i18n/states/PH.php:84
 msgid "Sulu"
-msgstr ""
+msgstr "Sulu"
 
 #: i18n/states/PH.php:85
 msgid "Surigao del Norte"
-msgstr ""
+msgstr "Surigao del Norte"
 
 #: i18n/states/PH.php:86
 msgid "Surigao del Sur"
-msgstr ""
+msgstr "Surigao del Sur"
 
 #: i18n/states/PH.php:87
 msgid "Tarlac"
-msgstr ""
+msgstr "Tarlac"
 
 #: i18n/states/PH.php:88
 msgid "Tawi-Tawi"
-msgstr ""
+msgstr "Tawi-Tawi"
 
 #: i18n/states/PH.php:89
 msgid "Zambales"
-msgstr ""
+msgstr "Zambales"
 
 #: i18n/states/PH.php:90
 msgid "Zamboanga del Norte"
-msgstr ""
+msgstr "Zamboanga del Norte"
 
 #: i18n/states/PH.php:91
 msgid "Zamboanga del Sur"
-msgstr ""
+msgstr "Zamboanga del Sur"
 
 #: i18n/states/PH.php:92
 msgid "Zamboanga Sibugay"
-msgstr ""
+msgstr "Zamboanga Sibugay"
 
 #: i18n/states/PH.php:93
 msgid "Metro Manila"
-msgstr ""
+msgstr "Metro Manila"
 
 #: i18n/states/TH.php:13
 msgid ""
@@ -5346,155 +5346,155 @@ msgstr "Tuotteen tunnus -ID- tarvitaan"
 msgid "Product ID provided does not match this line item"
 msgstr "Tuotteelle annettu tunnus -ID- on sopimaton tämän rivin tuotteelle"
 
-#: includes/api/class-wc-api-orders.php:866
+#: includes/api/class-wc-api-orders.php:868
 msgid "Product is invalid"
 msgstr "Tuote ei ole kelvollinen"
 
-#: includes/api/class-wc-api-orders.php:871
+#: includes/api/class-wc-api-orders.php:873
 msgid "Product quantity must be a positive float"
 msgstr "Tuotteen määrä on oltava positiivinen liukuluku"
 
-#: includes/api/class-wc-api-orders.php:876
+#: includes/api/class-wc-api-orders.php:878
 msgid "Product quantity is required"
 msgstr "Tuotteen määrä tarvitaan"
 
-#: includes/api/class-wc-api-orders.php:890
+#: includes/api/class-wc-api-orders.php:892
 msgid "The product variation is invalid"
 msgstr "Tuotteen muunnelma ei kelpaa"
 
-#: includes/api/class-wc-api-orders.php:921
+#: includes/api/class-wc-api-orders.php:923
 msgid "Cannot create line item, try again"
 msgstr "Rivin tuotetta ei voitu luoda, yritä uudelleen"
 
-#: includes/api/class-wc-api-orders.php:929
+#: includes/api/class-wc-api-orders.php:931
 msgid "Cannot update line item, try again"
 msgstr "Rivin tuotetta ei voitu päivittää, yritä uudelleen"
 
-#: includes/api/class-wc-api-orders.php:947
+#: includes/api/class-wc-api-orders.php:1000
 msgid "Shipping total must be a positive amount"
 msgstr "Toimituskulujen summa on oltava positiivinen"
 
-#: includes/api/class-wc-api-orders.php:954
+#: includes/api/class-wc-api-orders.php:1007
 msgid "Shipping method ID is required"
 msgstr "Toimitustavan tunnus -ID- tarvitaan"
 
-#: includes/api/class-wc-api-orders.php:962
+#: includes/api/class-wc-api-orders.php:1015
 msgid "Cannot create shipping method, try again"
 msgstr "Toimitustapaa ei voitu luoda, yritä uudelleen"
 
-#: includes/api/class-wc-api-orders.php:984
+#: includes/api/class-wc-api-orders.php:1037
 msgid "Cannot update shipping method, try again"
 msgstr "Toimitustapaa ei voitu päivittää, yritä uudelleen"
 
-#: includes/api/class-wc-api-orders.php:1004
+#: includes/api/class-wc-api-orders.php:1057
 msgid "Fee title is required"
 msgstr "Maksun otsikko tarvitaan"
 
-#: includes/api/class-wc-api-orders.php:1016
+#: includes/api/class-wc-api-orders.php:1069
 msgid "Fee tax class is required when fee is taxable"
 msgstr "Maksun veroluokka tarvitaan kun maksu on verollinen"
 
-#: includes/api/class-wc-api-orders.php:1037
+#: includes/api/class-wc-api-orders.php:1090
 msgid "Cannot create fee, try again"
 msgstr "Maksua ei voitu luoda, yritä uudelleen"
 
-#: includes/api/class-wc-api-orders.php:1063
+#: includes/api/class-wc-api-orders.php:1116
 msgid "Cannot update fee, try again"
 msgstr "Maksua ei voitu päivittää, yritä uudelleen"
 
-#: includes/api/class-wc-api-orders.php:1081
+#: includes/api/class-wc-api-orders.php:1134
 msgid "Coupon discount total must be a positive amount"
 msgstr "Kuponkien alennusten summa on oltava positiivinen"
 
-#: includes/api/class-wc-api-orders.php:1088
+#: includes/api/class-wc-api-orders.php:1141
 msgid "Coupon code is required"
 msgstr "Kupongin koodi tarvitaan"
 
-#: includes/api/class-wc-api-orders.php:1094
+#: includes/api/class-wc-api-orders.php:1147
 msgid "Cannot create coupon, try again"
 msgstr "Kuponkia ei voitu luoda, yritä uudelleen"
 
-#: includes/api/class-wc-api-orders.php:1112
+#: includes/api/class-wc-api-orders.php:1165
 msgid "Cannot update coupon, try again"
 msgstr "Kuponkia ei voitu päivittää, yritä uudelleen"
 
-#: includes/api/class-wc-api-orders.php:1177
-#: includes/api/class-wc-api-orders.php:1277
-#: includes/api/class-wc-api-orders.php:1339
+#: includes/api/class-wc-api-orders.php:1230
+#: includes/api/class-wc-api-orders.php:1330
+#: includes/api/class-wc-api-orders.php:1392
 msgid "Invalid order note ID"
 msgstr "Tilauksen kommentin tunnus -ID- ei kelpaa"
 
-#: includes/api/class-wc-api-orders.php:1183
-#: includes/api/class-wc-api-orders.php:1284
-#: includes/api/class-wc-api-orders.php:1346
+#: includes/api/class-wc-api-orders.php:1236
+#: includes/api/class-wc-api-orders.php:1337
+#: includes/api/class-wc-api-orders.php:1399
 msgid "An order note with the provided ID could not be found"
 msgstr "Annetulla tilauksen kommentin tunnuksella -ID- ei löytynyt kommenttia"
 
-#: includes/api/class-wc-api-orders.php:1213
+#: includes/api/class-wc-api-orders.php:1266
 msgid "You do not have permission to create order notes"
 msgstr "Et voi luoda tilauksen kommentteja. Tarvitset laajemmat oikeudet."
 
-#: includes/api/class-wc-api-orders.php:1228
+#: includes/api/class-wc-api-orders.php:1281
 msgid "Order note is required"
 msgstr "Tilaukselle tarvitaan kommentti"
 
-#: includes/api/class-wc-api-orders.php:1237
+#: includes/api/class-wc-api-orders.php:1290
 msgid "Cannot create order note, please try again"
 msgstr "Tialukselle ei voitu luoda kommenttia, yritä uudelleen"
 
-#: includes/api/class-wc-api-orders.php:1289
-#: includes/api/class-wc-api-orders.php:1351
+#: includes/api/class-wc-api-orders.php:1342
+#: includes/api/class-wc-api-orders.php:1404
 msgid "The order note ID provided is not associated with the order"
 msgstr "Tilauksen kommentille annettu tunnus -ID- ei ole liitetty tilaukseen"
 
-#: includes/api/class-wc-api-orders.php:1358
+#: includes/api/class-wc-api-orders.php:1411
 msgid "This order note cannot be deleted"
 msgstr "Tätä tilauksen kommenntia ei voi poistaa"
 
-#: includes/api/class-wc-api-orders.php:1363
+#: includes/api/class-wc-api-orders.php:1416
 msgid "Permanently deleted order note"
 msgstr "Pysyvästi poistettu tilauksen kommennti"
 
-#: includes/api/class-wc-api-orders.php:1424
-#: includes/api/class-wc-api-orders.php:1578
-#: includes/api/class-wc-api-orders.php:1637
+#: includes/api/class-wc-api-orders.php:1477
+#: includes/api/class-wc-api-orders.php:1631
+#: includes/api/class-wc-api-orders.php:1690
 msgid "Invalid order refund ID"
 msgstr "Tilauksen hyvityksen tunnus -ID- ei kelpaa"
 
-#: includes/api/class-wc-api-orders.php:1431
-#: includes/api/class-wc-api-orders.php:1585
-#: includes/api/class-wc-api-orders.php:1644
+#: includes/api/class-wc-api-orders.php:1484
+#: includes/api/class-wc-api-orders.php:1638
+#: includes/api/class-wc-api-orders.php:1697
 msgid "An order refund with the provided ID could not be found"
 msgstr "Annetulla tilauksen hyvityksen tunnuksella -ID- ei löytynyt hyvitystä"
 
-#: includes/api/class-wc-api-orders.php:1496
+#: includes/api/class-wc-api-orders.php:1549
 msgid "You do not have permission to create order refunds"
 msgstr "Et voi luoda tilauksille hyvityksiä. Tarvitset laajemmat oikeudet."
 
-#: includes/api/class-wc-api-orders.php:1502
+#: includes/api/class-wc-api-orders.php:1555
 msgid "Order ID is invalid"
 msgstr "Tilauksen tunnus -ID- ei kelpaa"
 
-#: includes/api/class-wc-api-orders.php:1509
+#: includes/api/class-wc-api-orders.php:1562
 msgid "Refund amount is required"
 msgstr "Hyvityksen määrä tarvitaan"
 
-#: includes/api/class-wc-api-orders.php:1511
+#: includes/api/class-wc-api-orders.php:1564
 msgid "Refund amount must be positive"
 msgstr "Hyvityksen määrä on oltava positiivinen"
 
-#: includes/api/class-wc-api-orders.php:1521
+#: includes/api/class-wc-api-orders.php:1574
 msgid "Cannot create order refund, please try again"
 msgstr "Tialukselle ei voitu luoda hyvitystä, yritä uudelleen"
 
-#: includes/api/class-wc-api-orders.php:1538
+#: includes/api/class-wc-api-orders.php:1591
 msgid ""
 "An error occurred while attempting to create the refund using the payment "
 "gateway API"
 msgstr "Tapahtui virhe kun yritettiin luoda hyvitys käyttäen maksukäytävän API:a"
 
-#: includes/api/class-wc-api-orders.php:1590
-#: includes/api/class-wc-api-orders.php:1649
+#: includes/api/class-wc-api-orders.php:1643
+#: includes/api/class-wc-api-orders.php:1702
 msgid "The order refund ID provided is not associated with the order"
 msgstr "Tilauksen hyvitykselle annettu tunnus -ID- ei ole liitetty tilaukseen"
 
@@ -5724,7 +5724,7 @@ msgid ""
 msgstr "Tuotteiden varastomääriä ei vähennetty – ehkä tuotteilla ei ole käytössä varastoseurantaa."
 
 #: includes/class-wc-ajax.php:1316 includes/class-wc-ajax.php:1317
-#: includes/class-wc-ajax.php:2050
+#: includes/class-wc-ajax.php:2051
 msgid "Item #%s stock increased from %s to %s."
 msgstr "Tuotteen #%s varastoa lisätty määrästä %s määrään %s."
 
@@ -5748,11 +5748,11 @@ msgstr "Arvo"
 msgid "Delete note"
 msgstr "Poista kommentti"
 
-#: includes/class-wc-ajax.php:1990
+#: includes/class-wc-ajax.php:1991
 msgid "Invalid refund amount"
 msgstr "Tilauksen hyvityksen määrä ei kelpaa"
 
-#: includes/class-wc-ajax.php:2035
+#: includes/class-wc-ajax.php:2036
 msgid "Refund failed"
 msgstr "Hyvitys epäonnistui"
 
@@ -5930,7 +5930,7 @@ msgstr "Toimitustapa ei kelpaa."
 msgid "Invalid payment method."
 msgstr "Maksutapa ei kelpaa."
 
-#: includes/class-wc-comments.php:184
+#: includes/class-wc-comments.php:191
 msgid "Please rate the product."
 msgstr "Arvostele tuote, ole hyvä."
 
@@ -7217,7 +7217,7 @@ msgstr "Pohja (malline) tiedosto poistettu teeman hakemistosta."
 
 #: includes/emails/class-wc-email.php:692
 msgid "Action failed. Please refresh the page and retry."
-msgstr ""
+msgstr "Toiminto ei onnistunut. Päivitä sivu ja yritä uudelleen."
 
 #: includes/emails/class-wc-email.php:752
 msgid "HTML template"
@@ -8950,17 +8950,17 @@ msgstr "WC 'Ominaisuuksilla haku' -suodattimet"
 msgid "Active Filters"
 msgstr "Käytössä suodattimet"
 
-#: includes/widgets/class-wc-widget-layered-nav-filters.php:81
-#: includes/widgets/class-wc-widget-layered-nav-filters.php:88
+#: includes/widgets/class-wc-widget-layered-nav-filters.php:86
 #: includes/widgets/class-wc-widget-layered-nav-filters.php:93
+#: includes/widgets/class-wc-widget-layered-nav-filters.php:98
 msgid "Remove filter"
 msgstr "Poista suodatin"
 
-#: includes/widgets/class-wc-widget-layered-nav-filters.php:88
+#: includes/widgets/class-wc-widget-layered-nav-filters.php:93
 msgid "Min"
 msgstr "Min"
 
-#: includes/widgets/class-wc-widget-layered-nav-filters.php:93
+#: includes/widgets/class-wc-widget-layered-nav-filters.php:98
 msgid "Max"
 msgstr "Max"
 

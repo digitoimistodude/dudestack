@@ -12,11 +12,10 @@
     }
   ],
   "keywords": [
-    "wordpress", "stack", "capistrano", "composer", "wp"
+    "bedrock", "roots", "wordpress", "stack", "composer", "vagrant", "wp"
   ],
   "support": {
-    "issues": "https://github.com/roots/bedrock/issues",
-    "forum": "http://discourse.roots.io/category/bedrock"
+    "issues": "https://github.com/digitoimistodude/dudestack/issues"
   },
   "require": {
     "ronilaukkarinen/dudestack": "dev-master"
@@ -52,9 +51,9 @@
     "johnpbloch/wordpress": "4.2.2",
     "koodimonni-language/fi": "*",
     "koodimonni-language/en_gb": "*",
-    "composer/installers": "v1.0.12",
+    "composer/installers": "~1.0.12",
     "wp-cli/wp-cli": "*",
-    "vlucas/phpdotenv": "~1.0.6",
+    "vlucas/phpdotenv": "~1.0.9",
     "facebook/php-sdk": "dev-master",
     "wpackagist-plugin/wordpress-seo":"*",
     "wpackagist-plugin/wp-last-login":"*",
