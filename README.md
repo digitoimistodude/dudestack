@@ -5,7 +5,7 @@ Dudestack is a modern WordPress stack that helps you get started with the best d
 
 #### Background
 
-I'm constantly developing my development workflow. Honestly, I think I've been through hundreds of articles, tools and scripts. Went with regular WordPress structure, different wp-configs and [Dandelion](https://github.com/scttnlsn/dandelion) for a long time, but realized in some point I have to get some sense to it all. Setting up things should not be the most time consuming task when starting a new project.
+We're constantly developing our development workflow. Honestly, I think I've been through hundreds of articles, tools and scripts. Went with regular WordPress structure, different wp-configs and [Dandelion](https://github.com/scttnlsn/dandelion) for a long time, but realized in some point I have to get some sense to it all. Setting up things should not be the most time consuming task when starting a new project.
 
 I love [Bedrock](https://github.com/roots/bedrock), which is a is a modern WordPress stack that helps you get started with the best development tools and project structure. Bedrock contains the tools I've been already using, but more. In fact, I'm proud to say that most of this stack is based on [Bedrock](https://github.com/roots/bedrock).
 
@@ -13,13 +13,13 @@ Like bedrock, dudestack saves you hours when starting a new project.
 
 #### How it's different, why should I use this?
 
-Well, this is mainly for myself for backup purposes or to show off how I roll. You should use this if you really like how I do things.
+Well, this is mainly a toolbox for a web agency Digitoimisto Dude Oy as well as for backup purposes and to show off how we roll. You should use this if you really like how we do things.
 
-Despite the fact I love most of bedrock, I noticed there's some things I don't like. Maybe little things for you, but some things matter to me. And I just want everything to be _mine_.
+Despite the fact I love most of Bedrock, I noticed there are some things we don't like.
 
-* Stuff are in app/ by default. I prefer content/. It describes it better, since I'm not a programmer and developing WordPress themes or plugins (that's what I do) is not exactly programming in my mind.
-* Composer modifications, getting latest finnish WordPress from sv.wordpress.org.
-* Automation. I mean composer's `create-project` is awesome, but I need more. You still need to do stuff after `create-project` and my createproject.sh is for designed for automating the rest.
+* Stuff were originally in app/ by default. I prefer content/. It describes it better, since we do not want this to be too programming-oriented, but more front end developer -friendly (for developing WordPress themes and functions)
+* Composer modifications, for installing more packages, like Finnish based language packs etc. that are not originally part of Bedrock
+* Automation. I mean composer's `create-project` is awesome, but we need more. You still need to do stuff after `create-project` and our createproject -starting script is designed for automating the rest.
 
 **You should modify things to your needs. Please note: This is not in any way tested with other people or or in different environments. Yet. Please address an issue if something goes south.** 
 
@@ -106,10 +106,10 @@ Creating a new project has a lot of configs to do. I wanted to automate most of 
 ### What you most probably need to edit in every project
 
 - Production server SSH-credentials and paths in config/deploy/production.rb because they are usually different in every project. If you have the same directory structure on your servers, you can edit createproject.sh so you don't repeat yourself in every project.
-- You will need gulp or grunt, feel free to use [my gulpfile and npm package settings](https://github.com/ronilaukkarinen/gulpfile-rolle) designed for this purpose
+- You will need gulp or grunt, feel free to use [our devpackages - gulpfile and npm package settings etc.](https://github.com/digitoimistodude/devpackages) designed for this purpose
 
 **Note:**
-- This is a starter package without theme configs. I leave theme development up to you entirely. I have my own starter theme that relies on this package but I'm not (yet) willing to share it
+- This is a starter package without theme configs. I leave theme development up to you entirely. We have our own starter theme that relies on this package but we're not (at least yet) willing to share it
 - You are accepting the fact this is only one of the ways to do things and things are not staying this way forever, everything changes as you read this :)
 
 ## Getting started
