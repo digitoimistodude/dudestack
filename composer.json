@@ -53,12 +53,11 @@
     "koodimonni-language/en_gb": "*",
     "composer/installers": "~1.0.12",
     "wp-cli/wp-cli": "*",
-    "vlucas/phpdotenv": "~1.0.9",
+    "vlucas/phpdotenv": "^2.0.1",
     "facebook/php-sdk": "dev-master",
     "wpackagist-plugin/wordpress-seo":"*",
     "wpackagist-plugin/wp-last-login":"*",
     "wpackagist-plugin/google-analyticator":"*",
-    "wpackagist-plugin/wonderm00ns-simple-facebook-open-graph-tags":"*",
     "wpackagist-plugin/simple-history":"*"
   },
   "extra": {
