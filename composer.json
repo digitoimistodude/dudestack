@@ -58,7 +58,8 @@
     "wpackagist-plugin/wordpress-seo":"*",
     "wpackagist-plugin/wp-last-login":"*",
     "wpackagist-plugin/google-analyticator":"*",
-    "wpackagist-plugin/simple-history":"*"
+    "wpackagist-plugin/simple-history":"*",
+    "wpackagist-plugin/intuitive-custom-post-order":"*"
   },
   "extra": {
     "dropin-paths": {

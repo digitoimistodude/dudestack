@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8546a5ac04f0a5a8a61911c6159ba086",
+    "hash": "d615d3144033c2390300c27196a837c9",
     "packages": [
         {
             "name": "composer/installers",
@@ -187,20 +187,20 @@
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
-            "version": "0.2.0",
+            "version": "0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core-installer.git",
-                "reference": "a4c08e91be99e858c7778c2f52a4d73820147c2e"
+                "reference": "a04c2c383ef13aae077f36799ed2eafdebd618d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/a4c08e91be99e858c7778c2f52a4d73820147c2e",
-                "reference": "a4c08e91be99e858c7778c2f52a4d73820147c2e",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/a04c2c383ef13aae077f36799ed2eafdebd618d2",
+                "reference": "a04c2c383ef13aae077f36799ed2eafdebd618d2",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "1.0.0"
+                "composer-plugin-api": "^1.0"
             },
             "conflict": {
                 "composer/installers": "<1.0.6"
@@ -228,7 +228,10 @@
                 }
             ],
             "description": "A custom installer to handle deploying WordPress with composer",
-            "time": "2013-09-09 15:04:54"
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2015-06-11 15:15:30"
         },
         {
             "name": "koodimonni-language/en_gb",
@@ -829,16 +832,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v2.7.0",
+            "version": "v2.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Finder.git",
-                "reference": "ccb8ed8339cf24824f2ef35dacec30d92ff44368"
+                "reference": "c13a40d638aeede1e8400f8c956c7f9246c05f75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/ccb8ed8339cf24824f2ef35dacec30d92ff44368",
-                "reference": "ccb8ed8339cf24824f2ef35dacec30d92ff44368",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/c13a40d638aeede1e8400f8c956c7f9246c05f75",
+                "reference": "c13a40d638aeede1e8400f8c956c7f9246c05f75",
                 "shasum": ""
             },
             "require": {
@@ -874,20 +877,20 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2015-05-15 14:02:48"
+            "time": "2015-06-04 20:11:48"
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v1.0.9",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "56c252d48dce336da97926591aed71805203815b"
+                "reference": "91064290f5b53a09bdff1b939d7f69fb0e7531b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/56c252d48dce336da97926591aed71805203815b",
-                "reference": "56c252d48dce336da97926591aed71805203815b",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/91064290f5b53a09bdff1b939d7f69fb0e7531b5",
+                "reference": "91064290f5b53a09bdff1b939d7f69fb0e7531b5",
                 "shasum": ""
             },
             "require": {
@@ -897,14 +900,9 @@
                 "phpunit/phpunit": "~4.0"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
             "autoload": {
-                "psr-0": {
-                    "Dotenv": "src/"
+                "psr-4": {
+                    "Dotenv\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -925,7 +923,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2014-10-16 14:50:21"
+            "time": "2015-05-30 16:15:01"
         },
         {
             "name": "wp-cli/php-cli-tools",
@@ -979,16 +977,16 @@
         },
         {
             "name": "wp-cli/wp-cli",
-            "version": "v0.19.1",
+            "version": "v0.19.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/wp-cli.git",
-                "reference": "4734fc5c068af4c7de66e6710f118aa15463556e"
+                "reference": "b2db97324c03af1b9e847fb2f0cf2f81e23212c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/wp-cli/zipball/4734fc5c068af4c7de66e6710f118aa15463556e",
-                "reference": "4734fc5c068af4c7de66e6710f118aa15463556e",
+                "url": "https://api.github.com/repos/wp-cli/wp-cli/zipball/b2db97324c03af1b9e847fb2f0cf2f81e23212c7",
+                "reference": "b2db97324c03af1b9e847fb2f0cf2f81e23212c7",
                 "shasum": ""
             },
             "require": {
@@ -1033,19 +1031,19 @@
                 "cli",
                 "wordpress"
             ],
-            "time": "2015-05-13 19:24:38"
+            "time": "2015-06-20 20:37:44"
         },
         {
             "name": "wpackagist-plugin/google-analyticator",
-            "version": "6.4.9.3",
+            "version": "6.4.9.4",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/google-analyticator/",
-                "reference": "tags/6.4.9.3"
+                "reference": "tags/6.4.9.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-analyticator.6.4.9.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/google-analyticator.6.4.9.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1054,6 +1052,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/google-analyticator/"
+        },
+        {
+            "name": "wpackagist-plugin/intuitive-custom-post-order",
+            "version": "3.0.4",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/intuitive-custom-post-order/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/intuitive-custom-post-order.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/intuitive-custom-post-order/"
         },
         {
             "name": "wpackagist-plugin/simple-history",
@@ -1077,15 +1095,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "2.2",
+            "version": "2.2.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/2.2"
+                "reference": "tags/2.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.2.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.2.2.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1097,15 +1115,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-last-login",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wp-last-login/",
-                "reference": "tags/1.3.0"
+                "reference": "tags/1.4.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wp-last-login.1.3.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-last-login.1.4.0.zip",
                 "reference": null,
                 "shasum": null
             },
