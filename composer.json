@@ -48,7 +48,7 @@
   "require": {
     "koodimonni/composer-dropin-installer": "*",
     "php": ">=5.3.10",
-    "johnpbloch/wordpress": "4.2.3",
+    "johnpbloch/wordpress": "4.2.4",
     "koodimonni-language/fi": "*",
     "koodimonni-language/en_gb": "*",
     "composer/installers": "~1.0.12",
@@ -59,7 +59,8 @@
     "wpackagist-plugin/wp-last-login":"*",
     "wpackagist-plugin/google-analyticator":"*",
     "wpackagist-plugin/simple-history":"*",
-    "wpackagist-plugin/intuitive-custom-post-order":"*"
+    "wpackagist-plugin/intuitive-custom-post-order":"*",
+    "wpackagist-plugin/go-live-update-urls":"*"
   },
   "extra": {
     "dropin-paths": {
