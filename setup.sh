@@ -23,10 +23,10 @@ read -p "${boldyellow}Have you installed jolliest-vagrant as instructed? (y/n)${
 done
 
 while true; do
-read -p "${boldyellow}Have you created a public key for SSH (keygen -t rsa)? (y/n)${txtreset} " yn
+read -p "${boldyellow}Have you created a public key for SSH (ssh-keygen -t rsa)? (y/n)${txtreset} " yn
     case $yn in
         [Yy]* ) break;;
-        [Nn]* ) echo "${red}Please do so. Run keygen -t rsa, add password for extra security.${txtreset}"; exit;;
+        [Nn]* ) echo "${red}Please do so. Run ssh-keygen -t rsa, add password for extra security.${txtreset}"; exit;;
         * ) echo "${boldwhite}Please answer y or n.${txtreset}";;
     esac
 done
