@@ -22,6 +22,9 @@ read -p "${boldyellow}Have you installed jolliest-vagrant as instructed? (y/n)${
     esac
 done
 
+echo "${boldyellow}Starting vagrant... (type password if prompted)${txtreset} "
+cd ~/Projects/jolliest-vagrant && vagrant up --provision
+
 while true; do
 read -p "${boldyellow}Have you created a public key for SSH? (y/n)${txtreset} " yn
     case $yn in
