@@ -40,22 +40,22 @@ cat ~/.ssh/id_rsa.pub | ssh vagrant@10.1.2.3 'mkdir -p ~/.ssh && cat >> ~/.ssh/a
 echo "${boldyellow}Bitbucket account:${txtreset} "
 read -e YOUR_BITBUCKET_ACCOUNT_HERE
 
-echo "${boldyellow}Staging server hostname:${txtreset} "
+echo "${boldyellow}Staging server hostname (for example myawesomeserver.com):${txtreset} "
 read -e YOUR_STAGING_SERVER_HERE
 
-echo "${boldyellow}Staging server username:${txtreset} "
+echo "${boldyellow}Staging server username (for example myusername0123):${txtreset} "
 read -e YOUR_STAGING_USERNAME_HERE
 
 echo "${boldyellow}Staging server password:${txtreset} "
 read -e YOUR_STAGING_SERVER_PASSWORD_HERE
 
-echo "${boldyellow}Staging server home path:${txtreset} "
+echo "${boldyellow}Staging server home path (for example /home/myusername0123 or /var/www/somehome):${txtreset} "
 read -e YOUR_STAGING_SERVER_HOME_PATH_HERE
 
-echo "${boldyellow}Default MySQL-username (root for jolliest-vagrant):${txtreset} "
+echo "${boldyellow}Default MySQL-username (type 'root' if you use jolliest-vagrant):${txtreset} "
 read -e YOUR_DEFAULT_DATABASE_USERNAME_HERE
 
-echo "${boldyellow}Default MySQL-password (vagrant for jolliest-vagrant):${txtreset} "
+echo "${boldyellow}Default MySQL-password (type 'vagrant' if you use jolliest-vagrant):${txtreset} "
 read -e YOUR_DEFAULT_DATABASE_PASSWORD_HERE
 
 echo "${boldyellow}Default admin username for WordPress:${txtreset} "
