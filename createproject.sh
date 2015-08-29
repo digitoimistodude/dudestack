@@ -38,7 +38,7 @@ read -p "${boldyellow}Created Bitbucket/Github repo? (y/n)${txtreset} " yn
     esac
 done
 
-echo "${boldyellow}Project name in lowercase:${txtreset} "
+echo "${boldyellow}Project name in lowercase (without spaces or special characters):${txtreset} "
 read -e PROJECTNAME
 cd $HOME/Projects/dudestack
 composer create-project -n ronilaukkarinen/dudestack $HOME/Projects/${PROJECTNAME} dev-master
