@@ -3,6 +3,20 @@
 
 Dudestack is a modern WordPress stack that helps you get started with the best development tools and project structure - just like [Bedrock](https://github.com/roots/bedrock).
 
+## Table of contents
+
+1. [Background](#background)
+2. [How it's different, why should I use this?](#how-its-different-why-should-i-use-this)
+3. [Features](#features)
+4. [Requirements](#requirements)
+5. [Installation](#installation)
+6. [Documentation](#documentation)
+  1. [Starting a new project with createproject bash script](#starting-a-new-project-with-createproject-bash-script)
+    1. [What createproject.sh does](#what-createprojectsh-does)
+  2. [What you most probably need to edit in every project](#what-you-most-probably-need-to-edit-in-every-project)
+  3. [Getting started](#getting-started)
+  4. [Paid or Premium plugins](#paid-or-premium-plugins)
+
 #### Background
 
 We're constantly developing our development workflow. Honestly, I think we've been through hundreds of articles, tools and scripts. Went with regular WordPress structure, different wp-configs and [Dandelion](https://github.com/scttnlsn/dandelion) for a long time, but realized in some point we have to get some sense to it all. Setting up things should not be the most time consuming task when starting a new project.
@@ -49,7 +63,7 @@ Despite the fact we love most of Bedrock, we noticed there are some things we do
 * PHP >= 5.3.2
 * Ruby >= 1.9
 
-# Installation 
+# Installation
 
 1. Clone this repo to your home directory
 2. Go to dudestack directory (`cd ~/dudestack && sh setup.sh`)
@@ -63,7 +77,7 @@ cat ~/.ssh/id_rsa.pub | ssh vagrant@10.1.2.3 'mkdir -p ~/.ssh && cat >> ~/.ssh/a
 
 If you are starting from clean slate, better yet, run Bitbucket's tutorial [Set up SSH for Git](https://confluence.atlassian.com/display/BITBUCKET/Set+up+SSH+for+Git).
 
-# Documentation 
+# Documentation
 1. [Starting a new project with createproject bash script](#starting-a-new-project-with-createproject-bash-script)
   1. [What createproject.sh does](#what-createprojectsh-does)
 2. [What you most probably need to edit in every project](#what-you-most-probably-need-to-edit-in-every-project)
@@ -189,4 +203,6 @@ function plugin() { scp -r $@ 'username@yoursite.com:~/path/to/plugins/'; }
 
 So with simple ssh-pairing (passwordless login), I can upload a plugin by simple command: `plugin gravityforms_1.8.20.5.zip` and then just change version and `composer update`. DRY, you see.
 
-Feel free to post any issue or question if you are actually using this...
+## Issues
+
+Feel free to post any issue or question if you have one.
