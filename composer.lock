@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "286c48c9b46cd72e9a939ddc893bbe1a",
+    "hash": "827707cea4d0e3470e7cba04084c9578",
     "packages": [
         {
             "name": "composer/installers",
@@ -150,16 +150,16 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.3",
+            "version": "4.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "2afe902599538caaa0f1fd7579895dd7cc0ac5f7"
+                "reference": "cfcf25eb42baeb7316a61c7a64e9a1ab3e291f2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/2afe902599538caaa0f1fd7579895dd7cc0ac5f7",
-                "reference": "2afe902599538caaa0f1fd7579895dd7cc0ac5f7",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/cfcf25eb42baeb7316a61c7a64e9a1ab3e291f2f",
+                "reference": "cfcf25eb42baeb7316a61c7a64e9a1ab3e291f2f",
                 "shasum": ""
             },
             "require": {
@@ -183,7 +183,7 @@
                 "blog",
                 "cms"
             ],
-            "time": "2015-08-18 18:16:11"
+            "time": "2015-09-15 15:01:23"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -337,10 +337,10 @@
         },
         {
             "name": "koodimonni-plugin-language/woocommerce-en_gb",
-            "version": "v2.4.4",
+            "version": "v2.4.6",
             "dist": {
                 "type": "zip",
-                "url": "https://raw.githubusercontent.com/woothemes/woocommerce-language-packs/bd7028cc4d3372c3e6465c98a028d20ec24764da/packages/en_GB.zip",
+                "url": "https://raw.githubusercontent.com/woothemes/woocommerce-language-packs/52c9e23cb58fee075fcd2d65dddeff885b79a2ad/packages/en_GB.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -358,10 +358,10 @@
         },
         {
             "name": "koodimonni-plugin-language/woocommerce-fi",
-            "version": "v2.4.4",
+            "version": "v2.4.6",
             "dist": {
                 "type": "zip",
-                "url": "https://raw.githubusercontent.com/woothemes/woocommerce-language-packs/bd7028cc4d3372c3e6465c98a028d20ec24764da/packages/fi.zip",
+                "url": "https://raw.githubusercontent.com/woothemes/woocommerce-language-packs/52c9e23cb58fee075fcd2d65dddeff885b79a2ad/packages/fi.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -854,16 +854,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v2.7.3",
+            "version": "v2.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Finder.git",
-                "reference": "ae0f363277485094edc04c9f3cbe595b183b78e4"
+                "reference": "fff4b0c362640a0ab7355e2647b3d461608e9065"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/ae0f363277485094edc04c9f3cbe595b183b78e4",
-                "reference": "ae0f363277485094edc04c9f3cbe595b183b78e4",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/fff4b0c362640a0ab7355e2647b3d461608e9065",
+                "reference": "fff4b0c362640a0ab7355e2647b3d461608e9065",
                 "shasum": ""
             },
             "require": {
@@ -899,7 +899,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-09 16:07:40"
+            "time": "2015-08-26 17:56:37"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -949,16 +949,16 @@
         },
         {
             "name": "wp-cli/php-cli-tools",
-            "version": "v0.10.4",
+            "version": "v0.10.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/php-cli-tools.git",
-                "reference": "228e8c1300675313e519b4195783aaa1a1a020bf"
+                "reference": "037a010441a5c220cd1df26cdc9b20ad73408356"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/php-cli-tools/zipball/228e8c1300675313e519b4195783aaa1a1a020bf",
-                "reference": "228e8c1300675313e519b4195783aaa1a1a020bf",
+                "url": "https://api.github.com/repos/wp-cli/php-cli-tools/zipball/037a010441a5c220cd1df26cdc9b20ad73408356",
+                "reference": "037a010441a5c220cd1df26cdc9b20ad73408356",
                 "shasum": ""
             },
             "require": {
@@ -995,20 +995,20 @@
                 "cli",
                 "console"
             ],
-            "time": "2015-02-27 22:11:29"
+            "time": "2015-08-10 12:46:19"
         },
         {
             "name": "wp-cli/wp-cli",
-            "version": "v0.19.2",
+            "version": "v0.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/wp-cli.git",
-                "reference": "b2db97324c03af1b9e847fb2f0cf2f81e23212c7"
+                "reference": "58317fce36e34a10473bbd397b42a185edd10438"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/wp-cli/zipball/b2db97324c03af1b9e847fb2f0cf2f81e23212c7",
-                "reference": "b2db97324c03af1b9e847fb2f0cf2f81e23212c7",
+                "url": "https://api.github.com/repos/wp-cli/wp-cli/zipball/58317fce36e34a10473bbd397b42a185edd10438",
+                "reference": "58317fce36e34a10473bbd397b42a185edd10438",
                 "shasum": ""
             },
             "require": {
@@ -1018,7 +1018,7 @@
                 "ramsey/array_column": "~1.1",
                 "rmccue/requests": "~1.6",
                 "symfony/finder": "~2.3",
-                "wp-cli/php-cli-tools": "0.10.4"
+                "wp-cli/php-cli-tools": "0.10.5"
             },
             "require-dev": {
                 "behat/behat": "2.5.*",
@@ -1053,7 +1053,7 @@
                 "cli",
                 "wordpress"
             ],
-            "time": "2015-06-20 20:37:44"
+            "time": "2015-08-26 17:38:02"
         },
         {
             "name": "wpackagist-plugin/go-live-update-urls",
@@ -1077,15 +1077,15 @@
         },
         {
             "name": "wpackagist-plugin/google-analyticator",
-            "version": "6.4.9.5",
+            "version": "6.4.9.6",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/google-analyticator/",
-                "reference": "tags/6.4.9.5"
+                "reference": "tags/6.4.9.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-analyticator.6.4.9.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/google-analyticator.6.4.9.6.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1117,15 +1117,15 @@
         },
         {
             "name": "wpackagist-plugin/simple-history",
-            "version": "2.1.5",
+            "version": "2.2.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/simple-history/",
-                "reference": "tags/2.1.5"
+                "reference": "tags/2.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/simple-history.2.1.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/simple-history.2.2.1.zip",
                 "reference": null,
                 "shasum": null
             },
