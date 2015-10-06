@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: WooCommerce\n"
 "Report-Msgid-Bugs-To: https://github.com/woothemes/woocommerce/issues\n"
 "POT-Creation-Date: 2015-08-24 16:25:51+00:00\n"
-"PO-Revision-Date: 2015-08-24 16:32+0000\n"
-"Last-Translator: Claudio Sanches <contato@claudiosmweb.com>\n"
+"PO-Revision-Date: 2015-08-26 13:38+0000\n"
+"Last-Translator: Arhi Paivarinta <info@swratkaisut.com>\n"
 "Language-Team: Finnish (http://www.transifex.com/woothemes/woocommerce/language/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2291,7 +2291,7 @@ msgid ""
 "WooCommerce can accept both online and offline payments. %2$sAdditional "
 "payment methods%3$s can be installed later and managed from the %1$scheckout"
 " settings%3$s screen."
-msgstr ""
+msgstr "WooCommerce verkkokaupassa voi maksaa suoraan tai käyttäen osittain manuaalisia maksutapoja. %2$sMuita maksukäytäviä%3$s voidaan lisätä myöhemmin. Maksukäytäviä voidan hallita %1$skassan asetukset%3$s näytöllä."
 
 #: includes/admin/class-wc-admin-setup-wizard.php:655
 msgid ""
@@ -3556,7 +3556,7 @@ msgstr "Toimitus vain"
 msgid ""
 "Define whether or not the entire product is taxable, or just the cost of "
 "shipping it."
-msgstr ""
+msgstr "Valitse, lasketaanko tällä veroprosentilla vero koko tilaukselle vai lasketaanko vero vain toimituskuluille."
 
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:269
 #: includes/admin/meta-boxes/views/html-order-items.php:21
@@ -3578,7 +3578,7 @@ msgstr "Veroluokka"
 msgid ""
 "Choose a tax class for this product. Tax classes are used to apply different"
 " tax rates specific to certain types of product."
-msgstr ""
+msgstr "Valitse tälle tuotteelle veroluokka. Veroluokkia käytetään asettamaan eri veroprosentteja tietyille tuoteryhmille."
 
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:304
 #: includes/admin/meta-boxes/views/html-variation-admin.php:84

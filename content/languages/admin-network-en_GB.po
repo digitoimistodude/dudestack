@@ -63,7 +63,7 @@ msgstr "Site URL"
 msgid "<a href=\"https://codex.wordpress.org/Network_Admin_Updates_Screen\" target=\"_blank\">Documentation on Upgrade Network</a>"
 msgstr "<a href=\"https://codex.wordpress.org/Network_Admin_Updates_Screen\" target=\"_blank\">Documentation on Upgrade Network</a>"
 
-#: wp-admin/network/user-new.php:29 wp-admin/network/users.php:279
+#: wp-admin/network/user-new.php:29 wp-admin/network/users.php:280
 msgid "<a href=\"https://codex.wordpress.org/Network_Admin_Users_Screen\" target=\"_blank\">Documentation on Network Users</a>"
 msgstr "<a href=\"https://codex.wordpress.org/Network_Admin_Users_Screen\" target=\"_blank\">Documentation on Network Users</a>"
 
@@ -160,15 +160,15 @@ msgstr "Size in kilobytes"
 msgid "New registrations settings"
 msgstr "New registrations settings"
 
-#: wp-admin/network/users.php:115
+#: wp-admin/network/users.php:116
 msgid "Once you hit &#8220;Confirm Deletion&#8221;, the user will be permanently removed."
 msgstr "Once you hit &#8220;Confirm Deletion&#8221;, the user will be permanently removed."
 
-#: wp-admin/network/users.php:101
+#: wp-admin/network/users.php:102
 msgid "User has no sites or content and will be deleted."
 msgstr "User has no sites or content and will be deleted."
 
-#: wp-admin/network/users.php:117
+#: wp-admin/network/users.php:118
 msgid "Once you hit &#8220;Confirm Deletion&#8221;, these users will be permanently removed."
 msgstr "Once you hit &#8220;Confirm Deletion&#8221;, these users will be permanently removed."
 
@@ -198,7 +198,7 @@ msgstr "What should be done with content owned by %s?"
 #: wp-admin/network/site-new.php:30 wp-admin/network/site-settings.php:33
 #: wp-admin/network/site-themes.php:33 wp-admin/network/site-users.php:36
 #: wp-admin/network/sites.php:46 wp-admin/network/user-new.php:30
-#: wp-admin/network/users.php:280
+#: wp-admin/network/users.php:281
 msgid "<a href=\"https://wordpress.org/support/forum/multisite/\" target=\"_blank\">Support Forums</a>"
 msgstr "<a href=\"https://wordpress.org/support/forum/multisite/\" target=\"_blank\">Support Forums</a>"
 
@@ -210,7 +210,7 @@ msgstr "Confirm your action"
 msgid "This email address will receive notifications. Registration and support emails will also come from this address."
 msgstr "This email address will receive notifications. Registration and support emails will also come from this address."
 
-#: wp-admin/network/users.php:270
+#: wp-admin/network/users.php:271
 msgid "Hover over any user on the list to make the edit links appear. The Edit link on the left will take you to their Edit User profile page; the Edit link on the right by any site name goes to an Edit Site screen for that site."
 msgstr "Hover over any user on the list to make the edit links appear. The Edit link on the left will take you to their Edit User profile page; the Edit link on the right by any site name goes to an Edit Site screen for that site."
 
@@ -791,7 +791,7 @@ msgstr "Once you add this code and refresh your browser, multisite should be ena
 msgid "You do not have sufficient permissions to edit this site."
 msgstr "You do not have sufficient permissions to edit this site."
 
-#: wp-admin/network/users.php:181
+#: wp-admin/network/users.php:182
 msgid "Warning! User cannot be modified. The user %s is a network administrator."
 msgstr "Warning! User cannot be modified. The user %s is a network administrator."
 
@@ -815,11 +815,11 @@ msgstr "Hovering over each site reveals seven options (three for the primary sit
 msgid "Operational settings has fields for the network&#8217;s name and admin email."
 msgstr "Operational settings has fields for the network&#8217;s name and admin email."
 
-#: wp-admin/network/users.php:271
+#: wp-admin/network/users.php:272
 msgid "You can also go to the user&#8217;s profile page by clicking on the individual username."
 msgstr "You can also go to the user&#8217;s profile page by clicking on the individual username."
 
-#: wp-admin/network/users.php:273
+#: wp-admin/network/users.php:274
 msgid "The bulk action will permanently delete selected users, or mark/unmark those selected as spam. Spam users will have posts removed and will be unable to sign up again with the same email addresses."
 msgstr "The bulk action will permanently delete selected users, or mark/unmark those selected as spam. Spam users will have posts removed and will be unable to sign up again with the same email addresses."
 
@@ -863,7 +863,7 @@ msgstr "This is the main table of all sites on this network. Switch between list
 msgid "Users who are signed up to the network without a site are added as subscribers to the main or primary dashboard site, giving them profile pages to manage their accounts. These users will only see Dashboard and My Sites in the main navigation until a site is created for them."
 msgstr "Users who are signed up to the network without a site are added as subscribers to the main or primary dashboard site, giving them profile pages to manage their accounts. These users will only see Dashboard and My Sites in the main navigation until a site is created for them."
 
-#: wp-admin/network/users.php:272
+#: wp-admin/network/users.php:273
 msgid "You can sort the table by clicking on any of the bold headings and switch between list and excerpt views by using the icons in the upper right."
 msgstr "You can sort the table by clicking on any of the bold headings and switch between list and excerpt views by using the icons in the upper right."
 
@@ -875,11 +875,11 @@ msgstr "If this process fails for any reason, users logging in to their sites wi
 msgid "If a version update to core has not happened, clicking this button won&#8217;t affect anything."
 msgstr "If a version update to core has not happened, clicking this button won&#8217;t affect anything."
 
-#: wp-admin/network/users.php:269
+#: wp-admin/network/users.php:270
 msgid "This table shows all users across the network and the sites to which they are assigned."
 msgstr "This table shows all users across the network and the sites to which they are assigned."
 
-#: wp-admin/network/users.php:274
+#: wp-admin/network/users.php:275
 msgid "You can make an existing user an additional super admin by going to the Edit User profile page and checking the box to grant that privilege."
 msgstr "You can make an existing user an additional super admin by going to the Edit User profile page and checking the box to grant that privilege."
 
@@ -919,7 +919,7 @@ msgstr "Sites marked as spam."
 msgid "Sites removed from spam."
 msgstr "Sites removed from spam."
 
-#: wp-admin/network/users.php:297
+#: wp-admin/network/users.php:298
 msgid "Users removed from spam."
 msgstr "Users removed from spam."
 
@@ -935,7 +935,7 @@ msgstr "Sites deleted."
 msgid "Site deleted."
 msgstr "Site deleted."
 
-#: wp-admin/network/users.php:294
+#: wp-admin/network/users.php:295
 msgid "Users marked as spam."
 msgstr "Users marked as spam."
 
@@ -951,7 +951,7 @@ msgstr "Site activated."
 msgid "Site unarchived."
 msgstr "Site unarchived."
 
-#: wp-admin/network/users.php:300
+#: wp-admin/network/users.php:301
 msgid "Users deleted."
 msgstr "Users deleted."
 
@@ -1085,9 +1085,9 @@ msgstr "Next Sites"
 #: wp-admin/network/site-themes.php:64 wp-admin/network/site-users.php:57
 #: wp-admin/network/sites.php:17 wp-admin/network/sites.php:124
 #: wp-admin/network/upgrade.php:39 wp-admin/network/user-new.php:37
-#: wp-admin/network/users.php:17 wp-admin/network/users.php:134
-#: wp-admin/network/users.php:155 wp-admin/network/users.php:168
-#: wp-admin/network/users.php:217
+#: wp-admin/network/users.php:17 wp-admin/network/users.php:135
+#: wp-admin/network/users.php:156 wp-admin/network/users.php:169
+#: wp-admin/network/users.php:218
 msgid "You do not have permission to access this page."
 msgstr "You do not have permission to access this page."
 

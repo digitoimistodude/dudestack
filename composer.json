@@ -59,7 +59,6 @@
     "wpackagist-plugin/wp-last-login":"*",
     "wpackagist-plugin/google-analyticator":"*",
     "wpackagist-plugin/simple-history":"*",
-    "wpackagist-plugin/intuitive-custom-post-order":"*",
     "wpackagist-plugin/go-live-update-urls":"*"
   },
   "extra": {

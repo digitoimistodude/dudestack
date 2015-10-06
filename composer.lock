@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "827707cea4d0e3470e7cba04084c9578",
+    "hash": "d5c98fa72d5028f71b2d46b2d548fd82",
     "packages": [
         {
             "name": "composer/installers",
@@ -235,10 +235,10 @@
         },
         {
             "name": "koodimonni-language/en_gb",
-            "version": "4.3",
+            "version": "4.3.1",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/4.3/en_GB.zip",
+                "url": "https://downloads.wordpress.org/translation/core/4.3.1/en_GB.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -264,10 +264,10 @@
         },
         {
             "name": "koodimonni-language/fi",
-            "version": "4.3",
+            "version": "4.3.1",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/4.3/fi.zip",
+                "url": "https://downloads.wordpress.org/translation/core/4.3.1/fi.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -295,10 +295,10 @@
         },
         {
             "name": "koodimonni-plugin-language/akismet-en_gb",
-            "version": "3.1.3",
+            "version": "3.1.4",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/plugin/akismet/3.1.3/en_GB.zip",
+                "url": "https://downloads.wordpress.org/translation/plugin/akismet/3.1.4/en_GB.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -337,10 +337,10 @@
         },
         {
             "name": "koodimonni-plugin-language/woocommerce-en_gb",
-            "version": "v2.4.6",
+            "version": "v2.4.7",
             "dist": {
                 "type": "zip",
-                "url": "https://raw.githubusercontent.com/woothemes/woocommerce-language-packs/52c9e23cb58fee075fcd2d65dddeff885b79a2ad/packages/en_GB.zip",
+                "url": "https://raw.githubusercontent.com/woothemes/woocommerce-language-packs/a2caa5432e4acde3558179827b4eed748032b70d/packages/en_GB.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -358,10 +358,10 @@
         },
         {
             "name": "koodimonni-plugin-language/woocommerce-fi",
-            "version": "v2.4.6",
+            "version": "v2.4.7",
             "dist": {
                 "type": "zip",
-                "url": "https://raw.githubusercontent.com/woothemes/woocommerce-language-packs/52c9e23cb58fee075fcd2d65dddeff885b79a2ad/packages/fi.zip",
+                "url": "https://raw.githubusercontent.com/woothemes/woocommerce-language-packs/a2caa5432e4acde3558179827b4eed748032b70d/packages/fi.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -673,16 +673,16 @@
         },
         {
             "name": "mustache/mustache",
-            "version": "v2.8.0",
+            "version": "v2.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/mustache.php.git",
-                "reference": "64c28cc73e01d5edcef7de8cb2b16782615f648a"
+                "reference": "c745b01956caf27d26b55a72a90aff56bc169cd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/64c28cc73e01d5edcef7de8cb2b16782615f648a",
-                "reference": "64c28cc73e01d5edcef7de8cb2b16782615f648a",
+                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/c745b01956caf27d26b55a72a90aff56bc169cd6",
+                "reference": "c745b01956caf27d26b55a72a90aff56bc169cd6",
                 "shasum": ""
             },
             "require": {
@@ -715,7 +715,7 @@
                 "mustache",
                 "templating"
             ],
-            "time": "2015-04-01 06:37:33"
+            "time": "2015-08-15 19:23:13"
         },
         {
             "name": "nb/oxymel",
@@ -854,16 +854,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v2.7.4",
+            "version": "v2.7.5",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/Finder.git",
-                "reference": "fff4b0c362640a0ab7355e2647b3d461608e9065"
+                "url": "https://github.com/symfony/finder.git",
+                "reference": "8262ab605973afbb3ef74b945daabf086f58366f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/fff4b0c362640a0ab7355e2647b3d461608e9065",
-                "reference": "fff4b0c362640a0ab7355e2647b3d461608e9065",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/8262ab605973afbb3ef74b945daabf086f58366f",
+                "reference": "8262ab605973afbb3ef74b945daabf086f58366f",
                 "shasum": ""
             },
             "require": {
@@ -899,7 +899,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2015-08-26 17:56:37"
+            "time": "2015-09-19 19:59:23"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -999,16 +999,16 @@
         },
         {
             "name": "wp-cli/wp-cli",
-            "version": "v0.20.0",
+            "version": "v0.20.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/wp-cli.git",
-                "reference": "58317fce36e34a10473bbd397b42a185edd10438"
+                "reference": "2fbf909316788c429ee5c2311b4252c3ca95e57d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/wp-cli/zipball/58317fce36e34a10473bbd397b42a185edd10438",
-                "reference": "58317fce36e34a10473bbd397b42a185edd10438",
+                "url": "https://api.github.com/repos/wp-cli/wp-cli/zipball/2fbf909316788c429ee5c2311b4252c3ca95e57d",
+                "reference": "2fbf909316788c429ee5c2311b4252c3ca95e57d",
                 "shasum": ""
             },
             "require": {
@@ -1053,7 +1053,7 @@
                 "cli",
                 "wordpress"
             ],
-            "time": "2015-08-26 17:38:02"
+            "time": "2015-09-17 00:07:51"
         },
         {
             "name": "wpackagist-plugin/go-live-update-urls",
@@ -1096,36 +1096,16 @@
             "homepage": "https://wordpress.org/plugins/google-analyticator/"
         },
         {
-            "name": "wpackagist-plugin/intuitive-custom-post-order",
-            "version": "3.0.6",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/intuitive-custom-post-order/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/intuitive-custom-post-order.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/intuitive-custom-post-order/"
-        },
-        {
             "name": "wpackagist-plugin/simple-history",
-            "version": "2.2.1",
+            "version": "2.2.4",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/simple-history/",
-                "reference": "tags/2.2.1"
+                "reference": "tags/2.2.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/simple-history.2.2.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/simple-history.2.2.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1137,15 +1117,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "2.3.4",
+            "version": "2.3.5",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/2.3.4"
+                "reference": "tags/2.3.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.2.3.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.2.3.5.zip",
                 "reference": null,
                 "shasum": null
             },
