@@ -100,6 +100,10 @@ Creating a new project has a lot of configs to do. We wanted to automate most of
 
 ### What createproject.sh does
 
+When you run `createproject` it looks like this:
+
+![createproject.sh](https://www.dude.fi/createproject.png "Screenshot")
+
 1. First it runs `composer create-project` with dudestack settings
 2. Installs default WordPress plugins and updates them
 3. Creates MySQL repository automatically with project name (assumes by default that you have [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant)) installed with default settings and paired with your host computer, for MAMP you'll need to edit createproject.sh and edit `YOURMAMPMYSQLPASSWORD`)
