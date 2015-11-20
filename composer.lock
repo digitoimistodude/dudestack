@@ -4,21 +4,25 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d5c98fa72d5028f71b2d46b2d548fd82",
+    "hash": "c68ff09176414cded8c481adf38d6917",
+    "content-hash": "0250babe9627b34255d4e5015768959a",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.0.21",
+            "version": "v1.0.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "d64e23fce42a4063d63262b19b8e7c0f3b5e4c45"
+                "reference": "bd9b14f094c89c8b5804a4e41edeb7853bb85046"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/d64e23fce42a4063d63262b19b8e7c0f3b5e4c45",
-                "reference": "d64e23fce42a4063d63262b19b8e7c0f3b5e4c45",
+                "url": "https://api.github.com/repos/composer/installers/zipball/bd9b14f094c89c8b5804a4e41edeb7853bb85046",
+                "reference": "bd9b14f094c89c8b5804a4e41edeb7853bb85046",
                 "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "1.0.0"
             },
             "replace": {
                 "roundcube/plugin-installer": "*",
@@ -28,9 +32,9 @@
                 "composer/composer": "1.0.*@dev",
                 "phpunit/phpunit": "4.1.*"
             },
-            "type": "composer-installer",
+            "type": "composer-plugin",
             "extra": {
-                "class": "Composer\\Installers\\Installer",
+                "class": "Composer\\Installers\\Plugin",
                 "branch-alias": {
                     "dev-master": "1.0-dev"
                 }
@@ -99,7 +103,68 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2015-02-18 17:17:01"
+            "time": "2015-10-29 23:28:48"
+        },
+        {
+            "name": "composer/semver",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/semver.git",
+                "reference": "d0e1ccc6d44ab318b758d709e19176037da6b1ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/semver/zipball/d0e1ccc6d44ab318b758d709e19176037da6b1ba",
+                "reference": "d0e1ccc6d44ab318b758d709e19176037da6b1ba",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.5",
+                "phpunit/phpunit-mock-objects": "~2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Semver\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rob Bast",
+                    "email": "rob.bast@gmail.com"
+                },
+                {
+                    "name": "Nils Adermann",
+                    "email": "naderman@naderman.de",
+                    "homepage": "http://www.naderman.de"
+                },
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                }
+            ],
+            "description": "Semver library that offers utilities, version constraint parsing and validation.",
+            "keywords": [
+                "semantic",
+                "semver",
+                "validation",
+                "versioning"
+            ],
+            "time": "2015-09-21 09:42:36"
         },
         {
             "name": "facebook/php-sdk",
@@ -295,10 +360,10 @@
         },
         {
             "name": "koodimonni-plugin-language/akismet-en_gb",
-            "version": "3.1.4",
+            "version": "3.1.5",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/plugin/akismet/3.1.4/en_GB.zip",
+                "url": "https://downloads.wordpress.org/translation/plugin/akismet/3.1.5/en_GB.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -337,7 +402,7 @@
         },
         {
             "name": "koodimonni-plugin-language/woocommerce-en_gb",
-            "version": "v2.4.7",
+            "version": "v2.4.10",
             "dist": {
                 "type": "zip",
                 "url": "https://raw.githubusercontent.com/woothemes/woocommerce-language-packs/a2caa5432e4acde3558179827b4eed748032b70d/packages/en_GB.zip",
@@ -358,7 +423,7 @@
         },
         {
             "name": "koodimonni-plugin-language/woocommerce-fi",
-            "version": "v2.4.7",
+            "version": "v2.4.10",
             "dist": {
                 "type": "zip",
                 "url": "https://raw.githubusercontent.com/woothemes/woocommerce-language-packs/a2caa5432e4acde3558179827b4eed748032b70d/packages/fi.zip",
@@ -854,23 +919,20 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v2.7.5",
+            "version": "v2.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "8262ab605973afbb3ef74b945daabf086f58366f"
+                "reference": "2ffb4e9598db3c48eb6d0ae73b04bbf09280c59d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/8262ab605973afbb3ef74b945daabf086f58366f",
-                "reference": "8262ab605973afbb3ef74b945daabf086f58366f",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/2ffb4e9598db3c48eb6d0ae73b04bbf09280c59d",
+                "reference": "2ffb4e9598db3c48eb6d0ae73b04bbf09280c59d",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.9"
-            },
-            "require-dev": {
-                "symfony/phpunit-bridge": "~2.7"
             },
             "type": "library",
             "extra": {
@@ -899,29 +961,34 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2015-09-19 19:59:23"
+            "time": "2015-10-11 09:39:48"
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v2.0.1",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "91064290f5b53a09bdff1b939d7f69fb0e7531b5"
+                "reference": "c10040e0df17d2ee88e9212b50cbe9319e878f59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/91064290f5b53a09bdff1b939d7f69fb0e7531b5",
-                "reference": "91064290f5b53a09bdff1b939d7f69fb0e7531b5",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/c10040e0df17d2ee88e9212b50cbe9319e878f59",
+                "reference": "c10040e0df17d2ee88e9212b50cbe9319e878f59",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2"
+                "php": ">=5.3.9"
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Dotenv\\": "src/"
@@ -945,7 +1012,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2015-05-30 16:15:01"
+            "time": "2015-10-28 18:53:35"
         },
         {
             "name": "wp-cli/php-cli-tools",
@@ -999,19 +1066,20 @@
         },
         {
             "name": "wp-cli/wp-cli",
-            "version": "v0.20.1",
+            "version": "v0.21.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/wp-cli.git",
-                "reference": "2fbf909316788c429ee5c2311b4252c3ca95e57d"
+                "reference": "a1154ef06a6ce67c7d7ccd62fc8ecba26b9a4855"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/wp-cli/zipball/2fbf909316788c429ee5c2311b4252c3ca95e57d",
-                "reference": "2fbf909316788c429ee5c2311b4252c3ca95e57d",
+                "url": "https://api.github.com/repos/wp-cli/wp-cli/zipball/a1154ef06a6ce67c7d7ccd62fc8ecba26b9a4855",
+                "reference": "a1154ef06a6ce67c7d7ccd62fc8ecba26b9a4855",
                 "shasum": ""
             },
             "require": {
+                "composer/semver": "1.0.0",
                 "mustache/mustache": "~2.4",
                 "nb/oxymel": "0.1.0",
                 "php": ">=5.3.2",
@@ -1053,19 +1121,19 @@
                 "cli",
                 "wordpress"
             ],
-            "time": "2015-09-17 00:07:51"
+            "time": "2015-11-04 23:40:56"
         },
         {
             "name": "wpackagist-plugin/go-live-update-urls",
-            "version": "3.0.0",
+            "version": "3.0.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/go-live-update-urls/",
-                "reference": "trunk"
+                "reference": "tags/3.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/go-live-update-urls.zip",
+                "url": "https://downloads.wordpress.org/plugin/go-live-update-urls.3.0.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1076,16 +1144,16 @@
             "homepage": "https://wordpress.org/plugins/go-live-update-urls/"
         },
         {
-            "name": "wpackagist-plugin/google-analyticator",
-            "version": "6.4.9.6",
+            "name": "wpackagist-plugin/google-analytics-for-wordpress",
+            "version": "5.4.6",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/google-analyticator/",
-                "reference": "tags/6.4.9.6"
+                "url": "http://plugins.svn.wordpress.org/google-analytics-for-wordpress/",
+                "reference": "tags/5.4.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-analyticator.6.4.9.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/google-analytics-for-wordpress.5.4.6.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1093,19 +1161,19 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/google-analyticator/"
+            "homepage": "https://wordpress.org/plugins/google-analytics-for-wordpress/"
         },
         {
             "name": "wpackagist-plugin/simple-history",
-            "version": "2.2.4",
+            "version": "2.3.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/simple-history/",
-                "reference": "tags/2.2.4"
+                "reference": "tags/2.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/simple-history.2.2.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/simple-history.2.3.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1117,15 +1185,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "2.3.5",
+            "version": "3.0.3",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/2.3.5"
+                "reference": "tags/3.0.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.2.3.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.0.3.zip",
                 "reference": null,
                 "shasum": null
             },
