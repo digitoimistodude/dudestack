@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c68ff09176414cded8c481adf38d6917",
-    "content-hash": "0250babe9627b34255d4e5015768959a",
+    "hash": "462a23bb0754cbda9c0b8949949b1f7a",
+    "content-hash": "00352665db03501c69455ef07c951b9a",
     "packages": [
         {
             "name": "composer/installers",
@@ -919,16 +919,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v2.7.6",
+            "version": "v2.7.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "2ffb4e9598db3c48eb6d0ae73b04bbf09280c59d"
+                "reference": "a06a0c0ff7db3736a50d530c908cca547bf13da9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/2ffb4e9598db3c48eb6d0ae73b04bbf09280c59d",
-                "reference": "2ffb4e9598db3c48eb6d0ae73b04bbf09280c59d",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/a06a0c0ff7db3736a50d530c908cca547bf13da9",
+                "reference": "a06a0c0ff7db3736a50d530c908cca547bf13da9",
                 "shasum": ""
             },
             "require": {
@@ -943,7 +943,10 @@
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Finder\\": ""
-                }
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -961,7 +964,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2015-10-11 09:39:48"
+            "time": "2015-10-30 20:10:21"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -1066,16 +1069,16 @@
         },
         {
             "name": "wp-cli/wp-cli",
-            "version": "v0.21.0",
+            "version": "v0.21.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/wp-cli.git",
-                "reference": "a1154ef06a6ce67c7d7ccd62fc8ecba26b9a4855"
+                "reference": "21da8b4ebf7f37f9ae55b45b037214f154a1b2ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/wp-cli/zipball/a1154ef06a6ce67c7d7ccd62fc8ecba26b9a4855",
-                "reference": "a1154ef06a6ce67c7d7ccd62fc8ecba26b9a4855",
+                "url": "https://api.github.com/repos/wp-cli/wp-cli/zipball/21da8b4ebf7f37f9ae55b45b037214f154a1b2ab",
+                "reference": "21da8b4ebf7f37f9ae55b45b037214f154a1b2ab",
                 "shasum": ""
             },
             "require": {
@@ -1121,7 +1124,7 @@
                 "cli",
                 "wordpress"
             ],
-            "time": "2015-11-04 23:40:56"
+            "time": "2015-11-23 13:50:12"
         },
         {
             "name": "wpackagist-plugin/go-live-update-urls",
@@ -1164,16 +1167,36 @@
             "homepage": "https://wordpress.org/plugins/google-analytics-for-wordpress/"
         },
         {
-            "name": "wpackagist-plugin/simple-history",
-            "version": "2.3.1",
+            "name": "wpackagist-plugin/iwp-client",
+            "version": "1.4.3",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/simple-history/",
-                "reference": "tags/2.3.1"
+                "url": "http://plugins.svn.wordpress.org/iwp-client/",
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/simple-history.2.3.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/iwp-client.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/iwp-client/"
+        },
+        {
+            "name": "wpackagist-plugin/simple-history",
+            "version": "2.4",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/simple-history/",
+                "reference": "tags/2.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/simple-history.2.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1185,15 +1208,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "3.0.3",
+            "version": "3.0.4",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/3.0.3"
+                "reference": "tags/3.0.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.0.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.0.4.zip",
                 "reference": null,
                 "shasum": null
             },

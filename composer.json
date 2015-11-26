@@ -59,7 +59,8 @@
     "wpackagist-plugin/wp-last-login":"*",
     "wpackagist-plugin/google-analytics-for-wordpress":"*",
     "wpackagist-plugin/simple-history":"*",
-    "wpackagist-plugin/go-live-update-urls":"*"
+    "wpackagist-plugin/go-live-update-urls":"*",
+    "wpackagist-plugin/iwp-client":"*"
   },
   "extra": {
     "dropin-paths": {
