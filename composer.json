@@ -1,9 +1,9 @@
 {
-  "name": "ronilaukkarinen/dudestack",
+  "name": "digitoimistodude/dudestack",
   "type": "project",
   "license": "MIT",
   "description": "A modern WordPress stack",
-  "homepage": "https://github.com/ronilaukkarinen/dudestack",
+  "homepage": "https://github.com/digitoimistodude/dudestack",
   "authors": [
     {
       "name": "Roni Laukkarinen",
@@ -18,7 +18,7 @@
     "issues": "https://github.com/digitoimistodude/dudestack/issues"
   },
   "require": {
-    "ronilaukkarinen/dudestack": "dev-master"
+    "digitoimistodude/dudestack": "dev-master"
   },
    "config": {
     "preferred-install": "dist",
