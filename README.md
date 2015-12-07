@@ -35,7 +35,7 @@ Despite the fact we love most of Bedrock, we noticed there are some things we do
 * Composer modifications, for installing more packages, like Finnish based language packs etc. that are not originally part of Bedrock
 * Automation. I mean composer's `create-project` is awesome, but we need more. You still need to do stuff after `create-project` and our createproject -starting script is designed for automating the rest.
 
-**You should modify things to your needs. Please note: This is not in any way tested with other people or or in different environments. Yet. Please address an issue if something goes south.** 
+**You should modify things to your needs. Please note: This is not in any way tested with other people or or in different environments. Yet. Please address an issue if something goes south.**
 
 ## Features
 
@@ -62,12 +62,13 @@ Despite the fact we love most of Bedrock, we noticed there are some things we do
 * Git
 * PHP >= 5.3.2
 * Ruby >= 1.9
+* Perl
 
 # Installation
 
 1. Clone this repo to your home directory
 2. Go to dudestack directory (`cd ~/dudestack && sh setup.sh`)
-4. Edit `/usr/bin/createproject` to your needs. See [documentation](#documentation) and **[Getting started](#getting-started)**.
+3. Edit `/usr/bin/createproject` to your needs. See [documentation](#documentation) and **[Getting started](#getting-started)**.
 
 If you are using [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant), you need to "pair" your machine with the VM (I presume you are already set up keypairs, if not, run without password: `ssh-keygen -t rsa`):
 

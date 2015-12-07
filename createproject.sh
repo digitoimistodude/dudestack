@@ -15,7 +15,7 @@ txtreset=$(tput sgr0)
 LOCAL_IP=$(ifconfig | grep -Eo "inet (addr:)?([0-9]*\.){3}[0-9]*" | grep -Eo "([0-9]*\.){3}[0-9]*" | grep -v "127.0.0.1")
 
 # Did you run setup.sh first? let's see about that...
-if [ ! -f /usr/bin/createproject ]; then
+if [ ! -f /usr/local/bin/createproject ]; then
   echo "${red}It seems you did not run setup.sh. Run sh setup.sh and try again.${txtreset}"
   exit
 else
@@ -100,11 +100,11 @@ namespace :deploy do
     after :updated, :build do
         on roles(:app) do
             within release_path  do
- 
+
            end
         end
     end
-    
+
   desc \"Set up symlinks\"
     task :finished do
         on roles(:app) do
@@ -137,7 +137,7 @@ namespace :deploy do
     end
 
     after :updated, 'deploy:composer_install'
-    
+
 end" > "$HOME/Projects/$PROJECTNAME/config/deploy/staging.rb"
 echo "${yellow}Generating production.rb${txtreset}"
 echo "role :app, %w{$PROJECTNAME@YOUR_PRODUCTION_SERVER_HERE}
@@ -161,11 +161,11 @@ namespace :deploy do
     after :updated, :build do
         on roles(:app) do
             within release_path  do
- 
+
            end
         end
     end
-    
+
   desc \"Fix symlinks\"
     task :finished do
         on roles(:app) do
@@ -212,7 +212,7 @@ namespace :deploy do
     end
 
     after :updated, 'deploy:composer_install'
-    
+
 end" > "$HOME/Projects/$PROJECTNAME/config/deploy/production.rb"
 
 cd "$HOME/Projects/$PROJECTNAME/"
