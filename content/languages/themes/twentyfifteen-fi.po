@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Twenty Fifteen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-07-27 22:21:25+0000\n"
+"PO-Revision-Date: 2015-08-04 18:20:48+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,58 +10,99 @@ msgstr ""
 "X-Generator: GlotPress/1.0-alpha-1100\n"
 "Project-Id-Version: Twenty Fifteen\n"
 
-#. Author of the plugin/theme
-msgid "the WordPress team"
-msgstr "WordPress-tiimi"
+#. translators: %s: post title
+#: inc/template-tags.php:123
+msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "Jätä kommentti<span class=\"screen-reader-text\"> artikkeliin %s</span>"
+
+#: inc/template-tags.php:55
+msgctxt "Used before post format."
+msgid "Format"
+msgstr "Artikkelimuoto"
 
 #. Theme URI of the plugin/theme
 msgid "https://wordpress.org/themes/twentyfifteen/"
 msgstr "https://wordpress.org/themes/twentyfifteen/"
 
-#. Description of the plugin/theme
-msgid "Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty Fifteen's simple, straightforward typography is readable on a wide variety of screen sizes, and suitable for multiple languages. We designed it using a mobile-first approach, meaning your content takes center-stage, regardless of whether your visitors arrive by smartphone, tablet, laptop, or desktop computer."
-msgstr "Vuoden 2015 oletusteemamme on siisti ja suunniteltu blogeille. Twenty Fifteenin yksinkertainen ja suoraviivainen typografia on luettavaa monilla eri näyttökoolla, ja soveltuu useille eri kielille. Suunnittelussa on huomioitu ensin mobiililaitteet (mobile-first), eli sisältösi on pääosassa riippumatta siitä, katsellaanko sivustoasi kännykällä, tabletilla, kannettavalla tai pöytäkoneella."
-
-#. Theme Name of the plugin/theme
-msgid "Twenty Fifteen"
-msgstr "Twenty Fifteen"
-
-#: single.php:37
-msgid "Previous post:"
-msgstr "Edellinen artikkeli:"
+#: comments.php:28
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Yksi vastaus artikkeliin &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s vastausta artikkeliin &ldquo;%2$s&rdquo;"
 
 #: single.php:36
 msgid "Previous"
 msgstr "Edellinen"
 
-#: single.php:34
-msgid "Next post:"
-msgstr "Seuraava artikkeli:"
-
 #: single.php:33
 msgid "Next"
 msgstr "Seuraava"
+
+#: 404.php:21
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Näyttää siltä että täällä ei ole mitään. Kokeilepa hakua?"
+
+#: image.php:24
+msgid "Previous Image"
+msgstr "Edellinen kuva"
+
+#: image.php:24
+msgid "Next Image"
+msgstr "Seuraava kuva"
+
+#: inc/template-tags.php:23
+msgid "Comment navigation"
+msgstr "Kommenttien selaus"
+
+#: comments.php:53
+msgid "Comments are closed."
+msgstr "Kommentointi on suljettu."
+
+#: content-link.php:36 content-page.php:25 content.php:38 image.php:59
+msgid "Pages:"
+msgstr "Sivut:"
+
+#: content-link.php:56 content-page.php:35 content-search.php:28
+#: content-search.php:33 content.php:57 image.php:71
+msgid "Edit"
+msgstr "Muokkaa"
+
+#: footer.php:25
+msgid "Proudly powered by %s"
+msgstr "Voimanlähteenä %s"
+
+#: functions.php:85
+msgid "Primary Menu"
+msgstr "Ensisijainen valikko"
+
+#: header.php:26
+msgid "Skip to content"
+msgstr "Siirry sisältöön"
+
+#: content-none.php:15
+msgid "Nothing Found"
+msgstr "Mitään ei löytynyt"
+
+#: content-none.php:22
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Oletko valmis julkaisemaan ensimmäisen kirjoituksesi? <a href=\"%1$s\">Aloita tästä</a>."
+
+#: content-none.php:26
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Pahoittelut mutta mitään ei löytynyt hakuehdoillasi. Kokeile uudelleen joillakin toisilla hakusanoilla."
+
+#: content-none.php:31
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Emme valitettavasti löytäneet etsimääsi. Ehkä hakutoiminnosta on apua."
 
 #: search.php:18
 msgid "Search Results for: %s"
 msgstr "Hakutulokset kohteelle: %s"
 
-#: inc/template-tags.php:122
-msgid "% Comments"
-msgstr "% kommenttia"
-
-#: inc/template-tags.php:122
-msgid "1 Comment"
-msgstr "Yksi kommentti"
-
-#: inc/template-tags.php:122
-msgid "Leave a comment"
-msgstr "Kommentoi"
-
-#: inc/template-tags.php:113
-msgctxt "Used before full size attachment link."
-msgid "Full size"
-msgstr "Täysikokoinen"
+#. Author of the plugin/theme
+msgid "the WordPress team"
+msgstr "WordPress-tiimi"
 
 #: inc/template-tags.php:102
 msgctxt "Used before tag names."
@@ -78,37 +119,6 @@ msgctxt "Used between list items, there is a space after the comma."
 msgid ", "
 msgstr ", "
 
-#: inc/template-tags.php:85
-msgctxt "Used before post author name."
-msgid "Author"
-msgstr "Kirjoittaja"
-
-#: inc/template-tags.php:55
-msgctxt "Used before post format."
-msgid "Format"
-msgstr "Muoto"
-
-#: inc/template-tags.php:76
-msgctxt "Used before publish date."
-msgid "Posted on"
-msgstr "Julkaistu"
-
-#: inc/template-tags.php:49
-msgid "Featured"
-msgstr "Suositeltu"
-
-#: inc/template-tags.php:30
-msgid "Newer Comments"
-msgstr "Uudemmat kommentit"
-
-#: inc/template-tags.php:26
-msgid "Older Comments"
-msgstr "Vanhemmat kommentit"
-
-#: inc/template-tags.php:23
-msgid "Comment navigation"
-msgstr "Kommenttien selaus"
-
 #: inc/customizer.php:147
 msgid "Blue"
 msgstr "Sininen"
@@ -121,13 +131,13 @@ msgstr "Violetti"
 msgid "Pink"
 msgstr "Vaaleanpunainen"
 
-#: inc/customizer.php:114
-msgid "Yellow"
-msgstr "Keltainen"
-
 #: inc/customizer.php:103
 msgid "Dark"
 msgstr "Tumma"
+
+#: inc/customizer.php:114
+msgid "Yellow"
+msgstr "Keltainen"
 
 #: inc/customizer.php:92
 msgid "Default"
@@ -137,50 +147,129 @@ msgstr "Oletus"
 msgid "Header and Sidebar Background Color"
 msgstr "Otsakkeen ja sivupalkin taustaväri"
 
-#: inc/customizer.php:47 inc/customizer.php:63 inc/customizer.php:68
-msgid "Applied to the header on small screens and the sidebar on wide screens."
-msgstr "Käytetään otsakkeessa pienillä näytöillä ja sivupalkissa isoilla näytöillä."
+#: inc/customizer.php:46
+msgid "Header and Sidebar Text Color"
+msgstr "Otsakkeen ja sivupalkin tekstin väri"
 
 #: inc/customizer.php:31
 msgid "Base Color Scheme"
 msgstr "Väriteema"
 
-#: inc/customizer.php:46
-msgid "Header and Sidebar Text Color"
-msgstr "Otsakkeen ja sivupalkin tekstin väri"
+#: header.php:43
+msgid "Menu and widgets"
+msgstr "Valikko ja vimpaimet"
 
-#: inc/back-compat.php:37 inc/back-compat.php:47 inc/back-compat.php:60
-msgid "Twenty Fifteen requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again."
-msgstr "Twenty Fifteen vaatii vähintään WordPress-version 4.1. Käytät versiota %s. Ole hyvä ja päivitä ja kokeile uudelleen."
+#: functions.php:255
+msgid "expand child menu"
+msgstr "näytä alavalikko"
+
+#: functions.php:256
+msgid "collapse child menu"
+msgstr "piilota alavalikko"
+
+#: functions.php:135
+msgid "Add widgets here to appear in your sidebar."
+msgstr "Lisää vimpaimia sivupalkkiin."
+
+#: functions.php:133
+msgid "Widget Area"
+msgstr "Vimpainalue"
+
+#: functions.php:86
+msgid "Social Links Menu"
+msgstr "Some-valikko"
+
+#: author-bio.php:34
+msgid "View all posts by %s"
+msgstr "Näytä kaikki käyttäjän %s artikkelit"
+
+#: archive.php:51 content-link.php:40 content-page.php:29 content.php:42
+#: image.php:63 index.php:48 search.php:40
+msgid "Page"
+msgstr "Sivu"
+
+#: archive.php:50 index.php:47 search.php:39
+msgid "Next page"
+msgstr "Seuraava sivu"
+
+#: archive.php:49 index.php:46 search.php:38
+msgid "Previous page"
+msgstr "Edellinen sivu"
+
+#: inc/template-tags.php:85
+msgctxt "Used before post author name."
+msgid "Author"
+msgstr "Kirjoittaja"
+
+#: inc/template-tags.php:76
+msgctxt "Used before publish date."
+msgid "Posted on"
+msgstr "Julkaistu"
+
+#: inc/template-tags.php:30
+msgid "Newer Comments"
+msgstr "Uudemmat kommentit"
+
+#: inc/template-tags.php:26
+msgid "Older Comments"
+msgstr "Vanhemmat kommentit"
+
+#: inc/template-tags.php:49
+msgid "Featured"
+msgstr "Suositeltu"
+
+#. #-#-#-#-#  twentyfifteen.pot (Twenty Fifteen 1.3)  #-#-#-#-#
+#. Author URI of the plugin/theme
+#: footer.php:25
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+#: author-bio.php:12
+msgid "Published by"
+msgstr "Tietoa kirjoittajasta"
+
+#: inc/customizer.php:47 inc/customizer.php:63 inc/customizer.php:68
+msgid "Applied to the header on small screens and the sidebar on wide screens."
+msgstr "Käytetään otsakkeessa pienillä näytöillä ja sivupalkissa isoilla näytöillä."
+
+#: inc/template-tags.php:113
+msgctxt "Used before full size attachment link."
+msgid "Full size"
+msgstr "Täysikokoinen"
 
 #: image.php:84
 msgctxt "Parent post link"
 msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%title</span>"
 msgstr "<span class=\"meta-nav\">Julkaistu artikkelissa</span><span class=\"post-title\">%title</span>"
 
-#: image.php:24
-msgid "Next Image"
-msgstr "Seuraava kuva"
+#. translators: %s: Name of current post
+#: content-link.php:31 content.php:33 inc/template-tags.php:238
+msgid "Continue reading %s"
+msgstr "Jatka artikkeliin %s"
 
-#: header.php:43
-msgid "Menu and widgets"
-msgstr "Valikko ja vimpaimet"
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Hups! Etsimääsi sivua ei löytynyt."
 
-#: image.php:24
-msgid "Previous Image"
-msgstr "Edellinen kuva"
+#: inc/back-compat.php:37 inc/back-compat.php:47 inc/back-compat.php:60
+msgid "Twenty Fifteen requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again."
+msgstr "Twenty Fifteen vaatii vähintään WordPress-version 4.1. Käytät versiota %s. Ole hyvä ja päivitä ja kokeile uudelleen."
 
-#: header.php:26
-msgid "Skip to content"
-msgstr "Siirry sisältöön"
+#: single.php:37
+msgid "Previous post:"
+msgstr "Edellinen artikkeli:"
 
-#: functions.php:256
-msgid "collapse child menu"
-msgstr "piilota alavalikko"
+#: single.php:34
+msgid "Next post:"
+msgstr "Seuraava artikkeli:"
 
-#: functions.php:255
-msgid "expand child menu"
-msgstr "näytä alavalikko"
+#. Description of the plugin/theme
+msgid "Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty Fifteen's simple, straightforward typography is readable on a wide variety of screen sizes, and suitable for multiple languages. We designed it using a mobile-first approach, meaning your content takes center-stage, regardless of whether your visitors arrive by smartphone, tablet, laptop, or desktop computer."
+msgstr "Vuoden 2015 oletusteemamme on siisti ja suunniteltu blogeille. Twenty Fifteenin yksinkertainen ja suoraviivainen typografia on luettavaa monilla eri näyttökoolla, ja soveltuu useille eri kielille. Suunnittelussa on huomioitu ensin mobiililaitteet (mobile-first), eli sisältösi on pääosassa riippumatta siitä, katsellaanko sivustoasi kännykällä, tabletilla, kannettavalla tai pöytäkoneella."
+
+#. Theme Name of the plugin/theme
+msgid "Twenty Fifteen"
+msgstr "Twenty Fifteen"
 
 #. Translators: To add an additional character subset specific to your
 #. language, translate this to 'greek', 'cyrillic', 'devanagari' or
@@ -199,14 +288,6 @@ msgid "on"
 msgstr "on"
 
 #. Translators: If there are characters in your language that are not supported
-#. by Noto Serif, translate this to 'off'. Do not translate into your own
-#. language.
-#: functions.php:169
-msgctxt "Noto Serif font: on or off"
-msgid "on"
-msgstr "on"
-
-#. Translators: If there are characters in your language that are not supported
 #. by Noto Sans, translate this to 'off'. Do not translate into your own
 #. language.
 #: functions.php:161
@@ -214,98 +295,10 @@ msgctxt "Noto Sans font: on or off"
 msgid "on"
 msgstr "on"
 
-#: functions.php:135
-msgid "Add widgets here to appear in your sidebar."
-msgstr "Lisää vimpaimia sivupalkkiin."
-
-#: functions.php:133
-msgid "Widget Area"
-msgstr "Vimpainalue"
-
-#: functions.php:86
-msgid "Social Links Menu"
-msgstr "Some-valikko"
-
-#: functions.php:85
-msgid "Primary Menu"
-msgstr "Ensisijainen valikko"
-
-#: footer.php:25
-msgid "Proudly powered by %s"
-msgstr "Voimanlähteenä %s"
-
-#. #-#-#-#-#  twentyfifteen.pot (Twenty Fifteen 1.2)  #-#-#-#-#
-#. Author URI of the plugin/theme
-#: footer.php:25
-msgid "https://wordpress.org/"
-msgstr "https://wordpress.org/"
-
-#: content-none.php:31
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr "Emme valitettavasti löytäneet etsimääsi. Ehkä hakutoiminnosta on apua."
-
-#: content-none.php:26
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr "Pahoittelut mutta mitään ei löytynyt hakuehdoillasi. Kokeile uudelleen joillakin toisilla hakusanoilla."
-
-#: content-none.php:22
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "Oletko valmis julkaisemaan ensimmäisen kirjoituksesi? <a href=\"%1$s\">Aloita tästä</a>."
-
-#: content-none.php:15
-msgid "Nothing Found"
-msgstr "Mitään ei löytynyt"
-
-#: content-link.php:56 content-page.php:35 content-search.php:28
-#: content-search.php:33 content.php:57 image.php:71
-msgid "Edit"
-msgstr "Muokkaa"
-
-#: content-link.php:36 content-page.php:25 content.php:38 image.php:59
-msgid "Pages:"
-msgstr "Sivut:"
-
-#. translators: %s: Name of current post
-#: content-link.php:31 content.php:33 inc/template-tags.php:237
-msgid "Continue reading %s"
-msgstr "Jatka artikkeliin %s"
-
-#: comments.php:53
-msgid "Comments are closed."
-msgstr "Kommentointi on suljettu."
-
-#: comments.php:28
-msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "Yksi vastaus artikkeliin &ldquo;%2$s&rdquo;"
-msgstr[1] "%1$s vastausta artikkeliin &ldquo;%2$s&rdquo;"
-
-#: author-bio.php:34
-msgid "View all posts by %s"
-msgstr "Näytä kaikki käyttäjän %s artikkelit"
-
-#: author-bio.php:12
-msgid "Published by"
-msgstr "Tietoa kirjoittajasta"
-
-#: archive.php:51 content-link.php:40 content-page.php:29 content.php:42
-#: image.php:63 index.php:48 search.php:40
-msgid "Page"
-msgstr "Sivu"
-
-#: archive.php:50 index.php:47 search.php:39
-msgid "Next page"
-msgstr "Seuraava sivu"
-
-#: archive.php:49 index.php:46 search.php:38
-msgid "Previous page"
-msgstr "Edellinen sivu"
-
-#: 404.php:21
-msgid "It looks like nothing was found at this location. Maybe try a search?"
-msgstr "Näyttää siltä että täällä ei ole mitään. Kokeilepa hakua?"
-
-#: 404.php:17
-msgid "Oops! That page can&rsquo;t be found."
-msgstr "Hups! Etsimääsi sivua ei löytynyt."
+#. Translators: If there are characters in your language that are not supported
+#. by Noto Serif, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:169
+msgctxt "Noto Serif font: on or off"
+msgid "on"
+msgstr "on"
