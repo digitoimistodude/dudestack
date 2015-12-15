@@ -271,6 +271,7 @@ echo "${yellow}Activating necessary plugins, mainly for theme development...:${t
 ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin activate wordpress-seo"
 ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin activate wp-last-login"
 ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin activate simple-history"
+ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin activate clean-image-filenames"
 chmod 777 "$HOME/Projects/$PROJECTNAME/content"
 
 ## You can set up extra users here - if you want, uncomment next lines
