@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f22a8cbc750aef478d43446d6718f6c1",
-    "content-hash": "52afcd6164af7831c57f2a9bc7c82f29",
+    "hash": "793a8ec22cb785013af2bb46d83c7c89",
+    "content-hash": "09306c59c3dd9db2160f759ecf3a31b9",
     "packages": [
         {
             "name": "composer/installers",
@@ -402,7 +402,7 @@
         },
         {
             "name": "koodimonni-plugin-language/woocommerce-en_gb",
-            "version": "v2.4.10",
+            "version": "v2.4.12",
             "dist": {
                 "type": "zip",
                 "url": "https://raw.githubusercontent.com/woothemes/woocommerce-language-packs/a2caa5432e4acde3558179827b4eed748032b70d/packages/en_GB.zip",
@@ -423,7 +423,7 @@
         },
         {
             "name": "koodimonni-plugin-language/woocommerce-fi",
-            "version": "v2.4.10",
+            "version": "v2.4.12",
             "dist": {
                 "type": "zip",
                 "url": "https://raw.githubusercontent.com/woothemes/woocommerce-language-packs/a2caa5432e4acde3558179827b4eed748032b70d/packages/fi.zip",
@@ -1127,16 +1127,36 @@
             "time": "2015-11-23 13:50:12"
         },
         {
-            "name": "wpackagist-plugin/go-live-update-urls",
-            "version": "3.0.1",
+            "name": "wpackagist-plugin/clean-image-filenames",
+            "version": "1.1.1",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/go-live-update-urls/",
-                "reference": "tags/3.0.1"
+                "url": "http://plugins.svn.wordpress.org/clean-image-filenames/",
+                "reference": "tags/1.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/go-live-update-urls.3.0.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/clean-image-filenames.1.1.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/clean-image-filenames/"
+        },
+        {
+            "name": "wpackagist-plugin/go-live-update-urls",
+            "version": "3.0.2",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/go-live-update-urls/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/go-live-update-urls.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1188,15 +1208,15 @@
         },
         {
             "name": "wpackagist-plugin/simple-history",
-            "version": "2.4",
+            "version": "2.5",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/simple-history/",
-                "reference": "tags/2.4"
+                "reference": "tags/2.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/simple-history.2.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/simple-history.2.5.zip",
                 "reference": null,
                 "shasum": null
             },
