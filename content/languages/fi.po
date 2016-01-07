@@ -1,14 +1,14 @@
-# Translation of Development in Finnish
-# This file is distributed under the same license as the Development package.
+# Translation of Development (4.4.x) in Finnish
+# This file is distributed under the same license as the Development (4.4.x) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-12-07 07:31:07+0000\n"
+"PO-Revision-Date: 2015-12-23 06:49:15+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: GlotPress/1.0-alpha-1100\n"
-"Project-Id-Version: Development\n"
+"Project-Id-Version: Development (4.4.x)\n"
 
 #. translators: 'rtl' or 'ltr'. This sets the text direction for WordPress.
 #: wp-includes/locale.php:201
@@ -46,11 +46,11 @@ msgid "https://codex.wordpress.org/Debugging_a_WordPress_Network"
 msgstr "https://codex.wordpress.org/Debugging_a_WordPress_Network"
 
 #. translators: %s: Codex URL
-#: wp-includes/functions.php:3784
+#: wp-includes/functions.php:3789
 msgid "Please see <a href=\"%s\">Debugging in WordPress</a> for more information."
 msgstr "Lisätietoja: <a href=\"%s\">Debugging in WordPress</a>."
 
-#: wp-includes/functions.php:3785
+#: wp-includes/functions.php:3790
 msgid "https://codex.wordpress.org/Debugging_in_WordPress"
 msgstr "https://codex.wordpress.org/Debugging_in_WordPress"
 
@@ -93,7 +93,7 @@ msgstr "Tiedosto %s puuttuu. Se tarvitaan ennen kuin päästään alkuun."
 msgid "Term ID is shared between multiple taxonomies"
 msgstr "Termin ID on jaettu useamman taksonomian kesken"
 
-#: wp-includes/taxonomy.php:1578 wp-includes/taxonomy.php:1660
+#: wp-includes/taxonomy.php:1584 wp-includes/taxonomy.php:1666
 msgid "Term meta cannot be added to terms that are shared between taxonomies."
 msgstr "Metatietoa ei voi lisätä termille, joka kuuluu useampaan taksonomiaan."
 
@@ -171,7 +171,7 @@ msgstr "tammikuun"
 
 #. translators: If months in your language require a genitive case, translate
 #. this to 'on'. Do not translate into your own language.
-#: wp-includes/functions.php:178
+#: wp-includes/functions.php:183
 msgctxt "decline months names: on or off"
 msgid "off"
 msgstr "on"
@@ -343,19 +343,19 @@ msgstr "Kivanimi (nicename) ei voi olla pidempi kuin 50 merkkiä."
 msgid "<strong>ERROR</strong>: Invalid username."
 msgstr "<strong>VIRHE</strong>: Virheellinen käyttäjänimi."
 
-#: wp-includes/taxonomy.php:538
+#: wp-includes/taxonomy.php:541
 msgid "Tags list navigation"
 msgstr "Avainsanojen selaus"
 
-#: wp-includes/taxonomy.php:538
+#: wp-includes/taxonomy.php:541
 msgid "Categories list navigation"
 msgstr "Kategorioiden selaus"
 
-#: wp-includes/taxonomy.php:539
+#: wp-includes/taxonomy.php:542
 msgid "Categories list"
 msgstr "Kategorioiden listaus"
 
-#: wp-includes/taxonomy.php:539
+#: wp-includes/taxonomy.php:542
 msgid "Tags list"
 msgstr "Avainsanojen listaus"
 
@@ -498,7 +498,7 @@ msgid "Dec"
 msgstr "joulu"
 
 #. translators: playlist item title
-#: wp-includes/media.php:1749 wp-includes/media.php:1764
+#: wp-includes/media.php:1777 wp-includes/media.php:1792
 msgctxt "playlist item title"
 msgid "&#8220;%s&#8221;"
 msgstr "&#8221;%s&#8221;"
@@ -516,16 +516,16 @@ msgid "Jul"
 msgstr "heinä"
 
 #. translators: three-letter abbreviation of the month
-#: wp-includes/locale.php:176
-msgctxt "October abbreviation"
-msgid "Oct"
-msgstr "touko"
-
-#. translators: three-letter abbreviation of the month
 #: wp-includes/locale.php:175
 msgctxt "September abbreviation"
 msgid "Sep"
 msgstr "syys"
+
+#. translators: three-letter abbreviation of the month
+#: wp-includes/locale.php:176
+msgctxt "October abbreviation"
+msgid "Oct"
+msgstr "loka"
 
 #. translators: three-letter abbreviation of the month
 #: wp-includes/locale.php:167
@@ -613,7 +613,7 @@ msgstr "Uudemmat kommentit"
 msgid "Older comments"
 msgstr "Vanhemmat kommentit"
 
-#: wp-includes/general-template.php:1950
+#: wp-includes/general-template.php:1946
 msgid "Posts published on %s"
 msgstr "Artikkelit julkaistu %s"
 
@@ -665,7 +665,7 @@ msgstr "Upotettu WordPress-artikkeli"
 msgid "Search installed themes&hellip;"
 msgstr "Etsi asennettuja teemoja&hellip;"
 
-#: wp-includes/comment-template.php:2110
+#: wp-includes/comment-template.php:2143
 msgid "<a href=\"%1$s\" aria-label=\"Logged in as %2$s. Edit your profile.\">Logged in as %2$s</a>. <a href=\"%3$s\">Log out?</a>"
 msgstr "<a href=\"%1$s\" aria-label=\"Kirjautunut nimellä %2$s. Muokkaa profiiliasi.\">Kirjautunut nimellä %2$s</a>. <a href=\"%3$s\">Kirjaudu ulos?</a>"
 
@@ -752,7 +752,7 @@ msgstr "Näytä/piilota osio: %s"
 #. Asian characters), enter 'characters_excluding_spaces' or
 #. 'characters_including_spaces'. Otherwise, enter 'words'. Do not translate
 #. into your own language.
-#: wp-includes/formatting.php:2960 wp-includes/script-loader.php:419
+#: wp-includes/formatting.php:2964 wp-includes/script-loader.php:419
 msgctxt "Word count type. Do not translate!"
 msgid "words"
 msgstr "words"
@@ -811,7 +811,7 @@ msgstr "Ei kohteita"
 msgid "Menu options"
 msgstr "Valikon ominaisuudet"
 
-#: wp-login.php:732
+#: wp-login.php:731
 msgid "Registration confirmation will be emailed to you."
 msgstr "Rekisteröinnin vahvistus lähetetään sinulle sähköpostitse."
 
@@ -971,7 +971,7 @@ msgstr "Järjestä valikkokohteet"
 msgid "Add or remove menu items"
 msgstr "Lisää tai poista valikkokohteita"
 
-#: wp-includes/functions.php:3619
+#: wp-includes/functions.php:3624
 msgid "The called constructor method for %1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
 msgstr "Kutsuttu luokan %1$s muodostinfunktio <strong>vanhentunut</strong> versiosta %2$s! Käytä sen sijaan funktiota %3$s."
 
@@ -1043,7 +1043,7 @@ msgstr ""
 "###SITENAME###\n"
 "###SITEURL###"
 
-#: wp-includes/taxonomy.php:537
+#: wp-includes/taxonomy.php:540
 msgid "No tags"
 msgstr "Ei avainsanoja"
 
@@ -1440,7 +1440,7 @@ msgstr "Käyttäjän ohjausnäkymä: %s"
 msgid "<span>Active:</span> %s"
 msgstr "<span>Aktiivinen:</span> %s"
 
-#: wp-login.php:781 wp-login.php:785
+#: wp-login.php:780 wp-login.php:784
 msgid "https://codex.wordpress.org/Cookies"
 msgstr "https://codex.wordpress.org/Cookies"
 
@@ -1551,7 +1551,7 @@ msgstr "Päivitys onnistui."
 msgid "Taxonomy names must be between 1 and 32 characters in length."
 msgstr "Taksonomian nimen on oltava 1-32 merkkiä pitkä."
 
-#: wp-includes/taxonomy.php:3965
+#: wp-includes/taxonomy.php:3971
 msgid "Could not split shared term."
 msgstr "Jaettua termiä ei voitu jakaa."
 
@@ -1559,7 +1559,7 @@ msgstr "Jaettua termiä ei voitu jakaa."
 msgid "Customizer"
 msgstr "Mukautin"
 
-#: wp-includes/media.php:3315
+#: wp-includes/media.php:3343
 msgid "Drag and drop to reorder media files."
 msgstr "Järjestä mediatiedostot raahamalla ja pudottamalla."
 
@@ -1671,12 +1671,12 @@ msgid "Link Text"
 msgstr "Linkkiteksti"
 
 #. translators: %s: post title
-#: wp-includes/comment-template.php:1456
+#: wp-includes/comment-template.php:1468
 msgid "1 Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "1 kommentti<span class=\"screen-reader-text\"> artikkeliin %s</span>"
 
 #. translators: 1: Number of comments 2: post title
-#: wp-includes/comment-template.php:1461
+#: wp-includes/comment-template.php:1473
 msgid "%1$s Comment<span class=\"screen-reader-text\"> on %2$s</span>"
 msgid_plural "%1$s Comments<span class=\"screen-reader-text\"> on %2$s</span>"
 msgstr[0] "%1$s kommentti<span class=\"screen-reader-text\"> artikkeliin %2$s</span>"
@@ -1687,7 +1687,7 @@ msgid "Select Year"
 msgstr "Valitse vuosi"
 
 #. translators: %s: post title
-#: wp-includes/comment-template.php:1467
+#: wp-includes/comment-template.php:1479
 msgid "Comments Off<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "Kommentit pois päältä<span class=\"screen-reader-text\"> artikkelissa %s</span>"
 
@@ -1704,7 +1704,7 @@ msgid "Select Post"
 msgstr "Valitse artikkeli"
 
 #. translators: %s: post title
-#: wp-includes/comment-template.php:1451
+#: wp-includes/comment-template.php:1463
 msgid "No Comments<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "Ei kommentteja<span class=\"screen-reader-text\"> artikkeliin %s</span>"
 
@@ -1739,7 +1739,7 @@ msgctxt "next post"
 msgid "Next"
 msgstr "Seuraava"
 
-#: wp-includes/taxonomy.php:536
+#: wp-includes/taxonomy.php:539
 msgid "No categories found."
 msgstr "Kategorioita ei löytynyt."
 
@@ -1793,7 +1793,7 @@ msgstr "Tämä ei kuvaa todellista päivämäärää: kuukausi %1$s, päivä %2$
 msgid "You need to pass an array of types."
 msgstr "Anna parametrina taulukko (array)."
 
-#: wp-includes/taxonomy.php:2646
+#: wp-includes/taxonomy.php:2652
 msgid "A term with the name provided already exists in this taxonomy."
 msgstr "Termi tällä nimellä ja polkutunnuksella on jo olemassa tässä taksonomiassa."
 
@@ -1831,7 +1831,7 @@ msgstr "Kommentti: %s"
 msgid "URL: %s"
 msgstr "URL: %s"
 
-#: wp-includes/media.php:3333
+#: wp-includes/media.php:3361
 msgctxt "noun"
 msgid "Trash"
 msgstr "Roskakori"
@@ -1867,86 +1867,86 @@ msgstr "Asennettu"
 msgid "No alignment"
 msgstr "Ei tasausta"
 
-#: wp-includes/general-template.php:1383
+#: wp-includes/general-template.php:1379
 msgid "Archives: %s"
 msgstr "Arkistot: %s"
 
 #. translators: 1: Taxonomy singular name, 2: Current taxonomy term
-#: wp-includes/general-template.php:1387
+#: wp-includes/general-template.php:1383
 msgid "%1$s: %2$s"
 msgstr "%1$s: %2$s"
 
-#: wp-includes/general-template.php:1378
+#: wp-includes/general-template.php:1374
 msgctxt "post format archive title"
 msgid "Audio"
 msgstr "Äänitiedostot"
 
-#: wp-includes/general-template.php:1380
+#: wp-includes/general-template.php:1376
 msgctxt "post format archive title"
 msgid "Chats"
 msgstr "Keskustelut"
 
-#: wp-includes/general-template.php:1376
+#: wp-includes/general-template.php:1372
 msgctxt "post format archive title"
 msgid "Statuses"
 msgstr "Tilapäivitykset"
 
-#: wp-includes/general-template.php:1374
+#: wp-includes/general-template.php:1370
 msgctxt "post format archive title"
 msgid "Links"
 msgstr "Linkit"
 
-#: wp-includes/general-template.php:1370
+#: wp-includes/general-template.php:1366
 msgctxt "post format archive title"
 msgid "Videos"
 msgstr "Videot"
 
-#: wp-includes/general-template.php:1372
+#: wp-includes/general-template.php:1368
 msgctxt "post format archive title"
 msgid "Quotes"
 msgstr "Lainaukset"
 
-#: wp-includes/general-template.php:1366
+#: wp-includes/general-template.php:1362
 msgctxt "post format archive title"
 msgid "Galleries"
 msgstr "Galleriat"
 
-#: wp-includes/general-template.php:1368
+#: wp-includes/general-template.php:1364
 msgctxt "post format archive title"
 msgid "Images"
 msgstr "Kuvat"
 
-#: wp-includes/general-template.php:1359
+#: wp-includes/general-template.php:1355
 msgid "Month: %s"
 msgstr "Kuukausi: %s"
 
-#: wp-includes/general-template.php:1361
+#: wp-includes/general-template.php:1357
 msgid "Day: %s"
 msgstr "Päivä: %s"
 
-#: wp-includes/general-template.php:1361 wp-includes/general-template.php:1949
+#: wp-includes/general-template.php:1357 wp-includes/general-template.php:1945
 msgctxt "daily archives date format"
 msgid "F j, Y"
 msgstr "j.n.Y"
 
-#: wp-includes/general-template.php:1364
+#: wp-includes/general-template.php:1360
 msgctxt "post format archive title"
 msgid "Asides"
 msgstr "Sivuhuomautukset"
 
-#: wp-includes/general-template.php:1357
+#: wp-includes/general-template.php:1353
 msgid "Year: %s"
 msgstr "Vuosi: %s"
 
-#: wp-includes/general-template.php:1355
+#: wp-includes/general-template.php:1351
 msgid "Author: %s"
 msgstr "Kirjoittajalta %s"
 
-#: wp-includes/general-template.php:1353
+#: wp-includes/general-template.php:1349
 msgid "Tag: %s"
 msgstr "Avainsana: %s"
 
-#: wp-includes/general-template.php:1351
+#: wp-includes/general-template.php:1347
 msgid "Category: %s"
 msgstr "Kategoria: %s"
 
@@ -1959,7 +1959,7 @@ msgstr "Älä käytä style-tageja kutsun wp_add_inline_style() kanssa."
 msgid "The following values do not describe a valid date: year %1$s, month %2$s, day %3$s."
 msgstr "Tämä ei kuvaa todellista päivämäärää: vuosi %1$s, kuukausi %2$s, päivä %3$s."
 
-#: wp-includes/comment-template.php:1558
+#: wp-includes/comment-template.php:1570
 msgid "Reply to %s"
 msgstr "Vastaa kommenttiin %s"
 
@@ -2060,15 +2060,15 @@ msgctxt "list style"
 msgid "Default"
 msgstr "Oletus"
 
-#: wp-login.php:851
+#: wp-login.php:850
 msgid "<strong>You have successfully updated WordPress!</strong> Please log back in to see what&#8217;s new."
 msgstr "<strong>WordPress päivitettiin onnistuneesti!</strong> Ole hyvä ja kirjaudu takaisin nähdäksesi päivityksen uudet asiat."
 
-#: wp-includes/media.php:3340
+#: wp-includes/media.php:3368
 msgid "Trash Selected"
 msgstr "Siirrä valitut roskakoriin"
 
-#: wp-includes/media.php:3341
+#: wp-includes/media.php:3369
 msgid "Untrash Selected"
 msgstr "Palauta valitut roskakorista"
 
@@ -2076,7 +2076,7 @@ msgstr "Palauta valitut roskakorista"
 msgid "Untrash"
 msgstr "Palauta roskakorista"
 
-#: wp-includes/media.php:3337
+#: wp-includes/media.php:3365
 msgid ""
 "You are about to trash these items.\n"
 "  'Cancel' to stop, 'OK' to delete."
@@ -2088,15 +2088,15 @@ msgstr ""
 msgid "Press return or enter to open this panel"
 msgstr "Avaa tämä paneeli painamalla enteriä."
 
-#: wp-includes/media.php:3338
+#: wp-includes/media.php:3366
 msgid "Bulk Select"
 msgstr "Valitse useita kerralla"
 
-#: wp-includes/media.php:3339
+#: wp-includes/media.php:3367
 msgid "Cancel Selection"
 msgstr "Peru valinta"
 
-#: wp-includes/media.php:3342
+#: wp-includes/media.php:3370
 msgid "Delete Selected"
 msgstr "Poista valitut"
 
@@ -2108,11 +2108,11 @@ msgstr "(ei otsikkoa)"
 
 #. translators: %s: taxonomy label, %l: list of terms formatted as per
 #. $term_template
-#: wp-includes/taxonomy.php:4451
+#: wp-includes/taxonomy.php:4457
 msgid "%s: %l."
 msgstr "%s: %l."
 
-#: wp-includes/media.php:2104
+#: wp-includes/media.php:2132
 msgid "Bitrate"
 msgstr "Tiedonsiirtonopeus"
 
@@ -2192,19 +2192,19 @@ msgstr "Näytä liitteen sivu"
 msgid "Edit more details"
 msgstr "Muokkaa lisätietoja"
 
-#: wp-includes/media.php:2105
+#: wp-includes/media.php:2133
 msgid "Bitrate Mode"
 msgstr "Tiedonsiirtomoodi"
 
-#: wp-includes/media.php:3332
+#: wp-includes/media.php:3360
 msgid "Unattached"
 msgstr "Ei liitetty"
 
-#: wp-includes/media.php:3329
+#: wp-includes/media.php:3357
 msgid "All dates"
 msgstr "Kaikki päivämäärät"
 
-#: wp-includes/media.php:3336 wp-includes/script-loader.php:82
+#: wp-includes/media.php:3364 wp-includes/script-loader.php:82
 msgid ""
 "You are about to permanently delete these items.\n"
 "  'Cancel' to stop, 'OK' to delete."
@@ -2212,15 +2212,15 @@ msgstr ""
 "Olet poistamassa näitä kohteita pysyvästi.\n"
 "  Paina 'Peruuta' peruaksesi toiminnon, 'OK' poistaaksesi kohteet."
 
-#: wp-includes/media.php:3345
+#: wp-includes/media.php:3373
 msgid "Filter by date"
 msgstr "Suodata päivämäärän mukaan"
 
-#: wp-includes/media.php:3346
+#: wp-includes/media.php:3374
 msgid "Filter by type"
 msgstr "Suodata tyypin mukaan"
 
-#: wp-includes/media.php:3347
+#: wp-includes/media.php:3375
 msgid "Search Media"
 msgstr "Hae mediaa"
 
@@ -2281,11 +2281,11 @@ msgstr "Jos haluat liittää sisältöä Microsoft Wordistä, koita ottaa tämä
 msgid "Keyboard Shortcuts"
 msgstr "Näppäinoikotiet"
 
-#: wp-login.php:780
+#: wp-login.php:779
 msgid "<strong>ERROR</strong>: Cookies are blocked due to unexpected output. For help, please see <a href=\"%1$s\">this documentation</a> or try the <a href=\"%2$s\">support forums</a>."
 msgstr "<strong>VIRHE</strong>: Evästeet on estetty. Lue lisää <a href=\"%1$s\">täältä</a> tai kokeile <a href=\"%2$s\">tukifoorumia</a>."
 
-#: wp-login.php:784
+#: wp-login.php:783
 msgid "<strong>ERROR</strong>: Cookies are blocked or not supported by your browser. You must <a href=\"%s\">enable cookies</a> to use WordPress."
 msgstr "<strong>VIRHE</strong>: Selaimesi on estänyt evästeet tai se ei tue niitä. Sinun on otettava <a href=\"%s\">evästeet käyttöön</a> käyttääksesi WordPressiä."
 
@@ -2322,7 +2322,7 @@ msgstr "Tekstin koko"
 msgid "Split table cell"
 msgstr "Jaa solu"
 
-#: wp-includes/media-template.php:238 wp-includes/media.php:3383
+#: wp-includes/media-template.php:238 wp-includes/media.php:3411
 msgid "Suggested image dimensions:"
 msgstr "Suositeltu kuvakoko:"
 
@@ -2343,53 +2343,53 @@ msgid "Image CSS Class"
 msgstr "Kuvan CSS-luokka"
 
 #: wp-includes/media-template.php:383 wp-includes/media-template.php:562
-#: wp-includes/media.php:2095
+#: wp-includes/media.php:2123
 msgid "Artist"
 msgstr "Esittäjä"
 
 #: wp-includes/media-template.php:384 wp-includes/media-template.php:563
-#: wp-includes/media.php:2096
+#: wp-includes/media.php:2124
 msgid "Album"
 msgstr "Albumi"
 
-#: wp-includes/media.php:2100
+#: wp-includes/media.php:2128
 msgid "Genre"
 msgstr "Tyylilaji"
 
-#: wp-includes/media.php:2101
+#: wp-includes/media.php:2129
 msgid "Year"
 msgstr "Vuosi"
 
-#: wp-includes/media.php:2102
+#: wp-includes/media.php:2130
 msgctxt "video or audio"
 msgid "Length"
 msgstr "Pituus"
 
-#: wp-includes/media.php:3384
+#: wp-includes/media.php:3412
 msgid "There has been an error cropping your image."
 msgstr "Kuvan rajaamisessa tapahtui virhe"
 
-#: wp-includes/media.php:3403
+#: wp-includes/media.php:3431
 msgid "Edit Audio Playlist"
 msgstr "Muokkaa audiosoittolistaa"
 
-#: wp-includes/media.php:3404
+#: wp-includes/media.php:3432
 msgid "&#8592; Cancel Audio Playlist"
 msgstr "&#8592; Peru soittolista"
 
-#: wp-includes/media.php:3405
+#: wp-includes/media.php:3433
 msgid "Insert audio playlist"
 msgstr "Lisää audiosoittolista"
 
-#: wp-includes/media.php:3406
+#: wp-includes/media.php:3434
 msgid "Update audio playlist"
 msgstr "Päivitä audiosoittolista"
 
-#: wp-includes/media.php:3407
+#: wp-includes/media.php:3435
 msgid "Add to audio playlist"
 msgstr "Lisää soittolistaan"
 
-#: wp-includes/media.php:3408
+#: wp-includes/media.php:3436
 msgid "Add to Audio Playlist"
 msgstr "Lisää soittolistaan"
 
@@ -2442,7 +2442,7 @@ msgstr "Automaattinen"
 msgid "Move to another area&hellip;"
 msgstr "Siirrä toiseen alueeseen&hellip;"
 
-#: wp-includes/media.php:3382
+#: wp-includes/media.php:3410
 msgid "Cropping&hellip;"
 msgstr "Rajataan&hellip;"
 
@@ -2690,7 +2690,7 @@ msgstr "Omat tyylit"
 msgid "Add alternate sources for maximum HTML5 playback:"
 msgstr "Lisää vaihtoehtoisia lähteitä maksimaalisen HTML5-yhteensopivuuden takaamiseksi:"
 
-#: wp-includes/media.php:3371
+#: wp-includes/media.php:3399
 msgid "Image Details"
 msgstr "Kuvan tiedot"
 
@@ -2704,7 +2704,7 @@ msgstr "Tapahtui odottamaton virhe. WordPress.org:issa tai tämän palvelimen as
 #: wp-includes/class-wp-customize-section.php:356
 #: wp-includes/class-wp-customize-widgets.php:711
 #: wp-includes/customize/class-wp-customize-nav-menus-panel.php:82
-#: wp-includes/media.php:3309
+#: wp-includes/media.php:3337
 msgid "Back"
 msgstr "Takaisin"
 
@@ -2722,17 +2722,17 @@ msgid "Search"
 msgstr "Haku"
 
 #. translators: used to join items in a list with more than 2 items
-#: wp-includes/formatting.php:4064
+#: wp-includes/formatting.php:4074
 msgid "%s, %s"
 msgstr "%s, %s"
 
 #. translators: used to join items in a list with only 2 items
-#: wp-includes/formatting.php:4068
+#: wp-includes/formatting.php:4078
 msgid "%s and %s"
 msgstr "%s ja %s"
 
 #. translators: used to join last two items in a list with more than 2 times
-#: wp-includes/formatting.php:4066
+#: wp-includes/formatting.php:4076
 msgid "%s, and %s"
 msgstr "%s ja %s"
 
@@ -2760,113 +2760,113 @@ msgstr "Ruutukaappaus"
 msgid "There are no associated subtitles."
 msgstr "Mediaan ei liity kuvatekstejä"
 
-#: wp-includes/media.php:3325
+#: wp-includes/media.php:3353
 msgid "Create a new playlist"
 msgstr "Luo uusi soittolista"
 
-#: wp-includes/media.php:3326
+#: wp-includes/media.php:3354
 msgid "Create a new video playlist"
 msgstr "Luo uusi videosoittolista"
 
-#: wp-includes/media.php:3372
+#: wp-includes/media.php:3400
 msgid "Replace Image"
 msgstr "Vaihda kuva"
 
-#: wp-includes/media.php:3373 wp-includes/media.php:3390
-#: wp-includes/media.php:3396
+#: wp-includes/media.php:3401 wp-includes/media.php:3418
+#: wp-includes/media.php:3424
 msgid "Cancel Edit"
 msgstr "Peruuta muokkaus"
 
 #: wp-includes/customize/class-wp-customize-image-control.php:41
-#: wp-includes/media.php:3377
+#: wp-includes/media.php:3405
 msgid "Choose Image"
 msgstr "Valitse kuva"
 
-#: wp-includes/media.php:3378
+#: wp-includes/media.php:3406
 msgid "Select and Crop"
 msgstr "Valitse ja rajaa"
 
-#: wp-includes/media.php:3379
+#: wp-includes/media.php:3407
 msgid "Skip Cropping"
 msgstr "Ohita rajaus"
 
-#: wp-includes/media.php:3380
+#: wp-includes/media.php:3408
 msgid "Crop Image"
 msgstr "Rajaa kuva"
 
-#: wp-includes/media.php:3381
+#: wp-includes/media.php:3409
 msgid "Crop your image"
 msgstr "Rajaa kuvasi"
 
-#: wp-includes/media.php:3387
+#: wp-includes/media.php:3415
 msgid "Audio Details"
 msgstr "Äänitiedoston tiedot"
 
-#: wp-includes/media.php:3388
+#: wp-includes/media.php:3416
 msgid "Replace Audio"
 msgstr "Vaihda äänitiedosto"
 
-#: wp-includes/media.php:3389
+#: wp-includes/media.php:3417
 msgid "Add Audio Source"
 msgstr "Lisää vaihtoehtoinen tiedosto"
 
-#: wp-includes/media.php:3393
+#: wp-includes/media.php:3421
 msgid "Video Details"
 msgstr "Videon tiedot"
 
-#: wp-includes/media.php:3394
+#: wp-includes/media.php:3422
 msgid "Replace Video"
 msgstr "Vaihda video"
 
-#: wp-includes/media.php:3395
+#: wp-includes/media.php:3423
 msgid "Add Video Source"
 msgstr "Lisää vaihtoehtoinen videotiedosto"
 
-#: wp-includes/media.php:3397
+#: wp-includes/media.php:3425
 msgid "Select Poster Image"
 msgstr "Valitse ruutukaappaus"
 
-#: wp-includes/media.php:3398
+#: wp-includes/media.php:3426
 msgid "Add Subtitles"
 msgstr "Lisää tekstitys"
 
-#: wp-includes/media.php:3401
+#: wp-includes/media.php:3429
 msgid "Drag and drop to reorder tracks."
 msgstr "Järjestä raidat raahaamalla ja pudottamalla."
 
-#: wp-includes/media.php:3402
+#: wp-includes/media.php:3430
 msgid "Create Audio Playlist"
 msgstr "Luo audiosoittolista"
 
-#: wp-includes/media.php:3411
+#: wp-includes/media.php:3439
 msgid "Drag and drop to reorder videos."
 msgstr "Järjestä videot raahaamalla ja pudottamalla."
 
-#: wp-includes/media.php:3412
+#: wp-includes/media.php:3440
 msgid "Create Video Playlist"
 msgstr "Luo videosoittolista"
 
-#: wp-includes/media.php:3413
+#: wp-includes/media.php:3441
 msgid "Edit Video Playlist"
 msgstr "Muokkaa videosoittolistaa"
 
-#: wp-includes/media.php:3414
+#: wp-includes/media.php:3442
 msgid "&#8592; Cancel Video Playlist"
 msgstr "&#8592; Peruuta videosoittolista"
 
-#: wp-includes/media.php:3415
+#: wp-includes/media.php:3443
 msgid "Insert video playlist"
 msgstr "Upota videosoittolista"
 
-#: wp-includes/media.php:3416
+#: wp-includes/media.php:3444
 msgid "Update video playlist"
 msgstr "Päivitä videosoittolista"
 
-#: wp-includes/media.php:3417
+#: wp-includes/media.php:3445
 msgid "Add to video playlist"
 msgstr "Lisää videosoittolistaan"
 
-#: wp-includes/media.php:3418
+#: wp-includes/media.php:3446
 msgid "Add to Video Playlist"
 msgstr "Lisää videosoittolistaan"
 
@@ -2915,7 +2915,7 @@ msgid "Keywords"
 msgstr "Avainsanat"
 
 #: wp-includes/admin-bar.php:145 wp-includes/wp-db.php:1085
-#: wp-includes/wp-db.php:1551 wp-includes/wp-db.php:1655 wp-login.php:781
+#: wp-includes/wp-db.php:1551 wp-includes/wp-db.php:1655 wp-login.php:780
 msgid "https://wordpress.org/support/"
 msgstr "https://fi.forums.wordpress.org/"
 
@@ -3078,7 +3078,7 @@ msgstr "Sivunvaihto"
 msgid "Paste as text"
 msgstr "Liitä muotoilemattomana"
 
-#: wp-includes/media-template.php:885 wp-includes/media.php:3307
+#: wp-includes/media-template.php:885 wp-includes/media.php:3335
 msgid "Replace"
 msgstr "Korvaa"
 
@@ -3146,22 +3146,22 @@ msgstr "Näytä piilotetut merkit"
 msgid "Insert Read More tag"
 msgstr "Lue lisää -tagi"
 
-#: wp-includes/general-template.php:3146
+#: wp-includes/general-template.php:3142
 msgctxt "admin color scheme"
 msgid "Sunrise"
 msgstr "Auringonnousu"
 
-#: wp-includes/general-template.php:3152
+#: wp-includes/general-template.php:3148
 msgctxt "admin color scheme"
 msgid "Ectoplasm"
 msgstr "Ektoplasma"
 
-#: wp-includes/general-template.php:3158
+#: wp-includes/general-template.php:3154
 msgctxt "admin color scheme"
 msgid "Ocean"
 msgstr "Valtameri"
 
-#: wp-includes/general-template.php:3164
+#: wp-includes/general-template.php:3160
 msgctxt "admin color scheme"
 msgid "Coffee"
 msgstr "Kahvi"
@@ -3238,17 +3238,17 @@ msgstr "no-subset"
 msgid "Use commas instead of %s to separate excluded terms."
 msgstr "Käytä \"%s\":n sijaan pilkkuja termien erottamiseen."
 
-#: wp-includes/general-template.php:3140
+#: wp-includes/general-template.php:3136
 msgctxt "admin color scheme"
 msgid "Midnight"
 msgstr "Keskiyö"
 
-#: wp-includes/general-template.php:3128
+#: wp-includes/general-template.php:3124
 msgctxt "admin color scheme"
 msgid "Light"
 msgstr "Vaalea"
 
-#: wp-includes/general-template.php:3118
+#: wp-includes/general-template.php:3114
 msgctxt "admin color scheme"
 msgid "Default"
 msgstr "Oletus"
@@ -3265,7 +3265,7 @@ msgstr "Käännöspäivitykset"
 msgid "The theme directory \"%s\" does not exist."
 msgstr "Teeman hakemistoa \"%s\" ei ole olemassa."
 
-#: wp-includes/functions.php:1216
+#: wp-includes/functions.php:1221
 msgid "ERROR: This is not a valid feed template."
 msgstr "VIRHE: Tämä ei ole kelvollinen syötteen pohja."
 
@@ -3345,19 +3345,19 @@ msgstr "Tekstitys"
 msgid "Go Fullscreen"
 msgstr "Siirry koko näytön kirjoitustilaan"
 
-#: wp-includes/formatting.php:2852
+#: wp-includes/formatting.php:2856
 msgid "%s week"
 msgid_plural "%s weeks"
 msgstr[0] "%s viikko"
 msgstr[1] "%s viikkoa"
 
-#: wp-includes/formatting.php:2857
+#: wp-includes/formatting.php:2861
 msgid "%s month"
 msgid_plural "%s months"
 msgstr[0] "%s kuukausi"
 msgstr[1] "%s kuukautta"
 
-#: wp-includes/formatting.php:2862
+#: wp-includes/formatting.php:2866
 msgid "%s year"
 msgid_plural "%s years"
 msgstr[0] "%s vuosi"
@@ -3431,7 +3431,7 @@ msgstr "%1$s [Nykyinen versio]"
 msgid "Your session has expired. You can log in again from this page or go to the login page."
 msgstr "Kirjautumisesi on vanhentunut. Voit kirjautua uudelleen tältä sivulta tai mennä sisäänkirjautumissivulle."
 
-#: wp-login.php:837
+#: wp-login.php:836
 msgid "Session expired. Please log in again. You will not move away from this page."
 msgstr "Kirjautumisesi on vanhentunut. Kirjaudu uudelleen sisään. Sinua ei siirretä pois tältä sivulta."
 
@@ -3449,7 +3449,7 @@ msgstr "%2$s. %1$s, %3$s klo %4$s.%5$s"
 msgid "The site you were looking for, %s, does not exist, but you can create it now!"
 msgstr "Etsimääsi sivustoa %s ei ole olemassa, mutta voit luoda sen nyt!"
 
-#: wp-includes/functions.php:4945
+#: wp-includes/functions.php:4950
 msgid "The login page will open in a new window. After logging in you can close it and return to this page."
 msgstr "Kirjautumissivu aukeaa uuteen ikkunaan. Sisäänkirjautumisen jälkeen voit sulkea sen ja palata tälle sivulle."
 
@@ -3480,11 +3480,11 @@ msgctxt "submit button"
 msgid "Search"
 msgstr "Hae"
 
-#: wp-includes/functions.php:4943 wp-includes/script-loader.php:443
+#: wp-includes/functions.php:4948 wp-includes/script-loader.php:443
 msgid "Session expired"
 msgstr "Istunto on vanhentunut"
 
-#: wp-includes/taxonomy.php:536
+#: wp-includes/taxonomy.php:539
 msgid "No tags found."
 msgstr "Avainsanoja ei löytynyt."
 
@@ -3522,11 +3522,11 @@ msgstr "Lisää kuvateksti&hellip;"
 #. If there is not a word you can use in your language to avoid issues with
 #. the 		   lack of plural support here, turn it into "selected: %d" then
 #. translate it.
-#: wp-includes/media.php:3314
+#: wp-includes/media.php:3342
 msgid "%d selected"
 msgstr "%d valittu"
 
-#: wp-includes/media.php:3354
+#: wp-includes/media.php:3382
 msgid "Insert from URL"
 msgstr "URL-osoitteesta"
 
@@ -3535,15 +3535,15 @@ msgctxt "Links widget"
 msgid "Random"
 msgstr "Satunnainen"
 
-#: wp-includes/media-template.php:1229 wp-includes/media.php:3330
+#: wp-includes/media-template.php:1229 wp-includes/media.php:3358
 msgid "No items found."
 msgstr "Kohteita ei löytynyt."
 
-#: wp-includes/media.php:3367
+#: wp-includes/media.php:3395
 msgid "Add to Gallery"
 msgstr "Lisää galleriaan"
 
-#: wp-includes/media.php:3368
+#: wp-includes/media.php:3396
 msgid "Reverse order"
 msgstr "Käänteinen järjestys"
 
@@ -3561,11 +3561,11 @@ msgid "Sorry, that file cannot be edited."
 msgstr "Valitettavasti tätä tiedostoa ei voi muokata."
 
 #: wp-includes/media-template.php:436 wp-includes/media-template.php:537
-#: wp-includes/media.php:3343
+#: wp-includes/media.php:3371
 msgid "Delete Permanently"
 msgstr "Poista pysyvästi"
 
-#: wp-includes/media.php:3335
+#: wp-includes/media.php:3363
 msgid ""
 "You are about to permanently delete this item.\n"
 "  'Cancel' to stop, 'OK' to delete."
@@ -3581,7 +3581,7 @@ msgstr "Tiedostokoon raja ylitetty"
 msgid "Dismiss Errors"
 msgstr "Hylkää virheet"
 
-#: wp-includes/media.php:2823
+#: wp-includes/media.php:2851
 msgid "No editor could be selected."
 msgstr "Muokkainta ei voitu ottaa käyttöön."
 
@@ -3635,7 +3635,7 @@ msgstr "Liitetty tähän sivuun"
 msgid "Audio"
 msgstr "Ääni"
 
-#: wp-includes/media.php:3328
+#: wp-includes/media.php:3356
 msgid "All media items"
 msgstr "Kaikki mediatiedostot"
 
@@ -3643,7 +3643,7 @@ msgstr "Kaikki mediatiedostot"
 msgid "Uploaded to this post"
 msgstr "Liitetty tähän artikkeliin"
 
-#: wp-includes/media.php:3327
+#: wp-includes/media.php:3355
 msgid "&#8592; Return to library"
 msgstr "&#8592; Palaa kirjastoon"
 
@@ -3661,12 +3661,12 @@ msgstr "Vaihtoehtoinen teksti"
 msgid "Columns"
 msgstr "Sarakkeet"
 
-#: wp-includes/media-template.php:494 wp-includes/media.php:3351
+#: wp-includes/media-template.php:494 wp-includes/media.php:3379
 msgid "Attachment Details"
 msgstr "Liitteen tiedot"
 
 #: wp-includes/media-template.php:689 wp-includes/media-template.php:764
-#: wp-includes/media-template.php:938 wp-includes/media.php:3062
+#: wp-includes/media-template.php:938 wp-includes/media.php:3090
 msgid "Large"
 msgstr "Iso"
 
@@ -3678,11 +3678,11 @@ msgstr "Gallerian asetukset"
 msgid "Attachment Display Settings"
 msgstr "Liitteen esitystapa"
 
-#: wp-includes/media.php:3319
+#: wp-includes/media.php:3347
 msgid "Upload Images"
 msgstr "Siirrä kuvia"
 
-#: wp-includes/media.php:3363
+#: wp-includes/media.php:3391
 msgid "&#8592; Cancel Gallery"
 msgstr "&#8592; Peru galleria"
 
@@ -3694,11 +3694,11 @@ msgstr "WordPress &rsaquo; OK"
 msgid "Drop files anywhere to upload"
 msgstr "Pudota tiedostot tähän"
 
-#: wp-includes/media.php:3318
+#: wp-includes/media.php:3346
 msgid "Upload Files"
 msgstr "Siirrä tiedostoja"
 
-#: wp-includes/media.php:3364
+#: wp-includes/media.php:3392
 msgid "Insert gallery"
 msgstr "Lisää galleria"
 
@@ -3706,11 +3706,11 @@ msgstr "Lisää galleria"
 msgid "Drop files to upload"
 msgstr "Pudota siirrettävät tiedostot tähän"
 
-#: wp-includes/media.php:3322
+#: wp-includes/media.php:3350
 msgid "Media Library"
 msgstr "Mediakirjasto"
 
-#: wp-includes/media.php:3361
+#: wp-includes/media.php:3389
 msgid "Create Gallery"
 msgstr "Luo galleria"
 
@@ -3789,7 +3789,7 @@ msgstr "Kuvaile tätä äänitiedostoa&hellip;"
 msgid "Describe this media file&hellip;"
 msgstr "Kuvaile tätä tiedostoa&hellip;"
 
-#: wp-includes/media.php:3365
+#: wp-includes/media.php:3393
 msgid "Update gallery"
 msgstr "Päivitä galleria"
 
@@ -3856,7 +3856,7 @@ msgstr "Valitse väri"
 msgid "View Attachment Page"
 msgstr "Näytä liitteen sivu"
 
-#: wp-includes/media.php:3324
+#: wp-includes/media.php:3352
 msgid "Create a new gallery"
 msgstr "Luo uusi galleria"
 
@@ -3864,11 +3864,11 @@ msgstr "Luo uusi galleria"
 msgid "Insert into post"
 msgstr "Lisää tekstiin"
 
-#: wp-includes/media.php:3323
+#: wp-includes/media.php:3351
 msgid "Insert Media"
 msgstr "Lisää media"
 
-#: wp-includes/media.php:3366
+#: wp-includes/media.php:3394
 msgid "Add to gallery"
 msgstr "Lisää galleriaan"
 
@@ -3882,7 +3882,7 @@ msgctxt "Display name based on first name and last name"
 msgid "%1$s %2$s"
 msgstr "%1$s %2$s"
 
-#: wp-includes/taxonomy.php:2872
+#: wp-includes/taxonomy.php:2878
 msgid "Could not insert term relationship into the database"
 msgstr "Termin suhteen lisäys tietokantaan epäonnistui"
 
@@ -3920,7 +3920,7 @@ msgid "There is a revision of this post that is more recent."
 msgstr "Tästä artikkelista löytyy uudempi versio."
 
 #. translators: 1: blog name, 2: separator(raquo), 3: post type name
-#: wp-includes/general-template.php:2522
+#: wp-includes/general-template.php:2518
 msgid "%1$s %2$s %3$s Feed"
 msgstr "%1$s %2$s %3$s RSS-syöte"
 
@@ -4125,7 +4125,7 @@ msgstr "Artikkeleiden sivu"
 #: wp-includes/customize/class-wp-customize-image-control.php:37
 #: wp-includes/customize/class-wp-customize-media-control.php:62
 #: wp-includes/customize/class-wp-customize-nav-menu-item-control.php:141
-#: wp-includes/media-template.php:467 wp-includes/media.php:3308
+#: wp-includes/media-template.php:467 wp-includes/media.php:3336
 msgid "Remove"
 msgstr "Poista"
 
@@ -4142,8 +4142,8 @@ msgid "This taxonomy is not hierarchical."
 msgstr "Tämä taksonomia ei ole hierarkkinen."
 
 #: wp-includes/class-wp-xmlrpc-server.php:1878
-#: wp-includes/class-wp-xmlrpc-server.php:1976 wp-includes/taxonomy.php:2569
-#: wp-includes/taxonomy.php:3161
+#: wp-includes/class-wp-xmlrpc-server.php:1976 wp-includes/taxonomy.php:2575
+#: wp-includes/taxonomy.php:3167
 msgid "Parent term does not exist."
 msgstr "Yläkäsitettä ei ole olemassa."
 
@@ -4358,12 +4358,12 @@ msgstr "Sinulla ei valitettavasti ole oikeutta lisätä uutta termiä yhteen ann
 msgid "Sorry, you are not allowed to assign a term to one of the given taxonomies."
 msgstr "Valitettavasti sinulla ei ole oikeutta lisätä termiä yhteen annetuista taksonomioista."
 
-#: wp-includes/general-template.php:892 wp-includes/general-template.php:1357
+#: wp-includes/general-template.php:888 wp-includes/general-template.php:1353
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr "Y"
 
-#: wp-includes/general-template.php:895 wp-includes/general-template.php:1359
+#: wp-includes/general-template.php:891 wp-includes/general-template.php:1355
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "F Y"
@@ -4405,7 +4405,7 @@ msgid "&#8217;"
 msgstr "&#8217;"
 
 #. translators: opening curly double quote
-#: wp-includes/formatting.php:88 wp-includes/formatting.php:4315
+#: wp-includes/formatting.php:88 wp-includes/formatting.php:4325
 msgctxt "opening curly double quote"
 msgid "&#8220;"
 msgstr "&#8221;"
@@ -4435,7 +4435,7 @@ msgstr "Sivustosi osoitteessa <a href=\"%1$s\">%2$s</a> on aktivoitu. Voit kirja
 msgid "<a href=\"%1$s\">%2$s</a> is your new site. <a href=\"%3$s\">Log in</a> as &#8220;%4$s&#8221; using your existing password."
 msgstr "<a href=\"%1$s\">%2$s</a> on uusi sivustosi. <a href=\"%3$s\">Kirjaudu sisään</a> tunnuksella &#8221;%4$s&#8221; käyttäen olemassa olevaa salasanaasi."
 
-#: wp-includes/functions.php:1397
+#: wp-includes/functions.php:1402
 msgid "One or more database tables are unavailable. The database may need to be <a href=\"%s\">repaired</a>."
 msgstr "Yksi tai useampi tietokantataulu ei ole saatavilla. Tietokanta voi vaatia <a href=\"%s\">korjausta</a>."
 
@@ -4531,15 +4531,15 @@ msgstr "Dokumentaatio"
 msgid "Support Forums"
 msgstr "Tukifoorumit"
 
-#: wp-includes/formatting.php:2949 wp-includes/general-template.php:3040
+#: wp-includes/formatting.php:2953 wp-includes/general-template.php:3036
 msgid "&hellip;"
 msgstr "&hellip;"
 
-#: wp-includes/functions.php:3504
+#: wp-includes/functions.php:3509
 msgid "Database Error"
 msgstr "Tietokantavirhe"
 
-#: wp-includes/functions.php:3508 wp-includes/ms-load.php:286
+#: wp-includes/functions.php:3513 wp-includes/ms-load.php:286
 #: wp-includes/wp-db.php:1533
 msgid "Error establishing a database connection"
 msgstr "Tietokantayhteys epäonnistui"
@@ -4559,12 +4559,12 @@ msgstr "WordPress.org"
 msgid "Network Admin: %s"
 msgstr "Verkon hallinta: %s"
 
-#: wp-includes/taxonomy.php:521
+#: wp-includes/taxonomy.php:524
 msgctxt "taxonomy general name"
 msgid "Tags"
 msgstr "Avainsanat"
 
-#: wp-includes/taxonomy.php:522
+#: wp-includes/taxonomy.php:525
 msgctxt "taxonomy singular name"
 msgid "Tag"
 msgstr "Avainsana"
@@ -4589,12 +4589,12 @@ msgstr "Tämä ei ole kuvatiedosto. Kokeilethan jotain muuta."
 msgid "This is larger than the maximum size. Please try another."
 msgstr "Tämä on maksimikokoa suurempi. Yritä pienemmällä uudestaan."
 
-#: wp-includes/general-template.php:3134
+#: wp-includes/general-template.php:3130
 msgctxt "admin color scheme"
 msgid "Blue"
 msgstr "Sininen"
 
-#: wp-includes/formatting.php:3828
+#: wp-includes/formatting.php:3832
 msgid "The timezone you have entered is not valid. Please select a valid timezone."
 msgstr "Syöttämäsi aikavyöhyke on virheellinen."
 
@@ -4612,11 +4612,11 @@ msgstr "Käyttäjä"
 msgid "You should specify a nonce action to be verified by using the first parameter."
 msgstr "Määrittele varmistettava nonce-toiminto käyttämällä ensimmäistä parametria."
 
-#: wp-includes/taxonomy.php:529
+#: wp-includes/taxonomy.php:532
 msgid "View Tag"
 msgstr "Näytä avainsana"
 
-#: wp-includes/taxonomy.php:529
+#: wp-includes/taxonomy.php:532
 msgid "View Category"
 msgstr "Näytä kategoria"
 
@@ -4710,11 +4710,11 @@ msgstr "Ehdolliset kyselytagit eivät toimi ennen kuin kysely on ajettu. Ennen s
 msgid "The user is already active."
 msgstr "Käyttäjä on jo aktiivinen."
 
-#: wp-includes/functions.php:3782
+#: wp-includes/functions.php:3787
 msgid "(This message was added in version %s.)"
 msgstr "(Tämä viesti lisättiin versioon %s.)"
 
-#: wp-includes/functions.php:3787
+#: wp-includes/functions.php:3792
 msgid "%1$s was called <strong>incorrectly</strong>. %2$s %3$s"
 msgstr "%1$s kutsuttiin <strong>väärin</strong>. %2$s%3$s"
 
@@ -5052,56 +5052,56 @@ msgstr "Luet parhaillaan arkistoa kategoriasta %s."
 msgid "You have searched the %1$s blog archives for <strong>&#8216;%2$s&#8217;</strong>. If you are unable to find anything in these search results, you can try one of these links."
 msgstr "Hait sivuston %1$s arkistosta haulla <strong>&#8216;%2$s&#8217;</strong>. Jos hakutuloksista ei löydy mitä etsit, kokeile seuraavia linkkejä."
 
-#: wp-includes/taxonomy.php:535
+#: wp-includes/taxonomy.php:538
 msgid "Choose from the most used tags"
 msgstr "Valitse eniten käytetyistä avainsanoista"
 
-#: wp-includes/taxonomy.php:523
+#: wp-includes/taxonomy.php:526
 msgid "Search Tags"
 msgstr "Etsi avainsanoista"
 
-#: wp-includes/taxonomy.php:524
+#: wp-includes/taxonomy.php:527
 msgid "Popular Tags"
 msgstr "Suositut avainsanat"
 
-#: wp-includes/taxonomy.php:532
+#: wp-includes/taxonomy.php:535
 msgid "New Tag Name"
 msgstr "Uusi avainsanan nimi"
 
-#: wp-includes/taxonomy.php:531
+#: wp-includes/taxonomy.php:534
 msgid "Add New Tag"
 msgstr "Lisää uusi avainsana"
 
-#: wp-includes/taxonomy.php:530
+#: wp-includes/taxonomy.php:533
 msgid "Update Tag"
 msgstr "Päivitä avainsana"
 
-#: wp-includes/taxonomy.php:525
+#: wp-includes/taxonomy.php:528
 msgid "All Tags"
 msgstr "Kaikki avainsanat"
 
-#: wp-includes/taxonomy.php:522
+#: wp-includes/taxonomy.php:525
 msgctxt "taxonomy singular name"
 msgid "Category"
 msgstr "Kategoria"
 
-#: wp-includes/taxonomy.php:532
+#: wp-includes/taxonomy.php:535
 msgid "New Category Name"
 msgstr "Uusi kategorian nimi"
 
-#: wp-includes/taxonomy.php:531
+#: wp-includes/taxonomy.php:534
 msgid "Add New Category"
 msgstr "Lisää uusi kategoria"
 
-#: wp-includes/taxonomy.php:527
+#: wp-includes/taxonomy.php:530
 msgid "Parent Category:"
 msgstr "Yläkategoria:"
 
-#: wp-includes/taxonomy.php:526
+#: wp-includes/taxonomy.php:529
 msgid "Parent Category"
 msgstr "Yläkategoria"
 
-#: wp-includes/taxonomy.php:521
+#: wp-includes/taxonomy.php:524
 msgctxt "taxonomy general name"
 msgid "Categories"
 msgstr "Kategoriat"
@@ -5182,7 +5182,7 @@ msgstr "Vakio <code>VHOST</code> <strong>on vanhentunut</strong>. Käytä boolea
 msgid "<strong>ERROR</strong>: This username is invalid because it uses illegal characters. Please enter a valid username."
 msgstr "<strong>VIRHE</strong>: Tämä käyttäjätunnus ei kelpaa, koska se sisältää kiellettyjä merkkejä. Anna voimassa oleva käyttäjätunnus."
 
-#: wp-includes/comment-template.php:2094
+#: wp-includes/comment-template.php:2127
 msgid "Required fields are marked %s"
 msgstr "Pakolliset kentät on merkitty %s"
 
@@ -5325,19 +5325,19 @@ msgstr "Pyytämääsi sivustoa ei ole asennettu kunnolla. Ota yhteys järjestelm
 msgid "The given object ID is not that of a menu item."
 msgstr "Annettu ID ei vastaa mitään valikkokohdetta."
 
-#: wp-includes/formatting.php:3657
+#: wp-includes/formatting.php:3661
 msgid "The email address entered did not appear to be a valid email address. Please enter a valid email address."
 msgstr "Antamasi sähköpostiosoite ei ollut kelvollinen. Kirjoita kelvollinen osoite"
 
-#: wp-includes/formatting.php:3773
+#: wp-includes/formatting.php:3777
 msgid "The Site address you entered did not appear to be a valid URL. Please enter a valid URL."
 msgstr "Sivuston osoite jonka annoit ei ollut kelvollinen URL-osoite. Anna kelvollinen URL-osoite."
 
-#: wp-includes/formatting.php:3760
+#: wp-includes/formatting.php:3764
 msgid "The WordPress address you entered did not appear to be a valid URL. Please enter a valid URL."
 msgstr "Antamasi WordPress-osoite ei ollut kelvollinen URL-osoite. Syötä kelvollinen URL-osoite."
 
-#: wp-includes/taxonomy.php:2643
+#: wp-includes/taxonomy.php:2649
 msgid "A term with the name provided already exists with this parent."
 msgstr "Samanniminen termi on jo olemassa."
 
@@ -5349,7 +5349,7 @@ msgstr "Tapahtui virhe: emme onnistuneet lisäämään sinua sivustolle. Palaa <
 msgid "This file is too big. Files must be less than %d KB in size."
 msgstr "Tiedosto on liian suuri. Tiedostojen tulee olla pienempiä, kuin %d kt."
 
-#: wp-includes/comment-template.php:2111
+#: wp-includes/comment-template.php:2144
 msgid "Your email address will not be published."
 msgstr "Sähköpostiosoitettasi ei julkaista."
 
@@ -5398,7 +5398,7 @@ msgstr "Haluatko varmasti asentaa tämän lisäosan?"
 msgid "Use as featured image"
 msgstr "Käytä artikkelikuvana"
 
-#: wp-includes/general-template.php:903
+#: wp-includes/general-template.php:899
 msgid "Page %s"
 msgstr "Sivu %s"
 
@@ -5438,7 +5438,7 @@ msgstr ""
 "Olet pysyvästi poistamassa tätä valikkoa\n"
 "Napsauta 'Peruuta' lopettaaksesi, 'OK' jos haluat poistaa valikon."
 
-#: wp-includes/link-template.php:3643
+#: wp-includes/link-template.php:3647
 msgid "This is the short link."
 msgstr "Tämä on pikalinkki."
 
@@ -5983,19 +5983,19 @@ msgid "Protected Comments: Please enter your password to view comments."
 msgstr "Suojattuja kommentteja: syötä salasanasi lukeaksesi niitä."
 
 #. translators: min=minute
-#: wp-includes/formatting.php:2837
+#: wp-includes/formatting.php:2841
 msgid "%s min"
 msgid_plural "%s mins"
 msgstr[0] "%s minuutti"
 msgstr[1] "%s minuuttia"
 
-#: wp-includes/formatting.php:2842
+#: wp-includes/formatting.php:2846
 msgid "%s hour"
 msgid_plural "%s hours"
 msgstr[0] "%s tunti"
 msgstr[1] "%s tuntia"
 
-#: wp-includes/formatting.php:2847
+#: wp-includes/formatting.php:2851
 msgid "%s day"
 msgid_plural "%s days"
 msgstr[0] "%s päivä"
@@ -6010,52 +6010,52 @@ msgstr ", "
 msgid "%s is a protected WP option and may not be modified"
 msgstr "%s on suojattu WP-asetus, eikä sitä voi muokata"
 
-#: wp-includes/functions.php:1921 wp-includes/functions.php:2058
+#: wp-includes/functions.php:1926 wp-includes/functions.php:2063
 msgid "Unable to create directory %s. Is its parent directory writable by the server?"
 msgstr "Kansion %s luominen ei onnistu. Onko ylemmän tason kansio kirjoitussuojattu?"
 
-#: wp-includes/functions.php:2022
+#: wp-includes/functions.php:2027
 msgid "Empty filename"
 msgstr "Tyhjä tiedostonimi"
 
-#: wp-includes/functions.php:2064
+#: wp-includes/functions.php:2069
 msgid "Could not write file %s"
 msgstr "Tiedoston %s tallennus ei onnistu"
 
-#: wp-includes/functions.php:2414
+#: wp-includes/functions.php:2419
 msgid "WordPress Failure Notice"
 msgstr "WordPressin virheilmoitus"
 
-#: wp-includes/functions.php:2407
+#: wp-includes/functions.php:2412
 msgid "Do you really want to <a href='%s'>log out</a>?"
 msgstr "Haluatko varmasti <a href='%s'>kirjautua ulos</a>?"
 
-#: wp-includes/functions.php:2411 wp-includes/ms-functions.php:1910
+#: wp-includes/functions.php:2416 wp-includes/ms-functions.php:1910
 msgid "Please try again."
 msgstr "Yritä uudelleen."
 
-#: wp-includes/functions.php:2533
+#: wp-includes/functions.php:2538
 msgid "&laquo; Back"
 msgstr "&laquo; Takaisin"
 
-#: wp-includes/functions.php:2545 wp-load.php:92
+#: wp-includes/functions.php:2550 wp-load.php:92
 msgid "WordPress &rsaquo; Error"
 msgstr "WordPress &rsaquo; Virhe"
 
-#: wp-includes/functions.php:3568 wp-includes/functions.php:3672
+#: wp-includes/functions.php:3573 wp-includes/functions.php:3677
 msgid "%1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
 msgstr "%1$s on <strong>kehotettu välttämään</strong> versiosta %2$s asti! Käytä sen sijaan %3$s."
 
-#: wp-includes/functions.php:3570 wp-includes/functions.php:3674
+#: wp-includes/functions.php:3575 wp-includes/functions.php:3679
 msgid "%1$s is <strong>deprecated</strong> since version %2$s with no alternative available."
 msgstr "%1$s on <strong>kehotettu välttämään</strong> versiosta %2$s asti! Vaihtoehtoja ei saatavilla."
 
-#: wp-includes/functions.php:4294
+#: wp-includes/functions.php:4299
 msgid "Select a city"
 msgstr "Valitse kaupunki"
 
 #: wp-includes/general-template.php:276 wp-login.php:544 wp-login.php:607
-#: wp-login.php:657 wp-login.php:739
+#: wp-login.php:657 wp-login.php:738
 msgid "Log in"
 msgstr "Kirjaudu sisään"
 
@@ -6064,71 +6064,71 @@ msgid "Log out"
 msgstr "Kirjaudu ulos"
 
 #: wp-includes/general-template.php:542 wp-login.php:547 wp-login.php:660
-#: wp-login.php:735 wp-login.php:917
+#: wp-login.php:734 wp-login.php:916
 msgid "Register"
 msgstr "Rekisteröidy"
 
 #. translators: 1: separator, 2: search phrase
-#: wp-includes/general-template.php:1066
+#: wp-includes/general-template.php:1062
 msgid "Search Results %1$s %2$s"
 msgstr "Hakutulokset  %1$s %2$s"
 
-#: wp-includes/general-template.php:852 wp-includes/general-template.php:1071
+#: wp-includes/general-template.php:852 wp-includes/general-template.php:1067
 msgid "Page not found"
 msgstr "Sivua ei löydy"
 
 #. translators: 1: month name, 2: 4-digit year
-#: wp-includes/general-template.php:1632 wp-includes/media.php:3243
+#: wp-includes/general-template.php:1628 wp-includes/media.php:3271
 msgid "%1$s %2$d"
 msgstr "%1$s %2$d"
 
 #. translators: Calendar caption: 1: month name, 2: 4-digit year
-#: wp-includes/general-template.php:1857
+#: wp-includes/general-template.php:1853
 msgctxt "calendar caption"
 msgid "%1$s %2$s"
 msgstr "%1$s %2$s"
 
 #. translators: Separator between blog name and feed type in feed links
-#: wp-includes/general-template.php:2468 wp-includes/general-template.php:2510
+#: wp-includes/general-template.php:2464 wp-includes/general-template.php:2506
 msgctxt "feed link"
 msgid "&raquo;"
 msgstr "&raquo;"
 
 #. translators: 1: blog title, 2: separator (raquo)
-#: wp-includes/general-template.php:2470
+#: wp-includes/general-template.php:2466
 msgid "%1$s %2$s Feed"
 msgstr "%1$s %2$s syöte"
 
 #. translators: 1: blog title, 2: separator (raquo)
-#: wp-includes/general-template.php:2472
+#: wp-includes/general-template.php:2468
 msgid "%1$s %2$s Comments Feed"
 msgstr "%1$s %2$s kommenttien syöte"
 
 #. translators: 1: blog name, 2: separator(raquo), 3: post title
-#: wp-includes/general-template.php:2512
+#: wp-includes/general-template.php:2508
 msgid "%1$s %2$s %3$s Comments Feed"
 msgstr "%1$s %2$s %3$s kommenttien syöte"
 
 #. translators: 1: blog name, 2: separator(raquo), 3: tag name
-#: wp-includes/general-template.php:2516
+#: wp-includes/general-template.php:2512
 msgid "%1$s %2$s %3$s Tag Feed"
 msgstr "%1$s %2$s %3$s avainsanan RSS-syöte"
 
 #. translators: 1: blog name, 2: separator(raquo), 3: author name
-#: wp-includes/general-template.php:2518
+#: wp-includes/general-template.php:2514
 msgid "%1$s %2$s Posts by %3$s Feed"
 msgstr "Kirjoittajan %3$s artikkelit sivustolla %1$s %2$s RSS-syöte"
 
 #. translators: 1: blog name, 2: separator(raquo), 3: search phrase
-#: wp-includes/general-template.php:2520
+#: wp-includes/general-template.php:2516
 msgid "%1$s %2$s Search Results for &#8220;%3$s&#8221; Feed"
 msgstr "%1$s %2$s haun tulokset haulle &#8220;%3$s&#8221; RSS-syöte"
 
-#: wp-includes/general-template.php:2954
+#: wp-includes/general-template.php:2950
 msgid "&laquo; Previous"
 msgstr "&laquo; Edellinen"
 
-#: wp-includes/general-template.php:2955
+#: wp-includes/general-template.php:2951
 msgid "Next &raquo;"
 msgstr "Seuraava &raquo;"
 
@@ -6454,7 +6454,7 @@ msgstr "Kokonäytön tila"
 msgid "Mute"
 msgstr "Hiljennä"
 
-#: wp-includes/media.php:3362
+#: wp-includes/media.php:3390
 msgid "Edit Gallery"
 msgstr "Muokkaa galleriaa"
 
@@ -6745,11 +6745,6 @@ msgstr "Raksuttaa&hellip;"
 msgid "moved to the trash."
 msgstr "siirretty roskakoriin."
 
-#: wp-includes/script-loader.php:380
-msgctxt "password strength"
-msgid "Medium"
-msgstr "Keskikokoinen"
-
 #: wp-includes/script-loader.php:508
 msgid "Publish on:"
 msgstr "Julkaistaan:"
@@ -6798,20 +6793,20 @@ msgstr "En voinut asettaa tuota pienoiskuvaksi. Kokeile toista liitettä."
 msgid "Saving Draft&#8230;"
 msgstr "Luonnosta tallennetaan&#8230;"
 
-#: wp-includes/taxonomy.php:750 wp-includes/taxonomy.php:3134
-#: wp-includes/taxonomy.php:4319
+#: wp-includes/taxonomy.php:753 wp-includes/taxonomy.php:3140
+#: wp-includes/taxonomy.php:4325
 msgid "Empty Term"
 msgstr "Tyhjä termi"
 
-#: wp-includes/taxonomy.php:2654
+#: wp-includes/taxonomy.php:2660
 msgid "Could not insert term into the database"
 msgstr "Termin lisääminen tietokantaan epäonnistui"
 
-#: wp-includes/taxonomy.php:3218
+#: wp-includes/taxonomy.php:3224
 msgid "The slug &#8220;%s&#8221; is already in use by another term"
 msgstr "Polkutunnus \"%s\" on jo käytössä."
 
-#: wp-includes/taxonomy.php:4522
+#: wp-includes/taxonomy.php:4528
 msgid "Invalid object ID"
 msgstr "Objektin tunnus ei kelpaa."
 
@@ -6827,7 +6822,7 @@ msgstr "<strong>VIRHE</strong>: Käyttäjätunnusta ei ole syötetty."
 msgid "<strong>ERROR</strong>: The password field is empty."
 msgstr "<strong>VIRHE</strong>: Salasanaa ei ole syötetty."
 
-#: wp-includes/functions.php:4944 wp-includes/user.php:206
+#: wp-includes/functions.php:4949 wp-includes/user.php:206
 msgid "Please log in again."
 msgstr "Kirjaudu sisään uudelleen."
 
@@ -6893,36 +6888,36 @@ msgstr "Rekisteröintilomake"
 msgid "Register For This Site"
 msgstr "Rekisteröidy tälle sivustolle"
 
-#: wp-includes/user.php:142 wp-includes/user.php:168 wp-login.php:740
-#: wp-login.php:923
+#: wp-includes/user.php:142 wp-includes/user.php:168 wp-login.php:739
+#: wp-login.php:922
 msgid "Lost your password?"
 msgstr "Salasana hukassa?"
 
-#: wp-login.php:803
+#: wp-login.php:802
 msgid "You have logged in successfully."
 msgstr "Olet kirjautunut sisään onnistuneesti."
 
-#: wp-login.php:841
+#: wp-login.php:840
 msgid "You are now logged out."
 msgstr "Olet kirjautunut ulos."
 
-#: wp-login.php:843
+#: wp-login.php:842
 msgid "User registration is currently not allowed."
 msgstr "Käyttäjärekisteröintiä ei tällä hetkellä sallita."
 
-#: wp-login.php:845
+#: wp-login.php:844
 msgid "Check your email for the confirmation link."
 msgstr "Varmistusosoite lähetetään sähköpostiisi."
 
-#: wp-login.php:847
+#: wp-login.php:846
 msgid "Check your email for your new password."
 msgstr "Uusi salasana lähetetään sähköpostiisi."
 
-#: wp-login.php:849
+#: wp-login.php:848
 msgid "Registration complete. Please check your email."
 msgstr "Rekisteröinti suoritettu. Tarkista sähköpostisi."
 
-#: wp-includes/general-template.php:413 wp-login.php:898
+#: wp-includes/general-template.php:413 wp-login.php:897
 msgid "Remember Me"
 msgstr "Muista minut"
 
@@ -6943,11 +6938,11 @@ msgstr "Kirjoittaja on %s"
 msgid "Oops: %s"
 msgstr "Oho: %s"
 
-#: wp-includes/functions.php:4339 wp-includes/functions.php:4343
+#: wp-includes/functions.php:4344 wp-includes/functions.php:4348
 msgid "UTC"
 msgstr "UTC"
 
-#: wp-includes/functions.php:4347
+#: wp-includes/functions.php:4352
 msgid "Manual Offsets"
 msgstr "Manuaaliset siirtymät"
 
@@ -6955,11 +6950,11 @@ msgstr "Manuaaliset siirtymät"
 msgid "Spam it: %s"
 msgstr "Merkitse roskaviestiksi: %s"
 
-#: wp-includes/comment-template.php:2124
+#: wp-includes/comment-template.php:2157
 msgid "Cancel reply"
 msgstr "Peruuta vastaus"
 
-#: wp-includes/comment-template.php:2125
+#: wp-includes/comment-template.php:2158
 msgid "Post Comment"
 msgstr "Lähetä kommentti"
 
@@ -7130,14 +7125,14 @@ msgstr "Et voi luoda käyttäjää tyhjällä käyttäjänimellä."
 msgid "The parent theme is missing. Please install the \"%s\" parent theme."
 msgstr "Pääteema puuttuu. Asenna \"%s\"-pääteema."
 
-#: wp-includes/taxonomy.php:2563 wp-includes/taxonomy.php:3158
+#: wp-includes/taxonomy.php:2569 wp-includes/taxonomy.php:3164
 msgid "A name is required for this term"
 msgstr "Tämä termi vaatii nimen"
 
 #: wp-includes/class-wp-xmlrpc-server.php:1404
 #: wp-includes/class-wp-xmlrpc-server.php:1956
 #: wp-includes/class-wp-xmlrpc-server.php:2047
-#: wp-includes/class-wp-xmlrpc-server.php:2118 wp-includes/taxonomy.php:2560
+#: wp-includes/class-wp-xmlrpc-server.php:2118 wp-includes/taxonomy.php:2566
 msgid "Invalid term ID"
 msgstr "Termin ID ei kelpaa."
 
@@ -7145,11 +7140,11 @@ msgstr "Termin ID ei kelpaa."
 msgid "This argument has changed to an array to match the behavior of the other cron functions."
 msgstr "Tämä argumentti on muutettu taulukoksi (array), jotta se vastaisi paremmin muiden cron-funktioiden toimintaa."
 
-#: wp-includes/functions.php:3732
+#: wp-includes/functions.php:3737
 msgid "%1$s was called with an argument that is <strong>deprecated</strong> since version %2$s! %3$s"
 msgstr "%1$s kutsuttiin argumentilla, joka on ollut <strong>vanhentunut</strong> versiosta %2$s saakka! %3$s"
 
-#: wp-includes/functions.php:3734
+#: wp-includes/functions.php:3739
 msgid "%1$s was called with an argument that is <strong>deprecated</strong> since version %2$s with no alternative available."
 msgstr "%1$s kutsuttiin argumentilla, joka on ollut <strong>vanhentunut</strong> versiosta %2$s saakka. Uudempaa vaihtoehtoa ei ole saatavilla."
 
@@ -7158,7 +7153,7 @@ msgid "Select Category"
 msgstr "Valitse kategoria"
 
 #. translators: 1: blog name, 2: separator(raquo), 3: category name
-#: wp-includes/general-template.php:2514
+#: wp-includes/general-template.php:2510
 msgid "%1$s %2$s %3$s Category Feed"
 msgstr "%1$s %2$s %3$s kategorian RSS-syöte"
 
@@ -7214,7 +7209,7 @@ msgstr[1] "Yksityiset <span class=\"count\">(%s)</span>"
 msgid "[%s] Password Lost/Changed"
 msgstr "[%s] Salasana on kadonnut tai vaihdettu"
 
-#: wp-login.php:740 wp-login.php:923
+#: wp-login.php:739 wp-login.php:922
 msgid "Password Lost and Found"
 msgstr "Palauta salasana"
 
@@ -7266,7 +7261,7 @@ msgstr "la"
 msgid "Sun"
 msgstr "su"
 
-#: wp-includes/functions.php:2405
+#: wp-includes/functions.php:2410
 msgid "You are attempting to log out of %s"
 msgstr "Yrität kirjautua ulos sivustolta %s"
 
@@ -7307,13 +7302,18 @@ msgstr "<strong>VIRHE</strong>: Käyttäjätunnus tai salasana ei kelpaa."
 msgid "What do I do now?"
 msgstr "Mitä teen nyt?"
 
-#: wp-includes/taxonomy.php:2925
+#: wp-includes/taxonomy.php:2931
 msgid "Invalid Taxonomy"
 msgstr "Virheellinen taksonomia"
 
 #: wp-login.php:284
 msgid "<strong>ERROR</strong>: Enter a username or email address."
 msgstr "<strong>VIRHE</strong>: Syötä käyttäjätunnus tai sähköpostiosoite."
+
+#: wp-includes/script-loader.php:380
+msgctxt "password strength"
+msgid "Medium"
+msgstr "Keskiverto"
 
 #: wp-includes/class-wp-customize-nav-menus.php:231
 #: wp-includes/script-loader.php:407 wp-includes/script-loader.php:642
@@ -7343,7 +7343,7 @@ msgstr "Tälle vimpaimelle ei ole asetuksia."
 msgid "Dashboard"
 msgstr "Ohjausnäkymä"
 
-#: wp-includes/general-template.php:414 wp-login.php:868 wp-login.php:900
+#: wp-includes/general-template.php:414 wp-login.php:867 wp-login.php:899
 msgid "Log In"
 msgstr "Kirjaudu sisään"
 
@@ -7390,11 +7390,11 @@ msgstr "Graafinen"
 msgid "Title:"
 msgstr "Otsikko:"
 
-#: wp-includes/taxonomy.php:533
+#: wp-includes/taxonomy.php:536
 msgid "Separate tags with commas"
 msgstr "Erottele avainsanat pilkulla"
 
-#: wp-includes/comment-template.php:2090
+#: wp-includes/comment-template.php:2123
 #: wp-includes/theme-compat/comments.php:102
 msgid "Website"
 msgstr "Kotisivu"
@@ -7404,7 +7404,7 @@ msgid "Strength indicator"
 msgstr "Salasanan vahvuus"
 
 #: wp-includes/admin-bar.php:735 wp-includes/class-wp-customize-widgets.php:359
-#: wp-includes/functions.php:3445
+#: wp-includes/functions.php:3450
 msgid "Widgets"
 msgstr "Vimpaimet"
 
@@ -7449,7 +7449,7 @@ msgstr "Kommentit artikkeliin %s"
 msgid "Logged in as %s."
 msgstr "Nykyinen käyttäjä: %s."
 
-#: wp-includes/comment-template.php:1476
+#: wp-includes/comment-template.php:1488
 msgid "Enter your password to view comments."
 msgstr "Syötä salasanasi lukeaksesi kommentteja."
 
@@ -7494,23 +7494,23 @@ msgstr "Päivitetty: %s"
 msgid "Bookmarks"
 msgstr "Kirjanmerkit"
 
-#: wp-includes/comment-template.php:1559
+#: wp-includes/comment-template.php:1571
 msgid "Log in to Reply"
 msgstr "Kirjaudu sisään vastataksesi"
 
-#: wp-includes/comment-template.php:1670
+#: wp-includes/comment-template.php:1682
 msgid "Leave a Comment"
 msgstr "Jätä kommentti"
 
-#: wp-includes/comment-template.php:1671
+#: wp-includes/comment-template.php:1683
 msgid "Log in to leave a Comment"
 msgstr "Kirjaudu sisään kommentoidaksesi"
 
-#: wp-includes/comment-template.php:1739
+#: wp-includes/comment-template.php:1751
 msgid "Click here to cancel reply."
 msgstr "Napsauta peruuttaaksesi vastauksen."
 
-#: wp-includes/comment-template.php:1827 wp-includes/comment-template.php:2119
+#: wp-includes/comment-template.php:1839 wp-includes/comment-template.php:2152
 #: wp-includes/theme-compat/comments.php:75
 msgid "Leave a Reply to %s"
 msgstr "Vastaa käyttäjälle %s"
@@ -7591,12 +7591,12 @@ msgstr "Valitettavasti artikkeleja, jotka vastaisivat hakusanaasi, ei löytynyt.
 msgid "Comments are closed."
 msgstr "Kommentit on suljettu."
 
-#: wp-includes/comment-template.php:1826 wp-includes/comment-template.php:2118
+#: wp-includes/comment-template.php:1838 wp-includes/comment-template.php:2151
 #: wp-includes/theme-compat/comments.php:75
 msgid "Leave a Reply"
 msgstr "Vastaa"
 
-#: wp-includes/comment-template.php:2108
+#: wp-includes/comment-template.php:2141
 #: wp-includes/theme-compat/comments.php:82
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr "Sinun täytyy <a href=\"%s\">kirjautua sisään</a> kommentoidaksesi."
@@ -7641,11 +7641,11 @@ msgstr "Voimanlähteenä on WordPress, moderni ja semanttinen henkilökohtainen 
 msgid "Usage of user levels by plugins and themes is deprecated. Use roles and capabilities instead."
 msgstr "Käyttäjätasojen (user levels) käyttämistä lisäosissa ja teemoissa ei enää suositella. Käytä rooleja ja oikeuksia. "
 
-#: wp-includes/taxonomy.php:528
+#: wp-includes/taxonomy.php:531
 msgid "Edit Category"
 msgstr "Muokkaa kategoriaa"
 
-#: wp-includes/category-template.php:528 wp-includes/taxonomy.php:537
+#: wp-includes/category-template.php:528 wp-includes/taxonomy.php:540
 msgid "No categories"
 msgstr "Ei kategorioita"
 
@@ -7668,8 +7668,8 @@ msgstr "Kommenttien <abbr title=\"Really Simple Syndication\">RSS</abbr>-syöte"
 msgid "Default"
 msgstr "Oletus"
 
-#: wp-includes/comment-template.php:2088
-#: wp-includes/theme-compat/comments-popup.php:81 wp-login.php:721
+#: wp-includes/comment-template.php:2121
+#: wp-includes/theme-compat/comments-popup.php:81 wp-login.php:720
 msgid "Email"
 msgstr "Sähköpostiosoite"
 
@@ -7693,7 +7693,7 @@ msgstr[1] "%s aihetta"
 msgid "Comments (%s)"
 msgstr "Kommentit (%s)"
 
-#: wp-includes/class-wp-customize-widgets.php:669 wp-includes/media.php:3344
+#: wp-includes/class-wp-customize-widgets.php:669 wp-includes/media.php:3372
 msgid "Apply"
 msgstr "Hyväksy"
 
@@ -7721,11 +7721,11 @@ msgstr "Kirjoittaja"
 #: wp-includes/class-wp-editor.php:1408
 #: wp-includes/customize/class-wp-customize-nav-menu-item-control.php:91
 #: wp-includes/media-template.php:371 wp-includes/media-template.php:550
-#: wp-includes/media.php:3301
+#: wp-includes/media.php:3329
 msgid "URL"
 msgstr "URL"
 
-#: wp-includes/comment-template.php:1041 wp-includes/comment-template.php:2106
+#: wp-includes/comment-template.php:1041 wp-includes/comment-template.php:2139
 msgctxt "noun"
 msgid "Comment"
 msgstr "Kommentti"
@@ -7771,7 +7771,7 @@ msgstr "Lisää linkki"
 msgid "Save"
 msgstr "Tallenna"
 
-#: wp-includes/comment-template.php:2086
+#: wp-includes/comment-template.php:2119
 #: wp-includes/theme-compat/comments-popup.php:76
 #: wp-includes/theme-compat/comments.php:96
 msgid "Name"
@@ -7783,7 +7783,7 @@ msgstr "Nimi"
 msgid "Pages"
 msgstr "Sivut"
 
-#: wp-includes/taxonomy.php:528
+#: wp-includes/taxonomy.php:531
 msgid "Edit Tag"
 msgstr "Muokkaa avainsanaa"
 
@@ -7812,7 +7812,7 @@ msgstr "Nimetön"
 msgid "RSS"
 msgstr "RSS"
 
-#: wp-includes/functions.php:2026
+#: wp-includes/functions.php:2031
 msgid "Invalid file type"
 msgstr "Tiedoston tyyppi ei kelpaa"
 
@@ -7826,7 +7826,7 @@ msgid "Plugins"
 msgstr "Lisäosat"
 
 #: wp-includes/class-wp-editor.php:861 wp-includes/class-wp-editor.php:1446
-#: wp-includes/media.php:3305 wp-includes/script-loader.php:390
+#: wp-includes/media.php:3333 wp-includes/script-loader.php:390
 #: wp-includes/script-loader.php:438 wp-includes/script-loader.php:507
 msgid "Cancel"
 msgstr "Peruuta"
@@ -7843,7 +7843,7 @@ msgstr "Tallenna luonnos"
 msgid "No comments yet."
 msgstr "Ei kommentteja."
 
-#: wp-includes/comment-template.php:1557 wp-includes/script-loader.php:488
+#: wp-includes/comment-template.php:1569 wp-includes/script-loader.php:488
 msgid "Reply"
 msgstr "Vastaa"
 
@@ -7867,14 +7867,14 @@ msgstr "Tuntematon syöte"
 msgid "Sidebar"
 msgstr "Sivupalkki"
 
-#: wp-includes/general-template.php:1389
+#: wp-includes/general-template.php:1385
 #: wp-includes/theme-compat/sidebar.php:92
 #: wp-includes/widgets/class-wp-widget-archives.php:27
 #: wp-includes/widgets/class-wp-widget-archives.php:45
 msgid "Archives"
 msgstr "Arkistot"
 
-#: wp-includes/general-template.php:412 wp-login.php:887
+#: wp-includes/general-template.php:412 wp-login.php:886
 msgid "Password"
 msgstr "Salasana"
 
@@ -7883,7 +7883,7 @@ msgid "Redo"
 msgstr "Tee uudelleen"
 
 #: wp-includes/media-template.php:687 wp-includes/media-template.php:762
-#: wp-includes/media-template.php:936 wp-includes/media.php:3060
+#: wp-includes/media-template.php:936 wp-includes/media.php:3088
 msgid "Thumbnail"
 msgstr "Pienoiskuva"
 
@@ -7899,7 +7899,7 @@ msgstr "GD-kuvankäsittelykirjastoa ei ole asennettu."
 msgid "File &#8220;%s&#8221; is not an image."
 msgstr "Tiedosto '%s' ei ole kuva."
 
-#: wp-includes/media.php:3302
+#: wp-includes/media.php:3330
 msgid "Add Media"
 msgstr "Lisää media"
 
@@ -7926,7 +7926,7 @@ msgid "Right"
 msgstr "Oikealle"
 
 #: wp-includes/media-template.php:688 wp-includes/media-template.php:763
-#: wp-includes/media-template.php:937 wp-includes/media.php:3061
+#: wp-includes/media-template.php:937 wp-includes/media.php:3089
 msgid "Medium"
 msgstr "Keskikokoinen"
 
@@ -7978,17 +7978,17 @@ msgstr "Julkinen"
 msgid "Schedule"
 msgstr "Ajasta"
 
-#: wp-includes/media.php:3306 wp-includes/script-loader.php:404
+#: wp-includes/media.php:3334 wp-includes/script-loader.php:404
 #: wp-includes/script-loader.php:517
 msgid "Update"
 msgstr "Päivitä"
 
-#: wp-includes/taxonomy.php:534
+#: wp-includes/taxonomy.php:537
 msgid "Add or remove tags"
 msgstr "Lisää tai poista avainsanoja"
 
 #: wp-includes/admin-bar.php:809 wp-includes/admin-bar.php:810
-#: wp-includes/class-wp-editor.php:1421 wp-includes/media.php:3303
+#: wp-includes/class-wp-editor.php:1421 wp-includes/media.php:3331
 msgid "Search"
 msgstr "Etsi"
 
@@ -8013,12 +8013,12 @@ msgid "Links"
 msgstr "Linkit"
 
 #: wp-includes/class-wp-editor.php:862 wp-includes/class-wp-editor.php:1402
-#: wp-includes/functions.php:4932 wp-includes/script-loader.php:256
+#: wp-includes/functions.php:4937 wp-includes/script-loader.php:256
 #: wp-includes/script-loader.php:337 wp-includes/script-loader.php:439
 msgid "Close"
 msgstr "Sulje"
 
-#: wp-includes/media.php:3304
+#: wp-includes/media.php:3332
 msgid "Select"
 msgstr "Valitse"
 
@@ -8034,7 +8034,7 @@ msgstr "Muokkaa mediatiedostoja"
 msgid "New Post"
 msgstr "Uusi artikkeli"
 
-#: wp-includes/media.php:3028 wp-includes/script-loader.php:406
+#: wp-includes/media.php:3056 wp-includes/script-loader.php:406
 #: wp-includes/script-loader.php:564
 msgid "(no title)"
 msgstr "(ei otsikkoa)"
@@ -8047,17 +8047,17 @@ msgstr "Muokkaa artikkelia"
 msgid "Number of comments to show:"
 msgstr "Näytettävät kommentit:"
 
-#: wp-includes/deprecated.php:3082 wp-includes/functions.php:2409
+#: wp-includes/deprecated.php:3082 wp-includes/functions.php:2414
 msgid "Are you sure you want to do this?"
 msgstr "Oletko varma?"
 
 #: wp-includes/media-template.php:327 wp-includes/media-template.php:521
-#: wp-includes/media.php:3374
+#: wp-includes/media.php:3402
 msgid "Edit Image"
 msgstr "Muokkaa kuvaa"
 
 #: wp-includes/media-template.php:690 wp-includes/media-template.php:765
-#: wp-includes/media-template.php:939 wp-includes/media.php:3063
+#: wp-includes/media-template.php:939 wp-includes/media.php:3091
 msgid "Full Size"
 msgstr "Täysikokoinen"
 
@@ -8083,11 +8083,11 @@ msgstr "Edistyneet ominaisuudet"
 msgid "Link Categories"
 msgstr "Linkkien kategoriat"
 
-#: wp-includes/taxonomy.php:523
+#: wp-includes/taxonomy.php:526
 msgid "Search Categories"
 msgstr "Etsi kategorioita"
 
-#: wp-includes/taxonomy.php:530
+#: wp-includes/taxonomy.php:533
 msgid "Update Category"
 msgstr "Päivitä kategoria"
 
@@ -8098,7 +8098,7 @@ msgstr "Päivitä kategoria"
 msgid "Categories"
 msgstr "Kategoriat"
 
-#: wp-includes/taxonomy.php:525
+#: wp-includes/taxonomy.php:528
 msgid "All Categories"
 msgstr "Kaikki kategoriat"
 
@@ -8122,11 +8122,11 @@ msgstr "Yleinen"
 msgid "Dismiss"
 msgstr "Sulje"
 
-#: wp-includes/general-template.php:411 wp-login.php:717 wp-login.php:883
+#: wp-includes/general-template.php:411 wp-login.php:716 wp-login.php:882
 msgid "Username"
 msgstr "Käyttäjätunnus"
 
-#: wp-includes/media.php:3348
+#: wp-includes/media.php:3376
 msgid "No media attachments found."
 msgstr "Yhtään liitettyä mediatiedostoa ei löytynyt."
 
@@ -8136,11 +8136,11 @@ msgstr "Yhtään liitettyä mediatiedostoa ei löytynyt."
 #: wp-includes/class-wp-xmlrpc-server.php:2034
 #: wp-includes/class-wp-xmlrpc-server.php:2105
 #: wp-includes/class-wp-xmlrpc-server.php:2163
-#: wp-includes/class-wp-xmlrpc-server.php:2258 wp-includes/taxonomy.php:665
-#: wp-includes/taxonomy.php:754 wp-includes/taxonomy.php:905
-#: wp-includes/taxonomy.php:1078 wp-includes/taxonomy.php:2294
-#: wp-includes/taxonomy.php:2545 wp-includes/taxonomy.php:2788
-#: wp-includes/taxonomy.php:3121
+#: wp-includes/class-wp-xmlrpc-server.php:2258 wp-includes/taxonomy.php:668
+#: wp-includes/taxonomy.php:757 wp-includes/taxonomy.php:908
+#: wp-includes/taxonomy.php:1081 wp-includes/taxonomy.php:2300
+#: wp-includes/taxonomy.php:2551 wp-includes/taxonomy.php:2794
+#: wp-includes/taxonomy.php:3127
 msgid "Invalid taxonomy"
 msgstr "Virheellinen taksonomia"
 
