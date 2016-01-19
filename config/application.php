@@ -34,7 +34,6 @@ define('WP_CONTENT_URL', WP_HOME . CONTENT_DIR);
  */
 
 define('WP_CACHE', true);
-define('WPCACHEHOME', $root_dir . CONTENT_DIR .'/plugins/wp-super-cache/' );
 
 /**
  * DB settings
