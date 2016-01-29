@@ -56,7 +56,6 @@
     "vlucas/phpdotenv": "^2.0.1",
     "facebook/php-sdk": "dev-master",
     "wpackagist-plugin/wordpress-seo":"*",
-    "wpackagist-plugin/wp-last-login":"*",
     "wpackagist-plugin/google-analyticator":"*",
     "wpackagist-plugin/simple-history":"*",
     "wpackagist-plugin/go-live-update-urls":"*",
