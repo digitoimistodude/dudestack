@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "58face4918f9fa5a4185409e269a0e02",
-    "content-hash": "62d2f2a4f3319d620f354c922a2cb991",
+    "hash": "069c45eae6bac355bf2c944685e2db1a",
+    "content-hash": "9b258c6184d3be878986a716c350643f",
     "packages": [
         {
             "name": "composer/installers",
@@ -1693,6 +1693,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/iwp-client/"
+        },
+        {
+            "name": "wpackagist-plugin/scripts-to-footerphp",
+            "version": "0.6.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/scripts-to-footerphp/",
+                "reference": "tags/0.6.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/scripts-to-footerphp.0.6.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/scripts-to-footerphp/"
         },
         {
             "name": "wpackagist-plugin/simple-history",

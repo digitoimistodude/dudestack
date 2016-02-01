@@ -60,7 +60,8 @@
     "wpackagist-plugin/simple-history":"*",
     "wpackagist-plugin/go-live-update-urls":"*",
     "wpackagist-plugin/iwp-client":"*",
-    "wpackagist-plugin/clean-image-filenames":"*"
+    "wpackagist-plugin/clean-image-filenames":"*",
+    "wpackagist-plugin/scripts-to-footerphp":"*"
   },
   "extra": {
     "dropin-paths": {
