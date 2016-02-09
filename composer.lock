@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "069c45eae6bac355bf2c944685e2db1a",
-    "content-hash": "9b258c6184d3be878986a716c350643f",
+    "hash": "3291ac9436454c4e27b39d58444d4d3a",
+    "content-hash": "d9ed0a15521dc4b81e81201a81fb45b7",
     "packages": [
         {
             "name": "composer/installers",
@@ -300,15 +300,16 @@
         },
         {
             "name": "koodimonni-language/en_gb",
-            "version": "4.4.1",
+            "version": "4.4.2",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/4.4.1/en_GB.zip",
+                "url": "https://downloads.wordpress.org/translation/core/4.4.2/en_GB.zip",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "koodimonni-plugin-language/akismet-en_gb": "*",
+                "koodimonni-plugin-language/bbpress-en_gb": "*",
                 "koodimonni-plugin-language/woocommerce-en_gb": "*",
                 "koodimonni-plugin-language/wordpress-importer-en_gb": "*",
                 "koodimonni-theme-language/twentyfifteen-en_gb": "*",
@@ -330,15 +331,16 @@
         },
         {
             "name": "koodimonni-language/fi",
-            "version": "4.4.1",
+            "version": "4.4.2",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/4.4.1/fi.zip",
+                "url": "https://downloads.wordpress.org/translation/core/4.4.2/fi.zip",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "koodimonni-plugin-language/akismet-fi": "*",
+                "koodimonni-plugin-language/bbpress-fi": "*",
                 "koodimonni-plugin-language/woocommerce-fi": "*",
                 "koodimonni-plugin-language/wordpress-importer-fi": "*",
                 "koodimonni-theme-language/twentyeleven-fi": "*",
@@ -403,11 +405,53 @@
             ]
         },
         {
-            "name": "koodimonni-plugin-language/woocommerce-en_gb",
-            "version": "2.5.1",
+            "name": "koodimonni-plugin-language/bbpress-en_gb",
+            "version": "2.5.8",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/plugin/woocommerce/2.5.1/en_GB.zip",
+                "url": "https://downloads.wordpress.org/translation/plugin/bbpress/2.5.8/en_GB.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "koodimonni/composer-dropin-installer": ">=0.2.3"
+            },
+            "type": "wordpress-language",
+            "description": "Wordpress bbpress translation for English (UK) - en_gb",
+            "keywords": [
+                "Translation",
+                "Wordpress",
+                "bbpress",
+                "en_gb"
+            ]
+        },
+        {
+            "name": "koodimonni-plugin-language/bbpress-fi",
+            "version": "2.5.8",
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/translation/plugin/bbpress/2.5.8/fi.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "koodimonni/composer-dropin-installer": ">=0.2.3"
+            },
+            "type": "wordpress-language",
+            "description": "Wordpress bbpress translation for Finnish - fi",
+            "keywords": [
+                "Translation",
+                "Wordpress",
+                "bbpress",
+                "fi"
+            ]
+        },
+        {
+            "name": "koodimonni-plugin-language/woocommerce-en_gb",
+            "version": "2.5.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/translation/plugin/woocommerce/2.5.2/en_GB.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -425,10 +469,10 @@
         },
         {
             "name": "koodimonni-plugin-language/woocommerce-fi",
-            "version": "2.5.1",
+            "version": "2.5.2",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/plugin/woocommerce/2.5.1/fi.zip",
+                "url": "https://downloads.wordpress.org/translation/plugin/woocommerce/2.5.2/fi.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1655,16 +1699,16 @@
             "homepage": "https://wordpress.org/plugins/go-live-update-urls/"
         },
         {
-            "name": "wpackagist-plugin/google-analyticator",
-            "version": "6.4.9.6",
+            "name": "wpackagist-plugin/google-analytics-dashboard-for-wp",
+            "version": "4.9.2",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/google-analyticator/",
-                "reference": "tags/6.4.9.6"
+                "url": "http://plugins.svn.wordpress.org/google-analytics-dashboard-for-wp/",
+                "reference": "tags/4.9.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-analyticator.6.4.9.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.4.9.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1672,7 +1716,7 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/google-analyticator/"
+            "homepage": "https://wordpress.org/plugins/google-analytics-dashboard-for-wp/"
         },
         {
             "name": "wpackagist-plugin/iwp-client",

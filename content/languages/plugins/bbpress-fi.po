@@ -1,0 +1,4466 @@
+# Translation of Stable (latest release) in Finnish
+# This file is distributed under the same license as the Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2015-11-02 06:59:53+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/1.0-alpha-1100\n"
+"Project-Id-Version: Stable (latest release)\n"
+
+#. Author of the plugin/theme
+msgid "The bbPress Community"
+msgstr "bbPress-yhteisö"
+
+#. #-#-#-#-#  tmp-bbpress.pot (bbPress 2.5.8)  #-#-#-#-#
+#. Plugin URI of the plugin/theme
+#. #-#-#-#-#  tmp-bbpress.pot (bbPress 2.5.8)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "http://bbpress.org"
+msgstr "http://bbpress.org"
+
+#. Plugin Name of the plugin/theme
+msgid "bbPress"
+msgstr "bbPress"
+
+#. Description of the plugin/theme
+msgid "bbPress is forum software with a twist from the creators of WordPress."
+msgstr "bbPress on foorumiohjelmisto pienellä lisätwistillä WordPressin luojilta."
+
+#: includes/admin/tools.php:1148
+msgid "No reply positions to recalculate!"
+msgstr "Ei uudelleenlaskettavaa!"
+
+#: includes/admin/tools.php:1147
+msgid "Recalculating reply menu order &hellip; %s"
+msgstr "Järjestetään vastaukset uudelleen &hellip; %s"
+
+#: includes/admin/tools.php:166
+msgid "Recalculate the position of each reply"
+msgstr "Laske uudelleen jokaisen vastauksen sijainti"
+
+#: includes/replies/template.php:2169
+msgid "Move"
+msgstr "Siirrä"
+
+#: templates/default/bbpress/form-reply-move.php:42
+msgid "Moved: %s"
+msgstr "Siirretty: %s"
+
+#: templates/default/bbpress/loop-search.php:22
+#: templates/default/bbpress/loop-search.php:44
+msgid "Search Results"
+msgstr "Hakutulokset"
+
+#: templates/default/bbpress/form-user-edit.php:39
+msgid "Display Name"
+msgstr "Näyttönimi"
+
+#: templates/default/bbpress/form-forum.php:169
+msgid "You cannot create new forums."
+msgstr "Et voi luoda uusia foorumeita."
+
+#: templates/default/bbpress/user-details.php:29
+#: templates/default/bbpress/user-profile.php:15
+msgid "Profile"
+msgstr "Profiili"
+
+#: includes/extend/buddypress/groups.php:304
+msgid "Save Settings"
+msgstr "Tallenna asetukset"
+
+#: includes/common/widgets.php:893
+msgid "Order By:"
+msgstr "Järjestä:"
+
+#. translators: 1: reply link, 2: reply timestamp
+#: includes/common/widgets.php:1172
+msgctxt "widgets"
+msgid "%1$s %2$s"
+msgstr "%1$s %2$s"
+
+#. translators: 1: reply link
+#: includes/common/widgets.php:1184
+msgctxt "widgets"
+msgid "%1$s"
+msgstr "%1$s"
+
+#: includes/admin/tools.php:1286
+msgid "Failed"
+msgstr "Epäonnistui"
+
+#: includes/admin/tools.php:1287
+msgid "Success!"
+msgstr "Onnistui!"
+
+#: includes/admin/tools.php:1046
+msgid "Recalculating the forum for each post &hellip; %s"
+msgstr "Keskustelualueen viestien uudelleen laskenta &hellip; %s"
+
+#: includes/users/template.php:503
+msgid "Guest"
+msgstr "Vieras"
+
+#: includes/users/template.php:517
+msgid "Member"
+msgstr "Jäsen"
+
+#: includes/forums/template.php:2015
+msgid "This category contains %1$s."
+msgstr "Tämä kategoria sisältää %1$s."
+
+#: includes/common/functions.php:112
+msgid "sometime"
+msgstr "joskus"
+
+#: includes/common/functions.php:113
+msgid "right now"
+msgstr "juuri nyt"
+
+#: includes/common/functions.php:118
+msgid "year"
+msgstr "vuosi"
+
+#: includes/common/functions.php:118
+msgid "years"
+msgstr "vuotta"
+
+#: includes/common/functions.php:119
+msgid "month"
+msgstr "kuukausi"
+
+#: includes/common/functions.php:119
+msgid "months"
+msgstr "kuukautta"
+
+#: includes/common/functions.php:120
+msgid "week"
+msgstr "viikko"
+
+#: includes/common/functions.php:120
+msgid "weeks"
+msgstr "viikkoa"
+
+#: includes/common/functions.php:121
+msgid "day"
+msgstr "päivä"
+
+#: includes/common/functions.php:121
+msgid "days"
+msgstr "päivää"
+
+#: includes/common/functions.php:122
+msgid "hour"
+msgstr "tunti"
+
+#: includes/common/functions.php:122
+msgid "hours"
+msgstr "tuntia"
+
+#: includes/common/functions.php:123
+msgid "minute"
+msgstr "minuutti"
+
+#: includes/common/functions.php:124
+msgid "second"
+msgstr "sekunti"
+
+#: includes/common/functions.php:179
+msgctxt "Separator in time since"
+msgid ","
+msgstr ","
+
+#: includes/forums/functions.php:167 includes/forums/functions.php:467
+msgid "<strong>ERROR</strong>: Your forum description cannot be empty."
+msgstr "<strong>VIRHE</strong>: Foorumin kuvaus ei voi olla tyhjä."
+
+#: includes/forums/functions.php:215
+msgid "<strong>ERROR</strong>: This forum already exists."
+msgstr "<strong>VIRHE</strong>: Foorumi on jo olemassa."
+
+#: includes/topics/template.php:2685
+msgctxt "Topic Status"
+msgid "Close"
+msgstr "Sulje"
+
+#: includes/topics/template.php:2686
+msgctxt "Topic Status"
+msgid "Open"
+msgstr "Avaa"
+
+#: includes/admin/topics.php:786
+msgctxt "Close a Topic"
+msgid "Close"
+msgstr "Sulje"
+
+#: includes/admin/topics.php:788
+msgctxt "Open a Topic"
+msgid "Open"
+msgstr "Avaa"
+
+#: includes/common/widgets.php:103
+msgid "Remember Me"
+msgstr "Muista minut"
+
+#: includes/forums/template.php:2005
+msgid "This category contains %1$s and %2$s."
+msgstr "Tämä kategoria sisältää %1$s ja %2$s."
+
+#: includes/common/template.php:2233
+msgid "&lsaquo;"
+msgstr "&lsaquo;"
+
+#: includes/common/template.php:2138
+msgid "Home"
+msgstr "Etusivu"
+
+#: includes/common/template.php:2233
+msgid "&rsaquo;"
+msgstr "&rsaquo;"
+
+#: includes/common/widgets.php:97
+#: templates/default/bbpress/form-user-login.php:22
+msgid "Password"
+msgstr "Salasana"
+
+#: templates/default/bbpress/form-user-login.php:28
+msgid "Keep me signed in"
+msgstr "Pidä minut sisäänkirjautuneena"
+
+#: templates/default/bbpress/form-user-edit.php:29
+msgid "Last Name"
+msgstr "Sukunimi"
+
+#: templates/default/bbpress/form-user-edit.php:24
+msgid "First Name"
+msgstr "Etunimi"
+
+#: includes/common/widgets.php:89 includes/common/widgets.php:110
+#: templates/default/bbpress/form-user-login.php:14
+#: templates/default/bbpress/form-user-login.php:35
+msgid "Log In"
+msgstr "Kirjaudu"
+
+#: includes/common/widgets.php:185 includes/common/widgets.php:337
+#: includes/common/widgets.php:465 includes/common/widgets.php:634
+#: includes/common/widgets.php:876 includes/common/widgets.php:1030
+#: includes/common/widgets.php:1234
+msgid "Title:"
+msgstr "Otsikko:"
+
+#: templates/default/bbpress/form-user-edit.php:115
+msgid "There is a pending email address change to <code>%1$s</code>. <a href=\"%2$s\">Cancel</a>"
+msgstr "Odottava sähköpostin vaihto osoitteeseen <code>%1$s</code>. <a href=\"%2$s\">Peruuta</a>"
+
+#: templates/default/bbpress/form-user-edit.php:124
+msgid "New Password"
+msgstr "Uusi salasana"
+
+#: templates/default/bbpress/form-user-edit.php:34
+msgid "Nickname"
+msgstr "Lempinimi"
+
+#: templates/default/bbpress/form-user-edit.php:74
+#: templates/default/bbpress/form-user-edit.php:77
+msgid "About the user"
+msgstr "Tietoja käyttäjästä"
+
+#: includes/common/template.php:2208
+msgid "(Edit)"
+msgstr "(Muokkaa)"
+
+#: templates/default/bbpress/content-statistics.php:64
+msgid "Hidden Replies"
+msgstr "Piilotetut vastaukset"
+
+#: includes/replies/template.php:60
+msgid "No replies found in Trash"
+msgstr "Roskakorista ei löytynyt vastauksia"
+
+#: includes/replies/template.php:56 includes/replies/template.php:57
+msgid "View Reply"
+msgstr "Näytä vastaus"
+
+#: includes/replies/template.php:54
+msgid "Edit Reply"
+msgstr "Muokkaa vastausta"
+
+#: includes/replies/template.php:51 includes/replies/template.php:55
+msgid "New Reply"
+msgstr "Uusi vastaus"
+
+#: includes/replies/template.php:52
+msgid "Create New Reply"
+msgstr "Luo uusi vastaus"
+
+#: includes/common/template.php:2216 includes/forums/template.php:53
+#: includes/replies/template.php:53 includes/replies/template.php:1910
+#: includes/topics/template.php:53 includes/topics/template.php:2491
+#: templates/default/bbpress/user-details.php:65
+msgid "Edit"
+msgstr "Muokkaa"
+
+#: includes/forums/template.php:59
+msgid "No forums found"
+msgstr "Foorumeita ei löytynyt"
+
+#: includes/forums/template.php:60
+msgid "No forums found in Trash"
+msgstr "Foorumeita ei löytynyt roskakorista"
+
+#: includes/common/widgets.php:122
+#: templates/default/bbpress/form-user-register.php:36
+msgid "Register"
+msgstr "Rekisteröidy"
+
+#: includes/forums/template.php:840 includes/topics/template.php:1846
+#: includes/users/template.php:1058
+msgid "Subscribe"
+msgstr "Seuraa"
+
+#: includes/forums/template.php:841 includes/topics/template.php:1847
+#: includes/users/template.php:1059
+msgid "Unsubscribe"
+msgstr "Lopeta seuraaminen"
+
+#: templates/default/bbpress/feedback-no-access.php:13
+msgid "Private"
+msgstr "Yksityinen"
+
+#: templates/default/bbpress/form-topic-merge.php:38
+msgid "Destination"
+msgstr "Kohde"
+
+#: includes/admin/topics.php:729 includes/topics/template.php:2064
+msgid "No Replies"
+msgstr "Ei vastauksia"
+
+#: templates/default/bbpress/form-anonymous.php:22
+msgid "Name (required):"
+msgstr "Nimi (pakollinen):"
+
+#: templates/default/bbpress/form-anonymous.php:17
+msgid "Your information:"
+msgstr "Tietosi:"
+
+#: templates/default/bbpress/form-protected.php:14
+msgid "Protected"
+msgstr "Suojattu"
+
+#: templates/default/bbpress/loop-single-topic.php:68
+msgid "in: <a href=\"%1$s\">%2$s</a>"
+msgstr "osoitteessa: <a href=\"%1$s\">%2$s</a>"
+
+#: templates/default/bbpress/form-topic-tag.php:22
+msgid "Rename"
+msgstr "Nimeä uudelleen"
+
+#: includes/replies/template.php:2036 includes/topics/template.php:2617
+#: templates/default/bbpress/form-topic-tag.php:88
+#: templates/default/bbpress/form-topic-tag.php:101
+msgid "Delete"
+msgstr "Poista"
+
+#: includes/topics/template.php:2816
+#: templates/default/bbpress/form-topic-tag.php:59
+#: templates/default/bbpress/form-topic-tag.php:73
+msgid "Merge"
+msgstr "Yhdistä"
+
+#: templates/default/bbpress/form-topic-tag.php:45
+msgid "Update"
+msgstr "Päivitä"
+
+#: includes/common/template.php:1467
+msgid "None available"
+msgstr "Ei saatavilla"
+
+#: includes/common/template.php:2501
+msgid "Log Out"
+msgstr "Kirjaudu ulos"
+
+#: includes/common/template.php:2638
+#: templates/default/bbpress/user-details.php:65
+msgid "Edit %s's Profile"
+msgstr "Muokkaa käyttäjän %s profiilia"
+
+#: includes/common/template.php:2646
+msgid "View: %s"
+msgstr "Näytä: %s"
+
+#: includes/replies/functions.php:1992
+msgid "All Posts"
+msgstr "Kaikki viestit"
+
+#: includes/admin/tools.php:1220 includes/replies/functions.php:1994
+#: includes/replies/template.php:50
+msgid "All Replies"
+msgstr "Kaikki vastaukset"
+
+#: includes/replies/template.php:1098 includes/topics/template.php:1368
+#: includes/users/template.php:184
+msgid "Anonymous"
+msgstr "Nimetön"
+
+#: includes/users/template.php:1163
+msgid "User updated."
+msgstr "Käyttäjä päivitetty."
+
+#: includes/users/template.php:1453
+msgid "You are now logged out."
+msgstr "Olet nyt kirjautunut ulos."
+
+#: includes/common/functions.php:114
+msgid "%s ago"
+msgstr "%s sitten"
+
+#: includes/admin/tools.php:199 includes/admin/tools.php:250
+#: includes/admin/tools.php:292 includes/admin/tools.php:337
+#: includes/admin/tools.php:454 includes/admin/tools.php:488
+#: includes/admin/tools.php:531 includes/admin/tools.php:576
+#: includes/admin/tools.php:621 includes/admin/tools.php:683
+#: includes/admin/tools.php:744 includes/admin/tools.php:812
+#: includes/admin/tools.php:860 includes/admin/tools.php:966
+#: includes/admin/tools.php:1026 includes/admin/tools.php:1047
+#: includes/admin/tools.php:1101
+msgid "Failed!"
+msgstr "Epäonnistui!"
+
+#: includes/admin/tools.php:233 includes/admin/tools.php:276
+#: includes/admin/tools.php:302 includes/admin/tools.php:469
+#: includes/admin/tools.php:514 includes/admin/tools.php:559
+#: includes/admin/tools.php:604 includes/admin/tools.php:666
+#: includes/admin/tools.php:727 includes/admin/tools.php:788
+#: includes/admin/tools.php:950 includes/admin/tools.php:1007
+#: includes/admin/tools.php:1030 includes/admin/tools.php:1085
+#: includes/admin/tools.php:1130 includes/admin/tools.php:1186
+msgid "Complete!"
+msgstr "Valmis!"
+
+#: includes/users/functions.php:1223
+msgid "<strong>ERROR</strong>: There was a problem unsubscribing from that forum!"
+msgstr "<strong>VIRHE</strong>: Keskustelualueen tilauksen peruminen ei onnistunut."
+
+#: includes/users/functions.php:1170
+msgid "<strong>ERROR</strong>: No forum was found! Which forum are you subscribing/unsubscribing to?"
+msgstr "<strong>VIRHE</strong>: Keskustelualuetta ei löytynyt! Mistä keskustelualueesta oli kysymys?"
+
+#: includes/topics/functions.php:2089
+msgid "<strong>ERROR:</strong> You do not have the permission to do that."
+msgstr "<strong>Virhe:</strong> Sinulle ei ole oikeuksia toiminnon suorittamiseen."
+
+#: includes/topics/template.php:1892
+msgid "Unfavorite"
+msgstr "Poista suosikeista"
+
+#: includes/topics/functions.php:1982
+msgctxt "Unstick a topic"
+msgid "Normal"
+msgstr "Normaali"
+
+#: includes/replies/functions.php:1241
+msgid "<strong>ERROR</strong>: The topic you want to move from was not found."
+msgstr "<strong>VIRHE</strong>: Etsimääsi aihetta ei löydetty."
+
+#: includes/replies/functions.php:1223
+msgid "<strong>ERROR</strong>: Reply ID to move not found!"
+msgstr "<strong>VIRHE</strong>: Siirrettävän vastauksen ID:tä ei löytynyt!"
+
+#: includes/extend/buddypress/notifications.php:165
+msgid "<strong>ERROR</strong>: You do not have permission to mark notifications for that user."
+msgstr "<strong>VIRHE</strong>: Sinulla ei ole oikeuksia muokata tämän käyttäjän ilmoituksia."
+
+#: includes/extend/buddypress/notifications.php:57
+msgid "You have %d new reply to %s"
+msgstr "Sinulla on %d yksi uusi vastaus keskusteluun %s"
+
+#: includes/extend/buddypress/notifications.php:55
+msgid "You have %d new reply to %2$s from %3$s"
+msgstr "Sinulla on %d uusi vastaus keskusteluun %2$s käyttäjältä %3$s"
+
+#: includes/extend/buddypress/notifications.php:51
+msgid "You have %d new replies"
+msgstr "Sinulla on %d uutta vastausta"
+
+#: includes/extend/buddypress/notifications.php:48
+msgid "Topic Replies"
+msgstr "Vastaukset keskusteluun"
+
+#: includes/topics/template.php:3316
+msgid "This topic contains %1$s and has %2$s."
+msgstr "Tässä keskustelussa on %1$s ja siinä on %2$s."
+
+#: includes/topics/template.php:2981
+msgid "Viewing topic %2$s (of %4$s total)"
+msgid_plural "Viewing %1$s topics - %2$s through %3$s (of %4$s total)"
+msgstr[0] "Esillä keskustelu %2$s (%4$s:stä)"
+msgstr[1] "Esillä %1$s keskustelua, %2$s - %3$s (kaikkiaan %4$s)"
+
+#: includes/topics/template.php:2977
+msgid "Viewing %1$s topic"
+msgid_plural "Viewing %1$s topics"
+msgstr[0] "Esillä %1$s keskustelu"
+msgstr[1] "Esillä %1$s keskustelua"
+
+#: includes/common/template.php:2609
+msgid "%s Topics"
+msgstr "%s keskustelua"
+
+#: includes/common/functions.php:1256
+msgid ""
+"%1$s wrote:\n"
+"\n"
+"%2$s\n"
+"\n"
+"Topic Link: %3$s\n"
+"\n"
+"-----------\n"
+"\n"
+"You are receiving this email because you subscribed to a forum.\n"
+"\n"
+"Login and visit the topic to unsubscribe from these emails."
+msgstr ""
+"%1$s kirjoitti:\n"
+"\n"
+"%2$s\n"
+"\n"
+"Linkki kirjoitukseen: %3$s\n"
+"\n"
+"-----------\n"
+"\n"
+"Saat tämän sähköpostin koska olet tilannut ilmoitukset keskustelualuun kirjoituksista itsellesi.\n"
+"\n"
+"Kirjaudu sisään ja mene keskustelusivulle, jos haluat lopettaa viestien tilaamisen."
+
+#: includes/admin/tools.php:1100
+msgid "Recalculating the topic for each post &hellip; %s"
+msgstr "Keskustelun viestien uudelleen laskenta &hellip; %s"
+
+#: includes/admin/tools.php:965
+msgid "Repairing the sticky topic to the parent forum relationships&hellip; %s"
+msgstr "Korjataan kiinnitettyjen keskusteluiden suhde isäntään &hellip; %s"
+
+#: includes/topics/template.php:3312
+msgid "This topic contains %1$s, has %2$s, and was last updated by %3$s %4$s."
+msgstr "Tässä keskustelussa on %1$s, %2$s, ja siihen kirjoitti viimeksi %3$s %4$s."
+
+#: includes/forums/template.php:54
+msgid "Edit Forum"
+msgstr "Muokkaa foorumia"
+
+#: templates/default/bbpress/form-reply-move.php:68
+#: templates/default/bbpress/form-topic-merge.php:89
+#: templates/default/bbpress/form-topic-split.php:93
+msgid "<strong>WARNING:</strong> This process cannot be undone."
+msgstr "<strong>VAROITUS:</strong> Tätä ei voi perua."
+
+#: includes/admin/tools.php:1209
+msgid "Revert your forums back to a brand new installation. This process cannot be undone."
+msgstr "Palauta keskustelualueet takaisin alkutilaan (tyhjä asennus). Tätä prosessia ei voi perua."
+
+#: includes/admin/tools.php:418
+msgid "group-forums"
+msgstr "ryhmä-foorumit"
+
+#: includes/admin/tools.php:316
+msgid "Repairing BuddyPress group-forum relationships&hellip; %s"
+msgstr "Korjataan BuddyPress ryhmä-keskustelualue-yhteyksiä&hellip; %s"
+
+#: includes/admin/tools.php:177
+msgid "Remove trashed forums from user subscriptions"
+msgstr "Poista roskiin heitetyt keskustelualueet käyttäjän tilauksista"
+
+#: templates/default/bbpress/form-reply-move.php:24
+msgid "Move reply \"%s\""
+msgstr "Siirrä vastaus \"%s\""
+
+#: includes/replies/template.php:1695
+msgid "Cancel"
+msgstr "Peruuta"
+
+#: includes/topics/functions.php:1966
+msgctxt "Close the topic"
+msgid "Closed"
+msgstr "Suljettu"
+
+#: includes/forums/functions.php:1617
+msgctxt "Forum is a category"
+msgid "Category"
+msgstr "Kategoria"
+
+#: includes/forums/functions.php:1630
+msgctxt "Make forum public"
+msgid "Public"
+msgstr "Julkinen"
+
+#: includes/forums/functions.php:1631
+msgctxt "Make forum private"
+msgid "Private"
+msgstr "Yksityinen"
+
+#: includes/extend/akismet.php:405
+msgid "No response"
+msgstr "Ei vastausta"
+
+#: includes/core/capabilities.php:392
+msgid "Participant"
+msgstr "Osallistuja"
+
+#: includes/core/capabilities.php:398
+msgid "Spectator"
+msgstr "Katsoja"
+
+#: includes/common/widgets.php:951
+msgid "(bbPress) Statistics"
+msgstr "(bbPress) Statistiikkaa"
+
+#: includes/common/template.php:2617
+msgid "%s Favorites"
+msgstr "% suosikkia"
+
+#: includes/common/template.php:2621
+msgid "%s Subscriptions"
+msgstr "%s tilausta"
+
+#: includes/common/template.php:2625
+msgid "%s Profile"
+msgstr "%s profiili"
+
+#: includes/common/template.php:2604
+msgctxt "User viewing another users profile"
+msgid "%s's"
+msgstr "Käyttäjän %s"
+
+#: includes/common/template.php:2613
+msgid "%s Replies"
+msgstr "%s vastausta"
+
+#: includes/common/template.php:2600
+msgctxt "User viewing his/her own profile"
+msgid "Your"
+msgstr "Sinun"
+
+#: includes/admin/users.php:217
+msgid "Site Role"
+msgstr "Rooli sivustolla"
+
+#: includes/admin/tools.php:1331
+msgid "Deleting User&hellip; %s"
+msgstr "Poistetaan käyttäjä&hellip; %s"
+
+#: includes/admin/tools.php:1245
+msgid "Human sacrifice, dogs and cats living together... mass hysteria!"
+msgstr "Ihmisuhreja, kissojen ja koirien yhteiseloa... joukkohysteriaa!"
+
+#: includes/admin/tools.php:1235
+msgid "Note: Resetting without this checked will delete the meta-data necessary to delete these users."
+msgstr "Huom: Resetointi ilman tätä valintaa poistaa näiden käyttäjien poistamiseen tarvittavan metadatan."
+
+#: includes/admin/tools.php:1234
+msgid "This option will delete all previously imported users, and cannot be undone."
+msgstr "Tämä valinta poistaa kaikki aiemmin tuodut käyttäjät, eikä sitä voi perua."
+
+#: includes/admin/tools.php:1230
+msgid "Delete imported users?"
+msgstr "Poistetaanko tuodut käyttäjät?"
+
+#: includes/admin/tools.php:1216
+msgid "The following data will be removed:"
+msgstr "Seuraavat tiedot poistetaan:"
+
+#: includes/admin/tools.php:1210
+msgid "Backup your database before proceeding."
+msgstr "Ota tietokannastasi varmuuskopio ennen kuin jatkat."
+
+#: includes/admin/tools.php:843
+msgid "Complete! %s users updated."
+msgstr "Valmis! %s käyttäjää päivitetty."
+
+#: includes/admin/tools.php:743
+msgid "Removing trashed forums from user subscriptions&hellip; %s"
+msgstr "Poistetaan roskakorissa olevia foorumeita käyttäjien suosikeista&hellip; %s"
+
+#: templates/default/bbpress/form-search.php:14
+msgid "Search for:"
+msgstr "Hae:"
+
+#: templates/default/bbpress/user-details.php:41
+msgid "%s's Replies Created"
+msgstr "%s:n Vastauksia luotu"
+
+#: templates/default/bbpress/user-details.php:35
+msgid "%s's Topics Started"
+msgstr "%s:n Aloittamaa aihetta"
+
+#: templates/default/bbpress/loop-search-topic.php:26
+msgid "Topic: "
+msgstr "Aihe:"
+
+#: templates/default/bbpress/loop-search-topic.php:33
+msgid "in group forum "
+msgstr "ryhmäfoorumissa"
+
+#: templates/default/bbpress/loop-search-topic.php:37
+msgid "in forum "
+msgstr "foorumissa"
+
+#: templates/default/bbpress/form-reply-move.php:33
+msgid "If you choose an existing topic, replies will be ordered by the time and date they were created."
+msgstr "Jos valitset olemassa olevan aiheen, vastaukset järjestetään niiden luomisajan ja -päivämäärän mukaan."
+
+#: templates/default/bbpress/user-profile.php:24
+msgid "Forum Role: %s"
+msgstr "Foorumin rooli: %s"
+
+#: templates/default/bbpress/form-user-roles.php:13
+msgid "Blog Role"
+msgstr "Blogin rooli"
+
+#: templates/default/bbpress-functions.php:426
+msgid "Please login to subscribe to this topic."
+msgstr "Ole hyvä ja kirjaudu seurataksesi tätä aihetta."
+
+#: templates/default/bbpress-functions.php:285
+#: templates/default/bbpress-functions.php:421
+msgid "Subscriptions are no longer active."
+msgstr "Seuraaminen ei ole enää mahdollista."
+
+#: templates/default/bbpress/user-profile.php:25
+msgid "Topics Started: %s"
+msgstr "Aiheita aloitettu: %s"
+
+#: templates/default/bbpress/user-details.php:58
+msgid "%s's Subscriptions"
+msgstr "Käyttäjän %s seurannat"
+
+#: templates/default/bbpress/form-user-edit.php:153
+msgid "Network Role"
+msgstr "Verkkorooli"
+
+#: templates/default/bbpress/user-topics-created.php:15
+msgid "Forum Topics Started"
+msgstr "Aloitetut foorumiaiheet"
+
+#: templates/default/bbpress-functions.php:299
+#: templates/default/bbpress-functions.php:367
+#: templates/default/bbpress-functions.php:435
+msgid "You do not have permission to do this."
+msgstr "Sinulla ei ole oikeuksia tehdä tätä."
+
+#: templates/default/bbpress/form-reply-move.php:29
+msgid "You can either make this reply a new topic with a new title, or merge it into an existing topic."
+msgstr "Voit tehdä tästä vastauksesta uuden aiheen antamalla sille uuden otsikon tai yhdistää sen jo olemassa olevaan aiheeseen."
+
+#: templates/default/bbpress/form-reply-move.php:37
+msgid "Move Method"
+msgstr "Siirtotapa"
+
+#: templates/default/bbpress/user-details.php:29
+msgid "%s's Profile"
+msgstr "Profiili: %s"
+
+#: includes/common/template.php:2633
+msgid "Edit Your Profile"
+msgstr "Muokkaa profiilia"
+
+#: includes/common/widgets.php:39
+msgid "A simple login form with optional links to sign-up and lost password pages."
+msgstr "Yksinkertainen kirjautumislomake. Vaihtoehtoisesti linkit rekisteröitymislomakkeeseen ja Unohditko salasanasi -sivulle."
+
+#: includes/common/widgets.php:42
+msgid "(bbPress) Login Widget"
+msgstr "(bbPress) Kirjaudu sisään -vimpain"
+
+#: includes/common/widgets.php:92
+#: templates/default/bbpress/form-user-edit.php:98
+#: templates/default/bbpress/form-user-login.php:17
+#: templates/default/bbpress/form-user-register.php:23
+msgid "Username"
+msgstr "Käyttäjätunnus"
+
+#: includes/common/widgets.php:128
+#: templates/default/bbpress/form-user-lost-pass.php:14
+msgid "Lost Password"
+msgstr "Salasana hukassa"
+
+#: includes/common/widgets.php:190
+msgid "Register URI:"
+msgstr "Rekisteröidy URI:"
+
+#: includes/common/widgets.php:195
+msgid "Lost Password URI:"
+msgstr "Salasana hukassa URI:"
+
+#: includes/common/widgets.php:243
+msgid "A list of registered optional topic views."
+msgstr "Lista rekisteröidyistä vaihtoehtoisista näkymistä."
+
+#: includes/common/widgets.php:246
+msgid "(bbPress) Topic Views List"
+msgstr "(bbPress) Aihelistausnäkymä"
+
+#: includes/common/widgets.php:384
+msgid "The bbPress forum search form."
+msgstr "bbPressin hakulomake."
+
+#: includes/common/widgets.php:387
+msgid "(bbPress) Forum Search Form"
+msgstr "(bbPress) Foorumin hakukenttä"
+
+#: includes/common/widgets.php:512
+msgid "A list of forums with an option to set the parent."
+msgstr "Lista foorumeista, jossa on valinta asettaa päätason foorumi."
+
+#: includes/common/widgets.php:515
+msgid "(bbPress) Forums List"
+msgstr "(bbPress) Foorumilistaus"
+
+#: includes/common/widgets.php:640 includes/common/widgets.php:880
+msgid "Parent Forum ID:"
+msgstr "Yläfoorumin ID:"
+
+#: includes/common/widgets.php:646 includes/common/widgets.php:886
+msgid "\"0\" to show only root - \"any\" to show all"
+msgstr "\"0\" näyttää ainoastaan juuritason - \"any\" näyttää kaiken"
+
+#: includes/common/widgets.php:692
+msgid "A list of recent topics, sorted by popularity or freshness."
+msgstr "Viimeisimpien aiheiden lista järjestettynä suosion tai tuoreuden mukaan."
+
+#: includes/common/widgets.php:695
+msgid "(bbPress) Recent Topics"
+msgstr "(bbPress) Viimeisimmät aiheet"
+
+#: includes/common/widgets.php:815
+msgctxt "widgets"
+msgid "by %1$s"
+msgstr "kirjoittanut %1$s"
+
+#: includes/common/widgets.php:877
+msgid "Maximum topics to show:"
+msgstr "Aiheiden maksimimäärä:"
+
+#: includes/common/widgets.php:889 includes/common/widgets.php:1236
+msgid "Show post date:"
+msgstr "Näytä lähetyspäivä:"
+
+#: includes/common/widgets.php:890
+msgid "Show topic author:"
+msgstr "Näytä aiheen kirjoittaja:"
+
+#: includes/common/widgets.php:895
+msgid "Newest Topics"
+msgstr "Uusimmat aiheet"
+
+#: includes/common/widgets.php:896
+#: templates/default/extras/page-forum-statistics.php:34
+msgid "Popular Topics"
+msgstr "Suosituimmat aiheet"
+
+#: includes/common/widgets.php:897
+msgid "Topics With Recent Replies"
+msgstr "Aiheet joihin on hiljaittain vastattu"
+
+#: includes/common/widgets.php:914
+msgid "Recent Topics"
+msgstr "Tuoreimmat aiheet"
+
+#: includes/common/widgets.php:948
+msgid "Some statistics from your forum."
+msgstr "Statistiikkaa foorumistasi."
+
+#: includes/common/widgets.php:1048
+msgid "Forum Statistics"
+msgstr "Foorumin statistiikkaa"
+
+#: includes/common/widgets.php:1078
+msgid "A list of the most recent replies."
+msgstr "Lista tuoreimmista vastauksita."
+
+#: includes/common/widgets.php:1081
+msgid "(bbPress) Recent Replies"
+msgstr "(bbPress) Tuoreimmat vastaukset"
+
+#. translators: 1: reply author, 2: reply link, 3: reply timestamp
+#: includes/common/widgets.php:1166
+msgctxt "widgets"
+msgid "%1$s on %2$s %3$s"
+msgstr "%1$s vastasi %2$s %3$s"
+
+#. translators: 1: reply author, 2: reply link
+#: includes/common/widgets.php:1178
+msgctxt "widgets"
+msgid "%1$s on %2$s"
+msgstr "%1$s vastasi %2$s"
+
+#: includes/common/widgets.php:1235
+msgid "Maximum replies to show:"
+msgstr "Vastauksien maksimimäärä:"
+
+#: includes/common/widgets.php:1237
+msgid "Show reply author:"
+msgstr "Näytä vastauksen kirjoittaja"
+
+#: includes/common/widgets.php:1252
+msgid "Recent Replies"
+msgstr "Viimeisimmät vastaukset"
+
+#: includes/core/capabilities.php:380
+msgid "Keymaster"
+msgstr "Avainmestari"
+
+#: includes/core/capabilities.php:386
+msgid "Moderator"
+msgstr "Moderaattori"
+
+#: includes/core/capabilities.php:404
+msgid "Blocked"
+msgstr "Estetyt"
+
+#: includes/core/capabilities.php:523
+msgid "Editable forum roles no longer exist."
+msgstr "Muokattavia rooleja ei ole enää saatavilla."
+
+#: includes/core/sub-actions.php:147
+msgid "The current user is being initialized without using $wp->init()."
+msgstr "Kyseistä käyttäjää yritetään alustaa ilman $wp-init() -komentoa."
+
+#: includes/core/update.php:186
+msgid "General"
+msgstr "Yleistä"
+
+#: includes/core/update.php:187
+msgid "General chit-chat"
+msgstr "Yleistä keskustelua"
+
+#: includes/core/update.php:188
+msgid "Hello World!"
+msgstr "Hei maailma!"
+
+#: includes/core/update.php:189
+msgid "I am the first topic in your new forums."
+msgstr "Olen ensimmäinen aihe foorumissasi."
+
+#: includes/core/update.php:190
+msgid "Re: Hello World!"
+msgstr "Vs: Hei maailma!"
+
+#: includes/core/update.php:191
+msgid "Oh, and this is what a reply looks like."
+msgstr "Tältä näyttää vastaus."
+
+#: includes/extend/akismet.php:467 includes/extend/akismet.php:482
+msgid "Post status was changed to %s"
+msgstr "Kirjoituksen tila muutettu muotoon %s"
+
+#: includes/extend/akismet.php:475
+msgid "Akismet cleared this post as not spam"
+msgstr "Akismet poisti tämän roskaposteista"
+
+#: includes/extend/akismet.php:489
+msgid "Akismet was unable to check this post (response: %s), will automatically retry again later."
+msgstr "Akismet ei voinut tarkistaa tätä kirjoitusta (virheilmoitus: %s). Kirjoitus tarkistetaan automaattisesti hetken päästä uudelleen."
+
+#: includes/extend/akismet.php:735 includes/extend/akismet.php:745
+msgid "Akismet History"
+msgstr "Akismet historia"
+
+#: includes/extend/akismet.php:793
+msgid "No recorded history. Akismet has not checked this post."
+msgstr "Ei olemassa olevaa historiaa. Akismet ei ole tarkistanut tätä kirjoitusta."
+
+#: includes/extend/buddypress/activity.php:195
+msgid "New forum topic"
+msgstr "Uusi foorumiaihe"
+
+#: includes/extend/buddypress/activity.php:196
+msgid "New forum reply"
+msgstr "Uusi foorumivastaus"
+
+#: includes/extend/buddypress/activity.php:420
+msgid "%1$s started the topic %2$s in the forum %3$s"
+msgstr "%1$s aloitti aiheen %2$s foorumissa %3$s"
+
+#: includes/extend/buddypress/activity.php:565
+msgid "%1$s replied to the topic %2$s in the forum %3$s"
+msgstr "%1$s vastasi aiheeseen %2$s foorumilla %3$s"
+
+#: includes/extend/buddypress/groups.php:275
+#: includes/extend/buddypress/groups.php:278
+msgid "Group Forum Settings"
+msgstr "Ryhmäfoorumin asetukset"
+
+#: includes/extend/buddypress/groups.php:279
+#: includes/extend/buddypress/groups.php:480
+msgid "Create a discussion forum to allow members of this group to communicate in a structured, bulletin-board style fashion."
+msgstr "Luo foorumi, jossa tämä ryhmä voi keskustella perinteisen keskustelupalstan tapaan."
+
+#: includes/extend/buddypress/groups.php:283
+#: includes/extend/buddypress/groups.php:483
+msgid "Yes. I want this group to have a forum."
+msgstr "Kyllä. Haluan että tällä ryhmällä on foorumi."
+
+#: includes/extend/buddypress/groups.php:286
+msgid "Saying no will not delete existing forum content."
+msgstr "Kielteinen vastaus ei poista foorumista olemassa olevaa sisältöä."
+
+#: includes/extend/buddypress/groups.php:291
+msgid "Group Forum:"
+msgstr "Ryhmäfoorumi:"
+
+#: includes/extend/buddypress/groups.php:299
+msgid "Network administrators can reconfigure which forum belongs to this group."
+msgstr "Verkon ylläpitäjät voivat uudelleen määrittää mitkä foorumit kuuluvat tähän ryhmään."
+
+#: includes/extend/buddypress/groups.php:339
+#: includes/extend/buddypress/groups.php:498
+#: includes/extend/buddypress/notifications.php:161
+#: includes/forums/functions.php:118 includes/forums/functions.php:395
+#: includes/replies/functions.php:116 includes/replies/functions.php:516
+#: includes/replies/functions.php:1246 includes/topics/functions.php:122
+#: includes/topics/functions.php:520 includes/topics/functions.php:1153
+#: includes/topics/functions.php:1456 includes/topics/functions.php:1820
+#: includes/topics/functions.php:1859 includes/topics/functions.php:1916
+#: includes/users/functions.php:459 includes/users/functions.php:1174
+#: includes/users/functions.php:1280 includes/users/functions.php:1407
+#: includes/users/functions.php:1413
+msgid "<strong>ERROR</strong>: Are you sure you wanted to do that?"
+msgstr "<strong>Virhe:</strong> Oletko varma, että halusit tehdä noin?"
+
+#: includes/extend/buddypress/groups.php:437
+msgctxt "group admin edit screen"
+msgid "Discussion Forum"
+msgstr "Foorumi"
+
+#: includes/extend/buddypress/groups.php:478
+msgid "Group Forum"
+msgstr "Ryhmäfoorumi"
+
+#: includes/extend/buddypress/groups.php:775
+msgid "This group does not currently have a forum."
+msgstr "Tässä ryhmässä ei ole tällä hetkellä foorumeita."
+
+#: includes/extend/buddypress/loader.php:105
+msgid "Search Forums..."
+msgstr "Hae foorumeista..."
+
+#: includes/extend/buddypress/loader.php:293
+#: templates/default/bbpress/user-subscriptions.php:34
+msgid "Subscribed Topics"
+msgstr "Seuratut aiheet"
+
+#: includes/forums/functions.php:131
+msgid "<strong>ERROR</strong>: You do not have permission to create new forums."
+msgstr "<strong>VIRHE</strong>: Sinulla ei ole oikeuksia luoda uusia foorumeita."
+
+#: includes/forums/functions.php:155 includes/forums/functions.php:455
+msgid "<strong>ERROR</strong>: Your forum needs a title."
+msgstr "<strong>VIRHE</strong>: Foorumi tarvitsee otsikon."
+
+#: includes/forums/functions.php:181
+msgid "<strong>ERROR</strong>: Your forum must have a parent."
+msgstr "<strong>VIRHE</strong>: Tällä foorumilla pitää olla ylätaso."
+
+#: includes/forums/functions.php:188
+msgid "<strong>ERROR</strong>: This forum is a category. No forums can be created in this forum."
+msgstr "<strong>VIRHE</strong>: Tämä foorumi on kategoria. Tämän alle ei voi luoda uusia foorumeita."
+
+#: includes/forums/functions.php:193 includes/forums/functions.php:431
+msgid "<strong>ERROR</strong>: This forum has been closed to new forums."
+msgstr "<strong>VIRHE</strong>: Tämä foorumi on suljettu uusilta foorumeilta."
+
+#: includes/forums/functions.php:198 includes/forums/functions.php:436
+msgid "<strong>ERROR</strong>: This forum is private and you do not have the capability to read or create new forums in it."
+msgstr "<strong>VIRHE</strong>: Tämä foorumi on yksityinen ja sinulla ei ole oikeuksia lukea tai luoda uusia foorumeita sen alle."
+
+#: includes/forums/functions.php:203 includes/forums/functions.php:441
+msgid "<strong>ERROR</strong>: This forum is hidden and you do not have the capability to read or create new forums in it."
+msgstr "<strong>VIRHE</strong>: Tämä foorumi on piiloitettu ja sinulla ei ole oikeuksia lukea tai luoda uusia foorumeita sen alle."
+
+#: includes/forums/functions.php:210 includes/replies/functions.php:284
+#: includes/topics/functions.php:260
+msgid "<strong>ERROR</strong>: Slow down; you move too fast."
+msgstr "<strong>VIRHE</strong>: Hidasta pikkaisen; etenet liian nopeasti."
+
+#: includes/forums/functions.php:220
+msgid "<strong>ERROR</strong>: Your forum cannot be created at this time."
+msgstr "<strong>VIRHE</strong>: Foorumiasi ei voitu luoda tällä hetkellä."
+
+#: includes/forums/functions.php:384
+msgid "<strong>ERROR</strong>: Forum ID not found."
+msgstr "<strong>VIRHE</strong>: Foorumin ID:tä ei löytynyt."
+
+#: includes/forums/functions.php:400
+msgid "<strong>ERROR</strong>: The forum you want to edit was not found."
+msgstr "<strong>VIRHE</strong>: Muokattavaa foorumia ei löytynyt."
+
+#: includes/forums/functions.php:405
+msgid "<strong>ERROR</strong>: You do not have permission to edit that forum."
+msgstr "<strong>VIRHE</strong>: Sinulla ei ole oikeuksia muokata tätä foorumia."
+
+#: includes/forums/functions.php:472
+msgid "<strong>ERROR</strong>: Your forum cannot be edited at this time."
+msgstr "<strong>VIRHE</strong>: Sinun foorumiisi ei voi muokata tällä hetkellä."
+
+#: includes/forums/functions.php:1602
+msgctxt "Open the forum"
+msgid "Open"
+msgstr "Avaa"
+
+#: includes/forums/functions.php:1603
+msgctxt "Close the forum"
+msgid "Closed"
+msgstr "Sulje"
+
+#: includes/forums/functions.php:1616
+msgctxt "Forum accepts new topics"
+msgid "Forum"
+msgstr "Foorumi"
+
+#: includes/forums/functions.php:1632
+msgctxt "Make forum hidden"
+msgid "Hidden"
+msgstr "Salainen"
+
+#: includes/forums/template.php:1238 includes/forums/template.php:1976
+msgid "%s topic"
+msgid_plural "%s topics"
+msgstr[0] "%s aihe"
+msgstr[1] "%s aiheita"
+
+#: includes/forums/template.php:1254 includes/topics/template.php:2118
+msgid " (+ %d hidden)"
+msgstr " (+ %d piiloitettu)"
+
+#: includes/forums/template.php:1965 includes/topics/template.php:2102
+msgid "%s reply"
+msgid_plural "%s replies"
+msgstr[0] "%s vastaus"
+msgstr[1] "%s vastausta"
+
+#: includes/forums/template.php:1985
+msgid "This category contains %1$s and %2$s, and was last updated by %3$s %4$s."
+msgstr "Tämä kategoria sisältää %1$s ja %2$s. %3$s on viimeksi päivittänyt sitä %4$s."
+
+#: includes/forums/template.php:1987
+msgid "This forum contains %1$s and %2$s, and was last updated by %3$s %4$s."
+msgstr "Tämä foorumi sisältää %1$s ja %2$s. %3$s on viimeksi päivittänyt sitä %4$s."
+
+#: includes/forums/template.php:1993
+msgid "This category contains %1$s, and was last updated by %2$s %3$s."
+msgstr "Tämä kategoria sisältää %1$s. %2$s on viimeksi päivittänyt sitä %3$s."
+
+#: includes/forums/template.php:1995
+msgid "This forum contains %1$s, and was last updated by %2$s %3$s."
+msgstr "Tämä foorumi sisältää %1$s. %2$s on viimeksi päivittänyt sitä %3$s."
+
+#: includes/forums/template.php:2007
+msgid "This forum contains %1$s and %2$s."
+msgstr "Tämä foorumi sisältää %1$s ja %2$s."
+
+#: includes/forums/template.php:2017
+msgid "This forum contains %1$s."
+msgstr "Tämä foorumi sisältää %1$s."
+
+#: includes/forums/template.php:2021
+msgid "This forum is empty."
+msgstr "Tämä foorumi on tyhjä."
+
+#: includes/replies/functions.php:142
+msgid "<strong>ERROR</strong>: You do not have permission to reply."
+msgstr "<strong>VIRHE</strong>: Sinulla ei ole lupaa vastata."
+
+#: includes/replies/functions.php:154
+msgid "<strong>ERROR</strong>: Topic ID is missing."
+msgstr "<strong>VIRHE</strong>: Aiheen ID puuttuu."
+
+#: includes/replies/functions.php:158
+msgid "<strong>ERROR</strong>: Topic ID must be a number."
+msgstr "<strong>VIRHE</strong>: Aiheen ID:n tulee olla numero."
+
+#: includes/replies/functions.php:168
+msgid "<strong>ERROR</strong>: Topic ID cannot be a negative number."
+msgstr "<strong>VIRHE</strong>: Aiheen ID ei voi olla negatiivinen numero."
+
+#: includes/replies/functions.php:172
+msgid "<strong>ERROR</strong>: Topic does not exist."
+msgstr "<strong>VIRHE</strong>: Aihetta ei ole olemassa."
+
+#: includes/replies/functions.php:191 includes/replies/functions.php:205
+#: includes/topics/functions.php:196 includes/topics/functions.php:210
+#: includes/topics/functions.php:535
+msgid "<strong>ERROR</strong>: Forum ID is missing."
+msgstr "<strong>VIRHE</strong>: Foorumin ID puuttuu."
+
+#: includes/replies/functions.php:195 includes/topics/functions.php:200
+msgid "<strong>ERROR</strong>: Forum ID must be a number."
+msgstr "<strong>VIRHE</strong>: Foorumin ID:n tulee olla numero."
+
+#: includes/replies/functions.php:209 includes/topics/functions.php:214
+msgid "<strong>ERROR</strong>: Forum ID cannot be a negative number."
+msgstr "<strong>VIRHE</strong>: Foorumin ID ei voi olla negatiivinen numero."
+
+#: includes/replies/functions.php:213 includes/topics/functions.php:218
+msgid "<strong>ERROR</strong>: Forum does not exist."
+msgstr "<strong>VIRHE</strong>: Foorumia ei ole olemassa."
+
+#: includes/replies/functions.php:227 includes/replies/functions.php:568
+msgid "<strong>ERROR</strong>: This forum is a category. No replies can be created in this forum."
+msgstr "<strong>VIRHE</strong>: Tämä foorumi on kategoria. Tällä foorumilla ei voi luoda vastauksia."
+
+#: includes/replies/functions.php:234 includes/replies/functions.php:575
+msgid "<strong>ERROR</strong>: This forum has been closed to new replies."
+msgstr "<strong>VIRHE</strong>: Tämä foorumi on suljettu uusilta vastauksilta."
+
+#: includes/replies/functions.php:240 includes/replies/functions.php:581
+msgid "<strong>ERROR</strong>: This forum is private and you do not have the capability to read or create new replies in it."
+msgstr "<strong>VIRHE</strong>: Tämä foorumi on yksityinen etkä lukemaan tai luomaan uusia vastauksia."
+
+#: includes/replies/functions.php:246 includes/replies/functions.php:587
+msgid "<strong>ERROR</strong>: This forum is hidden and you do not have the capability to read or create new replies in it."
+msgstr "<strong>VIRHE</strong>: Tämä foorumi on piilotettu etkä pääse lukemaan tai luomaan vastauksia."
+
+#: includes/replies/functions.php:279 includes/replies/functions.php:611
+msgid "<strong>ERROR</strong>: Your reply cannot be empty."
+msgstr "<strong>VIRHE</strong>: Vastauksesi ei voi olla tyhjä."
+
+#: includes/replies/functions.php:289
+msgid "<strong>ERROR</strong>: Duplicate reply detected; it looks as though you&#8217;ve already said that!"
+msgstr "<strong>VIRHE</strong>: Samanlainen vastaus löydetty; näyttää siltä, että olet jo sanonut tuon!"
+
+#: includes/replies/functions.php:294
+msgid "<strong>ERROR</strong>: Your reply cannot be created at this time."
+msgstr "<strong>VIRHE</strong>: Vastaustasi ei voitu luoda."
+
+#: includes/replies/functions.php:318
+msgid "<strong>ERROR</strong>: Topic is closed."
+msgstr "<strong>VIRHE</strong>: Aihe on suljettu."
+
+#: includes/replies/functions.php:377 includes/replies/functions.php:702
+msgid "<strong>ERROR</strong>: There was a problem adding the tags to the topic."
+msgstr "<strong>VIRHE</strong>: Avainsanojen lisäämisessä aiheeseen tuli ongelma."
+
+#: includes/replies/functions.php:505
+msgid "<strong>ERROR</strong>: Reply ID not found."
+msgstr "<strong>VIRHE</strong>: Vastauksen ID:tä ei löytynyt."
+
+#: includes/replies/functions.php:522
+msgid "<strong>ERROR</strong>: The reply you want to edit was not found."
+msgstr "<strong>VIRHE</strong>: Muokattavaa vastausta ei löytynyt."
+
+#: includes/replies/functions.php:533
+msgid "<strong>ERROR</strong>: You do not have permission to edit that reply."
+msgstr "<strong>VIRHE</strong>: Sinulla ei ole lupaa muokata tätä vastausta."
+
+#: includes/replies/functions.php:616
+msgid "<strong>ERROR</strong>: Your reply cannot be edited at this time."
+msgstr "<strong>VIRHE</strong>: Vastaustasi ei voitu muokata."
+
+#: includes/replies/functions.php:1232
+msgid "<strong>ERROR</strong>: The reply you want to move was not found."
+msgstr "<strong>VIRHE</strong>: Siirrettävää vastausta ei löytynyt."
+
+#: includes/replies/functions.php:1252 includes/topics/functions.php:1164
+#: includes/topics/functions.php:1462
+msgid "<strong>ERROR</strong>: You do not have the permissions to edit the source topic."
+msgstr "<strong>VIRHE</strong>: Sinulla ei ole lupaa muokata lähdeaihetta."
+
+#: includes/replies/functions.php:1262
+msgid "<strong>ERROR</strong>: You need to choose a valid move option."
+msgstr "<strong>VIRHE</strong>: Valitse jokin vaihtoehto siirtovalinnoista."
+
+#: includes/replies/functions.php:1275 includes/topics/functions.php:1483
+msgid "<strong>ERROR</strong>: Destination topic ID not found!"
+msgstr "<strong>VIRHE</strong>: Kohteen aiheesta puuttuu ID!"
+
+#: includes/replies/functions.php:1285
+msgid "<strong>ERROR</strong>: The topic you want to move to was not found!"
+msgstr "<strong>VIRHE</strong>: Etsimääsi aihetta ei löydetty!"
+
+#: includes/replies/functions.php:1290 includes/topics/functions.php:1496
+msgid "<strong>ERROR</strong>: You do not have the permissions to edit the destination topic!"
+msgstr "<strong>VIRHE</strong>: Sinulla ei ole oikeuksia muokata kohdeaihetta!"
+
+#: includes/replies/functions.php:1344 includes/topics/functions.php:1533
+msgid "<strong>ERROR</strong>: There was a problem converting the reply into the topic. Please try again."
+msgstr "<strong>VIRHE</strong>: Vastauksen muuntamisessa aiheeksi ilmeni ongelma. Yritä uudelleen."
+
+#: includes/replies/functions.php:1349 includes/topics/functions.php:1538
+msgid "<strong>ERROR</strong>: You do not have the permissions to create new topics. The reply could not be converted into a topic."
+msgstr "<strong>VIRHE</strong>: Sinulla ei ole oikeuksia luoda uusia aiheita. Vastausta ei voitu muuntaa aiheeksi."
+
+#: includes/replies/functions.php:1530
+msgid "<strong>ERROR:</strong> You do not have the permission to do that!"
+msgstr "<strong>Virhe:</strong> Sinulle ei ole oikeuksia toiminnon suorittamiseen!"
+
+#: includes/replies/functions.php:1543
+msgid "<strong>ERROR</strong>: There was a problem unmarking the reply as spam!"
+msgstr "<strong>VIRHE</strong>: Vastauksen palauttamisessa roskaviesteistä ilmeni ongelma!"
+
+#: includes/replies/functions.php:1543
+msgid "<strong>ERROR</strong>: There was a problem marking the reply as spam!"
+msgstr "<strong>VIRHE</strong>: Vastauksen merkitsemisessä roskaviestiksi ilmeni ongelma!"
+
+#: includes/replies/functions.php:1562
+msgid "<strong>ERROR</strong>: There was a problem trashing the reply!"
+msgstr "<strong>VIRHE</strong>: Vastauksen siirtämisessä roskakoriin ilmeni ongelma!"
+
+#: includes/replies/functions.php:1570
+msgid "<strong>ERROR</strong>: There was a problem untrashing the reply!"
+msgstr "<strong>VIRHE</strong>: Vastauksen palauttamisessa roskakorista ilmeni ongelma!"
+
+#: includes/replies/functions.php:1578
+msgid "<strong>ERROR</strong>: There was a problem deleting the reply!"
+msgstr "<strong>VIRHE</strong>: Vastauksen poistamisessa ilmeni ongelma!"
+
+#: includes/replies/functions.php:2034 includes/topics/functions.php:3464
+msgid "Replies: %s"
+msgstr "Vastaukset: %s"
+
+#: includes/replies/template.php:706 includes/topics/template.php:809
+msgctxt "date at time"
+msgid "%1$s at %2$s"
+msgstr "%1$s klo %2$s"
+
+#: includes/replies/template.php:804
+msgid "This reply was modified %1$s by %2$s. Reason: %3$s"
+msgstr "%2$s on muokannut tätä vastausta %1$s. Syy: %3$s"
+
+#: includes/replies/template.php:806
+msgid "This reply was modified %1$s by %2$s."
+msgstr "%1$s on muokannut tätä vastausta %2$s."
+
+#: includes/replies/template.php:1210 includes/topics/template.php:1481
+#: includes/users/template.php:1651
+msgid "View %s's profile"
+msgstr "Katso käyttäjän %s profiilia"
+
+#: includes/replies/template.php:1210 includes/topics/template.php:1481
+#: includes/users/template.php:1651
+msgid "Visit %s's website"
+msgstr "Käy käyttäjän %s verkkosivulla"
+
+#: includes/replies/template.php:2053 includes/topics/template.php:2634
+msgid "Are you sure you want to delete that permanently?"
+msgstr "Oletko varma, että haluat poistaa sen pysyvästi?"
+
+#: includes/replies/template.php:2170
+msgid "Move this reply"
+msgstr "Siirrä tämä vastaus"
+
+#: includes/replies/template.php:2236
+msgid "Split"
+msgstr "Jaa osiin"
+
+#: includes/replies/template.php:2237
+msgid "Split the topic from this reply"
+msgstr "Siirrä aihe erilleen vastauksesta"
+
+#: includes/replies/template.php:2343
+msgid "Viewing %1$s reply thread"
+msgid_plural "Viewing %1$s reply threads"
+msgstr[0] "Luet parhaimillaan %1$s vastausketjua"
+msgstr[1] "Luet parhaimillaan %1$s vastausketjuja"
+
+#: includes/replies/template.php:2350
+msgid "Viewing %1$s reply"
+msgid_plural "Viewing %1$s replies"
+msgstr[0] "%1$s vastausta"
+msgstr[1] "%1$s vastausta"
+
+#: includes/replies/template.php:2354
+msgid "Viewing %2$s replies (of %4$s total)"
+msgid_plural "Viewing %1$s replies - %2$s through %3$s (of %4$s total)"
+msgstr[0] "%2$s vastausta (%4$s yhteensä)"
+msgstr[1] "%1$s vastausta - %2$s - %3$s (%4$s yhteensä)"
+
+#: includes/replies/template.php:2362
+msgid "Viewing %1$s post"
+msgid_plural "Viewing %1$s posts"
+msgstr[0] "%1$s viesti"
+msgstr[1] "%1$s viestiä"
+
+#: includes/replies/template.php:2366
+msgid "Viewing %2$s post (of %4$s total)"
+msgid_plural "Viewing %1$s posts - %2$s through %3$s (of %4$s total)"
+msgstr[0] "%2$s viesti (%4$s yhteensä)"
+msgstr[1] "%1$s viestiä - %2$s - %3$s (%4$s yhteensä)"
+
+#: includes/search/template.php:229
+msgid "Search Results for '%s'"
+msgstr "Hakutulokset kohteelle \"%s\""
+
+#: includes/search/template.php:401
+msgid "Viewing %1$s result"
+msgid_plural "Viewing %1$s results"
+msgstr[0] "%1$s hakutulos"
+msgstr[1] "%1$s hakutulosta"
+
+#: includes/search/template.php:405
+msgid "Viewing %2$s results (of %4$s total)"
+msgid_plural "Viewing %1$s results - %2$s through %3$s (of %4$s total)"
+msgstr[0] "%2$s hakutulosta (%4$s yhteensä)"
+msgstr[1] "%1$s hakutulosta - %2$s - %3$s (%4$s yhteensä)"
+
+#: includes/topics/functions.php:150
+msgid "<strong>ERROR</strong>: You do not have permission to create new topics."
+msgstr "<strong>VIRHE</strong>: Sinulla ei ole lupaa luoda uusia aiheita."
+
+#: includes/topics/functions.php:175 includes/topics/functions.php:585
+msgid "<strong>ERROR</strong>: Your topic needs a title."
+msgstr "<strong>VIRHE</strong>: Aiheesi tarvitsee otsikon."
+
+#: includes/topics/functions.php:187 includes/topics/functions.php:597
+msgid "<strong>ERROR</strong>: Your topic cannot be empty."
+msgstr "<strong>VIRHE</strong>: Aihe ei voi olla tyhjä."
+
+#: includes/topics/functions.php:232
+msgid "<strong>ERROR</strong>: This forum is a category. No topics can be created in this forum."
+msgstr "<strong>VIRHE</strong>: Tämä foorumi on kategoria. Tälle foorumille ei voi luoda aiheita."
+
+#: includes/topics/functions.php:239 includes/topics/functions.php:557
+msgid "<strong>ERROR</strong>: This forum has been closed to new topics."
+msgstr "<strong>VIRHE</strong>: Tämä foorumi on suljettu uusilta aiheilta."
+
+#: includes/topics/functions.php:245 includes/topics/functions.php:563
+msgid "<strong>ERROR</strong>: This forum is private and you do not have the capability to read or create new topics in it."
+msgstr "<strong>VIRHE</strong>: Tämä foorumi on yksityinen etkä pääse sille lukemaan tai luomaan uusia aiheita."
+
+#: includes/topics/functions.php:251 includes/topics/functions.php:569
+msgid "<strong>ERROR</strong>: This forum is hidden and you do not have the capability to read or create new topics in it."
+msgstr "<strong>VIRHE</strong>: Tämä foorumi on piilotettu etkä pääse sille lukemaan tai luomaan uusia aiheita."
+
+#: includes/topics/functions.php:265
+msgid "<strong>ERROR</strong>: Duplicate topic detected; it looks as though you&#8217;ve already said that!"
+msgstr "<strong>VIRHE</strong>: Samanniminen aihe löydetty; näyttää siltä, että olet jo sanonut näin!"
+
+#: includes/topics/functions.php:270
+msgid "<strong>ERROR</strong>: Your topic cannot be created at this time."
+msgstr "<strong>VIRHE</strong>: Aihettasi ei voitu luoda."
+
+#: includes/topics/functions.php:482 includes/topics/functions.php:1146
+msgid "<strong>ERROR</strong>: Topic ID not found."
+msgstr "<strong>VIRHE</strong>: Aiheen ID:tä ei löydetty."
+
+#: includes/topics/functions.php:493
+msgid "<strong>ERROR</strong>: The topic you want to edit was not found."
+msgstr "<strong>VIRHE</strong>: Aihetta, jota haluat muokata, ei löytynyt."
+
+#: includes/topics/functions.php:504
+msgid "<strong>ERROR</strong>: You do not have permission to edit that topic."
+msgstr "<strong>VIRHE</strong>: Sinulla ei ole oikeuksia muokata tätä aihetta."
+
+#: includes/topics/functions.php:550
+msgid "<strong>ERROR</strong>: This forum is a category. No topics can be created in it."
+msgstr "<strong>VIRHE</strong>: Tämä foorumi on kategoria. Siihen ei voi luoda uusia aiheita."
+
+#: includes/topics/functions.php:602
+msgid "<strong>ERROR</strong>: Your topic cannot be edited at this time."
+msgstr "<strong>VIRHE</strong>: Aihettasi ei voi muokata juuri nyt."
+
+#: includes/topics/functions.php:1158
+msgid "<strong>ERROR</strong>: The topic you want to merge was not found."
+msgstr "<strong>VIRHE</strong>: Aihetta, jonka haluat yhdistää, ei löytynyt."
+
+#: includes/topics/functions.php:1172
+msgid "<strong>ERROR</strong>: Destination topic ID not found."
+msgstr "<strong>VIRHE</strong>: Kohteen ID:tä ei löytynyt."
+
+#: includes/topics/functions.php:1178
+msgid "<strong>ERROR</strong>: The topic you want to merge to was not found."
+msgstr "<strong>VIRHE</strong>: Aihetta, johon haluat yhdistää, ei löytynyt."
+
+#: includes/topics/functions.php:1182
+msgid "<strong>ERROR</strong>: You do not have the permissions to edit the destination topic."
+msgstr "<strong>VIRHE</strong>: Sinulla ei ole oikeuksia muokata kohdeaihetta."
+
+#: includes/topics/functions.php:1435
+msgid "<strong>ERROR</strong>: Reply ID to split the topic from not found!"
+msgstr "<strong>VIRHE</strong>: Vastauksen ID:tä, josta aihe piti jakaa, ei löytynyt!"
+
+#: includes/topics/functions.php:1443
+msgid "<strong>ERROR</strong>: The reply you want to split from was not found."
+msgstr "<strong>VIRHE</strong>: Jaettavaa vastausta ei löytynyt."
+
+#: includes/topics/functions.php:1452
+msgid "<strong>ERROR</strong>: The topic you want to split was not found."
+msgstr "<strong>VIRHE</strong>: Aihetta, jonka haluat jakaa, ei löytynyt."
+
+#: includes/topics/functions.php:1470
+msgid "<strong>ERROR</strong>: You need to choose a valid split option."
+msgstr "<strong>VIRHE</strong>: Sinun pitää valita voimassa oleva jakovaihtoehto."
+
+#: includes/topics/functions.php:1492
+msgid "<strong>ERROR</strong>: The topic you want to split to was not found!"
+msgstr "<strong>VIRHE</strong>: Aihetta, jonka haluat jakaa, ei löytynyt!"
+
+#: includes/topics/functions.php:1808
+msgid "<strong>ERROR</strong>: The following problem(s) have been found while getting the tag: %s"
+msgstr "<strong>VIRHE</strong>: Seuraava(t) ongelma(t) esiintyivät tagia haettaessa: %s"
+
+#: includes/topics/functions.php:1826 includes/topics/functions.php:1865
+msgid "<strong>ERROR</strong>: You do not have the permissions to edit the topic tags."
+msgstr "<strong>VIRHE</strong>: Sinulla ei ole oikeuksia muokata aiheen asiasanoja."
+
+#: includes/topics/functions.php:1832 includes/topics/functions.php:1871
+msgid "<strong>ERROR</strong>: You need to enter a tag name."
+msgstr "<strong>VIRHE</strong>: Anna asiasanan nimi."
+
+#: includes/topics/functions.php:1842
+msgid "<strong>ERROR</strong>: The following problem(s) have been found while updating the tag: %s"
+msgstr "<strong>VIRHE</strong>: Seuraava(t) ongelma(t) esiintyivät tagia päivitettäessä: %s"
+
+#: includes/topics/functions.php:1881 includes/topics/functions.php:1899
+msgid "<strong>ERROR</strong>: The following problem(s) have been found while merging the tags: %s"
+msgstr "<strong>VIRHE</strong>: Seuraava(t) ongelma(t) esiintyivät tageja yhditettäessä: %s"
+
+#: includes/topics/functions.php:1890
+msgid "<strong>ERROR</strong>: The tags which are being merged can not be the same."
+msgstr "<strong>VIRHE</strong>: Yhdistettävät tagit eivät voi olla samoja."
+
+#: includes/topics/functions.php:1922
+msgid "<strong>ERROR</strong>: You do not have the permissions to delete the topic tags."
+msgstr "<strong>VIRHE</strong>: Sinulla ei ole oikeuksia poistaa asiasanoja."
+
+#: includes/topics/functions.php:1931
+msgid "<strong>ERROR</strong>: The following problem(s) have been found while deleting the tag: %s"
+msgstr "<strong>VIRHE</strong>: Seuraava(t) ongelma(t) esiintyivät tagia poistettaessa: %s"
+
+#: includes/topics/functions.php:1965
+msgctxt "Open the topic"
+msgid "Open"
+msgstr "Avaa"
+
+#: includes/topics/functions.php:1968
+msgctxt "Trash the topic"
+msgid "Trash"
+msgstr "Siirrä roskakoriin"
+
+#: includes/topics/functions.php:1969
+msgctxt "Mark topic as pending"
+msgid "Pending"
+msgstr "Odottaa"
+
+#: includes/topics/functions.php:1983
+msgctxt "Make topic sticky"
+msgid "Sticky"
+msgstr "Kiinnitä"
+
+#: includes/topics/functions.php:1984
+msgctxt "Make topic super sticky"
+msgid "Super Sticky"
+msgstr "Erittäin kiinnitetty"
+
+#: includes/topics/functions.php:2102
+msgid "<strong>ERROR</strong>: There was a problem closing the topic."
+msgstr "<strong>VIRHE</strong>: Aiheen sulkemisessa ilmeni ongelma."
+
+#: includes/topics/functions.php:2102
+msgid "<strong>ERROR</strong>: There was a problem opening the topic."
+msgstr "<strong>VIRHE</strong>: Aiheen avaamisessa ilmeni ongelma."
+
+#: includes/topics/functions.php:2113
+msgid "<strong>ERROR</strong>: There was a problem unsticking the topic."
+msgstr "<strong>VIRHE</strong>: Aiheen irrottamisessa ilmeni ongelma."
+
+#: includes/topics/functions.php:2113
+msgid "<strong>ERROR</strong>: There was a problem sticking the topic."
+msgstr "<strong>VIRHE</strong>: Aiheen kiinnittämisessä ilmeni ongelma."
+
+#: includes/topics/functions.php:2123
+msgid "<strong>ERROR</strong>: There was a problem unmarking the topic as spam."
+msgstr "<strong>VIRHE</strong>: Aiheen poistamisessa roskaviesteistä ilmeni ongelma."
+
+#: includes/topics/functions.php:2123
+msgid "<strong>ERROR</strong>: There was a problem marking the topic as spam."
+msgstr "<strong>VIRHE</strong>: Aiheen merkitsemisessä roskaviestiksi ilmeni ongelma."
+
+#: includes/topics/functions.php:2142
+msgid "<strong>ERROR</strong>: There was a problem trashing the topic."
+msgstr "<strong>VIRHE</strong>: Aiheen siirtämisessä roskakoriin ilmeni ongelma."
+
+#: includes/topics/functions.php:2150
+msgid "<strong>ERROR</strong>: There was a problem untrashing the topic."
+msgstr "<strong>VIRHE</strong>: Aiheen palauttamisessa roskakorista ilmeni ongelma."
+
+#: includes/topics/functions.php:2158
+msgid "<strong>ERROR</strong>: There was a problem deleting the topic."
+msgstr "<strong>VIRHE</strong>: Aiheen poistamisessa ilmeni ongelma."
+
+#: includes/topics/template.php:991
+msgid "This topic was modified %1$s by %2$s. Reason: %3$s"
+msgstr "Aihetta muokattiin %1$s %2$s toimesta. Syy: %3$s"
+
+#: includes/topics/template.php:993
+msgid "This topic was modified %1$s by %2$s."
+msgstr "Aihetta muokattiin %1$s %2$s toimesta."
+
+#: includes/topics/template.php:2295
+msgid "Tagged:"
+msgstr "Avainsanat:"
+
+#: includes/topics/template.php:3041
+msgid "This topic is marked as spam."
+msgstr "Tämä aihe on merkitty roskaviestiksi."
+
+#: includes/topics/template.php:3046
+msgid "This topic is in the trash."
+msgstr "Tämä aihe on roskakorissa."
+
+#: includes/topics/template.php:3320
+msgid "This topic has no replies."
+msgstr "Aiheella ei ole vastauksia."
+
+#: includes/users/functions.php:455
+msgid "<strong>ERROR</strong>: No topic was found! Which topic are you marking/unmarking as favorite?"
+msgstr "<strong>VIRHE</strong>: Aihetta ei löytynyt! Mitä aihetta yritit lisätä suosikkeihin tai poistaa suosikeista?"
+
+#: includes/users/functions.php:463 includes/users/functions.php:1178
+#: includes/users/functions.php:1284
+msgid "<strong>ERROR</strong>: You don't have the permission to edit favorites of that user!"
+msgstr "<strong>VIRHE</strong>: Sinulla ei ole oikeuksia muokata tämän käyttäjän suosikkeja!"
+
+#: includes/users/functions.php:506
+msgid "<strong>ERROR</strong>: There was a problem removing that topic from favorites!"
+msgstr "<strong>VIRHE</strong>: Aiheen poistamisessa suosikeista ilmeni ongelma!"
+
+#: includes/users/functions.php:508
+msgid "<strong>ERROR</strong>: There was a problem favoriting that topic!"
+msgstr "<strong>VIRHE</strong>: Aiheen merkitsemisessä suosikiksi ilmeni ongelma!"
+
+#: includes/users/functions.php:1276
+msgid "<strong>ERROR</strong>: No topic was found! Which topic are you subscribing/unsubscribing to?"
+msgstr "<strong>VIRHE</strong>: Aihetta ei löydy! Minkä aiheen seuraamisen yritit aloittaa tai lopettaa?"
+
+#: includes/users/functions.php:1329
+msgid "<strong>ERROR</strong>: There was a problem unsubscribing from that topic!"
+msgstr "<strong>VIRHE</strong>: Aiheen seuraamisen lopettamisessa ilmeni ongelma!"
+
+#: includes/users/functions.php:1331
+msgid "<strong>ERROR</strong>: There was a problem subscribing to that topic!"
+msgstr "<strong>VIRHE</strong>: Aiheen seuraamisessa ilmeni ongelma!"
+
+#: includes/users/template.php:507
+msgid "Inactive"
+msgstr "Ei-aktiivinen"
+
+#: includes/users/template.php:557
+msgid "Admin"
+msgstr "Ylläpitäjä"
+
+#: includes/topics/template.php:1891 includes/users/template.php:894
+msgid "Favorite"
+msgstr "Suosikki"
+
+#: includes/users/template.php:895
+msgid "Favorited"
+msgstr "Lisätty suosikkeihin"
+
+#: includes/users/template.php:1188
+msgid "You have super admin privileges."
+msgstr "Sinulla on verkon ylläpitäjän oikeudet."
+
+#: includes/users/template.php:1188
+msgid "This user has super admin privileges."
+msgstr "Tällä käyttäjällä on verkon ylläpitäjän oikeudet"
+
+#: includes/users/template.php:1255
+msgid "&mdash; No role for this site &mdash;"
+msgstr "&mdash; Ei roolia tällä sivustolla &mdash;"
+
+#: includes/users/template.php:1457
+msgid "New user registration is currently not allowed."
+msgstr "Uuden käyttäjän rekisteröinti ei ole tällä hetkellä sallittua."
+
+#: includes/users/template.php:1466
+msgid "Check your e-mail for the confirmation link."
+msgstr "Vahvistuslinkki on lähetetty sähköpostiisi."
+
+#: includes/users/template.php:1471
+msgid "Check your e-mail for your new password."
+msgstr "Uusi salasana on lähetetty sähköpostiisi."
+
+#: includes/users/template.php:1476
+msgid "Registration complete. Please check your e-mail."
+msgstr "Rekisteröinti suoritettu. Tarkista sähköpostisi."
+
+#: templates/default/bbpress/content-statistics.php:17
+msgid "Registered Users"
+msgstr "Rekisteröidyt käyttäjät"
+
+#: templates/default/bbpress/content-statistics.php:44
+msgid "Empty Topic Tags"
+msgstr "Poista aiheen aihesanat"
+
+#: templates/default/bbpress/content-statistics.php:53
+msgid "Hidden Topics"
+msgstr "Piiloitetut aiheet"
+
+#: templates/default/bbpress/feedback-logged-in.php:13
+msgid "You are already logged in."
+msgstr "Olet jo kirjautunut sisään."
+
+#: templates/default/bbpress/feedback-no-access.php:16
+msgid "You do not have permission to view this forum."
+msgstr "Sinulla ei ole oikeuksia tämän foorumin katsomiseen."
+
+#: templates/default/bbpress/feedback-no-forums.php:13
+msgid "Oh bother! No forums were found here!"
+msgstr "No höh! Täältä ei löytynyt yhtään foorumia!"
+
+#: templates/default/bbpress/feedback-no-replies.php:13
+msgid "Oh bother! No replies were found here!"
+msgstr "No höh! Täältä ei löytynyt yhtään vastausta!"
+
+#: templates/default/bbpress/feedback-no-search.php:13
+msgid "Oh bother! No search results were found here!"
+msgstr "No höh! Täältä ei löytynyt yhtään hakutulosta!"
+
+#: templates/default/bbpress/feedback-no-topics.php:13
+msgid "Oh bother! No topics were found here!"
+msgstr "No höh! Täältä ei löytynyt yhtään aihetta!"
+
+#: templates/default/bbpress/form-anonymous.php:27
+msgid "Mail (will not be published) (required):"
+msgstr "Sähköpostiosoite (ei julkaista) (pakollinen)"
+
+#: templates/default/bbpress/form-forum.php:35
+#: templates/default/bbpress/form-topic.php:41
+msgid "Now Editing &ldquo;%s&rdquo;"
+msgstr "Olet muokkaamassa &rdquo;%s&rdquo;"
+
+#: templates/default/bbpress/form-forum.php:37
+msgid "Create New Forum in &ldquo;%s&rdquo;"
+msgstr "Lue uusi foorumi foorumiin &ldquo;%s&rdquo;"
+
+#: templates/default/bbpress/form-forum.php:47
+msgid "This forum is closed to new content, however your account still allows you to do so."
+msgstr "Foorumi on muuten suljettu, mutta pääset tililläsi muokkaamaan sitä."
+
+#: templates/default/bbpress/form-forum.php:55
+#: templates/default/bbpress/form-reply.php:44
+#: templates/default/bbpress/form-topic.php:61
+msgid "Your account has the ability to post unrestricted HTML content."
+msgstr "Voit syöttää tililläsi HTML-koodia ilman rajoitteita."
+
+#: templates/default/bbpress/form-forum.php:67
+msgid "Forum Name (Maximum Length: %d):"
+msgstr "Foorumin nimi (maksimipituus: %d):"
+
+#: templates/default/bbpress/form-forum.php:82
+#: templates/default/bbpress/form-reply.php:64
+#: templates/default/bbpress/form-topic.php:90
+msgid "You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags and attributes:"
+msgstr "Voit käyttää näitä <abbr title=\"HyperText Markup Language\">HTML</abbr>-tageja ja attribuutteja:"
+
+#: templates/default/bbpress/form-forum.php:91
+msgid "Forum Type:"
+msgstr "Foorumin tyyppi:"
+
+#: templates/default/bbpress/form-forum.php:123
+msgid "(No Parent)"
+msgstr "(Ei ylätasoa)"
+
+#: templates/default/bbpress/form-forum.php:138
+#: templates/default/bbpress/form-reply-move.php:72
+#: templates/default/bbpress/form-reply.php:135
+#: templates/default/bbpress/form-topic-merge.php:93
+#: templates/default/bbpress/form-topic-split.php:97
+#: templates/default/bbpress/form-topic.php:203
+msgid "Submit"
+msgstr "Lähetä"
+
+#: templates/default/bbpress/form-forum.php:161
+msgid "The forum &#8216;%s&#8217; is closed to new content."
+msgstr "&#8216;%s&#8217; foorumi on nyt suljettu uudelta sisällöltä."
+
+#: templates/default/bbpress/form-forum.php:169
+msgid "You must be logged in to create new forums."
+msgstr "Et voi luoda uutta foorumia kirjautumatta sisään."
+
+#: templates/default/bbpress/form-reply-move.php:41
+#: templates/default/bbpress/form-topic-split.php:41
+msgid "New topic in <strong>%s</strong> titled:"
+msgstr "Uusi aihe foorumissa <strong>%s</strong> nimellä:"
+
+#: templates/default/bbpress/form-reply-move.php:49
+#: templates/default/bbpress/form-topic-split.php:49
+msgid "Use an existing topic in this forum:"
+msgstr "Käytä olemassa olevaa aihetta tässä foorumissa:"
+
+#: templates/default/bbpress/form-reply-move.php:85
+msgid "You do not have the permissions to edit this reply!"
+msgstr "Sinulla ei ole oikeuksia tämän vastauksen muokkaamiseen!"
+
+#: templates/default/bbpress/form-reply-move.php:85
+msgid "You cannot edit this reply."
+msgstr "Et voi muokata tätä vastausta."
+
+#: templates/default/bbpress/form-reply.php:36
+msgid "This topic is marked as closed to new replies, however your posting capabilities still allow you to do so."
+msgstr "Tämä aihe on suljettu uusilta vastauksilta, mutta kirjoitusoikeutesi sallivat kuitenkin sen tekemisen."
+
+#: templates/default/bbpress/form-reply.php:75
+msgid "Tags:"
+msgstr "Tagit:"
+
+#: templates/default/bbpress/form-reply.php:93
+#: templates/default/bbpress/form-topic.php:164
+msgid "Notify the author of follow-up replies via email"
+msgstr "Ilmoita kirjoittajalle vastauksista sähköpostitse"
+
+#: templates/default/bbpress/form-reply.php:97
+#: templates/default/bbpress/form-topic.php:168
+msgid "Notify me of follow-up replies via email"
+msgstr "Ilmoita minulle tulevista vastauksista sähköpostitse"
+
+#: templates/default/bbpress/form-reply.php:114
+#: templates/default/bbpress/form-topic.php:184
+msgid "Keep a log of this edit:"
+msgstr "Pidä kirjaa tästä muokkauksesta:"
+
+#: templates/default/bbpress/form-reply.php:118
+#: templates/default/bbpress/form-topic.php:188
+msgid "Optional reason for editing:"
+msgstr "Vaihtoehtoinen syy muokkaukselle:"
+
+#: templates/default/bbpress/form-reply.php:158
+msgid "The topic &#8216;%s&#8217; is closed to new replies."
+msgstr "Aiheeseen &#8216;%s&#8217; ei oteta uusia vastauksia."
+
+#: templates/default/bbpress/form-reply.php:166
+#: templates/default/bbpress/form-topic.php:226
+msgid "The forum &#8216;%s&#8217; is closed to new topics and replies."
+msgstr "&#8216;%s&#8217; foorumiin ei voi lisätä uusia aiheita tai vastauksia."
+
+#: templates/default/bbpress/form-reply.php:174
+msgid "You cannot reply to this topic."
+msgstr "Et voi vastata tähän aiheeseen."
+
+#: templates/default/bbpress/form-reply.php:174
+msgid "You must be logged in to reply to this topic."
+msgstr "Et voi vastata aiheeseen kirjautumatta sisään."
+
+#: templates/default/bbpress/form-topic-merge.php:24
+msgid "Merge topic \"%s\""
+msgstr "Yhdistä aihe \"%s\""
+
+#: templates/default/bbpress/form-topic-merge.php:29
+msgid "Select the topic to merge this one into. The destination topic will remain the lead topic, and this one will change into a reply."
+msgstr "Valitse aihe, johon haluat yhdistää tämän. Kohdeaihe pysyy pääaiheena ja tämä muuttuu vastaukseksi."
+
+#: templates/default/bbpress/form-topic-merge.php:30
+msgid "To keep this topic as the lead, go to the other topic and use the merge tool from there instead."
+msgstr "Jos haluat säilyttää tämän aiheen pääaiheena, mene toiseen aiheeseen ja tee yhdistäminen sitä kautta."
+
+#: templates/default/bbpress/form-topic-merge.php:34
+msgid "All replies within both topics will be merged chronologically. The order of the merged replies is based on the time and date they were posted. If the destination topic was created after this one, it's post date will be updated to second earlier than this one."
+msgstr "Kaikki vastaukset molemmista aiheista yhdistetään aikajärjestykseen. Yhdistettyjen vastausten järjestys perustuu vastauksen lähetysaikaan. Jos kohdeaihe luotiin ennen tätä, sen luontiaika asetetaan sekuntia ennen tämän aiheen luontiaikaa."
+
+#: templates/default/bbpress/form-topic-merge.php:42
+msgid "Merge with this topic:"
+msgstr "Yhdistä tähän aiheeseen:"
+
+#: templates/default/bbpress/form-topic-merge.php:56
+msgid "There are no other topics in this forum to merge with."
+msgstr "Tällä foorumilla ei ole muita yhdistettäviä aiheita."
+
+#: templates/default/bbpress/form-topic-merge.php:64
+#: templates/default/bbpress/form-topic-split.php:68
+msgid "Topic Extras"
+msgstr "Aiheen lisäosat"
+
+#: templates/default/bbpress/form-topic-merge.php:71
+msgid "Merge topic subscribers"
+msgstr "Yhdistä aiheen seuraajat"
+
+#: templates/default/bbpress/form-topic-merge.php:76
+msgid "Merge topic favoriters"
+msgstr "Yhdistä aiheen suosikit"
+
+#: templates/default/bbpress/form-topic-merge.php:81
+msgid "Merge topic tags"
+msgstr "Yhdistä aiheen asiasanat"
+
+#: templates/default/bbpress/form-topic-merge.php:106
+#: templates/default/bbpress/form-topic-split.php:110
+msgid "You do not have the permissions to edit this topic!"
+msgstr "Sinulla ei ole oikeuksia muokata tätä aihetta!"
+
+#: templates/default/bbpress/form-topic-merge.php:106
+#: templates/default/bbpress/form-topic-split.php:110
+msgid "You cannot edit this topic."
+msgstr "Et voi muokata tätä aihetta."
+
+#: templates/default/bbpress/form-topic-split.php:24
+msgid "Split topic \"%s\""
+msgstr "Erota aihe \"%s\""
+
+#: templates/default/bbpress/form-topic-split.php:29
+msgid "When you split a topic, you are slicing it in half starting with the reply you just selected. Choose to use that reply as a new topic with a new title, or merge those replies into an existing topic."
+msgstr "Kun erotat aiheen, jaat sen kahtia valitsemastasi vastauksesta alkaen. Voit tehdä vastauksesta uuden aiheen antamalla sille uuden otsikon tai yhdistää vastaukset jo olemassa olevaan aiheeseen."
+
+#: templates/default/bbpress/form-topic-split.php:33
+msgid "If you use the existing topic option, replies within both topics will be merged chronologically. The order of the merged replies is based on the time and date they were posted."
+msgstr "Jos valitset olemassa olevan aiheen, molempien aiheiden vastaukset yhdistetään aikajärjestyksessä. Yhdistettyjen vastausten järjestys perustuu niiden kirjoitusaikaan ja -päivämäärään."
+
+#: templates/default/bbpress/form-topic-split.php:37
+msgid "Split Method"
+msgstr "Jakotapa"
+
+#: templates/default/bbpress/form-topic-split.php:42
+msgid "Split: %s"
+msgstr "Jaa: %s"
+
+#: templates/default/bbpress/form-topic-split.php:75
+msgid "Copy subscribers to the new topic"
+msgstr "Kopioi seuraajat uuteen aiheeseen"
+
+#: templates/default/bbpress/form-topic-split.php:80
+msgid "Copy favoriters to the new topic"
+msgstr "Kopioi suosikit uuteen aiheeseen"
+
+#: templates/default/bbpress/form-topic-split.php:85
+msgid "Copy topic tags to the new topic"
+msgstr "Kopioi aiheen asiasanat uuteen aiheeseen"
+
+#: templates/default/bbpress/form-topic-tag.php:18
+msgid "Manage Tag: \"%s\""
+msgstr "Hallinnoi asiasanaa: \"%s\""
+
+#: templates/default/bbpress/form-topic-tag.php:25
+msgid "Leave the slug empty to have one automatically generated."
+msgstr "Jätä verkkopolku tyhjäksi jos haluat, että sellainen luodaan automaattisesti."
+
+#: templates/default/bbpress/form-topic-tag.php:29
+msgid "Changing the slug affects its permalink. Any links to the old slug will stop working."
+msgstr "Polkutunnuksen muuttaminen vaikuttaa sen kestolinkkiin. Linkit aiempaan polkutunnukseen eivät enää toimi."
+
+#: templates/default/bbpress/form-topic-tag.php:40
+msgid "Slug:"
+msgstr "Verkkopolku:"
+
+#: templates/default/bbpress/form-topic-tag.php:62
+msgid "Merging tags together cannot be undone."
+msgstr "Asiasanojen yhdistämistä ei voi perua."
+
+#: templates/default/bbpress/form-topic-tag.php:68
+msgid "Existing tag:"
+msgstr "Olemassa oleva aihesana:"
+
+#: templates/default/bbpress/form-topic-tag.php:73
+msgid "Are you sure you want to merge the \"%s\" tag into the tag you specified?"
+msgstr "Haluatko varmasti yhdistää asiasana \"%s\" antamaasi asiasanaan?"
+
+#: templates/default/bbpress/form-topic-tag.php:91
+msgid "This does not delete your topics. Only the tag itself is deleted."
+msgstr "Tämä ei poista aiheitasi. Vain asiasana poistetaan."
+
+#: templates/default/bbpress/form-topic-tag.php:94
+msgid "Deleting a tag cannot be undone."
+msgstr "Asiasanan poistamista ei voi perua."
+
+#: templates/default/bbpress/form-topic-tag.php:95
+msgid "Any links to this tag will no longer function."
+msgstr "Linkit tähän asiasanaan eivät enää jatkossa toimi."
+
+#: templates/default/bbpress/form-topic-tag.php:101
+msgid "Are you sure you want to delete the \"%s\" tag? This is permanent and cannot be undone."
+msgstr "Oletko varma, että haluat poistaa pysyvästi kaikki avainsanat nimellä \"%s\"? Tätä ei voi perua myöhemmin."
+
+#: templates/default/bbpress/form-topic.php:43
+msgid "Create New Topic in &ldquo;%s&rdquo;"
+msgstr "Luo uusi aihe foorumiin &ldquo;%s&rdquo;"
+
+#: templates/default/bbpress/form-topic.php:53
+msgid "This forum is marked as closed to new topics, however your posting capabilities still allow you to do so."
+msgstr "Tämä foorumi on suljettu uusilta aiheilta, mutta kirjoitusoikeutesi sallivat sinun kuitenkin tehdä niin."
+
+#: templates/default/bbpress/form-topic.php:75
+msgid "Topic Title (Maximum Length: %d):"
+msgstr "Aiheen otsikko (enimmäispituus: %d):"
+
+#: templates/default/bbpress/form-topic.php:101
+msgid "Topic Tags:"
+msgstr "Aiheen asiasanat:"
+
+#: templates/default/bbpress/form-topic.php:133
+msgid "Topic Type:"
+msgstr "Aihetyyppi:"
+
+#: templates/default/bbpress/form-topic.php:145
+msgid "Topic Status:"
+msgstr "Aiheen tila:"
+
+#: templates/default/bbpress/form-topic.php:234
+msgid "You cannot create new topics."
+msgstr "Et voi luoda uusia aiheita"
+
+#: templates/default/bbpress/form-topic.php:234
+msgid "You must be logged in to create new topics."
+msgstr "Et voi luoda uutta aihetta kirjautumatta sisään."
+
+#: templates/default/bbpress/form-user-edit.php:49
+#: templates/default/bbpress/form-user-edit.php:52
+msgid "Contact Info"
+msgstr "Yhteydenottotiedot"
+
+#: templates/default/bbpress/form-user-edit.php:74
+#: templates/default/bbpress/form-user-edit.php:77
+msgid "About Yourself"
+msgstr "Tietoja sinusta"
+
+#: templates/default/bbpress/form-user-edit.php:82
+msgid "Biographical Info"
+msgstr "Lyhyt kuvaus"
+
+#: templates/default/bbpress/form-user-edit.php:90
+#: templates/default/bbpress/form-user-edit.php:93
+msgid "Account"
+msgstr "Käyttäjätili"
+
+#: templates/default/bbpress/form-user-edit.php:127
+msgid "If you would like to change the password type a new one. Otherwise leave this blank."
+msgstr "Jos haluat vaihtaa salasanan, voit syöttää tähän uuden tai jättää kentän tyhjäksi."
+
+#: templates/default/bbpress/form-user-edit.php:130
+msgid "Type your new password again."
+msgstr "Syötä salasana uudelleen."
+
+#: templates/default/bbpress/form-user-edit.php:133
+msgid "Your password should be at least ten characters long. Use upper and lower case letters, numbers, and symbols to make it even stronger."
+msgstr "Salasanan tulisi olla vähintään kymmenen merkin pituinen. Käytä isoja ja pieniä kirjaimia, numeroita, sekä erikoismerkkejä tehdäksesi salasanasta vahvemman."
+
+#: templates/default/bbpress/form-user-edit.php:143
+#: templates/default/bbpress/form-user-edit.php:146
+msgid "User Role"
+msgstr "Käyttäjärooli"
+
+#: templates/default/bbpress/form-user-edit.php:156
+msgid "Grant this user super admin privileges for the Network."
+msgstr "Tee tästä käyttäjästä verkon järjestelmänvalvoja."
+
+#: templates/default/bbpress/form-user-edit.php:178
+msgid "Update Profile"
+msgstr "Päivitä profiili"
+
+#: templates/default/bbpress/form-user-edit.php:178
+msgid "Update User"
+msgstr "Päivitä käyttäjä"
+
+#: templates/default/bbpress/form-user-lost-pass.php:18
+msgid "Username or Email"
+msgstr "Käyttäjätunnus tai sähköpostiosoite"
+
+#: templates/default/bbpress/form-user-lost-pass.php:27
+msgid "Reset My Password"
+msgstr "Tilaa uusi salasana"
+
+#: templates/default/bbpress/form-user-register.php:14
+msgid "Create an Account"
+msgstr "Luo käyttäjätunnus"
+
+#: templates/default/bbpress/form-user-register.php:17
+msgid "Your username must be unique, and cannot be changed later."
+msgstr "Käyttäjänimen pitää olla uniikki eikä sitä voi muuttaa myöhemmin."
+
+#: templates/default/bbpress/form-user-register.php:18
+msgid "We use your email address to email you a secure password and verify your account."
+msgstr "Lähetämme sähköpostiosoitteeseesi suojatun salasanan ja todennamme tilisi."
+
+#: templates/default/bbpress/loop-search-forum.php:16
+msgid "Last updated %s"
+msgstr "Viimeksi päivitetty %s"
+
+#: templates/default/bbpress/loop-search-forum.php:26
+msgid "Forum: "
+msgstr "Foorumi:"
+
+#: templates/default/bbpress/loop-search-reply.php:24
+msgid "In reply to: "
+msgstr "Vastauksena viestiin:"
+
+#: templates/default/bbpress/loop-single-topic.php:60
+msgid "Started by: %1$s"
+msgstr "Aloittaja: %1$s"
+
+#: templates/default/bbpress/user-details.php:48
+msgid "%s's Favorites"
+msgstr "%s:n Suosikit"
+
+#: templates/default/bbpress/user-favorites.php:15
+msgid "Favorite Forum Topics"
+msgstr "Suosituimmat foorumiaiheet"
+
+#: templates/default/bbpress/user-favorites.php:28
+msgid "You currently have no favorite topics."
+msgstr "Sinulla ei ole tällä hetkellä suosikkiaiheita."
+
+#: templates/default/bbpress/user-favorites.php:28
+msgid "This user has no favorite topics."
+msgstr "Tällä käyttäjällä ei ole suosikkiaiheita."
+
+#: templates/default/bbpress/user-profile.php:26
+msgid "Replies Created: %s"
+msgstr "Vastauksia luotu: %s"
+
+#: templates/default/bbpress/user-replies-created.php:15
+msgid "Forum Replies Created"
+msgstr "Foorumivastauksia luotu"
+
+#: templates/default/bbpress/user-replies-created.php:28
+msgid "You have not replied to any topics."
+msgstr "Et ole vielä vastannut mihinkään aiheeseen."
+
+#: templates/default/bbpress/user-replies-created.php:28
+msgid "This user has not replied to any topics."
+msgstr "Tämä käyttäjä ei ole vastannut vielä mihinkään aiheeseen."
+
+#: templates/default/bbpress/user-subscriptions.php:47
+msgid "You are not currently subscribed to any topics."
+msgstr "Et seuraa tällä hetkellä mitään aiheita."
+
+#: templates/default/bbpress/user-subscriptions.php:47
+msgid "This user is not currently subscribed to any topics."
+msgstr "Tämä käyttäjä ei seuraa tällä hetkellä mitään aiheita."
+
+#: templates/default/bbpress/user-topics-created.php:28
+msgid "You have not created any topics."
+msgstr "Et ole luonut yhtään aihetta."
+
+#: templates/default/bbpress/user-topics-created.php:28
+msgid "This user has not created any topics."
+msgstr "Tämä käyttäjä ei ole luonut yhtään aihetta."
+
+#: templates/default/bbpress-functions.php:248
+#: templates/default/bbpress-functions.php:257
+msgid "Something went wrong. Refresh your browser and try again."
+msgstr "Jotain meni pieleen. Päivitä sivu ja yritä uudelleen."
+
+#: templates/default/bbpress-functions.php:353
+msgid "Favorites are no longer active."
+msgstr "Suosikit eivät ole enää aktiivisia."
+
+#: templates/default/bbpress-functions.php:358
+msgid "Please login to make this topic a favorite."
+msgstr "Kirjaudu sisään lisätäksesi tämä aihe suosikiksi."
+
+#: templates/default/bbpress-functions.php:375
+#: templates/default/bbpress-functions.php:443
+msgid "The topic could not be found."
+msgstr "Aihetta ei löytynyt."
+
+#: templates/default/bbpress-functions.php:312
+#: templates/default/bbpress-functions.php:380
+#: templates/default/bbpress-functions.php:448
+msgid "Are you sure you meant to do that?"
+msgstr "Oletko varma tästä?"
+
+#: templates/default/bbpress-functions.php:320
+#: templates/default/bbpress-functions.php:388
+#: templates/default/bbpress-functions.php:456
+msgid "The request was unsuccessful. Please try again."
+msgstr "Pyyntö epäonnistui. Kokeile uudelleen."
+
+#: templates/default/extras/page-forum-statistics.php:22
+msgid "<p>Here are the statistics and popular topics of our forums.</p>"
+msgstr "<p>Statistiikka ja suositut aiheet foorumeillamme.</p>"
+
+#: templates/default/extras/page-topic-tags.php:22
+msgid "<p>This is a collection of tags that are currently popular on our forums.</p>"
+msgstr "<p>Tällä hetkellä suosituimmat tagit foorumeillamme.</p>"
+
+#: includes/admin/tools.php:1218 includes/forums/template.php:50
+msgid "All Forums"
+msgstr "Kaikki foorumit"
+
+#: includes/forums/template.php:51 includes/forums/template.php:55
+msgid "New Forum"
+msgstr "Uusi foorumi"
+
+#: includes/forums/template.php:52 templates/default/bbpress/form-forum.php:37
+msgid "Create New Forum"
+msgstr "Luo uusi foorumi"
+
+#: includes/forums/template.php:56 includes/forums/template.php:57
+msgid "View Forum"
+msgstr "Näytä foorumi"
+
+#: includes/common/widgets.php:483 includes/forums/template.php:58
+msgid "Search Forums"
+msgstr "Hae foorumeista"
+
+#: includes/forums/template.php:61 templates/default/bbpress/form-forum.php:118
+msgid "Parent Forum:"
+msgstr "Pääfoorumi:"
+
+#: includes/admin/tools.php:1219 includes/topics/functions.php:3439
+#: includes/topics/template.php:50
+msgid "All Topics"
+msgstr "Kaikki aiheet"
+
+#: includes/topics/template.php:51 includes/topics/template.php:55
+msgid "New Topic"
+msgstr "Uusi aihe"
+
+#: includes/topics/template.php:52 templates/default/bbpress/form-topic.php:43
+msgid "Create New Topic"
+msgstr "Luo uusi aihe"
+
+#: includes/topics/template.php:54
+msgid "Edit Topic"
+msgstr "Muokkaa aihetta"
+
+#: includes/topics/template.php:56 includes/topics/template.php:57
+msgid "View Topic"
+msgstr "Näytä aihe"
+
+#: includes/topics/template.php:58
+msgid "Search Topics"
+msgstr "Hae aiheista"
+
+#: includes/topics/template.php:59
+msgid "No topics found"
+msgstr "Aiheita ei löytynyt"
+
+#: includes/topics/template.php:60
+msgid "No topics found in Trash"
+msgstr "Aiheita ei löytynyt roskakorista"
+
+#: includes/replies/template.php:58
+msgid "Search Replies"
+msgstr "Hae vastauksista"
+
+#: includes/replies/template.php:59
+msgid "No replies found"
+msgstr "Ei löydettyjä vastauksia"
+
+#: includes/topics/template.php:3366
+#: templates/default/bbpress/content-statistics.php:37
+msgid "Topic Tags"
+msgstr "Aiheen asiasanat"
+
+#: includes/topics/template.php:3368
+msgid "Search Tags"
+msgstr "Hae avainsanoja"
+
+#: includes/topics/template.php:3369
+msgid "Popular Tags"
+msgstr "Suosittuja avainsanoja"
+
+#: includes/topics/template.php:3370
+msgid "All Tags"
+msgstr "Kaikki tagit"
+
+#: includes/topics/template.php:3371
+msgid "Edit Tag"
+msgstr "Muokkaa tagia"
+
+#: includes/topics/template.php:3372
+msgid "Update Tag"
+msgstr "Päivitä avainsana"
+
+#: includes/topics/template.php:3373
+msgid "Add New Tag"
+msgstr "Lisää uusi tagi"
+
+#: includes/topics/template.php:3374
+msgid "New Tag Name"
+msgstr "Uusi asiasananimi"
+
+#: includes/topics/template.php:3375
+msgid "View Topic Tag"
+msgstr "Näytä aiheen avainsana"
+
+#: includes/admin/tools.php:170
+msgid "Count replies in each topic"
+msgstr "Laske vastaukset aiheittain"
+
+#: includes/admin/tools.php:173
+msgid "Count topics for each user"
+msgstr "Laske käyttäjäkohtainen aiheiden määrä"
+
+#: includes/admin/tools.php:175
+msgid "Remove trashed topics from user favorites"
+msgstr "Poista roskaviesteiksi merkityt aiheet suosikeista"
+
+#: includes/admin/tools.php:178
+msgid "Remap existing users to default forum roles"
+msgstr "Muuta olemassa olevien käyttäjien roolit foorumin oletusrooleihin"
+
+#: includes/admin/tools.php:198
+msgid "Counting the number of replies in each topic&hellip; %s"
+msgstr "Lasketaan vastausten määrä kaikissa aiheissa&hellip; %s"
+
+#: includes/admin/tools.php:291
+msgid "Counting the number of spammed and trashed replies in each topic&hellip; %s"
+msgstr "Lasketaan roskaviesteiksi merkittyjen vastausten määrä kaikissa aiheissa&hellip; %s"
+
+#: includes/admin/tools.php:417
+msgid "Group Forums"
+msgstr "Ryhmäfoorumit"
+
+#: includes/admin/tools.php:434
+msgid "Complete! %s groups updated; %s forums updated; %s forum statuses synced."
+msgstr "Valmis! %s ryhmää päivitetty; %s foorumia päivitetty; %s foorumien statuksia synkronoitu."
+
+#: includes/admin/tools.php:453
+msgid "Counting the number of topics in each forum&hellip; %s"
+msgstr "Lasketaan aiheiden määrä kaikilla foorumeilla&hellip; %s"
+
+#: includes/admin/tools.php:487
+msgid "Counting the number of replies in each forum&hellip; %s"
+msgstr "Lasketaan vastausten määrää kaikilla foorumeilla&hellip; %s"
+
+#: includes/admin/tools.php:530
+msgid "Counting the number of topics each user has created&hellip; %s"
+msgstr "Lasketaan jokaisen käyttäjän luomien aiheiden määrä&hellip; %s"
+
+#: includes/admin/tools.php:575
+msgid "Counting the number of topics to which each user has replied&hellip; %s"
+msgstr "Lasketaan jokaisen käyttäjän vastattujen aiheiden määrä&hellip; %s"
+
+#: includes/admin/tools.php:620
+msgid "Removing trashed topics from user favorites&hellip; %s"
+msgstr "Tyhjennetään poistetut aiheet käyttäjän suosikeista&hellip; %s"
+
+#: includes/admin/tools.php:650 includes/admin/tools.php:711
+#: includes/admin/tools.php:772
+msgid "Nothing to remove!"
+msgstr "Ei tyhjennettävää!"
+
+#: includes/admin/tools.php:682
+msgid "Removing trashed topics from user subscriptions&hellip; %s"
+msgstr "Tyhjennetään poistetut aiheet seuratuista&hellip; %s"
+
+#: includes/admin/tools.php:805
+msgid "Remapping forum role for each user on this site&hellip; %s"
+msgstr "Uudelleenkartoitetaan jokaisen käyttäjän foorumiroolia tällä sivustolla&hellip; %s"
+
+#: includes/admin/tools.php:859
+msgid "Recomputing latest post in every topic and forum&hellip; %s"
+msgstr "Laskelmoidaan kaikkien aiheiden ja foorumeiden kirjoitukset&hellip; %s"
+
+#: includes/admin/tools.php:1022
+msgid "Recalculating forum visibility &hellip; %s"
+msgstr "Lasketaan uudelleen foorumin näkyvyyttä &hellip; %s"
+
+#: includes/admin/tools.php:1221
+msgid "All Topic Tags"
+msgstr "Kaikki aiheiden tagit"
+
+#: includes/admin/tools.php:1222
+msgid "Related Meta Data"
+msgstr "Liittyvät metatiedot"
+
+#: includes/admin/tools.php:1223
+msgid "Forum Settings"
+msgstr "Foorumin asetukset"
+
+#: includes/admin/tools.php:1224
+msgid "Forum Activity"
+msgstr "Aktiivisuus foorumilla"
+
+#: includes/admin/tools.php:1225
+msgid "Forum User Roles"
+msgstr "Foorumin käyttäjäroolit"
+
+#: includes/admin/tools.php:1226
+msgid "Importer Helper Data"
+msgstr "Aputiedon tuonti"
+
+#: includes/admin/tools.php:1240
+msgid "Are you sure you want to do this?"
+msgstr "Oletko varma tästä?"
+
+#: includes/admin/tools.php:1233 includes/admin/tools.php:1243
+msgid "Say it ain't so!"
+msgstr "Olethan ihan varma!"
+
+#: includes/admin/tools.php:1244
+msgid "This process cannot be undone."
+msgstr "Tätä prosessia ei voi perua."
+
+#: includes/admin/tools.php:1253
+msgid "Reset bbPress"
+msgstr "Nollaa bbPress"
+
+#: includes/admin/tools.php:1294
+msgid "Deleting Posts&hellip; %s"
+msgstr "Poistetaan keskustelut&hellip; %s"
+
+#: includes/admin/tools.php:1307
+msgid "Deleting Post Meta&hellip; %s"
+msgstr "Poistetaan keskustelumeta&hellip; %s"
+
+#: includes/admin/tools.php:1316
+msgid "Deleting Topic Tags&hellip; %s"
+msgstr "Poistetaan aiheen asiasanat&hellip; %s"
+
+#: includes/admin/tools.php:1336 includes/admin/tools.php:1344
+msgid "Deleting User Meta&hellip; %s"
+msgstr "Poistetaan käyttäjä Meta&hellip; %s"
+
+#: includes/admin/tools.php:1352
+msgid "Deleting Conversion Table&hellip; %s"
+msgstr "Poistetaan keskustelutaulukko&hellip; %s"
+
+#: includes/admin/tools.php:1364
+msgid "Deleting Settings&hellip; %s"
+msgstr "Poistetaan asetukset&hellip; %s"
+
+#: includes/admin/tools.php:1370
+msgid "Deleting Roles and Capabilities&hellip; %s"
+msgstr "Poistetaan roolit ja kyvyt&hellip; %s"
+
+#: includes/admin/topics.php:134
+msgid "This screen displays the individual topics on your site. You can customize the display of this screen to suit your workflow."
+msgstr "Tämä näyttö näyttää yksittäiset aiheet sivustollasi. Voit muokata näkymää niin, että se tukee parhaiten työskentelyäsi."
+
+#: includes/admin/topics.php:144
+msgid "You can hide/display columns based on your needs and decide how many topics to list per screen using the Screen Options tab."
+msgstr "Näyttöasetukset-välilehdellä voit piilottaa/näyttää sarakkeita tarpeidesi mukaan ja päättää, kuinka monta aihetta näytetään kerralla."
+
+#: includes/admin/topics.php:145
+msgid "You can filter the list of topics by topic status using the text links in the upper left to show All, Published, or Trashed topics. The default view is to show all topics."
+msgstr "Voit suodattaa aihelistaa aiheiden tilan perusteella käyttämällä ylävasemmalla näkyviä tekstilinkkejä Kaikki, Julkaistut tai Poistetut aiheet. Oletuksena näytetään kaikki aiheet."
+
+#: includes/admin/topics.php:146
+msgid "You can refine the list to show only topics from a specific month by using the dropdown menus above the topics list. Click the Filter button after making your selection. You also can refine the list by clicking on the topic creator in the topics list."
+msgstr "Voit suodattaa listausta näyttämään aiheet tietyn kuukauden perusteella yläreunassa sijaitsevien alasvetovalikoiden avulla. Klikkaa suodata-nappia tehtyäsi valinnat. Voit myös suodattaa aiheita klikkaamalla aiheen kirjoittaja -linkkiä."
+
+#: includes/admin/topics.php:155
+msgid "Hovering over a row in the topics list will display action links that allow you to manage your topic. You can perform the following actions:"
+msgstr "Hiiren liikuttaminen rivin päällä aihelistauksessa näyttää toimintolinkit, joilla voit hallinnoida aihetta. Voit tehdä seuraavia toimintoja:"
+
+#: includes/admin/topics.php:157
+msgid "<strong>Edit</strong> takes you to the editing screen for that topic. You can also reach that screen by clicking on the topic title."
+msgstr "<strong>Muokkaa</strong> avaa muokkausnäkymän kyseiselle aiheelle. Pääset samaan näkymään klikkaamalla aiheen otsikkoa. "
+
+#: includes/admin/topics.php:158
+msgid "<strong>Trash</strong> removes your topic from this list and places it in the trash, from which you can permanently delete it."
+msgstr "<strong>Poista</strong> poistaa aiheesi tältä listalta ja siirtää sen roskakoriin, josta voit poistaa sen lopullisesti."
+
+#: includes/admin/topics.php:159
+msgid "<strong>Spam</strong> removes your topic from this list and places it in the spam queue, from which you can permanently delete it."
+msgstr "<strong>Roskaviesti</strong> poistaa aiheesi tältä listalta ja laittaa sen roskaviestijonoon, josta voit poistaa sen lopullisesti."
+
+#: includes/admin/topics.php:160
+msgid "<strong>Preview</strong> will show you what your draft topic will look like if you publish it. View will take you to your live site to view the topic. Which link is available depends on your topic&#8217;s status."
+msgstr "<strong>Esikatselu</strong> näyttää, miltä aiheluonnoksesi näyttää jos julkaiset sen. Katsele vie sinut julkaistulle sivulle katsomaan aihetta. Näytettävä linkki riippuu aiheesi tilasta."
+
+#: includes/admin/topics.php:161
+msgid "<strong>Close</strong> will mark the selected topic as &#8217;closed&#8217; and disable the option to post new replies to the topic."
+msgstr "<strong>Sulje</strong> merkitsee valitun aiheen &#8217;suljetuksi&#8217; ja estää uusien vastauksien kirjoittamisen aiheeseen."
+
+#: includes/admin/topics.php:162
+msgid "<strong>Stick</strong> will keep the selected topic &#8217;pinned&#8217; to the top the parent forum topic list."
+msgstr "<strong>Kiinnitä</strong> pitää valitun aiheen kiinnitettynä ylätason foorumiaihelistan alussa."
+
+#: includes/admin/topics.php:163
+msgid "<strong>Stick <em>(to front)</em></strong> will keep the selected topic &#8217;pinned&#8217; to the top of ALL forums and be visable in any forums topics list."
+msgstr "<strong>Kiinnitä <em>(alkuun)</em></strong> pitää valitun aiheen kiinnitettynä KAIKKIEN foorumien alkuun ja näyttää sen kaikissa foorumin aihelistoissa. "
+
+#: includes/admin/topics.php:172
+msgid "You can also edit or move multiple topics to the trash at once. Select the topics you want to act on using the checkboxes, then select the action you want to take from the Bulk Actions menu and click Apply."
+msgstr "Voit muokata samanaikaisesti useampaa aihetta tai siirtää niitä roskakoriin. Merkitse rasti haluamiesi aiheiden kohdalle ja valitse sen jälkeen Massatoiminto-valikosta haluamasi toiminto ja klikkaa Hyväksy."
+
+#: includes/admin/topics.php:173
+msgid "When using Bulk Edit, you can change the metadata (categories, author, etc.) for all selected topics at once. To remove a topic from the grouping, just click the x next to its name in the Bulk Edit area that appears."
+msgstr "Massatoiminnolla voi muokata kerralla kaikkien valittujen aiheiden metatietoja (kategoriat, kirjoittaja jne.). Aiheen voi poistaa ryhmästä painamalla x aiheen nimen vieressä, kun massamuokkaus-alue näkyy."
+
+#: includes/admin/topics.php:194
+msgid "The title field and the big topic editing Area are fixed in place, but you can reposition all the other boxes using drag and drop, and can minimize or expand them by clicking the title bar of each box. Use the Screen Options tab to unhide more boxes (Excerpt, Send Trackbacks, Custom Fields, Discussion, Slug, Author) or to choose a 1- or 2-column layout for this screen."
+msgstr "Otsikon ja ison tekstikentän sijainnit ovat kiinteät, mutta kaikkia muita osioita voi siirrellä raahaamalla niitä. Osioita voi myös pienentää ja suurentaa painamalla osion otsikkokenttää. Näyttöasetukset-välilehdeltä voi piilottaa osioita (ote, lähetä paluuviitteet, avainkentät, keskustelu, polkutunnus, kirjoittaja) tai valita yksi- tai kaksi-sarakkeisen ulkoasun."
+
+#: includes/admin/topics.php:204
+msgid "Title and Topic Editor"
+msgstr "Otsikko- ja aihe-editori"
+
+#: includes/admin/topics.php:206
+msgid "<strong>Title</strong> - Enter a title for your topic. After you enter a title, you&#8217;ll see the permalink below, which you can edit."
+msgstr "<strong>Otsikko</strong> - Anna aiheelle otsikko. Lisättyäsi otsikon näet alla kestolinkin, jota voit muokata. "
+
+#: includes/admin/topics.php:207
+msgid "<strong>Topic Editor</strong> - Enter the text for your topic. There are two modes of editing: Visual and HTML. Choose the mode by clicking on the appropriate tab. Visual mode gives you a WYSIWYG editor. Click the last icon in the row to get a second row of controls. The HTML mode allows you to enter raw HTML along with your topic text. You can insert media files by clicking the icons above the topic editor and following the directions. You can go to the distraction-free writing screen via the Fullscreen icon in Visual mode (second to last in the top row) or the Fullscreen button in HTML mode (last in the row). Once there, you can make buttons visible by hovering over the top area. Exit Fullscreen back to the regular topic editor."
+msgstr "<strong>Aihe-editori</strong> - Anna aiheen teksti. Muokkaustiloja on kaksi: visuaalinen ja HTML. Valitse tila klikkaamalla kyseistä välilehteä. Visuaalinen tila antaa käyttöösi WYSIWYG-editorin. Klikkaa rivin viimeistä ikonia nähdäksesi toisen rivin ikonit. HTML-tilassa voit käyttää raakaa HTML-koodia tekstin kanssa. Voit lisätä mediatiedostoja klikkaamalla aihe-editorin yläpuolella olevia ikoneita ja seuraamalla ohjeita. Voit siirtyä häiriöttömään kirjoitusnäkymään painamalla Koko näyttö -ikonia visuaalisessa tilassa (toiseksi viimeinen ylimmässä rivissä) tai Koko näyttö -nappia HTML-tilassa (rivin viimeinen). Tässä näkymässä saat napit näkyviin liikuttamalla hiirtä yläosan päällä. Poistu koko näytön tilasta päästäksesi takaisin normaaliin aihe-editoriin."
+
+#: includes/admin/topics.php:210
+msgid "<strong>Publish</strong> - You can set the terms of publishing your topic in the Publish box. For Status, Visibility, and Publish (immediately), click on the Edit link to reveal more options. Visibility includes options for password-protecting a topic or making it stay at the top of your blog indefinitely (sticky). Publish (immediately) allows you to set a future or past date and time, so you can schedule a topic to be published in the future or backdate a topic."
+msgstr "<strong>Julkaise</strong> - Voit säätää ehdot aiheen julkaisulle Julkaise-laatikossa. Näet lisää vaihtoehtoja kohdista Tila, Näkyvyys ja Julkaise (välittömästi) klikkaamalla Muokkaa linkkiä. Näkyvyys sisältää vaihtoehtoja aiheen salasanasuojauksesta tai sen pysymisestä jatkuvasti ylimpänä blogissa (kiinnitetty). Julkaise (välittömästi) mahdollistaa tulevan tai menneen päivän valitsemisen, joten voit ajastaa aiheen julkaisun tulevaan ajankohtaan tai päivätä aiheen takautuvasti."
+
+#: includes/admin/topics.php:213
+msgid "<strong>Featured Image</strong> - This allows you to associate an image with your topic without inserting it. This is usually useful only if your theme makes use of the featured image as a topic thumbnail on the home page, a custom header, etc."
+msgstr "<strong>Aihekuva</strong> - Tämä antaa sinun liittää kuvan aiheeseesi ilman, että lisäät sen tekstin sekaan. Tämä on hyödyllistä yleensä vain silloin, jos teemasi käyttää artikkelikuvia artikkelin esikatselukuvana etusivulla, mukautettua sivun yläosaa tms."
+
+#: includes/admin/topics.php:218 includes/admin/topics.php:255
+msgid "Topic Attributes"
+msgstr "Aiheen määreet"
+
+#: includes/admin/topics.php:220
+msgid "Select the attributes that your topic should have:"
+msgstr "Valitse ne määreet, jotka aiheellasi tulisi olla:"
+
+#: includes/admin/topics.php:222
+msgid "<strong>Forum</strong> dropdown determines the parent forum that the topic belongs to. Select the forum or category from the dropdown, or leave the default (No Forum) to post the topic without an assigned forum."
+msgstr "<strong>Foorumi</strong>-alasvetovalikko määrää ylätason foorumin, johon aihe kuuluu. Valitse foorumi tai kategoria alasvetovalikosta, tai jos haluat julkaista aiheen ilman määritettyä foorumia, käytä oletuksena olevaa Ei foorumia."
+
+#: includes/admin/topics.php:223
+msgid "<strong>Topic Type</strong> dropdown indicates the sticky status of the topic. Selecting the super sticky option would stick the topic to the front of your forums, i.e. the topic index, sticky option would stick the topic to its respective forum. Selecting normal would not stick the topic anywhere."
+msgstr "<strong>Aihetyyppi</strong>-alasvetovalikko kertoo aiheen kiinnitystilasta. Valitsemalla superkiinnitetty-vaihtoehdon voit kiinnittää aiheen foorumiesi alkuun eli aiheen hakemistoon, kun taas kiinnitetty-vaihtoehto kiinnittää aiheen kyseiseen foorumiin. Normaali-vaihtoehto ei kiinnitä aihetta mihinkään."
+
+#: includes/admin/topics.php:485
+msgid "The topic was not found!"
+msgstr "Aihetta ei löydy!"
+
+#: includes/admin/topics.php:575
+msgid "There was a problem opening the topic \"%1$s\"."
+msgstr "Aiheen \"%1$s\" avaamisessa ilmeni ongelma."
+
+#: includes/admin/topics.php:575
+msgid "Topic \"%1$s\" successfully opened."
+msgstr "Aihe \"%1$s\" avattiin onnistuneesti."
+
+#: includes/admin/topics.php:579
+msgid "There was a problem closing the topic \"%1$s\"."
+msgstr "Aiheen \"%1$s\" sulkemisessa ilmeni ongelma."
+
+#: includes/admin/topics.php:579
+msgid "Topic \"%1$s\" successfully closed."
+msgstr "Aihe \"%1$s\" suljettiin onnistuneesti."
+
+#: includes/admin/topics.php:583
+msgid "There was a problem sticking the topic \"%1$s\" to front."
+msgstr "Aiheen \"%1$s\" kiinnittämisessä ylimmäksi ilmeni ongelma."
+
+#: includes/admin/topics.php:583
+msgid "Topic \"%1$s\" successfully sticked to front."
+msgstr "Aihe \"%1$s\" kiinnitettiin onnistuneesti ylimmäksi."
+
+#: includes/admin/topics.php:587
+msgid "There was a problem sticking the topic \"%1$s\"."
+msgstr "Aiheen \"%1$s\" kiinnittämisessä ilmeni ongelma."
+
+#: includes/admin/topics.php:587
+msgid "Topic \"%1$s\" successfully sticked."
+msgstr "Aihe \"%1$s\" kiinnitettiin onnistuneesti."
+
+#: includes/admin/topics.php:591
+msgid "There was a problem unsticking the topic \"%1$s\"."
+msgstr "Aiheen \"%1$s\" irrottamisessa ilmeni ongelma."
+
+#: includes/admin/topics.php:591
+msgid "Topic \"%1$s\" successfully unsticked."
+msgstr "Aihe \"%1$s\" irrotettiin onnistuneesti."
+
+#: includes/admin/topics.php:694 includes/extend/buddypress/groups.php:295
+#: templates/default/bbpress/form-topic.php:117
+msgid "(No Forum)"
+msgstr "(Ei foorumia)"
+
+#: includes/admin/topics.php:786
+msgid "Close this topic"
+msgstr "Sulje tämä aihe"
+
+#: includes/admin/topics.php:788
+msgid "Open this topic"
+msgstr "Avaa tämä aihe"
+
+#: includes/admin/topics.php:797
+msgid "Unstick this topic"
+msgstr "Irrota tämä aihe"
+
+#: includes/admin/topics.php:797 includes/topics/template.php:2746
+msgid "Unstick"
+msgstr "Irrota"
+
+#: includes/admin/topics.php:800
+msgid "Stick this topic to its forum"
+msgstr "Kiinnitä tämä aihe foorumiinsa"
+
+#: includes/admin/topics.php:800 includes/topics/template.php:2745
+msgid "Stick"
+msgstr "Kiinnitä"
+
+#: includes/admin/topics.php:800
+msgid "Stick this topic to front"
+msgstr "Kiinnitä tämä aihe ylimmäksi"
+
+#: includes/admin/topics.php:800 includes/topics/template.php:2747
+msgid "(to front)"
+msgstr "(alkuun)"
+
+#: includes/admin/topics.php:919
+msgid "Topic updated. <a href=\"%s\">View topic</a>"
+msgstr "Aihe päivitetty. <a href=\"%s\">Katsele</a>"
+
+#: includes/admin/topics.php:928
+msgid "Topic updated."
+msgstr "Aihe päivitetty."
+
+#. translators: %s: date and time of the revision
+#: includes/admin/topics.php:933
+msgid "Topic restored to revision from %s"
+msgstr "Aihe palautettu versiosta %s"
+
+#: includes/admin/topics.php:937
+msgid "Topic created. <a href=\"%s\">View topic</a>"
+msgstr "Aihe luotu. <a href=\"%s\">Katsele</a>"
+
+#: includes/admin/topics.php:940
+msgid "Topic saved."
+msgstr "Aihe tallennettu."
+
+#: includes/admin/topics.php:943
+msgid "Topic submitted. <a target=\"_blank\" href=\"%s\">Preview topic</a>"
+msgstr "Aihe lähetetty. <a target=\"_blank\" href=\"%s\">Esikatsele</a>"
+
+#: includes/admin/topics.php:946
+msgid "Topic scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview topic</a>"
+msgstr "Aihe ajastettu: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Esikatsele</a>"
+
+#: includes/admin/topics.php:953
+msgid "Topic draft updated. <a target=\"_blank\" href=\"%s\">Preview topic</a>"
+msgstr "Aiheluonnos päivitetty. <a target=\"_blank\" href=\"%s\">Esikatsele</a>"
+
+#: includes/admin/users.php:87 includes/admin/users.php:218
+#: templates/default/bbpress/form-user-roles.php:20
+msgid "Forum Role"
+msgstr "Rooli foorumilla"
+
+#: includes/admin/users.php:96 includes/admin/users.php:100
+#: includes/users/template.php:1290
+msgid "&mdash; No role for these forums &mdash;"
+msgstr "&mdash; Ei roolia näille foorumeille &mdash;"
+
+#: includes/admin/users.php:138 includes/admin/users.php:140
+msgid "Change forum role to&hellip;"
+msgstr "Muuta foorumin rooliksi &hellip;"
+
+#: includes/admin/users.php:144
+msgid "Change"
+msgstr "Muuta"
+
+#: includes/common/functions.php:512 includes/common/functions.php:544
+msgid "Private: %s"
+msgstr "Yksityisiä: %s"
+
+#: includes/common/functions.php:514 includes/common/functions.php:546
+msgid "Trashed: %s"
+msgstr "Poistettuja: %s"
+
+#: includes/common/functions.php:624
+msgid "<strong>ERROR</strong>: Invalid author name submitted!"
+msgstr "<strong>VIRHE</strong>: Virheellinen kirjoittajan nimi."
+
+#: includes/common/functions.php:628
+msgid "<strong>ERROR</strong>: Invalid email address submitted!"
+msgstr "<strong>VIRHE</strong>: Virheellinen sähköpostiosoite."
+
+#: includes/common/functions.php:1099
+msgid ""
+"%1$s wrote:\n"
+"\n"
+"%2$s\n"
+"\n"
+"Post Link: %3$s\n"
+"\n"
+"-----------\n"
+"\n"
+"You are receiving this email because you subscribed to a forum topic.\n"
+"\n"
+"Login and visit the topic to unsubscribe from these emails."
+msgstr ""
+"%1$s kirjoitti:\n"
+"\n"
+"%2$s\n"
+"\n"
+"Linkki: %3$s\n"
+"\n"
+"-----------\n"
+"\n"
+"Saat tämän sähköpostin, koska olet tilannut ilmoitukset foorumin aiheesta.\n"
+"\n"
+"Jos haluat poistaa ilmoitukset käytöstä, kirjaudu sisään ja käy aihesivulla."
+
+#: includes/common/functions.php:2024
+msgid "Conditional query tags do not work before the query is run. Before then, they always return false."
+msgstr "Ehdolliset kyselyn aihesanat eivät toimi ennen kuin kysely on ajettu. Ennen sitä ne palauttavat aina väärän vastauksen."
+
+#: includes/common/template.php:1457
+msgid "No topics available"
+msgstr "Ei aiheita"
+
+#: includes/common/template.php:1462
+msgid "No forums available"
+msgstr "Ei foorumeita"
+
+#: includes/replies/functions.php:1299 includes/replies/template.php:571
+#: includes/topics/functions.php:1294 includes/topics/functions.php:1652
+#: templates/default/bbpress/form-reply.php:29
+msgid "Reply To: %s"
+msgstr "Vastaa: %s"
+
+#: includes/common/template.php:2212 includes/common/template.php:2326
+#: includes/common/template.php:2591 includes/core/theme-compat.php:739
+#: templates/default/extras/taxonomy-topic-tag-edit.php:17
+#: templates/default/extras/taxonomy-topic-tag.php:17
+msgid "Topic Tag: %s"
+msgstr "Aiheen asiasana: %s"
+
+#: includes/common/template.php:2555
+msgid "Forum Edit: %s"
+msgstr "Muokkaa foorumia: %s"
+
+#: includes/common/template.php:2560
+msgid "Topic Edit: %s"
+msgstr "Muokkaa aihetta: %s"
+
+#: includes/common/template.php:2565
+msgid "Reply Edit: %s"
+msgstr "Muokkaa vastausta: %s"
+
+#: includes/common/template.php:2570
+msgid "Topic Tag Edit: %s"
+msgstr "Muokkaa aiheen asiasanaa: %s"
+
+#: includes/common/template.php:2577
+msgid "Forum: %s"
+msgstr "Foorumi: %s"
+
+#: includes/common/template.php:2582
+msgid "Topic: %s"
+msgstr "Aihe: %s"
+
+#: includes/admin/tools.php:176
+msgid "Remove trashed topics from user subscriptions"
+msgstr "Poista roskaviesteiksi merkityt aiheet käyttäjän tilauksista"
+
+#: includes/admin/topics.php:635 templates/default/bbpress/loop-topics.php:20
+msgid "Voices"
+msgstr "Osallistujat"
+
+#: includes/admin/tools.php:249
+msgid "Counting the number of voices in each topic&hellip; %s"
+msgstr "Lasketaan osallistujien kokonaismäärä keskusteluissa&hellip; %s"
+
+#: includes/topics/template.php:3306
+msgid "%s voice"
+msgid_plural "%s voices"
+msgstr[0] "%s osallistuja"
+msgstr[1] "%s osallistujaa"
+
+#: templates/default/bbpress/loop-single-reply.php:21
+msgid "in reply to: "
+msgstr "vastauksena käyttäjälle: "
+
+#: includes/admin/tools.php:169
+msgid "Count replies in each forum"
+msgstr "Laske jokaisen keskustelualueen vastaukset"
+
+#: includes/admin/tools.php:174
+msgid "Count replies for each user"
+msgstr "Laske vastaukset jokaiselta käyttäjältä"
+
+#: includes/admin/tools.php:171
+msgid "Count voices in each topic"
+msgstr "Laske osallistujien määrä jokaiselta keskustelulta"
+
+#: includes/admin/tools.php:172
+msgid "Count spammed & trashed replies in each topic"
+msgstr "Laske roskaviestit ja poistetut viestit aiheittain"
+
+#: includes/admin/tools.php:168
+msgid "Count topics in each forum"
+msgstr "Laske jokaisen keskustelualueen aiheet"
+
+#: includes/admin/topics.php:595
+msgid "Topic \"%1$s\" successfully marked as spam."
+msgstr "Aihe \"%1$s\" merkitty roskaviestiksi."
+
+#: includes/admin/topics.php:595
+msgid "There was a problem marking the topic \"%1$s\" as spam."
+msgstr "Aiheen \"%1$s\" merkitsemisessä roskaviestiksi ilmeni ongelma."
+
+#: includes/admin/topics.php:599
+msgid "There was a problem unmarking the topic \"%1$s\" as spam."
+msgstr "Aiheen \"%1$s\" roskaviestimerkinnän poistamisessa ilmeni ongelma."
+
+#: includes/admin/topics.php:599
+msgid "Topic \"%1$s\" successfully unmarked as spam."
+msgstr "Aihe \"%1$s\" siirretty takaisin roskaviesteistä."
+
+#: includes/admin/topics.php:807
+msgid "Mark the topic as not spam"
+msgstr "Poista aihe roskaviesteistä"
+
+#: includes/admin/topics.php:809
+msgid "Mark this topic as spam"
+msgstr "Merkitse tämä aihe roskaviestiksi"
+
+#: includes/common/functions.php:513 includes/common/functions.php:545
+msgid "Spammed: %s"
+msgstr "Merkitty roskaviestiksi: %s"
+
+#: includes/extend/akismet.php:309
+msgid "%1$s reported this %2$s as spam"
+msgstr "%1$s raportoi tämän %2$s roskaviestiksi"
+
+#: includes/extend/akismet.php:316
+msgid "%1$s reported this %2$s as not spam"
+msgstr "%1$s raportoi tämän %2$s poistettavaksi roskaviesteistä."
+
+#: includes/extend/akismet.php:463
+msgid "Akismet caught this post as spam"
+msgstr "Akismet merkkasti tämän roskaviestiksi"
+
+#: includes/replies/template.php:2106 includes/topics/template.php:2873
+msgid "Unspam"
+msgstr "Poista roskaviesteistä"
+
+#: includes/topics/functions.php:1967
+msgctxt "Spam the topic"
+msgid "Spam"
+msgstr "Merkitse roskaksi"
+
+#: bbpress.php:594
+msgctxt "post"
+msgid "Orphan <span class=\"count\">(%s)</span>"
+msgid_plural "Orphans <span class=\"count\">(%s)</span>"
+msgstr[0] "Orpoja <span class=\"count\">(%s)</span>"
+msgstr[1] "Orpoja <span class=\"count\">(%s)</span>"
+
+#: includes/admin/admin.php:720 includes/admin/admin.php:758
+msgid "%s - %s"
+msgstr "%s - %s"
+
+#: includes/admin/admin.php:776 includes/admin/admin.php:853
+msgid "Welcome to bbPress %s"
+msgstr "Tervetuloa bbPressiin %s"
+
+#: includes/admin/admin.php:257 includes/admin/admin.php:258
+#: includes/admin/admin.php:266 includes/admin/admin.php:267
+msgid "Welcome to bbPress"
+msgstr "Tervetuloa bbPressiin"
+
+#: includes/admin/admin.php:778 includes/admin/admin.php:855
+msgid "Version %s"
+msgstr "Versio %s"
+
+#: includes/admin/converter.php:134
+msgid "Purge Previous Import"
+msgstr "Puhdistetaan vanha tuonti"
+
+#: includes/admin/converter.php:130
+msgid "Start Over"
+msgstr "Aloita alusta"
+
+#: includes/admin/converter.php:84
+msgid "Database Settings"
+msgstr "Tietokannan asetukset"
+
+#: includes/admin/converter.php:371
+msgid "Converting users (%1$s - %2$s)"
+msgstr "Muunnetaan käyttäjiä (%1$s - %2$s)"
+
+#: includes/admin/converter.php:500
+msgid "Converting replies (%1$s - %2$s)"
+msgstr "Muunnetaan vastauksia (%1$s - %2$s)"
+
+#: includes/admin/converter.php:107
+msgid "Database Password"
+msgstr "Tietokannan salasana"
+
+#: includes/admin/settings.php:1442
+msgid "second(s) delay between each group of rows"
+msgstr "sekunnin viive rivien välillä"
+
+#: includes/admin/converter.php:248 includes/admin/converter.php:525
+msgid "Conversion Complete"
+msgstr "Muunnos valmis"
+
+#: includes/admin/admin.php:973 includes/admin/admin.php:1027
+msgid "All done!"
+msgstr "Kaikki valmista!"
+
+#: includes/admin/admin.php:1096
+msgid "You can update all the forums on your network through this page. It works by calling the update script of each site automatically. Hit the link below to update."
+msgstr "Voit päivittää kaikki verkon keskustelualueet tämän sivun kautta. Se käyttää päivitys scriptiä joka sivulla automaattisesti. Klikkaa alla olevaa linkkiä päivittääksesi."
+
+#: includes/admin/converter.php:87
+msgid "Select Platform"
+msgstr "Valitse alusta"
+
+#: includes/admin/converter.php:95
+msgid "Database Port"
+msgstr "Tietokannan portti"
+
+#: includes/admin/converter.php:99
+msgid "Database Name"
+msgstr "Tietokannan nimi"
+
+#: includes/admin/forums.php:155 includes/admin/replies.php:169
+#: includes/admin/topics.php:170
+msgid "Bulk Actions"
+msgstr "Massatoiminnot"
+
+#: includes/admin/forums.php:189
+msgid "Title and Forum Editor"
+msgstr "Otsikon ja keskustelualueen editori"
+
+#: includes/admin/replies.php:203
+msgid "Title and Reply Editor"
+msgstr "Otsikko- ja vastauseditori"
+
+#: includes/admin/settings.php:722
+msgid "%1$s - %2$s"
+msgstr "%1$s - %2$s"
+
+#: includes/admin/settings.php:1518
+msgid "Start"
+msgstr "Aloita"
+
+#: includes/admin/settings.php:1519
+msgid "Stop"
+msgstr "Lopeta"
+
+#: includes/admin/settings.php:1567
+msgid "The Fancy Editor brings the luxury of the Visual editor and HTML editor from the traditional WordPress dashboard into your theme."
+msgstr "Hienostunut Editori tuo Visuaalisen ja HTML editorin ylellisyyden perinteisestä WordPressin käyttöliittymästä teemaasi."
+
+#: includes/admin/settings.php:1736
+msgid "%s page"
+msgstr "%s sivu"
+
+#: includes/admin/settings.php:1689
+msgid "Pages"
+msgstr "Sivut"
+
+#: includes/admin/settings.php:1692
+msgid "Menus"
+msgstr "Valikot"
+
+#: includes/admin/metaboxes.php:497
+#: templates/default/bbpress/form-user-edit.php:14
+#: templates/default/bbpress/form-user-edit.php:19
+msgid "Name"
+msgstr "Nimi"
+
+#: includes/admin/settings.php:1688
+#: templates/default/bbpress/loop-forums.php:21
+#: templates/default/bbpress/loop-replies.php:24
+#: templates/default/bbpress/loop-replies.php:66
+#: templates/default/bbpress/loop-topics.php:21
+msgid "Posts"
+msgstr "Viestit"
+
+#: includes/admin/forums.php:414 includes/admin/topics.php:638
+#: templates/default/bbpress/loop-forums.php:22
+#: templates/default/bbpress/loop-topics.php:22
+msgid "Freshness"
+msgstr "Viimeisin viesti"
+
+#: bbpress.php:606
+msgctxt "post"
+msgid "Hidden"
+msgstr "Piilotettu"
+
+#: bbpress.php:593
+msgctxt "post"
+msgid "Orphan"
+msgstr "Orpo"
+
+#: bbpress.php:569
+msgctxt "post"
+msgid "Closed"
+msgstr "Suljettu"
+
+#: bbpress.php:534
+msgid "bbPress Replies"
+msgstr "bbPress vastaukset"
+
+#: includes/admin/settings.php:1267
+#: templates/default/bbpress/form-user-edit.php:173
+msgid "Save Changes"
+msgstr "Tallenna muutokset"
+
+#: includes/admin/replies.php:747 includes/admin/topics.php:817
+#: includes/replies/template.php:2035 includes/topics/template.php:2616
+msgid "Restore"
+msgstr "Palauta"
+
+#: includes/admin/replies.php:747 includes/admin/topics.php:817
+#: includes/replies/template.php:2047 includes/topics/template.php:2628
+msgid "Restore this item from the Trash"
+msgstr "Palauta roskakorista"
+
+#: includes/admin/metaboxes.php:496
+#: templates/default/bbpress/form-topic-tag.php:35
+msgid "Name:"
+msgstr "Nimi:"
+
+#: includes/admin/metaboxes.php:42
+msgid "Discussion"
+msgstr "Keskustelu"
+
+#: includes/admin/metaboxes.php:261 includes/admin/metaboxes.php:262
+#: includes/admin/metaboxes.php:355
+msgid "Type:"
+msgstr "Tyyppi:"
+
+#: includes/admin/metaboxes.php:273 includes/admin/metaboxes.php:274
+#: includes/admin/metaboxes.php:367
+#: templates/default/bbpress/form-forum.php:100
+msgid "Status:"
+msgstr "Tila:"
+
+#: includes/admin/metaboxes.php:285 includes/admin/metaboxes.php:286
+#: templates/default/bbpress/form-forum.php:109
+msgid "Visibility:"
+msgstr "Näkyvyys:"
+
+#: includes/admin/metaboxes.php:321
+msgid "Order:"
+msgstr "Järjestys:"
+
+#: includes/admin/metaboxes.php:503
+#: templates/default/bbpress/form-user-edit.php:103
+#: templates/default/bbpress/form-user-register.php:28
+msgid "Email"
+msgstr "Sähköposti"
+
+#: includes/admin/metaboxes.php:525
+msgid "IP Address"
+msgstr "IP-osoite"
+
+#: includes/admin/admin.php:510
+msgid "Settings"
+msgstr "Asetukset"
+
+#: includes/admin/admin.php:974 includes/admin/admin.php:1028
+msgid "Go Back"
+msgstr "Mene takaisin"
+
+#: includes/admin/settings.php:483 includes/common/functions.php:124
+msgid "seconds"
+msgstr "sekuntia"
+
+#: includes/admin/settings.php:1562
+msgid "\"Throttle time\" is the amount of time required between posts from a single author. The higher the throttle time, the longer a user will need to wait between posting to the forum."
+msgstr "\"Odotusaika\" on aika, joka on odotettava ennen uuden viestin lähettämistä. Mitä suurempi odotusaika sitä pidempää pitää kirjoittajan odottaa uuden viestin lähettämistä."
+
+#: includes/admin/forums.php:413 includes/admin/replies.php:573
+#: includes/admin/topics.php:637
+msgid "Created"
+msgstr "Luotu"
+
+#. translators: Publish box date format, see http:php.net/date
+#: includes/admin/forums.php:558 includes/admin/replies.php:878
+#: includes/admin/topics.php:948
+msgid "M j, Y @ G:i"
+msgstr "M j, Y @ G:i"
+
+#: includes/admin/replies.php:569
+msgid "Title"
+msgstr "Otsikko"
+
+#: includes/admin/replies.php:725 includes/admin/topics.php:776
+msgid "View"
+msgstr "Näytä"
+
+#: includes/admin/replies.php:753 includes/admin/topics.php:823
+msgid "Delete Permanently"
+msgstr "Poista pysyvästi"
+
+#: includes/admin/replies.php:858
+msgid "Reply updated."
+msgstr "Vastaus päivitetty."
+
+#. translators: %s: date and time of the revision
+#: includes/admin/replies.php:863
+msgid "Reply restored to revision from %s"
+msgstr "Vastaus palautettu revisioon ajalta %s"
+
+#: includes/admin/replies.php:870
+msgid "Reply saved."
+msgstr "Vastaus tallennettu."
+
+#: bbpress.php:677
+msgid "Most popular topics"
+msgstr "Suosituimmat aiheet"
+
+#: includes/admin/settings.php:1565
+msgid "Topic-Tags allow users to filter topics between forums. This is enabled by default."
+msgstr "Keskustelun merkinnät antavat käyttäjien suodattaa keskustelut keskustelualueiden välillä. Tämä on päällä oletusarvona."
+
+#: includes/admin/converter.php:425
+msgid "Calculating forum hierarchy (%1$s - %2$s)"
+msgstr "Lasketaan foorumien hierarkiaa (%1$s - %2$s)"
+
+#: includes/admin/admin.php:218 includes/admin/functions.php:281
+#: includes/admin/tools.php:1208
+msgid "Reset Forums"
+msgstr "Nollaa foorumeita"
+
+#: includes/admin/metaboxes.php:502
+msgid "Email:"
+msgstr "Sähköposti:"
+
+#: includes/admin/admin.php:867
+msgid "Project Leaders"
+msgstr "Projektin vetäjät"
+
+#: includes/admin/admin.php:826
+msgid "Roles and capabilities have been swept through, cleaned up, and simplified."
+msgstr "Käyttäjäroolit ja oikeudet on käyty läpi, siivottu ja yksinkertaistettu."
+
+#: includes/admin/settings.php:685
+msgid "Add toolbar & buttons to textareas to help with HTML formatting"
+msgstr "Lisää työkalupalkki ja nappeja tekstikenttiin auttamaan HTML-muotoilussa"
+
+#: includes/admin/settings.php:182
+msgid "Auto-embed links"
+msgstr "Muotoile linkit automaattisesti"
+
+#: includes/admin/settings.php:533
+msgid "Automatically give registered visitors the %s forum role"
+msgstr "Anna rekisteröityneille kävijöille automaattisesti %s rooli foorumeilla"
+
+#: includes/admin/metaboxes.php:517
+msgid "ID"
+msgstr "ID"
+
+#: includes/admin/metaboxes.php:516
+msgid "ID:"
+msgstr "ID:"
+
+#: includes/admin/settings.php:24
+msgid "Forum User Settings"
+msgstr "Foorumin käyttäjäasetukset"
+
+#: includes/admin/settings.php:34
+msgid "Forum Theme Packages"
+msgstr "Foorumin teemapaketit"
+
+#: includes/admin/settings.php:49
+msgid "Forum Root Slug"
+msgstr "Foorumin juuripolku"
+
+#: includes/admin/settings.php:91
+msgid "Disallow editing after"
+msgstr "Estä muokkaaminen"
+
+#: includes/admin/settings.php:64
+msgid "BuddyPress Integration"
+msgstr "BuddyPress integraatio"
+
+#: includes/admin/admin.php:896
+msgid "Bug Testing"
+msgstr "Bugitestaus"
+
+#: includes/admin/settings.php:613
+msgid "Allow forum wide search"
+msgstr "Salli foorumien laajahaku"
+
+#: includes/admin/settings.php:69
+msgid "Akismet Integration"
+msgstr "Akismet integraatio"
+
+#: includes/admin/metaboxes.php:314 includes/admin/metaboxes.php:394
+#: includes/admin/metaboxes.php:448
+msgid "&mdash; No parent &mdash;"
+msgstr "&mdash; Ei ylätasoa &mdash;"
+
+#: includes/admin/settings.php:1755
+msgid "Possible %1$s conflict: %2$s"
+msgstr "Mahdollinen %1$s ristiriita: %2$s"
+
+#: includes/admin/settings.php:1550
+msgid "This screen provides access to all of the Forums settings."
+msgstr "Tästä näkymästä pääset käsiksi kaikkiin foorumeiden asetuksiin."
+
+#: includes/admin/settings.php:943
+msgid "Customize your user profile slugs."
+msgstr "Muokkaa profiilisi polkutunnusta."
+
+#: includes/admin/settings.php:1043
+msgid "Custom slugs for single forums, topics, replies, tags, views, and search."
+msgstr "Muokatut polkutunnukset yksittäisille foorumeille, aiheille, vastauksille, asiasanoille, näkymille ja hauille."
+
+#: includes/admin/settings.php:1194
+msgid "&mdash; Forum root &mdash;"
+msgstr "&mdash; Foorumin juuri &mdash;"
+
+#: includes/admin/settings.php:450
+msgid "Setting time limits and other user posting capabilities"
+msgstr "Aikarajojen ja käyttäjien muiden kirjoitusominaisuuksien asettaminen"
+
+#: includes/admin/settings.php:549
+msgid "Forum features that can be toggled on and off"
+msgstr "Foorumiominaisuudet, jotka voi laittaa päälle ja pois"
+
+#: includes/admin/settings.php:732
+msgid "No template packages available."
+msgstr "Pohjapaketteja ei saatavilla."
+
+#: includes/admin/settings.php:860
+msgid "Customize your Forums root. Partner with a WordPress Page and use Shortcodes for more flexibility."
+msgstr "Muokkaa foorumin juurta. Yhdistä WordPress-sivuun ja käytä lyhytkoodeja, jos haluat lisää joustavuutta."
+
+#: includes/admin/settings.php:913
+msgid "Forum Index"
+msgstr "Foorumin hakemisto"
+
+#: includes/admin/settings.php:916
+msgid "Topics by Freshness"
+msgstr "Aiheet tuoreusjärjestyksessä"
+
+#: includes/admin/settings.php:107
+msgid "Anonymous posting"
+msgstr "Anonyymi kirjoitus"
+
+#: includes/admin/settings.php:115
+msgid "Auto role"
+msgstr "Autorooli"
+
+#: includes/admin/settings.php:158
+msgid "Topic tags"
+msgstr "Aiheen asiasanat"
+
+#: includes/admin/settings.php:174
+msgid "Post Formatting"
+msgstr "Kirjoituksen muotoilu"
+
+#: includes/admin/settings.php:190
+msgid "Reply Threading"
+msgstr "Vastausten ketjuttaminen"
+
+#: includes/admin/settings.php:264
+msgid "Forum Root"
+msgstr "Foorumin juuri"
+
+#: includes/admin/settings.php:280
+msgid "Forum root should show"
+msgstr "Foorumin juuren pitäisi näkyä"
+
+#: includes/admin/settings.php:317
+msgid "Topic View"
+msgstr "Aihenäkymä"
+
+#: includes/admin/settings.php:346
+msgid "User Base"
+msgstr "Käyttäjien peruskansio"
+
+#: includes/admin/settings.php:378
+msgid "Topic Subscriptions"
+msgstr "Seurattuja aiheita"
+
+#: includes/admin/settings.php:29
+msgid "Forum Features"
+msgstr "Foorumin ominaisuudet"
+
+#: includes/admin/settings.php:39
+msgid "Topics and Replies Per Page"
+msgstr "Aiheita ja vastauksia per sivu"
+
+#: includes/admin/settings.php:44
+msgid "Topics and Replies Per RSS Page"
+msgstr "Aiheita ja vastauksia per RSS-sivu"
+
+#: includes/admin/settings.php:54
+msgid "Single Forum Slugs"
+msgstr "Yksittäisen foorumin polkutunnus"
+
+#: includes/admin/settings.php:59
+msgid "Forum User Slugs"
+msgstr "Foorumin käyttäjien polkutunnukset"
+
+#: includes/admin/replies.php:223
+msgid "<strong>Reply To</strong> determines the threading of the reply."
+msgstr "<strong>Vastaa</strong> määrittää vastauksen ketjuttamisen."
+
+#: includes/admin/metaboxes.php:368
+msgid "Select whether to open or close the topic."
+msgstr "Valitse, haluatko avata vai sulkea aiheen."
+
+#: includes/admin/metaboxes.php:463
+msgid "Reply To:"
+msgstr "Vastaa käyttäjälle:"
+
+#: includes/admin/converter.php:391
+msgid "Delete users WordPress default passwords (%1$s - %2$s)"
+msgstr "Poista käyttäjien oletuksena olevat WordPress-salasanat (%1$s - %2$s)"
+
+#: includes/admin/admin.php:825
+msgid "User capabilities"
+msgstr "Käyttäjän oikeudet"
+
+#: includes/admin/admin.php:865
+msgid "bbPress is created by a worldwide swarm of busy, busy bees."
+msgstr "bbPressia on luomassa joukko kiireisiä työmyyriä ympäri maailmaa."
+
+#: includes/admin/admin.php:820
+msgid "Polyglot support"
+msgstr "Tuki monikielisyydelle"
+
+#: includes/admin/tools.php:165
+msgid "Recalculate the sticky relationship of each topic"
+msgstr "Laske kaikkien kiinitettyjen aiheiden suhteet uudelleen"
+
+#: bbpress.php:607
+msgctxt "post"
+msgid "Hidden <span class=\"count\">(%s)</span>"
+msgid_plural "Hidden <span class=\"count\">(%s)</span>"
+msgstr[0] "Piiloitettu <span class=\"count\">(%s)</span>"
+msgstr[1] "Piiloitettuja <span class=\"count\">(%s)</span>"
+
+#: includes/admin/admin.php:872
+msgid "Founding Developer"
+msgstr "Perustaja / Kehittäjä"
+
+#: includes/admin/admin.php:882 includes/admin/admin.php:901
+msgid "Feature Developer"
+msgstr "Kehittäjä"
+
+#: bbpress.php:133 bbpress.php:140
+msgid "Cheatin&#8217; huh?"
+msgstr "Yritätkö huijata?"
+
+#: bbpress.php:404 templates/default/bbpress-functions.php:51
+msgid "bbPress Default"
+msgstr "bbPress vakio"
+
+#: includes/admin/admin.php:233 includes/admin/admin.php:234
+#: includes/admin/admin.php:244 includes/admin/admin.php:245
+#: includes/admin/users.php:82 includes/common/widgets.php:662
+#: includes/extend/buddypress/loader.php:42
+#: includes/extend/buddypress/loader.php:175
+#: includes/extend/buddypress/loader.php:261
+#: includes/extend/buddypress/loader.php:312 includes/forums/template.php:47
+#: includes/forums/template.php:48
+#: templates/default/bbpress/content-statistics.php:22
+msgid "Forums"
+msgstr "Foorumit"
+
+#: includes/admin/forums.php:409 includes/admin/metaboxes.php:50
+#: includes/admin/metaboxes.php:380 includes/admin/metaboxes.php:434
+#: includes/admin/replies.php:570 includes/admin/settings.php:293
+#: includes/admin/topics.php:633 includes/extend/buddypress/groups.php:52
+#: includes/extend/buddypress/groups.php:53 includes/forums/template.php:49
+#: templates/default/bbpress/loop-forums.php:19
+msgid "Forum"
+msgstr "Foorumi"
+
+#: bbpress.php:484
+msgid "bbPress Forums"
+msgstr "bbPress foorumit"
+
+#: includes/admin/forums.php:410 includes/admin/settings.php:222
+#: includes/admin/settings.php:243 includes/admin/topics.php:632
+#: includes/extend/buddypress/activity.php:354
+#: includes/forums/template.php:2601 includes/topics/template.php:47
+#: includes/topics/template.php:48
+#: templates/default/bbpress/content-statistics.php:27
+#: templates/default/bbpress/loop-forums.php:20
+msgid "Topics"
+msgstr "Aiheet"
+
+#: includes/admin/metaboxes.php:67 includes/admin/metaboxes.php:458
+#: includes/admin/replies.php:571 includes/admin/settings.php:301
+#: includes/topics/template.php:49
+#: templates/default/bbpress/content-single-topic-lead.php:22
+#: templates/default/bbpress/content-single-topic-lead.php:94
+#: templates/default/bbpress/loop-topics.php:19
+msgid "Topic"
+msgid_plural "Topics"
+msgstr[0] "Aihe"
+msgstr[1] ""
+
+#: includes/admin/metaboxes.php:379 includes/admin/metaboxes.php:433
+#: includes/extend/buddypress/groups.php:1042 includes/topics/template.php:61
+#: templates/default/bbpress/form-topic.php:114
+msgid "Forum:"
+msgstr "Foorumi:"
+
+#: bbpress.php:509
+msgid "bbPress Topics"
+msgstr "bbPress aiheet"
+
+#: includes/admin/forums.php:411 includes/admin/settings.php:230
+#: includes/admin/settings.php:251 includes/admin/topics.php:634
+#: includes/core/theme-compat.php:646
+#: includes/extend/buddypress/activity.php:355
+#: includes/forums/template.php:2665 includes/replies/template.php:47
+#: includes/replies/template.php:48
+#: templates/default/bbpress/content-statistics.php:32
+#: templates/default/bbpress/loop-forums.php:21
+#: templates/default/bbpress/loop-replies.php:32
+#: templates/default/bbpress/loop-replies.php:70
+#: templates/default/bbpress/loop-topics.php:21
+msgid "Replies"
+msgstr "Vastauksia"
+
+#: includes/admin/metaboxes.php:84 includes/admin/settings.php:325
+#: includes/replies/template.php:49 includes/replies/template.php:1621
+#: includes/topics/template.php:2921
+msgid "Reply"
+msgid_plural "Replies"
+msgstr[0] "Vastaa"
+msgstr[1] ""
+
+#: includes/admin/metaboxes.php:457 includes/replies/template.php:61
+msgid "Topic:"
+msgstr "Aihe:"
+
+#: bbpress.php:570
+msgctxt "post"
+msgid "Closed <span class=\"count\">(%s)</span>"
+msgid_plural "Closed <span class=\"count\">(%s)</span>"
+msgstr[0] "Suljettu <span class=\"count\">(%s)</span>"
+msgstr[1] "Suljetut <span class=\"count\">(%s)</span>"
+
+#: bbpress.php:580
+msgctxt "post"
+msgid "Spam"
+msgstr "Roskaviesti"
+
+#: bbpress.php:581
+msgctxt "post"
+msgid "Spam <span class=\"count\">(%s)</span>"
+msgid_plural "Spam <span class=\"count\">(%s)</span>"
+msgstr[0] "Roskaviesti <span class=\"count\">(%s)</span>"
+msgstr[1] "Roskaviestit <span class=\"count\">(%s)</span>"
+
+#: includes/admin/metaboxes.php:103 includes/admin/settings.php:309
+#: includes/topics/template.php:3367
+msgid "Topic Tag"
+msgid_plural "Topic Tags"
+msgstr[0] "Aiheen asiasana"
+msgstr[1] ""
+
+#: bbpress.php:689
+msgid "Topics with no replies"
+msgstr "Aiheet ilman vastauksia"
+
+#: includes/admin/admin.php:198 includes/admin/functions.php:273
+#: includes/admin/tools.php:34
+msgid "Repair Forums"
+msgstr "Korjaa foorumeita"
+
+#: includes/admin/admin.php:199
+msgid "Forum Repair"
+msgstr "Foorumin korjaus"
+
+#: includes/admin/admin.php:208 includes/admin/functions.php:277
+#: includes/admin/settings.php:1509
+msgid "Import Forums"
+msgstr "Tuo foorumeita"
+
+#: includes/admin/admin.php:209
+msgid "Forum Import"
+msgstr "Foorumin tuominen"
+
+#: includes/admin/admin.php:219
+msgid "Forum Reset"
+msgstr "Foorumin nollaus"
+
+#: includes/admin/admin.php:280 includes/admin/admin.php:281
+#: includes/admin/admin.php:302 includes/admin/admin.php:303
+#: includes/admin/admin.php:1010 includes/admin/admin.php:1097
+msgid "Update Forums"
+msgstr "Päivitä foorumeita"
+
+#: includes/admin/admin.php:515
+msgid "About"
+msgstr "Tietoja"
+
+#: includes/admin/admin.php:530
+msgid "Right Now in Forums"
+msgstr "Juuri nyt foorumeilla"
+
+#: includes/admin/admin.php:854
+msgid "Thank you for updating! bbPress %s is waxed, polished, and ready for you to take it for a lap or two around the block!"
+msgstr "Kiitos kun päivitit! bbPress %s on vahattu, kiillotettu ja valmiina korttelikierrokselle jos toisellekin!"
+
+#: includes/admin/admin.php:782 includes/admin/admin.php:859
+msgid "What&#8217;s New"
+msgstr "Mitä uutta?"
+
+#: includes/admin/admin.php:784 includes/admin/admin.php:861
+msgid "Credits"
+msgstr "Kiitokset"
+
+#: includes/admin/settings.php:166 includes/admin/settings.php:333
+#: includes/common/template.php:2330 includes/search/template.php:225
+#: templates/default/bbpress/form-search.php:17
+msgid "Search"
+msgstr "Haku"
+
+#: includes/admin/admin.php:832 includes/admin/admin.php:936
+msgid "Go to Forum Settings"
+msgstr "Siirry foorumin asetuksiin"
+
+#: includes/admin/admin.php:877
+msgid "Lead Developer"
+msgstr "Johtava kehittäjä"
+
+#: includes/admin/admin.php:891
+msgid "Contributing Developers"
+msgstr "Kontribuuttorit"
+
+#: includes/admin/admin.php:962 includes/admin/admin.php:984
+msgid "Update Forum"
+msgstr "Päivitä foorumi"
+
+#: includes/admin/admin.php:983
+msgid "You can update your forum through this page. Hit the link below to update."
+msgstr "Voit päivittää foorumisi tällä sivulla. Paina alla olevaa linkkiä aloittaaksesi päivityksen."
+
+#: includes/admin/admin.php:1053
+msgid "Warning! Problem updating %1$s. Your server may not be able to connect to sites running on it. Error message: <em>%2$s</em>"
+msgstr "Varoitus! Foorumin %1$s päivittämisessä ilmeni ongelma. Palvelimesi ei välttämättä saa yhteyttä sillä oleviin sivustoihin. Virheilmoitus: <em>%2$s</em>"
+
+#: includes/admin/admin.php:1077
+msgid "If your browser doesn&#8217;t start loading the next page automatically, click this link:"
+msgstr "Jos selaimesi ei lataa sivua automaattisesti uudelleen, klikkaa tätä linkkiä:"
+
+#: includes/admin/admin.php:1078
+msgid "Next Forums"
+msgstr "Seuraavat foorumit"
+
+#: includes/admin/converter.php:91
+msgid "Database Server"
+msgstr "Tietokantapalvelin"
+
+#: includes/admin/converter.php:103
+msgid "Database User"
+msgstr "Tietokannan käyttäjänimi"
+
+#: includes/admin/converter.php:111
+msgid "Table Prefix"
+msgstr "Taulukon etuliite"
+
+#: includes/admin/converter.php:115
+msgid "Options"
+msgstr "Valinnat"
+
+#: includes/admin/converter.php:118
+msgid "Rows Limit"
+msgstr "Rivien maksimimäärä"
+
+#: includes/admin/converter.php:122
+msgid "Delay Time"
+msgstr "Ajastus"
+
+#: includes/admin/converter.php:126
+msgid "Convert Users"
+msgstr "Muunna käyttäjiä"
+
+#: includes/admin/converter.php:223
+msgid "Starting Conversion"
+msgstr "Aloitetaan keskustelua"
+
+#: includes/admin/converter.php:347
+msgid "No data to clean"
+msgstr "Ei puhdistettavia tietoja"
+
+#: includes/admin/converter.php:351
+msgid "Deleting previously converted data (%1$s - %2$s)"
+msgstr "Poistetaan aiemmin muunnettuja tietoja (%1$s - %2$s)"
+
+#: includes/admin/converter.php:367
+msgid "No users to convert"
+msgstr "Ei muunnettavia käyttäjiä"
+
+#: includes/admin/converter.php:387
+msgid "No passwords to clear"
+msgstr "Ei tyhjennettäviä salasanoja"
+
+#: includes/admin/converter.php:406
+msgid "No forums to convert"
+msgstr "Ei muunnettavia foorumeita"
+
+#: includes/admin/converter.php:410
+msgid "Converting forums (%1$s - %2$s)"
+msgstr "Muunnetaan foorumeita (%1$s - %2$s)"
+
+#: includes/admin/converter.php:421
+msgid "No forum parents to convert"
+msgstr "Ei muunnettavia ylätason foorumeita"
+
+#: includes/admin/converter.php:436
+msgid "No topics to convert"
+msgstr "Ei muunnettavia aiheita"
+
+#: includes/admin/converter.php:440
+msgid "Converting topics (%1$s - %2$s)"
+msgstr "Muunnetaan aiheita (%1$s - %2$s)"
+
+#: includes/admin/converter.php:481
+msgid "No tags to convert"
+msgstr "Ei muunnettavia asiasanoja"
+
+#: includes/admin/converter.php:485
+msgid "Converting topic tags (%1$s - %2$s)"
+msgstr "Muunnetaan asiasanoja (%1$s - %2$s)"
+
+#: includes/admin/converter.php:496
+msgid "No replies to convert"
+msgstr "Ei muunnettavia vastauksia"
+
+#: includes/admin/converters/AEF.php:688
+#: includes/admin/converters/FluxBB.php:643
+#: includes/admin/converters/Invision.php:525
+#: includes/admin/converters/Kunena1.php:543
+#: includes/admin/converters/Kunena2.php:585
+#: includes/admin/converters/Kunena3.php:812
+#: includes/admin/converters/PHPFox3.php:649
+#: includes/admin/converters/PunBB.php:677
+#: includes/admin/converters/SMF.php:656
+#: includes/admin/converters/SimplePress5.php:537
+#: includes/admin/converters/Vanilla.php:535
+#: includes/admin/converters/XMB.php:705
+#: includes/admin/converters/XenForo.php:722
+#: includes/admin/converters/bbPress1.php:636
+#: includes/admin/converters/phpBB.php:816
+#: includes/admin/converters/vBulletin.php:652
+#: includes/admin/converters/vBulletin3.php:652
+msgid "Re: "
+msgstr "Vs: "
+
+#: includes/admin/forums.php:121 includes/admin/replies.php:132
+#: includes/admin/settings.php:1549 includes/admin/topics.php:132
+msgid "Overview"
+msgstr "Yleiskatsaus"
+
+#: includes/admin/forums.php:123
+msgid "This screen displays the individual forums on your site. You can customize the display of this screen to suit your workflow."
+msgstr "Tässä näkymässä näet sivustosi yksittäiset foorumit. Voit muokata näkymää omien tarpeidesi mukaan."
+
+#: includes/admin/forums.php:129 includes/admin/replies.php:140
+#: includes/admin/topics.php:140
+msgid "Screen Content"
+msgstr "Näytön sisältö"
+
+#: includes/admin/forums.php:131 includes/admin/replies.php:142
+#: includes/admin/topics.php:142
+msgid "You can customize the display of this screen&#8217;s contents in a number of ways:"
+msgstr "Voit mukauttaa tämän sivun ulkoasua usealla tavalla:"
+
+#: includes/admin/forums.php:133
+msgid "You can hide/display columns based on your needs and decide how many forums to list per screen using the Screen Options tab."
+msgstr "Voit näyttää/piilottaa sarakkeita tarpeittesi mukaan ja valita Näyttöasetukset-valikosta montako foorumia sivulla näytetään."
+
+#: includes/admin/forums.php:134
+msgid "You can filter the list of forums by forum status using the text links in the upper left to show All, Published, or Trashed forums. The default view is to show all forums."
+msgstr "Voit suodattaa foorumeita käyttämällä vasemmassa yläreunassa olevia linkkejä: kaikki, julkaistu, luonnos tai roskakorissa. Oletuksena kaikki foorumit näytetään."
+
+#: includes/admin/forums.php:135
+msgid "You can refine the list to show only forums from a specific month by using the dropdown menus above the forums list. Click the Filter button after making your selection. You also can refine the list by clicking on the forum creator in the forums list."
+msgstr "Voit suodattaa listausta näyttämään foorumit vain tietystä kategoriasta tai kuukauden perusteella yläreunassa sijaitsevien alasvetovalikoiden avulla. Klikkaa suodata-nappia tehtyäsi valinnat.  Voit myös suodattaa foorumeita klikkaamalla foorumin kirjoittaja-, kategoria- tai avainsanat-linkkejä."
+
+#: includes/admin/forums.php:142 includes/admin/replies.php:154
+#: includes/admin/topics.php:153
+msgid "Available Actions"
+msgstr "Käytettävissä olevat toiminnot"
+
+#: includes/admin/forums.php:144
+msgid "Hovering over a row in the forums list will display action links that allow you to manage your forum. You can perform the following actions:"
+msgstr "Osoittimen vieminen foorumilistan rivin päälle paljastaa toimintoja foorumien hallinnoimiseksi. Voit suorittaa seuraavat toiminnot:"
+
+#: includes/admin/forums.php:146
+msgid "<strong>Edit</strong> takes you to the editing screen for that forum. You can also reach that screen by clicking on the forum title."
+msgstr "<strong>Muokkaa</strong> avaa muokkausnäkymän kyseiselle foorumille. Pääset samaan näkymään klikkaamalla foorumin otsikkoa."
+
+#: includes/admin/forums.php:147
+msgid "<strong>Trash</strong> removes your forum from this list and places it in the trash, from which you can permanently delete it."
+msgstr "<strong>Siirrä roskakoriin</strong> siirtää foorumin tästä listasta roskakoriin, josta voit poistaa sen pysyvästi."
+
+#: includes/admin/forums.php:148
+msgid "<strong>View</strong> will show you what your draft forum will look like if you publish it. View will take you to your live site to view the forum. Which link is available depends on your forum&#8217;s status."
+msgstr "<strong>Esikatsele</strong> näyttää miltä foorumiluonnos näyttäisi julkaistuna. Näytä näyttää julkaistun foorumin. Foorumin tilasta riippuu, kumpi linkki on näkyvissä."
+
+#: includes/admin/forums.php:157
+msgid "You can also edit or move multiple forums to the trash at once. Select the forums you want to act on using the checkboxes, then select the action you want to take from the Bulk Actions menu and click Apply."
+msgstr "Voit muokata tai siirtää useita foorumeita kerralla roskakoriin. Valitse ensin foorumit ruksaamalla haluamasi valintalaatikot, valitse sitten toiminto massatoiminnot-valikosta ja paina Hyväksy."
+
+#: includes/admin/forums.php:158
+msgid "When using Bulk Edit, you can change the metadata (categories, author, etc.) for all selected forums at once. To remove a forum from the grouping, just click the x next to its name in the Bulk Edit area that appears."
+msgstr "Massatoiminnolla voi muokata kerralla kaikkien valittujen foorumeiden metatietoja (kategoriat, kirjoittaja jne.). Foorumin voi poistaa ryhmästä painamalla x foorumin nimen vieressä, kun massamuokkaus-alue näkyy."
+
+#: includes/admin/forums.php:163 includes/admin/forums.php:222
+#: includes/admin/replies.php:177 includes/admin/replies.php:234
+#: includes/admin/settings.php:1595 includes/admin/topics.php:178
+#: includes/admin/topics.php:234
+msgid "For more information:"
+msgstr "Lisää tietoa:"
+
+#: includes/admin/forums.php:164 includes/admin/forums.php:223
+#: includes/admin/replies.php:178 includes/admin/replies.php:235
+#: includes/admin/settings.php:1596 includes/admin/topics.php:179
+#: includes/admin/topics.php:235
+msgid "<a href=\"http://codex.bbpress.org\" target=\"_blank\">bbPress Documentation</a>"
+msgstr "<a href=\"http://codex.bbpress.org\" target=\"_blank\">bbPress:in dokumentaatio</a>"
+
+#: includes/admin/forums.php:165 includes/admin/forums.php:224
+#: includes/admin/replies.php:179 includes/admin/replies.php:236
+#: includes/admin/settings.php:1597 includes/admin/topics.php:180
+#: includes/admin/topics.php:236
+msgid "<a href=\"http://bbpress.org/forums/\" target=\"_blank\">bbPress Support Forums</a>"
+msgstr "<a href=\"http://bbpress.org/forums/\" target=\"_blank\">bbPressin tukifoorumit</a>"
+
+#: includes/admin/forums.php:179
+msgid "The title field and the big forum editing Area are fixed in place, but you can reposition all the other boxes using drag and drop, and can minimize or expand them by clicking the title bar of each box. Use the Screen Options tab to unhide more boxes (Excerpt, Send Trackbacks, Custom Fields, Discussion, Slug, Author) or to choose a 1- or 2-column layout for this screen."
+msgstr "Otsikon ja ison tekstikentän sijainnit ovat kiinteät, mutta kaikkia muita osioita voi siirrellä raahaamalla niitä. Osioita voi myös pienentää ja suurentaa painamalla osion otsikkokenttää. Näyttöasetukset-välilehdeltä voi piilottaa osioita (ote, lähetä paluuviitteet, avainkentät, keskustelu, polkutunnus, kirjoittaja) tai valita yksi- tai kaksi-sarakkeisen ulkoasun."
+
+#: includes/admin/forums.php:183 includes/admin/replies.php:197
+#: includes/admin/topics.php:198
+msgid "Customizing This Display"
+msgstr "Näkymän muokkaus"
+
+#: includes/admin/forums.php:191
+msgid "<strong>Title</strong> - Enter a title for your forum. After you enter a title, you&#8217;ll see the permalink below, which you can edit."
+msgstr "<strong>Otsikko</strong> - anna foorumillesi otsikko. Kun olet syöttänyt otsikon, näet alla kestolinkin, jota voit muokata."
+
+#: includes/admin/forums.php:192
+msgid "<strong>Forum Editor</strong> - Enter the text for your forum. There are two modes of editing: Visual and HTML. Choose the mode by clicking on the appropriate tab. Visual mode gives you a WYSIWYG editor. Click the last icon in the row to get a second row of controls. The HTML mode allows you to enter raw HTML along with your forum text. You can insert media files by clicking the icons above the forum editor and following the directions. You can go to the distraction-free writing screen via the Fullscreen icon in Visual mode (second to last in the top row) or the Fullscreen button in HTML mode (last in the row). Once there, you can make buttons visible by hovering over the top area. Exit Fullscreen back to the regular forum editor."
+msgstr "<strong>Foorumin muokkain</strong> - syötä foorumin teksti. Muokkauksessa on kaksi tilaa: graafinen ja HTML. Valitse tila painamalla haluamaasi välilehteä. Graafinen tila antaa WYSIWYG-editorin. Klikkaa ensimmäisen rivin viimeistä painiketta nähdäksesi toisen painikerivin. HTML-tilassa voit syöttää raakaa HTML-koodia foorumin tekstin sekaan. Voit lisätä mediatiedostoja klikkaamalla foorumin muokkaimen yläpuolella olevia ikoneita ja seuraamalla ohjeita. Voit siirtyä häiriöttömään kirjoitustilaan klikkaamalla koko näyttö -ikonia graafisessa tilassa (toiseksi viimeinen ylärivissä) tai koko näyttö -painiketta HTML-tilassa (rivin viimeinen). Tässä tilassa saat painikkeet näkymään viemällä hiiren yläosan päälle. Poistu koko näytön tilasta palataksesi normaaliin foorumin muokkaimeen."
+
+#: includes/admin/forums.php:195
+msgid "<strong>Publish</strong> - You can set the terms of publishing your forum in the Publish box. For Status, Visibility, and Publish (immediately), click on the Edit link to reveal more options. Visibility includes options for password-protecting a forum or making it stay at the top of your blog indefinitely (sticky). Publish (immediately) allows you to set a future or past date and time, so you can schedule a forum to be published in the future or backdate a forum."
+msgstr "<strong>Julkaise</strong> - voit valita foorumisi julkaisemisen ehdot Julkaise-laatikossa. Tila-, Näkyvyys- tai Julkaise heti -valinnan muokkaamiseksi klikkaa Muokkaa-linkkiä saadaksesi lisävalintoja. Näkyvyys sisältää asetuksia foorumin suojaamiseksi salasanalla tai voidaksesi tehdä siitä foorumin, joka pysyy aina blogisi etusivun yläosassa. Julkaise heti antaa sinun valita tulevan tai mennen julkaisuajankohdan, joten voit valita foorumin tulevan julkaisuajankohdan tai antaa sille menneen päivämäärän."
+
+#: includes/admin/forums.php:198
+msgid "<strong>Featured Image</strong> - This allows you to associate an image with your forum without inserting it. This is usually useful only if your theme makes use of the featured image as a forum thumbnail on the home page, a custom header, etc."
+msgstr "<strong>Foorumikuva</strong> - tämä antaa sinun liittää kuvan foorumiisi ilman että lisäät sen tekstin sekaan. Tämä on hyödyllistä yleensä vain silloin, jos teemasi käyttää foorumikuvia foorumin esikatselukuvana etusivulla, mukautettua sivun yläosaa, tms."
+
+#: includes/admin/forums.php:203 includes/admin/forums.php:243
+msgid "Forum Attributes"
+msgstr "Foorumin määreet"
+
+#: includes/admin/forums.php:205
+msgid "Select the attributes that your forum should have:"
+msgstr "Valitse ne määreet, jotka foorumillasi tulisi olla:"
+
+#: includes/admin/forums.php:207
+msgid "<strong>Type</strong> indicates if the forum is a category or forum. Categories generally contain other forums."
+msgstr "<strong>Tyyppi</strong> kertoo, onko foorumisi kategoria vai foorumi. Kategorioihin sisältyy yleensä muita foorumeita."
+
+#: includes/admin/forums.php:208
+msgid "<strong>Status</strong> allows you to close a forum to new topics and forums."
+msgstr "<strong>Tila</strong> sallii foorumin sulkemisen uusilta aiheilta ja foorumeilta."
+
+#: includes/admin/forums.php:209
+msgid "<strong>Visibility</strong> lets you pick the scope of each forum and what users are allowed to access it."
+msgstr "<strong>Näkyvyys</strong> antaa sinun valita kunkin foorumin laajuuden ja mitkä käyttäjät pääsevät sinne."
+
+#: includes/admin/forums.php:210
+msgid "<strong>Parent</strong> dropdown determines the parent forum. Select the forum or category from the dropdown, or leave the default (No Parent) to create the forum at the root of your forums."
+msgstr "<strong>Ylätaso</strong>-alasvetovalikko määrittää ylätason foorumin. Valitse haluamasi foorumi tai kategoria valikosta, tai jos haluat luoda foorumin foorumijuureen, jätä oletusasetus (Ei ylätasoa)."
+
+#: includes/admin/forums.php:211
+msgid "<strong>Order</strong> allows you to order your forums numerically."
+msgstr "<strong>Järjestys</strong> sallii foorumeiden järjestämisen numerojärjestykseen."
+
+#: includes/admin/forums.php:217 includes/admin/replies.php:229
+#: includes/admin/topics.php:229
+msgid "Publish Box"
+msgstr "Julkaise-laatikko"
+
+#: includes/admin/forums.php:412
+#: templates/default/bbpress/content-single-topic-lead.php:18
+#: templates/default/bbpress/content-single-topic-lead.php:90
+msgid "Creator"
+msgstr "Kirjoittaja"
+
+#: includes/admin/forums.php:463 includes/forums/template.php:601
+msgid "No Topics"
+msgstr "Ei aiheita"
+
+#: includes/admin/forums.php:529
+msgid "Forum updated. <a href=\"%s\">View forum</a>"
+msgstr "Forum päivitettä. <a href=\"%s\">Näytä foorumi</a>"
+
+#: includes/admin/forums.php:532 includes/admin/replies.php:852
+#: includes/admin/topics.php:922
+msgid "Custom field updated."
+msgstr "Lisäkenttä päivitetty"
+
+#: includes/admin/forums.php:535 includes/admin/replies.php:855
+#: includes/admin/topics.php:925
+msgid "Custom field deleted."
+msgstr "Lisäkenttä poistettu"
+
+#: includes/admin/forums.php:538
+msgid "Forum updated."
+msgstr "Foorumi päivitetty."
+
+#. translators: %s: date and time of the revision
+#: includes/admin/forums.php:543
+msgid "Forum restored to revision from %s"
+msgstr "Foorumi palautettu versiosta %s"
+
+#: includes/admin/forums.php:547
+msgid "Forum created. <a href=\"%s\">View forum</a>"
+msgstr "Foorumi luotu. <a href=\"%s\">Näytä foorumi</a>"
+
+#: includes/admin/forums.php:550
+msgid "Forum saved."
+msgstr "Foorumi tallennettu."
+
+#: includes/admin/forums.php:553
+msgid "Forum submitted. <a target=\"_blank\" href=\"%s\">Preview forum</a>"
+msgstr "Foorumi lähetetty. <a target=\"_blank\" href=\"%s\">Esikatsele foorumia</a>"
+
+#: includes/admin/forums.php:556
+msgid "Forum scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview forum</a>"
+msgstr "Foorumi ajastettu: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Esikatsele foorumi</a>"
+
+#: includes/admin/forums.php:563
+msgid "Forum draft updated. <a target=\"_blank\" href=\"%s\">Preview forum</a>"
+msgstr "Foorumiluonnos päivitetty. <a target=\"_blank\" href=\"%s\">Esikatsele foorumia</a>"
+
+#: includes/admin/metaboxes.php:127
+msgid "Users &amp; Moderation"
+msgstr "Käyttäjät ja moderointi"
+
+#: includes/admin/metaboxes.php:135
+msgid "User"
+msgid_plural "Users"
+msgstr[0] "Käyttäjä"
+msgstr[1] "Käyttäjät"
+
+#: includes/admin/metaboxes.php:154
+msgid "Hidden Topic"
+msgid_plural "Hidden Topics"
+msgstr[0] "Piiloitettu aihe"
+msgstr[1] "Piiloitetut aiheet"
+
+#: includes/admin/metaboxes.php:176
+msgid "Hidden Reply"
+msgid_plural "Hidden Replies"
+msgstr[0] "Piiloitettu vastaus"
+msgstr[1] "Piiloitetut vastaukset"
+
+#: includes/admin/metaboxes.php:198
+msgid "Empty Topic Tag"
+msgid_plural "Empty Topic Tags"
+msgstr[0] "Poista aiheen aihesana"
+msgstr[1] "Poista aiheen aihesanat"
+
+#: includes/admin/metaboxes.php:222
+msgid "You are using <span class=\"b\">bbPress %s</span>."
+msgstr "Käytät <span class=\"b\">bbPressiä %s</span>."
+
+#: includes/admin/metaboxes.php:299
+msgid "Parent:"
+msgstr "Ylätaso"
+
+#: includes/admin/metaboxes.php:300
+msgid "Forum Parent"
+msgstr "Ylätason foorumi"
+
+#: includes/admin/metaboxes.php:322
+msgid "Forum Order"
+msgstr "Foorumin järjestys"
+
+#: includes/admin/metaboxes.php:356
+msgid "Topic Type"
+msgstr "Aiheen tyyppi"
+
+#: includes/admin/metaboxes.php:464
+msgid "Reply To"
+msgstr "Vastaa käyttäjälle"
+
+#: includes/admin/metaboxes.php:508
+#: templates/default/bbpress/form-anonymous.php:32
+msgid "Website:"
+msgstr "Verkkosivu:"
+
+#: includes/admin/metaboxes.php:509
+#: templates/default/bbpress/form-user-edit.php:57
+msgid "Website"
+msgstr "Verkkosivu"
+
+#: includes/admin/metaboxes.php:524
+msgid "IP:"
+msgstr "IP:"
+
+#: includes/admin/replies.php:134
+msgid "This screen provides access to all of your replies. You can customize the display of this screen to suit your workflow."
+msgstr "Tässä näkymässä pääset käsiksi kaikkiin vastauksiisi. Voit muokata näkymää omien tarpeidesi mukaan."
+
+#: includes/admin/replies.php:144
+msgid "You can hide/display columns based on your needs and decide how many replies to list per screen using the Screen Options tab."
+msgstr "Voit näyttää/piilottaa sarakkeita tarpeittesi mukaan ja valita Näyttöasetukset-valikosta, montako vastausta sivulla näytetään."
+
+#: includes/admin/replies.php:145
+msgid "You can filter the list of replies by reply status using the text links in the upper left to show All, Published, Draft, or Trashed replies. The default view is to show all replies."
+msgstr "Voit suodattaa vastauksia käyttämällä vasemmassa yläreunassa olevia linkkejä: kaikki, julkaistu, luonnos tai roskakorissa.  Oletuksena kaikki vastaukset näytetään."
+
+#: includes/admin/replies.php:146
+msgid "You can view replies in a simple title list or with an excerpt. Choose the view you prefer by clicking on the icons at the top of the list on the right."
+msgstr "Voit listata vastauksia näyttämällä pelkän otsikon tai otsikon ja lyhennelmän. Valitse haluamasi näkymä oikeassa yläreunassa sijaitsevien kuvakkeiden avulla."
+
+#: includes/admin/replies.php:147
+msgid "You can refine the list to show only replies in a specific category or from a specific month by using the dropdown menus above the replies list. Click the Filter button after making your selection. You also can refine the list by clicking on the reply author, category or tag in the replies list."
+msgstr "Voit suodattaa listausta näyttämään vastaukset vain tietystä kategoriasta tai kuukauden perusteella yläreunassa sijaitsevien alasvetovalikoiden avulla. Klikkaa suodata-nappia tehtyäsi valinnat. Voit myös suodattaa vastauksia klikkaamalla vastauksen kirjoittaja-, kategoria- tai avainsanat-linkkejä."
+
+#: includes/admin/replies.php:156
+msgid "Hovering over a row in the replies list will display action links that allow you to manage your reply. You can perform the following actions:"
+msgstr "Osoittimen vieminen vastauslistan rivin päälle paljastaa toimintoja vastauksien hallinnoimiseksi. Voit suorittaa seuraavat toiminnot:"
+
+#: includes/admin/replies.php:158
+msgid "<strong>Edit</strong> takes you to the editing screen for that reply. You can also reach that screen by clicking on the reply title."
+msgstr "<strong>Muokkaa</strong> avaa muokkausnäkymän kyseiselle vastaukselle. Pääset samaan näkymään klikkaamalla vastauksen otsikkoa. "
+
+#: includes/admin/replies.php:160
+msgid "<strong>Trash</strong> removes your reply from this list and places it in the trash, from which you can permanently delete it."
+msgstr "<strong>Siirrä roskakoriin</strong> siirtää vastauksen tästä listasta roskakoriin, josta voit poistaa sen pysyvästi."
+
+#: includes/admin/replies.php:161
+msgid "<strong>Spam</strong> removes your reply from this list and places it in the spam queue, from which you can permanently delete it."
+msgstr "<strong>Roskaviesti</strong> siirtää vastauksen tästä listasta roskaviestijonoon, josta voit poistaa sen pysyvästi."
+
+#: includes/admin/replies.php:162
+msgid "<strong>Preview</strong> will show you what your draft reply will look like if you publish it. View will take you to your live site to view the reply. Which link is available depends on your reply&#8217;s status."
+msgstr "<strong>Esikatsele</strong> näyttää miltä vastausuonnos näyttäisi julkaistuna. Näytä näyttää julkaistun vastauksen. Vastauksen tilasta riippuu, kumpi linkki on näkyvissä."
+
+#: includes/admin/replies.php:171
+msgid "You can also edit or move multiple replies to the trash at once. Select the replies you want to act on using the checkboxes, then select the action you want to take from the Bulk Actions menu and click Apply."
+msgstr "Voit muokata tai siirtää useita vastauksia kerralla roskakoriin. Valitse ensin vastaukset ruksaamalla haluamasi valintalaatikot, valitse sitten toiminto massatoiminnot-valikosta ja paina Hyväksy."
+
+#: includes/admin/replies.php:172
+msgid "When using Bulk Edit, you can change the metadata (categories, author, etc.) for all selected replies at once. To remove a reply from the grouping, just click the x next to its name in the Bulk Edit area that appears."
+msgstr "Massatoiminnolla voit muokata kerralla kaikkien valittujen vastausten metatietoja (kategoriat, kirjoittaja jne.). Vastauksen voi poistaa ryhmästä painamalla x vastauksen nimen vieressä kun massamuokkaus-alue näkyy."
+
+#: includes/admin/replies.php:193
+msgid "The title field and the big reply editing Area are fixed in place, but you can reposition all the other boxes using drag and drop, and can minimize or expand them by clicking the title bar of each box. Use the Screen Options tab to unhide more boxes (Excerpt, Send Trackbacks, Custom Fields, Discussion, Slug, Author) or to choose a 1- or 2-column layout for this screen."
+msgstr "Otsikon ja ison tekstikentän sijainnit ovat kiinteät, mutta kaikkia muita osioita voi siirrellä raahaamalla niitä. Osioita voi myös pienentää ja suurentaa painamalla osion otsikkokenttää. Näyttöasetukset-välilehdeltä voi piilottaa osioita (ote, lähetä paluuviitteet, avainkentät, keskustelu, polkutunnus, kirjoittaja) tai valita yksi- tai kaksi-sarakkeisen ulkoasun."
+
+#: includes/admin/replies.php:205
+msgid "<strong>Title</strong> - Enter a title for your reply. After you enter a title, you&#8217;ll see the permalink below, which you can edit."
+msgstr "<strong>Otsikko</strong> - Anna vastauksellesi otsikko. Sen jälkeen näet alla kestolinkin, jota voit muokata."
+
+#: includes/admin/replies.php:206
+msgid "<strong>Reply Editor</strong> - Enter the text for your reply. There are two modes of editing: Visual and HTML. Choose the mode by clicking on the appropriate tab. Visual mode gives you a WYSIWYG editor. Click the last icon in the row to get a second row of controls. The HTML mode allows you to enter raw HTML along with your reply text. You can insert media files by clicking the icons above the reply editor and following the directions. You can go to the distraction-free writing screen via the Fullscreen icon in Visual mode (second to last in the top row) or the Fullscreen button in HTML mode (last in the row). Once there, you can make buttons visible by hovering over the top area. Exit Fullscreen back to the regular reply editor."
+msgstr "<strong>Vastausmuokkain</strong> - Kirjoita vastaus. Muokkauksessa on kaksi tilaa: graafinen ja HTML. Valitse tila painamalla haluamaasi välilehteä. Graafinen tila antaa WYSIWYG-editorin. Klikkaa ensimmäisen rivin viimeistä painiketta nähdäksesi toisen painikerivin. HTML-tilassa voit syöttää raakaa HTML-koodia vastaustekstin sekaan. Voit lisätä mediatiedostoja klikkaamalla vastausmuokkaimen yläpuolella olevia ikoneita ja seuraamalla ohjeita. Voit siirtyä häiriöttömään kirjoitusnäkymään koko näyttö -ikonista graafisessa tilassa (toiseksi viimeinen ylemmässä rivissä) tai koko näyttö -painikkeesta HTML-tilassa (rivin viimeinen). Tässä tilassa saat painikkeet näkyviin viemällä hiiren yläosan päälle. Poistu koko näytön tilasta päästäksesi takaisin vastausmuokkaimeen."
+
+#: includes/admin/replies.php:209
+msgid "<strong>Publish</strong> - You can set the terms of publishing your reply in the Publish box. For Status, Visibility, and Publish (immediately), click on the Edit link to reveal more options. Visibility includes options for password-protecting a reply or making it stay at the top of your blog indefinitely (sticky). Publish (immediately) allows you to set a future or past date and time, so you can schedule a reply to be published in the future or backdate a reply."
+msgstr "<strong>Julkaise</strong> - Voit valita vastauksesi julkaisemisen ehdot Julkaise-laatikossa. Tila-, Näkyvyys- tai Julkaise heti -valinnan muokkaamiseksi klikkaa Muokkaa-linkkiä saadaksesi lisävalintoja. Näkyvyys sisältää asetuksia vastauksen suojaamiseksi salasanalla tai voidaksesi tehdä siitä vastauksen, joka pysyy aina blogisi etusivun yläosassa. Julkaise heti antaa sinun valita tulevan tai mennen julkaisuajankohdan, joten voit valita vastaukseen tulevan julkaisuajankohdan tai antaa sille menneen päivämäärän."
+
+#: includes/admin/replies.php:212
+msgid "<strong>Featured Image</strong> - This allows you to associate an image with your reply without inserting it. This is usually useful only if your theme makes use of the featured image as a reply thumbnail on the home page, a custom header, etc."
+msgstr "<strong>Vastauskuva</strong> - Tämä antaa sinun liittää kuvan vastaukseesi ilman, että lisäät sen tekstin sekaan. Tämä on hyödyllistä yleensä vain silloin, jos teemasi käyttää vastauskuvia vastauksen esikatselukuvana etusivulla, mukautettua sivun yläosaa tms."
+
+#: includes/admin/replies.php:217 includes/admin/replies.php:255
+msgid "Reply Attributes"
+msgstr "Vastausmääreet"
+
+#: includes/admin/replies.php:219
+msgid "Select the attributes that your reply should have:"
+msgstr "Valitse ne määreet, joita vastauksellasi tulisi olla:"
+
+#: includes/admin/replies.php:221
+msgid "<strong>Forum</strong> dropdown determines the parent forum that the reply belongs to. Select the forum, or leave the default (Use Forum of Topic) to post the reply in forum of the topic."
+msgstr "<strong>Foorumi</strong>-alasvetovalikko määrää ylätason foorumin, jonka alle vastaus kuuluu. Valitse foorumi, tai jos haluat lähettää vastauksen aiheen foorumille, käytä oletusta (Käytä aiheen foorumia)."
+
+#: includes/admin/replies.php:222
+msgid "<strong>Topic</strong> determines the parent topic that the reply belongs to."
+msgstr "<strong>Aihe</strong> määrittää ylätason aiheen, johon vastaus kuuluu."
+
+#: includes/admin/replies.php:347 includes/admin/topics.php:363
+#: templates/default/bbpress/form-anonymous.php:17
+msgid "Author Information"
+msgstr "Kirjoittajan tiedot"
+
+#: includes/admin/replies.php:461
+msgid "The reply was not found!"
+msgstr "Vastausta ei löydy!"
+
+#: includes/admin/replies.php:464 includes/admin/topics.php:488
+msgid "You do not have the permission to do that!"
+msgstr "Sinulla ei ole oikeuksia tehdä tätä!"
+
+#: includes/admin/replies.php:532
+msgid "There was a problem marking the reply \"%1$s\" as spam."
+msgstr "Vastauksen \"%1$s\" merkitseminen roskaviestiksi epäonnistui."
+
+#: includes/admin/replies.php:532
+msgid "Reply \"%1$s\" successfully marked as spam."
+msgstr "Vastaus \"%1$s\" merkittiin onnistuneesti roskaviestiksi."
+
+#: includes/admin/replies.php:536
+msgid "There was a problem unmarking the reply \"%1$s\" as spam."
+msgstr "Vastauksen \"%1$s\" poistaminen roskaviesteistä epäonnistui."
+
+#: includes/admin/replies.php:536
+msgid "Reply \"%1$s\" successfully unmarked as spam."
+msgstr "Vastaus \"%1$s\" poistettiin onnistuneesti roskaviesteistä."
+
+#: includes/admin/replies.php:572 includes/admin/topics.php:636
+#: templates/default/bbpress/loop-replies.php:18
+#: templates/default/bbpress/loop-replies.php:60
+#: templates/default/bbpress/loop-search.php:18
+#: templates/default/bbpress/loop-search.php:40
+msgid "Author"
+msgstr "Kirjoittaja"
+
+#: includes/admin/replies.php:625 includes/admin/replies.php:633
+msgid "No Topic"
+msgstr "Ei aihetta"
+
+#: includes/admin/replies.php:651 includes/admin/replies.php:666
+#: includes/admin/topics.php:687
+msgid "No Forum"
+msgstr "Ei foorumia"
+
+#: includes/admin/replies.php:657
+msgid "(Mismatch)"
+msgstr "(Yhteensopimaton)"
+
+#: includes/admin/replies.php:725 includes/admin/topics.php:776
+msgid "View &#8220;%s&#8221;"
+msgstr "Tarkastele &#8220;%s&#8221;"
+
+#: includes/admin/replies.php:736 includes/admin/topics.php:807
+msgid "Not spam"
+msgstr "Ei roskaviesti"
+
+#: includes/admin/replies.php:738 includes/admin/topics.php:809
+#: includes/replies/template.php:2105 includes/topics/template.php:2872
+msgid "Spam"
+msgstr "Roskaviesti"
+
+#: includes/admin/replies.php:749 includes/admin/topics.php:819
+#: includes/replies/template.php:2049 includes/topics/template.php:2630
+msgid "Move this item to the Trash"
+msgstr "Siirrä roskakoriin"
+
+#: includes/admin/replies.php:749 includes/admin/topics.php:819
+#: includes/replies/template.php:2034 includes/topics/template.php:2615
+msgid "Trash"
+msgstr "Roskakori"
+
+#: includes/admin/replies.php:753 includes/admin/topics.php:823
+#: includes/replies/template.php:2053 includes/topics/template.php:2634
+msgid "Delete this item permanently"
+msgstr "Poista tämä pysyvästi"
+
+#: includes/admin/replies.php:789 includes/admin/topics.php:859
+msgid "In all forums"
+msgstr "Kaikissa foorumeissa"
+
+#: includes/admin/replies.php:849
+msgid "Reply updated. <a href=\"%s\">View topic</a>"
+msgstr "Vastaus päivitetty. <a href=\"%s\">Näytä aihe</a>"
+
+#: includes/admin/replies.php:867
+msgid "Reply created. <a href=\"%s\">View topic</a>"
+msgstr "Vastaus luotu. <a href=\"%s\">Katso aihe</a>"
+
+#: includes/admin/replies.php:873
+msgid "Reply submitted. <a target=\"_blank\" href=\"%s\">Preview topic</a>"
+msgstr "Vastaus lähetetty. <a target=\"_blank\" href=\"%s\">Esikatsele</a>"
+
+#: includes/admin/replies.php:876
+msgid "Reply scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview topic</a>"
+msgstr "Vastaus ajastettu ajankohtaan: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Esikatsele</a>"
+
+#: includes/admin/replies.php:883
+msgid "Reply draft updated. <a target=\"_blank\" href=\"%s\">Preview topic</a>"
+msgstr "Vastausluonnos päivitetty. <a target=\"_blank\" href=\"%s\">Esikatsele</a>"
+
+#: includes/admin/settings.php:134 includes/admin/settings.php:1690
+msgid "Revisions"
+msgstr "Korjaukset"
+
+#: includes/admin/settings.php:142 includes/extend/buddypress/loader.php:218
+#: templates/default/bbpress/user-details.php:48
+msgid "Favorites"
+msgstr "suosikeistasi"
+
+#: includes/admin/settings.php:150 includes/extend/buddypress/loader.php:230
+#: templates/default/bbpress/user-details.php:58
+msgid "Subscriptions"
+msgstr "Seurannat"
+
+#: includes/admin/settings.php:209
+msgid "Current Package"
+msgstr "Nykyinen paketti"
+
+#: includes/admin/settings.php:272
+msgid "Forum Prefix"
+msgstr "Foorumin etuliite"
+
+#: includes/admin/settings.php:354 includes/extend/buddypress/loader.php:196
+#: includes/extend/buddypress/loader.php:269
+#: templates/default/bbpress/user-details.php:35
+msgid "Topics Started"
+msgstr "Aloitetut aiheet"
+
+#: includes/admin/settings.php:362 includes/extend/buddypress/loader.php:207
+#: includes/extend/buddypress/loader.php:277
+#: templates/default/bbpress/user-details.php:41
+msgid "Replies Created"
+msgstr "Luotuja vastauksia"
+
+#: includes/admin/settings.php:370 includes/extend/buddypress/loader.php:285
+msgid "Favorite Topics"
+msgstr "Suosituimmat aiheet"
+
+#: includes/admin/settings.php:391
+msgid "Enable Group Forums"
+msgstr "Mahdollista ryhmäfoorumit"
+
+#: includes/admin/settings.php:399
+msgid "Group Forums Parent"
+msgstr "Ryhmäfoorumien ylätason foorumi"
+
+#: includes/admin/settings.php:412
+msgid "Use Akismet"
+msgstr "Käytä Akismetia"
+
+#: includes/admin/settings.php:467 includes/common/functions.php:123
+msgid "minutes"
+msgstr "minuutteja"
+
+#: includes/admin/settings.php:499
+msgid "Allow guest users without accounts to create topics and replies"
+msgstr "Salli vieraiden luoda aiheita ja vastauksia ilman sisäänkirjautumista"
+
+#: includes/admin/settings.php:565
+msgid "Allow users to mark topics as favorites"
+msgstr "Salli käyttäjien merkata aiheita suosikeiksi"
+
+#: includes/admin/settings.php:597
+msgid "Allow topics to have tags"
+msgstr "Salli tagit aiheille"
+
+#: includes/admin/settings.php:669
+msgid "Allow topic and reply revision logging"
+msgstr "Salli aiheiden ja vastausten versioiden lokitus"
+
+#: includes/admin/settings.php:698
+msgid "How your forum content is displayed within your existing theme."
+msgstr "Kuinka foorumisi sisältö näytetään olemassa olevassa teemassa."
+
+#: includes/admin/settings.php:728
+msgid "will serve all bbPress templates"
+msgstr "toimii kaikissa bbPress-pohjissa"
+
+#: includes/admin/settings.php:748
+msgid "Embed media (YouTube, Twitter, Flickr, etc...) directly into topics and replies"
+msgstr "Upota medioita (Youtube, Twitter, Flicker, jne.) suoraan aiheisiin ja vastauksiin"
+
+#: includes/admin/settings.php:763
+msgid "How many topics and replies to show per page"
+msgstr "Montako aihetta ja vastausta näytetään per sivu"
+
+#: includes/admin/settings.php:779 includes/admin/settings.php:795
+#: includes/admin/settings.php:826 includes/admin/settings.php:842
+msgid "per page"
+msgstr "per sivu"
+
+#: includes/admin/settings.php:810
+msgid "How many topics and replies to show per RSS page"
+msgstr "Montako aihetta ja vastausta näytetään per RSS-sivu"
+
+#: includes/admin/settings.php:1161
+msgid "Forum settings for BuddyPress"
+msgstr "Foorumin BuddyPress asetukset"
+
+#: includes/admin/settings.php:1177
+msgid "Allow BuddyPress Groups to have their own forums"
+msgstr "Salli omat foorumit BuddyPress -ryhmille"
+
+#: includes/admin/settings.php:1202
+msgid "is the parent for all group forums"
+msgstr "on ylätason foorumi kaikille ryhmäfoorumeille"
+
+#: includes/admin/settings.php:1203
+msgid "Using the Forum Root is not recommended. Changing this does not move existing forums."
+msgstr "Foorumin juuren käyttämistä ei suositella. Tämän muuttaminen ei siirrä olemassa olevia foorumeita."
+
+#: includes/admin/settings.php:1218
+msgid "Forum settings for Akismet"
+msgstr "Foorumin Akismet asetukset"
+
+#: includes/admin/settings.php:1258
+msgid "Forums Settings"
+msgstr "Foorumin asetukset"
+
+#: includes/admin/settings.php:1286
+msgid "Information about your previous forums database so that they can be converted. <strong>Backup your database before proceeding.</strong>"
+msgstr "Tietoa aiemmista foorumitietokannoista, jotta voit siirtää ne. <strong>Varmuuskopioi tietokanta ennen jatkamista.</strong>"
+
+#: includes/admin/settings.php:1316
+msgid "is the previous forum software"
+msgstr "on aiempi foorumin ohjelmisto"
+
+#: includes/admin/settings.php:1330
+msgid "IP or hostname"
+msgstr "IP-osoite tai verkkotunnus"
+
+#: includes/admin/settings.php:1344
+msgid "Use default 3306 if unsure"
+msgstr "Jos olet epävarma, käytä 3306-oletusta"
+
+#: includes/admin/settings.php:1358
+msgid "User for your database connection"
+msgstr "Käyttäjänimi tietokannan yhteyden saamiseen"
+
+#: includes/admin/settings.php:1372
+msgid "Password to access the database"
+msgstr "Salasana, jolla pääsee tietokantaan"
+
+#: includes/admin/settings.php:1386
+msgid "Name of the database with your old forum data"
+msgstr "Vanhan foorumin tietokannan nimi"
+
+#: includes/admin/settings.php:1399
+msgid "Some optional parameters to help tune the conversion process."
+msgstr "Vaihtoehtoisia valintoja tiedon muuntamisen helpottamiseksi."
+
+#: includes/admin/settings.php:1413
+msgid "(If converting from BuddyPress Forums, use \"wp_bb_\" or your custom prefix)"
+msgstr "(Jos siirryt BuddyPressistä, käytä \"wp_bb_\" tai muokkaamaasi etuliitettä)"
+
+#: includes/admin/settings.php:1427
+msgid "rows to process at a time"
+msgstr "kerralla käsiteltävät rivit"
+
+#: includes/admin/settings.php:1428
+msgid "Keep this low if you experience out-of-memory issues."
+msgstr "Pidä tämä alhaalla, jos muisti ei tahdo riittää."
+
+#: includes/admin/settings.php:1443
+msgid "Keep this high to prevent too-many-connection issues."
+msgstr "Pidä tämä korkeana, jotta estät turhat yhteysongelmat."
+
+#: includes/admin/settings.php:1457
+msgid "Start a fresh conversion from the beginning"
+msgstr "Aloita puhdas keskustelu"
+
+#: includes/admin/settings.php:1458
+msgid "You should clean old conversion information before starting over."
+msgstr "Sinun pitää poistaa vanhat keskustelutiedot ennen kuin voit aloittaa uuden keskustelun."
+
+#: includes/admin/settings.php:1472
+msgid "Purge all information from a previously attempted import"
+msgstr "Tyhjennä kaikki tiedot aikasemmasta tuontiyrityksestä"
+
+#: includes/admin/settings.php:1473
+msgid "Use this if an import failed and you want to remove that incomplete data."
+msgstr "Käytä tätä jos tietojen tuominen epäonnistui ja haluat poistaa keskeneräiset tiedot."
+
+#: includes/admin/settings.php:1487
+msgid "Attempt to import user accounts from previous forums"
+msgstr "Kokeile tuoda käyttäjien tilit toisesta foorumista"
+
+#: includes/admin/settings.php:1488
+msgid "Non-bbPress passwords cannot be automatically converted. They will be converted as each user logs in."
+msgstr "Ei-bbPres-salasanoja ei voida muuttaa automaattisesti. Ne muutetaan sitä mukaa, kun kukin käyttäjä kirjautuu sisään."
+
+#: includes/admin/settings.php:1551
+msgid "Please see the additional help tabs for more information on each indiviual section."
+msgstr "Katso lisäapuvälilehdet, jos haluat lisätietoja yksittäisistä osioista."
+
+#: includes/admin/settings.php:1557
+msgid "Main Settings"
+msgstr "Yleiset asetukset"
+
+#: includes/admin/settings.php:1558
+msgid "In the Main Settings you have a number of options:"
+msgstr "Pääasestuksissa sinulla on useita vaihtoehtoja:"
+
+#: includes/admin/settings.php:1561
+msgid "You can choose to lock a post after a certain number of minutes. \"Locking post editing\" will prevent the author from editing some amount of time after saving a post."
+msgstr "Halutessasi voit lukita kirjoituksen tietyn minuuttimäärän jälkeen. \"Lukitaan kirjoituksen muokkaus\" estää kirjoittajaa muokkaamasta kirjoitusta jonkin aikaa kirjoituksen tallentamisen jälkeen."
+
+#: includes/admin/settings.php:1563
+msgid "Favorites are a way for users to save and later return to topics they favor. This is enabled by default."
+msgstr "Suosikkien avulla käyttäjät voivat tallentaa kiinnostavia aiheita ja palata niihin myöhemmin. Tämä asetus on oletuksena käytössä."
+
+#: includes/admin/settings.php:1564
+msgid "Subscriptions allow users to subscribe for notifications to topics that interest them. This is enabled by default."
+msgstr "Seurannan avulla käyttäjät voivat tilata ilmoituksia heitä kiinnostavista aiheista. Tämä asetus on oletuksena käytössä."
+
+#: includes/admin/settings.php:1566
+msgid "\"Anonymous Posting\" allows guest users who do not have accounts on your site to both create topics as well as replies."
+msgstr "\"Anonyymi postaus\" sallii vieraiden luoda uusia aiheita ja vastata olemassa oleviin aiheisiin ilman kirjautumista."
+
+#: includes/admin/settings.php:1568
+msgid "Auto-embed will embed the media content from a URL directly into the replies. For example: links to Flickr and YouTube."
+msgstr "Automaattiupotus upottaa mediasisällön verkko-osoitteesta suoraan vastaukseen. Esimerkiksi Flickr- ja YouTube-linkit."
+
+#: includes/admin/settings.php:1571
+msgid "You must click the Save Changes button at the bottom of the screen for new settings to take effect."
+msgstr "Paina Tallenna muutokset -nappia sivun alalaidassa, jotta uudet asetukset otetaan käyttöön."
+
+#: includes/admin/settings.php:1577
+msgid "Per Page"
+msgstr "Per sivu"
+
+#: includes/admin/settings.php:1578
+msgid "Per Page settings allow you to control the number of topics and replies appear on each page."
+msgstr "Per sivu -asetuksella voit hallita kullakin sivulla näytettävien aiheiden ja vastausten määrää."
+
+#: includes/admin/settings.php:1579
+msgid "This is comparable to the WordPress \"Reading Settings\" page, where you can set the number of posts that should show on blog pages and in feeds."
+msgstr "Tämä on vastaava kuin WordPressin \"Lukuasetukset\"-sivu, jossa voit määrätä blogisivuilla ja syötteissä näytettävien kirjoitusten määrää."
+
+#: includes/admin/settings.php:1580
+msgid "These are broken up into two separate groups: one for what appears in your theme, another for RSS feeds."
+msgstr "Nämä ovat jaettu kahteen eri ryhmään: yksi näkyy teemassa ja toinen RSS-syötteissä."
+
+#: includes/admin/settings.php:1586
+msgid "Slugs"
+msgstr "Polkutunnukset"
+
+#: includes/admin/settings.php:1587
+msgid "The Slugs section allows you to control the permalink structure for your forums."
+msgstr "Polkutunnukset-osiossa voit hallita foorumeidesi kestolinkkien rakennetta."
+
+#: includes/admin/settings.php:1588
+msgid "\"Archive Slugs\" are used as the \"root\" for your forums and topics. If you combine these values with existing page slugs, bbPress will attempt to output the most correct title and content."
+msgstr "\"Arkisto-polkutunnuksia\" käytetään foorumeidesi ja aiheidesi \"juurena\". Jos yhdistät näitä arvoja olemassa oleviin polkutunnuksiin, bbPress pyrkii tuottamaan mahdollisimman oikean otsikon ja sisällön."
+
+#: includes/admin/settings.php:1589
+msgid "\"Single Slugs\" are used as a prefix when viewing an individual forum, topic, reply, user, or view."
+msgstr "\"Yksittäisiä polkutunnuksia\" käytetään etuliitteenä, kun tarkastelet yksittäistä foorumia, aihetta, vastausta, käyttäjää tai näkymää."
+
+#: includes/admin/settings.php:1590
+msgid "In the event of a slug collision with WordPress or BuddyPress, a warning will appear next to the problem slug(s)."
+msgstr "Polkutunnuksien viereen ilmeistyy virheilmoitus tilanteissa, joissa ne ovat ristiriidassa joko WordPressin tai BuddyPressin kanssa."
+
+#: includes/admin/settings.php:1691
+msgid "Attachments"
+msgstr "Liitteet"
+
+#: includes/admin/settings.php:1695
+msgid "Tag base"
+msgstr "Asiasanojen peruskansio"
+
+#: includes/admin/settings.php:1698
+msgid "Category base"
+msgstr "Kategorioiden peruskansio"
+
+#: includes/admin/settings.php:1703
+msgid "Forums base"
+msgstr "Foorumipohja"
+
+#: includes/admin/settings.php:1706
+msgid "Topics base"
+msgstr "Aihepohja"
+
+#: includes/admin/settings.php:1709
+msgid "Forum slug"
+msgstr "Foorumin polku"
+
+#: includes/admin/settings.php:1712
+msgid "Topic slug"
+msgstr "Aiheen polkutunnus"
+
+#: includes/admin/settings.php:1715
+msgid "Reply slug"
+msgstr "Vastauksen polkutunnus"
+
+#: includes/admin/settings.php:1718
+msgid "User base"
+msgstr "Käyttäjäpohja"
+
+#: includes/admin/settings.php:1721
+msgid "View base"
+msgstr "Katselupohja"
+
+#: includes/admin/settings.php:1724
+msgid "Topic tag slug"
+msgstr "Aiheen asiasanan polkutunnus"
+
+#: includes/admin/tools.php:36
+msgid "bbPress keeps track of relationships between forums, topics, replies, and topic tags, and users. Occasionally these relationships become out of sync, most often after an import or migration. Use the tools below to manually recalculate these relationships."
+msgstr "bbPress pitää kirjaa foorumeiden, aiheiden, vastausten, aiheiden asiasanojen ja käyttäjien välisistä suhteista. Toisinaan nämä suhteet eivät ole ajantasalla, useimmiten tuonnin tai siirron jälkeen. Käytä alla olevia työkaluja laskeaksesi suhteet manuaalisesti."
+
+#: includes/admin/tools.php:37
+msgid "Some of these tools create substantial database overhead. Avoid running more than 1 repair job at a time."
+msgstr "Jotkut näistä työkaluista saattavat kuormittaa tietokantaa merkittävästi. Koita olla ajamatta enempää kuin yhtä korjaustyötä kerralla."
+
+#: includes/admin/tools.php:43
+msgid "Relationships to Repair:"
+msgstr "Korjattavia suhteita:"
+
+#: includes/admin/tools.php:46
+msgid "Repair"
+msgstr "Korjaa"
+
+#: includes/admin/tools.php:61
+msgid "Repair Items"
+msgstr "Korjaa kohteet"
+
+#: includes/admin/tools.php:161
+msgid "Recalculate the parent topic for each post"
+msgstr "Laske uudelleen ylätason aihe kaikille kirjoituksille"
+
+#: includes/admin/tools.php:162
+msgid "Recalculate the parent forum for each post"
+msgstr "Laske uudelleen ylätason foorumi kaikille kirjoituksille"
+
+#: includes/admin/tools.php:163
+msgid "Recalculate private and hidden forums"
+msgstr "Laske uudelleen yksityiset ja piilotetut foorumit"
+
+#: includes/admin/tools.php:164
+msgid "Recalculate last activity in each topic and forum"
+msgstr "Laske kaikkien aiheiden ja foorumien toiminta uudestaan"
+
+#: includes/admin/tools.php:167
+msgid "Repair BuddyPress Group Forum relationships"
+msgstr "Korjaa BuddyPressin ryhmäfoorumeiden suhteet"
+
+#: includes/admin/replies.php:736
+msgid "Mark the reply as not spam"
+msgstr "Poista vastaus roskaviesteistä"
+
+#: includes/admin/replies.php:738
+msgid "Mark this reply as spam"
+msgstr "Siirrä vastaus roskaviesteihin"
+
+#: includes/admin/replies.php:779 includes/admin/topics.php:849
+msgid "Empty Spam"
+msgstr "Tyhjennä roskaviestit"
+
+#: includes/admin/settings.php:1235
+msgid "Allow Akismet to actively prevent forum spam."
+msgstr "Salli Akismetin toimia aktiivisesti roskaviestien estämiseksi."
+
+#: includes/admin/admin.php:821
+msgid "bbPress fully supports automatic translation updates."
+msgstr "bbPress tukee täysin automaattisia käännöspäivityksiä."
+
+#: includes/admin/settings.php:99
+msgid "Throttle posting every"
+msgstr "Pienin aikaväli viestien välillä:"
+
+#: includes/admin/settings.php:652
+msgid "Enable threaded (nested) replies %s levels deep"
+msgstr "Salli enintään %s tasoa syvät sisäkkäiset vastausketjut"
+
+#: includes/admin/admin.php:887
+msgid "Converter Specialist"
+msgstr "Converter Specialist"
+
+#: includes/admin/admin.php:905
+msgid "Core Contributors to bbPress 2.5"
+msgstr "bbPress 2.5:n avustavat kehittäjät"
+
+#: includes/admin/admin.php:809
+msgid "We&#8217;re all abuzz about the hive of new importers, AEF, Drupal, FluxBB, Kunena Forums for Joomla, MyBB, Phorum, PHPFox, PHPWind, PunBB, SMF, Xenforo and XMB. Existing importers are now sweeter than honey with improved importing stickies, topic tags, forum categories and the sting is now gone if you need to remove imported users."
+msgstr "Olemme innoissamme uusista tuontityökaluista: AEF, Drupal, FluxBB, Kunena Forums (Joomla), MyBB, Phorum, PHPFox, PHPWind, PunBB, SMF, Xenforo ja XMB. Nykyiset tuontityökalut ovat myös kehittyneet mm seuraavien ominaisuuksien osalta: kiinnitetyt keskustelut, avainsanat ja kategoriat. Tuotujen käyttäjien poistaminen on myös aiempaa helpompaa."
+
+#: includes/admin/settings.php:893
+msgid "Prefix all forum content with the Forum Root slug (Recommended)"
+msgstr "Käytä kaiken foorumisisällön edessä foorumin juuripolkua (suositeltavaa)."

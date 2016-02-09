@@ -16,79 +16,79 @@ msgstr "Kiitos kun päivitit! WordPress %s:n ansiosta sivustosi on mukautuvampi 
 
 #. translators: 1: WP_Term class name, WP_Comment class name, WP_Network class
 #. name
-#: wp-admin/about.php:185
+#: wp-admin/about.php:189
 msgid "New %1$s, %2$s, and %3$s objects make interacting with terms, comments, and networks more predictable and intuitive in code."
 msgstr "Uudet %1$s, %2$s ja %3$s -luokat tekevät termien, kommenttien ja verkon käsittelystä ennustettavampaa ja intuitiivisempaa koodia."
 
 #. translators: WP_Comment_Query class name
-#: wp-admin/about.php:178
+#: wp-admin/about.php:182
 msgid "Comment queries now have cache handling to improve performance. New arguments in %s make crafting robust comment queries simpler."
 msgstr "Kommenttikyselyt välimuistitetaan nyt suorituskyvyn parantamiseksi. %s-luokan uudet parametrit tekevät tehokkaiden kommenttikyselyiden tekemisestä yksinkertaisempaa."
 
-#: wp-admin/about.php:182
+#: wp-admin/about.php:186
 msgid "Term, comment, and network objects"
 msgstr "Termi-, kommentti- ja verkko-luokat"
 
-#: wp-admin/about.php:175
+#: wp-admin/about.php:179
 msgid "Comment query improvements"
 msgstr "Parannuksia kommenttikyselyihin"
 
 #. translators: 1: add_term_meta() docs link, 2: get_term_meta() docs link, 3:
 #. update_term_meta() docs link
-#: wp-admin/about.php:167
+#: wp-admin/about.php:171
 msgid "Terms now support metadata, just like posts. See %1$s, %2$s, and %3$s for more information."
 msgstr "Termit tukevat nyt lisäkenttiä, aivan kuten artikkelitkin. Katso lisätietoja funktioiden %1$s, %2$s ja %3$s dokumentaatiosta."
 
-#: wp-admin/about.php:164
+#: wp-admin/about.php:168
 msgid "Term meta"
 msgstr "Termien lisäkentät"
 
 #. translators: WordPress REST API plugin link
-#: wp-admin/about.php:156
+#: wp-admin/about.php:160
 msgid "Infrastructure is the first part of a multi-stage rollout for the REST API. Inclusion of core endpoints is targeted for an upcoming release. To get a sneak peek of the core endpoints, and for more information on extending the REST API, check out the official %s plugin."
 msgstr "Infrastruktuuri on ensimmäinen osa monivaiheisessa REST API:n käyttöönotossa. Ytimen endpointien tuominen on tavoitteena tulevassa versiossa. Saat lisätietoa näistä endpointeista ja REST API:n laajentamisesta tutustumalla viralliseen %s -lisäosaan."
 
-#: wp-admin/about.php:139
+#: wp-admin/about.php:143
 msgid "Infrastructure for the REST API has been integrated into core, marking a new era in developing with WordPress. The REST API serves to provide developers with a path forward for building and extending RESTful APIs on top of WordPress."
 msgstr "REST API -infrastruktuuri on tuotu WordPressin ytimeen ja se avaa uuden luvun WordPress-kehittämisessä. REST API tarjoaa kehittäjille tulevaisuuden tavan REST-mallin mukaisten rajapintojen kehittämiseen WordPressille."
 
-#: wp-admin/about.php:126
+#: wp-admin/about.php:130
 msgid "In addition to post embeds, WordPress 4.4 also adds support for five new oEmbed providers: Cloudup, Reddit&nbsp;Comments, ReverbNation, Speaker&nbsp;Deck, and VideoPress."
 msgstr "Artikkelien upotuksen lisäksi WordPress 4.4 lisää tuen viidelle uudelle oEmbed-tarjoajalle: Cloudup, Reddit-kommentit, ReverbNation, Speaker&nbsp;Deck ja VideoPress."
 
-#: wp-admin/about.php:137
+#: wp-admin/about.php:141
 msgid "REST API infrastructure"
 msgstr "REST API -infrastruktuuri"
 
-#: wp-admin/about.php:125
+#: wp-admin/about.php:129
 msgid "Even more embed providers"
 msgstr "Lisää oEmbed-tarjoajia"
 
-#: wp-admin/about.php:112
+#: wp-admin/about.php:116
 msgid "Now you can embed your posts on other sites, even other WordPress sites. Simply drop a post URL into the editor and see an instant embed preview, complete with the title, excerpt, and featured image if you&#8217;ve set one. We&#8217;ll even include your site icon and links for comments and sharing."
 msgstr "Nyt voit upottaa artikkeleita toisille sivustoille – jopa kokonaan toisille WordPress-sivustoille. Lisää artikkelin URL muokkaimeen ja näet välittömästi upotuksen esikatselun, joka sisältää otsikon, otteen ja asettamasi artikkelikuvan. Näytämme myös sivuston kuvakkeen sekä kommentointi- ja jakolinkit."
 
-#: wp-admin/about.php:111
+#: wp-admin/about.php:115
 msgid "Embed your WordPress content"
 msgstr "Upota WordPress-sisältöä"
 
-#: wp-admin/about.php:98
+#: wp-admin/about.php:102
 msgid "WordPress now takes a smarter approach to displaying appropriate image sizes on any device, ensuring a perfect fit every time. You don&#8217;t need to do anything to your theme, it just works."
 msgstr "WordPress osaa nyt fiksusti näyttää päätelaitteelle parhaiten sopivan kuvakoon. Teemaan ei tarvitse tehdä muutoksia, se vain toimii."
 
-#: wp-admin/about.php:97
+#: wp-admin/about.php:101
 msgid "Responsive images"
 msgstr "Mukautuvat eli responsiiviset kuvat"
 
-#: wp-admin/about.php:75
+#: wp-admin/about.php:79
 msgid "Twenty Sixteen was built to look great on any device. A fluid grid design, flexible header, fun color schemes, and more, will make your content shine."
 msgstr "Twenty Sixteen on suunniteltu näyttämään upealta millä tahansa laitteella. Joustava rakenne ja ylätunniste, hauskat väriyhdistelmät ja monet muut ominaisuudet saavat sisältösi loistamaan."
 
-#: wp-admin/about.php:74
+#: wp-admin/about.php:78
 msgid "Our newest default theme, Twenty Sixteen, is a modern take on a classic blog design."
 msgstr "Uusin oletusteema, Twenty Sixteen, on moderni näkemys klassisesta blogi-designista."
 
-#: wp-admin/about.php:67
+#: wp-admin/about.php:71
 msgid "Twenty Sixteen"
 msgstr "Twenty Sixteen"
 
@@ -107,7 +107,7 @@ msgid "(Currently set to: %s)"
 msgstr "(Tämänhetkinen asetus: %s)"
 
 #. translators: %s: WordPress version number
-#: wp-admin/about.php:222
+#: wp-admin/about.php:226
 msgid "<strong>Version %s</strong> addressed one security issue."
 msgstr "<strong>Versio %s</strong> paikkasi yhden tietoturva-aukon."
 
@@ -129,15 +129,15 @@ msgstr "https://fi.gravatar.com/"
 msgid "Profile Picture"
 msgstr "Profiilikuva"
 
-#: wp-admin/about.php:216
+#: wp-admin/about.php:220
 msgid "Security Releases"
 msgstr "Tietoturvapäivitykset"
 
-#: wp-admin/about.php:213
+#: wp-admin/about.php:217
 msgid "Maintenance Releases"
 msgstr "Ylläpitopäivitykset"
 
-#: wp-admin/about.php:219
+#: wp-admin/about.php:223
 msgid "Maintenance and Security Releases"
 msgstr "Ylläpito- ja tietoturvapäivitykset"
 
@@ -317,11 +317,11 @@ msgstr "Tiedostot %s-hakemistossa suoritetaan automaattisesti."
 msgid "You are not allowed to manage these items."
 msgstr "Sinulla ei ole oikeutta hallita näitä kohteita."
 
-#: wp-admin/widgets.php:431
+#: wp-admin/widgets.php:436
 msgid "This will clear all items from the inactive widgets list. You will not be able to restore any customizations."
 msgstr "Tämä poistaa kaikki kohteet poissa käytöstä olevien vimpainten listasta. Vimpaimiin tehtyjä muokkauksia ei voi sen jälkeen enää palauttaa."
 
-#: wp-admin/widgets.php:423
+#: wp-admin/widgets.php:426
 msgid "Clear Inactive Widgets"
 msgstr "Tyhjennä käytöstä poistetut vimpaimet"
 
@@ -1976,7 +1976,7 @@ msgstr "Voit ottaa käyttöön häiriöttömän kirjoitustilan napauttamalla oik
 msgid "Log Out Everywhere"
 msgstr "Kirjaudu ulos kaikkialla"
 
-#: wp-admin/about.php:73
+#: wp-admin/about.php:77
 msgid "Introducing Twenty Sixteen"
 msgstr "Twenty Sixteen"
 
@@ -2754,7 +2754,7 @@ msgstr "Näytä edellinen teema"
 msgid "Show next theme"
 msgstr "Näytä seuraava teema"
 
-#: wp-admin/widgets.php:498
+#: wp-admin/widgets.php:504
 msgid "Add Widget"
 msgstr "Lisää vimpain"
 
@@ -4954,27 +4954,27 @@ msgstr "Näytä työkalupalkki kun tarkastelet sivustoa"
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:231
+#: wp-admin/about.php:235
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "<strong>Versio %1$s</strong> paikkasi tietoturva-aukon ja korjasi %2$s bugin."
 msgstr[1] "<strong>Versio %1$s</strong> paikkasi tietoturva-aukon ja korjasi %2$s bugia."
 
 #. translators: %s: Codex URL
-#: wp-admin/about.php:55 wp-admin/about.php:239
+#: wp-admin/about.php:55 wp-admin/about.php:59 wp-admin/about.php:243
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "<a href=\"%s\">Lisätietoja tästä päivityksestä</a>."
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:53 wp-admin/about.php:235
+#: wp-admin/about.php:53 wp-admin/about.php:57 wp-admin/about.php:239
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>Versio %1$s</strong> paikkasi joitakin tietoturva-aukkoja ja korjasi %2$s bugin."
 msgstr[1] "<strong>Versio %1$s</strong> paikkasi joitakin tietoturva-aukkoja ja korjasi %2$s bugia."
 
 #. translators: 1: WordPress version number, 2: plural number of bugs.
-#: wp-admin/about.php:227
+#: wp-admin/about.php:231
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>Versio %1$s</strong> korjasi %2$s bugin."
@@ -4984,17 +4984,17 @@ msgstr[1] "<strong>Versio %1$s</strong> korjasi %2$s bugia."
 msgid "Welcome to your WordPress Dashboard! This is the screen you will see when you log in to your site, and gives you access to all the site management features of WordPress. You can get help for any screen by clicking the Help tab in the upper corner."
 msgstr "Tervetuloa WordPressin ohjausnäkymään! Näet tämän aina kun kirjaudut sisään, ja pääset tätä kautta kaikkiin sivuston hallintaominaisuuksiin. Saat tarvittaessa apua oikean yläkulman Ohje-välilehdeltä."
 
-#: wp-admin/about.php:52 wp-admin/about.php:218
+#: wp-admin/about.php:52 wp-admin/about.php:222
 msgid "Maintenance and Security Release"
 msgid_plural "Maintenance and Security Releases"
 msgstr[0] "Huolto- ja tietoturvapäivitys"
 msgstr[1] "Huolto- ja tietoturvapäivitykset"
 
-#: wp-admin/about.php:215
+#: wp-admin/about.php:219
 msgid "Security Release"
 msgstr "Tietoturvapäivitys"
 
-#: wp-admin/about.php:212
+#: wp-admin/about.php:216
 msgid "Maintenance Release"
 msgstr "Huoltopäivitys"
 
@@ -5003,7 +5003,7 @@ msgid "What&#8217;s New"
 msgstr "Uudet ominaisuudet"
 
 #. translators: %s: WordPress version number
-#: wp-admin/about.php:224
+#: wp-admin/about.php:228
 msgid "<strong>Version %s</strong> addressed some security issues."
 msgstr "<strong>Versio %s</strong> paikkasi tietoturva-aukon."
 
@@ -5011,7 +5011,7 @@ msgstr "<strong>Versio %s</strong> paikkasi tietoturva-aukon."
 msgid "This screen allows you to choose your permalink structure. You can choose from common settings or create custom URL structures."
 msgstr "Tällä ruudulla pystyt valitsemaan kestolinkin rakenteen. Voit valita joko vakioasetukset tai luoda oman URL-rakenteen."
 
-#: wp-admin/about.php:197
+#: wp-admin/about.php:201
 msgid "Return to Updates"
 msgstr "Palaa päivitykset -kohtaan"
 
@@ -5303,11 +5303,11 @@ msgstr "Tiedostoon wp-admin/includes/template.php on viitattu suoraan luultavast
 msgid "Welcome to WordPress %s"
 msgstr "Tervetuloa käyttämään WordPress-versiota %s"
 
-#: wp-admin/about.php:200
+#: wp-admin/about.php:204
 msgid "Go to Dashboard &rarr; Home"
 msgstr "Mene ohjausnäkymän etusivulle"
 
-#: wp-admin/about.php:197
+#: wp-admin/about.php:201
 msgid "Return to Dashboard &rarr; Updates"
 msgstr "Palaa sivulle Ohjausnäkymä &rarr; Päivitykset"
 
@@ -5319,7 +5319,7 @@ msgstr "WordPressiä kehittää maailmanlaajuinen joukko innostuneita yksilöit�
 msgid "Core Developers"
 msgstr "Core-kehittäjät"
 
-#: wp-admin/about.php:133
+#: wp-admin/about.php:137
 msgid "Under the Hood"
 msgstr "Teknisiä uudistuksia"
 
@@ -7446,7 +7446,7 @@ msgstr "Muokkaa valikon kohtaa"
 msgid "Please enter a valid menu name."
 msgstr "Anna valikolle kelvollinen nimi."
 
-#: wp-admin/about.php:200
+#: wp-admin/about.php:204
 msgid "Go to Dashboard"
 msgstr "Palaa Ohjausnäkymä-sivulle"
 

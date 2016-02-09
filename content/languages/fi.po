@@ -665,7 +665,7 @@ msgstr "Upotettu WordPress-artikkeli"
 msgid "Search installed themes&hellip;"
 msgstr "Etsi asennettuja teemoja&hellip;"
 
-#: wp-includes/comment-template.php:2143
+#: wp-includes/comment-template.php:2171
 msgid "<a href=\"%1$s\" aria-label=\"Logged in as %2$s. Edit your profile.\">Logged in as %2$s</a>. <a href=\"%3$s\">Log out?</a>"
 msgstr "<a href=\"%1$s\" aria-label=\"Kirjautunut nimellä %2$s. Muokkaa profiiliasi.\">Kirjautunut nimellä %2$s</a>. <a href=\"%3$s\">Kirjaudu ulos?</a>"
 
@@ -863,15 +863,15 @@ msgstr "Piilota otsakekuva"
 msgid "Expand Sidebar"
 msgstr "Laajenna sivupalkki"
 
-#: wp-includes/class-wp-customize-manager.php:1829
+#: wp-includes/class-wp-customize-manager.php:1831
 msgid "The Site Icon is used as a browser and app icon for your site. Icons must be square, and at least 512px wide and tall."
 msgstr "Sivuston kuvaketta käytetään selain- ja sovelluskuvakkeena. Kuvakkeiden on oltava neliön muotoisia ja vähintään 512 pikseliä leveitä ja korkeita."
 
-#: wp-includes/class-wp-customize-manager.php:1828
+#: wp-includes/class-wp-customize-manager.php:1830
 msgid "Site Icon"
 msgstr "Sivuston kuvake"
 
-#: wp-includes/class-wp-customize-manager.php:1795
+#: wp-includes/class-wp-customize-manager.php:1797
 msgid "Site Identity"
 msgstr "Sivuston identiteetti"
 
@@ -900,7 +900,7 @@ msgstr "Salasananvaihtolinkkisi vaikuttaa vialliselta. Tilaa uusi linkki alta."
 msgid "Username may not be longer than 60 characters."
 msgstr "Käyttäjätunnus ei voi olla 60 merkkiä pidempi."
 
-#: wp-includes/pluggable.php:1780
+#: wp-includes/pluggable.php:1789
 msgid "To set your password, visit the following address:"
 msgstr "Aseta salasana vierailemalla osoitteessa:"
 
@@ -1645,13 +1645,13 @@ msgid "<strong>Could not find site %1$s.</strong> Searched for table %2$s in dat
 msgstr "<strong>Sivustoa %1$s ei löytynyt.</strong> Haettiin taulua %2$s tietokannasta %3$s. Menikö oikein?"
 
 #. translators: 1: website name, 2: website IP, 3: website hostname
-#: wp-includes/pluggable.php:1466 wp-includes/pluggable.php:1476
-#: wp-includes/pluggable.php:1619 wp-includes/pluggable.php:1627
+#: wp-includes/pluggable.php:1475 wp-includes/pluggable.php:1485
+#: wp-includes/pluggable.php:1628 wp-includes/pluggable.php:1636
 msgid "Website: %1$s (IP: %2$s, %3$s)"
 msgstr "Sivusto: %1$s (IP: %2$s, %3$s)"
 
 #. translators: 1: comment author, 2: author IP, 3: author domain
-#: wp-includes/pluggable.php:1486 wp-includes/pluggable.php:1634
+#: wp-includes/pluggable.php:1495 wp-includes/pluggable.php:1643
 msgid "Author: %1$s (IP: %2$s, %3$s)"
 msgstr "Kirjoittaja: %1$s (IP: %2$s, %3$s)"
 
@@ -1671,12 +1671,12 @@ msgid "Link Text"
 msgstr "Linkkiteksti"
 
 #. translators: %s: post title
-#: wp-includes/comment-template.php:1468
+#: wp-includes/comment-template.php:1480
 msgid "1 Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "1 kommentti<span class=\"screen-reader-text\"> artikkeliin %s</span>"
 
 #. translators: 1: Number of comments 2: post title
-#: wp-includes/comment-template.php:1473
+#: wp-includes/comment-template.php:1485
 msgid "%1$s Comment<span class=\"screen-reader-text\"> on %2$s</span>"
 msgid_plural "%1$s Comments<span class=\"screen-reader-text\"> on %2$s</span>"
 msgstr[0] "%1$s kommentti<span class=\"screen-reader-text\"> artikkeliin %2$s</span>"
@@ -1687,7 +1687,7 @@ msgid "Select Year"
 msgstr "Valitse vuosi"
 
 #. translators: %s: post title
-#: wp-includes/comment-template.php:1479
+#: wp-includes/comment-template.php:1491
 msgid "Comments Off<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "Kommentit pois päältä<span class=\"screen-reader-text\"> artikkelissa %s</span>"
 
@@ -1704,7 +1704,7 @@ msgid "Select Post"
 msgstr "Valitse artikkeli"
 
 #. translators: %s: post title
-#: wp-includes/comment-template.php:1463
+#: wp-includes/comment-template.php:1475
 msgid "No Comments<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "Ei kommentteja<span class=\"screen-reader-text\"> artikkeliin %s</span>"
 
@@ -1808,26 +1808,26 @@ msgctxt "verb"
 msgid "Trash"
 msgstr "Siirrä roskakoriin"
 
-#: wp-includes/pluggable.php:1490
+#: wp-includes/pluggable.php:1499
 msgid "You can see all comments on this post here:"
 msgstr "Voit lukea kaikki tähän artikkeliin tulleet kommentit täällä:"
 
-#: wp-includes/pluggable.php:1479
+#: wp-includes/pluggable.php:1488
 msgid "You can see all pingbacks on this post here:"
 msgstr "Voit nähdä kaikki tämän artikkelin päivitysilmoitukset täällä: "
 
-#: wp-includes/pluggable.php:1469
+#: wp-includes/pluggable.php:1478
 msgid "You can see all trackbacks on this post here:"
 msgstr "Voit nähdä kaikki tämän artikkelin paluuviitteet täällä:"
 
-#: wp-includes/pluggable.php:1468 wp-includes/pluggable.php:1478
-#: wp-includes/pluggable.php:1489 wp-includes/pluggable.php:1637
+#: wp-includes/pluggable.php:1477 wp-includes/pluggable.php:1487
+#: wp-includes/pluggable.php:1498 wp-includes/pluggable.php:1646
 msgid "Comment: %s"
 msgstr "Kommentti: %s"
 
-#: wp-includes/pluggable.php:1467 wp-includes/pluggable.php:1477
-#: wp-includes/pluggable.php:1488 wp-includes/pluggable.php:1620
-#: wp-includes/pluggable.php:1628 wp-includes/pluggable.php:1636
+#: wp-includes/pluggable.php:1476 wp-includes/pluggable.php:1486
+#: wp-includes/pluggable.php:1497 wp-includes/pluggable.php:1629
+#: wp-includes/pluggable.php:1637 wp-includes/pluggable.php:1645
 msgid "URL: %s"
 msgstr "URL: %s"
 
@@ -1959,7 +1959,7 @@ msgstr "Älä käytä style-tageja kutsun wp_add_inline_style() kanssa."
 msgid "The following values do not describe a valid date: year %1$s, month %2$s, day %3$s."
 msgstr "Tämä ei kuvaa todellista päivämäärää: vuosi %1$s, kuukausi %2$s, päivä %3$s."
 
-#: wp-includes/comment-template.php:1570
+#: wp-includes/comment-template.php:1582
 msgid "Reply to %s"
 msgstr "Vastaa kommenttiin %s"
 
@@ -3967,11 +3967,11 @@ msgstr "Siirry työkalupalkkiin"
 msgid "Hex Value"
 msgstr "Hex-arvo"
 
-#: wp-includes/class-wp-customize-manager.php:1862
+#: wp-includes/class-wp-customize-manager.php:1864
 msgid "Header Text Color"
 msgstr "Otsakkeen tekstin väri"
 
-#: wp-includes/class-wp-customize-manager.php:1839
+#: wp-includes/class-wp-customize-manager.php:1841
 msgid "Colors"
 msgstr "Värit"
 
@@ -4006,7 +4006,7 @@ msgstr "Tälle XML-RPC-metodille ei annettu tarpeeksi argumentteja."
 msgid "Sorry, you cannot stick a private post."
 msgstr "Yksityistä artikkelia ei voi kiinnittää etusivulle."
 
-#: wp-includes/class-wp-customize-manager.php:1885
+#: wp-includes/class-wp-customize-manager.php:1887
 #: wp-includes/customize/class-wp-customize-header-image-control.php:31
 msgid "Header Image"
 msgstr "Otsakekuva"
@@ -4047,32 +4047,32 @@ msgstr "Käyttäjätunnuksessa on oltava ainakin 4 merkkiä."
 msgid "Please enter a username."
 msgstr "Kirjoita käyttäjätunnus."
 
-#: wp-includes/class-wp-customize-manager.php:2002
+#: wp-includes/class-wp-customize-manager.php:2004
 msgid "A static page"
 msgstr "Staattinen sivu"
 
-#: wp-includes/class-wp-customize-manager.php:1855
+#: wp-includes/class-wp-customize-manager.php:1857
 msgid "Display Header Text"
 msgstr "Näytä otsakkeen teksti"
 
-#: wp-includes/class-wp-customize-manager.php:1877
+#: wp-includes/class-wp-customize-manager.php:1879
 msgid "Background Color"
 msgstr "Taustaväri"
 
-#: wp-includes/class-wp-customize-manager.php:1905
+#: wp-includes/class-wp-customize-manager.php:1907
 #: wp-includes/customize/class-wp-customize-background-image-control.php:30
 msgid "Background Image"
 msgstr "Taustakuva"
 
-#: wp-includes/class-wp-customize-manager.php:1927
+#: wp-includes/class-wp-customize-manager.php:1929
 msgid "Background Repeat"
 msgstr "Kuvan toisto"
 
-#: wp-includes/class-wp-customize-manager.php:1944
+#: wp-includes/class-wp-customize-manager.php:1946
 msgid "Background Position"
 msgstr "Sijainti"
 
-#: wp-includes/class-wp-customize-manager.php:1960
+#: wp-includes/class-wp-customize-manager.php:1962
 msgid "Background Attachment"
 msgstr "Kuvan asettelu"
 
@@ -4088,35 +4088,35 @@ msgstr "Poista kuva"
 msgid "Sorry, you are not allowed to edit this post type."
 msgstr "Valitettavasti et voi muokata tätä sisältötyyppiä."
 
-#: wp-includes/class-wp-customize-manager.php:1964
+#: wp-includes/class-wp-customize-manager.php:1966
 msgid "Scroll"
 msgstr "Kuva vierii sivun mukana"
 
-#: wp-includes/class-wp-customize-manager.php:1965
+#: wp-includes/class-wp-customize-manager.php:1967
 msgid "Fixed"
 msgstr "Kuva pysyy paikallaan"
 
-#: wp-includes/class-wp-customize-manager.php:1931
+#: wp-includes/class-wp-customize-manager.php:1933
 msgid "No Repeat"
 msgstr "Ei toistoa"
 
-#: wp-includes/class-wp-customize-manager.php:1932
+#: wp-includes/class-wp-customize-manager.php:1934
 msgid "Tile"
 msgstr "Toista vaaka- ja pystysuunnassa"
 
-#: wp-includes/class-wp-customize-manager.php:1933
+#: wp-includes/class-wp-customize-manager.php:1935
 msgid "Tile Horizontally"
 msgstr "Toista vaakasuunnassa"
 
-#: wp-includes/class-wp-customize-manager.php:1934
+#: wp-includes/class-wp-customize-manager.php:1936
 msgid "Tile Vertically"
 msgstr "Toista pystysuunnassa"
 
-#: wp-includes/class-wp-customize-manager.php:2013
+#: wp-includes/class-wp-customize-manager.php:2015
 msgid "Front page"
 msgstr "Etusivu"
 
-#: wp-includes/class-wp-customize-manager.php:2025
+#: wp-includes/class-wp-customize-manager.php:2027
 msgid "Posts page"
 msgstr "Artikkeleiden sivu"
 
@@ -4230,23 +4230,23 @@ msgstr "\"%s\"-teema ei ole kelvollinen isäntäteema (parent theme)."
 msgid "Collapse Sidebar"
 msgstr "Piilota sivupalkki"
 
-#: wp-includes/class-wp-customize-manager.php:1983
+#: wp-includes/class-wp-customize-manager.php:1985
 msgid "Static Front Page"
 msgstr "Staattinen etusivu"
 
-#: wp-includes/class-wp-customize-manager.php:1986
+#: wp-includes/class-wp-customize-manager.php:1988
 msgid "Your theme supports a static front page."
 msgstr "Teemasi tukee staattista etusivua"
 
-#: wp-includes/class-wp-customize-manager.php:2001
+#: wp-includes/class-wp-customize-manager.php:2003
 msgid "Your latest posts"
 msgstr "Uusimmat artikkelisi"
 
-#: wp-includes/class-wp-customize-manager.php:1997
+#: wp-includes/class-wp-customize-manager.php:1999
 msgid "Front page displays"
 msgstr "Etusivulla näytetään"
 
-#: wp-includes/class-wp-customize-manager.php:1817
+#: wp-includes/class-wp-customize-manager.php:1819
 msgid "Tagline"
 msgstr "Kuvaus"
 
@@ -4722,7 +4722,7 @@ msgstr "%1$s kutsuttiin <strong>väärin</strong>. %2$s%3$s"
 msgid "Sorry, you cannot publish this post."
 msgstr "Et valitettavasti voi julkaista tätä artikkelia."
 
-#: wp-includes/pluggable.php:1496
+#: wp-includes/pluggable.php:1505
 msgid "Permalink: %s"
 msgstr "Kestolinkki: %s"
 
@@ -4922,7 +4922,7 @@ msgstr "Virheellinen artikkeli"
 msgid "Invalid taxonomy: %s."
 msgstr "Taksonomia ei kelpaa: %s"
 
-#: wp-includes/query.php:2549
+#: wp-includes/query.php:2552
 msgid "\"caller_get_posts\" is deprecated. Use \"ignore_sticky_posts\" instead."
 msgstr "\"caller_get_posts\" on vanhentunut. Käytä sen sijaan \"ignore_sticky_posts\"."
 
@@ -5182,7 +5182,7 @@ msgstr "Vakio <code>VHOST</code> <strong>on vanhentunut</strong>. Käytä boolea
 msgid "<strong>ERROR</strong>: This username is invalid because it uses illegal characters. Please enter a valid username."
 msgstr "<strong>VIRHE</strong>: Tämä käyttäjätunnus ei kelpaa, koska se sisältää kiellettyjä merkkejä. Anna voimassa oleva käyttäjätunnus."
 
-#: wp-includes/comment-template.php:2127
+#: wp-includes/comment-template.php:2155
 msgid "Required fields are marked %s"
 msgstr "Pakolliset kentät on merkitty %s"
 
@@ -5301,7 +5301,7 @@ msgstr ""
 "\n"
 "%s"
 
-#: wp-includes/pluggable.php:1754
+#: wp-includes/pluggable.php:1763
 msgid "New user registration on your site %s:"
 msgstr "Uusi käyttäjärekisteröinti sivustollasi %s:"
 
@@ -5349,7 +5349,7 @@ msgstr "Tapahtui virhe: emme onnistuneet lisäämään sinua sivustolle. Palaa <
 msgid "This file is too big. Files must be less than %d KB in size."
 msgstr "Tiedosto on liian suuri. Tiedostojen tulee olla pienempiä, kuin %d kt."
 
-#: wp-includes/comment-template.php:2144
+#: wp-includes/comment-template.php:2172
 msgid "Your email address will not be published."
 msgstr "Sähköpostiosoitettasi ei julkaista."
 
@@ -5519,7 +5519,7 @@ msgstr "sivustonnimi"
 msgid "If you&#8217;re not going to use a great site domain, leave it for a new user. Now have at it!"
 msgstr "Mikäli et aio käyttää sivuston verkkotunnusta, jätä se uusille käyttäjille. "
 
-#: wp-includes/pluggable.php:1464
+#: wp-includes/pluggable.php:1473
 msgid "New trackback on your post \"%s\""
 msgstr "Uusi paluuviite artikkeliisi \"%s\""
 
@@ -5531,23 +5531,23 @@ msgstr "Jos sivustosi ei näy, ole yhteydessä verkon ylläpitäjään."
 msgid "If you are the owner of this network please check that MySQL is running properly and all tables are error free."
 msgstr "Jos olet tämän verkon ylläpitäjä, varmista että MySQL toimii oikein eikä missään taulussa ole virheitä."
 
-#: wp-includes/pluggable.php:1484
+#: wp-includes/pluggable.php:1493
 msgid "New comment on your post \"%s\""
 msgstr "Uusi kommentti artikkeliisi \"%s\""
 
-#: wp-includes/pluggable.php:1474
+#: wp-includes/pluggable.php:1483
 msgid "New pingback on your post \"%s\""
 msgstr "Uusi päivitysilmoitus artikkeliisi \"%s\""
 
-#: wp-includes/pluggable.php:1616
+#: wp-includes/pluggable.php:1625
 msgid "A new trackback on the post \"%s\" is waiting for your approval"
 msgstr "Uusi paluuviite artikkeliisi \"%s\" odottaa hyväksymistäsi"
 
-#: wp-includes/pluggable.php:1624
+#: wp-includes/pluggable.php:1633
 msgid "A new pingback on the post \"%s\" is waiting for your approval"
 msgstr "Uusi päivitysilmoitus artikkeliisi \"%s\" odottaa hyväksymistäsi"
 
-#: wp-includes/pluggable.php:1632
+#: wp-includes/pluggable.php:1641
 msgid "A new comment on the post \"%s\" is waiting for your approval"
 msgstr "Uusi kommentti artikkeliisi \"%s\" odottaa hyväksymistäsi"
 
@@ -6537,51 +6537,51 @@ msgid "number_format_decimal_point"
 msgstr "number_format_decimal_point"
 
 #. translators: 1: blog name, 2: post title
-#: wp-includes/pluggable.php:1492
+#: wp-includes/pluggable.php:1501
 msgid "[%1$s] Comment: \"%2$s\""
 msgstr "[%1$s] Kommentti: \"%2$s\""
 
 #. translators: 1: blog name, 2: post title
-#: wp-includes/pluggable.php:1471
+#: wp-includes/pluggable.php:1480
 msgid "[%1$s] Trackback: \"%2$s\""
 msgstr "[%1$s] Paluuviite: \"%2$s\""
 
 #. translators: 1: blog name, 2: post title
-#: wp-includes/pluggable.php:1481
+#: wp-includes/pluggable.php:1490
 msgid "[%1$s] Pingback: \"%2$s\""
 msgstr "[%1$s] Päivitysilmoitus: \"%2$s\""
 
-#: wp-includes/pluggable.php:1502 wp-includes/pluggable.php:1645
+#: wp-includes/pluggable.php:1511 wp-includes/pluggable.php:1654
 msgid "Delete it: %s"
 msgstr "Poista: %s"
 
-#: wp-includes/pluggable.php:1621
+#: wp-includes/pluggable.php:1630
 msgid "Trackback excerpt: "
 msgstr "Ote paluuviitteestä: "
 
-#: wp-includes/pluggable.php:1629
+#: wp-includes/pluggable.php:1638
 msgid "Pingback excerpt: "
 msgstr "Ote päivitysilmoituksesta: "
 
-#: wp-includes/pluggable.php:1641
+#: wp-includes/pluggable.php:1650
 msgid "Approve it: %s"
 msgstr "Hyväksy: %s"
 
-#: wp-includes/pluggable.php:1648
+#: wp-includes/pluggable.php:1657
 msgid "Currently %s comment is waiting for approval. Please visit the moderation panel:"
 msgid_plural "Currently %s comments are waiting for approval. Please visit the moderation panel:"
 msgstr[0] "Tällä hetkellä %s kommentti odottaa hyväksyntää. Siirry kommenttien hallintaan:"
 msgstr[1] "Tällä hetkellä %s kommenttia odottaa hyväksyntää. Siirry kommenttien hallintaan:"
 
-#: wp-includes/pluggable.php:1652
+#: wp-includes/pluggable.php:1661
 msgid "[%1$s] Please moderate: \"%2$s\""
 msgstr "[%1$s] Arvioitavana: \"%2$s\""
 
-#: wp-includes/pluggable.php:1715
+#: wp-includes/pluggable.php:1724
 msgid "Password Lost and Changed for user: %s"
 msgstr "Salasana kadonnut ja vaihdettu tunnukselle: %s"
 
-#: wp-includes/pluggable.php:1758
+#: wp-includes/pluggable.php:1767
 msgid "[%s] New User Registration"
 msgstr "[%s] Uuden käyttäjän rekisteröityminen"
 
@@ -6946,15 +6946,15 @@ msgstr "UTC"
 msgid "Manual Offsets"
 msgstr "Manuaaliset siirtymät"
 
-#: wp-includes/pluggable.php:1504 wp-includes/pluggable.php:1646
+#: wp-includes/pluggable.php:1513 wp-includes/pluggable.php:1655
 msgid "Spam it: %s"
 msgstr "Merkitse roskaviestiksi: %s"
 
-#: wp-includes/comment-template.php:2157
+#: wp-includes/comment-template.php:2185
 msgid "Cancel reply"
 msgstr "Peruuta vastaus"
 
-#: wp-includes/comment-template.php:2158
+#: wp-includes/comment-template.php:2186
 msgid "Post Comment"
 msgstr "Lähetä kommentti"
 
@@ -6978,7 +6978,7 @@ msgstr "Sivuston %1$s kommentit, hakutermi: %2$s"
 msgid "Entries <abbr title=\"Really Simple Syndication\">RSS</abbr>"
 msgstr "Artikkeleiden <abbr title=\"Really Simple Syndication\">RSS</abbr>-syöte"
 
-#: wp-includes/pluggable.php:1500 wp-includes/pluggable.php:1643
+#: wp-includes/pluggable.php:1509 wp-includes/pluggable.php:1652
 msgid "Trash it: %s"
 msgstr "Siirrä roskakoriin: %s"
 
@@ -7205,7 +7205,7 @@ msgid_plural "Private <span class=\"count\">(%s)</span>"
 msgstr[0] "Yksityinen <span class=\"count\">(%s)</span>"
 msgstr[1] "Yksityiset <span class=\"count\">(%s)</span>"
 
-#: wp-includes/pluggable.php:1719
+#: wp-includes/pluggable.php:1728
 msgid "[%s] Password Lost/Changed"
 msgstr "[%s] Salasana on kadonnut tai vaihdettu"
 
@@ -7285,12 +7285,12 @@ msgstr "Vain käyttäjätunnus, kiitos."
 msgid "<strong>ERROR</strong>: Invalid username or email."
 msgstr "<strong>VIRHE</strong>: Käyttäjätunnus tai sähköpostiosoite ei kelpaa."
 
-#: wp-includes/pluggable.php:1755 wp-includes/pluggable.php:1779
+#: wp-includes/pluggable.php:1764 wp-includes/pluggable.php:1788
 #: wp-login.php:324
 msgid "Username: %s"
 msgstr "Käyttäjätunnus: %s"
 
-#: wp-includes/pluggable.php:1785
+#: wp-includes/pluggable.php:1794
 msgid "[%s] Your username and password info"
 msgstr "[%s] Käyttäjätunnuksesi ja salasanasi"
 
@@ -7394,7 +7394,7 @@ msgstr "Otsikko:"
 msgid "Separate tags with commas"
 msgstr "Erottele avainsanat pilkulla"
 
-#: wp-includes/comment-template.php:2123
+#: wp-includes/comment-template.php:2151
 #: wp-includes/theme-compat/comments.php:102
 msgid "Website"
 msgstr "Kotisivu"
@@ -7449,7 +7449,7 @@ msgstr "Kommentit artikkeliin %s"
 msgid "Logged in as %s."
 msgstr "Nykyinen käyttäjä: %s."
 
-#: wp-includes/comment-template.php:1488
+#: wp-includes/comment-template.php:1500
 msgid "Enter your password to view comments."
 msgstr "Syötä salasanasi lukeaksesi kommentteja."
 
@@ -7494,23 +7494,23 @@ msgstr "Päivitetty: %s"
 msgid "Bookmarks"
 msgstr "Kirjanmerkit"
 
-#: wp-includes/comment-template.php:1571
+#: wp-includes/comment-template.php:1583
 msgid "Log in to Reply"
 msgstr "Kirjaudu sisään vastataksesi"
 
-#: wp-includes/comment-template.php:1682
+#: wp-includes/comment-template.php:1694
 msgid "Leave a Comment"
 msgstr "Jätä kommentti"
 
-#: wp-includes/comment-template.php:1683
+#: wp-includes/comment-template.php:1695
 msgid "Log in to leave a Comment"
 msgstr "Kirjaudu sisään kommentoidaksesi"
 
-#: wp-includes/comment-template.php:1751
+#: wp-includes/comment-template.php:1763
 msgid "Click here to cancel reply."
 msgstr "Napsauta peruuttaaksesi vastauksen."
 
-#: wp-includes/comment-template.php:1839 wp-includes/comment-template.php:2152
+#: wp-includes/comment-template.php:1851 wp-includes/comment-template.php:2180
 #: wp-includes/theme-compat/comments.php:75
 msgid "Leave a Reply to %s"
 msgstr "Vastaa käyttäjälle %s"
@@ -7538,7 +7538,7 @@ msgstr "(Muokkaa)"
 msgid "First Post"
 msgstr "Ensimmäinen artikkeli"
 
-#: wp-includes/class-wp-customize-manager.php:1806
+#: wp-includes/class-wp-customize-manager.php:1808
 #: wp-includes/class-wp-xmlrpc-server.php:467
 msgid "Site Title"
 msgstr "Sivuston otsikko"
@@ -7591,12 +7591,12 @@ msgstr "Valitettavasti artikkeleja, jotka vastaisivat hakusanaasi, ei löytynyt.
 msgid "Comments are closed."
 msgstr "Kommentit on suljettu."
 
-#: wp-includes/comment-template.php:1838 wp-includes/comment-template.php:2151
+#: wp-includes/comment-template.php:1850 wp-includes/comment-template.php:2179
 #: wp-includes/theme-compat/comments.php:75
 msgid "Leave a Reply"
 msgstr "Vastaa"
 
-#: wp-includes/comment-template.php:2141
+#: wp-includes/comment-template.php:2169
 #: wp-includes/theme-compat/comments.php:82
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr "Sinun täytyy <a href=\"%s\">kirjautua sisään</a> kommentoidaksesi."
@@ -7668,7 +7668,7 @@ msgstr "Kommenttien <abbr title=\"Really Simple Syndication\">RSS</abbr>-syöte"
 msgid "Default"
 msgstr "Oletus"
 
-#: wp-includes/comment-template.php:2121
+#: wp-includes/comment-template.php:2149
 #: wp-includes/theme-compat/comments-popup.php:81 wp-login.php:720
 msgid "Email"
 msgstr "Sähköpostiosoite"
@@ -7725,7 +7725,7 @@ msgstr "Kirjoittaja"
 msgid "URL"
 msgstr "URL"
 
-#: wp-includes/comment-template.php:1041 wp-includes/comment-template.php:2139
+#: wp-includes/comment-template.php:1041 wp-includes/comment-template.php:2167
 msgctxt "noun"
 msgid "Comment"
 msgstr "Kommentti"
@@ -7771,7 +7771,7 @@ msgstr "Lisää linkki"
 msgid "Save"
 msgstr "Tallenna"
 
-#: wp-includes/comment-template.php:2119
+#: wp-includes/comment-template.php:2147
 #: wp-includes/theme-compat/comments-popup.php:76
 #: wp-includes/theme-compat/comments.php:96
 msgid "Name"
@@ -7843,7 +7843,7 @@ msgstr "Tallenna luonnos"
 msgid "No comments yet."
 msgstr "Ei kommentteja."
 
-#: wp-includes/comment-template.php:1569 wp-includes/script-loader.php:488
+#: wp-includes/comment-template.php:1581 wp-includes/script-loader.php:488
 msgid "Reply"
 msgstr "Vastaa"
 
@@ -7907,19 +7907,19 @@ msgstr "Lisää media"
 msgid "Saved."
 msgstr "Tallennettu."
 
-#: wp-includes/class-wp-customize-manager.php:1948
+#: wp-includes/class-wp-customize-manager.php:1950
 #: wp-includes/class-wp-editor.php:988 wp-includes/media-template.php:613
 #: wp-includes/media-template.php:844 wp-includes/media-template.php:910
 msgid "Left"
 msgstr "Vasemmalle"
 
-#: wp-includes/class-wp-customize-manager.php:1949
+#: wp-includes/class-wp-customize-manager.php:1951
 #: wp-includes/class-wp-editor.php:989 wp-includes/media-template.php:616
 #: wp-includes/media-template.php:847 wp-includes/media-template.php:913
 msgid "Center"
 msgstr "Keskelle"
 
-#: wp-includes/class-wp-customize-manager.php:1950
+#: wp-includes/class-wp-customize-manager.php:1952
 #: wp-includes/class-wp-editor.php:990 wp-includes/media-template.php:619
 #: wp-includes/media-template.php:850 wp-includes/media-template.php:916
 msgid "Right"
@@ -8144,8 +8144,8 @@ msgstr "Yhtään liitettyä mediatiedostoa ei löytynyt."
 msgid "Invalid taxonomy"
 msgstr "Virheellinen taksonomia"
 
-#: wp-includes/pluggable.php:1487 wp-includes/pluggable.php:1635
-#: wp-includes/pluggable.php:1756
+#: wp-includes/pluggable.php:1496 wp-includes/pluggable.php:1644
+#: wp-includes/pluggable.php:1765
 msgid "Email: %s"
 msgstr "Sähköposti: %s"
 

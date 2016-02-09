@@ -56,7 +56,7 @@
     "vlucas/phpdotenv": "^2.0.1",
     "facebook/php-sdk": "dev-master",
     "wpackagist-plugin/wordpress-seo":"*",
-    "wpackagist-plugin/google-analyticator":"*",
+    "wpackagist-plugin/google-analytics-dashboard-for-wp":"*",
     "wpackagist-plugin/simple-history":"*",
     "wpackagist-plugin/go-live-update-urls":"*",
     "wpackagist-plugin/iwp-client":"*",
