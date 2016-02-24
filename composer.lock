@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "533dd8c241cf734a4a6c565743553e11",
-    "content-hash": "7cd4cb7ee4ee2d2a431a53a3f367df27",
+    "hash": "b9babe2725893063a48d8135370645f5",
+    "content-hash": "431fc6edb60d5fd6cd6a82c2a8ebcc83",
     "packages": [
         {
             "name": "composer/installers",
@@ -165,53 +165,6 @@
                 "versioning"
             ],
             "time": "2015-09-21 09:42:36"
-        },
-        {
-            "name": "facebook/php-sdk",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/facebookarchive/facebook-php-sdk.git",
-                "reference": "8e7e7951e99d86b68ce1135537d559663d759af0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/facebookarchive/facebook-php-sdk/zipball/8e7e7951e99d86b68ce1135537d559663d759af0",
-                "reference": "8e7e7951e99d86b68ce1135537d559663d759af0",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*",
-                "ext-json": "*",
-                "php": ">=5.2.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "3.7.*"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "src"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache2"
-            ],
-            "authors": [
-                {
-                    "name": "Facebook",
-                    "homepage": "https://github.com/facebook/facebook-php-sdk/contributors"
-                }
-            ],
-            "description": "Facebook PHP SDK",
-            "homepage": "https://github.com/facebook/facebook-php-sdk",
-            "keywords": [
-                "facebook",
-                "sdk"
-            ],
-            "abandoned": "facebook/php-sdk-v4",
-            "time": "2015-01-13 19:27:37"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -1805,9 +1758,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "facebook/php-sdk": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
