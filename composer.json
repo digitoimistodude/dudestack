@@ -69,8 +69,8 @@
       "content/languages/themes/": ["vendor:koodimonni-theme-language"]
     },
     "installer-paths": {
+      "content/mu-plugins/{$name}/": ["type:wordpress-muplugin", "webdevstudios/cmb2", "wpackagist-plugin/clean-image-filenames", "wpackagist-plugin/wordpress-seo"], 
       "content/plugins/{$name}/": ["type:wordpress-plugin"],
-      "content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
       "content/themes/{$name}/": ["type:wordpress-theme"]
     },
     "wordpress-install-dir": "wp"
