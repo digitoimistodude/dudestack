@@ -17,9 +17,6 @@
   "support": {
     "issues": "https://github.com/digitoimistodude/dudestack/issues"
   },
-  "require": {
-    "digitoimistodude/dudestack": "dev-master"
-  },
    "config": {
     "preferred-install": "dist",
     "generate-salts": true,
@@ -47,6 +44,7 @@
     }
   ],
   "require": {
+    "digitoimistodude/dudestack": "dev-master",
     "koodimonni/composer-dropin-installer": "*",
     "php": ">=5.3.10",
     "johnpbloch/wordpress": "4.4.2",
