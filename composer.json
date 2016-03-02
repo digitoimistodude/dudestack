@@ -22,7 +22,8 @@
   },
    "config": {
     "preferred-install": "dist",
-    "generate-salts": true
+    "generate-salts": true,
+    "secure-http": false
   },
   "autoload": {
     "psr-4": {"Roots\\Bedrock\\": "scripts/Roots/Bedrock"}
