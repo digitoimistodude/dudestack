@@ -53,13 +53,14 @@
     "composer/installers": "~1.0.12",
     "wp-cli/wp-cli": "*",
     "vlucas/phpdotenv": "^2.0.1",
-    "wpackagist-plugin/wordpress-seo":"*",
-    "wpackagist-plugin/google-analytics-dashboard-for-wp":"*",
-    "wpackagist-plugin/simple-history":"*",
-    "wpackagist-plugin/go-live-update-urls":"*",
-    "wpackagist-plugin/iwp-client":"*",
-    "wpackagist-plugin/clean-image-filenames":"*",
-    "wpackagist-plugin/scripts-to-footerphp":"*"
+    "webdevstudios/cmb2": "*",
+    "wpackagist-plugin/wordpress-seo": "*",
+    "wpackagist-plugin/google-analytics-dashboard-for-wp": "*",
+    "wpackagist-plugin/simple-history": "*",
+    "wpackagist-plugin/go-live-update-urls": "*",
+    "wpackagist-plugin/iwp-client": "*",
+    "wpackagist-plugin/clean-image-filenames": "*",
+    "wpackagist-plugin/scripts-to-footerphp": "*"
   },
   "extra": {
     "dropin-paths": {
