@@ -217,7 +217,7 @@ WP-Cli is included in dudestack per project within `composer.json` and won't wor
 alias wp='ssh vagrant@10.1.2.4 "cd /var/www/"$(basename "$PWD")"; /var/www/"$(basename "$PWD")"/vendor/wp-cli/wp-cli/bin/wp"'
 ```
 
-If you are using [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant), please use IP address `10.1.2.4`, if ([jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant)), use `10.1.2.3`. After restarting Terminal or running `. ~/.bashrc` or `. ~/.bash_profile` you will be able to use `wp` command directly on your host machine without having to ssh into vagrant.
+If you are using [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant), please use IP address `10.1.2.4`, if [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant), use `10.1.2.3`. After restarting Terminal or running `. ~/.bashrc` or `. ~/.bash_profile` you will be able to use `wp` command directly on your host machine without having to ssh into vagrant.
 
 ## Issues
 
