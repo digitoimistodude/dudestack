@@ -16,6 +16,7 @@ Dudestack is a modern WordPress stack that helps you get started with the best d
   2. [What you most probably need to edit in every project](#what-you-most-probably-need-to-edit-in-every-project)
   3. [Getting started](#getting-started)
   4. [Paid or Premium plugins](#paid-or-premium-plugins)
+  5. [WP-CLI alias](#wp-cli-alias)
 
 #### Background
 
@@ -207,6 +208,16 @@ function plugin() { scp -r $@ 'username@yoursite.com:~/path/to/plugins/'; }
 ```
 
 So with simple ssh-pairing (passwordless login), I can upload a plugin by simple command: `plugin gravityforms_1.8.20.5.zip` and then just change version and `composer update`. DRY, you see.
+
+## WP-CLI alias
+
+WP-Cli is included in dudestack per project within `composer.json` and won't work by default. You'll need this alias on your Mac or Linux `.bashrc` or `.bash_profile` file:
+
+```shell
+alias wp='ssh vagrant@10.1.2.4 "cd /var/www/"$(basename "$PWD")"; /var/www/"$(basename "$PWD")"/vendor/wp-cli/wp-cli/bin/wp"'
+```
+
+If you are using [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant), please use IP address `10.1.2.4`, if ([jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant)), use `10.1.2.3`. After restarting Terminal or running `. ~/.bashrc` or `. ~/.bash_profile` you will be able to use `wp` command directly on your host machine without having to ssh into vagrant.
 
 ## Issues
 
