@@ -19,6 +19,7 @@ content/plugins/*
 !content/plugins/.gitkeep
 content/mu-plugins/*
 !content/mu-plugins/register-theme-directory.php
+!content/mu-plugins/bedrock-autoloader.php
 vendor/*
 !vendor/.gitkeep
 node_modules
