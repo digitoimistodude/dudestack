@@ -14,16 +14,36 @@ white=$(tput setaf 7)
 txtreset=$(tput sgr0)
 
 while true; do
-read -p "${boldyellow}Have you installed jolliest-vagrant as instructed? (y/n)${txtreset} " yn
-    case $yn in
-        [Yy]* ) break;;
-        [Nn]* ) echo "${red}Please do so. Here: https://github.com/ronilaukkarinen/jolliest-vagrant${txtreset}"; exit;;
-        * ) echo "${boldwhite}Please answer y or n.${txtreset}";;
-    esac
+echo "${boldyellow}Which vagrant you are using (Type: 1 for jolliest-vagrant or 2 for marlin-vagrant):${txtreset} "
+read choice
+echo
+
+case $choice in
+     1)
+      choice="jolliest-vagrant"
+      vagrantip="10.1.2.3"
+      break
+      # Choose $choice
+     ;;
+     2)
+      choice="marlin-vagrant"
+      vagrantip="10.1.2.4"
+      break
+      # Choose $choice
+     ;;
+     *)
+     echo "${red}Please type either 1 or 2.${txtreset}
+
+Info:
+https://github.com/ronilaukkarinen/jolliest-vagrant
+https://github.com/ronilaukkarinen/marlin-vagrant
+${txtreset}"
+     ;;
+esac
 done
 
-echo "${boldyellow}Starting vagrant... (type password if prompted)${txtreset} "
-cd ~/Projects/jolliest-vagrant && vagrant up --provision
+echo "${boldyellow}Starting $choice... (type password if prompted)${txtreset} "
+cd ~/Projects/$choice && vagrant up --provision
 
 while true; do
 read -p "${boldyellow}Have you created a public key for SSH? (y/n)${txtreset} " yn
@@ -35,10 +55,13 @@ read -p "${boldyellow}Have you created a public key for SSH? (y/n)${txtreset} " 
 done
 
 echo "${boldyellow}Pairing vagrant with your computer...${txtreset} "
-cat ~/.ssh/id_rsa.pub | ssh vagrant@10.1.2.3 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys' && chmod -Rv 755 ~/.ssh && chmod 400 ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub | ssh vagrant@$vagrantip 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys' && chmod -Rv 755 ~/.ssh && chmod 400 ~/.ssh/id_rsa
 
 echo "${boldyellow}Bitbucket account username:${txtreset} "
 read -e YOUR_BITBUCKET_ACCOUNT_HERE
+
+echo "${boldyellow}Bitbucket password username:${txtreset} "
+read -e YOUR_BITBUCKET_PASSWORD_HERE
 
 echo "${boldyellow}Staging server hostname (for example myawesomeserver.com):${txtreset} "
 read -e YOUR_STAGING_SERVER_HERE
@@ -52,10 +75,10 @@ read -e YOUR_STAGING_SERVER_PASSWORD_HERE
 echo "${boldyellow}Staging server home path without trailing slash (for example /home/myusername0123 or /var/www/somehome):${txtreset} "
 read -e YOUR_STAGING_SERVER_HOME_PATH_HERE
 
-echo "${boldyellow}Default MySQL-username (type 'root' if you use jolliest-vagrant):${txtreset} "
+echo "${boldyellow}Default MySQL-username (default: 'root'):${txtreset} "
 read -e YOUR_DEFAULT_DATABASE_USERNAME_HERE
 
-echo "${boldyellow}Default MySQL-password (type 'vagrant' if you use jolliest-vagrant):${txtreset} "
+echo "${boldyellow}Default MySQL-password (default: 'vagrant'):${txtreset} "
 read -e YOUR_DEFAULT_DATABASE_PASSWORD_HERE
 
 echo "${boldyellow}Default admin username for WordPress:${txtreset} "
@@ -68,9 +91,15 @@ echo "${boldyellow}Default admin email for WordPress:${txtreset} "
 read -e YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE
 
 echo "${boldyellow}Generating createscript with your information (requires root):${txtreset} "
+if [ $choice = "marlin-vagrant" ]
+then
+sed -e "s;\YOUR_BITBUCKET_ACCOUNT_HERE;$YOUR_BITBUCKET_ACCOUNT_HERE;" -e "s;\YOUR_STAGING_SERVER_HERE;$YOUR_STAGING_SERVER_HERE;" -e "s;\YOUR_STAGING_USERNAME_HERE;$YOUR_STAGING_USERNAME_HERE;" -e "s;\YOUR_STAGING_SERVER_PASSWORD_HERE;$YOUR_STAGING_SERVER_PASSWORD_HERE;" -e "s;\YOUR_STAGING_SERVER_HOME_PATH_HERE;$YOUR_STAGING_SERVER_HOME_PATH_HERE;" -e "s;\YOUR_DEFAULT_DATABASE_USERNAME_HERE;$YOUR_DEFAULT_DATABASE_USERNAME_HERE;" -e "s;\YOUR_DEFAULT_DATABASE_PASSWORD_HERE;$YOUR_DEFAULT_DATABASE_PASSWORD_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE;" ~/Projects/dudestack/createproject_nginx.sh > ~/Projects/dudestack/createproject_generated.sh
+else
 sed -e "s;\YOUR_BITBUCKET_ACCOUNT_HERE;$YOUR_BITBUCKET_ACCOUNT_HERE;" -e "s;\YOUR_STAGING_SERVER_HERE;$YOUR_STAGING_SERVER_HERE;" -e "s;\YOUR_STAGING_USERNAME_HERE;$YOUR_STAGING_USERNAME_HERE;" -e "s;\YOUR_STAGING_SERVER_PASSWORD_HERE;$YOUR_STAGING_SERVER_PASSWORD_HERE;" -e "s;\YOUR_STAGING_SERVER_HOME_PATH_HERE;$YOUR_STAGING_SERVER_HOME_PATH_HERE;" -e "s;\YOUR_DEFAULT_DATABASE_USERNAME_HERE;$YOUR_DEFAULT_DATABASE_USERNAME_HERE;" -e "s;\YOUR_DEFAULT_DATABASE_PASSWORD_HERE;$YOUR_DEFAULT_DATABASE_PASSWORD_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE;" ~/Projects/dudestack/createproject.sh > ~/Projects/dudestack/createproject_generated.sh
+fi
+
 sudo mv ~/Projects/dudestack/createproject_generated.sh /usr/local/bin/createproject
 sudo chmod +x /usr/local/bin/createproject
 
-echo "${boldgreen}Setup successful. Please run createproject before starting a project."
+echo "${boldgreen}Setup successful. Please run createproject before starting a project. Double check out source code of /usr/local/bin/createproject before using."
 echo "${red}WARNING! ${boldwhite}Don't trust blindly in your deploy configs, they contain remove commands! Please check them twice before deploying!${txtreset}"
