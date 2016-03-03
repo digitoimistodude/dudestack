@@ -290,7 +290,7 @@ curl --user 'YOUR_BITBUCKET_ACCOUNT_HERE:YOUR_BITBUCKET_PASSWORD_HERE' https://a
 echo "${yellow}Initializing the bitbucket repo...${txtreset}"
 cd "$HOME/Projects/$PROJECTNAME"$PROJECTNAME
 git init
-git remote add origin git@bitbucket.org:YOUR_BITBUCKET_ACCOUNT_HERE/$PROJECTNAME.git
+git remote add origin git@bitbucket.org:YOUR_BITBUCKET_TEAM_HERE/$PROJECTNAME.git
 git add --all
 git commit -m 'First commit - project started'
 git push -u origin --all
