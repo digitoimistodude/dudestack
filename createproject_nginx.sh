@@ -282,17 +282,18 @@ chmod 777 "$HOME/Projects/$PROJECTNAME/content"
 #ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp user create user1 user1@yourcompanyltd.com --role=administrator --user_pass=somepass --first_name=John --last_name=Doe --display_name=John"
 #ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp user create user2 user2@yourcompanyltd.com --role=administrator --user_pass=somepass --first_name=Marilyn --last_name=Manson --display_name=Marilyn"
 
-echo "${yellow}Setting uploads permissions...:${txtreset}"
-chmod -Rv 777 "$HOME/Projects/$PROJECTNAME/content/uploads"
-# mkdir -p "$HOME/Projects/$PROJECTNAME/media"
-# chmod -Rv 777 "$HOME/Projects/$PROJECTNAME/media"
-
 rm "$HOME/Projects/$PROJECTNAME/createproject.sh"
 rm "$HOME/Projects/$PROJECTNAME/setup.sh"
-echo "${yellow}Initializing bitbucket repo...${txtreset}"
-cd "$HOME/Projects/$PROJECTNAME"
+echo "${yellow}Creating a bitbucket repo...${txtreset}"
+curl --user 'YOUR_BITBUCKET_ACCOUNT_HERE:YOUR_BITBUCKET_PASSWORD_HERE' https://api.bitbucket.org/1.0/repositories/ --data owner=YOUR_BITBUCKET_TEAM_HERE --data name=$PROJECTNAME
+
+echo "${yellow}Initializing the bitbucket repo...${txtreset}"
+cd "$HOME/Projects/$PROJECTNAME"$PROJECTNAME
 git init
 git remote add origin git@bitbucket.org:YOUR_BITBUCKET_ACCOUNT_HERE/$PROJECTNAME.git
+git add --all
+git commit -m 'First commit - project started'
+git push -u origin --all
 
 echo "server {
     listen 80;
