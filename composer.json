@@ -44,7 +44,6 @@
     }
   ],
   "require": {
-    "digitoimistodude/dudestack": "dev-master",
     "koodimonni/composer-dropin-installer": "*",
     "php": ">=5.3.10",
     "johnpbloch/wordpress": "4.4.2",
@@ -69,7 +68,7 @@
       "content/languages/themes/": ["vendor:koodimonni-theme-language"]
     },
     "installer-paths": {
-      "content/mu-plugins/{$name}/": ["type:wordpress-muplugin", "webdevstudios/cmb2", "wpackagist-plugin/clean-image-filenames", "wpackagist-plugin/wordpress-seo"], 
+      "content/mu-plugins/{$name}/": ["type:wordpress-muplugin", "webdevstudios/cmb2", "wpackagist-plugin/clean-image-filenames", "wpackagist-plugin/wordpress-seo"],
       "content/plugins/{$name}/": ["type:wordpress-plugin"],
       "content/themes/{$name}/": ["type:wordpress-theme"]
     },
