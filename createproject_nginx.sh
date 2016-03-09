@@ -279,7 +279,7 @@ echo "${yellow}Creating a bitbucket repo...${txtreset}"
 curl --user 'YOUR_BITBUCKET_ACCOUNT_HERE:YOUR_BITBUCKET_PASSWORD_HERE' https://api.bitbucket.org/1.0/repositories/ --data owner=YOUR_BITBUCKET_TEAM_HERE --data name=$PROJECTNAME
 
 echo "${yellow}Initializing the bitbucket repo...${txtreset}"
-cd "$HOME/Projects/$PROJECTNAME"$PROJECTNAME
+cd "$HOME/Projects/$PROJECTNAME"
 git init
 git remote add origin git@bitbucket.org:YOUR_BITBUCKET_TEAM_HERE/$PROJECTNAME.git
 git add --all
