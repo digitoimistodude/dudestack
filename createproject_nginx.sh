@@ -29,15 +29,6 @@ else
 #     esac
 # done
 
-while true; do
-read -p "${boldyellow}Created Bitbucket/Github repo? (y/n)${txtreset} " yn
-    case $yn in
-        [Yy]* ) break;;
-        [Nn]* ) exit;;
-        * ) echo "Please answer y or n.";;
-    esac
-done
-
 echo "${boldyellow}Project name in lowercase (without spaces or special characters):${txtreset} "
 read -e PROJECTNAME
 cd $HOME/Projects/dudestack
