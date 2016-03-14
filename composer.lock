@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a9c10f6c230ff969889350004b58acd8",
-    "content-hash": "fa44251ac362260d35151138a40ef9be",
+    "hash": "4b65700a89b9411872ad4cd30468b08d",
+    "content-hash": "ee20005ad1de2bddd14977ea1bf70290",
     "packages": [
         {
             "name": "composer/installers",
@@ -401,10 +401,10 @@
         },
         {
             "name": "koodimonni-plugin-language/woocommerce-en_gb",
-            "version": "2.5.3",
+            "version": "2.5.5",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/plugin/woocommerce/2.5.3/en_GB.zip",
+                "url": "https://downloads.wordpress.org/translation/plugin/woocommerce/2.5.5/en_GB.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -422,10 +422,10 @@
         },
         {
             "name": "koodimonni-plugin-language/woocommerce-fi",
-            "version": "2.5.3",
+            "version": "2.5.5",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/plugin/woocommerce/2.5.3/fi.zip",
+                "url": "https://downloads.wordpress.org/translation/plugin/woocommerce/2.5.5/fi.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1683,6 +1683,26 @@
             "homepage": "https://wordpress.org/plugins/clean-image-filenames/"
         },
         {
+            "name": "wpackagist-plugin/email-address-encoder",
+            "version": "1.0.4",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/email-address-encoder/",
+                "reference": "tags/1.0.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/email-address-encoder.1.0.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/email-address-encoder/"
+        },
+        {
             "name": "wpackagist-plugin/go-live-update-urls",
             "version": "3.1.0",
             "source": {
@@ -1721,6 +1741,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/google-analytics-dashboard-for-wp/"
+        },
+        {
+            "name": "wpackagist-plugin/imagify",
+            "version": "1.4.4",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/imagify/",
+                "reference": "tags/1.4.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/imagify.1.4.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/imagify/"
         },
         {
             "name": "wpackagist-plugin/iwp-client",
@@ -1784,15 +1824,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "3.1",
+            "version": "3.1.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/3.1"
+                "reference": "tags/3.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.1.1.zip",
                 "reference": null,
                 "shasum": null
             },

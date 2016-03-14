@@ -59,7 +59,9 @@
     "wpackagist-plugin/go-live-update-urls": "*",
     "wpackagist-plugin/iwp-client": "*",
     "wpackagist-plugin/clean-image-filenames": "*",
-    "wpackagist-plugin/scripts-to-footerphp": "*"
+    "wpackagist-plugin/scripts-to-footerphp": "*",
+    "wpackagist-plugin/imagify": "*",
+    "wpackagist-plugin/email-address-encoder": "*"
   },
   "extra": {
     "dropin-paths": {
