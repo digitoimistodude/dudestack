@@ -52,16 +52,11 @@
     "composer/installers": "~1.0.12",
     "wp-cli/wp-cli": "*",
     "vlucas/phpdotenv": "^2.0.1",
-    "webdevstudios/cmb2": "*",
-    "wpackagist-plugin/wordpress-seo": "*",
     "wpackagist-plugin/google-analytics-dashboard-for-wp": "*",
-    "wpackagist-plugin/simple-history": "*",
     "wpackagist-plugin/go-live-update-urls": "*",
     "wpackagist-plugin/iwp-client": "*",
-    "wpackagist-plugin/clean-image-filenames": "*",
     "wpackagist-plugin/scripts-to-footerphp": "*",
-    "wpackagist-plugin/imagify": "*",
-    "wpackagist-plugin/email-address-encoder": "*"
+    "wpackagist-plugin/imagify": "*"
   },
   "extra": {
     "dropin-paths": {
@@ -70,7 +65,7 @@
       "content/languages/themes/": ["vendor:koodimonni-theme-language"]
     },
     "installer-paths": {
-      "content/mu-plugins/{$name}/": ["type:wordpress-muplugin", "webdevstudios/cmb2", "wpackagist-plugin/clean-image-filenames", "wpackagist-plugin/wordpress-seo"],
+      "content/mu-plugins/{$name}/": ["type:wordpress-muplugin", "wpackagist-plugin/wordpress-seo", "wpackagist-plugin/simple-history", "wpackagist-plugin/clean-image-filenames", "wpackagist-plugin/wordpress-seo", "wpackagist-plugin/email-address-encoder"],
       "content/plugins/{$name}/": ["type:wordpress-plugin"],
       "content/themes/{$name}/": ["type:wordpress-theme"]
     },

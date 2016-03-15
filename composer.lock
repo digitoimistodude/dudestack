@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4b65700a89b9411872ad4cd30468b08d",
-    "content-hash": "ee20005ad1de2bddd14977ea1bf70290",
+    "hash": "e1f083565c3c9c8761bbe2b029483de8",
+    "content-hash": "daeb93f7a92078f377798e88d07535fb",
     "packages": [
         {
             "name": "composer/installers",
@@ -1504,51 +1504,6 @@
             "time": "2015-12-29 15:10:30"
         },
         {
-            "name": "webdevstudios/cmb2",
-            "version": "v2.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/WebDevStudios/CMB2.git",
-                "reference": "22fd55f4a89346323b8a7d66ed70d9989ce52622"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/WebDevStudios/CMB2/zipball/22fd55f4a89346323b8a7d66ed70d9989ce52622",
-                "reference": "22fd55f4a89346323b8a7d66ed70d9989ce52622",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">5.2.4"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "3.7.*"
-            },
-            "suggest": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "WebDevStudios",
-                    "email": "contact@webdevstudios.com",
-                    "homepage": "https://github.com/WebDevStudios",
-                    "role": "Developer"
-                }
-            ],
-            "description": "CMB2 is a metabox, custom fields, and forms library for WordPress that will blow your mind.",
-            "homepage": "https://github.com/WebDevStudios/CMB2",
-            "keywords": [
-                "metabox",
-                "plugin",
-                "wordpress"
-            ],
-            "time": "2016-02-29 22:09:38"
-        },
-        {
             "name": "wp-cli/php-cli-tools",
             "version": "v0.11.0",
             "source": {
@@ -1663,46 +1618,6 @@
             "time": "2016-01-07 16:36:32"
         },
         {
-            "name": "wpackagist-plugin/clean-image-filenames",
-            "version": "1.1.1",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/clean-image-filenames/",
-                "reference": "tags/1.1.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/clean-image-filenames.1.1.1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/clean-image-filenames/"
-        },
-        {
-            "name": "wpackagist-plugin/email-address-encoder",
-            "version": "1.0.4",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/email-address-encoder/",
-                "reference": "tags/1.0.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/email-address-encoder.1.0.4.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/email-address-encoder/"
-        },
-        {
             "name": "wpackagist-plugin/go-live-update-urls",
             "version": "3.1.0",
             "source": {
@@ -1764,15 +1679,15 @@
         },
         {
             "name": "wpackagist-plugin/iwp-client",
-            "version": "1.5.0",
+            "version": "1.5.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/iwp-client/",
-                "reference": "tags/1.5.0"
+                "reference": "tags/1.5.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/iwp-client.1.5.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/iwp-client.1.5.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1801,46 +1716,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/scripts-to-footerphp/"
-        },
-        {
-            "name": "wpackagist-plugin/simple-history",
-            "version": "2.5.3",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/simple-history/",
-                "reference": "tags/2.5.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/simple-history.2.5.3.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/simple-history/"
-        },
-        {
-            "name": "wpackagist-plugin/wordpress-seo",
-            "version": "3.1.1",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/3.1.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.1.1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wordpress-seo/"
         }
     ],
     "packages-dev": [],

@@ -154,7 +154,7 @@ Edit your `composer.json` and add these lines inside respository, separated by c
       "package": {
         "name": "advanced-custom-fields/advanced-custom-fields-pro",
         "version": "5.0",
-        "type": "wordpress-plugin",
+        "type": "wordpress-muplugin",
         "dist": {
           "type": "zip",
           "url": "YOUR_DOWNLOAD_URL (get it from ACF website)"
