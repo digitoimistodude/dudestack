@@ -78,12 +78,12 @@ set :ssh_options, {
     forward_agent: \"true\"
 }
 
-set :deploy_to, \"/YOUR_STAGING_SERVER_HOME_PATH_HERE/projects/#{fetch(:application)}\"
-SSHKit.config.command_map[:composer] = \"/YOUR_STAGING_SERVER_HOME_PATH_HERE/bin/composer\"
+set :deploy_to, \"YOUR_STAGING_SERVER_HOME_PATH_HERE/projects/#{fetch(:application)}\"
+SSHKit.config.command_map[:composer] = \"YOUR_STAGING_SERVER_HOME_PATH_HERE/bin/composer\"
 set :deploy_via, :remote_cache
 set :use_sudo, false
 set :keep_releases, 2
-set :tmp_dir, \"/YOUR_STAGING_SERVER_HOME_PATH_HERE/tmp\"
+set :tmp_dir, \"YOUR_STAGING_SERVER_HOME_PATH_HERE/tmp\"
 
 namespace :deploy do
 
@@ -100,13 +100,13 @@ namespace :deploy do
     task :finished do
         on roles(:app) do
 
-            execute \"mkdir -p /YOUR_STAGING_SERVER_HOME_PATH_HERE/#{fetch(:application)}\"
-            execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/#{fetch(:application)}/content && ln -nfs #{current_path}/content /YOUR_SERVER_HOME_PATH_HERE/#{fetch(:application)}/content\"
-            execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/#{fetch(:application)}/index.php && ln -nfs #{current_path}/index.php /YOUR_SERVER_HOME_PATH_HERE/#{fetch(:application)}/index.php\"
-            execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/#{fetch(:application)}/wp-config.php && ln -nfs #{current_path}/wp-config.php /YOUR_SERVER_HOME_PATH_HERE/#{fetch(:application)}/wp-config.php\"
-            execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/#{fetch(:application)}/wp && ln -nfs #{current_path}/wp /YOUR_SERVER_HOME_PATH_HERE/#{fetch(:application)}/wp\"
-            execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/#{fetch(:application)}/vendor && ln -nfs #{current_path}/vendor /YOUR_SERVER_HOME_PATH_HERE/#{fetch(:application)}/vendor\"
-            execute \"rm -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/#{fetch(:application)}/config && ln -nfs #{current_path}/config /YOUR_SERVER_HOME_PATH_HERE/#{fetch(:application)}/config\"
+            execute \"mkdir -p YOUR_STAGING_SERVER_PUBLIC_PATH_HERE\"
+            execute \"rm -f YOUR_STAGING_SERVER_PUBLIC_PATH_HERE/content && ln -nfs #{current_path}/content YOUR_STAGING_SERVER_PUBLIC_PATH_HERE/content\"
+            execute \"rm -f YOUR_STAGING_SERVER_PUBLIC_PATH_HERE/index.php && ln -nfs #{current_path}/index.php YOUR_STAGING_SERVER_PUBLIC_PATH_HERE/index.php\"
+            execute \"rm -f YOUR_STAGING_SERVER_PUBLIC_PATH_HERE/wp-config.php && ln -nfs #{current_path}/wp-config.php YOUR_STAGING_SERVER_PUBLIC_PATH_HERE/wp-config.php\"
+            execute \"rm -f YOUR_STAGING_SERVER_PUBLIC_PATH_HERE/wp && ln -nfs #{current_path}/wp YOUR_STAGING_SERVER_PUBLIC_PATH_HERE/wp\"
+            execute \"rm -f YOUR_STAGING_SERVER_PUBLIC_PATH_HERE/vendor && ln -nfs #{current_path}/vendor YOUR_STAGING_SERVER_PUBLIC_PATH_HERE/vendor\"
+            execute \"rm -f YOUR_STAGING_SERVER_PUBLIC_PATH_HERE/config && ln -nfs #{current_path}/config YOUR_STAGING_SERVER_PUBLIC_PATH_HERE/config\"
 
         end
     end
@@ -115,11 +115,11 @@ namespace :deploy do
     task :composer_install do
         on roles(:app) do
             within release_path do
-                if test(\"[ -f /YOUR_STAGING_SERVER_HOME_PATH_HERE/bin/composer ]\")
+                if test(\"[ -f YOUR_STAGING_SERVER_HOME_PATH_HERE/bin/composer ]\")
                     puts \"Composer already exists, running update only...\"
                     execute 'composer', 'update'
                 else
-                    execute \"mkdir -p /YOUR_STAGING_SERVER_HOME_PATH_HERE/bin && curl -sS https://getcomposer.org/installer | php && mv composer.phar /YOUR_STAGING_SERVER_HOME_PATH_HERE/bin/composer && chmod +x /YOUR_STAGING_SERVER_HOME_PATH_HERE/bin/composer\"
+                    execute \"mkdir -p YOUR_STAGING_SERVER_HOME_PATH_HERE/bin && curl -sS https://getcomposer.org/installer | php && mv composer.phar YOUR_STAGING_SERVER_HOME_PATH_HERE/bin/composer && chmod +x YOUR_STAGING_SERVER_HOME_PATH_HERE/bin/composer\"
                     execute 'composer', 'update'
                     execute 'composer', 'install', '--no-dev', '--optimize-autoloader'
                 end

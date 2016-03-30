@@ -75,8 +75,11 @@ read -e YOUR_STAGING_USERNAME_HERE
 echo "${boldyellow}Staging server password:${txtreset} "
 read -e YOUR_STAGING_SERVER_PASSWORD_HERE
 
-echo "${boldyellow}Staging server home path without trailing slash (for example /home/myusername0123 or /var/www/somehome):${txtreset} "
+echo "${boldyellow}Staging server home path without last trailing slash (for example /home/myusername0123 or /var/www/somehome):${txtreset} "
 read -e YOUR_STAGING_SERVER_HOME_PATH_HERE
+
+echo "${boldyellow}Staging server public path without last trailing slash (for example /home/myusername0123/site.com or /var/www/somehome/public_html):${txtreset} "
+read -e YOUR_STAGING_SERVER_PUBLIC_PATH_HERE
 
 echo "${boldyellow}Default MySQL-username (default: 'root'):${txtreset} "
 read -e YOUR_DEFAULT_DATABASE_USERNAME_HERE
