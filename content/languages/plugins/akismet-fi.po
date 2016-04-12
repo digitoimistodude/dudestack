@@ -415,11 +415,11 @@ msgid_plural "Spam blocked"
 msgstr[0] "Roskaviestiä estetty"
 msgstr[1] ""
 
-#: class.akismet.php:1048
+#: class.akismet.php:1090
 msgid "Akismet %s requires WordPress %s or higher."
 msgstr "Akismet %s vaatii WordPress %s:n tai uudemman."
 
-#: class.akismet.php:1048 views/notice.php:24
+#: class.akismet.php:1090 views/notice.php:24
 msgid "Please <a href=\"%1$s\">upgrade WordPress</a> to a current version, or <a href=\"%2$s\">downgrade to version 2.4 of the Akismet plugin</a>."
 msgstr "Ole hyvä ja <a href=\"%1$s\">päivitä WordPress</a> uusimpaan versioon, tai <a href=\"%2$s\">hae Akismetista versio 2.4</a>."
 
@@ -706,7 +706,7 @@ msgstr "Lisätään uudelleen..."
 msgid "Settings"
 msgstr "Asetukset"
 
-#. #-#-#-#-#  tmp-akismet.pot (Akismet 3.1.8)  #-#-#-#-#
+#. #-#-#-#-#  tmp-akismet.pot (Akismet 3.1.10)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: class.akismet-admin.php:93 class.akismet-admin.php:95
 #: class.akismet-admin.php:850 views/config.php:3
