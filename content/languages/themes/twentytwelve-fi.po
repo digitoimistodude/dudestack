@@ -7,26 +7,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/1.0-alpha-1100\n"
+"X-Generator: GlotPress/2.1.0-alpha\n"
 "Project-Id-Version: Twenty Twelve\n"
-
-#. #-#-#-#-#  twentytwelve.pot (Twenty Twelve 1.9)  #-#-#-#-#
-#. Author URI of the plugin/theme
-#: footer.php:16
-msgid "https://wordpress.org/"
-msgstr "https://wordpress.org/"
-
-#: functions.php:346
-msgid "Reply"
-msgstr "Vastaa"
-
-#: image.php:26
-msgid "<span class=\"meta-prep meta-prep-entry-date\">Published </span> <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%8$s</a>."
-msgstr "<span class=\"meta-prep meta-prep-entry-date\">Julkaistu </span> <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> alkuperäisessä koossa <a href=\"%3$s\" title=\"Linkki täysikokoiseen kuvaan\">%4$s &times; %5$s</a> sivulla <a href=\"%6$s\" title=\"Palaa sivulle %7$s\" rel=\"gallery\">%8$s</a>."
-
-#. Description of the plugin/theme
-msgid "The 2012 theme for WordPress is a fully responsive theme that looks great on any device. Features include a front page template with its own widgets, an optional display font, styling for post formats on both index and single views, and an optional no-sidebar page template. Make it yours with a custom menu, header image, and background."
-msgstr "2012-teema on täysin mukautuva ja näyttää hyvältä joka päätelaitteella. Joitakin ominaisuuksia: erillinen etusivupohja omine vimpaimineen, valinnainen otsikkofontti, omat tyylit eri artikkelimuodoille ja valinnainen sivupalkiton sivupohja. Valikkoa, taustakuvaa ja otsakekuvaa voi muokata."
 
 #. translators: If there are characters in your language that are not supported
 #. by Open Sans, translate this to 'off'. Do not translate into your own
@@ -35,6 +17,10 @@ msgstr "2012-teema on täysin mukautuva ja näyttää hyvältä joka päätelait
 msgctxt "Open Sans font: on or off"
 msgid "on"
 msgstr "on"
+
+#: author.php:32
+msgid "Author Archives: %s"
+msgstr "Kirjoittajan arkistot: %s"
 
 #. translators: To add an additional Open Sans character subset specific to
 #. your language, translate this to 'greek', 'cyrillic' or 'vietnamese'. Do not
@@ -92,48 +78,6 @@ msgstr "Täyslevyinen, ei sivupalkkia"
 msgid "Front Page Template"
 msgstr "Etusivu"
 
-#: content.php:16
-msgid "Featured post"
-msgstr "Näytteillä oleva artikkeli"
-
-#: functions.php:212
-msgid "Page %s"
-msgstr "Sivu %s"
-
-#: content-aside.php:23 content-image.php:23 content-link.php:21
-#: content-quote.php:20 content-status.php:37 content.php:33
-msgid "1 Reply"
-msgstr "1 vastaus"
-
-#: content-link.php:12
-msgid "Link"
-msgstr "Linkki"
-
-#: functions.php:325
-msgid "Post author"
-msgstr "Artikkelin kirjoittaja"
-
-#: content-aside.php:23 content-image.php:23 content-link.php:21
-#: content-quote.php:20 content-status.php:37 content.php:33
-msgid "% Replies"
-msgstr "% vastausta"
-
-#: 404.php:21
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr "Emme valitettavasti löytäneet etsimääsi. Ehkä hakutoiminnosta on apua."
-
-#: content-none.php:17 index.php:53
-msgid "Apologies, but no results were found. Perhaps searching will help find a related post."
-msgstr "Valitettavasti mitään ei löytynyt. Ehkä löydät etsimäsi hakutoiminnon avulla."
-
-#: functions.php:310
-msgid "(Edit)"
-msgstr "(Muokkaa)"
-
-#: header.php:44
-msgid "Skip to content"
-msgstr "Siirry sisältöön"
-
 #: header.php:43
 msgid "Menu"
 msgstr "Valikko"
@@ -146,83 +90,45 @@ msgstr "Ei mitään nähtävää"
 msgid "Ready to publish your first post? <a href=\"%s\">Get started here</a>."
 msgstr "Oletko valmis julkaisemaan ensimmäisen kirjoituksesi? <a href=\"%s\">Aloita tästä</a>."
 
-#: image.php:41
-msgid "&larr; Previous"
-msgstr "&larr; Edellinen"
+#. Theme Name of the plugin/theme
+msgid "Twenty Twelve"
+msgstr "Twenty Twelve"
 
-#: image.php:42
-msgid "Next &rarr;"
-msgstr "Seuraava &rarr;"
+#. #-#-#-#-#  twentytwelve.pot (Twenty Twelve 1.8)  #-#-#-#-#
+#. Author URI of the plugin/theme
+#: footer.php:16
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
 
-#: search.php:18
-msgid "Search Results for: %s"
-msgstr "Hakutulokset kohteelle: %s"
+#: content.php:66
+msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Katso kaikki artikkelit kirjoittajalta %s <span class=\"meta-nav\">&rarr;</span>"
 
-#: search.php:38
-msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
-msgstr "Hakusi ei valitettavasti tuottanut yhtään tulosta. Yritä uudelleen eri hakusanoilla."
+#: functions.php:64
+msgid "Primary Menu"
+msgstr "Ensisijainen valikko"
 
-#: archive.php:35
-msgid "Archives"
-msgstr "Arkistot"
-
-#: functions.php:337
-msgid "Your comment is awaiting moderation."
-msgstr "Kommenttisi on arvioitavana."
-
-#. Author of the plugin/theme
-msgid "the WordPress team"
-msgstr "WordPress-tiimi"
-
-#: functions.php:381
-msgid "View all posts by %s"
-msgstr "Näytä kaikki artikkelit kirjoittajalta %s"
+#: functions.php:310
+msgid "Pingback:"
+msgstr "Päivitysilmoitus:"
 
 #. translators: 1: date, 2: time
 #: functions.php:331
 msgid "%1$s at %2$s"
 msgstr "%1$s klo %2$s"
 
-#. Theme Name of the plugin/theme
-msgid "Twenty Twelve"
-msgstr "Twenty Twelve"
+#: functions.php:212
+msgid "Page %s"
+msgstr "Sivu %s"
 
-#: archive.php:33
-msgid "Yearly Archives: %s"
-msgstr "Arkistot vuoden mukaan: %s"
-
-#: category.php:21
-msgid "Category Archives: %s"
-msgstr "Aihearkisto: %s"
-
-#: tag.php:21
-msgid "Tag Archives: %s"
-msgstr "Avainsana-arkisto: %s"
+#. Description of the plugin/theme
+msgid "The 2012 theme for WordPress is a fully responsive theme that looks great on any device. Features include a front page template with its own widgets, an optional display font, styling for post formats on both index and single views, and an optional no-sidebar page template. Make it yours with a custom menu, header image, and background."
+msgstr "2012-teema on täysin mukautuva ja näyttää hyvältä joka päätelaitteella. Joitakin ominaisuuksia: erillinen etusivupohja omine vimpaimineen, valinnainen otsikkofontti, omat tyylit eri artikkelimuodoille ja valinnainen sivupalkiton sivupohja. Valikkoa, taustakuvaa ja otsakekuvaa voi muokata."
 
 #: content-aside.php:23 content-image.php:23 content-link.php:21
 #: content-quote.php:20 content-status.php:37 content.php:33
-msgid "Leave a reply"
-msgstr "Vastaa"
-
-#: content-none.php:13 index.php:49 search.php:34
-msgid "Nothing Found"
-msgstr "Mitään ei löytynyt."
-
-#: content-page.php:21 content.php:45 image.php:102
-msgid "Pages:"
-msgstr "Sivut:"
-
-#: comments.php:42
-msgid "Comment navigation"
-msgstr "Kommenttien selaus"
-
-#: archive.php:29
-msgid "Daily Archives: %s"
-msgstr "Arkistot päivämäärän mukaan: %s"
-
-#: archive.php:31
-msgid "Monthly Archives: %s"
-msgstr "Arkistot kuukauden mukaan: %s"
+msgid "% Replies"
+msgstr "% vastausta"
 
 #: footer.php:16
 msgid "Semantic Personal Publishing Platform"
@@ -251,6 +157,26 @@ msgstr "<span class=\"meta-nav\">&larr;</span> Vanhemmat artikkelit"
 #: functions.php:285
 msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Uudemmat artikkelit <span class=\"meta-nav\">&rarr;</span>"
+
+#. Author of the plugin/theme
+msgid "the WordPress team"
+msgstr "WordPress-tiimi"
+
+#: 404.php:21
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Emme valitettavasti löytäneet etsimääsi. Ehkä hakutoiminnosta on apua."
+
+#: content-none.php:17 index.php:53
+msgid "Apologies, but no results were found. Perhaps searching will help find a related post."
+msgstr "Valitettavasti mitään ei löytynyt. Ehkä löydät etsimäsi hakutoiminnon avulla."
+
+#: functions.php:346
+msgid "Reply"
+msgstr "Vastaa"
+
+#: image.php:26
+msgid "<span class=\"meta-prep meta-prep-entry-date\">Published </span> <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%8$s</a>."
+msgstr "<span class=\"meta-prep meta-prep-entry-date\">Julkaistu </span> <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> alkuperäisessä koossa <a href=\"%3$s\" title=\"Linkki täysikokoiseen kuvaan\">%4$s &times; %5$s</a> sivulla <a href=\"%6$s\" title=\"Palaa sivulle %7$s\" rel=\"gallery\">%8$s</a>."
 
 #: 404.php:17
 msgid "This is somewhat embarrassing, isn&rsquo;t it?"
@@ -305,18 +231,92 @@ msgstr "Muokkaa"
 msgid ", "
 msgstr ", "
 
-#: content.php:66
-msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Katso kaikki artikkelit kirjoittajalta %s <span class=\"meta-nav\">&rarr;</span>"
+#: functions.php:381
+msgid "View all posts by %s"
+msgstr "Näytä kaikki artikkelit kirjoittajalta %s"
 
-#: functions.php:64
-msgid "Primary Menu"
-msgstr "Ensisijainen valikko"
+#: archive.php:33
+msgid "Yearly Archives: %s"
+msgstr "Arkistot vuoden mukaan: %s"
+
+#: category.php:21
+msgid "Category Archives: %s"
+msgstr "Aihearkisto: %s"
+
+#: tag.php:21
+msgid "Tag Archives: %s"
+msgstr "Avainsana-arkisto: %s"
+
+#: content-aside.php:23 content-image.php:23 content-link.php:21
+#: content-quote.php:20 content-status.php:37 content.php:33
+msgid "Leave a reply"
+msgstr "Vastaa"
+
+#: content-none.php:13 index.php:49 search.php:34
+msgid "Nothing Found"
+msgstr "Mitään ei löytynyt."
+
+#: content-page.php:21 content.php:45 image.php:102
+msgid "Pages:"
+msgstr "Sivut:"
+
+#: comments.php:42
+msgid "Comment navigation"
+msgstr "Kommenttien selaus"
+
+#: archive.php:29
+msgid "Daily Archives: %s"
+msgstr "Arkistot päivämäärän mukaan: %s"
+
+#: archive.php:31
+msgid "Monthly Archives: %s"
+msgstr "Arkistot kuukauden mukaan: %s"
+
+#: image.php:41
+msgid "&larr; Previous"
+msgstr "&larr; Edellinen"
+
+#: image.php:42
+msgid "Next &rarr;"
+msgstr "Seuraava &rarr;"
+
+#: search.php:18
+msgid "Search Results for: %s"
+msgstr "Hakutulokset kohteelle: %s"
+
+#: search.php:38
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr "Hakusi ei valitettavasti tuottanut yhtään tulosta. Yritä uudelleen eri hakusanoilla."
+
+#: archive.php:35
+msgid "Archives"
+msgstr "Arkistot"
+
+#: functions.php:337
+msgid "Your comment is awaiting moderation."
+msgstr "Kommenttisi on arvioitavana."
+
+#: content-aside.php:23 content-image.php:23 content-link.php:21
+#: content-quote.php:20 content-status.php:37 content.php:33
+msgid "1 Reply"
+msgstr "1 vastaus"
+
+#: content-link.php:12
+msgid "Link"
+msgstr "Linkki"
 
 #: functions.php:310
-msgid "Pingback:"
-msgstr "Päivitysilmoitus:"
+msgid "(Edit)"
+msgstr "(Muokkaa)"
 
-#: author.php:32
-msgid "Author Archives: %s"
-msgstr "Kirjoittajan arkistot: %s"
+#: header.php:44
+msgid "Skip to content"
+msgstr "Siirry sisältöön"
+
+#: functions.php:325
+msgid "Post author"
+msgstr "Artikkelin kirjoittaja"
+
+#: content.php:16
+msgid "Featured post"
+msgstr "Näytteillä oleva artikkeli"
