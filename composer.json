@@ -46,16 +46,14 @@
   "require": {
     "koodimonni/composer-dropin-installer": "*",
     "php": ">=5.3.10",
-    "johnpbloch/wordpress": "4.5.1",
+    "johnpbloch/wordpress": "4.5.2",
     "koodimonni-language/fi": "*",
     "koodimonni-language/en_gb": "*",
     "composer/installers": "~1.0.12",
     "wp-cli/wp-cli": "*",
     "vlucas/phpdotenv": "^2.0.1",
     "wpackagist-plugin/google-analyticator": "*",
-    "wpackagist-plugin/go-live-update-urls": "*",
     "wpackagist-plugin/iwp-client": "*",
-    "wpackagist-plugin/scripts-to-footerphp": "*",
     "wpackagist-plugin/imagify": "*"
   },
   "extra": {
