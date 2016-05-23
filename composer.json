@@ -20,7 +20,7 @@
    "config": {
     "preferred-install": "dist",
     "generate-salts": true,
-    "secure-http": false
+    "secure-http": true
   },
   "autoload": {
     "psr-4": {"Roots\\Bedrock\\": "scripts/Roots/Bedrock"}
@@ -31,7 +31,7 @@
   "repositories": [
     {
       "type": "composer",
-      "url": "http://wpackagist.org",
+      "url": "https://wpackagist.org",
       "minimum-stability": "dev"
     },
     {

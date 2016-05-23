@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "14108e66291d385e0344a8678288ba70",
-    "content-hash": "489d78a90c3118c67ec27b5485231ff8",
+    "hash": "f4dae8ae6058088fbb2778f169f32a87",
+    "content-hash": "914828153bb7ec503561012d8aaac7d8",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -64,16 +64,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "2eab5e81fc983cfd262d6a728aa48fca833f1c74"
+                "reference": "48156b0fd9888bf528fbe9c9cba6963223cdd584"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/2eab5e81fc983cfd262d6a728aa48fca833f1c74",
-                "reference": "2eab5e81fc983cfd262d6a728aa48fca833f1c74",
+                "url": "https://api.github.com/repos/composer/composer/zipball/48156b0fd9888bf528fbe9c9cba6963223cdd584",
+                "reference": "48156b0fd9888bf528fbe9c9cba6963223cdd584",
                 "shasum": ""
             },
             "require": {
@@ -137,7 +137,7 @@
                 "dependency",
                 "package"
             ],
-            "time": "2016-05-10 14:21:19"
+            "time": "2016-05-17 11:25:44"
         },
         {
             "name": "composer/installers",
@@ -579,10 +579,10 @@
         },
         {
             "name": "koodimonni-plugin-language/akismet-en_gb",
-            "version": "3.1.10",
+            "version": "3.1.11",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/plugin/akismet/3.1.10/en_GB.zip",
+                "url": "https://downloads.wordpress.org/translation/plugin/akismet/3.1.11/en_GB.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -600,10 +600,10 @@
         },
         {
             "name": "koodimonni-plugin-language/akismet-fi",
-            "version": "3.1.10",
+            "version": "3.1.11",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/plugin/akismet/3.1.10/fi.zip",
+                "url": "https://downloads.wordpress.org/translation/plugin/akismet/3.1.11/fi.zip",
                 "reference": null,
                 "shasum": null
             },
