@@ -54,7 +54,9 @@
     "vlucas/phpdotenv": "^2.0.1",
     "wpackagist-plugin/google-analyticator": "*",
     "wpackagist-plugin/iwp-client": "*",
-    "wpackagist-plugin/imagify": "*"
+    "wpackagist-plugin/imagify": "*",
+    "wpackagist-plugin/simple-history": "*",
+    "wpackagist-plugin/sendgrid-email-delivery-simplified": "*"
   },
   "extra": {
     "dropin-paths": {
