@@ -301,7 +301,7 @@ rm "$HOME/Projects/$PROJECTNAME/createproject.sh"
 rm "$HOME/Projects/$PROJECTNAME/createproject_nginx.sh"
 rm "$HOME/Projects/$PROJECTNAME/setup.sh"
 echo "${yellow}Creating a bitbucket repo...${txtreset}"
-curl --user 'YOUR_BITBUCKET_ACCOUNT_HERE:YOUR_BITBUCKET_PASSWORD_HERE' https://api.bitbucket.org/1.0/repositories/ --data owner=YOUR_BITBUCKET_TEAM_HERE --data name=$PROJECTNAME
+curl -X POST -v -u YOUR_BITBUCKET_ACCOUNT_HERE:YOUR_BITBUCKET_PASSWORD_HERE -H "Content-Type: application/json" https://api.bitbucket.org/2.0/repositories/YOUR_BITBUCKET_TEAM_HERE/$PROJECTNAME -d '{"scm": "git", "is_private": "true", "fork_policy": "no_public_forks" }'
 
 echo "${yellow}Initializing the bitbucket repo...${txtreset}"
 cd "$HOME/Projects/$PROJECTNAME"
