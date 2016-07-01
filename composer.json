@@ -53,13 +53,9 @@
     "wp-cli/wp-cli": "*",
     "vlucas/phpdotenv": "^2.0.1",
     "wpackagist-plugin/google-analyticator": "*",
-    "wpackagist-plugin/iwp-client": "*",
     "wpackagist-plugin/imagify": "*",
-		"wpackagist-plugin/wordpress-seo": "*",
-		"wpackagist-plugin/simple-history": "*",
-		"wpackagist-plugin/clean-image-filenames": "*",
-		"wpackagist-plugin/email-address-encoder": "*",
-		"wpackagist-plugin/sendgrid-email-delivery-simplified": "*"
+    "wpackagist-plugin/simple-history": "*",
+    "wpackagist-plugin/sendgrid-email-delivery-simplified": "*"
   },
   "extra": {
     "dropin-paths": {
@@ -68,7 +64,7 @@
       "content/languages/themes/": ["vendor:koodimonni-theme-language"]
     },
     "installer-paths": {
-      "content/mu-plugins/{$name}/": ["type:wordpress-muplugin", "wpackagist-plugin/google-analyticator", "wpackagist-plugin/imagify", "wpackagist-plugin/wordpress-seo", "wpackagist-plugin/simple-history", "wpackagist-plugin/clean-image-filenames", "wpackagist-plugin/email-address-encoder", "wpackagist-plugin/sendgrid-email-delivery-simplified"],
+      "content/mu-plugins/{$name}/": ["type:wordpress-muplugin", "wpackagist-plugin/google-analyticator", "wpackagist-plugin/imagify", "wpackagist-plugin/simple-history", "wpackagist-plugin/sendgrid-email-delivery-simplified"],
       "content/plugins/{$name}/": ["type:wordpress-plugin"],
       "content/themes/{$name}/": ["type:wordpress-theme"]
     },
