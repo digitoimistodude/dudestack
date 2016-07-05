@@ -64,7 +64,12 @@
       "content/languages/themes/": ["vendor:koodimonni-theme-language"]
     },
     "installer-paths": {
-      "content/mu-plugins/{$name}/": ["type:wordpress-muplugin", "wpackagist-plugin/google-analyticator", "wpackagist-plugin/imagify", "wpackagist-plugin/simple-history", "wpackagist-plugin/sendgrid-email-delivery-simplified"],
+      "content/mu-plugins/{$name}/": ["type:wordpress-muplugin", 
+        "wpackagist-plugin/google-analyticator",
+        "wpackagist-plugin/imagify", 
+        "wpackagist-plugin/simple-history", 
+        "wpackagist-plugin/sendgrid-email-delivery-simplified"
+      ],
       "content/plugins/{$name}/": ["type:wordpress-plugin"],
       "content/themes/{$name}/": ["type:wordpress-theme"]
     },
