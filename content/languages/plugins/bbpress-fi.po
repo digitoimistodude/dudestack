@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-05-02 13:10:04+0000\n"
+"PO-Revision-Date: 2016-07-13 15:48:00+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,11 +14,11 @@ msgstr ""
 msgid "The bbPress Community"
 msgstr "bbPress-yhteisö"
 
-#. #-#-#-#-#  tmp-bbpress.pot (bbPress 2.5.9)  #-#-#-#-#
+#. #-#-#-#-#  tmp-bbpress.pot (bbPress 2.5.10)  #-#-#-#-#
 #. Plugin URI of the plugin/theme
-#. #-#-#-#-#  tmp-bbpress.pot (bbPress 2.5.9)  #-#-#-#-#
+#. #-#-#-#-#  tmp-bbpress.pot (bbPress 2.5.10)  #-#-#-#-#
 #. Author URI of the plugin/theme
-msgid "http://bbpress.org"
+msgid "https://bbpress.org"
 msgstr "http://bbpress.org"
 
 #. Description of the plugin/theme
@@ -63,7 +63,7 @@ msgstr "Laske roskaviestit ja poistetut viestit aiheittain"
 
 #: includes/admin/tools.php:173
 msgid "Count topics for each user"
-msgstr "Laske käyttäjäkohtainen aiheiden määrä"
+msgstr "Laske aiheet jokaiselta käyttäjältä"
 
 #: includes/admin/tools.php:174
 msgid "Count replies for each user"
@@ -207,11 +207,11 @@ msgstr "Ota tietokannastasi varmuuskopio ennen kuin jatkat."
 
 #: includes/admin/tools.php:1216
 msgid "The following data will be removed:"
-msgstr ""
+msgstr "Seuraavat tiedot poistetaan:"
 
 #: includes/admin/tools.php:1218 includes/forums/template.php:50
 msgid "All Forums"
-msgstr "Kaikki alueet"
+msgstr "Kaikki foorumit"
 
 #: includes/admin/tools.php:1219 includes/topics/functions.php:3439
 #: includes/topics/template.php:50
@@ -924,7 +924,7 @@ msgstr "Etsi foorumeilta"
 
 #: includes/common/widgets.php:512
 msgid "A list of forums with an option to set the parent."
-msgstr ""
+msgstr "Luettelo foorumeista, joihin on mahdollisuus asettaa isäntäfoorumi."
 
 #: includes/common/widgets.php:515
 msgid "(bbPress) Forums List"
@@ -1370,7 +1370,7 @@ msgstr "Lopeta seuraaminen"
 msgid "%s topic"
 msgid_plural "%s topics"
 msgstr[0] "%s aihe"
-msgstr[1] ""
+msgstr[1] "%s aiheet"
 
 #: includes/forums/template.php:1254 includes/topics/template.php:2118
 msgid " (+ %d hidden)"
@@ -1380,7 +1380,7 @@ msgstr " (+ %d piilotettua)"
 msgid "%s reply"
 msgid_plural "%s replies"
 msgstr[0] "%s vastaus"
-msgstr[1] ""
+msgstr[1] "%s vastaukset"
 
 #: includes/forums/template.php:1985
 msgid "This category contains %1$s and %2$s, and was last updated by %3$s %4$s."
@@ -1581,7 +1581,7 @@ msgstr "<strong>VIRHE</strong>: Vastineen poistossa tapahtui virhe!"
 
 #: includes/replies/functions.php:1992
 msgid "All Posts"
-msgstr "Kaikki viestit"
+msgstr "Kaikki julkaisut"
 
 #: includes/replies/functions.php:2034 includes/topics/functions.php:3464
 msgid "Replies: %s"
@@ -1860,7 +1860,7 @@ msgstr "Suljettu"
 #: includes/topics/functions.php:1967
 msgctxt "Spam the topic"
 msgid "Spam"
-msgstr "Merkitse roskaviestiksi"
+msgstr "Rskaposti"
 
 #: includes/topics/functions.php:1968
 msgctxt "Trash the topic"
@@ -3010,7 +3010,7 @@ msgstr "Suljettu"
 
 #: includes/admin/admin.php:854
 msgid "Thank you for updating! bbPress %s is waxed, polished, and ready for you to take it for a lap or two around the block!"
-msgstr "Kiitos kun päivitit! bbPress on nyt vahattu, kiillotettu ja valmiina korttelikierrokselle jos toisellekin!"
+msgstr "Kiitos kun päivitit! bbPress %s on nyt vahattu, kiillotettu ja valmiina korttelikierrokselle jos toisellekin!"
 
 #: includes/admin/admin.php:832 includes/admin/admin.php:936
 msgid "Go to Forum Settings"
@@ -3614,7 +3614,7 @@ msgstr "Käyttäjät &amp; moderointi"
 msgid "User"
 msgid_plural "Users"
 msgstr[0] "Käyttäjä"
-msgstr[1] ""
+msgstr[1] "Käyttäjät"
 
 #: includes/admin/metaboxes.php:154
 msgid "Hidden Topic"

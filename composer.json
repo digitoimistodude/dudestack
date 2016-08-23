@@ -55,7 +55,8 @@
     "wpackagist-plugin/google-analyticator": "*",
     "wpackagist-plugin/imagify": "*",
     "wpackagist-plugin/simple-history": "*",
-    "wpackagist-plugin/sendgrid-email-delivery-simplified": "*"
+    "wpackagist-plugin/sendgrid-email-delivery-simplified": "*",
+    "wpackagist-plugin/query-monitor": "^2.12"
   },
   "extra": {
     "dropin-paths": {
