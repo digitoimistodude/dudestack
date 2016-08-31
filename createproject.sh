@@ -212,6 +212,7 @@ cd "$HOME/Projects/$PROJECTNAME/"
 rm README.md
 rm createproject_nginx.sh
 rm createproject.sh
+rm .env.example
 #rm LICENSE.md
 echo "${yellow}Updating WordPress related stuff...:${txtreset}"
 cp $HOME/Projects/dudestack/composer.json "$HOME/Projects/$PROJECTNAME/composer.json"
