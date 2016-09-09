@@ -293,7 +293,7 @@ msgstr "Today"
 msgid "Edit Menu"
 msgstr "Edit Menu"
 
-#: wp-includes/wp-db.php:1782 wp-includes/wp-db.php:1788
+#: wp-includes/wp-db.php:1792 wp-includes/wp-db.php:1798
 msgid "Unable to retrieve the error message from MySQL"
 msgstr "Unable to retrieve the error message from MySQL"
 
@@ -592,7 +592,7 @@ msgstr "Scheduled"
 msgid "Choose logo"
 msgstr "Choose logo"
 
-#: wp-includes/functions.php:5122
+#: wp-includes/functions.php:5123
 msgid "Close dialog"
 msgstr "Close dialogue"
 
@@ -602,7 +602,7 @@ msgstr "No logo selected"
 
 #. translators: 1: PHP class name, 2: PHP parent class name, 3: version number,
 #. 4: __construct() method
-#: wp-includes/functions.php:3765
+#: wp-includes/functions.php:3766
 msgid "The called constructor method for %1$s in %2$s is <strong>deprecated</strong> since version %3$s! Use %4$s instead."
 msgstr "The called constructor method for %1$s in %2$s is <strong>deprecated</strong> since version %3$s! Use %4$s instead."
 
@@ -732,12 +732,12 @@ msgstr "https://codex.wordpress.org/Debugging_a_WordPress_Network"
 msgid "Read the <a href=\"%s\" target=\"_blank\">bug report</a> page. Some of the guidelines there may help you figure out what went wrong."
 msgstr "Read the <a href=\"%s\" target=\"_blank\">bug report</a> page. Some of the guidelines there may help you figure out what went wrong."
 
-#: wp-includes/functions.php:3993
+#: wp-includes/functions.php:3994
 msgid "https://codex.wordpress.org/Debugging_in_WordPress"
 msgstr "https://codex.wordpress.org/Debugging_in_WordPress"
 
 #. translators: %s: Codex URL
-#: wp-includes/functions.php:3992
+#: wp-includes/functions.php:3993
 msgid "Please see <a href=\"%s\">Debugging in WordPress</a> for more information."
 msgstr "Please see <a href=\"%s\">Debugging in WordPress</a> for more information."
 
@@ -946,66 +946,66 @@ msgstr "Site Language:"
 msgid "Author:"
 msgstr "Author:"
 
-#: wp-includes/wp-db.php:1680
+#: wp-includes/wp-db.php:1690
 msgid "Are you sure that the database server is not under particularly heavy load?"
 msgstr "Are you sure that the database server is not under particularly heavy load?"
 
-#: wp-includes/wp-db.php:1576 wp-includes/wp-db.php:1679
+#: wp-includes/wp-db.php:1586 wp-includes/wp-db.php:1689
 msgid "Are you sure that the database server is running?"
 msgstr "Are you sure that the database server is running?"
 
-#: wp-includes/wp-db.php:1575
+#: wp-includes/wp-db.php:1585
 msgid "Are you sure that you have typed the correct hostname?"
 msgstr "Are you sure that you have typed the correct hostname?"
 
-#: wp-includes/wp-db.php:1670
+#: wp-includes/wp-db.php:1680
 msgid "Error reconnecting to the database"
 msgstr "Error reconnecting to the database"
 
 #. translators: %s: support forums URL
-#: wp-includes/wp-db.php:1581 wp-includes/wp-db.php:1685
+#: wp-includes/wp-db.php:1591 wp-includes/wp-db.php:1695
 msgid "If you&#8217;re unsure what these terms mean you should probably contact your host. If you still need help you can always visit the <a href=\"%s\">WordPress Support Forums</a>."
 msgstr "If you&#8217;re unsure what these terms mean you should probably contact your host. If you still need help you can always visit the <a href=\"%s\">WordPress Support Forums</a>."
 
 #. translators: %s: database host
-#: wp-includes/wp-db.php:1674
+#: wp-includes/wp-db.php:1684
 msgid "This means that we lost contact with the database server at %s. This could mean your host&#8217;s database server is down."
 msgstr "This means that we lost contact with the database server at %s. This could mean your host&#8217;s database server is down."
 
-#: wp-includes/wp-db.php:1574
+#: wp-includes/wp-db.php:1584
 msgid "Are you sure you have the correct username and password?"
 msgstr "Are you sure you have the correct username and password?"
 
 #. translators: 1: wp-config.php. 2: database host
-#: wp-includes/wp-db.php:1568
+#: wp-includes/wp-db.php:1578
 msgid "This either means that the username and password information in your %1$s file is incorrect or we can&#8217;t contact the database server at %2$s. This could mean your host&#8217;s database server is down."
 msgstr "This either means that the username and password information in your %1$s file is incorrect or we can&#8217;t contact the database server at %2$s. This could mean your host&#8217;s database server is down."
 
 #. translators: %s: support forums URL
-#: wp-includes/wp-db.php:1113
+#: wp-includes/wp-db.php:1123
 msgid "If you don&#8217;t know how to set up a database you should <strong>contact your host</strong>. If all else fails you may find help at the <a href=\"%s\">WordPress Support Forums</a>."
 msgstr "If you don&#8217;t know how to set up a database you should <strong>contact your host</strong>. If all else fails you may find help at the <a href=\"%s\">WordPress Support Forums</a>."
 
-#: wp-includes/wp-db.php:1094
+#: wp-includes/wp-db.php:1104
 msgid "Are you sure it exists?"
 msgstr "Are you sure it exists?"
 
-#: wp-includes/wp-db.php:1085
+#: wp-includes/wp-db.php:1095
 msgid "Can&#8217;t select database"
 msgstr "Can&#8217;t select database"
 
 #. translators: 1: database user, 2: database name
-#: wp-includes/wp-db.php:1098
+#: wp-includes/wp-db.php:1108
 msgid "Does the user %1$s have permission to use the %2$s database?"
 msgstr "Does the user %1$s have permission to use the %2$s database?"
 
 #. translators: %s: database name
-#: wp-includes/wp-db.php:1105
+#: wp-includes/wp-db.php:1115
 msgid "On some systems the name of your database is prefixed with your username, so it would be like <code>username_%1$s</code>. Could that be the problem?"
 msgstr "On some systems the name of your database is prefixed with your username, so it would be like <code>username_%1$s</code>. Could that be the problem?"
 
 #. translators: %s: database name
-#: wp-includes/wp-db.php:1089
+#: wp-includes/wp-db.php:1099
 msgid "We were able to connect to the database server (which means your username and password is okay) but not able to select the %s database."
 msgstr "We were able to connect to the database server (which means your username and password is okay) but not able to select the %s database."
 
@@ -1551,7 +1551,7 @@ msgstr "Your password reset link has expired. Please request a new link below."
 msgid "Your password reset link appears to be invalid. Please request a new link below."
 msgstr "Your password reset link appears to be invalid. Please request a new link below."
 
-#: wp-includes/wp-db.php:1366 wp-includes/wp-db.php:1383
+#: wp-includes/wp-db.php:1376 wp-includes/wp-db.php:1393
 msgid "WordPress database error:"
 msgstr "WordPress database error:"
 
@@ -1569,7 +1569,7 @@ msgid "The %s directory of the develop repository must be used for RTL."
 msgstr "The %s directory of the develop repository must be used for RTL."
 
 #. translators: 1: PHP class name, 2: version number, 3: __construct() method
-#: wp-includes/functions.php:3769
+#: wp-includes/functions.php:3770
 msgid "The called constructor method for %1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
 msgstr "The called constructor method for %1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
 
@@ -2034,7 +2034,7 @@ msgstr "Link Relationship (XFN)"
 msgid "CSS Classes"
 msgstr "CSS Classes"
 
-#: wp-includes/class-wp-editor.php:1431
+#: wp-includes/class-wp-editor.php:1439
 #: wp-includes/customize/class-wp-customize-nav-menu-item-control.php:105
 #: wp-includes/media-template.php:1001
 msgid "Open link in a new tab"
@@ -2348,7 +2348,7 @@ msgid "1 Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "1 Comment<span class=\"screen-reader-text\"> on %s</span>"
 
 #: wp-includes/class-wp-customize-nav-menus.php:788
-#: wp-includes/class-wp-editor.php:1426 wp-includes/media-template.php:813
+#: wp-includes/class-wp-editor.php:1434 wp-includes/media-template.php:813
 msgid "Link Text"
 msgstr "Link Text"
 
@@ -2461,7 +2461,7 @@ msgstr "You need to pass an array of types."
 
 #. translators: %s: database access abstraction class, usually wpdb or a class
 #. extending wpdb
-#: wp-includes/wp-db.php:1165
+#: wp-includes/wp-db.php:1175
 msgid "%s must set a database connection for use with escaping."
 msgstr "%s must set a database connection for use with escaping."
 
@@ -2790,7 +2790,7 @@ msgstr "Your browser does not support direct access to the clipboard. Please use
 msgid "Read more..."
 msgstr "Read more..."
 
-#: wp-includes/class-wp-editor.php:1452
+#: wp-includes/class-wp-editor.php:1460
 msgid "Search or use up and down arrow keys to select an item."
 msgstr "Search or use up and down arrow keys to select an item."
 
@@ -3541,7 +3541,7 @@ msgstr "Add to Video Playlist"
 msgid "Invalid menu ID."
 msgstr "Invalid menu ID."
 
-#: wp-includes/wp-db.php:1281
+#: wp-includes/wp-db.php:1291
 msgid "The query argument of %s must have a placeholder."
 msgstr "The query argument of %s must have a placeholder."
 
@@ -3578,8 +3578,8 @@ msgstr "Keywords"
 msgid "https://wordpress.org/"
 msgstr "https://wordpress.org/"
 
-#: wp-includes/admin-bar.php:147 wp-includes/wp-db.php:1114
-#: wp-includes/wp-db.php:1582 wp-includes/wp-db.php:1686 wp-login.php:801
+#: wp-includes/admin-bar.php:147 wp-includes/wp-db.php:1124
+#: wp-includes/wp-db.php:1592 wp-includes/wp-db.php:1696 wp-login.php:801
 msgid "https://wordpress.org/support/"
 msgstr "https://wordpress.org/support/"
 
@@ -4109,7 +4109,7 @@ msgstr "%1$s %2$s, %3$s @ %4$s:%5$s"
 msgid "The site you were looking for, %s, does not exist, but you can create it now!"
 msgstr "The site you were looking for, %s, does not exist, but you can create it now!"
 
-#: wp-includes/functions.php:5135
+#: wp-includes/functions.php:5136
 msgid "The login page will open in a new window. After logging in you can close it and return to this page."
 msgstr "The login page will open in a new window. After logging in you can close it and return to this page."
 
@@ -4139,7 +4139,7 @@ msgctxt "submit button"
 msgid "Search"
 msgstr "Search"
 
-#: wp-includes/functions.php:5133 wp-includes/script-loader.php:461
+#: wp-includes/functions.php:5134 wp-includes/script-loader.php:461
 msgid "Session expired"
 msgstr "Session expired"
 
@@ -5220,12 +5220,12 @@ msgstr "Support Forums"
 msgid "&hellip;"
 msgstr "&hellip;"
 
-#: wp-includes/functions.php:3642
+#: wp-includes/functions.php:3643
 msgid "Database Error"
 msgstr "Database Error"
 
-#: wp-includes/functions.php:3646 wp-includes/ms-load.php:471
-#: wp-includes/wp-db.php:1564
+#: wp-includes/functions.php:3647 wp-includes/ms-load.php:471
+#: wp-includes/wp-db.php:1574
 msgid "Error establishing a database connection"
 msgstr "Error establishing a database connection"
 
@@ -5359,7 +5359,7 @@ msgstr "Preload"
 msgid "Destination directory for file streaming does not exist or is not writable."
 msgstr "Destination directory for file streaming does not exist or is not writable."
 
-#: wp-includes/class-http.php:532
+#: wp-includes/class-http.php:535
 msgid "There are no HTTP transports available which can complete the requested request."
 msgstr "There are no HTTP transports available which can complete the requested request."
 
@@ -5368,11 +5368,11 @@ msgctxt "post format"
 msgid "Format"
 msgstr "Format"
 
-#: wp-includes/class-wp-editor.php:1420
+#: wp-includes/class-wp-editor.php:1428
 msgid "Enter the destination URL"
 msgstr "Enter the destination URL"
 
-#: wp-includes/class-wp-editor.php:1434
+#: wp-includes/class-wp-editor.php:1442
 msgid "Or link to existing content"
 msgstr "Or link to existing content"
 
@@ -5396,11 +5396,11 @@ msgstr "Conditional query tags do not work before the query is run. Before then,
 msgid "The user is already active."
 msgstr "The user is already active."
 
-#: wp-includes/functions.php:3995
+#: wp-includes/functions.php:3996
 msgid "%1$s was called <strong>incorrectly</strong>. %2$s %3$s"
 msgstr "%1$s was called <strong>incorrectly</strong>. %2$s %3$s"
 
-#: wp-includes/functions.php:3990
+#: wp-includes/functions.php:3991
 msgid "(This message was added in version %s.)"
 msgstr "(This message was added in version %s.)"
 
@@ -5432,7 +5432,7 @@ msgstr "Audio"
 msgid "Invalid post format"
 msgstr "Invalid post format"
 
-#: wp-includes/class-wp-editor.php:1451
+#: wp-includes/class-wp-editor.php:1459
 msgid "No search term specified. Showing recent items."
 msgstr "No search term specified. Showing recent items."
 
@@ -6355,11 +6355,11 @@ msgstr "The specified target URL does not exist."
 msgid "Your PHP installation appears to be missing the MySQL extension which is required by WordPress."
 msgstr "Your PHP installation appears to be missing the MySQL extension which is required by WordPress."
 
-#: wp-includes/wp-db.php:1352
+#: wp-includes/wp-db.php:1362
 msgid "WordPress database error %1$s for query %2$s made by %3$s"
 msgstr "WordPress database error %1$s for query %2$s made by %3$s"
 
-#: wp-includes/wp-db.php:1354
+#: wp-includes/wp-db.php:1364
 msgid "WordPress database error %1$s for query %2$s"
 msgstr "WordPress database error %1$s for query %2$s"
 
@@ -6421,7 +6421,7 @@ msgstr "Grey"
 msgid "Slow down cowboy, no need to check for new mails so often!"
 msgstr "Steady on old bean, no need to check for new mails so often."
 
-#: wp-includes/functions.php:4529 wp-includes/functions.php:4533
+#: wp-includes/functions.php:4530 wp-includes/functions.php:4534
 msgid "UTC"
 msgstr "GMT"
 
@@ -6709,29 +6709,29 @@ msgstr "&laquo; Back"
 msgid "WordPress &rsaquo; Error"
 msgstr "WordPress &rsaquo; Error"
 
-#: wp-includes/functions.php:3706 wp-includes/functions.php:3830
-#: wp-includes/functions.php:3945
+#: wp-includes/functions.php:3707 wp-includes/functions.php:3831
+#: wp-includes/functions.php:3946
 msgid "%1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
 msgstr "%1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
 
-#: wp-includes/functions.php:3708 wp-includes/functions.php:3832
-#: wp-includes/functions.php:3947
+#: wp-includes/functions.php:3709 wp-includes/functions.php:3833
+#: wp-includes/functions.php:3948
 msgid "%1$s is <strong>deprecated</strong> since version %2$s with no alternative available."
 msgstr "%1$s is <strong>deprecated</strong> since version %2$s with no alternative available."
 
-#: wp-includes/functions.php:3890
+#: wp-includes/functions.php:3891
 msgid "%1$s was called with an argument that is <strong>deprecated</strong> since version %2$s! %3$s"
 msgstr "%1$s was called with an argument that is <strong>deprecated</strong> since version %2$s! %3$s"
 
-#: wp-includes/functions.php:3892
+#: wp-includes/functions.php:3893
 msgid "%1$s was called with an argument that is <strong>deprecated</strong> since version %2$s with no alternative available."
 msgstr "%1$s was called with an argument that is <strong>deprecated</strong> since version %2$s with no alternative available."
 
-#: wp-includes/functions.php:4484
+#: wp-includes/functions.php:4485
 msgid "Select a city"
 msgstr "Select a city"
 
-#: wp-includes/functions.php:4537
+#: wp-includes/functions.php:4538
 msgid "Manual Offsets"
 msgstr "Manual Offsets"
 
@@ -6830,7 +6830,7 @@ msgstr "Next &raquo;"
 msgid "User has blocked requests through HTTP."
 msgstr "User has blocked requests through HTTP."
 
-#: wp-includes/class-http.php:963 wp-includes/class-wp-http-curl.php:232
+#: wp-includes/class-http.php:966 wp-includes/class-wp-http-curl.php:232
 #: wp-includes/class-wp-http-curl.php:271
 msgid "Too many redirects."
 msgstr "Too many redirects."
@@ -6974,7 +6974,7 @@ msgstr "Print"
 msgid "Insert/edit image"
 msgstr "Insert/edit image"
 
-#: wp-includes/class-wp-editor.php:936 wp-includes/class-wp-editor.php:1416
+#: wp-includes/class-wp-editor.php:936 wp-includes/class-wp-editor.php:1424
 #: wp-includes/script-loader.php:419
 msgid "Insert/edit link"
 msgstr "Insert/edit link"
@@ -7651,7 +7651,7 @@ msgstr "<strong>ERROR</strong>: The password field is empty."
 msgid "<strong>ERROR</strong>: Your account has been marked as a spammer."
 msgstr "<strong>ERROR</strong>: Your account has been marked as a spammer."
 
-#: wp-includes/functions.php:5134 wp-includes/user.php:280
+#: wp-includes/functions.php:5135 wp-includes/user.php:280
 msgid "Please log in again."
 msgstr "Please log in again."
 
@@ -7659,7 +7659,7 @@ msgstr "Please log in again."
 msgid "Sidebar %d"
 msgstr "Sidebar %d"
 
-#: wp-includes/wp-db.php:3197
+#: wp-includes/wp-db.php:3207
 msgid "<strong>ERROR</strong>: WordPress %1$s requires MySQL %2$s or higher"
 msgstr "<strong>ERROR</strong>: WordPress %1$s requires MySQL %2$s or higher"
 
@@ -8003,7 +8003,7 @@ msgid "Website"
 msgstr "Website"
 
 #: wp-includes/admin-bar.php:736 wp-includes/class-wp-customize-widgets.php:418
-#: wp-includes/functions.php:3583
+#: wp-includes/functions.php:3584
 msgid "Widgets"
 msgstr "Widgets"
 
@@ -8201,7 +8201,7 @@ msgid "Author"
 msgstr "Author"
 
 #: wp-includes/class-wp-customize-nav-menus.php:784
-#: wp-includes/class-wp-editor.php:1422
+#: wp-includes/class-wp-editor.php:1430
 #: wp-includes/customize/class-wp-customize-nav-menu-item-control.php:91
 #: wp-includes/media-template.php:371 wp-includes/media-template.php:550
 #: wp-includes/media.php:3351
@@ -8268,7 +8268,7 @@ msgstr "Edit Link Category"
 msgid "Update Category"
 msgstr "Update Category"
 
-#: wp-includes/class-wp-editor.php:1466 wp-includes/script-loader.php:421
+#: wp-includes/class-wp-editor.php:1474 wp-includes/script-loader.php:421
 msgid "Add Link"
 msgstr "Add Link"
 
@@ -8356,7 +8356,7 @@ msgstr "Recent Comments"
 msgid "Plugins"
 msgstr "Plugins"
 
-#: wp-includes/class-wp-editor.php:871 wp-includes/class-wp-editor.php:1463
+#: wp-includes/class-wp-editor.php:871 wp-includes/class-wp-editor.php:1471
 #: wp-includes/media.php:3355 wp-includes/script-loader.php:406
 #: wp-includes/script-loader.php:456 wp-includes/script-loader.php:531
 msgid "Cancel"
@@ -8543,7 +8543,7 @@ msgid "Dismiss"
 msgstr "Dismiss"
 
 #: wp-includes/admin-bar.php:810 wp-includes/admin-bar.php:811
-#: wp-includes/class-wp-editor.php:1438 wp-includes/media.php:3353
+#: wp-includes/class-wp-editor.php:1446 wp-includes/media.php:3353
 msgid "Search"
 msgstr "Search"
 
@@ -8559,7 +8559,7 @@ msgstr "View Page"
 msgid "Links"
 msgstr "Links"
 
-#: wp-includes/class-wp-editor.php:872 wp-includes/class-wp-editor.php:1417
+#: wp-includes/class-wp-editor.php:872 wp-includes/class-wp-editor.php:1425
 #: wp-includes/script-loader.php:261 wp-includes/script-loader.php:342
 #: wp-includes/script-loader.php:457 wp-includes/script-loader.php:951
 msgid "Close"
@@ -8657,7 +8657,7 @@ msgstr "Pending Review"
 msgid "Draft"
 msgstr "Draft"
 
-#: wp-includes/class-wp-editor.php:1365
+#: wp-includes/class-wp-editor.php:1373
 msgid "Y/m/d"
 msgstr "Y/m/d"
 

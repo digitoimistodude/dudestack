@@ -46,7 +46,7 @@
   "require": {
     "koodimonni/composer-dropin-installer": "*",
     "php": ">=5.3.10",
-    "johnpbloch/wordpress": "4.6",
+    "johnpbloch/wordpress": "4.6.1",
     "koodimonni-language/fi": "*",
     "koodimonni-language/en_gb": "*",
     "composer/installers": "~1.0.12",
@@ -57,7 +57,7 @@
     "wpackagist-plugin/simple-history": "*",
     "wpackagist-plugin/sendgrid-email-delivery-simplified": "*",
     "wpackagist-plugin/query-monitor": "^2.12",
-		"wpackagist-plugin/editor-buttons-simplified": "*"
+    "wpackagist-plugin/editor-buttons-simplified": "*"
   },
   "extra": {
     "dropin-paths": {

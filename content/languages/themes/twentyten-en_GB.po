@@ -1,8 +1,8 @@
-# Translation of Twenty Ten in Finnish
+# Translation of Twenty Ten in English (UK)
 # This file is distributed under the same license as the Twenty Ten package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-07-18 11:08:37+0000\n"
+"PO-Revision-Date: 2016-03-15 15:30:39+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,7 +12,7 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid "The 2010 theme for WordPress is stylish, customizable, simple, and readable -- make it yours with a custom menu, header image, and background. Twenty Ten supports six widgetized areas (two in the sidebar, four in the footer) and featured images (thumbnails for gallery posts and custom header images for posts and pages). It includes stylesheets for print and the admin Visual Editor, special styles for posts in the \"Asides\" and \"Gallery\" categories, and has an optional one-column page template that removes the sidebar."
-msgstr "Vuoden 2010 teema WordPressille on tyylikäs, mukautettavissa, yksinkertainen ja helppolukuinen - tee mukautettu valikko, otsakkeen kuva ja tausta omanlaisiksesi. Twenty Ten tukee kuutta vimpainaluetta (kaksi sivupalkissa, neljä alaosassa) ja artikkelikuvia (pikkukuvia galleria-artikkeleihin ja mukautettuja otsakekuvia artikkeleille ja sivuille). Se sisältää tyyliohjeet tulostukseen ja ylläpidon visuaaliseen muokkaimen, erityisiä tyylejä artikkeleille kategorioissa \"asides\" ja \"galleria\" ja sisältää vaihtoehtoisen yhden sarakkeen sivupohjan, joka poistaa sivupalkin."
+msgstr "The 2010 theme for WordPress is stylish, customisable, simple, and readable -- make it yours with a custom menu, header image, and background. Twenty Ten supports six widgetised areas (two in the sidebar, four in the footer) and featured images (thumbnails for gallery posts and custom header images for posts and pages). It includes stylesheets for print and the admin Visual Editor, special styles for posts in the \"Asides\" and \"Gallery\" categories, and has an optional one-column page template that removes the sidebar."
 
 #. Theme Name of the plugin/theme
 msgid "Twenty Ten"
@@ -20,11 +20,11 @@ msgstr "Twenty Ten"
 
 #. Template Name of the plugin/theme
 msgid "One column, no sidebar"
-msgstr "Yksi sarake, ei sivupalkkia"
+msgstr "One column, no sidebar"
 
 #: tag.php:16
 msgid "Tag Archives: %s"
-msgstr "Avainsana-arkisto: %s"
+msgstr "Tag Archives: %s"
 
 #: sidebar.php:35
 msgid "Meta"
@@ -32,87 +32,87 @@ msgstr "Meta"
 
 #: sidebar.php:28
 msgid "Archives"
-msgstr "Arkistot"
+msgstr "Archives"
 
 #: search.php:29
 msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
-msgstr "Hakusi ei valitettavasti tuottanut yhtään tulosta. Yritä uudelleen eri hakusanoilla."
+msgstr "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
 
 #: search.php:27
 msgid "Nothing Found"
-msgstr "Mitään ei löytynyt."
+msgstr "Nothing Found"
 
 #: search.php:16
 msgid "Search Results for: %s"
-msgstr "Hakutulokset kohteelle: %s"
+msgstr "Search Results for: %s"
 
 #: loop.php:161
 msgid "<span class=\"%1$s\">Tagged</span> %2$s"
-msgstr "<span class=\"%1$s\">Avainsanoina</span> %2$s"
+msgstr "<span class=\"%1$s\">Tagged</span> %2$s"
 
 #: loop.php:152
 msgid "<span class=\"%1$s\">Posted in</span> %2$s"
-msgstr "<span class=\"%1$s\">Kategoriat:</span> %2$s"
+msgstr "<span class=\"%1$s\">Posted in</span> %2$s"
 
 #: loop.php:107
 msgctxt "asides category slug"
 msgid "asides"
-msgstr "tilapäivitykset"
+msgstr "asides"
 
 #: loop.php:100 loop.php:123 loop.php:165
 msgid "% Comments"
-msgstr "% kommenttia"
+msgstr "% Comments"
 
 #: loop.php:100 loop.php:123 loop.php:165
 msgid "1 Comment"
-msgstr "1 kommentti"
+msgstr "1 Comment"
 
 #: loop.php:100 loop.php:123 loop.php:165
 msgid "Leave a comment"
-msgstr "Jätä kommentti"
+msgstr "Leave a comment"
 
 #: loop.php:97
 msgid "View posts in the Gallery category"
-msgstr "Näytä kaikki artikkelit aiheessa galleria"
+msgstr "View posts in the Gallery category"
 
 #: loop.php:94 loop.php:97
 msgid "More Galleries"
-msgstr "Lisää gallerioita"
+msgstr "More galleries"
 
 #: loop.php:94
 msgid "View Galleries"
-msgstr "Näytä galleriat"
+msgstr "View Galleries"
 
 #: loop.php:84
 msgid "Permalink to %s"
-msgstr "Kestolinkki: %s"
+msgstr "Permalink to %s"
 
 #: loop.php:83
 msgid "This gallery contains <a %1$s>%2$s photo</a>."
 msgid_plural "This gallery contains <a %1$s>%2$s photos</a>."
-msgstr[0] "Tämä galleria sisältää <a %1$s>%2$s kuvan</a>."
-msgstr[1] "Tämä galleria sisältää <a %1$s>%2$s kuvaa</a>."
+msgstr[0] "This gallery contains <a %1$s>%2$s photo</a>."
+msgstr[1] "This gallery contains <a %1$s>%2$s photos</a>."
 
 #: loop.php:62 loop.php:96
 msgctxt "gallery category slug"
 msgid "gallery"
-msgstr "galleria"
+msgstr "gallery"
 
 #: loop.php:35
 msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
-msgstr "Valitettavasti tuloksia pyydetylle arkistolle ei löytynyt. Ehkä haku auttaa sinua löytämään aiheeseen liittyvän artikkelin."
+msgstr "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
 
 #: loop.php:26 loop.php:180
 msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Uudemmat artikkelit <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Newer posts <span class=\"meta-nav\">&rarr;</span>"
 
 #: loop.php:25 loop.php:179
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
-msgstr "<span class=\"meta-nav\">&larr;</span> Vanhemmat artikkelit"
+msgstr "<span class=\"meta-nav\">&larr;</span> Older posts"
 
 #: loop-single.php:50
 msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Katso kaikki artikkelit kirjoittajalta %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
 
 #: loop-single.php:22 loop-single.php:65
 msgctxt "Next post link"
@@ -126,28 +126,28 @@ msgstr "&larr;"
 
 #: loop-attachment.php:120 loop-page.php:29 loop-single.php:34 loop.php:145
 msgid "Pages:"
-msgstr "Sivut:"
+msgstr "Pages:"
 
 #: loop-attachment.php:63 loop-attachment.php:126 loop-page.php:30
 #: loop-single.php:59 loop.php:101 loop.php:124 loop.php:166
 msgid "Edit"
-msgstr "Muokkaa"
+msgstr "Edit"
 
 #: loop-attachment.php:56
 msgid "Link to full-size image"
-msgstr "Linkki täysikokoiseen kuvaan"
+msgstr "Link to full-size image"
 
 #: loop-attachment.php:53
 msgid "Full size is %s pixels"
-msgstr "Täysi koko on %s pikseliä"
+msgstr "Full size is %s pixels"
 
 #: loop-attachment.php:43
 msgid "<span class=\"%1$s\">Published</span> %2$s"
-msgstr "<span class=\"%1$s\">Julkaistu</span>%2$s"
+msgstr "<span class=\"%1$s\">Published</span> %2$s"
 
 #: loop-attachment.php:32
 msgid "<span class=\"%1$s\">By</span> %2$s"
-msgstr "<span class=\"%1$s\">Kirjoittanut</span> %2$s"
+msgstr "<span class=\"%1$s\">By</span> %2$s"
 
 #. translators: %s - title of parent post
 #: loop-attachment.php:23
@@ -156,186 +156,186 @@ msgstr "<span class=\"meta-nav\">&larr;</span> %s"
 
 #: loop-attachment.php:21
 msgid "Return to %s"
-msgstr "Palaa kohteeseen %s"
+msgstr "Return to %s"
 
 #: header.php:105
 msgid "Skip to content"
-msgstr "Siirry sisältöön"
+msgstr "Skip to content"
 
 #: header.php:33
 msgid "Page %s"
-msgstr "Sivu %s"
+msgstr "Page %s"
 
 #: functions.php:544
 msgid "Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
-msgstr "Lisää <a href=\"%3$s\" title=\"Kestolinkki julkaisuun %4$s\" rel=\"bookmark\">kestolinkki</a> kirjanmerkkeihisi."
+msgstr "Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
 
 #: functions.php:542
 msgid "This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
-msgstr "Kategoria(t): %1$s. Lisää <a href=\"%3$s\" title=\"Kestolinkki artikkeliin %4$s\" rel=\"bookmark\">kestolinkki</a> kirjanmerkkeihisi."
+msgstr "This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
 
 #: functions.php:540
 msgid "This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
-msgstr "Kategoria(t): %1$s Avainsana(t): %2$s. Lisää <a href=\"%3$s\" title=\"Kestolinkki artikkeliin %4$s\" rel=\"bookmark\">kestolinkki</a> kirjanmerkkeihisi."
+msgstr "This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
 
 #: functions.php:523 loop-attachment.php:36
 msgid "View all posts by %s"
-msgstr "Näytä kaikki artikkelit kirjoittajalta %s"
+msgstr "View all posts by %s"
 
 #: functions.php:514
 msgid "<span class=\"%1$s\">Posted on</span> %2$s <span class=\"meta-sep\">by</span> %3$s"
-msgstr "<span class=\"%1$s\">Julkaistu:</span> %2$s  | <span class=\"meta-sep\">Kirjoittanut:</span> %3$s"
+msgstr "<span class=\"%1$s\">Posted on</span> %2$s <span class=\"meta-sep\">by</span> %3$s"
 
 #: functions.php:478
 msgid "Fourth Footer Widget Area"
-msgstr "Alapalkin vimpainalue 4"
+msgstr "Fourth Footer Widget Area"
 
 #: functions.php:467
 msgid "Third Footer Widget Area"
-msgstr "Alapalkin vimpainalue 3"
+msgstr "Third Footer Widget Area"
 
 #: functions.php:456
 msgid "Second Footer Widget Area"
-msgstr "Alapalkin vimpainalue 2"
+msgstr "Second Footer Widget Area"
 
 #: functions.php:447 functions.php:458 functions.php:469 functions.php:480
 msgid "An optional widget area for your site footer."
-msgstr "Alatunnisteessa näkyvä vimpainalue."
+msgstr "An optional widget area for your site footer."
 
 #: functions.php:445
 msgid "First Footer Widget Area"
-msgstr "Alapalkin vimpainalue 1"
+msgstr "First Footer Widget Area"
 
 #: functions.php:436
 msgid "An optional secondary widget area, displays below the primary widget area in your sidebar."
-msgstr "Toinen vimpainalue näkyy ensisijaisen vimpainalueen alapuolella."
+msgstr "An optional secondary widget area, displays below the primary widget area in your sidebar."
 
 #: functions.php:434
 msgid "Secondary Widget Area"
-msgstr "Vimpainalue 2"
+msgstr "Secondary Widget Area"
 
 #: functions.php:425
 msgid "Add widgets here to appear in your sidebar."
-msgstr "Lisää vimpaimia sivupalkkiin."
+msgstr "Add widgets here to appear in your sidebar."
 
 #: functions.php:423
 msgid "Primary Widget Area"
-msgstr "Vimpainalue 1"
+msgstr "Primary Widget Area"
 
 #: functions.php:403
 msgid "Pingback:"
-msgstr "Päivitysilmoitus:"
+msgstr "Pingback:"
 
 #: functions.php:386 functions.php:403
 msgid "(Edit)"
-msgstr "(Muokkaa)"
+msgstr "(Edit)"
 
 #. translators: 1: date, 2: time
 #: functions.php:386
 msgid "%1$s at %2$s"
-msgstr "%1$s  %2$s"
+msgstr "%1$s at %2$s"
 
 #: functions.php:379
 msgid "Your comment is awaiting moderation."
-msgstr "Kommenttisi on arvioitavana."
+msgstr "Your comment is awaiting moderation."
 
 #: functions.php:376
 msgid "%s <span class=\"says\">says:</span>"
-msgstr "%s <span class=\"says\">sanoo:</span>"
+msgstr "%s <span class=\"says\">says:</span>"
 
 #: functions.php:280 loop-attachment.php:119 loop.php:116 loop.php:144
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Lue loppuun <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 
 #. translators: header image description
 #: functions.php:207
 msgid "Sunset"
-msgstr "Auringonlasku"
+msgstr "Sunset"
 
 #. translators: header image description
 #: functions.php:201
 msgid "Path"
-msgstr "Polku"
+msgstr "Path"
 
 #. translators: header image description
 #: functions.php:195
 msgid "Inkwell"
-msgstr "Mustetahra"
+msgstr "Inkwell"
 
 #. translators: header image description
 #: functions.php:189
 msgid "Forest Floor"
-msgstr "Metsätie"
+msgstr "Forest Floor"
 
 #. translators: header image description
 #: functions.php:183
 msgid "Fern"
-msgstr "Saniainen"
+msgstr "Fern"
 
 #. translators: header image description
 #: functions.php:177
 msgid "Concave"
-msgstr "Kovera"
+msgstr "Concave"
 
 #. translators: header image description
 #: functions.php:171
 msgid "Cherry Blossoms"
-msgstr "Kirsikankukat"
+msgstr "Cherry Blossoms"
 
 #. translators: header image description
 #: functions.php:165
 msgid "Berries"
-msgstr "Marjat"
+msgstr "Berries"
 
 #: functions.php:95
 msgid "Primary Navigation"
-msgstr "Ensisijainen navigointi"
+msgstr "Primary Navigation"
 
 #: footer.php:40
 msgid "Proudly powered by %s."
-msgstr "Toteutettu %s-ohjelmiston voimalla."
+msgstr "Proudly powered by %s."
 
 #: footer.php:40
 msgid "Semantic Personal Publishing Platform"
-msgstr "Merkityksellinen henkilökohtainen julkaisualusta"
+msgstr "Semantic Personal Publishing Platform"
 
 #: comments.php:73
 msgid "Comments are closed."
-msgstr "Kommentointi on suljettu."
+msgstr "Comments are closed."
 
 #: comments.php:43 comments.php:63
 msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Uudemmat kommentit <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
 
 #: comments.php:42 comments.php:62
 msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
-msgstr "<span class=\"meta-nav\">&larr;</span> Vanhemmat kommentit"
+msgstr "<span class=\"meta-nav\">&larr;</span> Older Comments"
 
 #: comments.php:36
 msgid "One Response to %2$s"
 msgid_plural "%1$s Responses to %2$s"
-msgstr[0] "Yksi vastaus artikkeliin %2$s"
-msgstr[1] "%1$s vastausta artikkeliin %2$s"
+msgstr[0] "%1$s Response to %2$s"
+msgstr[1] "%1$s Responses to %2$s"
 
 #: comments.php:18
 msgid "This post is password protected. Enter the password to view any comments."
-msgstr "Tämä kommentti on salasanasuojattu. Syötä salasana nähdäksesi kommentit."
+msgstr "This post is password protected. Enter the password to view any comments."
 
 #: category.php:16
 msgid "Category Archives: %s"
-msgstr "Aihearkisto: %s"
+msgstr "Category Archives: %s"
 
 #: author.php:47 loop-single.php:46
 msgid "About %s"
-msgstr "Tietoja %s"
+msgstr "About %s"
 
 #: author.php:28
 msgid "Author Archives: %s"
-msgstr "Kirjoittajan arkistot:%s"
+msgstr "Author Archives: %s"
 
 #: archive.php:40
 msgid "Blog Archives"
-msgstr "Blogin arkistot"
+msgstr "Blog Archives"
 
 #: archive.php:38
 msgctxt "yearly archives date format"
@@ -344,7 +344,7 @@ msgstr "Y"
 
 #: archive.php:38
 msgid "Yearly Archives: <span>%s</span>"
-msgstr "Vuosittainen arkisto: <span>%s</span>"
+msgstr "Yearly Archives: <span>%s</span>"
 
 #: archive.php:36
 msgctxt "monthly archives date format"
@@ -353,26 +353,30 @@ msgstr "F Y"
 
 #: archive.php:36
 msgid "Monthly Archives: <span>%s</span>"
-msgstr "Kuukausittainen arkisto:<span>%s</span>"
+msgstr "Monthly Archives: <span>%s</span>"
 
 #: archive.php:34
 msgid "Daily Archives: <span>%s</span>"
-msgstr "Päivittäinen arkisto: <span>%s</span>"
+msgstr "Daily Archives: <span>%s</span>"
 
 #: 404.php:18
 msgid "Apologies, but the page you requested could not be found. Perhaps searching will help."
-msgstr "Valitettavasti etsimääsi ei löytynyt. Ehkä hakutoiminnosta voisi olla apua."
+msgstr "Apologies, but the page you requested could not be found. Perhaps searching will help."
 
 #: 404.php:16 loop.php:33
 msgid "Not Found"
-msgstr "Ei löytynyt"
+msgstr "Not Found"
 
 #. #-#-#-#-#  twentyten.pot (Twenty Ten 2.2)  #-#-#-#-#
 #. Author URI of the plugin/theme
 #: footer.php:40
 msgid "https://wordpress.org/"
-msgstr "https://fi.wordpress.org/"
+msgstr "https://wordpress.org/"
 
 #. Author of the plugin/theme
 msgid "the WordPress team"
-msgstr "WordPress-tiimi"
+msgstr "the WordPress team"
+
+#. Theme URI of the plugin/theme
+msgid "https://wordpress.org/themes/twentyten/"
+msgstr "https://wordpress.org/themes/twentyten/"
