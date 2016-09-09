@@ -20,15 +20,15 @@ Dudestack is a modern WordPress stack that helps you get started with the best d
 
 #### Background
 
-We're constantly developing our development workflow. Honestly, I think we've been through hundreds of articles, tools and scripts. Went with regular WordPress structure, different wp-configs and [Dandelion](https://github.com/scttnlsn/dandelion) for a long time, but realized in some point we have to get some sense to it all. Setting up things should not be the most time consuming task when starting a new project.
+We're constantly developing our development workflow. Honestly, we've been through hundreds of articles, tools and scripts. Went with regular WordPress structure, different wp-configs and [Dandelion](https://github.com/scttnlsn/dandelion) for a long time, but realized in some point we have to get some sense to it all. Setting up things should not be the most time consuming task when starting a new project.
 
-I love [Bedrock](https://github.com/roots/bedrock), which is a is a modern WordPress stack that helps you get started with the best development tools and project structure. Bedrock contains the tools I've been already using, but more. In fact, I'm proud to say that most of this stack is based on [Bedrock](https://github.com/roots/bedrock).
+We love [Bedrock](https://github.com/roots/bedrock), which is a is a modern WordPress stack that helps you get started with the best development tools and project structure. Bedrock contains the tools we've been already using, but more. In fact, we are proud to say that most of this stack is based on [Bedrock](https://github.com/roots/bedrock).
 
 Like bedrock, dudestack saves you hours when starting a new project.
 
 #### How it's different, why should I use this?
 
-Well, this is mainly a toolbox for a web agency Digitoimisto Dude Oy as well as for backup purposes and to show off how we roll. You should use this if you really like how we do things.
+Well, this is mainly a toolbox for a web design/development agency, like us (Digitoimisto Dude Oy) as well as backup purposes and to show off how we roll. You should use this if you really like how we do things.
 
 Despite the fact we love most of Bedrock, we noticed there are some things we don't like.
 
