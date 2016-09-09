@@ -56,7 +56,8 @@
     "wpackagist-plugin/imagify": "*",
     "wpackagist-plugin/simple-history": "*",
     "wpackagist-plugin/sendgrid-email-delivery-simplified": "*",
-    "wpackagist-plugin/query-monitor": "^2.12"
+    "wpackagist-plugin/query-monitor": "^2.12",
+		"wpackagist-plugin/editor-buttons-simplified": "*"
   },
   "extra": {
     "dropin-paths": {
@@ -65,11 +66,12 @@
       "content/languages/themes/": ["vendor:koodimonni-theme-language"]
     },
     "installer-paths": {
-      "content/mu-plugins/{$name}/": ["type:wordpress-muplugin", 
+      "content/mu-plugins/{$name}/": ["type:wordpress-muplugin",
         "wpackagist-plugin/google-analyticator",
-        "wpackagist-plugin/imagify", 
-        "wpackagist-plugin/simple-history", 
-        "wpackagist-plugin/sendgrid-email-delivery-simplified"
+        "wpackagist-plugin/imagify",
+        "wpackagist-plugin/simple-history",
+        "wpackagist-plugin/sendgrid-email-delivery-simplified",
+				"wpackagist-plugin/editor-buttons-simplified"
       ],
       "content/plugins/{$name}/": ["type:wordpress-plugin"],
       "content/themes/{$name}/": ["type:wordpress-theme"]
