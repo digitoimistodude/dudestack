@@ -45,11 +45,11 @@
   ],
   "require": {
     "koodimonni/composer-dropin-installer": "*",
-    "php": ">=5.3.10",
+    "php": ">=5.6",
     "johnpbloch/wordpress": "4.6.1",
     "koodimonni-language/fi": "*",
     "koodimonni-language/en_gb": "*",
-    "composer/installers": "~1.0.12",
+    "composer/installers": "^1.0.25",
     "wp-cli/wp-cli": "*",
     "vlucas/phpdotenv": "^2.0.1",
     "wpackagist-plugin/google-analyticator": "*",
@@ -57,7 +57,8 @@
     "wpackagist-plugin/simple-history": "*",
     "wpackagist-plugin/sendgrid-email-delivery-simplified": "*",
     "wpackagist-plugin/query-monitor": "^2.12",
-    "wpackagist-plugin/editor-buttons-simplified": "*"
+    "wpackagist-plugin/editor-buttons-simplified": "*",
+    "wpackagist-plugin/wp-sanitize-accented-uploads": "*"
   },
   "extra": {
     "dropin-paths": {
@@ -71,7 +72,8 @@
         "wpackagist-plugin/imagify",
         "wpackagist-plugin/simple-history",
         "wpackagist-plugin/sendgrid-email-delivery-simplified",
-				"wpackagist-plugin/editor-buttons-simplified"
+		"wpackagist-plugin/editor-buttons-simplified",
+		"wpackagist-plugin/wp-sanitize-accented-uploads"
       ],
       "content/plugins/{$name}/": ["type:wordpress-plugin"],
       "content/themes/{$name}/": ["type:wordpress-theme"]
