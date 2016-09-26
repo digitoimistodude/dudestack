@@ -56,7 +56,6 @@
     "wpackagist-plugin/imagify": "*",
     "wpackagist-plugin/simple-history": "*",
     "wpackagist-plugin/sendgrid-email-delivery-simplified": "*",
-    "wpackagist-plugin/query-monitor": "^2.12",
     "wpackagist-plugin/editor-buttons-simplified": "*",
     "wpackagist-plugin/wp-sanitize-accented-uploads": "*"
   },
@@ -72,8 +71,9 @@
         "wpackagist-plugin/imagify",
         "wpackagist-plugin/simple-history",
         "wpackagist-plugin/sendgrid-email-delivery-simplified",
-		"wpackagist-plugin/editor-buttons-simplified",
-		"wpackagist-plugin/wp-sanitize-accented-uploads"
+	"wpackagist-plugin/editor-buttons-simplified",
+	"wpackagist-plugin/wp-sanitize-accented-uploads",
+        "wpackagist-plugin/wp-cerber"
       ],
       "content/plugins/{$name}/": ["type:wordpress-plugin"],
       "content/themes/{$name}/": ["type:wordpress-theme"]
