@@ -35,8 +35,8 @@ case $choice in
      echo "${red}Please type either 1 or 2.${txtreset}
 
 Info:
-https://github.com/ronilaukkarinen/jolliest-vagrant
-https://github.com/ronilaukkarinen/marlin-vagrant
+https://github.com/digitoimistodude/jolliest-vagrant
+https://github.com/digitoimistodude/marlin-vagrant
 ${txtreset}"
      ;;
 esac

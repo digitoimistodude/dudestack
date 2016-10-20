@@ -55,14 +55,14 @@ Despite the fact we love most of Bedrock, we noticed there are some things we do
 ## Requirements
 
 * Basic knowledge about bash scripting, deployment with capistrano, npm packages, bundle, composer etc.
-* Vagrant ([jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant)), but can be configured for MAMP too
+* Vagrant ([marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant)), but can be configured for MAMP too
 * Bitbucket account
 * Unix-based OS (built for Mac OS X by default)
 * Access to staging and production servers that supports sftp and git
 * Projects located under $HOME/Projects
 * Git
-* PHP >= 5.3.2
-* Ruby >= 1.9
+* PHP >= 5.6
+* Ruby >= 2.2
 * Perl
 
 # Installation
