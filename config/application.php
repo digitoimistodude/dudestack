@@ -30,12 +30,6 @@ define('WP_CONTENT_DIR', $root_dir . CONTENT_DIR );
 define('WP_CONTENT_URL', WP_HOME . CONTENT_DIR );
 
 /**
- * Cache
- */
-
-define('WP_CACHE', true );
-
-/**
  * DB settings
  */
 define('DB_CHARSET', 'utf8');
