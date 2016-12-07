@@ -46,7 +46,7 @@
   "require": {
     "koodimonni/composer-dropin-installer": "*",
     "php": ">=5.6",
-    "johnpbloch/wordpress": "4.6.1",
+    "johnpbloch/wordpress": "4.7.0",
     "koodimonni-language/fi": "*",
     "koodimonni-language/en_gb": "*",
     "composer/installers": "^1.0.25",
