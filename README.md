@@ -71,10 +71,10 @@ Despite the fact we love most of Bedrock, we noticed there are some things we do
 2. Go to dudestack directory and run setup script (`cd ~/Projects/dudestack && sh setup.sh`).
 3. Edit `/usr/bin/createproject` to your needs. See [documentation](#documentation) and **[Getting started](#getting-started)**.
 
-If you are using [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant), you need to "pair" your machine with the VM (I presume you are already set up keypairs, if not, run without password: `ssh-keygen -t rsa`):
+If you are using vagrant, you need to "pair" your machine with the VM (I presume you are already set up keypairs, if not, run without password: `ssh-keygen -t rsa`), marlin-vagrant example:
 
 ```shell
-cat ~/.ssh/id_rsa.pub | ssh vagrant@10.1.2.3 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys' && chmod -Rv 755 ~/.ssh && chmod 400 ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub | ssh vagrant@10.1.2.4 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys' && chmod -Rv 755 ~/.ssh && chmod 400 ~/.ssh/id_rsa
 ```
 
 If you are starting from clean slate, better yet, run Bitbucket's tutorial [Set up SSH for Git](https://confluence.atlassian.com/display/BITBUCKET/Set+up+SSH+for+Git).
@@ -92,7 +92,7 @@ Creating a new project has a lot of configs to do. We wanted to automate most of
 
 - You are using staging server like customer.example.com and you store your customers' sites like customer.example.com/customerone. Your staging server user has proper permissions like making changes to /tmp
 - You are using separate production server that may necessarily not have all the permissions like writing in /tmp dir
-- You use [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant) or MAMP Pro (MAMP needs extensive editing and testing, [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant) works out of the box)
+- You use [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant) or MAMP Pro (MAMP needs extensive editing and testing, [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant) works out of the box)
 - Your repositories are stored in Bitbucket
 - Your project hostname is project.dev
 - You use gulp, grunt or CodeKit2+
@@ -108,7 +108,7 @@ When you run `createproject` it looks like this:
 
 1. First it runs `composer create-project` with dudestack settings
 2. Installs default WordPress plugins and updates them
-3. Creates MySQL repository automatically with project name (assumes by default that you have [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant)) installed with default settings and paired with your host computer, for MAMP you'll need to edit createproject.sh and edit `YOURMAMPMYSQLPASSWORD`). **For nginx users**, please use `createproject_nginx.sh` and edit it to your needs or just use [marlin-vagrant](https://github.com/ronilaukkarinen/marlin-vagrant)) which is just like [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant)) but with nginx + hhvm instead of apache + apc.
+3. Creates MySQL repository automatically with project name (assumes by default that you have [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant)) installed with default settings and paired with your host computer, for MAMP you'll need to edit createproject.sh and edit `YOURMAMPMYSQLPASSWORD`). **For nginx users**, please use `createproject_nginx.sh` and edit it to your needs or just use [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant)) which is just like [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant)) but with nginx + hhvm instead of apache + apc.
 4. Installs capistrano
 5. Generates capistrano configs (config/deploy.rb, config/deploy/staging.rb, config/deploy/production.rb) with your bitbucket details and paths
 6. Creates a Sublime Text 3 project
@@ -135,10 +135,10 @@ When you run `createproject` it looks like this:
 ## Getting started
 
 1. This assumes your projects are in ~/Projects. You should make sure that folder exists. You can also decide to use another folder, but then you need a lot of search&replace and using this would be quite pointless.
-2. Run [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant) (if you use MAMP Pro server, you need to edit createproject.sh accordingly)
+2. Run [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant) (if you use MAMP Pro server, you need to edit createproject.sh accordingly)
 3. Edit `createproject.sh` and `composer.json` based on your own needs
 4. Please do a lot of other editing if you need. It will eventually shape to the right form.
-5. **Optional**: Get gulpfile.js and package.json from [devpackages](https://github.com/ronilaukkarinen/devpackages), edit them to your needs, run `npm install && npm-check-updates -u && npm update && gulp watch` and start developing your theme/plugin.
+5. **Optional**: Get gulpfile.js and package.json from [devpackages](https://github.com/digitoimistodude/devpackages), edit them to your needs, run `npm install && npm-check-updates -u && npm update && gulp watch` and start developing your theme/plugin.
 
 To start a new project, run `createproject` and have fun.
 
@@ -217,7 +217,7 @@ WP-Cli is included in dudestack per project within `composer.json` and won't wor
 alias wp='ssh vagrant@10.1.2.4 "cd /var/www/"$(basename "$PWD")"; /var/www/"$(basename "$PWD")"/vendor/wp-cli/wp-cli/bin/wp"'
 ```
 
-If you are using [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant), please use IP address `10.1.2.4`, if [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant), use `10.1.2.3`. After restarting Terminal or running `. ~/.bashrc` or `. ~/.bash_profile` you will be able to use `wp` command directly on your host machine without having to ssh into vagrant.
+If you are using [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant), please use IP address `10.1.2.4`, if [jolliest-vagrant](https://github.com/digitoimistodude/jolliest-vagrant), use `10.1.2.3`. After restarting Terminal or running `. ~/.bashrc` or `. ~/.bash_profile` you will be able to use `wp` command directly on your host machine without having to ssh into vagrant.
 
 ## Issues
 
