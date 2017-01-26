@@ -56,7 +56,6 @@
     "wpackagist-plugin/imagify": "*",
     "wpackagist-plugin/simple-history": "*",
     "wpackagist-plugin/sendgrid-email-delivery-simplified": "*",
-    "wpackagist-plugin/editor-buttons-simplified": "*",
     "wpackagist-plugin/wp-sanitize-accented-uploads": "*"
   },
   "extra": {
@@ -71,7 +70,6 @@
         "wpackagist-plugin/imagify",
         "wpackagist-plugin/simple-history",
         "wpackagist-plugin/sendgrid-email-delivery-simplified",
-	      "wpackagist-plugin/editor-buttons-simplified",
 	      "wpackagist-plugin/wp-sanitize-accented-uploads",
         "wpackagist-plugin/wp-cerber"
       ],
