@@ -130,12 +130,11 @@ When you run `createproject` it looks like this:
 - You will need gulp or grunt, feel free to use [our devpackages - gulpfile and npm package settings etc.](https://github.com/digitoimistodude/devpackages) designed for this purpose
 
 **Note:**
-- This is a starter package without theme configs. We leave theme development up to you entirely. We have our own starter theme that relies on this package but we're not (at least yet) willing to share it
-- You are accepting the fact this is only one of the ways to do things and things are not staying this way forever, everything changes as you read this :)
+- This is a starter package without theme configs. We leave theme development up to you entirely. We have our own starter theme that can be used with dudestack, see [air](https://github.com/digitoimistodude/air).
 
 ## Getting started
 
-1. This assumes your projects are in ~/Projects. You should make sure that folder exists. You can also decide to use another folder, but then you need a lot of search&replace and using this would be quite pointless.
+1. Everything assumes your projects are in **~/Projects**. You should make sure that folder exists. You can also decide to use another folder, but then you need a lot of search&replace and using this would be quite pointless.
 2. Run [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant) (if you use MAMP Pro server, you need to edit createproject.sh accordingly)
 3. Edit `createproject.sh` and `composer.json` based on your own needs
 4. Please do a lot of other editing if you need. It will eventually shape to the right form.
