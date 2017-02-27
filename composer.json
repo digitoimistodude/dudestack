@@ -77,5 +77,10 @@
       "content/themes/{$name}/": ["type:wordpress-theme"]
     },
     "wordpress-install-dir": "wp"
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpcs"
+    ]
   }
 }

@@ -1,5 +1,8 @@
 # Dudestack
-## Tools for modern WordPress development
+
+[![Build Status](https://travis-ci.org/digitoimistodude/dudestack.svg?branch=master)](https://travis-ci.org/digitoimistodude/dudestack)
+
+## A toolkit for modern WordPress development
 
 Dudestack is a modern WordPress stack that helps you get started with the best development tools and project structure - just like [Bedrock](https://github.com/roots/bedrock).
 
