@@ -1,5 +1,5 @@
-# Translation of Twenty Thirteen in English (UK)
-# This file is distributed under the same license as the Twenty Thirteen package.
+# Translation of Themes - Twenty Thirteen in English (UK)
+# This file is distributed under the same license as the Themes - Twenty Thirteen package.
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2015-07-18 10:52:42+0000\n"
@@ -7,8 +7,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/2.1.0-alpha\n"
-"Project-Id-Version: Twenty Thirteen\n"
+"X-Generator: GlotPress/2.3.0-alpha\n"
+"Language: en_GB\n"
+"Project-Id-Version: Themes - Twenty Thirteen\n"
 
 #. Description of the plugin/theme
 msgid "The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small."
@@ -77,71 +78,71 @@ msgstr "Skip to content"
 msgid "Menu"
 msgstr "Menu"
 
-#: functions.php:372
+#: functions.php:397
 msgid "Permalink to %s"
 msgstr "Permalink to %s"
 
-#: functions.php:366
+#: functions.php:391
 msgctxt "1: post format name. 2: date"
 msgid "%1$s on %2$s"
 msgstr "%1$s on %2$s"
 
-#: functions.php:346
+#: functions.php:371
 msgid "View all posts by %s"
 msgstr "View all posts by %s"
 
 #. Translators: used between list items, there is a space after the comma.
-#: functions.php:331 functions.php:337
+#: functions.php:356 functions.php:362
 msgid ", "
 msgstr ", "
 
-#: functions.php:325
+#: functions.php:350
 msgid "Sticky"
 msgstr "Sticky"
 
-#: functions.php:307
+#: functions.php:332
 msgctxt "Next post link"
 msgid "%title <span class=\"meta-nav\">&rarr;</span>"
 msgstr "%title <span class=\"meta-nav\">&rarr;</span>"
 
-#: functions.php:306
+#: functions.php:331
 msgctxt "Previous post link"
 msgid "<span class=\"meta-nav\">&larr;</span> %title"
 msgstr "<span class=\"meta-nav\">&larr;</span> %title"
 
-#: functions.php:303
+#: functions.php:328
 msgid "Post navigation"
 msgstr "Post navigation"
 
-#: functions.php:277
+#: functions.php:302
 msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Newer posts <span class=\"meta-nav\">&rarr;</span>"
 
-#: functions.php:273
+#: functions.php:298
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
 msgstr "<span class=\"meta-nav\">&larr;</span> Older posts"
 
-#: functions.php:269
+#: functions.php:294
 msgid "Posts navigation"
 msgstr "Posts navigation"
 
-#: functions.php:246
+#: functions.php:271
 msgid "Appears on posts and pages in the sidebar."
 msgstr "Appears on posts and pages in the sidebar."
 
-#: functions.php:244
+#: functions.php:269
 msgid "Secondary Widget Area"
 msgstr "Secondary Widget Area"
 
-#: functions.php:236
+#: functions.php:261
 msgid "Appears in the footer section of the site."
 msgstr "Appears in the footer section of the site."
 
-#: functions.php:234
+#: functions.php:259
 msgid "Main Widget Area"
 msgstr "Main Widget Area"
 
-#: functions.php:221
+#: functions.php:246
 msgid "Page %s"
 msgstr "Page %s"
 
@@ -217,7 +218,7 @@ msgstr "Pages:"
 #: content-aside.php:16 content-audio.php:27 content-chat.php:26
 #: content-gallery.php:27 content-image.php:26 content-link.php:27
 #: content-quote.php:16 content-status.php:16 content-video.php:26
-#: content.php:44 functions.php:481
+#: content.php:44 functions.php:506
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 
@@ -298,7 +299,7 @@ msgstr "This is somewhat embarrassing, isn&rsquo;t it?"
 msgid "Not Found"
 msgstr "Not Found"
 
-#. #-#-#-#-#  twentythirteen.pot (Twenty Thirteen 2.0)  #-#-#-#-#
+#. #-#-#-#-#  twentythirteen.pot (Twenty Thirteen 2.1)  #-#-#-#-#
 #. Author URI of the plugin/theme
 #: footer.php:19
 msgid "https://wordpress.org/"

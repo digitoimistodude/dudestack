@@ -53,9 +53,9 @@ msgstr "bbPress"
 msgid "bbPress is forum software with a twist from the creators of WordPress."
 msgstr "bbPress is forum software with a twist from the creators of WordPress."
 
-#. #-#-#-#-#  tmp-bbpress.pot (bbPress 2.5.11)  #-#-#-#-#
+#. #-#-#-#-#  tmp-bbpress.pot (bbPress 2.5.12)  #-#-#-#-#
 #. Plugin URI of the plugin/theme
-#. #-#-#-#-#  tmp-bbpress.pot (bbPress 2.5.11)  #-#-#-#-#
+#. #-#-#-#-#  tmp-bbpress.pot (bbPress 2.5.12)  #-#-#-#-#
 #. Author URI of the plugin/theme
 msgid "https://bbpress.org"
 msgstr "https://bbpress.org"
@@ -1853,7 +1853,7 @@ msgstr "General chit-chat"
 msgid "General"
 msgstr "General"
 
-#: includes/core/capabilities.php:523
+#: includes/core/capabilities.php:531
 msgid "Editable forum roles no longer exist."
 msgstr "Editable forum roles no longer exist."
 

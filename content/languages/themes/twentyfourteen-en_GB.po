@@ -1,5 +1,5 @@
-# Translation of Twenty Fourteen in English (UK)
-# This file is distributed under the same license as the Twenty Fourteen package.
+# Translation of Themes - Twenty Fourteen in English (UK)
+# This file is distributed under the same license as the Themes - Twenty Fourteen package.
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2015-07-18 11:27:20+0000\n"
@@ -7,8 +7,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/2.1.0-alpha\n"
-"Project-Id-Version: Twenty Fourteen\n"
+"X-Generator: GlotPress/2.3.0-alpha\n"
+"Language: en_GB\n"
+"Project-Id-Version: Themes - Twenty Fourteen\n"
 
 #. Description of the plugin/theme
 msgid "In 2014, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier."
@@ -173,7 +174,7 @@ msgstr "Enhance your site design by using <a href=\"%s\">Featured Images</a> for
 msgid "The home page features your choice of up to 6 posts prominently displayed in a grid or slider, controlled by a <a href=\"%1$s\">tag</a>; you can change the tag and layout in <a href=\"%2$s\">Appearance &rarr; Customize</a>. If no posts match the tag, <a href=\"%3$s\">sticky posts</a> will be displayed instead."
 msgstr "The home page features your choice of up to 6 posts prominently displayed in a grid or slider, controlled by a <a href=\"%1$s\">tag</a>; you can change the tag and layout in <a href=\"%2$s\">Appearance &rarr; Customise</a>. If no posts match the tag, <a href=\"%3$s\">sticky posts</a> will be displayed instead."
 
-#. #-#-#-#-#  twentyfourteen.pot (Twenty Fourteen 1.8)  #-#-#-#-#
+#. #-#-#-#-#  twentyfourteen.pot (Twenty Fourteen 1.9)  #-#-#-#-#
 #. Theme Name of the plugin/theme
 #: inc/customizer.php:142
 msgid "Twenty Fourteen"
@@ -245,11 +246,11 @@ msgstr "Primary Menu"
 msgid "Search"
 msgstr "Search"
 
-#: functions.php:498
+#: functions.php:523
 msgid "Page %s"
 msgstr "Page %s"
 
-#: functions.php:379
+#: functions.php:404
 msgid "%d Article"
 msgid_plural "%d Articles"
 msgstr[0] "%d Article"
@@ -431,7 +432,7 @@ msgstr "It looks like nothing was found at this location. Maybe try a search?"
 msgid "Not Found"
 msgstr "Not Found"
 
-#. #-#-#-#-#  twentyfourteen.pot (Twenty Fourteen 1.8)  #-#-#-#-#
+#. #-#-#-#-#  twentyfourteen.pot (Twenty Fourteen 1.9)  #-#-#-#-#
 #. Author URI of the plugin/theme
 #: footer.php:21
 msgid "https://wordpress.org/"
