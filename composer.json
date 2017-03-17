@@ -41,6 +41,10 @@
     {
       "type": "vcs",
       "url": "git@github.com:Koodimonni/Composer-Dropin-Installer.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/digitoimistodude/gulp-sitemap-generator"
     }
   ],
   "require": {
@@ -56,7 +60,8 @@
     "wpackagist-plugin/imagify": "*",
     "wpackagist-plugin/simple-history": "*",
     "wpackagist-plugin/sendgrid-email-delivery-simplified": "*",
-    "wpackagist-plugin/wp-sanitize-accented-uploads": "*"
+    "wpackagist-plugin/wp-sanitize-accented-uploads": "*",
+    "digitoimistodude/gulp-sitemap-generator":"dev-master"
   },
   "extra": {
     "dropin-paths": {
@@ -71,7 +76,8 @@
         "wpackagist-plugin/simple-history",
         "wpackagist-plugin/sendgrid-email-delivery-simplified",
 	      "wpackagist-plugin/wp-sanitize-accented-uploads",
-        "wpackagist-plugin/wp-cerber"
+        "wpackagist-plugin/wp-cerber",
+        "digitoimistodude/gulp-sitemap-generator"
       ],
       "content/plugins/{$name}/": ["type:wordpress-plugin"],
       "content/themes/{$name}/": ["type:wordpress-theme"]
