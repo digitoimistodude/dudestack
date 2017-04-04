@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8ba5f2eddad5909b23c71ab9fee194d3",
-    "content-hash": "fb915bdc291487b3c8d383f89805affb",
+    "hash": "39ce2d89d92ddaacdac19d18b7844d1b",
+    "content-hash": "fad0f7b4e671576c9846e44a479c6adc",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -2349,7 +2349,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.4.9.6.2.zip",
-                "reference": null,
+                "reference": "tags/4.9.6.2",
                 "shasum": null
             },
             "require": {
@@ -2369,7 +2369,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/imagify.1.6.3.zip",
-                "reference": null,
+                "reference": "tags/1.6.3",
                 "shasum": null
             },
             "require": {
@@ -2389,7 +2389,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/sendgrid-email-delivery-simplified.zip?timestamp=1491294952",
-                "reference": null,
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -2409,7 +2409,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/simple-history.2.13.zip",
-                "reference": null,
+                "reference": "tags/2.13",
                 "shasum": null
             },
             "require": {
@@ -2429,7 +2429,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/wp-sanitize-accented-uploads.1.2.zip",
-                "reference": null,
+                "reference": "tags/1.2",
                 "shasum": null
             },
             "require": {

@@ -50,7 +50,6 @@
   "require": {
     "koodimonni/composer-dropin-installer": "*",
     "php": ">=5.6",
-    "johnpbloch/wordpress": "4.7.3",
     "koodimonni-language/fi": "*",
     "koodimonni-language/en_gb": "*",
     "composer/installers": "~1.2.0",
@@ -61,7 +60,8 @@
     "wpackagist-plugin/simple-history": "*",
     "wpackagist-plugin/sendgrid-email-delivery-simplified": "*",
     "wpackagist-plugin/wp-sanitize-accented-uploads": "*",
-    "digitoimistodude/gulp-sitemap-generator":"dev-master"
+    "digitoimistodude/gulp-sitemap-generator":"dev-master",
+    "johnpbloch/wordpress": "^4.7"
   },
   "extra": {
     "dropin-paths": {
