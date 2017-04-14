@@ -2,7 +2,7 @@ access.log
 error.log
 .sass-cache/
 .git/
-wp
+wp/
 .htaccess
 db-sync
 sql-dump-*.sql
@@ -19,9 +19,10 @@ content/plugins/*
 content/mu-plugins/*
 !content/mu-plugins/register-theme-directory.php
 !content/mu-plugins/bedrock-autoloader.php
+vendor/
 vendor/*
 !vendor/.gitkeep
-node_modules
+node_modules/
 bin
 .vagrant
 config/deploy/
