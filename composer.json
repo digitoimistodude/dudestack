@@ -60,7 +60,8 @@
     "wpackagist-plugin/simple-history": "*",
     "wpackagist-plugin/sendgrid-email-delivery-simplified": "*",
     "wpackagist-plugin/wp-sanitize-accented-uploads": "*",
-    "digitoimistodude/gulp-sitemap-generator":"dev-master"
+    "digitoimistodude/gulp-sitemap-generator":"dev-master",
+    "johnpbloch/wordpress": "^4.7"
   },
   "extra": {
     "dropin-paths": {
