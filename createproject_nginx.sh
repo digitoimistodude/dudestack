@@ -13,6 +13,7 @@ green=$(tput setaf 2)
 white=$(tput setaf 7)
 txtreset=$(tput sgr0)
 LOCAL_IP=$(ifconfig | grep -Eo "inet (addr:)?([0-9]*\.){3}[0-9]*" | grep -Eo "([0-9]*\.){3}[0-9]*" | grep -v "127.0.0.1")
+YEAR=$(date +%y)
 
 # Did you run setup.sh first? let's see about that...
 if [ ! -f /usr/local/bin/createproject ]; then
@@ -279,7 +280,7 @@ rm "$HOME/Projects/$PROJECTNAME/createproject_nginx.sh"
 rm "$HOME/Projects/$PROJECTNAME/setup.sh"
 rm "$HOME/Projects/$PROJECTNAME/.env.example"
 echo "${yellow}Creating a bitbucket repo...${txtreset}"
-curl --user 'YOUR_BITBUCKET_ACCOUNT_HERE:YOUR_BITBUCKET_PASSWORD_HERE' https://api.bitbucket.org/1.0/repositories/ --data owner=YOUR_BITBUCKET_TEAM_HERE --data name=$PROJECTNAME
+curl -X POST -v -u YOUR_BITBUCKET_ACCOUNT_HERE:YOUR_BITBUCKET_PASSWORD_HERE "https://api.bitbucket.org/2.0/repositories/YOUR_BITBUCKET_TEAM_HERE/${PROJECTNAME}" -H "Content-Type: application/json"  -d '{"is_private": true, "project": {"key": "PROJECTS'"${YEAR}"'"}}'
 
 echo "${yellow}Initializing the bitbucket repo...${txtreset}"
 cd "$HOME/Projects/$PROJECTNAME"
