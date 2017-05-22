@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-04-08 18:01:26+0000\n"
+"PO-Revision-Date: 2017-04-22 06:26:43+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,34 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: fi\n"
 "Project-Id-Version: Plugins - WooCommerce - Stable (latest release)\n"
+
+#: includes/admin/meta-boxes/views/html-order-items.php:203
+msgid "Recalculate"
+msgstr "Laske uudelleen"
+
+#: includes/admin/class-wc-admin-assets.php:257
+msgid "Recalculate totals? This will calculate taxes based on the customers country (or the store base country) and update totals."
+msgstr "Laske kokonaissumma uudelleen? Tämä laskee verot perustuen asiakkaan maahan (tai kaupan maahan) ja päivittää kokonaissumman."
+
+#: includes/api/class-wc-rest-system-status-tools-controller.php:430
+msgid "All missing WooCommerce pages successfully installed"
+msgstr "Kaikki WooCommerce lisäosasta puuttuneet sivut asennettu."
+
+#: includes/api/class-wc-rest-system-status-controller.php:491
+msgid "Terms in the product visibility taxonomy."
+msgstr "Tuotteen näkyvyys luokittelun termit."
+
+#: includes/admin/views/html-admin-page-status-report.php:489
+msgid "A list of taxonomy terms used for product visibility."
+msgstr "Lista tuotteen näkyvyys luokittelussa käytetyistä termeistä."
+
+#: includes/admin/views/html-admin-page-status-report.php:488
+msgid "Taxonomies: Product visibility"
+msgstr "Luokittelu: Tuotteen näkyvyys"
+
+#: includes/admin/class-wc-admin-duplicate-product.php:120
+msgid "%s (Copy)"
+msgstr "%s (Kopio)"
 
 #. translators: 1: first result 2: last result 3: total results
 #: templates/loop/result-count.php:43
@@ -32,47 +60,47 @@ msgstr "Pahoittelemme, et voi muokata tätä resurssia."
 msgid "Increase existing price by (fixed amount or %):"
 msgstr "Nosta nykyistä hintaa (kiinteä määrä tai %):"
 
-#: includes/admin/views/html-admin-page-status-report.php:598
+#: includes/admin/views/html-admin-page-status-report.php:603
 msgid "Parent theme author URL"
 msgstr "Ylemmän tason teeman tekijän verkko-osoite"
 
-#: includes/admin/views/html-admin-page-status-report.php:587
+#: includes/admin/views/html-admin-page-status-report.php:592
 msgid "Parent theme version"
 msgstr "Ylemmän tason teeman versio"
 
-#: includes/admin/views/html-admin-page-status-report.php:582
+#: includes/admin/views/html-admin-page-status-report.php:587
 msgid "Parent theme name"
 msgstr "Ylemmän tason teeman nimi"
 
-#: includes/admin/views/html-admin-page-status-report.php:386
+#: includes/admin/views/html-admin-page-status-report.php:391
 msgid "Active plugins"
 msgstr "Käytössä olevat lisäosat"
 
-#: includes/admin/views/html-admin-page-status-report.php:337
+#: includes/admin/views/html-admin-page-status-report.php:342
 msgid "MaxMind GeoIP database"
 msgstr "MaxMind GeoIP -tietokanta"
 
-#: includes/admin/views/html-admin-page-status-report.php:307
+#: includes/admin/views/html-admin-page-status-report.php:312
 msgid "WC database version"
 msgstr "WC-tietokanta-versio"
 
-#: includes/admin/views/html-admin-page-status-report.php:184
+#: includes/admin/views/html-admin-page-status-report.php:189
 msgid "Max upload size"
 msgstr "Suurin palvelimelle siirrettävä tiedosto"
 
-#: includes/admin/views/html-admin-page-status-report.php:170
+#: includes/admin/views/html-admin-page-status-report.php:175
 msgid "MySQL version"
 msgstr "MySQL-versio"
 
-#: includes/admin/views/html-admin-page-status-report.php:153
+#: includes/admin/views/html-admin-page-status-report.php:158
 msgid "cURL version"
 msgstr "cURL-versio"
 
-#: includes/admin/views/html-admin-page-status-report.php:126
+#: includes/admin/views/html-admin-page-status-report.php:131
 msgid "PHP version"
 msgstr "PHP-versio"
 
-#: includes/admin/views/html-admin-page-status-report.php:121
+#: includes/admin/views/html-admin-page-status-report.php:126
 msgid "Server info"
 msgstr "Palvelimen tiedot"
 
@@ -90,25 +118,25 @@ msgstr "Asiakkaan kommentti:"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:364
 #: includes/admin/settings/class-wc-settings-general.php:216
-#: includes/admin/views/html-admin-page-status-report.php:467
+#: includes/admin/views/html-admin-page-status-report.php:472
 msgid "Number of decimals"
 msgstr "Desimaalien lukumäärä"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:358
 #: includes/admin/settings/class-wc-settings-general.php:206
-#: includes/admin/views/html-admin-page-status-report.php:462
+#: includes/admin/views/html-admin-page-status-report.php:467
 msgid "Decimal separator"
 msgstr "Desimaalierotin"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:352
 #: includes/admin/settings/class-wc-settings-general.php:196
-#: includes/admin/views/html-admin-page-status-report.php:457
+#: includes/admin/views/html-admin-page-status-report.php:462
 msgid "Thousand separator"
 msgstr "Tuhaterotin"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:341
 #: includes/admin/settings/class-wc-settings-general.php:179
-#: includes/admin/views/html-admin-page-status-report.php:452
+#: includes/admin/views/html-admin-page-status-report.php:457
 msgid "Currency position"
 msgstr "Valuuttamerkin paikka"
 
@@ -211,11 +239,11 @@ msgid "Min %s"
 msgstr "Minimi %s"
 
 #. translators: 1: item name 2: old stock quantity 3: new stock quantity
-#: includes/wc-stock-functions.php:97
+#: includes/wc-stock-functions.php:100
 msgid "%1$s stock reduced from %2$s to %3$s."
 msgstr "%1$s varasto pienentynyt arvosta %2$s arvoon %3$s."
 
-#: includes/wc-product-functions.php:736
+#: includes/wc-product-functions.php:743
 msgid "Visible"
 msgstr "Näkyy"
 
@@ -235,7 +263,7 @@ msgstr "Hyvityksen määrä ei kelpaa."
 msgid "wc_get_order should not be called before post types are registered (woocommerce_after_register_post_type action)."
 msgstr "wc_get_order ei pidä kutsua ennen kuin sisältötyypit on rekisteröity (woocommerce_after_register_post_type action)."
 
-#: includes/wc-formatting-functions.php:1020
+#: includes/wc-formatting-functions.php:1021
 msgctxt "Price range: from-to"
 msgid "%1$s &ndash; %2$s"
 msgstr "%1$s &ndash; %2$s"
@@ -302,7 +330,7 @@ msgstr "Maksuton toimitus"
 msgid "%1$s ending in %2$s (expires %3$s/%4$s)"
 msgstr "%1$s joka loppuu %2$s (umpeutuu %3$s/%4$s)"
 
-#: includes/log-handlers/class-wc-log-handler-file.php:344
+#: includes/log-handlers/class-wc-log-handler-file.php:345
 msgid "This method should not be called before plugins_loaded."
 msgstr "Tätä menetelmää ei pidä kutsua ennen plugins_loaded."
 
@@ -428,8 +456,8 @@ msgstr "Maksun (valtuutus)merkkikentät puuttuvat tai eivät kelpaa."
 msgid "Invalid download."
 msgstr "Lataus ei kelpaa."
 
-#: includes/data-stores/class-wc-customer-data-store.php:129
 #: includes/data-stores/class-wc-customer-data-store.php:134
+#: includes/data-stores/class-wc-customer-data-store.php:139
 msgid "Invalid customer."
 msgstr "Asiakas ei kelpaa."
 
@@ -441,7 +469,7 @@ msgstr "%1$d päivitystä valmis. Tietokannan versio on %2$s"
 msgid "Calling update function: %s"
 msgstr "Kutsutaan päivitystoimintoa: %s"
 
-#: includes/cli/class-wc-cli-runner.php:217
+#: includes/cli/class-wc-cli-runner.php:219
 msgid "Output just the id when the operation is successful."
 msgstr "Näytä vain tunnus/ID kun toiminto on onnistunut."
 
@@ -449,22 +477,22 @@ msgstr "Näytä vain tunnus/ID kun toiminto on onnistunut."
 msgid "Invalid coupon."
 msgstr "Kuponki ei kelpaa."
 
-#: includes/cli/class-wc-cli-runner.php:196
+#: includes/cli/class-wc-cli-runner.php:198
 #: includes/cli/class-wc-cli-tool-command.php:57
 msgid "Render response in a particular format."
 msgstr "Muotoile vastaus tietyllä tavalla."
 
-#: includes/cli/class-wc-cli-runner.php:190
+#: includes/cli/class-wc-cli-runner.php:192
 #: includes/cli/class-wc-cli-tool-command.php:51
 msgid "Get the value of an individual field."
 msgstr "Hae yksittäisen kentän arvo."
 
-#: includes/cli/class-wc-cli-runner.php:184
+#: includes/cli/class-wc-cli-runner.php:186
 #: includes/cli/class-wc-cli-tool-command.php:45
 msgid "Limit response to specific fields. Defaults to all fields."
 msgstr "Rajoita vastaus tiettyihin kenttiin. Oletuksena kaikki kentät."
 
-#: includes/cli/class-wc-cli-runner.php:160
+#: includes/cli/class-wc-cli-runner.php:162
 #: includes/cli/class-wc-cli-tool-command.php:36
 msgid "The id for the resource."
 msgstr "Resurssin tunnus/ID."
@@ -605,11 +633,11 @@ msgstr "Tilauksen tila asetettu: %s."
 msgid "Invalid tax class"
 msgstr "Veroluokka ei kelpaa"
 
-#: includes/class-wc-logger.php:122
+#: includes/class-wc-logger.php:125
 msgid "WC_Logger::log was called with an invalid level \"%s\"."
 msgstr "WC_Logger::log kutsuttiin tasolla \"%s\" joka ei kelpaa."
 
-#: includes/class-wc-logger.php:55
+#: includes/class-wc-logger.php:57
 msgid "The provided handler <code>%s</code> does not implement WC_Log_Handler_Interface."
 msgstr "Annettu käsittelijä <code>%s</code> ei käytä WC_Log_Handler_Interface."
 
@@ -625,25 +653,25 @@ msgstr "Tuote ei kelpaa"
 msgid "Visit premium customer support"
 msgstr "Siirry korkealuokkaiseen tukipalveluun (maksullinen)"
 
-#: includes/class-wc-form-handler.php:875
-#: includes/class-wc-form-handler.php:879
-#: includes/class-wc-form-handler.php:888
-#: includes/class-wc-form-handler.php:1029 includes/wc-user-functions.php:111
+#: includes/class-wc-form-handler.php:876
+#: includes/class-wc-form-handler.php:880
+#: includes/class-wc-form-handler.php:889
+#: includes/class-wc-form-handler.php:1030 includes/wc-user-functions.php:111
 msgid "Error:"
 msgstr "Virhe:"
 
-#: includes/class-wc-form-handler.php:830
+#: includes/class-wc-form-handler.php:831
 msgid "Invalid value posted for %s"
 msgstr "%s:lle asetettu arvo ei kelpaa"
 
-#: includes/class-wc-form-handler.php:611
+#: includes/class-wc-form-handler.php:612
 msgid "%d item from your previous order is currently unavailable and could not be added to your cart."
 msgid_plural "%d items from your previous order are currently unavailable and could not be added to your cart."
 msgstr[0] "%d tuote aiemmasta tilauksestasi ei ole nyt saatavilla. Sitä ei lisätty ostoskoriin."
 msgstr[1] "%d tuotteet aiemmasta tilauksestasi ei ole nyt saatavilla. Niitä ei lisätty ostoskoriin."
 
 #. translators: 1: product name 2: items in stock
-#: includes/class-wc-emails.php:467
+#: includes/class-wc-emails.php:472
 msgid "%1$s is low in stock. There are %2$d left."
 msgstr "%1$s varasto on vähissä. Jäljellä on %2$d kpl."
 
@@ -653,7 +681,7 @@ msgstr "%1$s varasto on vähissä. Jäljellä on %2$d kpl."
 msgid "Invalid data store."
 msgstr "'data store' ei kelpaa."
 
-#: includes/class-wc-customer.php:948 includes/class-wc-order.php:977
+#: includes/class-wc-customer.php:948 includes/class-wc-order.php:993
 msgid "Invalid billing email address"
 msgstr "Laskutuksen sähköpostiosoite ei kelpaa"
 
@@ -673,7 +701,7 @@ msgstr "Sähköpostiosoitteen rajoite ei kelpaa"
 msgid "Invalid discount type"
 msgstr "Alennuksen laji ei kelpaa"
 
-#: includes/class-wc-countries.php:834
+#: includes/class-wc-countries.php:837
 msgid "Eircode"
 msgstr "Eircode (Irlanti)"
 
@@ -686,7 +714,7 @@ msgid "Street address"
 msgstr "Katuosoite"
 
 #. translators: %s: field name
-#: includes/class-wc-checkout.php:597
+#: includes/class-wc-checkout.php:607
 msgid "Billing %s"
 msgstr "Laskutus %s"
 
@@ -696,7 +724,7 @@ msgstr "Et voi lisätä toista \"%s\" ostoskoriin."
 
 #. translators: %s: product name
 #: includes/class-wc-cart.php:912 includes/class-wc-frontend-scripts.php:523
-#: includes/wc-cart-functions.php:115 includes/wc-template-functions.php:1429
+#: includes/wc-cart-functions.php:115 includes/wc-template-functions.php:1447
 msgid "View cart"
 msgstr "Näytä ostoskori"
 
@@ -1058,23 +1086,24 @@ msgstr "Resurssia ei voi luoda. Varmista että  'tilaus' ja 'nimi' on annettu."
 msgid "Shipping zone name."
 msgstr "Toimitusvyöhykkeen nimi."
 
-#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:474
+#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:481
 msgid "Shipping method settings."
 msgstr "Toimitustavan asetukset."
 
-#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:451
+#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:458
 msgid "Shipping method enabled status."
 msgstr "Toimitustavan tila, onko käytössä."
 
-#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:446
+#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:453
 msgid "Shipping method sort order."
 msgstr "Toimitustavan lajittelujärjestys."
 
-#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:440
+#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:447
 msgid "Shipping method customer facing title."
 msgstr "Toimitustavan otsikko jonka asiakas näkee."
 
-#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:434
+#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:435
+#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:441
 msgid "Shipping method instance ID."
 msgstr "Toimitustapa tapahtuman tunnus/ID."
 
@@ -1109,12 +1138,12 @@ msgid "Unique ID for the resource."
 msgstr "Muista poikkeava tunnus/ID resurssille."
 
 #: includes/api/class-wc-rest-shipping-methods-controller.php:208
-#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:468
+#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:475
 msgid "Shipping method description."
 msgstr "Toimitustavan kuvaus."
 
 #: includes/api/class-wc-rest-shipping-methods-controller.php:202
-#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:462
+#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:469
 msgid "Shipping method title."
 msgstr "Toimitustavan otsikko."
 
@@ -1249,51 +1278,51 @@ msgstr "Päiväys jolloin kuva luotiin, GMT aika."
 
 #: includes/api/class-wc-rest-payment-gateways-controller.php:433
 #: includes/api/class-wc-rest-setting-options-controller.php:511
-#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:521
+#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:528
 msgid "Placeholder text to be displayed in text inputs."
 msgstr "Paikanvaraus teksti joka näytetään tekstilaatikoissa."
 
 #: includes/api/class-wc-rest-payment-gateways-controller.php:427
 #: includes/api/class-wc-rest-setting-options-controller.php:502
-#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:515
+#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:522
 msgid "Additional help text shown to the user about the setting."
 msgstr "Asetuksesta käyttäjälle näytettävän lisäohjeen teksti."
 
 #: includes/api/class-wc-rest-payment-gateways-controller.php:421
 #: includes/api/class-wc-rest-setting-options-controller.php:496
-#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:509
+#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:516
 msgid "Default value for the setting."
 msgstr "Asetuksen oletusarvo."
 
 #: includes/api/class-wc-rest-payment-gateways-controller.php:416
 #: includes/api/class-wc-rest-setting-options-controller.php:491
-#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:504
+#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:511
 msgid "Setting value."
 msgstr "Asetuksen arvo."
 
 #: includes/api/class-wc-rest-payment-gateways-controller.php:409
 #: includes/api/class-wc-rest-setting-options-controller.php:520
-#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:497
+#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:504
 msgid "Type of setting."
 msgstr "Asetuksen laji."
 
 #: includes/api/class-wc-rest-payment-gateways-controller.php:403
 #: includes/api/class-wc-rest-setting-options-controller.php:482
 #: includes/api/class-wc-rest-settings-controller.php:210
-#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:491
+#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:498
 msgid "A human readable description for the setting used in interfaces."
 msgstr "Asetuksen selkokielinen kuvaus jota käytetään käyttöliittymissä."
 
 #: includes/api/class-wc-rest-payment-gateways-controller.php:397
 #: includes/api/class-wc-rest-setting-options-controller.php:473
 #: includes/api/class-wc-rest-settings-controller.php:204
-#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:485
+#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:492
 msgid "A human readable label for the setting used in interfaces."
 msgstr "Asetuksen selkokielinen tunnus jota käytetään käyttöliittymissä."
 
 #: includes/api/class-wc-rest-payment-gateways-controller.php:391
 #: includes/api/class-wc-rest-setting-options-controller.php:464
-#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:479
+#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:486
 msgid "A unique identifier for the setting."
 msgstr "Muista poikkeava tunniste asetukselle."
 
@@ -1508,104 +1537,104 @@ msgstr "Nosta nykyistä ale-hintaa näin (kiinteä määrä tai %):"
 msgid "— No change —"
 msgstr "— Ei muutosta —"
 
-#: includes/admin/views/html-admin-page-status-report.php:675
+#: includes/admin/views/html-admin-page-status-report.php:680
 msgid "Learn how to update"
 msgstr "Opi kuinka päivitetään"
 
-#: includes/admin/views/html-admin-page-status-report.php:673
+#: includes/admin/views/html-admin-page-status-report.php:678
 msgid "Outdated templates"
 msgstr "Vanhentuneet pohjat(malline)"
 
-#: includes/admin/views/html-admin-page-status-report.php:643
+#: includes/admin/views/html-admin-page-status-report.php:648
 msgid "%1$s version %2$s is out of date. The core version is %3$s"
 msgstr "%1$s versio %2$s on vanhentunut. Ytimen versio on %3$s"
 
-#: includes/admin/views/html-admin-page-status-report.php:524
+#: includes/admin/views/html-admin-page-status-report.php:529
 msgid "Page visibility should be <a href=\"%s\" target=\"_blank\">public</a>"
 msgstr "Sivun näkyvyys tulisi olla <a href=\"%s\" target=\"_blank\">julkinen</a>"
 
-#: includes/admin/views/html-admin-page-status-report.php:508
+#: includes/admin/views/html-admin-page-status-report.php:513
 msgid "Edit %s page"
 msgstr "Muokkaa %s sivua"
 
-#: includes/admin/views/html-admin-page-status-report.php:472
+#: includes/admin/views/html-admin-page-status-report.php:477
 msgid "Taxonomies: Product types"
 msgstr "Luokittelut: Tuotelajit"
 
-#: includes/admin/views/html-admin-page-status-report.php:377
+#: includes/admin/views/html-admin-page-status-report.php:382
 msgid "Error messages should not be shown to visitors."
 msgstr "Virheilmoituksia ei pitäisi näyttää vierailijoille."
 
-#: includes/admin/views/html-admin-page-status-report.php:372
+#: includes/admin/views/html-admin-page-status-report.php:377
 msgid "Error messages can contain sensitive information about your store environment. These should be hidden from untrusted visitors."
 msgstr "Virheilmoitukset voivat sisältää arkaluontoisia tietoja kaupan toimintaympäristöstä. Nämä tulisi piilottaa vierailijoilta joihin ei voi luottaa."
 
-#: includes/admin/views/html-admin-page-status-report.php:371
+#: includes/admin/views/html-admin-page-status-report.php:376
 msgid "Hide errors from visitors"
 msgstr "Piilota virheet vierailijoilta"
 
-#: includes/admin/views/html-admin-page-status-report.php:366
+#: includes/admin/views/html-admin-page-status-report.php:371
 msgid "Your store is not using HTTPS. <a href=\"%s\" target=\"_blank\">Learn more about HTTPS and SSL Certificates</a>."
 msgstr "Kauppa ei käytä HTTPS-salausta. <a href=\"%s\" target=\"_blank\">Lisätietoja HTTPS ja SSL sertifikaateista</a>."
 
-#: includes/admin/views/html-admin-page-status-report.php:361
+#: includes/admin/views/html-admin-page-status-report.php:366
 #: includes/api/class-wc-rest-system-status-controller.php:508
 msgid "Is the connection to your store secure?"
 msgstr "Onko yhteys kauppaan turvattu?"
 
-#: includes/admin/views/html-admin-page-status-report.php:360
+#: includes/admin/views/html-admin-page-status-report.php:365
 msgid "Secure connection (HTTPS)"
 msgstr "Turvallinen yhteys (HTTPS)"
 
-#: includes/admin/views/html-admin-page-status-report.php:355
+#: includes/admin/views/html-admin-page-status-report.php:360
 msgid "Security"
 msgstr "Tietoturva"
 
-#: includes/admin/views/html-admin-page-status-report.php:343
+#: includes/admin/views/html-admin-page-status-report.php:348
 msgid "The MaxMind GeoIP Database does not exist - Geolocation will not function. You can download and install it manually from %1$s to the path: %2$s. Scroll down to \"Downloads\" and download the \"Binary / gzip\" file next to \"GeoLite Country\". Please remember to uncompress GeoIP.dat.gz and upload the GeoIP.dat file only."
 msgstr "The MaxMind GeoIP tietokantaa ei ole - sijainnin määritys ei toimi. Voit ladata ja asentaa sen manuaalisesti täältä: %1$s. Se sijoitetaan polkuun: %2$s. Vieritä alas kohtaan \"Downloads\" ja lataa \"Binary / gzip\" tiedosto joka on \"GeoLite Country\" vieressä. Muista purkaa vain GeoIP.dat.gz tiedosto ja siirrä palvelimelle vain GeoIP.dat tiedosto."
 
-#: includes/admin/views/html-admin-page-status-report.php:316
+#: includes/admin/views/html-admin-page-status-report.php:321
 msgid "How to update your database table prefix"
 msgstr "Kuinka tietokannan taulujen etuliite päivitetään"
 
-#: includes/admin/views/html-admin-page-status-report.php:316
+#: includes/admin/views/html-admin-page-status-report.php:321
 msgid "%1$s - We recommend using a prefix with less than 20 characters. See: %2$s"
 msgstr "%1$s - Suosittelemme etuliitettä jossa korkeintaan 20 merkkiä. Katso: %2$s"
 
-#: includes/admin/views/html-admin-page-status-report.php:312
+#: includes/admin/views/html-admin-page-status-report.php:317
 msgid "Database prefix"
 msgstr "Tietokannan etuliite"
 
-#: includes/admin/views/html-admin-page-status-report.php:272
+#: includes/admin/views/html-admin-page-status-report.php:277
 msgid "wp_remote_get() failed. Contact your hosting provider."
 msgstr "wp_remote_get() epäonnistui. Ota yhteys palvelimen tarjoajaan."
 
-#: includes/admin/views/html-admin-page-status-report.php:261
+#: includes/admin/views/html-admin-page-status-report.php:266
 msgid "wp_remote_post() failed. Contact your hosting provider."
 msgstr "wp_remote_post() epäonnistui. Ota yhteys palvelimen tarjoajaan."
 
-#: includes/admin/views/html-admin-page-status-report.php:244
+#: includes/admin/views/html-admin-page-status-report.php:249
 msgid "Multibyte string"
 msgstr "Monitavuinen merkkijono"
 
-#: includes/admin/views/html-admin-page-status-report.php:233
+#: includes/admin/views/html-admin-page-status-report.php:238
 msgid "GZip"
 msgstr "GZip"
 
-#: includes/admin/views/html-admin-page-status-report.php:222
+#: includes/admin/views/html-admin-page-status-report.php:227
 msgid "DOMDocument"
 msgstr "DOMDocument"
 
-#: includes/admin/views/html-admin-page-status-report.php:211
+#: includes/admin/views/html-admin-page-status-report.php:216
 msgid "SoapClient"
 msgstr "Soap-asiakas"
 
-#: includes/admin/views/html-admin-page-status-report.php:200
+#: includes/admin/views/html-admin-page-status-report.php:205
 msgid "fsockopen/cURL"
 msgstr "fsockopen/cURL"
 
-#: includes/admin/views/html-admin-page-status-report.php:59
+#: includes/admin/views/html-admin-page-status-report.php:64
 msgid "To allow logging, make %1$s writable or define a custom %2$s."
 msgstr "Jotta loki toimii, aseta %1$s kirjoituskelpoiseksi tai määritä mukautettu %2$s."
 
@@ -1680,20 +1709,20 @@ msgstr "Vyöhykkeen alueet"
 msgid "This is the name of the zone for your reference."
 msgstr "Tämä on vyöhykkeen nimi, jotta tunnistat sen."
 
-#: includes/admin/settings/class-wc-settings-shipping.php:274
+#: includes/admin/settings/class-wc-settings-shipping.php:278
 msgid "Are you sure you want to delete this zone? This action cannot be undone."
 msgstr "Haluatko varmasti poistaa tämän vyöhykkeen? Toimintoa ei voi perua."
 
-#: includes/admin/settings/class-wc-settings-shipping.php:116
+#: includes/admin/settings/class-wc-settings-shipping.php:119
 msgid "Enable debug mode"
 msgstr "Ota käyttöön testaustila"
 
-#: includes/admin/settings/class-wc-settings-shipping.php:115
+#: includes/admin/settings/class-wc-settings-shipping.php:118
 msgid "Debug mode"
 msgstr "Testaustila"
 
 #: includes/admin/settings/class-wc-settings-shipping.php:49
-#: includes/admin/settings/class-wc-settings-shipping.php:77
+#: includes/admin/settings/class-wc-settings-shipping.php:80
 msgid "Shipping options"
 msgstr "Toimituksen asetukset"
 
@@ -1771,23 +1800,23 @@ msgid "Customer registration"
 msgstr "Asiakkaan rekisteröityminen"
 
 #: includes/admin/settings/class-wc-settings-accounts.php:47
-#: includes/admin/settings/class-wc-settings-checkout.php:137
-#: includes/admin/settings/class-wc-settings-checkout.php:148
+#: includes/admin/settings/class-wc-settings-checkout.php:140
+#: includes/admin/settings/class-wc-settings-checkout.php:151
 msgid "Page contents: [%s]"
 msgstr "Sivun sisältö: [%s]"
 
-#: includes/admin/reports/class-wc-report-sales-by-product.php:396
+#: includes/admin/reports/class-wc-report-sales-by-product.php:398
 msgid "Choose a product to view stats"
 msgstr "Valitse tuote ja sitten näet tilastot"
 
 #. translators: 1: total refunds 2: total refunded orders 3: refunded items
-#: includes/admin/reports/class-wc-report-sales-by-date.php:442
+#: includes/admin/reports/class-wc-report-sales-by-date.php:506
 msgid "%1$s refunded %2$d order (%3$d item)"
 msgid_plural "%1$s refunded %2$d orders (%3$d items)"
 msgstr[0] "%1$s hyvitetty %2$d tilaus (%3$d tuote)"
 msgstr[1] "%1$s hyvitetty %2$d tilausta (%3$d tuotetta)"
 
-#: includes/admin/reports/class-wc-report-sales-by-category.php:283
+#: includes/admin/reports/class-wc-report-sales-by-category.php:284
 msgid "Choose a category to view stats"
 msgstr "Valitse osasto ja sitten näet tilastot"
 
@@ -1849,11 +1878,11 @@ msgstr "Joukkotuotteet"
 msgid "Refund #%1$s - %2$s"
 msgstr "Hyvitys #%1$s - %2$s"
 
-#: includes/admin/meta-boxes/views/html-order-items.php:267
+#: includes/admin/meta-boxes/views/html-order-items.php:256
 msgid "Refund %s manually"
 msgstr "Hyvitä %s manuaalisesti"
 
-#: includes/admin/meta-boxes/views/html-order-items.php:266
+#: includes/admin/meta-boxes/views/html-order-items.php:255
 msgid "Refund %1$s via %2$s"
 msgstr "Hyvitä %1$s käyttäen %2$s"
 
@@ -2005,7 +2034,7 @@ msgstr "Tämä on WooCommerce kauppasivu. Kauppasivu on erikoinen arkisto/luette
 #: includes/admin/class-wc-admin-post-types.php:1542
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:258
 #: includes/admin/settings/views/html-keys-edit.php:35
-#: includes/class-wc-ajax.php:1262
+#: includes/class-wc-ajax.php:1260
 msgid "%1$s (#%2$s &ndash; %3$s)"
 msgstr "%1$s (#%2$s &ndash; %3$s)"
 
@@ -2095,92 +2124,64 @@ msgstr "Hälytys"
 msgid "Emergency"
 msgstr "Hälytystila"
 
-#: includes/admin/class-wc-admin-help.php:246
+#: includes/admin/class-wc-admin-help.php:210
 msgid "WooCommerce helpdesk"
 msgstr "WooCommerce helpdesk-tuki"
 
-#: includes/admin/class-wc-admin-help.php:246
-#: includes/admin/class-wc-admin-help.php:255
+#: includes/admin/class-wc-admin-help.php:210
+#: includes/admin/class-wc-admin-help.php:219
 #: includes/admin/class-wc-admin-menus.php:97
 #: includes/admin/views/html-admin-page-status.php:12
 msgid "System status"
 msgstr "Järjestelmän tila"
 
-#: includes/admin/class-wc-admin-help.php:220
-#: includes/admin/class-wc-admin-help.php:222
+#: includes/admin/class-wc-admin-help.php:184
+#: includes/admin/class-wc-admin-help.php:186
 msgid "Guided Tour"
 msgstr "Opastettu kierros"
 
-#: includes/admin/class-wc-admin-help.php:181
-msgid "Tax Reports"
-msgstr "Vero raportit"
-
-#: includes/admin/class-wc-admin-help.php:177
-msgid "Stock Reports"
-msgstr "Varasto raportit"
-
-#: includes/admin/class-wc-admin-help.php:173
-msgid "Customer Reports"
-msgstr "Asiakas raportit"
-
-#: includes/admin/class-wc-admin-help.php:157
+#: includes/admin/class-wc-admin-help.php:137
 msgid "Product Attributes"
 msgstr "Tuotteen ominaisuudet"
 
-#: includes/admin/class-wc-admin-help.php:145
+#: includes/admin/class-wc-admin-help.php:125
 msgid "Creating Products"
 msgstr "Tuotteiden luominen"
 
-#: includes/admin/class-wc-admin-help.php:137
-msgid "Keys & Apps"
-msgstr "Avaimet & appsit"
-
-#: includes/admin/class-wc-admin-help.php:129
-#: includes/admin/class-wc-admin-help.php:133
+#: includes/admin/class-wc-admin-help.php:117
+#: includes/admin/class-wc-admin-help.php:121
 msgid "API Settings"
 msgstr "API-asetukset"
 
-#: includes/admin/class-wc-admin-help.php:117
+#: includes/admin/class-wc-admin-help.php:105
 msgid "Stripe Payment Method"
 msgstr "Stripe-maksutapa"
 
-#: includes/admin/class-wc-admin-help.php:113
+#: includes/admin/class-wc-admin-help.php:101
 msgid "PayPal by Braintree Payment Method"
 msgstr "PayPal by Braintree -maksutapa"
 
-#: includes/admin/class-wc-admin-help.php:109
+#: includes/admin/class-wc-admin-help.php:97
 msgid "PayPal Standard Method"
 msgstr "PayPal Standard -maksutapa"
 
-#: includes/admin/class-wc-admin-help.php:105
+#: includes/admin/class-wc-admin-help.php:93
 msgid "Cash on Delivery (COD) Payment Method"
 msgstr "Maksu toimitettaessa -maksutapa"
 
-#: includes/admin/class-wc-admin-help.php:101
+#: includes/admin/class-wc-admin-help.php:89
 msgid "Check Payment Method"
 msgstr "Valitse maksutapa"
 
-#: includes/admin/class-wc-admin-help.php:97
+#: includes/admin/class-wc-admin-help.php:85
 msgid "Bank Transfer (BACS) Payment Method"
 msgstr "Pankkisiirto, SEPA-maksu maksutapa"
 
-#: includes/admin/class-wc-admin-help.php:69
-#: includes/admin/class-wc-admin-help.php:73
-#: includes/admin/class-wc-admin-help.php:77
+#: includes/admin/class-wc-admin-help.php:57
+#: includes/admin/class-wc-admin-help.php:61
+#: includes/admin/class-wc-admin-help.php:65
 msgid "Tax Rate Example"
 msgstr "Esimerkki veroprosentista"
-
-#: includes/admin/class-wc-admin-help.php:61
-msgid "Downloadable Products Settings"
-msgstr "Ladattavien tuotteiden asetukset"
-
-#: includes/admin/class-wc-admin-help.php:57
-msgid "Inventory Settings"
-msgstr "Varaston asetukset"
-
-#: includes/admin/class-wc-admin-help.php:53
-msgid "Display Settings"
-msgstr "Esittämisen asetukset"
 
 #. translators: %s: review author
 #: includes/admin/class-wc-admin-dashboard.php:275
@@ -2254,11 +2255,11 @@ msgstr "Toisteinen tuotetunnus/SKU tai se ei kelpaa."
 msgid "Invalid catalog visibility option."
 msgstr "Tuoteluettelon näytä-valinta ei kelpaa."
 
-#: includes/abstracts/abstract-wc-order.php:512
+#: includes/abstracts/abstract-wc-order.php:531
 msgid "Invalid currency code"
 msgstr "Valuuta koodi ei kelpaa"
 
-#: includes/abstracts/abstract-wc-order.php:457
+#: includes/abstracts/abstract-wc-order.php:476
 msgid "Invalid parent ID"
 msgstr "Ylemmän tason tunnus/ID ei kelpaa"
 
@@ -2662,7 +2663,7 @@ msgstr "Asennettu"
 msgid "https://woocommerce.com"
 msgstr "https://woocommerce.com"
 
-#: includes/admin/settings/class-wc-settings-checkout.php:111
+#: includes/admin/settings/class-wc-settings-checkout.php:114
 msgid "Force SSL (HTTPS) on the checkout pages (<a href=\"%s\" target=\"_blank\">an SSL Certificate is required</a>)."
 msgstr "Pakota SSL (HTTPS) suojaustila kassasivuilla (<a href=\"%s\" target=\"_blank\">SSL sertifikaatti tarvitaan</a>)."
 
@@ -2691,7 +2692,7 @@ msgstr "Kaikkialla"
 msgid "Error: %s."
 msgstr "Virhe: %s."
 
-#: includes/admin/settings/class-wc-settings-shipping.php:117
+#: includes/admin/settings/class-wc-settings-shipping.php:120
 msgid "Enable shipping debug mode to show matching shipping zones and to bypass shipping rate cache."
 msgstr "Kun haluat nähdä mitkä toimitusvyöhykkeet on valittavissa, ota käyttöön toimituksen testaustila. Samalla ohitetaan toimituksen hinta välimuisti."
 
@@ -2700,7 +2701,7 @@ msgstr "Kun haluat nähdä mitkä toimitusvyöhykkeet on valittavissa, ota käyt
 msgid "Choose the shipping method you wish to add. Only shipping methods which support zones are listed."
 msgstr "Valitse toimitustapa jonka haluat lisätä. Listassa on vain ne toimitustavat jotka tukevat vyöhykkeitä."
 
-#: includes/admin/settings/class-wc-settings-shipping.php:276
+#: includes/admin/settings/class-wc-settings-shipping.php:280
 #: includes/admin/settings/views/html-admin-page-shipping-zones.php:45
 msgid "No shipping methods offered to this zone."
 msgstr "Tälle toimitusvyöhykkeelle ei ole toimitustapoja."
@@ -2721,7 +2722,7 @@ msgstr "Käytä <code>[qty]</code> tuotteiden lukumäärälle, <br/><code>[cost]
 msgid "Taking a while? Click here to run it now."
 msgstr "Kestääkö kauan? Klikkaa tähän ja suoritetaan se nyt."
 
-#: includes/admin/views/html-admin-page-status-report.php:130
+#: includes/admin/views/html-admin-page-status-report.php:135
 msgid "%1$s - We recommend a minimum PHP version of 5.6. See: %2$s"
 msgstr "%1$s - Suosittelemme vähintään PHP-versiota 5.6. Katso: %2$s"
 
@@ -3520,7 +3521,7 @@ msgid_plural "%s and %d other regions"
 msgstr[0] "%s ja %d muu alue"
 msgstr[1] "%s ja %d muut alueet"
 
-#: includes/admin/settings/class-wc-settings-shipping.php:246
+#: includes/admin/settings/class-wc-settings-shipping.php:250
 #: includes/admin/settings/views/html-admin-page-shipping-zone-methods.php:9
 #: includes/class-wc-shipping-zone.php:272
 msgid "Zone"
@@ -3603,11 +3604,11 @@ msgstr "Maksutapa poistettu."
 msgid "Go to shop"
 msgstr "Siirry kauppaan"
 
-#: includes/class-wc-checkout.php:682
+#: includes/class-wc-checkout.php:693
 msgid "No shipping method has been selected. Please double check your address, or contact us if you need any help."
 msgstr "Toimitustapaa ei ole valittu. Tarkasta vielä kerran osoite tai ota yhteyttä meihin jos tarvitset apua."
 
-#: includes/class-wc-checkout.php:674
+#: includes/class-wc-checkout.php:685
 msgid "Please enter an address to continue."
 msgstr "Kirjoita osoite jotta voit jatkaa."
 
@@ -3814,60 +3815,60 @@ msgid "Total number of purchases."
 msgstr "Ostojen kokonaislukumäärä."
 
 #. translators: %s: date format
-#: includes/api/v1/class-wc-rest-report-sales-controller.php:391
+#: includes/api/v1/class-wc-rest-report-sales-controller.php:389
 msgid "Return sales for a specific end date, the date need to be in the %s format."
 msgstr "Palauttaa myynnit tietylle lopetus päivälle, päiväyksen on oltava %s muodossa."
 
 #. translators: %s: date format
-#: includes/api/v1/class-wc-rest-report-sales-controller.php:383
+#: includes/api/v1/class-wc-rest-report-sales-controller.php:381
 msgid "Return sales for a specific start date, the date need to be in the %s format."
 msgstr "Palauttaa myynnit tietylle aloitus päivälle, päiväyksen on oltava %s muodossa."
 
-#: includes/api/v1/class-wc-rest-report-sales-controller.php:375
+#: includes/api/v1/class-wc-rest-report-sales-controller.php:373
 msgid "Report period."
 msgstr "Raportin ajanjakso."
 
-#: includes/api/v1/class-wc-rest-report-sales-controller.php:352
+#: includes/api/v1/class-wc-rest-report-sales-controller.php:350
 msgid "Totals."
 msgstr "Summat."
 
-#: includes/api/v1/class-wc-rest-report-sales-controller.php:346
+#: includes/api/v1/class-wc-rest-report-sales-controller.php:344
 msgid "Group type."
 msgstr "Joukon laji."
 
-#: includes/api/v1/class-wc-rest-report-sales-controller.php:340
+#: includes/api/v1/class-wc-rest-report-sales-controller.php:338
 msgid "Total of coupons used."
 msgstr "Kuponkeja käytetty yhteensä."
 
-#: includes/api/v1/class-wc-rest-report-sales-controller.php:334
+#: includes/api/v1/class-wc-rest-report-sales-controller.php:332
 msgid "Total of refunded orders."
 msgstr "Hyvitetty tilauksia yhteensä."
 
-#: includes/api/v1/class-wc-rest-report-sales-controller.php:328
+#: includes/api/v1/class-wc-rest-report-sales-controller.php:326
 msgid "Total charged for shipping."
 msgstr "Veloitettu yhteensä toimituskuluja."
 
-#: includes/api/v1/class-wc-rest-report-sales-controller.php:322
+#: includes/api/v1/class-wc-rest-report-sales-controller.php:320
 msgid "Total charged for taxes."
 msgstr "Peritty veroja yhteensä."
 
-#: includes/api/v1/class-wc-rest-report-sales-controller.php:316
+#: includes/api/v1/class-wc-rest-report-sales-controller.php:314
 msgid "Total of items purchased."
 msgstr "Tuotteita ostettu yhteensä."
 
-#: includes/api/v1/class-wc-rest-report-sales-controller.php:310
+#: includes/api/v1/class-wc-rest-report-sales-controller.php:308
 msgid "Total of orders placed."
 msgstr "Tilauksia tehty yhteensä."
 
-#: includes/api/v1/class-wc-rest-report-sales-controller.php:304
+#: includes/api/v1/class-wc-rest-report-sales-controller.php:302
 msgid "Average net daily sales."
 msgstr "Keskimääräinen nettopäivämyynti."
 
-#: includes/api/v1/class-wc-rest-report-sales-controller.php:298
+#: includes/api/v1/class-wc-rest-report-sales-controller.php:296
 msgid "Net sales in the period."
 msgstr "Ajanjakson nettomyynti."
 
-#: includes/api/v1/class-wc-rest-report-sales-controller.php:292
+#: includes/api/v1/class-wc-rest-report-sales-controller.php:290
 msgid "Gross sales in the period."
 msgstr "Ajanjakson bruttomyynti."
 
@@ -4073,7 +4074,7 @@ msgstr "Ominaisuuden sijainti."
 #: includes/api/v1/class-wc-rest-products-controller.php:2201
 #: includes/api/v1/class-wc-rest-products-controller.php:2243
 #: includes/api/v1/class-wc-rest-products-controller.php:2533
-#: includes/cli/class-wc-cli-runner.php:99
+#: includes/cli/class-wc-cli-runner.php:100
 msgid "Attribute ID."
 msgstr "Ominaisuuden tunnus/ID."
 
@@ -4606,7 +4607,7 @@ msgstr "Hyvityksen syy."
 
 #: includes/api/class-wc-rest-orders-controller.php:1579
 #: includes/api/v1/class-wc-rest-orders-controller.php:1550
-#: includes/cli/class-wc-cli-runner.php:98
+#: includes/cli/class-wc-cli-runner.php:99
 msgid "Refund ID."
 msgstr "Hyvityksen tunnus/ID."
 
@@ -4652,7 +4653,7 @@ msgstr "Maksurivien tiedot."
 
 #: includes/api/class-wc-rest-orders-controller.php:1347
 #: includes/api/class-wc-rest-shipping-zone-methods-controller.php:49
-#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:456
+#: includes/api/class-wc-rest-shipping-zone-methods-controller.php:463
 #: includes/api/v1/class-wc-rest-orders-controller.php:1397
 msgid "Shipping method ID."
 msgstr "Toimitustavan tunnus/ID."
@@ -4838,41 +4839,31 @@ msgid "Parent order ID."
 msgstr "Ylemmän tason tilauksen numero."
 
 #: includes/api/class-wc-rest-orders-controller.php:727
-#: includes/api/legacy/v2/class-wc-api-orders.php:838
-#: includes/api/legacy/v3/class-wc-api-orders.php:886
+#: includes/api/legacy/v2/class-wc-api-orders.php:840
+#: includes/api/legacy/v3/class-wc-api-orders.php:888
 #: includes/api/v1/class-wc-rest-orders-controller.php:765
 msgid "Order item ID provided is not associated with order."
 msgstr "Annettu tuotteen tunnus/ID ei liity tilaukseen."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1178
-#: includes/api/legacy/v3/class-wc-api-orders.php:1228
+#: includes/api/legacy/v2/class-wc-api-orders.php:1173
+#: includes/api/legacy/v3/class-wc-api-orders.php:1223
 msgid "Cannot update coupon, try again."
 msgstr "Kuponkia ei voi päivittää, yritä uudelleen."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1161
-#: includes/api/legacy/v3/class-wc-api-orders.php:1211
-msgid "Cannot create coupon, try again."
-msgstr "Kuponkia ei voi luoda, yritä uudelleen."
-
 #: includes/api/class-wc-rest-orders-controller.php:688
-#: includes/api/legacy/v2/class-wc-api-orders.php:1148
-#: includes/api/legacy/v3/class-wc-api-orders.php:1198
+#: includes/api/legacy/v2/class-wc-api-orders.php:1147
+#: includes/api/legacy/v3/class-wc-api-orders.php:1197
 #: includes/api/v1/class-wc-rest-orders-controller.php:727
 msgid "Coupon code is required."
 msgstr "Kupongin koodi tarvitaan."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1123
-#: includes/api/legacy/v3/class-wc-api-orders.php:1173
+#: includes/api/legacy/v2/class-wc-api-orders.php:1122
+#: includes/api/legacy/v3/class-wc-api-orders.php:1172
 msgid "Cannot update fee, try again."
 msgstr "Maksua ei voi päivittää, yritä uudelleen."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1098
-#: includes/api/legacy/v3/class-wc-api-orders.php:1148
-msgid "Cannot create fee, try again."
-msgstr "Maksua ei voi luoda, yritä uudelleen."
-
-#: includes/api/legacy/v2/class-wc-api-orders.php:1079
-#: includes/api/legacy/v3/class-wc-api-orders.php:1129
+#: includes/api/legacy/v2/class-wc-api-orders.php:1082
+#: includes/api/legacy/v3/class-wc-api-orders.php:1132
 msgid "Fee tax class is required when fee is taxable."
 msgstr "Maksun veroluokka tarvitaan kun maksu on verollinen."
 
@@ -4881,45 +4872,40 @@ msgstr "Maksun veroluokka tarvitaan kun maksu on verollinen."
 msgid "Fee name is required."
 msgstr "Tiedoston nimi tarvitaan."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1048
-#: includes/api/legacy/v3/class-wc-api-orders.php:1098
+#: includes/api/legacy/v2/class-wc-api-orders.php:1051
+#: includes/api/legacy/v3/class-wc-api-orders.php:1101
 msgid "Cannot update shipping method, try again."
 msgstr "Toimitustapaa ei voi päivittää, yritä uudelleen."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1027
-#: includes/api/legacy/v3/class-wc-api-orders.php:1077
-msgid "Cannot create shipping method, try again."
-msgstr "Toimitustapaa ei voi luoda, yritä uudelleen."
-
 #: includes/api/class-wc-rest-orders-controller.php:644
-#: includes/api/legacy/v2/class-wc-api-orders.php:1017
-#: includes/api/legacy/v3/class-wc-api-orders.php:1067
+#: includes/api/legacy/v2/class-wc-api-orders.php:1024
+#: includes/api/legacy/v3/class-wc-api-orders.php:1074
 #: includes/api/v1/class-wc-rest-orders-controller.php:685
 msgid "Shipping method ID is required."
 msgstr "Toimitustavan tunnus/ID tarvitaan."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1010
-#: includes/api/legacy/v3/class-wc-api-orders.php:1060
+#: includes/api/legacy/v2/class-wc-api-orders.php:1017
+#: includes/api/legacy/v3/class-wc-api-orders.php:1067
 msgid "Shipping total must be a positive amount."
 msgstr "Toimituskulut yhteensä on oltava positiivinen luku."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:943
-#: includes/api/legacy/v3/class-wc-api-orders.php:992
+#: includes/api/legacy/v2/class-wc-api-orders.php:949
+#: includes/api/legacy/v3/class-wc-api-orders.php:998
 msgid "Cannot create line item, try again."
 msgstr "Tuoteriviä ei voi luoda, yritä uudelleen."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:904
-#: includes/api/legacy/v3/class-wc-api-orders.php:952
+#: includes/api/legacy/v2/class-wc-api-orders.php:906
+#: includes/api/legacy/v3/class-wc-api-orders.php:954
 msgid "Product quantity is required."
 msgstr "Tuotteen määrä tarvitaan."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:899
-#: includes/api/legacy/v3/class-wc-api-orders.php:947
+#: includes/api/legacy/v2/class-wc-api-orders.php:901
+#: includes/api/legacy/v3/class-wc-api-orders.php:949
 msgid "Product quantity must be a positive float."
 msgstr "Tuotteen määrä on oltava positiivinen liukuluku."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:894
-#: includes/api/legacy/v3/class-wc-api-orders.php:942
+#: includes/api/legacy/v2/class-wc-api-orders.php:896
+#: includes/api/legacy/v3/class-wc-api-orders.php:944
 msgid "Product is invalid."
 msgstr "Tuote ei kelpaa."
 
@@ -5131,15 +5117,15 @@ msgstr "Hyvityksen määrä."
 msgid "The date the order refund was created, in the site's timezone."
 msgstr "Päiväys jolloin tilauksen hyvitys luotiin, sivuston aikavyöhykkeellä."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1615
-#: includes/api/legacy/v3/class-wc-api-orders.php:1665
+#: includes/api/legacy/v2/class-wc-api-orders.php:1610
+#: includes/api/legacy/v3/class-wc-api-orders.php:1660
 #: includes/wc-order-functions.php:635
 msgid "An error occurred while attempting to create the refund using the payment gateway API."
 msgstr "Virhe kun yritettiin luoda hyvitystä käyttäen maksukäytävän rajapintaa/API."
 
 #: includes/api/class-wc-rest-order-refunds-controller.php:290
-#: includes/api/legacy/v2/class-wc-api-orders.php:1598
-#: includes/api/legacy/v3/class-wc-api-orders.php:1648
+#: includes/api/legacy/v2/class-wc-api-orders.php:1593
+#: includes/api/legacy/v3/class-wc-api-orders.php:1643
 #: includes/api/v1/class-wc-rest-order-refunds-controller.php:310
 msgid "Cannot create order refund, please try again."
 msgstr "Ei voi luoda tilauksen hyvitystä, yritä uudelleen ole hyvä."
@@ -5154,12 +5140,12 @@ msgid "Order is invalid"
 msgstr "Tilaus ei kelpaa"
 
 #: includes/api/class-wc-rest-order-refunds-controller.php:190
-#: includes/api/legacy/v2/class-wc-api-orders.php:1499
-#: includes/api/legacy/v2/class-wc-api-orders.php:1661
-#: includes/api/legacy/v2/class-wc-api-orders.php:1722
-#: includes/api/legacy/v3/class-wc-api-orders.php:1549
-#: includes/api/legacy/v3/class-wc-api-orders.php:1711
-#: includes/api/legacy/v3/class-wc-api-orders.php:1772
+#: includes/api/legacy/v2/class-wc-api-orders.php:1494
+#: includes/api/legacy/v2/class-wc-api-orders.php:1656
+#: includes/api/legacy/v2/class-wc-api-orders.php:1717
+#: includes/api/legacy/v3/class-wc-api-orders.php:1544
+#: includes/api/legacy/v3/class-wc-api-orders.php:1706
+#: includes/api/legacy/v3/class-wc-api-orders.php:1767
 #: includes/api/v1/class-wc-rest-order-refunds-controller.php:132
 msgid "Invalid order refund ID."
 msgstr "Tilauksen hyvityksen tunnus/ID ei kelpaa."
@@ -5194,8 +5180,8 @@ msgstr "Päiväys jolloin tilauksen kommentti luotiin, sivuston aikavyöhykkeell
 msgid "Webhooks do not support trashing."
 msgstr "Verkkotoimintokutsuja ei voi siirtää roskakoriin."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1307
-#: includes/api/legacy/v3/class-wc-api-orders.php:1357
+#: includes/api/legacy/v2/class-wc-api-orders.php:1302
+#: includes/api/legacy/v3/class-wc-api-orders.php:1352
 #: includes/api/v1/class-wc-rest-order-notes-controller.php:230
 msgid "Cannot create order note, please try again."
 msgstr "Tilauksen kommenttia ei voi luoda, yritä uudelleen ole hyvä."
@@ -5500,7 +5486,7 @@ msgstr "Tilauksen avain."
 
 #: includes/api/class-wc-rest-customer-downloads-controller.php:115
 #: includes/api/v1/class-wc-rest-customer-downloads-controller.php:193
-#: includes/cli/class-wc-cli-runner.php:97
+#: includes/cli/class-wc-cli-runner.php:98
 msgid "Order ID."
 msgstr "Tilausnumero."
 
@@ -5758,23 +5744,23 @@ msgstr "Uusi:"
 #: includes/admin/views/html-notice-template-check.php:13
 #: includes/admin/views/html-notice-theme-support.php:12
 #: includes/admin/views/html-notice-updated.php:12
-#: includes/wc-template-functions.php:498
+#: includes/wc-template-functions.php:510
 msgid "Dismiss"
 msgstr "Piilota tämä ilmoitus"
 
-#: includes/admin/views/html-admin-page-status-report.php:627
+#: includes/admin/views/html-admin-page-status-report.php:632
 msgid "Your theme has a woocommerce.php file, you will not be able to override the woocommerce/archive-product.php custom template since woocommerce.php has priority over archive-product.php. This is intended to prevent display issues."
 msgstr "Teemassa on woocommerce.php -tiedosto. Et voi ohittaa woocommerce/archive-product.php -tiedoston mukautettua pohjaa/mallinetta koska woocommerce.php on etuoikeutettu suhteessa archive-product.php -tiedostoon. Tällä pyritään estämään esittämisen ongelmia."
 
-#: includes/admin/views/html-admin-page-status-report.php:625
+#: includes/admin/views/html-admin-page-status-report.php:630
 msgid "Archive template"
 msgstr "Arkiston sivupohja"
 
-#: includes/admin/views/html-admin-page-status-report.php:521
+#: includes/admin/views/html-admin-page-status-report.php:526
 msgid "Page ID is set, but the page does not exist"
 msgstr "Sivun tunnus/ID on asetettu, mutta sivua ei ole"
 
-#: includes/admin/views/html-admin-page-status-report.php:338
+#: includes/admin/views/html-admin-page-status-report.php:343
 msgid "The GeoIP database from MaxMind is used to geolocate customers."
 msgstr "MaxMindin GeoIP -tietokantaa käytetään asiakkaiden sijainnin määrittämiseen."
 
@@ -5782,15 +5768,15 @@ msgstr "MaxMindin GeoIP -tietokantaa käytetään asiakkaiden sijainnin määrit
 msgid "MaxMind GeoIP database."
 msgstr "MaxMind GeoIP -tietokanta."
 
-#: includes/admin/views/html-admin-page-status-report.php:239
+#: includes/admin/views/html-admin-page-status-report.php:244
 msgid "Your server does not support the %s function - this is required to use the GeoIP database from MaxMind."
 msgstr "Palvelimesi ei tue %s -toimintoa. Tämä tarvitaan jotta voidaan käyttää MaxMindin GeoIP-tietokantaa."
 
-#: includes/admin/views/html-admin-page-status-report.php:175
+#: includes/admin/views/html-admin-page-status-report.php:180
 msgid "WordPress requirements"
 msgstr "WordPress järjestelmävaatimukset"
 
-#: includes/admin/views/html-admin-page-status-report.php:154
+#: includes/admin/views/html-admin-page-status-report.php:159
 msgid "The version of cURL installed on your server."
 msgstr "Palvelimellesi asennetun cURL-toiminnon versio."
 
@@ -5798,11 +5784,11 @@ msgstr "Palvelimellesi asennetun cURL-toiminnon versio."
 msgid "cURL version."
 msgstr "cURL-versio."
 
-#: includes/admin/views/html-admin-page-status-report.php:97
+#: includes/admin/views/html-admin-page-status-report.php:102
 msgid "Displays whether or not WP Cron Jobs are enabled."
 msgstr "Näyttää onko WP-ajastettuja toimia käytössä."
 
-#: includes/admin/views/html-admin-page-status-report.php:96
+#: includes/admin/views/html-admin-page-status-report.php:101
 msgid "WP cron"
 msgstr "WP Cron -ajastus"
 
@@ -5928,50 +5914,50 @@ msgstr "Tallenna toimitusluokat"
 msgid "Shipping classes can be used to group products of similar type and can be used by some Shipping Methods (such as \"Flat rate shipping\") to provide different rates to different classes of product."
 msgstr "Toimitusluokilla voidaan ryhmittää samankaltaiset tuotteet ja jotkut toimitustavat (kuten Kiinteä toimitusmaksu) voivat käyttää niitä eri maksujen asettamisessa eri toimitusluokille."
 
-#: includes/admin/settings/class-wc-settings-shipping.php:340
+#: includes/admin/settings/class-wc-settings-shipping.php:344
 msgid "Product count"
 msgstr "Tuotteiden lukumäärä"
 
-#: includes/admin/settings/class-wc-settings-shipping.php:305
+#: includes/admin/settings/class-wc-settings-shipping.php:309
 msgid "Edit failed. Please try again."
 msgstr "Muokkaus epäonnistui. Yritä uudelleen, ole hyvä."
 
-#: includes/admin/settings/class-wc-settings-shipping.php:299
+#: includes/admin/settings/class-wc-settings-shipping.php:303
 msgid "This shipping method does not have any settings to configure."
 msgstr "Tälle toimitustavalle ei ole mitään määritettävää asetusta."
 
-#: includes/admin/settings/class-wc-settings-shipping.php:243
+#: includes/admin/settings/class-wc-settings-shipping.php:247
 msgid "Shipping method could not be added. Please retry."
 msgstr "Toimitustapaa ei voitu lisätä. Yritä uudelleen, ole hyvä."
 
-#: includes/admin/settings/class-wc-settings-shipping.php:242
-#: includes/admin/settings/class-wc-settings-shipping.php:275
-#: includes/admin/settings/class-wc-settings-shipping.php:330
+#: includes/admin/settings/class-wc-settings-shipping.php:246
+#: includes/admin/settings/class-wc-settings-shipping.php:279
+#: includes/admin/settings/class-wc-settings-shipping.php:334
 msgid "Your changes were not saved. Please retry."
 msgstr "Muutoksia ei tallennettu. Yritä uudelleen, ole hyvä."
 
-#: includes/admin/settings/class-wc-settings-shipping.php:241
+#: includes/admin/settings/class-wc-settings-shipping.php:245
 msgid "Do you wish to save your changes first? Your changed data will be discarded if you choose to cancel."
 msgstr "Haluatko tallentaa muutokset ensin? Muutetut tiedot tuhoutuvat jos valitset peru vaihtoehdon."
 
-#: includes/admin/settings/class-wc-settings-shipping.php:214
-#: includes/admin/settings/class-wc-settings-shipping.php:296
+#: includes/admin/settings/class-wc-settings-shipping.php:218
+#: includes/admin/settings/class-wc-settings-shipping.php:300
 msgid "Zone does not exist!"
 msgstr "Vyöhykettä ei ole!"
 
-#: includes/admin/settings/class-wc-settings-shipping.php:107
+#: includes/admin/settings/class-wc-settings-shipping.php:110
 msgid "Force shipping to the customer billing address"
 msgstr "Pakota toimitus asiakkaan laskutusosoitteeseen"
 
-#: includes/admin/settings/class-wc-settings-shipping.php:106
+#: includes/admin/settings/class-wc-settings-shipping.php:109
 msgid "Default to customer billing address"
 msgstr "Käytä oletuksena asiakkaan laskutusosoitetta"
 
-#: includes/admin/settings/class-wc-settings-shipping.php:105
+#: includes/admin/settings/class-wc-settings-shipping.php:108
 msgid "Default to customer shipping address"
 msgstr "Käytä oletuksena asiakkaan toimitusosoitetta"
 
-#: includes/admin/settings/class-wc-settings-shipping.php:80
+#: includes/admin/settings/class-wc-settings-shipping.php:83
 msgid "Calculations"
 msgstr "Laskelmat"
 
@@ -6021,19 +6007,19 @@ msgstr "Myy tiettyihin maihin"
 msgid "Sell to all countries, except for&hellip;"
 msgstr "Myy kaikkiin maihin, paitsi&hellip;"
 
-#: includes/admin/settings/class-wc-settings-checkout.php:214
+#: includes/admin/settings/class-wc-settings-checkout.php:217
 msgid "Endpoint for the setting a default payment method page."
 msgstr "Verkko-osoitteen loppuliite jolla asetetaan oletusmaksutapa -sivu."
 
-#: includes/admin/settings/class-wc-settings-checkout.php:213
+#: includes/admin/settings/class-wc-settings-checkout.php:216
 msgid "Set default payment method"
 msgstr "Aseta oletusmaksutapa"
 
-#: includes/admin/settings/class-wc-settings-checkout.php:205
+#: includes/admin/settings/class-wc-settings-checkout.php:208
 msgid "Endpoint for the delete payment method page."
 msgstr "Verkko-osoitteen loppuliite poista maksutapa -sivulla"
 
-#: includes/admin/settings/class-wc-settings-checkout.php:204
+#: includes/admin/settings/class-wc-settings-checkout.php:207
 msgid "Delete payment method"
 msgstr "Poista maksutapa"
 
@@ -6056,15 +6042,15 @@ msgstr "Osoite"
 msgid "Downloads"
 msgstr "Lataukset"
 
-#: includes/admin/meta-boxes/views/html-order-items.php:252
+#: includes/admin/meta-boxes/views/html-order-items.php:241
 msgid "Note: the refund reason will be visible by the customer."
 msgstr "Huom: hyvityksen syy näkyy asiakkaalle."
 
-#: includes/admin/meta-boxes/views/html-order-items.php:200
+#: includes/admin/meta-boxes/views/html-order-items.php:190
 msgid "This order is no longer editable."
 msgstr "Tätä tilausta ei voi enää muokata."
 
-#: includes/admin/meta-boxes/views/html-order-items.php:198
+#: includes/admin/meta-boxes/views/html-order-items.php:188
 msgid "Add item(s)"
 msgstr "Lisää tuote/tuotteita"
 
@@ -6166,16 +6152,16 @@ msgstr "Opi lisää tilauksista"
 msgid "When you receive a new order, it will appear here."
 msgstr "Kun saat uuden tilauksen, se näkyy tässä."
 
-#: includes/admin/class-wc-admin-help.php:246
+#: includes/admin/class-wc-admin-help.php:210
 msgid "Community forum"
 msgstr "Yhteisön keskustelupalsta"
 
-#: includes/admin/class-wc-admin-help.php:241
+#: includes/admin/class-wc-admin-help.php:205
 msgid "For further assistance with WooCommerce core you can use the <a href=\"%1$s\">community forum</a>. If you need help with premium extensions sold by WooCommerce, please <a href=\"%2$s\">use our helpdesk</a>."
 msgstr "Kun tarvitset lisää tukea WooCommerce-ohjelman ydinosasta voit käyttää <a href=\"%1$s\">yhteisön keskustelupalstaa</a>. Jos tarvitset tukea WooThemes myymiin maaksullisiin laajennuksiin ota yhteyttä <a href=\"%2$s\">shelpdesk-tukeen</a>."
 
-#: includes/admin/class-wc-admin-help.php:233
-#: includes/admin/class-wc-admin-help.php:235
+#: includes/admin/class-wc-admin-help.php:197
+#: includes/admin/class-wc-admin-help.php:199
 msgid "Help &amp; Support"
 msgstr "Apu &amp; tuki"
 
@@ -6191,11 +6177,11 @@ msgstr "PayPal:in Braintree"
 msgid "Bank transfer (BACS) payments"
 msgstr "Pankkisiirto (esim. SEPA-maksu) maksut"
 
-#: includes/admin/class-wc-admin-help.php:81
+#: includes/admin/class-wc-admin-help.php:69
 msgid "Shipping Zones"
 msgstr "Toimitusvyöhykkeet"
 
-#: includes/admin/class-wc-admin-assets.php:291
+#: includes/admin/class-wc-admin-assets.php:292
 msgid "Are you sure you wish to delete this note? This action cannot be undone."
 msgstr "Haluatko varmasti poistaa tämän kommentin? Toimintoa ei voi perua."
 
@@ -6517,11 +6503,11 @@ msgstr "Luotujen resurssien lista."
 #: includes/abstracts/abstract-wc-rest-controller.php:97
 #: includes/api/legacy/v2/class-wc-api-coupons.php:519
 #: includes/api/legacy/v2/class-wc-api-customers.php:783
-#: includes/api/legacy/v2/class-wc-api-orders.php:1768
+#: includes/api/legacy/v2/class-wc-api-orders.php:1763
 #: includes/api/legacy/v2/class-wc-api-products.php:2272
 #: includes/api/legacy/v3/class-wc-api-coupons.php:519
 #: includes/api/legacy/v3/class-wc-api-customers.php:773
-#: includes/api/legacy/v3/class-wc-api-orders.php:1818
+#: includes/api/legacy/v3/class-wc-api-orders.php:1813
 #: includes/api/legacy/v3/class-wc-api-products.php:3078
 #: includes/api/legacy/v3/class-wc-api-taxes.php:465
 msgid "Unable to accept more than %s items for this request."
@@ -6594,8 +6580,8 @@ msgstr "Aasia"
 msgid "Africa"
 msgstr "Afrikka"
 
-#: includes/admin/class-wc-admin-assets.php:340
-#: includes/admin/views/html-admin-page-status-report.php:27
+#: includes/admin/class-wc-admin-assets.php:341
+#: includes/admin/views/html-admin-page-status-report.php:32
 msgid "Copying to clipboard failed. Please press Ctrl/Cmd+C to copy."
 msgstr "Kopiointi leikepöydälle ei onnistunut. Kun haluat kopioida, paina Ctrl/Cmd+C -näppäimiä."
 
@@ -6700,11 +6686,11 @@ msgstr "WooCommerce tietojen päivitys on valmis. Kiitos kun päivitit uusimpaan
 msgid "Please select some product options before adding this product to your cart."
 msgstr "Valitse jotain tuotteen vaihtoehdoista ennen kuin lisäät tuotteen ostoskoriin."
 
-#: includes/class-wc-countries.php:1012
+#: includes/class-wc-countries.php:1015
 msgid "ZIP"
 msgstr "Postinumero"
 
-#: includes/class-wc-countries.php:922
+#: includes/class-wc-countries.php:925
 msgid "State / Zone"
 msgstr "Alue / vyöhyke"
 
@@ -6872,31 +6858,31 @@ msgstr "Tuoteosaston ylempi taso ei kelpaa"
 msgid "You do not have permission to create product categories"
 msgstr "Et voi luoda tuoteosastoja. Tarvitset laajemmat oikeudet"
 
-#: includes/admin/views/html-admin-page-status-report.php:250
+#: includes/admin/views/html-admin-page-status-report.php:255
 msgid "Your server does not support the %s functions - this is required for better character encoding. Some fallbacks will be used instead for it."
 msgstr "Palvelimella ei ole käytössä %s-toimintoja. Sitä tarvitaan jotta merkistö toimisi paremmin. Sen sijasta käytetään muita menetelmiä. "
 
-#: includes/admin/views/html-admin-page-status-report.php:245
+#: includes/admin/views/html-admin-page-status-report.php:250
 msgid "Multibyte String (mbstring) is used to convert character encoding, like for emails or converting characters to lowercase."
 msgstr "Usean tavun merkkijonoja (mbstring) käytetään merkistön muuntamisessa, kuten sähköposteissa tai merkkien muuntamisessa pikkukirjaimiksi."
 
-#: includes/admin/views/html-admin-page-status-report.php:217
+#: includes/admin/views/html-admin-page-status-report.php:222
 msgid "Your server does not have the %s class enabled - some gateway plugins which use SOAP may not work as expected."
 msgstr "Palvelimella ei ole käytössä \"%s-luokkaa – ne lisäosat jotka käyttävät SOAP eivät ehkä toimi odotetulla tavalla."
 
-#: includes/admin/views/html-admin-page-status-report.php:130
+#: includes/admin/views/html-admin-page-status-report.php:135
 msgid "How to update your PHP version"
 msgstr "Kuinka PHP päivitetään uudempaan versioon"
 
-#: includes/admin/views/html-admin-page-status-report.php:175
+#: includes/admin/views/html-admin-page-status-report.php:180
 msgid "%1$s - We recommend a minimum MySQL version of 5.6. See: %2$s"
 msgstr "%1$s - Suosittelemme vähintään MySQL versiota 5.6. Katso: %2$s"
 
-#: includes/admin/views/html-admin-page-status-report.php:78
+#: includes/admin/views/html-admin-page-status-report.php:83
 msgid "Increasing memory allocated to PHP"
 msgstr "Kuinka kasvatetaan PHP:lle osoitettua muistivarausta"
 
-#: includes/admin/views/html-admin-page-status-report.php:78
+#: includes/admin/views/html-admin-page-status-report.php:83
 msgid "%1$s - We recommend setting memory to at least 64MB. See: %2$s"
 msgstr "%1$s - Suositus: aseta muistivaraus vähintään 64 megatavuun. Katso: %2$s"
 
@@ -6937,9 +6923,9 @@ msgstr "\"%s\" veroprosentit"
 msgid "Search&hellip;"
 msgstr "Etsi&hellip; "
 
-#: includes/admin/settings/class-wc-settings-shipping.php:240
-#: includes/admin/settings/class-wc-settings-shipping.php:273
-#: includes/admin/settings/class-wc-settings-shipping.php:329
+#: includes/admin/settings/class-wc-settings-shipping.php:244
+#: includes/admin/settings/class-wc-settings-shipping.php:277
+#: includes/admin/settings/class-wc-settings-shipping.php:333
 #: includes/admin/settings/class-wc-settings-tax.php:168
 msgid "Your changed data will be lost if you leave this page without saving."
 msgstr "Tallentamattomat tiedot häviävät jos et tallenna ennen kuin poistut tältä sivulta."
@@ -7000,21 +6986,21 @@ msgstr "Alla on WooCommercesta lähetetyt sähköposti-ilmoitukset. Klikkaa säh
 msgid "Email notifications"
 msgstr "Sähköposti-ilmoitukset"
 
-#: includes/admin/settings/class-wc-settings-checkout.php:316
+#: includes/admin/settings/class-wc-settings-checkout.php:320
 msgid "(no title)"
 msgstr "(ei otsikkoa)"
 
-#: includes/admin/reports/class-wc-report-sales-by-date.php:617
+#: includes/admin/reports/class-wc-report-sales-by-date.php:682
 msgid "Average gross sales amount"
 msgstr "Keskimääräinen bruttomyynnin arvo"
 
 #. translators: %s: average total sales
-#: includes/admin/reports/class-wc-report-sales-by-date.php:373
+#: includes/admin/reports/class-wc-report-sales-by-date.php:437
 msgid "%s average gross monthly sales"
 msgstr "%s keskimääräinen bruttokuukausimyynti"
 
 #. translators: %s: average total sales
-#: includes/admin/reports/class-wc-report-sales-by-date.php:360
+#: includes/admin/reports/class-wc-report-sales-by-date.php:424
 msgid "%s average gross daily sales"
 msgstr "%s keskimääräinen bruttopäivämyynti"
 
@@ -7039,13 +7025,13 @@ msgstr "Tässä asetetaan tuotteille tarkoitetut kestolinkit."
 msgid "Product permalinks"
 msgstr "Tuotteiden kestolinkit"
 
-#: includes/admin/class-wc-admin-help.php:273
+#: includes/admin/class-wc-admin-help.php:237
 msgid "If you need to access the setup wizard again, please click on the button below."
 msgstr "Jos haluat käyttää aloitusvelhoa uudelleen, paina alla olevaa painiketta."
 
-#: includes/admin/class-wc-admin-help.php:270
-#: includes/admin/class-wc-admin-help.php:272
-#: includes/admin/class-wc-admin-help.php:274
+#: includes/admin/class-wc-admin-help.php:234
+#: includes/admin/class-wc-admin-help.php:236
+#: includes/admin/class-wc-admin-help.php:238
 msgid "Setup wizard"
 msgstr "Aloitusvelho"
 
@@ -7172,7 +7158,7 @@ msgid "Show more details"
 msgstr "Näytä enemmän tietoja"
 
 #. translators: %s: shipping method
-#: includes/abstracts/abstract-wc-order.php:1397
+#: includes/abstracts/abstract-wc-order.php:1416
 msgid "via %s"
 msgstr "%s"
 
@@ -7419,7 +7405,7 @@ msgstr "Salasanan vaihto"
 
 #: includes/admin/class-wc-admin-profile.php:88
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:83
-#: includes/class-wc-countries.php:1120 includes/class-wc-emails.php:411
+#: includes/class-wc-countries.php:1123 includes/class-wc-emails.php:416
 #: includes/class-wc-form-handler.php:197
 #: templates/myaccount/form-edit-account.php:40
 #: templates/myaccount/form-login.php:91
@@ -7659,7 +7645,7 @@ msgstr "Laske toimituskulut"
 msgid "Proceed to checkout"
 msgstr "Siirry kassalle"
 
-#: includes/wc-template-functions.php:1441
+#: includes/wc-template-functions.php:1459
 msgid "Checkout"
 msgstr "Kassa"
 
@@ -7702,7 +7688,7 @@ msgid "There are no shipping methods available. Please double check your address
 msgstr "Yhtään sopivaa toimitustapaa ei ole käytettävissä. Tarkasta osoitteesi uudelleen tai ota yhteyttä meihin jos tarvitset apua."
 
 #. translators: %s: field name
-#: includes/class-wc-checkout.php:593
+#: includes/class-wc-checkout.php:603
 msgid "Shipping %s"
 msgstr "Toimitus %s"
 
@@ -7714,7 +7700,7 @@ msgstr "Ostoskori on tyhjä."
 msgid "Application authentication request"
 msgstr "Pyyntö sovelluksen oikeellisuuden tarkastamiseksi"
 
-#: includes/class-wc-checkout.php:213 templates/auth/form-login.php:39
+#: includes/class-wc-checkout.php:220 templates/auth/form-login.php:39
 #: templates/global/form-login.php:39 templates/myaccount/form-login.php:48
 #: templates/myaccount/form-login.php:98
 msgid "Password"
@@ -8028,81 +8014,81 @@ msgstr "Ei-luokiteltu"
 msgid "Select a category"
 msgstr "Valitse osasto"
 
-#: includes/wc-template-functions.php:2017
-#: includes/wc-template-functions.php:2169
-#: includes/wc-template-functions.php:2179
+#: includes/wc-template-functions.php:2035
+#: includes/wc-template-functions.php:2187
+#: includes/wc-template-functions.php:2197
 msgid "Choose an option"
 msgstr "Valitse"
 
-#: includes/wc-template-functions.php:1972
+#: includes/wc-template-functions.php:1990
 #: templates/cart/shipping-calculator.php:63
 msgid "Select a state&hellip;"
 msgstr "Valitse alue..."
 
-#: includes/wc-template-functions.php:1951
+#: includes/wc-template-functions.php:1969
 msgid "Update country"
 msgstr "Päivitä maa"
 
-#: includes/wc-template-functions.php:1566
+#: includes/wc-template-functions.php:1584
 msgid "Place order"
 msgstr "Lähetä tilaus"
 
-#: includes/wc-template-functions.php:1516
+#: includes/wc-template-functions.php:1534
 msgctxt "breadcrumb"
 msgid "Home"
 msgstr "Etusivu"
 
-#: includes/wc-template-functions.php:1140
+#: includes/wc-template-functions.php:1158
 msgid "Reviews (%d)"
 msgstr "Arviot (%d)"
 
-#: includes/wc-template-functions.php:1131
+#: includes/wc-template-functions.php:1149
 #: templates/checkout/form-shipping.php:56
 #: templates/single-product/tabs/additional-information.php:25
 msgid "Additional information"
 msgstr "Lisätiedot"
 
-#: includes/wc-template-functions.php:802
+#: includes/wc-template-functions.php:814
 msgid "Sort by price: high to low"
 msgstr "Lajittelu: kallein ensin"
 
-#: includes/wc-template-functions.php:801
+#: includes/wc-template-functions.php:813
 msgid "Sort by price: low to high"
 msgstr "Lajittelu: halvin ensin"
 
-#: includes/wc-template-functions.php:800
+#: includes/wc-template-functions.php:812
 msgid "Sort by newness"
 msgstr "Lajittelu: uusin ensin"
 
-#: includes/wc-template-functions.php:799
+#: includes/wc-template-functions.php:811
 msgid "Sort by average rating"
 msgstr "Lajittelu: arvostetuin ensin"
 
-#: includes/wc-template-functions.php:798
+#: includes/wc-template-functions.php:810
 msgid "Sort by popularity"
 msgstr "Lajittelu: ostetuin ensin"
 
-#: includes/wc-template-functions.php:797
+#: includes/wc-template-functions.php:809
 msgid "Default sorting"
 msgstr "Lajittelu, oletustapa"
 
-#: includes/wc-template-functions.php:518
+#: includes/wc-template-functions.php:530
 msgid "&nbsp;&ndash; Page %s"
 msgstr "&nbsp;&ndash; Sivu %s"
 
-#: includes/wc-template-functions.php:515
+#: includes/wc-template-functions.php:527
 msgid "Search results: &ldquo;%s&rdquo;"
 msgstr "Etsinnän tulos: &ldquo;%s&rdquo;"
 
-#: includes/wc-template-functions.php:173
+#: includes/wc-template-functions.php:185
 msgid "New products tagged %s"
 msgstr "Uudet tuotteet joissa avainsana %s"
 
-#: includes/wc-template-functions.php:165
+#: includes/wc-template-functions.php:177
 msgid "New products added to %s"
 msgstr "Uudet tuotteet lisätty %s"
 
-#: includes/wc-template-functions.php:157
+#: includes/wc-template-functions.php:169
 msgid "New products"
 msgstr "Uudet tuotteet"
 
@@ -8291,14 +8277,14 @@ msgid "United Arab Emirates dirham"
 msgstr "Yhdistyneet Arabiemiirikunnat dirhami AED "
 
 #: includes/class-wc-order-refund.php:64
-#: includes/data-stores/abstract-wc-order-data-store-cpt.php:186
+#: includes/data-stores/abstract-wc-order-data-store-cpt.php:200
 #: includes/data-stores/class-wc-order-refund-data-store-cpt.php:101
 msgctxt "Order date parsed by strftime"
 msgid "%b %d, %Y @ %I:%M %p"
 msgstr "%d %b %Y @ %k:%M"
 
 #. translators: %s: Order date
-#: includes/data-stores/abstract-wc-order-data-store-cpt.php:186
+#: includes/data-stores/abstract-wc-order-data-store-cpt.php:200
 msgid "Order &ndash; %s"
 msgstr "Tilaus &ndash; %s"
 
@@ -10022,7 +10008,7 @@ msgid "Sorry, no products matched your selection. Please choose a different comb
 msgstr "Pahoittelemme, valitun kaltaisia tuotteita ei löytynyt. Ole hyvä, valitse eri tavalla."
 
 #: includes/class-wc-frontend-scripts.php:500
-#: includes/wc-template-functions.php:1884
+#: includes/wc-template-functions.php:1902
 msgid "required"
 msgstr "vaaditaan"
 
@@ -10034,23 +10020,23 @@ msgstr "Virhe kassan toiminnassa, yritä uudelleen."
 msgid "Please select a rating"
 msgstr "Valitse arvostelu, ole hyvä."
 
-#: includes/class-wc-form-handler.php:1012
+#: includes/class-wc-form-handler.php:1013
 msgid "Anti-spam field was filled in."
 msgstr "Roskapostin esto -kenttä on täytetty"
 
-#: includes/class-wc-form-handler.php:970
+#: includes/class-wc-form-handler.php:971
 msgid "Passwords do not match."
 msgstr "Salasanat poikkeavat toisistaan."
 
-#: includes/class-wc-form-handler.php:966
+#: includes/class-wc-form-handler.php:967
 msgid "Please enter your password."
 msgstr "Anna salasana, ole hyvä."
 
-#: includes/class-wc-form-handler.php:888
+#: includes/class-wc-form-handler.php:889
 msgid "A user could not be found with this email address."
 msgstr "Sähköpostiosoitteella ei löytynyt käyttäjää."
 
-#: includes/class-wc-form-handler.php:879
+#: includes/class-wc-form-handler.php:880
 msgid "Username is required."
 msgstr "Käyttäjätunnus vaaditaan."
 
@@ -10059,37 +10045,37 @@ msgstr "Käyttäjätunnus vaaditaan."
 msgid "Error"
 msgstr "Virhe"
 
-#: includes/class-wc-form-handler.php:802
+#: includes/class-wc-form-handler.php:803
 msgid "Please choose product options&hellip;"
 msgstr "Valitse tuotteen vaihtoehdoista..."
 
-#: includes/class-wc-form-handler.php:837
+#: includes/class-wc-form-handler.php:838
 msgid "%s is a required field"
 msgid_plural "%s are required fields"
 msgstr[0] "Tämä kenttä tarvitaan %s"
 msgstr[1] "Nämä kentät tarvitaan %s"
 
-#: includes/class-wc-form-handler.php:774
+#: includes/class-wc-form-handler.php:775
 msgid "Please choose a product to add to your cart&hellip;"
 msgstr "Ole hyvä, valitse tuote joka lisätään ostoskoriin..."
 
-#: includes/class-wc-form-handler.php:767
+#: includes/class-wc-form-handler.php:768
 msgid "Please choose the quantity of items you wish to add to your cart&hellip;"
 msgstr "Ole hyvä, valitse kuinka monta tuotetta lisätään ostoskoriin..."
 
-#: includes/class-wc-form-handler.php:657
+#: includes/class-wc-form-handler.php:658
 msgid "Your order can no longer be cancelled. Please contact us if you need assistance."
 msgstr "Tilaustasi ei voi enää peruuttaa. Ota yhteyttä, jos tarvitset ohjeita."
 
-#: includes/class-wc-form-handler.php:652
+#: includes/class-wc-form-handler.php:653
 msgid "Your order was cancelled."
 msgstr "Tilaus peruttiin."
 
-#: includes/class-wc-form-handler.php:649
+#: includes/class-wc-form-handler.php:650
 msgid "Order cancelled by customer."
 msgstr "Asiakas perui tilauksen."
 
-#: includes/class-wc-form-handler.php:622
+#: includes/class-wc-form-handler.php:623
 msgid "The cart has been filled with the items from your previous order."
 msgstr "Ostoskorissa on nyt aiemman tilauksen tuotteet."
 
@@ -10141,24 +10127,24 @@ msgstr "Kirjoita kelvollinen sähköpostiosoite, ole hyvä."
 msgid "Address changed successfully."
 msgstr "Osoite vaihdettiin."
 
-#: includes/class-wc-emails.php:523
+#: includes/class-wc-emails.php:528
 msgid "%1$s units of %2$s have been backordered in order #%3$s."
 msgstr "%1$s kpl %2$s tuotetta jälkitoimituksella, tilauksessa #%3$s."
 
-#: includes/class-wc-emails.php:522
+#: includes/class-wc-emails.php:527
 msgid "Product backorder"
 msgstr "Tuotteen jälkitoimitus"
 
 #. translators: %s: product name
-#: includes/class-wc-emails.php:493
+#: includes/class-wc-emails.php:498
 msgid "%s is out of stock."
 msgstr "%s on loppunut varastosta."
 
-#: includes/class-wc-emails.php:491
+#: includes/class-wc-emails.php:496
 msgid "Product out of stock"
 msgstr "Tuote on loppunut varastosta"
 
-#: includes/class-wc-emails.php:464
+#: includes/class-wc-emails.php:469
 msgid "Product low in stock"
 msgstr "Tuotetta on vain vähän varastossa."
 
@@ -10168,7 +10154,7 @@ msgstr "Tuotetta on vain vähän varastossa."
 msgid "Customer details"
 msgstr "Asiakkaan tiedot"
 
-#: includes/class-wc-emails.php:404
+#: includes/class-wc-emails.php:409
 msgid "Note"
 msgstr "Kommentit"
 
@@ -10209,7 +10195,7 @@ msgid "Sorry, you have reached your download limit for this file"
 msgstr "Pahoittelemme, tiedoston latausten määrä on ylittänyt maksimimäärän."
 
 #: includes/class-wc-download-handler.php:93
-#: includes/class-wc-form-handler.php:659
+#: includes/class-wc-form-handler.php:660
 #: includes/data-stores/abstract-wc-order-data-store-cpt.php:86
 #: includes/shortcodes/class-wc-shortcode-checkout.php:169
 #: includes/shortcodes/class-wc-shortcode-my-account.php:118
@@ -10302,45 +10288,45 @@ msgstr "Alennuskoodi on poistettu."
 msgid "Coupon code applied successfully."
 msgstr "Alennuskoodi otettiin käyttöön."
 
-#: includes/class-wc-countries.php:985
+#: includes/class-wc-countries.php:988
 msgid "Municipality"
 msgstr "Kunta"
 
-#: includes/class-wc-countries.php:867
+#: includes/class-wc-countries.php:870
 msgid "Prefecture"
 msgstr "Prefektuuri"
 
-#: includes/class-wc-countries.php:823 includes/class-wc-countries.php:837
-#: includes/class-wc-countries.php:1023
+#: includes/class-wc-countries.php:826 includes/class-wc-countries.php:840
+#: includes/class-wc-countries.php:1026
 msgid "County"
 msgstr "Kunta"
 
-#: includes/class-wc-countries.php:815
+#: includes/class-wc-countries.php:818
 msgid "Town / District"
 msgstr "Kaupunki / alue"
 
-#: includes/class-wc-countries.php:742 includes/class-wc-countries.php:818
-#: includes/class-wc-countries.php:909
+#: includes/class-wc-countries.php:745 includes/class-wc-countries.php:821
+#: includes/class-wc-countries.php:912
 msgid "Region"
 msgstr "Alue"
 
-#: includes/class-wc-countries.php:730
+#: includes/class-wc-countries.php:733
 msgid "Canton"
 msgstr "Piirikunta"
 
-#: includes/class-wc-countries.php:700 includes/class-wc-countries.php:722
-#: includes/class-wc-countries.php:747 includes/class-wc-countries.php:828
-#: includes/class-wc-countries.php:862 includes/class-wc-countries.php:900
-#: includes/class-wc-countries.php:977 includes/class-wc-countries.php:1007
-#: includes/class-wc-countries.php:1054
+#: includes/class-wc-countries.php:703 includes/class-wc-countries.php:725
+#: includes/class-wc-countries.php:750 includes/class-wc-countries.php:831
+#: includes/class-wc-countries.php:865 includes/class-wc-countries.php:903
+#: includes/class-wc-countries.php:980 includes/class-wc-countries.php:1010
+#: includes/class-wc-countries.php:1057
 msgid "Province"
 msgstr "Provinssi"
 
-#: includes/class-wc-countries.php:691
+#: includes/class-wc-countries.php:694
 msgid "District"
 msgstr "Alue"
 
-#: includes/class-wc-countries.php:669
+#: includes/class-wc-countries.php:672
 msgid "Suburb"
 msgstr "Lähiö"
 
@@ -10410,67 +10396,67 @@ msgstr "->"
 msgid "Please rate the product."
 msgstr "Arvostele tuote, ole hyvä."
 
-#: includes/class-wc-checkout.php:692 includes/class-wc-form-handler.php:317
+#: includes/class-wc-checkout.php:703 includes/class-wc-form-handler.php:317
 #: includes/class-wc-form-handler.php:399
 #: includes/class-wc-form-handler.php:423
 msgid "Invalid payment method."
 msgstr "Maksutapa ei kelpaa."
 
-#: includes/admin/settings/class-wc-settings-shipping.php:293
+#: includes/admin/settings/class-wc-settings-shipping.php:297
 msgid "Invalid shipping method!"
 msgstr "Toimitustapa ei kelpaa!"
 
-#: includes/class-wc-checkout.php:676
+#: includes/class-wc-checkout.php:687
 msgid "Unfortunately <strong>we do not ship %s</strong>. Please enter an alternative shipping address."
 msgstr "Valitettavasti <strong>emme toimita osoitteeseen %s</strong>. Kirjoita muu toimitusosoite, ole hyvä."
 
-#: includes/class-wc-checkout.php:667 includes/class-wc-form-handler.php:307
+#: includes/class-wc-checkout.php:678 includes/class-wc-form-handler.php:307
 msgid "You must accept our Terms &amp; Conditions."
 msgstr "Pyydämme hyväksymään Tilaus- ja sopimusehtomme. Kiitos."
 
 #. translators: 1: state field 2: valid states
-#: includes/class-wc-checkout.php:642
+#: includes/class-wc-checkout.php:653
 msgid "%1$s is not valid. Please enter one of the following: %2$s"
 msgstr "%1$s ei ole kelvollinen. Ole hyvä, valitse joku näistä: %2$s"
 
 #. translators: %s: email address
-#: includes/class-wc-checkout.php:624 includes/class-wc-form-handler.php:130
+#: includes/class-wc-checkout.php:634 includes/class-wc-form-handler.php:130
 msgid "%s is not a valid email address."
 msgstr "%s ei ole kelvollinen sähköpostiosoite."
 
 #. translators: %s: phone number
-#: includes/class-wc-checkout.php:615 includes/class-wc-form-handler.php:123
+#: includes/class-wc-checkout.php:625 includes/class-wc-form-handler.php:123
 msgid "%s is not a valid phone number."
 msgstr "%s ei ole kelvollinen puhelinnumero."
 
-#: includes/class-wc-checkout.php:606 includes/class-wc-form-handler.php:114
+#: includes/class-wc-checkout.php:616 includes/class-wc-form-handler.php:114
 #: includes/shortcodes/class-wc-shortcode-cart.php:27
 msgid "Please enter a valid postcode / ZIP."
 msgstr "Kirjoita kelvollinen postinumero."
 
 #. translators: %s: field name
-#: includes/class-wc-checkout.php:649 includes/class-wc-form-handler.php:101
+#: includes/class-wc-checkout.php:660 includes/class-wc-form-handler.php:101
 #: includes/class-wc-form-handler.php:202
 msgid "%s is a required field."
 msgstr "%s on vaadittu tieto."
 
-#: includes/class-wc-checkout.php:908
+#: includes/class-wc-checkout.php:924
 msgid "Sorry, your session has expired. <a href=\"%s\" class=\"wc-backward\">Return to shop</a>"
 msgstr "Pahoittelemme. Istunto on umpeutunut.  <a href=\"%s\" class=\"wc-backward\">Palaa kauppaan</a>"
 
-#: includes/class-wc-checkout.php:899
+#: includes/class-wc-checkout.php:915
 msgid "We were unable to process your order, please try again."
 msgstr "Virhe: Tilausta ei voitu käsitellä, yritä uudelleen."
 
-#: includes/class-wc-checkout.php:195
+#: includes/class-wc-checkout.php:202
 msgid "Notes about your order, e.g. special notes for delivery."
 msgstr "Kommentti koskien tilausta, esim. koskien toimitusta."
 
-#: includes/class-wc-checkout.php:211
+#: includes/class-wc-checkout.php:218
 msgid "Account password"
 msgstr "Asiakastilin salasana"
 
-#: includes/class-wc-checkout.php:202
+#: includes/class-wc-checkout.php:209
 msgid "Account username"
 msgstr "Asiakastilin käyttäjätunnus"
 
@@ -10633,31 +10619,31 @@ msgstr "Näytä asiakkaat"
 msgid "View coupons"
 msgstr "Näytä kupongit"
 
-#: includes/class-wc-ajax.php:1620
+#: includes/class-wc-ajax.php:1618
 msgid "Dismiss this notice."
 msgstr "Piilota tämä huomautus."
 
-#: includes/class-wc-ajax.php:1538
+#: includes/class-wc-ajax.php:1536
 msgid "API Key generated successfully. Make sure to copy your new API keys now. You won't be able to see it again!"
 msgstr "API -avain luotiin. Kopioi talteen uusi API -avain. Et näe sitä enää tämän jälkeen!"
 
-#: includes/class-wc-ajax.php:1508
+#: includes/class-wc-ajax.php:1506
 msgid "API Key updated successfully."
 msgstr "API -avain päivitettiin."
 
-#: includes/class-wc-ajax.php:1479
+#: includes/class-wc-ajax.php:1477
 msgid "Permissions is missing."
 msgstr "Oikeudet puuttuvat."
 
-#: includes/class-wc-ajax.php:1476
+#: includes/class-wc-ajax.php:1474
 msgid "User is missing."
 msgstr "Käyttäjä puuttuu."
 
-#: includes/class-wc-ajax.php:1473
+#: includes/class-wc-ajax.php:1471
 msgid "Description is missing."
 msgstr "Kuvaus puuttuu."
 
-#: includes/class-wc-ajax.php:1376
+#: includes/class-wc-ajax.php:1374
 msgid "Invalid refund amount"
 msgstr "Tilauksen hyvityksen määrä ei kelpaa"
 
@@ -10952,111 +10938,111 @@ msgstr "Et voi luoda tuotteita. Tarvitset laajemmat oikeudet."
 msgid "You do not have permission to read the products count"
 msgstr "Et voi lukea tuotteiden lukumäärää. Tarvitset laajemmat oikeudet."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1673
-#: includes/api/legacy/v2/class-wc-api-orders.php:1734
-#: includes/api/legacy/v3/class-wc-api-orders.php:1723
-#: includes/api/legacy/v3/class-wc-api-orders.php:1784
+#: includes/api/legacy/v2/class-wc-api-orders.php:1668
+#: includes/api/legacy/v2/class-wc-api-orders.php:1729
+#: includes/api/legacy/v3/class-wc-api-orders.php:1718
+#: includes/api/legacy/v3/class-wc-api-orders.php:1779
 msgid "The order refund ID provided is not associated with the order."
 msgstr "Tilauksen hyvitykselle annettu tunnus -ID- ei ole liitetty tilaukseen."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1588
-#: includes/api/legacy/v3/class-wc-api-orders.php:1638
+#: includes/api/legacy/v2/class-wc-api-orders.php:1583
+#: includes/api/legacy/v3/class-wc-api-orders.php:1633
 msgid "Refund amount must be positive."
 msgstr "Hyvityksen määrän on oltava positiivinen."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1586
-#: includes/api/legacy/v3/class-wc-api-orders.php:1636
+#: includes/api/legacy/v2/class-wc-api-orders.php:1581
+#: includes/api/legacy/v3/class-wc-api-orders.php:1631
 msgid "Refund amount is required."
 msgstr "Hyvityksen määrä tarvitaan."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1573
-#: includes/api/legacy/v3/class-wc-api-orders.php:1623
+#: includes/api/legacy/v2/class-wc-api-orders.php:1568
+#: includes/api/legacy/v3/class-wc-api-orders.php:1618
 msgid "You do not have permission to create order refunds"
 msgstr "Et voi luoda tilauksille hyvityksiä. Tarvitset laajemmat oikeudet."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1506
-#: includes/api/legacy/v2/class-wc-api-orders.php:1668
-#: includes/api/legacy/v2/class-wc-api-orders.php:1729
-#: includes/api/legacy/v3/class-wc-api-orders.php:1556
-#: includes/api/legacy/v3/class-wc-api-orders.php:1718
-#: includes/api/legacy/v3/class-wc-api-orders.php:1779
+#: includes/api/legacy/v2/class-wc-api-orders.php:1501
+#: includes/api/legacy/v2/class-wc-api-orders.php:1663
+#: includes/api/legacy/v2/class-wc-api-orders.php:1724
+#: includes/api/legacy/v3/class-wc-api-orders.php:1551
+#: includes/api/legacy/v3/class-wc-api-orders.php:1713
+#: includes/api/legacy/v3/class-wc-api-orders.php:1774
 msgid "An order refund with the provided ID could not be found."
 msgstr "Annetulla tilauksen hyvityksen tunnuksella -ID- ei löytynyt hyvitystä"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1441
-#: includes/api/legacy/v3/class-wc-api-orders.php:1491
+#: includes/api/legacy/v2/class-wc-api-orders.php:1436
+#: includes/api/legacy/v3/class-wc-api-orders.php:1486
 msgid "Permanently deleted order note"
 msgstr "Pysyvästi poistettu tilauksen kommennti"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1436
-#: includes/api/legacy/v3/class-wc-api-orders.php:1486
+#: includes/api/legacy/v2/class-wc-api-orders.php:1431
+#: includes/api/legacy/v3/class-wc-api-orders.php:1481
 msgid "This order note cannot be deleted"
 msgstr "Tätä tilauksen kommenntia ei voi poistaa"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1365
-#: includes/api/legacy/v2/class-wc-api-orders.php:1429
-#: includes/api/legacy/v3/class-wc-api-orders.php:1415
-#: includes/api/legacy/v3/class-wc-api-orders.php:1479
+#: includes/api/legacy/v2/class-wc-api-orders.php:1360
+#: includes/api/legacy/v2/class-wc-api-orders.php:1424
+#: includes/api/legacy/v3/class-wc-api-orders.php:1410
+#: includes/api/legacy/v3/class-wc-api-orders.php:1474
 msgid "The order note ID provided is not associated with the order"
 msgstr "Tilauksen kommentille annettu tunnus -ID- ei ole liitetty tilaukseen"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1298
-#: includes/api/legacy/v3/class-wc-api-orders.php:1348
+#: includes/api/legacy/v2/class-wc-api-orders.php:1293
+#: includes/api/legacy/v3/class-wc-api-orders.php:1343
 msgid "Order note is required"
 msgstr "Tilaukselle tarvitaan kommentti"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1283
-#: includes/api/legacy/v3/class-wc-api-orders.php:1333
+#: includes/api/legacy/v2/class-wc-api-orders.php:1278
+#: includes/api/legacy/v3/class-wc-api-orders.php:1328
 msgid "You do not have permission to create order notes"
 msgstr "Et voi luoda tilauksen kommentteja. Tarvitset laajemmat oikeudet."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1249
-#: includes/api/legacy/v2/class-wc-api-orders.php:1360
-#: includes/api/legacy/v2/class-wc-api-orders.php:1424
-#: includes/api/legacy/v3/class-wc-api-orders.php:1299
-#: includes/api/legacy/v3/class-wc-api-orders.php:1410
-#: includes/api/legacy/v3/class-wc-api-orders.php:1474
+#: includes/api/legacy/v2/class-wc-api-orders.php:1244
+#: includes/api/legacy/v2/class-wc-api-orders.php:1355
+#: includes/api/legacy/v2/class-wc-api-orders.php:1419
+#: includes/api/legacy/v3/class-wc-api-orders.php:1294
+#: includes/api/legacy/v3/class-wc-api-orders.php:1405
+#: includes/api/legacy/v3/class-wc-api-orders.php:1469
 msgid "An order note with the provided ID could not be found"
 msgstr "Annetulla tilauksen kommentin tunnuksella -ID- ei löytynyt kommenttia"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1243
-#: includes/api/legacy/v2/class-wc-api-orders.php:1353
-#: includes/api/legacy/v2/class-wc-api-orders.php:1417
-#: includes/api/legacy/v3/class-wc-api-orders.php:1293
-#: includes/api/legacy/v3/class-wc-api-orders.php:1403
-#: includes/api/legacy/v3/class-wc-api-orders.php:1467
+#: includes/api/legacy/v2/class-wc-api-orders.php:1238
+#: includes/api/legacy/v2/class-wc-api-orders.php:1348
+#: includes/api/legacy/v2/class-wc-api-orders.php:1412
+#: includes/api/legacy/v3/class-wc-api-orders.php:1288
+#: includes/api/legacy/v3/class-wc-api-orders.php:1398
+#: includes/api/legacy/v3/class-wc-api-orders.php:1462
 msgid "Invalid order note ID"
 msgstr "Tilauksen kommentin tunnus -ID- ei kelpaa"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1141
-#: includes/api/legacy/v3/class-wc-api-orders.php:1191
+#: includes/api/legacy/v2/class-wc-api-orders.php:1140
+#: includes/api/legacy/v3/class-wc-api-orders.php:1190
 msgid "Coupon discount total must be a positive amount."
 msgstr "Kuponkien alennusten summa on oltava positiivinen."
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:1068
-#: includes/api/legacy/v3/class-wc-api-orders.php:1118
+#: includes/api/legacy/v2/class-wc-api-orders.php:1071
+#: includes/api/legacy/v3/class-wc-api-orders.php:1121
 msgid "Fee title is required"
 msgstr "Maksun otsikko tarvitaan"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:884
-#: includes/api/legacy/v3/class-wc-api-orders.php:932
+#: includes/api/legacy/v2/class-wc-api-orders.php:886
+#: includes/api/legacy/v3/class-wc-api-orders.php:934
 msgid "The product variation is invalid"
 msgstr "Tuotteen muunnelma ei kelpaa"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:869
-#: includes/api/legacy/v3/class-wc-api-orders.php:917
+#: includes/api/legacy/v2/class-wc-api-orders.php:871
+#: includes/api/legacy/v3/class-wc-api-orders.php:919
 msgid "Product ID provided does not match this line item"
 msgstr "Tuotteelle annettu tunnus -ID- on sopimaton tämän rivin tuotteelle"
 
-#: includes/api/legacy/v2/class-wc-api-orders.php:859
-#: includes/api/legacy/v3/class-wc-api-orders.php:907
+#: includes/api/legacy/v2/class-wc-api-orders.php:861
+#: includes/api/legacy/v3/class-wc-api-orders.php:909
 msgid "Product ID or SKU is required"
 msgstr "Tuotteen ID tai tuotetunnus -SKU- tarvitaan"
 
 #: includes/api/legacy/v2/class-wc-api-orders.php:518
-#: includes/api/legacy/v2/class-wc-api-orders.php:1579
+#: includes/api/legacy/v2/class-wc-api-orders.php:1574
 #: includes/api/legacy/v3/class-wc-api-orders.php:560
-#: includes/api/legacy/v3/class-wc-api-orders.php:1629
+#: includes/api/legacy/v3/class-wc-api-orders.php:1624
 msgid "Order ID is invalid"
 msgstr "Tilauksen tilausnumero ei kelpaa"
 
@@ -11151,11 +11137,11 @@ msgstr "Asiakkaan sähköposti ei kelpaa"
 
 #: includes/api/legacy/v2/class-wc-api-coupons.php:511
 #: includes/api/legacy/v2/class-wc-api-customers.php:775
-#: includes/api/legacy/v2/class-wc-api-orders.php:1760
+#: includes/api/legacy/v2/class-wc-api-orders.php:1755
 #: includes/api/legacy/v2/class-wc-api-products.php:2264
 #: includes/api/legacy/v3/class-wc-api-coupons.php:511
 #: includes/api/legacy/v3/class-wc-api-customers.php:765
-#: includes/api/legacy/v3/class-wc-api-orders.php:1810
+#: includes/api/legacy/v3/class-wc-api-orders.php:1805
 #: includes/api/legacy/v3/class-wc-api-products.php:3070
 #: includes/api/legacy/v3/class-wc-api-taxes.php:457
 msgid "No %1$s data specified to create/edit %1$s"
@@ -11171,16 +11157,16 @@ msgstr "Alennuskoodin päivittäminen ei onnistunut."
 #: includes/api/legacy/v2/class-wc-api-coupons.php:317
 #: includes/api/legacy/v2/class-wc-api-customers.php:397
 #: includes/api/legacy/v2/class-wc-api-orders.php:501
-#: includes/api/legacy/v2/class-wc-api-orders.php:1335
-#: includes/api/legacy/v2/class-wc-api-orders.php:1645
+#: includes/api/legacy/v2/class-wc-api-orders.php:1330
+#: includes/api/legacy/v2/class-wc-api-orders.php:1640
 #: includes/api/legacy/v2/class-wc-api-products.php:317
 #: includes/api/legacy/v2/class-wc-api-products.php:2076
 #: includes/api/legacy/v2/class-wc-api-webhooks.php:250
 #: includes/api/legacy/v3/class-wc-api-coupons.php:317
 #: includes/api/legacy/v3/class-wc-api-customers.php:398
 #: includes/api/legacy/v3/class-wc-api-orders.php:543
-#: includes/api/legacy/v3/class-wc-api-orders.php:1385
-#: includes/api/legacy/v3/class-wc-api-orders.php:1695
+#: includes/api/legacy/v3/class-wc-api-orders.php:1380
+#: includes/api/legacy/v3/class-wc-api-orders.php:1690
 #: includes/api/legacy/v3/class-wc-api-products.php:371
 #: includes/api/legacy/v3/class-wc-api-products.php:767
 #: includes/api/legacy/v3/class-wc-api-products.php:988
@@ -11235,16 +11221,16 @@ msgstr "Et voi luoda alennuskoodeja. Tarvitset laajemmat oikeudet."
 #: includes/api/legacy/v2/class-wc-api-coupons.php:208
 #: includes/api/legacy/v2/class-wc-api-customers.php:344
 #: includes/api/legacy/v2/class-wc-api-orders.php:363
-#: includes/api/legacy/v2/class-wc-api-orders.php:1276
-#: includes/api/legacy/v2/class-wc-api-orders.php:1566
+#: includes/api/legacy/v2/class-wc-api-orders.php:1271
+#: includes/api/legacy/v2/class-wc-api-orders.php:1561
 #: includes/api/legacy/v2/class-wc-api-products.php:210
 #: includes/api/legacy/v2/class-wc-api-products.php:1995
 #: includes/api/legacy/v2/class-wc-api-webhooks.php:169
 #: includes/api/legacy/v3/class-wc-api-coupons.php:208
 #: includes/api/legacy/v3/class-wc-api-customers.php:345
 #: includes/api/legacy/v3/class-wc-api-orders.php:400
-#: includes/api/legacy/v3/class-wc-api-orders.php:1326
-#: includes/api/legacy/v3/class-wc-api-orders.php:1616
+#: includes/api/legacy/v3/class-wc-api-orders.php:1321
+#: includes/api/legacy/v3/class-wc-api-orders.php:1611
 #: includes/api/legacy/v3/class-wc-api-products.php:259
 #: includes/api/legacy/v3/class-wc-api-products.php:690
 #: includes/api/legacy/v3/class-wc-api-products.php:943
@@ -11429,37 +11415,36 @@ msgstr "Tallenna muutokset"
 msgid "Logs"
 msgstr "Lokit"
 
-#: includes/admin/class-wc-admin-help.php:165
 #: includes/admin/views/html-admin-page-status.php:13
 msgid "Tools"
 msgstr "Työkalut"
 
-#: includes/admin/views/html-admin-page-status-report.php:633
-#: includes/admin/views/html-admin-page-status-report.php:663
+#: includes/admin/views/html-admin-page-status-report.php:638
+#: includes/admin/views/html-admin-page-status-report.php:668
 msgid "Overrides"
 msgstr "Ohittavat toiminnot"
 
-#: includes/admin/views/html-admin-page-status-report.php:619
+#: includes/admin/views/html-admin-page-status-report.php:624
 msgid "This section shows any files that are overriding the default WooCommerce template pages."
 msgstr "Tässä näytetään ne tiedostot jotka ohittavat WooCommercessa oletuksena olevat pohjat/ mallinet."
 
-#: includes/admin/views/html-admin-page-status-report.php:619
+#: includes/admin/views/html-admin-page-status-report.php:624
 msgid "Templates"
 msgstr "Pohjat/mallinet"
 
-#: includes/admin/views/html-admin-page-status-report.php:608
+#: includes/admin/views/html-admin-page-status-report.php:613
 msgid "Not declared"
 msgstr "Ei ilmoitettu"
 
-#: includes/admin/views/html-admin-page-status-report.php:605
+#: includes/admin/views/html-admin-page-status-report.php:610
 msgid "Displays whether or not the current active theme declares WooCommerce support."
 msgstr "Näyttää nyt käytössä olevasta teemasta, ilmaiseeko se tukevan WooCommercea."
 
-#: includes/admin/views/html-admin-page-status-report.php:604
+#: includes/admin/views/html-admin-page-status-report.php:609
 msgid "WooCommerce support"
 msgstr "WooCommerce tuki"
 
-#: includes/admin/views/html-admin-page-status-report.php:599
+#: includes/admin/views/html-admin-page-status-report.php:604
 msgid "The parent theme developers URL."
 msgstr "Isäntäteeman tekijän verkko-osoite URL"
 
@@ -11467,7 +11452,7 @@ msgstr "Isäntäteeman tekijän verkko-osoite URL"
 msgid "Parent theme author URL."
 msgstr "Ylemmän tason teeman tekijän verkko-osoite."
 
-#: includes/admin/views/html-admin-page-status-report.php:588
+#: includes/admin/views/html-admin-page-status-report.php:593
 msgid "The installed version of the parent theme."
 msgstr "Asennetun isäntäteeman versio."
 
@@ -11475,7 +11460,7 @@ msgstr "Asennetun isäntäteeman versio."
 msgid "Parent theme version."
 msgstr "Ylemmän tason teeman versio."
 
-#: includes/admin/views/html-admin-page-status-report.php:583
+#: includes/admin/views/html-admin-page-status-report.php:588
 msgid "The name of the parent theme."
 msgstr "Isäntäteeman nimi."
 
@@ -11483,88 +11468,88 @@ msgstr "Isäntäteeman nimi."
 msgid "Parent theme name."
 msgstr "Ylemmän tason teeman nimi."
 
-#: includes/admin/views/html-admin-page-status-report.php:575
+#: includes/admin/views/html-admin-page-status-report.php:580
 msgid "If you're modifying WooCommerce on a parent theme you didn't build personally, then we recommend using a child theme. See: <a href=\"%s\" target=\"_blank\">How to create a child theme</a>"
 msgstr "Suositus: jos muokkaat WooCommercen isäntäteemaa jota et itse ole tehnyt, suosittelemme käyttämään lapsiteemaa. Katso: <a href=\"%s\" target=\"_blank\">Kuinka luodaan lapsiteema</a>"
 
-#: includes/admin/views/html-admin-page-status-report.php:573
+#: includes/admin/views/html-admin-page-status-report.php:578
 msgid "Displays whether or not the current theme is a child theme."
 msgstr "Näyttää onko nyt käytössä oleva teema lapsiteema vai ei."
 
-#: includes/admin/views/html-admin-page-status-report.php:572
+#: includes/admin/views/html-admin-page-status-report.php:577
 msgid "Child theme"
 msgstr "Alateema"
 
-#: includes/admin/views/html-admin-page-status-report.php:568
+#: includes/admin/views/html-admin-page-status-report.php:573
 msgid "The theme developers URL."
 msgstr "Teeman kehittäjän verkko-osoite."
 
-#: includes/admin/views/html-admin-page-status-report.php:567
+#: includes/admin/views/html-admin-page-status-report.php:572
 msgid "Author URL"
 msgstr "Kirjoittajan verkko-osoite"
 
 #. translators: %s: plugin latest version
 #. translators: %s: theme latest version
 #. translators: %s: parant theme latest version
-#: includes/admin/views/html-admin-page-status-report.php:406
-#: includes/admin/views/html-admin-page-status-report.php:562
-#: includes/admin/views/html-admin-page-status-report.php:593
+#: includes/admin/views/html-admin-page-status-report.php:411
+#: includes/admin/views/html-admin-page-status-report.php:567
+#: includes/admin/views/html-admin-page-status-report.php:598
 msgid "%s is available"
 msgstr "%s on saatavilla"
 
-#: includes/admin/views/html-admin-page-status-report.php:557
+#: includes/admin/views/html-admin-page-status-report.php:562
 msgid "The installed version of the current active theme."
 msgstr "Nyt käytössä olevan teeman asennettu versio."
 
-#: includes/admin/views/html-admin-page-status-report.php:556
+#: includes/admin/views/html-admin-page-status-report.php:561
 msgid "Version"
 msgstr "Versio"
 
-#: includes/admin/views/html-admin-page-status-report.php:552
+#: includes/admin/views/html-admin-page-status-report.php:557
 msgid "The name of the current active theme."
 msgstr "Käytössä olevan teeman nimi."
 
-#: includes/admin/views/html-admin-page-status-report.php:546
+#: includes/admin/views/html-admin-page-status-report.php:551
 msgid "Theme"
 msgstr "Teema"
 
-#: includes/admin/views/html-admin-page-status-report.php:473
+#: includes/admin/views/html-admin-page-status-report.php:478
 msgid "A list of taxonomy terms that can be used in regard to order/product statuses."
 msgstr "Luettelo luokittelujen arvoista joita voidaan käyttää tilauksen tai tuotteen tilan yhteydessä."
 
-#: includes/admin/views/html-admin-page-status-report.php:530
+#: includes/admin/views/html-admin-page-status-report.php:535
 msgid "Page does not contain the shortcode."
 msgstr "Sivulta puuttuu lyhytkoodi (shortcode)"
 
-#: includes/admin/views/html-admin-page-status-report.php:518
+#: includes/admin/views/html-admin-page-status-report.php:523
 msgid "Page not set"
 msgstr "Sivua ei ole asetettu"
 
-#: includes/api/class-wc-rest-system-status-controller.php:892
+#: includes/api/class-wc-rest-system-status-controller.php:882
 msgctxt "Page setting"
 msgid "My account"
 msgstr "Oma tili"
 
-#: includes/api/class-wc-rest-system-status-controller.php:888
+#: includes/api/class-wc-rest-system-status-controller.php:878
 msgctxt "Page setting"
 msgid "Checkout"
 msgstr "Kassa"
 
-#: includes/admin/views/html-admin-page-status-report.php:514
+#: includes/admin/views/html-admin-page-status-report.php:519
 msgid "The URL of your WooCommerce shop's %s (along with the Page ID)."
 msgstr "WooCommerce kaupan %s sivun verkko-osoite (ja myös sivun ID)."
 
-#: includes/api/class-wc-rest-system-status-controller.php:884
+#: includes/api/class-wc-rest-system-status-controller.php:874
 msgctxt "Page setting"
 msgid "Cart"
 msgstr "Ostoskori"
 
-#: includes/api/class-wc-rest-system-status-controller.php:880
+#: includes/api/class-wc-rest-system-status-controller.php:870
 msgctxt "Page setting"
 msgid "Shop base"
 msgstr "Kaupan polkutunnus"
 
-#: includes/admin/views/html-admin-page-status-report.php:498
+#: includes/admin/views/html-admin-page-status-report.php:503
 msgid "WC pages"
 msgstr "WC-sivut"
 
@@ -11572,47 +11557,47 @@ msgstr "WC-sivut"
 msgid "API Version"
 msgstr "API-versio"
 
-#: includes/admin/views/html-admin-page-status-report.php:438
+#: includes/admin/views/html-admin-page-status-report.php:443
 msgid "Does your site have REST API enabled?"
 msgstr "Onko sivustollasi käytössä REST API /rajapinta?"
 
-#: includes/admin/views/html-admin-page-status-report.php:437
+#: includes/admin/views/html-admin-page-status-report.php:442
 msgid "API enabled"
 msgstr "API /rajapinta käytössä"
 
-#: includes/admin/views/html-admin-page-status-report.php:468
+#: includes/admin/views/html-admin-page-status-report.php:473
 msgid "The number of decimal points shown in displayed prices."
 msgstr "Hinnoissa näytettävien desimaalien lukumäärä."
 
-#: includes/admin/views/html-admin-page-status-report.php:463
+#: includes/admin/views/html-admin-page-status-report.php:468
 msgid "The decimal separator of displayed prices."
 msgstr "Hinnoissa näytettävä desimaalien erotusmerkki."
 
-#: includes/admin/views/html-admin-page-status-report.php:458
+#: includes/admin/views/html-admin-page-status-report.php:463
 msgid "The thousand separator of displayed prices."
 msgstr "Hinnoissa näytettävä tuhatlukujen erotusmerkki."
 
-#: includes/admin/views/html-admin-page-status-report.php:453
+#: includes/admin/views/html-admin-page-status-report.php:458
 msgid "The position of the currency symbol."
 msgstr "Valuuttamerkin paikka."
 
-#: includes/admin/views/html-admin-page-status-report.php:448
+#: includes/admin/views/html-admin-page-status-report.php:453
 msgid "What currency prices are listed at in the catalog and which currency gateways will take payments in."
 msgstr "Missä valuutassa luettelon hinnat esitetään ja mitkä valuuttojen maksukäytävät hoitavat maksun vastaanoton."
 
-#: includes/admin/views/html-admin-page-status-report.php:443
+#: includes/admin/views/html-admin-page-status-report.php:448
 msgid "Does your site force a SSL Certificate for transactions?"
 msgstr "Pakottaako sivustosi käyttämään SSL sertifikaattia maksutapahtumissa?"
 
-#: includes/admin/views/html-admin-page-status-report.php:442
+#: includes/admin/views/html-admin-page-status-report.php:447
 msgid "Force SSL"
 msgstr "Pakota SSL"
 
-#: includes/admin/views/html-admin-page-status-report.php:410
+#: includes/admin/views/html-admin-page-status-report.php:415
 msgid "Network enabled"
 msgstr "Verkko käytössä"
 
-#: includes/admin/views/html-admin-page-status-report.php:398
+#: includes/admin/views/html-admin-page-status-report.php:403
 msgid "Visit plugin homepage"
 msgstr "Käy lisäosan kotisivulla"
 
@@ -11620,11 +11605,11 @@ msgstr "Käy lisäosan kotisivulla"
 msgid "Active plugins."
 msgstr "Käytössä lisäosat."
 
-#: includes/admin/views/html-admin-page-status-report.php:329
+#: includes/admin/views/html-admin-page-status-report.php:334
 msgid "Table does not exist"
 msgstr "Taulua ei ole"
 
-#: includes/admin/views/html-admin-page-status-report.php:308
+#: includes/admin/views/html-admin-page-status-report.php:313
 msgid "The version of WooCommerce that the database is formatted for. This should be the same as your WooCommerce version."
 msgstr "WooCommercen versio jolle tietokanta on muotoiltu. Tämän tulisi olla sama kuin WooCommercen versio."
 
@@ -11632,63 +11617,63 @@ msgstr "WooCommercen versio jolle tietokanta on muotoiltu. Tämän tulisi olla s
 msgid "WC database version."
 msgstr "WC-tietokanta-versio."
 
-#: includes/admin/views/html-admin-page-status-report.php:302
+#: includes/admin/views/html-admin-page-status-report.php:307
 msgid "Database"
 msgstr "Tietokanta"
 
-#: includes/admin/views/html-admin-page-status-report.php:267
+#: includes/admin/views/html-admin-page-status-report.php:272
 msgid "WooCommerce plugins may use this method of communication when checking for plugin updates."
 msgstr "WooCommercen lisäosat voivat käyttää tätä menetelmää kun ne tarkastavat onko päivityksia saatavilla."
 
-#: includes/admin/views/html-admin-page-status-report.php:266
+#: includes/admin/views/html-admin-page-status-report.php:271
 msgid "Remote get"
 msgstr "Etänouto/ Remote Get -toiminto"
 
-#: includes/admin/views/html-admin-page-status-report.php:256
+#: includes/admin/views/html-admin-page-status-report.php:261
 msgid "PayPal uses this method of communicating when sending back transaction information."
 msgstr "PayPal käyttää tätä viestintämenetelmää kun se lähettää takaisin tiedot maksutapahtumasta."
 
-#: includes/admin/views/html-admin-page-status-report.php:255
+#: includes/admin/views/html-admin-page-status-report.php:260
 msgid "Remote post"
 msgstr "Etälähetys/ Remote Post -toiminto"
 
-#: includes/admin/views/html-admin-page-status-report.php:234
+#: includes/admin/views/html-admin-page-status-report.php:239
 msgid "GZip (gzopen) is used to open the GEOIP database from MaxMind."
 msgstr "MaxMind käyttää GZip (gzopen) kun se avaa GEOIP tietokannan."
 
-#: includes/admin/views/html-admin-page-status-report.php:228
+#: includes/admin/views/html-admin-page-status-report.php:233
 msgid "Your server does not have the %s class enabled - HTML/Multipart emails, and also some extensions, will not work without DOMDocument."
 msgstr "Palvelimella ei ole käytössä %s-luokka. HTML/Multipart sähköpostit, ja myös jotkut laajennukset tarvitsevat DOMDocument-luokan toimiakseen."
 
-#: includes/admin/views/html-admin-page-status-report.php:223
+#: includes/admin/views/html-admin-page-status-report.php:228
 msgid "HTML/Multipart emails use DOMDocument to generate inline CSS in templates."
 msgstr "HTML/Multipart sähköpostien pohjissa -malline- käytetään  DOMDocument luokkaa, jolla luodaan sähköpostin sisälle sijoittuvat CSS muotoilut sähköposteihin. "
 
-#: includes/admin/views/html-admin-page-status-report.php:212
+#: includes/admin/views/html-admin-page-status-report.php:217
 msgid "Some webservices like shipping use SOAP to get information from remote servers, for example, live shipping quotes from FedEx require SOAP to be installed."
 msgstr "Jotkut verkkopalvelut, kuten toimitus käyttää SOAP menetelmää kun se hakee tietoja toisilta palvelimilta. Esimerkiksi tosiaikaiset hintatarjoukset FedEx kuljetusliikkeeltä edellyttävät että SOAP on asennettu."
 
-#: includes/admin/views/html-admin-page-status-report.php:206
+#: includes/admin/views/html-admin-page-status-report.php:211
 msgid "Your server does not have fsockopen or cURL enabled - PayPal IPN and other scripts which communicate with other servers will not work. Contact your hosting provider."
 msgstr "Palvelimella ei ole käytössä fsockopen, cURL. PayPal IPN ja muut skriptit eivät toimi. – Ota yhteyttä palvelimen ylläpitäjään ja selvitä tilanne."
 
-#: includes/admin/views/html-admin-page-status-report.php:201
+#: includes/admin/views/html-admin-page-status-report.php:206
 msgid "Payment gateways can use cURL to communicate with remote servers to authorize payments, other plugins may also use it when communicating with remote services."
 msgstr "Maksukäytävät voivat käyttää cURL menetelmää kun ne hakevat valtuutusta maksulle toiselta palvelimelta. Toiset lisäosat voivat käyttää sitä kun ne viestivät eri palveluiden kanssa."
 
-#: includes/admin/views/html-admin-page-status-report.php:193
+#: includes/admin/views/html-admin-page-status-report.php:198
 msgid "Default timezone is %s - it should be UTC"
 msgstr "Oletus aikavyöhyke on %s – sen pitäisi olla UTC"
 
-#: includes/admin/views/html-admin-page-status-report.php:190
+#: includes/admin/views/html-admin-page-status-report.php:195
 msgid "The default timezone for your server."
 msgstr "Palvelimen aikavyöhyke, oletus."
 
-#: includes/admin/views/html-admin-page-status-report.php:189
+#: includes/admin/views/html-admin-page-status-report.php:194
 msgid "Default timezone is UTC"
 msgstr "Oletus aikavyöhyke on UTC"
 
-#: includes/admin/views/html-admin-page-status-report.php:185
+#: includes/admin/views/html-admin-page-status-report.php:190
 msgid "The largest filesize that can be uploaded to your WordPress installation."
 msgstr "Suurin tiedostokoko joka voidaan siirtää palvelimelle WordPress ohjelmaasi. "
 
@@ -11696,7 +11681,7 @@ msgstr "Suurin tiedostokoko joka voidaan siirtää palvelimelle WordPress ohjelm
 msgid "Max upload size."
 msgstr "Suurin palvelimelle siirrettävä tiedosto."
 
-#: includes/admin/views/html-admin-page-status-report.php:171
+#: includes/admin/views/html-admin-page-status-report.php:176
 msgid "The version of MySQL installed on your hosting server."
 msgstr "Palvelimellasi olevan MySQL tietokannan versio."
 
@@ -11704,39 +11689,39 @@ msgstr "Palvelimellasi olevan MySQL tietokannan versio."
 msgid "MySQL version."
 msgstr "MySQL-versio."
 
-#: includes/admin/views/html-admin-page-status-report.php:159
+#: includes/admin/views/html-admin-page-status-report.php:164
 msgid "Suhosin is an advanced protection system for PHP installations. It was designed to protect your servers on the one hand against a number of well known problems in PHP applications and on the other hand against potential unknown vulnerabilities within these applications or the PHP core itself. If enabled on your server, Suhosin may need to be configured to increase its data submission limits."
 msgstr "Suhosin on PHP asennuksia varten tehty, kehittynyt suojausjärjestelmä. Se suunniteltiin suojaamaan palvelimia tunnetuilta PHP sovellusten ongelmakohdilta ja myös vielä tuntemattomilta mutta mahdollisilta heikkouksilta PHP sovelluksissa tai PHP ytimessä itsessään. Jos Suhosin on käytössä palvelimellasi, niin sen data lähetys rajoja voidaan joutua kasvattamaan."
 
-#: includes/admin/views/html-admin-page-status-report.php:158
+#: includes/admin/views/html-admin-page-status-report.php:163
 msgid "SUHOSIN installed"
 msgstr "SUHOSIN asennettu"
 
-#: includes/admin/views/html-admin-page-status-report.php:149
+#: includes/admin/views/html-admin-page-status-report.php:154
 msgid "The maximum number of variables your server can use for a single function to avoid overloads."
 msgstr "Suurin muuttujien lukumäärä jota palvelimesi voi käsitellä yhdessä funktiossa ilman että se ylikuormittuu."
 
-#: includes/admin/views/html-admin-page-status-report.php:148
+#: includes/admin/views/html-admin-page-status-report.php:153
 msgid "PHP max input vars"
 msgstr "PHP Max Input -muuttujat"
 
-#: includes/admin/views/html-admin-page-status-report.php:144
+#: includes/admin/views/html-admin-page-status-report.php:149
 msgid "The amount of time (in seconds) that your site will spend on a single operation before timing out (to avoid server lockups)"
 msgstr "Pisin aika (sekunteina) jonka sivustosi voi viettää yhtä tehtävää suorittamassa ennen kuin toiminnolle varattu aika katkaistaan (välttää palvelimen jumittumisen)."
 
-#: includes/admin/views/html-admin-page-status-report.php:143
+#: includes/admin/views/html-admin-page-status-report.php:148
 msgid "PHP time limit"
 msgstr "PHP max suoritusaika"
 
-#: includes/admin/views/html-admin-page-status-report.php:139
+#: includes/admin/views/html-admin-page-status-report.php:144
 msgid "The largest filesize that can be contained in one post."
 msgstr "Suurin tiedostokoko joka voi olla lähetyksessä/ post."
 
-#: includes/admin/views/html-admin-page-status-report.php:138
+#: includes/admin/views/html-admin-page-status-report.php:143
 msgid "PHP post max size"
 msgstr "PHP 'post' -suurin koko"
 
-#: includes/admin/views/html-admin-page-status-report.php:127
+#: includes/admin/views/html-admin-page-status-report.php:132
 msgid "The version of PHP installed on your hosting server."
 msgstr "Palvelimelle asennetun PHP:n versio."
 
@@ -11744,7 +11729,7 @@ msgstr "Palvelimelle asennetun PHP:n versio."
 msgid "PHP version."
 msgstr "PHP-versio."
 
-#: includes/admin/views/html-admin-page-status-report.php:122
+#: includes/admin/views/html-admin-page-status-report.php:127
 msgid "Information about the web server that is currently hosting your site."
 msgstr "Tietoja palvelimesta jolla sivustosi sijaitsee."
 
@@ -11752,99 +11737,99 @@ msgstr "Tietoja palvelimesta jolla sivustosi sijaitsee."
 msgid "Server info."
 msgstr "Palvelimen tiedot."
 
-#: includes/admin/views/html-admin-page-status-report.php:116
+#: includes/admin/views/html-admin-page-status-report.php:121
 msgid "Server environment"
 msgstr "Palvelinympäristö"
 
-#: includes/admin/views/html-admin-page-status-report.php:108
+#: includes/admin/views/html-admin-page-status-report.php:113
 msgid "The current language used by WordPress. Default = English"
 msgstr "WordPress ohjelmassa käytössä oleva kieli. Oletus = englanti"
 
-#: includes/admin/views/html-admin-page-status-report.php:107
+#: includes/admin/views/html-admin-page-status-report.php:112
 msgid "Language"
 msgstr "Kieli"
 
-#: includes/admin/views/html-admin-page-status-report.php:86
+#: includes/admin/views/html-admin-page-status-report.php:91
 msgid "Displays whether or not WordPress is in Debug Mode."
 msgstr "Näyttää onko WordPress testaustilassa."
 
-#: includes/admin/views/html-admin-page-status-report.php:85
+#: includes/admin/views/html-admin-page-status-report.php:90
 msgid "WP debug mode"
 msgstr "WP-testaustila"
 
-#: includes/admin/views/html-admin-page-status-report.php:75
+#: includes/admin/views/html-admin-page-status-report.php:80
 msgid "The maximum amount of memory (RAM) that your site can use at one time."
 msgstr "Suurin muistin (RAM) määrä, jota sivustosi voi käyttää kerrallaan."
 
-#: includes/admin/views/html-admin-page-status-report.php:74
+#: includes/admin/views/html-admin-page-status-report.php:79
 msgid "WP memory limit"
 msgstr "WP-muistinvaraus"
 
-#: includes/admin/views/html-admin-page-status-report.php:70
+#: includes/admin/views/html-admin-page-status-report.php:75
 msgid "Whether or not you have WordPress Multisite enabled."
 msgstr "Onko vai ei ole WordPress monisivusto (Multisite) käytössä eli yksi WP asennus jossa on useita sivustoja."
 
-#: includes/admin/views/html-admin-page-status-report.php:69
+#: includes/admin/views/html-admin-page-status-report.php:74
 msgid "WP multisite"
 msgstr "WP monisivusto (Multisite)"
 
-#: includes/admin/views/html-admin-page-status-report.php:65
+#: includes/admin/views/html-admin-page-status-report.php:70
 msgid "The version of WordPress installed on your site."
 msgstr "Sivuston WordPress ohjelman versio."
 
-#: includes/admin/views/html-admin-page-status-report.php:64
+#: includes/admin/views/html-admin-page-status-report.php:69
 msgid "WP version"
 msgstr "WP-versio"
 
-#: includes/admin/views/html-admin-page-status-report.php:54
+#: includes/admin/views/html-admin-page-status-report.php:59
 msgid "Several WooCommerce extensions can write logs which makes debugging problems easier. The directory must be writable for this to happen."
 msgstr "Useat WooCommercen laajennuksista voivat kirjoittaa lokitietoja ja tämä tekee vian etsinnän helpommaksi. Hakemistoon on voitava kirjoittaa jotta tämä toimii."
 
-#: includes/admin/views/html-admin-page-status-report.php:53
+#: includes/admin/views/html-admin-page-status-report.php:58
 msgid "Log directory writable"
 msgstr "Lokihakemisto kirjoituskelpoinen"
 
-#: includes/admin/views/html-admin-page-status-report.php:49
+#: includes/admin/views/html-admin-page-status-report.php:54
 msgid "The version of WooCommerce installed on your site."
 msgstr "Sivustollesi asennetun WooCommercen versio."
 
-#: includes/admin/views/html-admin-page-status-report.php:48
+#: includes/admin/views/html-admin-page-status-report.php:53
 msgid "WC version"
 msgstr "WC-versio"
 
-#: includes/admin/views/html-admin-page-status-report.php:44
+#: includes/admin/views/html-admin-page-status-report.php:49
 msgid "The root URL of your site."
 msgstr "Sivuston juuri verkko-osoite."
 
-#: includes/admin/views/html-admin-page-status-report.php:43
+#: includes/admin/views/html-admin-page-status-report.php:48
 msgid "Site URL"
 msgstr "Sivuston verkko-osoite (URL)"
 
-#: includes/admin/views/html-admin-page-status-report.php:39
+#: includes/admin/views/html-admin-page-status-report.php:44
 msgid "The URL of your site's homepage."
 msgstr "Sivustosi etusivun verkko-osoite."
 
-#: includes/admin/views/html-admin-page-status-report.php:38
+#: includes/admin/views/html-admin-page-status-report.php:43
 msgid "Home URL"
 msgstr "Etusivun verkko-osoite (URL)"
 
-#: includes/admin/views/html-admin-page-status-report.php:33
+#: includes/admin/views/html-admin-page-status-report.php:38
 msgid "WordPress environment"
 msgstr "WordPress ympäristö"
 
-#: includes/admin/views/html-admin-page-status-report.php:26
+#: includes/admin/views/html-admin-page-status-report.php:31
 msgid "Copy for support"
 msgstr "Kopio tuelle"
 
-#: includes/admin/views/html-admin-page-status-report.php:23
+#: includes/admin/views/html-admin-page-status-report.php:28
 msgid "Understanding the status report"
 msgstr "Järjestelmän tila -raportin ymmärtäminen"
 
-#: includes/admin/views/html-admin-page-status-report.php:22
+#: includes/admin/views/html-admin-page-status-report.php:27
 msgid "Get system report"
 msgstr "Lataa järjestelmän tila -raportti"
 
-#: includes/admin/views/html-admin-page-status-report.php:21
+#: includes/admin/views/html-admin-page-status-report.php:26
 msgid "Please copy and paste this information in your ticket when contacting support:"
 msgstr "Kopioi ja liitä tämä tieto viestiisi jonka lähetät tukeen:"
 
@@ -12255,7 +12240,7 @@ msgstr "Kopioi"
 
 #: includes/admin/settings/views/html-keys-edit.php:122
 #: includes/admin/settings/views/html-keys-edit.php:130
-#: includes/admin/views/html-admin-page-status-report.php:26
+#: includes/admin/views/html-admin-page-status-report.php:31
 msgid "Copied!"
 msgstr "Kopioitu!"
 
@@ -12264,7 +12249,7 @@ msgid "Consumer key"
 msgstr "Asiakkaan avain"
 
 #: includes/admin/settings/views/html-keys-edit.php:106
-#: includes/class-wc-ajax.php:1539
+#: includes/class-wc-ajax.php:1537
 msgid "Revoke key"
 msgstr "Kumoa avain"
 
@@ -12321,23 +12306,23 @@ msgstr "Toimitetaan kaikkiin maihin joihin myydään"
 msgid "Choose which countries you want to ship to, or choose to ship to all locations you sell to."
 msgstr "Valitse maat joihin toimitetaan tai valitse kaikkiin maihin joihin myyt."
 
-#: includes/admin/settings/class-wc-settings-shipping.php:100
+#: includes/admin/settings/class-wc-settings-shipping.php:103
 msgid "This controls which shipping address is used by default."
 msgstr "Tässä asetetaan osoite, jota käytetään oletuksena."
 
-#: includes/admin/settings/class-wc-settings-shipping.php:99
+#: includes/admin/settings/class-wc-settings-shipping.php:102
 msgid "Shipping destination"
 msgstr "Toimitusosoite"
 
-#: includes/admin/settings/class-wc-settings-shipping.php:90
+#: includes/admin/settings/class-wc-settings-shipping.php:93
 msgid "Hide shipping costs until an address is entered"
 msgstr "Toimituskuluja ei näytetä ennen kuin osoite on kirjoitettu."
 
-#: includes/admin/settings/class-wc-settings-shipping.php:81
+#: includes/admin/settings/class-wc-settings-shipping.php:84
 msgid "Enable the shipping calculator on the cart page"
 msgstr "Ota käyttöön ostoskorissa toimituskulujen laskuri"
 
-#: includes/admin/class-wc-admin-help.php:85
+#: includes/admin/class-wc-admin-help.php:73
 msgid "Shipping Options"
 msgstr "Toimituksen asetukset"
 
@@ -12616,7 +12601,7 @@ msgid "This controls what currency prices are listed at in the catalog and which
 msgstr "Tuotteiden hinnat esitetään tuoteluettelossa tällä valuutalla ja valuuttaa käytetään maksukäytävän kautta tehdyissä maksuissa."
 
 #: includes/admin/settings/class-wc-settings-general.php:167
-#: includes/admin/views/html-admin-page-status-report.php:447
+#: includes/admin/views/html-admin-page-status-report.php:452
 msgid "Currency"
 msgstr "Valuutta"
 
@@ -12629,7 +12614,7 @@ msgid "Currency options"
 msgstr "Valuutta-asetukset"
 
 #: includes/admin/settings/class-wc-settings-general.php:156
-#: includes/wc-template-functions.php:495
+#: includes/wc-template-functions.php:507
 msgid "This is a demo store for testing purposes &mdash; no orders shall be fulfilled."
 msgstr "Tämä verkkokauppa on vain esittelyä varten &mdash; tilauksia ei käsitellä."
 
@@ -12720,122 +12705,122 @@ msgstr "Sähköposti asetukset"
 msgid "Emails"
 msgstr "S-posti"
 
-#: includes/admin/settings/class-wc-settings-checkout.php:289
+#: includes/admin/settings/class-wc-settings-checkout.php:293
 msgid "Gateway ID"
 msgstr "Maksukäytävän ID"
 
-#: includes/admin/settings/class-wc-settings-checkout.php:288
+#: includes/admin/settings/class-wc-settings-checkout.php:292
 msgid "Gateway"
 msgstr "Maksukäytävä"
 
-#: includes/admin/settings/class-wc-settings-checkout.php:280
+#: includes/admin/settings/class-wc-settings-checkout.php:284
 msgid "Gateway display order"
 msgstr "Maksukäytävien esitysjärjestys"
 
-#: includes/admin/settings/class-wc-settings-checkout.php:228
+#: includes/admin/settings/class-wc-settings-checkout.php:231
 msgid "Installed gateways are listed below. Drag and drop gateways to control their display order on the frontend."
 msgstr "Asennetut maksukäytävät ovat alla. Niiden järjestys julkisella puolella asetetaan tässä, Vedä ja pudota -menetelmällä."
 
-#: includes/admin/settings/class-wc-settings-checkout.php:227
+#: includes/admin/settings/class-wc-settings-checkout.php:230
 msgid "Payment gateways"
 msgstr "Maksukäytävät"
 
-#: includes/admin/settings/class-wc-settings-checkout.php:196
+#: includes/admin/settings/class-wc-settings-checkout.php:199
 msgid "Endpoint for the \"Checkout &rarr; Add payment method\" page."
 msgstr "Verkko-osoitteen loppuliite \"Siirry kassalle &rarr; Lisää maksutapa\" sivulla."
 
-#: includes/admin/settings/class-wc-settings-checkout.php:195
+#: includes/admin/settings/class-wc-settings-checkout.php:198
 #: includes/class-wc-query.php:122
 #: templates/myaccount/form-add-payment-method.php:53
 #: templates/myaccount/payment-methods.php:79
 msgid "Add payment method"
 msgstr "Lisää maksutapa"
 
-#: includes/admin/settings/class-wc-settings-checkout.php:187
+#: includes/admin/settings/class-wc-settings-checkout.php:190
 msgid "Endpoint for the \"Checkout &rarr; Order received\" page."
 msgstr "Verkko-osoitteen loppuliite \"Kassa &rarr; Tilaus vastaanotettu\" sivulla."
 
-#: includes/admin/settings/class-wc-settings-checkout.php:186
+#: includes/admin/settings/class-wc-settings-checkout.php:189
 #: includes/class-wc-query.php:94
 msgid "Order received"
 msgstr "Tilaus vastaanotettu"
 
-#: includes/admin/settings/class-wc-settings-checkout.php:178
+#: includes/admin/settings/class-wc-settings-checkout.php:181
 msgid "Endpoint for the \"Checkout &rarr; Pay\" page."
 msgstr "Verkko-osoitteen loppuliite \"Siirry kassalle &rarr; Maksa\" sivulla"
 
-#: includes/admin/settings/class-wc-settings-checkout.php:177
+#: includes/admin/settings/class-wc-settings-checkout.php:180
 #: templates/checkout/thankyou.php:33 templates/myaccount/my-orders.php:75
 #: templates/myaccount/orders.php:71
 msgid "Pay"
 msgstr "Maksa"
 
-#: includes/admin/settings/class-wc-settings-checkout.php:174
+#: includes/admin/settings/class-wc-settings-checkout.php:177
 msgid "Endpoints are appended to your page URLs to handle specific actions during the checkout process. They should be unique."
 msgstr "Verkko-osoitteen loppuliitteet ovat [nimensä mukaisessa paikassa] ohjaamassa tiettyjä kassaan liittyviä toimintoja. Oltava muista poikkevia."
 
-#: includes/admin/settings/class-wc-settings-checkout.php:174
+#: includes/admin/settings/class-wc-settings-checkout.php:177
 msgid "Checkout endpoints"
 msgstr "Kassan verkko-osoitteen loppuliitteet"
 
-#: includes/admin/settings/class-wc-settings-checkout.php:159
+#: includes/admin/settings/class-wc-settings-checkout.php:162
 msgid "If you define a \"Terms\" page the customer will be asked if they accept them when checking out."
 msgstr "Jos asetat 'Tilaus-/sopimusehdot' -sivun, asiakasta pyydetään hyväksymään kaupan ehdot kassalla."
 
-#: includes/admin/settings/class-wc-settings-checkout.php:158
+#: includes/admin/settings/class-wc-settings-checkout.php:161
 msgid "Terms and conditions"
 msgstr "Tilaus- ja sopimusehdot"
 
-#: includes/admin/settings/class-wc-settings-checkout.php:147
+#: includes/admin/settings/class-wc-settings-checkout.php:150
 msgid "Checkout page"
 msgstr "Kassa-sivu"
 
-#: includes/admin/settings/class-wc-settings-checkout.php:136
+#: includes/admin/settings/class-wc-settings-checkout.php:139
 msgid "Cart page"
 msgstr "Ostoskori-sivu"
 
-#: includes/admin/settings/class-wc-settings-checkout.php:130
+#: includes/admin/settings/class-wc-settings-checkout.php:133
 msgid "These pages need to be set so that WooCommerce knows where to send users to checkout."
 msgstr "WooCommerce ohjaa käyttäjän näiden asetusten perusteella kassalle."
 
-#: includes/admin/settings/class-wc-settings-checkout.php:129
+#: includes/admin/settings/class-wc-settings-checkout.php:132
 msgid "Checkout pages"
 msgstr "Kassan sivut"
 
-#: includes/admin/settings/class-wc-settings-checkout.php:115
+#: includes/admin/settings/class-wc-settings-checkout.php:118
 msgid "Force HTTP when leaving the checkout"
 msgstr "Pakota HTTP (ei suojattu yhteys) kun poistutaan kassalta."
 
-#: includes/admin/settings/class-wc-settings-checkout.php:105
+#: includes/admin/settings/class-wc-settings-checkout.php:108
 msgid "Force secure checkout"
 msgstr "Pakota suojattu kassa sivu"
 
-#: includes/admin/settings/class-wc-settings-checkout.php:96
+#: includes/admin/settings/class-wc-settings-checkout.php:99
 msgid "Allows customers to checkout without creating an account."
 msgstr "Salli ostaminen ilman asiakastilin (pakollista) luomista"
 
-#: includes/admin/settings/class-wc-settings-checkout.php:95
+#: includes/admin/settings/class-wc-settings-checkout.php:98
 msgid "Enable guest checkout"
 msgstr "Ota käyttöön 'pikaostaminen'"
 
-#: includes/admin/settings/class-wc-settings-checkout.php:88
+#: includes/admin/settings/class-wc-settings-checkout.php:91
 msgid "When applying multiple coupons, apply the first coupon to the full price and the second coupon to the discounted price and so on."
 msgstr "Useita kuponkeja käytettäessä, käytä ensimmäistä kuponkia koko hintaan, ja seuraavaa kuponkia alennettuun hintaan jne."
 
-#: includes/admin/settings/class-wc-settings-checkout.php:84
+#: includes/admin/settings/class-wc-settings-checkout.php:87
 msgid "Calculate coupon discounts sequentially"
 msgstr "Laske kuponkien alennukset peräkkäisesti"
 
-#: includes/admin/settings/class-wc-settings-checkout.php:80
+#: includes/admin/settings/class-wc-settings-checkout.php:83
 msgid "Coupons can be applied from the cart and checkout pages."
 msgstr "Kuponkeja voi käyttää ostoskori- ja kassasivuilla."
 
-#: includes/admin/settings/class-wc-settings-checkout.php:75
+#: includes/admin/settings/class-wc-settings-checkout.php:78
 msgid "Enable the use of coupons"
 msgstr "Ota käyttöön kupongit"
 
-#: includes/admin/settings/class-wc-settings-checkout.php:68
-#: includes/admin/settings/class-wc-settings-checkout.php:94
+#: includes/admin/settings/class-wc-settings-checkout.php:71
+#: includes/admin/settings/class-wc-settings-checkout.php:97
 msgid "Checkout process"
 msgstr "Kassan tapahtumaketju"
 
@@ -12939,71 +12924,71 @@ msgstr "Tilin sivut"
 msgid "Accounts"
 msgstr "Tilit"
 
-#: includes/admin/reports/class-wc-report-taxes-by-date.php:187
+#: includes/admin/reports/class-wc-report-taxes-by-date.php:188
 #: templates/checkout/form-pay.php:31
 msgid "Totals"
 msgstr "Yhteensä"
 
-#: includes/admin/reports/class-wc-report-taxes-by-date.php:157
+#: includes/admin/reports/class-wc-report-taxes-by-date.php:158
 msgid "Total sales minus shipping and tax."
 msgstr "Kokonaismyynti josta vähennetty toimituskulut ja verot."
 
-#: includes/admin/reports/class-wc-report-taxes-by-date.php:157
+#: includes/admin/reports/class-wc-report-taxes-by-date.php:158
 msgid "Net profit"
 msgstr "Tulos"
 
-#: includes/admin/reports/class-wc-report-taxes-by-date.php:155
+#: includes/admin/reports/class-wc-report-taxes-by-date.php:156
 msgid "This is the sum of the 'Shipping total' field within your orders."
 msgstr "Tilausten kenttä 'Toimituskulut yhteensä' -arvot laskettu yhteen."
 
-#: includes/admin/reports/class-wc-report-taxes-by-date.php:155
+#: includes/admin/reports/class-wc-report-taxes-by-date.php:156
 msgid "Total shipping"
 msgstr "Toimituskulut yht."
 
-#: includes/admin/reports/class-wc-report-taxes-by-date.php:154
+#: includes/admin/reports/class-wc-report-taxes-by-date.php:155
 msgid "This is the sum of the 'Order total' field within your orders."
 msgstr "Tilausten kenttä 'Tilaus yhteensä' -arvot laskettu yhteen."
 
-#: includes/admin/reports/class-wc-report-taxes-by-date.php:154
+#: includes/admin/reports/class-wc-report-taxes-by-date.php:155
 msgid "Total sales"
 msgstr "Myynti yht."
 
-#: includes/admin/reports/class-wc-report-taxes-by-date.php:152
+#: includes/admin/reports/class-wc-report-taxes-by-date.php:153
 msgid "Period"
 msgstr "Ajanjakso"
 
-#: includes/admin/reports/class-wc-report-taxes-by-code.php:186
-#: includes/admin/reports/class-wc-report-taxes-by-date.php:198
+#: includes/admin/reports/class-wc-report-taxes-by-code.php:187
+#: includes/admin/reports/class-wc-report-taxes-by-date.php:199
 msgid "No taxes found in this period"
 msgstr "Veroja ei löytynyt tällä ajanjaksolla"
 
-#: includes/admin/reports/class-wc-report-taxes-by-code.php:154
-#: includes/admin/reports/class-wc-report-taxes-by-date.php:156
+#: includes/admin/reports/class-wc-report-taxes-by-code.php:155
+#: includes/admin/reports/class-wc-report-taxes-by-date.php:157
 msgid "This is the total tax for the rate (shipping tax + product tax)."
 msgstr "Tämä on kaikki verot yhteensä (toimituskulun vero + tuotteiden verot)"
 
-#: includes/admin/reports/class-wc-report-taxes-by-code.php:154
-#: includes/admin/reports/class-wc-report-taxes-by-date.php:156
+#: includes/admin/reports/class-wc-report-taxes-by-code.php:155
+#: includes/admin/reports/class-wc-report-taxes-by-date.php:157
 msgid "Total tax"
 msgstr "Verot yhteensä"
 
-#: includes/admin/reports/class-wc-report-taxes-by-code.php:153
+#: includes/admin/reports/class-wc-report-taxes-by-code.php:154
 msgid "This is the sum of the \"Tax rows\" shipping tax amount within your orders."
 msgstr "Tässä on kaikki tilauksessa olevat toimituskulujen \"Verorivit\" yhteenlaskettuna."
 
-#: includes/admin/reports/class-wc-report-taxes-by-code.php:153
+#: includes/admin/reports/class-wc-report-taxes-by-code.php:154
 msgid "Shipping tax amount"
 msgstr "Toimituskulujen vero"
 
-#: includes/admin/reports/class-wc-report-taxes-by-code.php:152
+#: includes/admin/reports/class-wc-report-taxes-by-code.php:153
 msgid "This is the sum of the \"Tax rows\" tax amount within your orders."
 msgstr "Tässä on kaikki tilauksessa olevat \"Verorivit\" yhteenlaskettuna."
 
-#: includes/admin/reports/class-wc-report-taxes-by-code.php:152
+#: includes/admin/reports/class-wc-report-taxes-by-code.php:153
 msgid "Tax amount"
 msgstr "Verojen määrä"
 
-#: includes/admin/reports/class-wc-report-taxes-by-code.php:150
+#: includes/admin/reports/class-wc-report-taxes-by-code.php:151
 msgid "Rate"
 msgstr "Veroprosentti"
 
@@ -13019,37 +13004,37 @@ msgstr "Ylempi taso"
 msgid "No products found."
 msgstr "Tuotteita ei löytynyt."
 
-#: includes/admin/reports/class-wc-report-sales-by-product.php:502
+#: includes/admin/reports/class-wc-report-sales-by-product.php:504
 msgid "Sales amount"
 msgstr "Myynnin määrä €"
 
-#: includes/admin/reports/class-wc-report-sales-by-product.php:303
+#: includes/admin/reports/class-wc-report-sales-by-product.php:305
 msgid "Top earners"
 msgstr "Tuottavimmat"
 
-#: includes/admin/reports/class-wc-report-sales-by-product.php:255
+#: includes/admin/reports/class-wc-report-sales-by-product.php:257
 msgid "Top freebies"
 msgstr "Suosituimmat ilmaistuotteet"
 
-#: includes/admin/reports/class-wc-report-sales-by-product.php:250
-#: includes/admin/reports/class-wc-report-sales-by-product.php:298
-#: includes/admin/reports/class-wc-report-sales-by-product.php:338
+#: includes/admin/reports/class-wc-report-sales-by-product.php:252
+#: includes/admin/reports/class-wc-report-sales-by-product.php:300
+#: includes/admin/reports/class-wc-report-sales-by-product.php:340
 msgid "No products found in range"
 msgstr "Etsittyjä tuotteita ei löytynyt"
 
-#: includes/admin/reports/class-wc-report-sales-by-product.php:215
+#: includes/admin/reports/class-wc-report-sales-by-product.php:217
 msgid "Top sellers"
 msgstr "Myydyimmät"
 
-#: includes/admin/reports/class-wc-report-sales-by-product.php:200
+#: includes/admin/reports/class-wc-report-sales-by-product.php:202
 msgid "Product search"
 msgstr "Etsi tuotteet"
 
-#: includes/admin/reports/class-wc-report-sales-by-product.php:192
+#: includes/admin/reports/class-wc-report-sales-by-product.php:194
 msgid "Reset"
 msgstr "Aseta perustilaan"
 
-#: includes/admin/reports/class-wc-report-sales-by-product.php:160
+#: includes/admin/reports/class-wc-report-sales-by-product.php:162
 msgid "Showing reports for:"
 msgstr "Raportti aiheelle:"
 
@@ -13063,90 +13048,90 @@ msgstr "%s ostoja valituille tuotteille"
 msgid "%s sales for the selected items"
 msgstr "%s myyntiä valituille tuotteille"
 
-#: includes/admin/reports/class-wc-report-sales-by-date.php:667
+#: includes/admin/reports/class-wc-report-sales-by-date.php:732
 msgid "Net sales amount"
 msgstr "Nettomyynnin määrä"
 
-#: includes/admin/reports/class-wc-report-sales-by-date.php:657
+#: includes/admin/reports/class-wc-report-sales-by-date.php:722
 msgid "Gross sales amount"
 msgstr "Bruttomyynnin määrä"
 
-#: includes/admin/reports/class-wc-report-sales-by-date.php:647
+#: includes/admin/reports/class-wc-report-sales-by-date.php:712
 msgid "Shipping amount"
 msgstr "Toimitusmäärä"
 
-#: includes/admin/reports/class-wc-report-sales-by-date.php:627
+#: includes/admin/reports/class-wc-report-sales-by-date.php:692
 msgid "Average net sales amount"
 msgstr "Keskimääräinen nettomyynnin arvo"
 
-#: includes/admin/reports/class-wc-report-sales-by-date.php:609
-#: includes/admin/reports/class-wc-report-taxes-by-code.php:151
-#: includes/admin/reports/class-wc-report-taxes-by-date.php:153
+#: includes/admin/reports/class-wc-report-sales-by-date.php:674
+#: includes/admin/reports/class-wc-report-taxes-by-code.php:152
+#: includes/admin/reports/class-wc-report-taxes-by-date.php:154
 msgid "Number of orders"
 msgstr "Tilauksia kpl"
 
-#: includes/admin/reports/class-wc-report-sales-by-date.php:601
-#: includes/admin/reports/class-wc-report-sales-by-product.php:494
+#: includes/admin/reports/class-wc-report-sales-by-date.php:666
+#: includes/admin/reports/class-wc-report-sales-by-product.php:496
 msgid "Number of items sold"
 msgstr "Myytyjä tuotteita kpl"
 
 #. translators: %s: total coupons
-#: includes/admin/reports/class-wc-report-sales-by-date.php:462
+#: includes/admin/reports/class-wc-report-sales-by-date.php:526
 msgid "%s worth of coupons used"
 msgstr "%s arvosta kuponkeja"
 
 #. translators: %s: total shipping
-#: includes/admin/reports/class-wc-report-sales-by-date.php:453
+#: includes/admin/reports/class-wc-report-sales-by-date.php:517
 msgid "%s charged for shipping"
 msgstr "%s toimitusmaksuja"
 
 #. translators: %s: total items
-#: includes/admin/reports/class-wc-report-sales-by-date.php:433
+#: includes/admin/reports/class-wc-report-sales-by-date.php:497
 msgid "%s items purchased"
 msgstr "%s tuotetta ostettu"
 
 #. translators: %s: total orders
-#: includes/admin/reports/class-wc-report-sales-by-date.php:423
+#: includes/admin/reports/class-wc-report-sales-by-date.php:487
 msgid "%s orders placed"
 msgstr "%s tilausta"
 
-#: includes/admin/reports/class-wc-report-sales-by-date.php:408
+#: includes/admin/reports/class-wc-report-sales-by-date.php:472
 msgid "This is the sum of the order totals after any refunds and excluding shipping and taxes."
 msgstr "Tämä on tilausten yhteenlaskettu määrä hyvitysten jälkeen joka ei sisällä toimituskulut ja veroja."
 
 #. translators: %s: net sales
-#: includes/admin/reports/class-wc-report-sales-by-date.php:405
+#: includes/admin/reports/class-wc-report-sales-by-date.php:469
 msgid "%s net sales in this period"
 msgstr "%s nettomyynti ajanjaksolla"
 
-#: includes/admin/reports/class-wc-report-sales-by-date.php:390
+#: includes/admin/reports/class-wc-report-sales-by-date.php:454
 msgid "This is the sum of the order totals after any refunds and including shipping and taxes."
 msgstr "Tämä on tilausten yhteenlaskettu määrä joka sisältää toimituskulut ja verot mutta ei sisällä hyvityksiä."
 
 #. translators: %s: total sales
-#: includes/admin/reports/class-wc-report-sales-by-date.php:387
+#: includes/admin/reports/class-wc-report-sales-by-date.php:451
 msgid "%s gross sales in this period"
 msgstr "%s bruttomyynti ajanjaksolla"
 
 #. translators: %s: average sales
-#: includes/admin/reports/class-wc-report-sales-by-date.php:378
+#: includes/admin/reports/class-wc-report-sales-by-date.php:442
 msgid "%s average net monthly sales"
 msgstr "%s keskimääräinen nettokuukausimyynti"
 
 #. translators: %s: average sales
-#: includes/admin/reports/class-wc-report-sales-by-date.php:365
+#: includes/admin/reports/class-wc-report-sales-by-date.php:429
 msgid "%s average net daily sales"
 msgstr "%s keskimääräinen nettopäivämyynti"
 
-#: includes/admin/reports/class-wc-report-sales-by-category.php:223
+#: includes/admin/reports/class-wc-report-sales-by-category.php:224
 msgid "All"
 msgstr "Kaikki"
 
-#: includes/admin/reports/class-wc-report-sales-by-category.php:222
+#: includes/admin/reports/class-wc-report-sales-by-category.php:223
 msgid "None"
 msgstr "Ei mitään"
 
-#: includes/admin/reports/class-wc-report-sales-by-category.php:208
+#: includes/admin/reports/class-wc-report-sales-by-category.php:209
 msgid "Select categories&hellip;"
 msgstr "Valitse osastot..."
 
@@ -13158,19 +13143,19 @@ msgstr "Ei löytynyt 'varasto loppu' -tuotteita "
 msgid "No low in stock products found."
 msgstr "Ei löytynyt 'varasto vähissä' -tuotteita "
 
-#: includes/admin/reports/class-wc-report-customers.php:343
+#: includes/admin/reports/class-wc-report-customers.php:344
 msgid "new users"
 msgstr "uudet käyttäjät"
 
-#: includes/admin/reports/class-wc-report-customers.php:336
+#: includes/admin/reports/class-wc-report-customers.php:337
 msgid "Signups"
 msgstr "Rekisteröitymiset"
 
-#: includes/admin/reports/class-wc-report-customers.php:332
+#: includes/admin/reports/class-wc-report-customers.php:333
 msgid "guest orders"
 msgstr "vierailija tilaukset"
 
-#: includes/admin/reports/class-wc-report-customers.php:322
+#: includes/admin/reports/class-wc-report-customers.php:323
 msgid "customer orders"
 msgstr "asiakkaan tilaukset"
 
@@ -13179,12 +13164,12 @@ msgid "orders"
 msgstr "tilaukset"
 
 #: includes/admin/reports/class-wc-report-customers.php:124
-#: includes/admin/reports/class-wc-report-customers.php:326
+#: includes/admin/reports/class-wc-report-customers.php:327
 msgid "Guest orders"
 msgstr "Vierailija tilaukset"
 
 #: includes/admin/reports/class-wc-report-customers.php:119
-#: includes/admin/reports/class-wc-report-customers.php:316
+#: includes/admin/reports/class-wc-report-customers.php:317
 msgid "Customer orders"
 msgstr "Asiakkaan tilaukset"
 
@@ -13214,7 +13199,7 @@ msgid "Location"
 msgstr "Sijainti"
 
 #: includes/admin/reports/class-wc-report-customer-list.php:209
-#: includes/class-wc-checkout.php:204 templates/myaccount/form-login.php:84
+#: includes/class-wc-checkout.php:211 templates/myaccount/form-login.php:84
 msgid "Username"
 msgstr "Käyttäjätunnus"
 
@@ -13263,65 +13248,65 @@ msgstr "Asiakkaita ei löytynyt."
 msgid "Customer"
 msgstr "Asiakas"
 
-#: includes/admin/reports/class-wc-report-coupon-usage.php:469
+#: includes/admin/reports/class-wc-report-coupon-usage.php:470
 msgid "Discount amount"
 msgstr "Alennuksen määrä"
 
-#: includes/admin/reports/class-wc-report-coupon-usage.php:461
+#: includes/admin/reports/class-wc-report-coupon-usage.php:462
 msgid "Number of coupons used"
 msgstr "Kuponkeja käytetty"
 
-#: includes/admin/reports/class-wc-report-coupon-usage.php:354
-#: includes/admin/reports/class-wc-report-customers.php:230
-#: includes/admin/reports/class-wc-report-sales-by-category.php:267
-#: includes/admin/reports/class-wc-report-sales-by-date.php:521
-#: includes/admin/reports/class-wc-report-sales-by-product.php:380
+#: includes/admin/reports/class-wc-report-coupon-usage.php:355
+#: includes/admin/reports/class-wc-report-customers.php:231
+#: includes/admin/reports/class-wc-report-sales-by-category.php:268
+#: includes/admin/reports/class-wc-report-sales-by-date.php:586
+#: includes/admin/reports/class-wc-report-sales-by-product.php:382
 #: includes/admin/reports/class-wc-report-taxes-by-code.php:38
 #: includes/admin/reports/class-wc-report-taxes-by-date.php:38
 #: includes/admin/settings/views/html-settings-tax.php:40
 msgid "Export CSV"
 msgstr "Vie CSV-tiedosto"
 
-#: includes/admin/reports/class-wc-report-coupon-usage.php:269
+#: includes/admin/reports/class-wc-report-coupon-usage.php:270
 msgid "Most discount"
 msgstr "Suurin alennus"
 
-#: includes/admin/reports/class-wc-report-coupon-usage.php:264
-#: includes/admin/reports/class-wc-report-coupon-usage.php:311
+#: includes/admin/reports/class-wc-report-coupon-usage.php:265
+#: includes/admin/reports/class-wc-report-coupon-usage.php:312
 msgid "No coupons found in range"
 msgstr "Etsittyjä kuponkeja ei löytynyt"
 
-#: includes/admin/reports/class-wc-report-coupon-usage.php:222
+#: includes/admin/reports/class-wc-report-coupon-usage.php:223
 msgid "Most popular"
 msgstr "Suosituimmat"
 
-#: includes/admin/reports/class-wc-report-coupon-usage.php:217
+#: includes/admin/reports/class-wc-report-coupon-usage.php:218
 msgid "No used coupons found"
 msgstr "Käytettyjä kuponkeja ei löytynyt"
 
-#: includes/admin/reports/class-wc-report-coupon-usage.php:209
-#: includes/admin/reports/class-wc-report-sales-by-category.php:224
-#: includes/admin/reports/class-wc-report-sales-by-product.php:205
+#: includes/admin/reports/class-wc-report-coupon-usage.php:210
+#: includes/admin/reports/class-wc-report-sales-by-category.php:225
+#: includes/admin/reports/class-wc-report-sales-by-product.php:207
 #: includes/widgets/class-wc-widget-products.php:43
 msgid "Show"
 msgstr "Näytä"
 
-#: includes/admin/reports/class-wc-report-coupon-usage.php:202
+#: includes/admin/reports/class-wc-report-coupon-usage.php:203
 msgid "All coupons"
 msgstr "Kaikki kupongit"
 
-#: includes/admin/reports/class-wc-report-coupon-usage.php:201
+#: includes/admin/reports/class-wc-report-coupon-usage.php:202
 msgid "Choose coupons&hellip;"
 msgstr "Valitse kupongit..."
 
-#: includes/admin/reports/class-wc-report-coupon-usage.php:173
+#: includes/admin/reports/class-wc-report-coupon-usage.php:174
 msgid "Filter by coupon"
 msgstr "Lajittele kupongin mukaan "
 
 #: includes/admin/reports/class-wc-report-coupon-usage.php:133
 #: includes/admin/reports/class-wc-report-customers.php:166
 #: includes/admin/reports/class-wc-report-sales-by-category.php:117
-#: includes/admin/reports/class-wc-report-sales-by-date.php:480
+#: includes/admin/reports/class-wc-report-sales-by-date.php:544
 #: includes/admin/reports/class-wc-report-sales-by-product.php:131
 msgid "Last 7 days"
 msgstr "Viim. 7 päivää"
@@ -13329,7 +13314,7 @@ msgstr "Viim. 7 päivää"
 #: includes/admin/reports/class-wc-report-coupon-usage.php:132
 #: includes/admin/reports/class-wc-report-customers.php:165
 #: includes/admin/reports/class-wc-report-sales-by-category.php:116
-#: includes/admin/reports/class-wc-report-sales-by-date.php:479
+#: includes/admin/reports/class-wc-report-sales-by-date.php:543
 #: includes/admin/reports/class-wc-report-sales-by-product.php:130
 #: includes/admin/reports/class-wc-report-taxes-by-code.php:51
 #: includes/admin/reports/class-wc-report-taxes-by-date.php:51
@@ -13339,7 +13324,7 @@ msgstr "Tämä kuukausi"
 #: includes/admin/reports/class-wc-report-coupon-usage.php:131
 #: includes/admin/reports/class-wc-report-customers.php:164
 #: includes/admin/reports/class-wc-report-sales-by-category.php:115
-#: includes/admin/reports/class-wc-report-sales-by-date.php:478
+#: includes/admin/reports/class-wc-report-sales-by-date.php:542
 #: includes/admin/reports/class-wc-report-sales-by-product.php:129
 #: includes/admin/reports/class-wc-report-taxes-by-code.php:50
 #: includes/admin/reports/class-wc-report-taxes-by-date.php:50
@@ -13349,7 +13334,7 @@ msgstr "Edell. kuukausi"
 #: includes/admin/reports/class-wc-report-coupon-usage.php:130
 #: includes/admin/reports/class-wc-report-customers.php:163
 #: includes/admin/reports/class-wc-report-sales-by-category.php:114
-#: includes/admin/reports/class-wc-report-sales-by-date.php:477
+#: includes/admin/reports/class-wc-report-sales-by-date.php:541
 #: includes/admin/reports/class-wc-report-sales-by-product.php:128
 #: includes/admin/reports/class-wc-report-taxes-by-code.php:49
 #: includes/admin/reports/class-wc-report-taxes-by-date.php:49
@@ -13449,7 +13434,7 @@ msgid "Enable this option if access is given to a downloadable file upon purchas
 msgstr "Käytä tätä vaihtoehtoa kun ostaja päästetään lataamaan tiedosto oston jälkeen."
 
 #: includes/admin/meta-boxes/views/html-variation-admin.php:73
-#: includes/admin/settings/class-wc-settings-checkout.php:290
+#: includes/admin/settings/class-wc-settings-checkout.php:294
 #: includes/admin/settings/class-wc-settings-emails.php:274
 #: includes/admin/settings/views/html-admin-page-shipping-zone-methods.php:72
 msgid "Enabled"
@@ -13513,7 +13498,7 @@ msgctxt "Ex: Refund - $date >by< $username"
 msgid "by"
 msgstr "tekijä"
 
-#: includes/admin/meta-boxes/views/html-order-items.php:341
+#: includes/admin/meta-boxes/views/html-order-items.php:330
 #: includes/gateways/paypal/includes/settings-paypal.php:113
 #: includes/gateways/paypal/includes/settings-paypal.php:121
 #: includes/gateways/paypal/includes/settings-paypal.php:134
@@ -13522,20 +13507,20 @@ msgstr "tekijä"
 msgid "Optional"
 msgstr "Valinnainen"
 
-#: includes/admin/meta-boxes/views/html-order-items.php:340
+#: includes/admin/meta-boxes/views/html-order-items.php:329
 msgid "Or, enter tax rate ID:"
 msgstr "Tai, kirjoita veroprosentin tunnus ID:"
 
-#: includes/admin/meta-boxes/views/html-order-items.php:319
+#: includes/admin/meta-boxes/views/html-order-items.php:308
 #: includes/admin/settings/class-wc-settings-tax.php:174
 msgid "Rate %"
 msgstr "Veroprosentti"
 
-#: includes/admin/meta-boxes/views/html-order-items.php:318
+#: includes/admin/meta-boxes/views/html-order-items.php:307
 msgid "Rate code"
 msgstr "Veroprosentin koodi"
 
-#: includes/admin/meta-boxes/views/html-order-items.php:317
+#: includes/admin/meta-boxes/views/html-order-items.php:306
 #: includes/admin/meta-boxes/views/html-product-data-general.php:143
 #: includes/admin/meta-boxes/views/html-variation-admin.php:281
 #: includes/admin/settings/class-wc-settings-tax.php:179
@@ -13544,87 +13529,79 @@ msgstr "Veroprosentin koodi"
 msgid "Tax class"
 msgstr "Veroluokka"
 
-#: includes/admin/meta-boxes/views/html-order-items.php:316
+#: includes/admin/meta-boxes/views/html-order-items.php:305
 msgid "Rate name"
 msgstr "Veroprosentin nimi"
 
-#: includes/admin/meta-boxes/views/html-order-items.php:203
-#: includes/admin/meta-boxes/views/html-order-items.php:305
+#: includes/admin/meta-boxes/views/html-order-items.php:193
+#: includes/admin/meta-boxes/views/html-order-items.php:294
 msgid "Add tax"
 msgstr "Lisää vero"
 
-#: includes/admin/meta-boxes/views/html-order-items.php:279
+#: includes/admin/meta-boxes/views/html-order-items.php:268
 msgid "Add products"
 msgstr "Lisää tuotteet"
 
-#: includes/admin/meta-boxes/views/html-order-items.php:267
+#: includes/admin/meta-boxes/views/html-order-items.php:256
 msgid "You will need to manually issue a refund through your payment gateway after using this."
 msgstr "Hyvitys on tehtävä manuaalisesti maksukäytävän kautta kun sitä käytetään."
 
-#: includes/admin/meta-boxes/views/html-order-items.php:266
+#: includes/admin/meta-boxes/views/html-order-items.php:255
 msgid "The payment gateway used to place this order does not support automatic refunds."
 msgstr "Tilauksen yhteydessä käytetty maksukäytävä ei tue automaattista hyvitystä."
 
-#: includes/admin/meta-boxes/views/html-order-items.php:264
+#: includes/admin/meta-boxes/views/html-order-items.php:253
 msgid "Payment gateway"
 msgstr "Maksukäytävä"
 
-#: includes/admin/meta-boxes/views/html-order-items.php:252
+#: includes/admin/meta-boxes/views/html-order-items.php:241
 msgid "Reason for refund (optional):"
 msgstr "Hyvityksen syy (valinnainen)"
 
-#: includes/admin/meta-boxes/views/html-order-items.php:245
-#: includes/admin/reports/class-wc-report-sales-by-date.php:677
+#: includes/admin/meta-boxes/views/html-order-items.php:234
+#: includes/admin/reports/class-wc-report-sales-by-date.php:742
 msgid "Refund amount"
 msgstr "Hyvitä summa"
 
-#: includes/admin/meta-boxes/views/html-order-items.php:241
+#: includes/admin/meta-boxes/views/html-order-items.php:230
 msgid "Total available to refund"
 msgstr "Hyvitykseen käytettävissä oleva max määrä"
 
-#: includes/admin/meta-boxes/views/html-order-items.php:237
+#: includes/admin/meta-boxes/views/html-order-items.php:226
 msgid "Amount already refunded"
 msgstr "Summa on jo hyvitetty"
 
-#: includes/admin/meta-boxes/views/html-order-items.php:233
+#: includes/admin/meta-boxes/views/html-order-items.php:222
 msgid "Restock refunded items"
 msgstr "Palauta hyvitetyt tuotteet varastoon"
 
-#: includes/admin/meta-boxes/views/html-order-items.php:227
+#: includes/admin/meta-boxes/views/html-order-items.php:216
 #: templates/myaccount/form-reset-password.php:47
 msgid "Save"
 msgstr "Tallenna"
 
-#: includes/admin/meta-boxes/views/html-order-items.php:221
+#: includes/admin/meta-boxes/views/html-order-items.php:210
 msgid "Add shipping cost"
 msgstr "Lisää toimituskulu"
 
-#: includes/admin/meta-boxes/views/html-order-items.php:220
+#: includes/admin/meta-boxes/views/html-order-items.php:209
 msgid "Add fee"
 msgstr "Lisää maksu"
 
-#: includes/admin/meta-boxes/views/html-order-items.php:219
+#: includes/admin/meta-boxes/views/html-order-items.php:208
 msgid "Add product(s)"
 msgstr "Lisää tuote(tuotteet)"
 
-#: includes/admin/meta-boxes/views/html-order-items.php:214
-msgid "Calculate total"
-msgstr "Laske loppusummat"
-
-#: includes/admin/meta-boxes/views/html-order-items.php:213
-msgid "Calculate taxes"
-msgstr "Laske verot"
-
-#: includes/admin/meta-boxes/views/html-order-items.php:206
-#: includes/class-wc-order.php:1763
+#: includes/admin/meta-boxes/views/html-order-items.php:196
+#: includes/class-wc-order.php:1779
 msgid "Refund"
 msgstr "Hyvitys"
 
-#: includes/admin/meta-boxes/views/html-order-items.php:200
+#: includes/admin/meta-boxes/views/html-order-items.php:190
 msgid "To edit this order change the status back to \"Pending\""
 msgstr "Vaihda tilauksen tila \"Odottaa maksua\" tilaksi jotta voit muokata tilausta. "
 
-#: includes/admin/meta-boxes/views/html-order-items.php:184
+#: includes/admin/meta-boxes/views/html-order-items.php:174
 msgid "Refunded"
 msgstr "Hyvitetty"
 
@@ -13642,7 +13619,7 @@ msgstr "Alennus yhteensä. Alennus lasketaan kullekin riville erikseen."
 
 #: includes/admin/meta-boxes/views/html-order-items.php:37
 #: includes/admin/meta-boxes/views/html-order-items.php:38
-#: includes/admin/reports/class-wc-report-taxes-by-code.php:149
+#: includes/admin/reports/class-wc-report-taxes-by-code.php:150
 #: includes/admin/settings/class-wc-settings-tax.php:33
 #: includes/class-wc-countries.php:350 includes/class-wc-order-item-tax.php:159
 #: includes/class-wc-tax.php:753
@@ -13691,7 +13668,7 @@ msgstr "Muunnelman ID:"
 #: includes/api/v1/class-wc-rest-order-refunds-controller.php:393
 #: includes/api/v1/class-wc-rest-orders-controller.php:1218
 #: includes/api/v1/class-wc-rest-report-top-sellers-controller.php:158
-#: includes/cli/class-wc-cli-runner.php:95
+#: includes/cli/class-wc-cli-runner.php:96
 msgid "Product ID."
 msgstr "Tuotteen ID."
 
@@ -13957,7 +13934,7 @@ msgstr "Toimitusluokka ryhmittää tuotteita, jotka tarvitsevat samankaltaisen k
 
 #: includes/admin/meta-boxes/views/html-product-data-shipping.php:45
 #: includes/admin/meta-boxes/views/html-variation-admin.php:264
-#: includes/admin/settings/class-wc-settings-shipping.php:337
+#: includes/admin/settings/class-wc-settings-shipping.php:341
 #: includes/admin/views/html-bulk-edit-product.php:165
 #: includes/admin/views/html-quick-edit-product.php:123
 #: includes/class-wc-post-types.php:157
@@ -14038,11 +14015,11 @@ msgstr "Varastotilanne"
 msgid "If managing stock, this controls whether or not backorders are allowed. If enabled, stock quantity can go below 0."
 msgstr "Jos käytät varaston hallintaa, tällä asetetaan sallitko jälkitoimitukset vai et. Jos käytössä, varaston määrä voi mennä alle 0, negatiiviseksi."
 
-#: includes/wc-product-functions.php:821
+#: includes/wc-product-functions.php:828
 msgid "Allow, but notify customer"
 msgstr "Hyväksy ja ilmoita asiakkaalle"
 
-#: includes/wc-product-functions.php:820
+#: includes/wc-product-functions.php:827
 msgid "Do not allow"
 msgstr "Ei hyväksytä"
 
@@ -14081,7 +14058,7 @@ msgstr "Valitse tälle tuotteelle veroluokka. Veroluokkia käytetään asettamaa
 #: includes/admin/views/html-bulk-edit-product.php:95
 #: includes/admin/views/html-quick-edit-product.php:73
 #: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:217
-#: includes/wc-product-functions.php:789
+#: includes/wc-product-functions.php:796
 msgid "Standard"
 msgstr "Perusvero"
 
@@ -14238,7 +14215,7 @@ msgstr "Liitetyt tuotteet"
 #: includes/admin/settings/class-wc-settings-shipping.php:27
 #: includes/admin/settings/class-wc-settings-tax.php:178
 #: includes/admin/settings/views/html-settings-tax.php:32
-#: includes/class-wc-order-item-shipping.php:155
+#: includes/class-wc-order-item-shipping.php:158
 #: templates/cart/cart-totals.php:55 templates/cart/cart-totals.php:56
 msgid "Shipping"
 msgstr "Toimitus"
@@ -14263,8 +14240,8 @@ msgid "Product Type"
 msgstr "Tuotteen laji"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-notes.php:87
-#: includes/admin/meta-boxes/views/html-order-items.php:291
-#: includes/admin/meta-boxes/views/html-order-items.php:348
+#: includes/admin/meta-boxes/views/html-order-items.php:280
+#: includes/admin/meta-boxes/views/html-order-items.php:337
 #: includes/admin/meta-boxes/views/html-product-data-attributes.php:23
 msgid "Add"
 msgstr "Lisää"
@@ -14290,7 +14267,7 @@ msgid "There are no notes yet."
 msgstr "Kommentteja ei ole vielä."
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-notes.php:65
-#: includes/class-wc-ajax.php:1106
+#: includes/class-wc-ajax.php:1104
 msgid "Delete note"
 msgstr "Poista kommentti"
 
@@ -14298,7 +14275,7 @@ msgstr "Poista kommentti"
 #. translators: %s: plugin author
 #. translators: %s: review author
 #: includes/admin/meta-boxes/class-wc-meta-box-order-notes.php:62
-#: includes/admin/views/html-admin-page-status-report.php:419
+#: includes/admin/views/html-admin-page-status-report.php:424
 #: includes/widgets/class-wc-widget-recent-reviews.php:85
 msgid "by %s"
 msgstr "-- %s"
@@ -14364,8 +14341,8 @@ msgstr "Muu"
 #: includes/shipping/legacy-flat-rate/includes/settings-flat-rate.php:93
 #: includes/shipping/legacy-free-shipping/class-wc-shipping-legacy-free-shipping.php:122
 #: includes/wc-account-functions.php:264
-#: includes/wc-formatting-functions.php:1037
-#: includes/wc-formatting-functions.php:1056
+#: includes/wc-formatting-functions.php:1038
+#: includes/wc-formatting-functions.php:1057
 #: templates/order/order-details-customer.php:66
 #: templates/order/order-details-customer.php:78
 #: templates/single-product/meta.php:31
@@ -14409,7 +14386,7 @@ msgstr "Päiväys:"
 msgid "General Details"
 msgstr "Yleiset tiedot"
 
-#: includes/cli/class-wc-cli-runner.php:96
+#: includes/cli/class-wc-cli-runner.php:97
 msgid "Customer ID."
 msgstr "Asiakkaan tunnus/ID."
 
@@ -14420,17 +14397,9 @@ msgstr "Maksu käyttäen %s"
 
 #: includes/admin/class-wc-admin-profile.php:84
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:86
-#: includes/class-wc-countries.php:1111 includes/class-wc-emails.php:418
+#: includes/class-wc-countries.php:1114 includes/class-wc-emails.php:423
 msgid "Phone"
 msgstr "Puhelin"
-
-#: includes/admin/meta-boxes/class-wc-meta-box-order-actions.php:86
-msgid "Save/update the %s"
-msgstr "Tallenna/päivitä %s"
-
-#: includes/admin/meta-boxes/class-wc-meta-box-order-actions.php:86
-msgid "Save %s"
-msgstr "Tallenna %s"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-actions.php:69
 msgid "Apply"
@@ -14525,11 +14494,11 @@ msgstr "Ostoskorissa on oltava nämä tuotteet, jotta kuponki kelpaa. Tai 'Alenn
 
 #: includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php:154
 #: includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php:171
-#: includes/admin/meta-boxes/views/html-order-items.php:286
+#: includes/admin/meta-boxes/views/html-order-items.php:275
 #: includes/admin/meta-boxes/views/html-product-data-linked-products.php:6
 #: includes/admin/meta-boxes/views/html-product-data-linked-products.php:22
 #: includes/admin/meta-boxes/views/html-product-data-linked-products.php:38
-#: includes/admin/reports/class-wc-report-sales-by-product.php:204
+#: includes/admin/reports/class-wc-report-sales-by-product.php:206
 msgid "Search for a product&hellip;"
 msgstr "Etsi tuotetta..."
 
@@ -14697,7 +14666,6 @@ msgstr "Etsi verkkotoimintokutsuja"
 msgid "Add webhook"
 msgstr "Lisää verkkotoimintokutsu"
 
-#: includes/admin/class-wc-admin-help.php:141
 #: includes/admin/class-wc-admin-webhooks.php:431
 #: includes/admin/settings/class-wc-settings-api.php:47
 #: includes/class-wc-post-types.php:421
@@ -15005,7 +14973,7 @@ msgstr "Ei kiitos"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:778
 #: includes/admin/views/html-notice-tracking.php:13
-#: includes/wc-product-functions.php:822
+#: includes/wc-product-functions.php:829
 msgid "Allow"
 msgstr "Hyväksy"
 
@@ -15037,7 +15005,7 @@ msgid "Rate (%)"
 msgstr "Veroprosentti (%)"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:486
-#: includes/class-wc-countries.php:675 includes/class-wc-countries.php:1015
+#: includes/class-wc-countries.php:678 includes/class-wc-countries.php:1018
 msgid "State"
 msgstr "Osavaltio"
 
@@ -15401,7 +15369,7 @@ msgstr "Alue/kunta tai aluekoodi"
 #: includes/admin/class-wc-admin-profile.php:129
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:75
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:124
-#: includes/wc-template-functions.php:1943
+#: includes/wc-template-functions.php:1961
 #: templates/cart/shipping-calculator.php:39
 msgid "Select a country&hellip;"
 msgstr "Valitse maa..."
@@ -15417,8 +15385,8 @@ msgstr "Valitse maa..."
 msgid "Country"
 msgstr "Maa"
 
-#: includes/class-wc-countries.php:672 includes/class-wc-countries.php:905
-#: includes/class-wc-countries.php:1020
+#: includes/class-wc-countries.php:675 includes/class-wc-countries.php:908
+#: includes/class-wc-countries.php:1023
 msgid "Postcode"
 msgstr "Postinumero"
 
@@ -15458,8 +15426,8 @@ msgid "First name"
 msgstr "Etunimi"
 
 #: includes/admin/class-wc-admin-post-types.php:1821
-#: includes/admin/meta-boxes/views/html-order-items.php:226
-#: includes/admin/meta-boxes/views/html-order-items.php:268
+#: includes/admin/meta-boxes/views/html-order-items.php:215
+#: includes/admin/meta-boxes/views/html-order-items.php:257
 #: includes/admin/meta-boxes/views/html-product-data-general.php:47
 #: includes/admin/meta-boxes/views/html-product-data-variations.php:108
 #: templates/myaccount/my-orders.php:83 templates/myaccount/orders.php:79
@@ -15484,19 +15452,19 @@ msgstr "Luettelo näkyvyys:"
 
 #: includes/admin/views/html-bulk-edit-product.php:189
 #: includes/admin/views/html-quick-edit-product.php:146
-#: includes/wc-product-functions.php:739
+#: includes/wc-product-functions.php:746
 msgid "Hidden"
 msgstr "Piilotettu"
 
 #: includes/admin/views/html-bulk-edit-product.php:188
 #: includes/admin/views/html-quick-edit-product.php:145
-#: includes/wc-product-functions.php:738
+#: includes/wc-product-functions.php:745
 msgid "Search"
 msgstr "Haku"
 
 #: includes/admin/views/html-bulk-edit-product.php:187
 #: includes/admin/views/html-quick-edit-product.php:144
-#: includes/wc-product-functions.php:737
+#: includes/wc-product-functions.php:744
 msgid "Catalog"
 msgstr "Luettelo"
 
@@ -15523,22 +15491,22 @@ msgid "Show all types"
 msgstr "Näytä kaikki lajit"
 
 #: includes/admin/class-wc-admin-post-types.php:1472
-#: includes/wc-product-functions.php:521
+#: includes/wc-product-functions.php:528
 msgid "Simple product"
 msgstr "Perustuote"
 
 #: includes/admin/class-wc-admin-post-types.php:1469
-#: includes/wc-product-functions.php:524
+#: includes/wc-product-functions.php:531
 msgid "Variable product"
 msgstr "Muunnelmatuote"
 
 #: includes/admin/class-wc-admin-post-types.php:1466
-#: includes/wc-product-functions.php:523
+#: includes/wc-product-functions.php:530
 msgid "External/Affiliate product"
 msgstr "Yhteistyökumppanin tuote"
 
 #: includes/admin/class-wc-admin-post-types.php:1463
-#: includes/wc-product-functions.php:522
+#: includes/wc-product-functions.php:529
 msgid "Grouped product"
 msgstr "Joukkotuote"
 
@@ -15651,7 +15619,7 @@ msgid "Restore this item from the Trash"
 msgstr "Palauta tuote roskakorista"
 
 #: includes/admin/class-wc-admin-post-types.php:429
-#: includes/admin/settings/class-wc-settings-shipping.php:245
+#: includes/admin/settings/class-wc-settings-shipping.php:249
 #: includes/admin/views/html-bulk-edit-product.php:206
 #: includes/admin/views/html-bulk-edit-product.php:240
 #: includes/admin/views/html-bulk-edit-product.php:297
@@ -15663,9 +15631,9 @@ msgstr "Ei"
 #: includes/admin/class-wc-admin-post-types.php:592
 #: includes/admin/class-wc-admin-post-types.php:595
 #: includes/admin/class-wc-admin-post-types.php:598
-#: includes/admin/settings/class-wc-settings-checkout.php:328
+#: includes/admin/settings/class-wc-settings-checkout.php:332
 #: includes/admin/settings/class-wc-settings-emails.php:274
-#: includes/admin/settings/class-wc-settings-shipping.php:244
+#: includes/admin/settings/class-wc-settings-shipping.php:248
 #: includes/admin/views/html-bulk-edit-product.php:205
 #: includes/admin/views/html-bulk-edit-product.php:239
 #: includes/admin/views/html-bulk-edit-product.php:296
@@ -15710,12 +15678,13 @@ msgstr "Joukko"
 #: includes/admin/meta-boxes/class-wc-meta-box-order-actions.php:43
 #: includes/admin/reports/class-wc-report-customer-list.php:215
 #: includes/admin/reports/class-wc-report-stock.php:172
+#: includes/wc-account-functions.php:187
 msgid "Actions"
 msgstr "Toimenpiteet"
 
 #: includes/admin/class-wc-admin-post-types.php:309
 #: includes/admin/meta-boxes/views/html-order-items.php:32
-#: includes/admin/reports/class-wc-report-taxes-by-code.php:177
+#: includes/admin/reports/class-wc-report-taxes-by-code.php:178
 #: includes/wc-account-functions.php:186 templates/cart/cart-totals.php:92
 #: templates/cart/cart-totals.php:93 templates/cart/cart.php:38
 #: templates/cart/cart.php:119 templates/checkout/review-order.php:27
@@ -15725,7 +15694,7 @@ msgid "Total"
 msgstr "Yhteensä"
 
 #: includes/admin/class-wc-admin-post-types.php:307
-#: includes/class-wc-checkout.php:194
+#: includes/class-wc-checkout.php:201
 msgid "Order notes"
 msgstr "Tilauksen kommentit"
 
@@ -15767,7 +15736,7 @@ msgstr "Tuotetunnukset"
 
 #: includes/admin/class-wc-admin-post-types.php:285
 #: includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php:78
-#: includes/admin/reports/class-wc-report-sales-by-date.php:637
+#: includes/admin/reports/class-wc-report-sales-by-date.php:702
 msgid "Coupon amount"
 msgstr "Kupongin tarjoama alennus"
 
@@ -15781,11 +15750,11 @@ msgstr "Koodi"
 
 #: includes/admin/class-wc-admin-post-types.php:269
 #: includes/admin/class-wc-admin-post-types.php:308
-#: includes/admin/reports/class-wc-report-coupon-usage.php:351
-#: includes/admin/reports/class-wc-report-customers.php:227
-#: includes/admin/reports/class-wc-report-sales-by-category.php:264
-#: includes/admin/reports/class-wc-report-sales-by-date.php:517
-#: includes/admin/reports/class-wc-report-sales-by-product.php:377
+#: includes/admin/reports/class-wc-report-coupon-usage.php:352
+#: includes/admin/reports/class-wc-report-customers.php:228
+#: includes/admin/reports/class-wc-report-sales-by-category.php:265
+#: includes/admin/reports/class-wc-report-sales-by-date.php:582
+#: includes/admin/reports/class-wc-report-sales-by-product.php:379
 #: includes/admin/settings/views/html-webhook-logs.php:17
 #: includes/admin/settings/views/html-webhook-logs.php:25
 #: includes/wc-account-functions.php:184
@@ -15799,7 +15768,7 @@ msgid "Tags"
 msgstr "Avainsanat"
 
 #: includes/admin/class-wc-admin-post-types.php:265
-#: includes/admin/reports/class-wc-report-sales-by-category.php:193
+#: includes/admin/reports/class-wc-report-sales-by-category.php:194
 #: includes/class-wc-post-types.php:81
 msgid "Categories"
 msgstr "Osastot"
@@ -16066,7 +16035,7 @@ msgstr "Julkaise tuote!"
 msgid "Optionally assign categories to your products to make them easier to browse through and find in your store."
 msgstr "Voit valinnaisesti asettaa tässä osaston tuotteelle. Osastot helpottavat tuotteiden selaamista ja niiden löytämistä kaupasta."
 
-#: includes/admin/class-wc-admin-help.php:149
+#: includes/admin/class-wc-admin-help.php:129
 msgid "Product Categories"
 msgstr "Osastot"
 
@@ -16074,7 +16043,7 @@ msgstr "Osastot"
 msgid "You can optionally \"tag\" your products here. Tags as a method of labeling your products to make them easier for customers to find."
 msgstr "Voit valinnaisesti asettaa tässä avainsanan tuotteelle. Avainsanat ovat merkitesemistapa joka auttaa asiakasta löytämään tuotteen."
 
-#: includes/admin/class-wc-admin-help.php:153
+#: includes/admin/class-wc-admin-help.php:133
 msgid "Product Tags"
 msgstr "Avainsanat tuotteelle"
 
@@ -16218,7 +16187,7 @@ msgid "Product category base"
 msgstr "Osastojen polkutunnus"
 
 #: includes/admin/class-wc-admin-notices.php:132
-#: includes/class-wc-checkout.php:148 includes/class-wc-checkout.php:155
+#: includes/class-wc-checkout.php:155 includes/class-wc-checkout.php:162
 #: includes/class-wc-emails.php:53 includes/class-wc-emails.php:62
 #: includes/class-wc-payment-gateways.php:51
 #: includes/class-wc-payment-gateways.php:60 includes/class-wc-shipping.php:69
@@ -16307,7 +16276,7 @@ msgstr "WooCommercen asetukset"
 msgid "Sales reports"
 msgstr "Myyntiraportit"
 
-#: includes/admin/class-wc-admin-help.php:89
+#: includes/admin/class-wc-admin-help.php:77
 msgid "Shipping Classes"
 msgstr "Toimitusluokat"
 
@@ -16319,82 +16288,82 @@ msgstr "Tuo <strong>veroprosentit</strong> CSV-tiedoston avulla."
 msgid "WooCommerce tax rates (CSV)"
 msgstr "WooCommerce-veroprosentit (CSV)"
 
-#: includes/admin/class-wc-admin-help.php:284
+#: includes/admin/class-wc-admin-help.php:248
 msgid "Official extensions"
 msgstr "Viralliset (valmistajan) lisäosat"
 
-#: includes/admin/class-wc-admin-help.php:283
+#: includes/admin/class-wc-admin-help.php:247
 msgid "Official themes"
 msgstr "Viralliset (valmistajan) teemat"
 
-#: includes/admin/class-wc-admin-help.php:282
+#: includes/admin/class-wc-admin-help.php:246
 msgid "Github project"
 msgstr "Github projekti"
 
-#: includes/admin/class-wc-admin-help.php:281
+#: includes/admin/class-wc-admin-help.php:245
 msgid "WordPress.org project"
 msgstr "WordPress.org projekti"
 
-#: includes/admin/class-wc-admin-help.php:280
+#: includes/admin/class-wc-admin-help.php:244
 msgid "About WooCommerce"
 msgstr "Tietoa WooCommercesta"
 
-#: includes/admin/class-wc-admin-help.php:279
+#: includes/admin/class-wc-admin-help.php:243
 msgid "For more information:"
 msgstr "Lisätietoja"
 
-#: includes/admin/class-wc-admin-help.php:255
+#: includes/admin/class-wc-admin-help.php:219
 msgid "Report a bug"
 msgstr "Raportoi 'bugi'"
 
-#: includes/admin/class-wc-admin-help.php:254
+#: includes/admin/class-wc-admin-help.php:218
 msgid "If you find a bug within WooCommerce core you can create a ticket via <a href=\"%1$s\">Github issues</a>. Ensure you read the <a href=\"%2$s\">contribution guide</a> prior to submitting your report. To help us solve your issue, please be as descriptive as possible and include your <a href=\"%3$s\">system status report</a>."
 msgstr "Jos löydät 'bugin'/virheen WooCommercen ydinkoodista, voit ilmoittaa asian tänne <a href=\"%1$s\">Github issues</a>. Varmista, että olet lukenut <a href=\"%2$s\">contribution guide</a> ennen ilmoituksen tekemistä. Auta meitä kuvailemalla tilanne mahdollisimman tarkasti ja liitä ilmoitukseen <a href=\"%3$s\">järjestelmän tila -raportti</a>."
 
-#: includes/admin/class-wc-admin-help.php:251
-#: includes/admin/class-wc-admin-help.php:253
+#: includes/admin/class-wc-admin-help.php:215
+#: includes/admin/class-wc-admin-help.php:217
 msgid "Found a bug?"
 msgstr "Löysitkö 'bugin'?"
 
-#: includes/admin/class-wc-admin-help.php:265
+#: includes/admin/class-wc-admin-help.php:229
 msgid "View education partners"
 msgstr "Näytä koulutuskumppanit"
 
-#: includes/admin/class-wc-admin-help.php:264
+#: includes/admin/class-wc-admin-help.php:228
 msgid "If you would like to learn about using WooCommerce from an expert, consider following a WooCommerce course offered by one of our educational partners."
 msgstr "Jos haluat oppia WooCommercen käyttämistä asiantuntijalta, harkitse jotain kurssia joltakin koulutus kumppaniltamme."
 
-#: includes/admin/class-wc-admin-help.php:261
-#: includes/admin/class-wc-admin-help.php:263
+#: includes/admin/class-wc-admin-help.php:225
+#: includes/admin/class-wc-admin-help.php:227
 msgid "Education"
 msgstr "Koulutus"
 
-#: includes/admin/class-wc-admin-help.php:245
+#: includes/admin/class-wc-admin-help.php:209
 msgid "Before asking for help we recommend checking the system status page to identify any problems with your configuration."
 msgstr "Ennen avun pyytämistä, suosittelemme että tutustut ensin 'Järjestelmän tila' -sivuun. Se voi auttaa tilanteen selvittämisessä."
 
-#: includes/admin/class-wc-admin-help.php:237
+#: includes/admin/class-wc-admin-help.php:201
 msgid "Should you need help understanding, using, or extending WooCommerce, <a href=\"%s\">please read our documentation</a>. You will find all kinds of resources including snippets, tutorials and much more."
 msgstr "Jos tarvitset apua WooCommercen ymmärtämiseen, käyttämiseen tai sen laajentamiseen  - <a href=\"%s\">slue ohjeet</a>, ole hyvä. Saatavilla on monenlaista tukiaineistoa, mukaan lukien pikkutietoja sekä laajoja opastuksia ja paljon muuta."
 
-#: includes/admin/class-wc-admin-help.php:193
-#: includes/admin/class-wc-admin-help.php:197
+#: includes/admin/class-wc-admin-help.php:157
+#: includes/admin/class-wc-admin-help.php:161
 msgid "Managing Orders"
 msgstr "Tilausten hallinta"
 
-#: includes/admin/class-wc-admin-help.php:185
-#: includes/admin/class-wc-admin-help.php:189
-#: includes/admin/settings/class-wc-settings-checkout.php:74
+#: includes/admin/class-wc-admin-help.php:149
+#: includes/admin/class-wc-admin-help.php:153
+#: includes/admin/settings/class-wc-settings-checkout.php:77
 #: includes/class-wc-post-types.php:380
 msgid "Coupons"
 msgstr "Kupongit"
 
-#: includes/admin/class-wc-admin-help.php:169
+#: includes/admin/class-wc-admin-help.php:145
 #: includes/admin/class-wc-admin-menus.php:70
 msgid "Reports"
 msgstr "Raportit"
 
-#: includes/admin/class-wc-admin-help.php:161
+#: includes/admin/class-wc-admin-help.php:141
 msgid "System Status"
 msgstr "Järjestelmän tila"
 
@@ -16420,19 +16389,19 @@ msgstr "Simplify Commerce"
 msgid "PayPal Standard"
 msgstr "PayPal Standard"
 
-#: includes/admin/class-wc-admin-help.php:125
+#: includes/admin/class-wc-admin-help.php:113
 msgid "Email Settings"
 msgstr "Sähköpostien asetukset"
 
-#: includes/admin/class-wc-admin-help.php:121
+#: includes/admin/class-wc-admin-help.php:109
 msgid "Account Settings"
 msgstr "Tilin asetukset"
 
-#: includes/admin/class-wc-admin-help.php:93
+#: includes/admin/class-wc-admin-help.php:81
 msgid "Checkout Settings"
 msgstr "Kassan asetukset"
 
-#: includes/admin/class-wc-admin-help.php:65
+#: includes/admin/class-wc-admin-help.php:53
 msgid "Tax Settings"
 msgstr "Verojen asetukset"
 
@@ -16582,6 +16551,7 @@ msgid "Attributes"
 msgstr "Ominaisuudet"
 
 #: includes/admin/class-wc-admin-attributes.php:344
+#: includes/admin/meta-boxes/class-wc-meta-box-order-actions.php:86
 msgid "Update"
 msgstr "Päivitä"
 
@@ -16642,7 +16612,7 @@ msgstr "Ominaisuuden polkutunnus/viite. Pituus korkeintaan 28 merkkiä."
 #: includes/admin/class-wc-admin-attributes.php:289
 #: includes/admin/class-wc-admin-attributes.php:370
 #: includes/admin/class-wc-admin-attributes.php:460
-#: includes/admin/settings/class-wc-settings-shipping.php:338
+#: includes/admin/settings/class-wc-settings-shipping.php:342
 #: includes/admin/settings/views/html-admin-page-shipping-classes.php:62
 msgid "Slug"
 msgstr "Polkutunnus"
@@ -16694,23 +16664,23 @@ msgstr "Polkutunnus \"%s\" on varattu järjestelmälle. Vaihda, ole hyvä."
 msgid "Slug \"%s\" is too long (28 characters max). Shorten it, please."
 msgstr "Polkutunnus \"%s\" ylittää max. pituuden (28 merkkiä). Lyhennä, ole hyvä."
 
-#: includes/admin/class-wc-admin-assets.php:290
+#: includes/admin/class-wc-admin-assets.php:291
 msgid "You cannot add the same tax rate twice!"
 msgstr "Et voi lisätä samaa veroprosenttia -veroa- kahdesti!"
 
-#: includes/admin/class-wc-admin-assets.php:289
+#: includes/admin/class-wc-admin-assets.php:290
 msgid "Are you sure you want to revoke access to this download?"
 msgstr "Haluatko varmasti estää tämän lataamisen?"
 
-#: includes/admin/class-wc-admin-assets.php:288
+#: includes/admin/class-wc-admin-assets.php:289
 msgid "Could not grant access - the user may already have permission for this file or billing email is not set. Ensure the billing email is set, and the order has been saved."
 msgstr "Pääsyä ei voitu asettaa – käyttäjällä on ehkä jo pääsy tähän tiedostoon tai laskutus sähköpostia ei ole asetettu. Varmista että tuo s-posti on asetettu ja tilaus on tallennettu."
 
-#: includes/admin/class-wc-admin-assets.php:264
+#: includes/admin/class-wc-admin-assets.php:265
 msgid "No customer selected"
 msgstr "Asiakasta ei valittu"
 
-#: includes/admin/class-wc-admin-assets.php:260
+#: includes/admin/class-wc-admin-assets.php:261
 #: includes/admin/class-wc-admin-post-types.php:267
 #: includes/admin/class-wc-admin-post-types.php:1797
 #: includes/admin/views/html-bulk-edit-product.php:199
@@ -16718,64 +16688,56 @@ msgstr "Asiakasta ei valittu"
 msgid "Featured"
 msgstr "Esittelyssä"
 
-#: includes/admin/class-wc-admin-assets.php:259
+#: includes/admin/class-wc-admin-assets.php:260
 msgid "Load the customer's shipping information? This will remove any currently entered shipping information."
 msgstr "Ladataanko asiakkaan toimitustustiedot? Tämä poistaa jo syötetyt toimitustiedot."
 
-#: includes/admin/class-wc-admin-assets.php:258
+#: includes/admin/class-wc-admin-assets.php:259
 msgid "Load the customer's billing information? This will remove any currently entered billing information."
 msgstr "Ladataanko asiakkaan laskutustiedot? Tämä poistaa jo syötetyt laskutustiedot."
 
-#: includes/admin/class-wc-admin-assets.php:257
+#: includes/admin/class-wc-admin-assets.php:258
 msgid "Copy billing information to shipping information? This will remove any currently entered shipping information."
 msgstr "Kopioi laskutusosoite toimitusosoitteeksi? Tämä korvaa jo syötetyn toimitusosoitteen."
 
 #: includes/admin/class-wc-admin-assets.php:256
-msgid "Calculate line taxes? This will calculate taxes based on the customers country. If no billing/shipping is set it will use the store base country."
-msgstr "Lasketaanko rivien verot? Tämä laskee veron asiakkaan sijainnin (maan) perusteella. Jos laskutus/toimitusosoitetta ei ole asetettu, käytetään kaupan sijaintia."
-
-#: includes/admin/class-wc-admin-assets.php:255
-msgid "Calculate totals based on order items, discounts, and shipping?"
-msgstr "Laske loppusummat tilauksen tuotteiden, -alennusten ja -toimituskulujen pohjalta?"
-
-#: includes/admin/class-wc-admin-assets.php:254
 msgid "Enter a name for the new attribute term:"
 msgstr "Kirjoita nimi uudelle ominaisuuden arvolle:"
 
-#: includes/admin/class-wc-admin-assets.php:253
+#: includes/admin/class-wc-admin-assets.php:255
 #: includes/admin/meta-boxes/views/html-product-attribute.php:82
 msgid "Used for variations"
 msgstr "Käytetään muunnelmissa"
 
-#: includes/admin/class-wc-admin-assets.php:252
+#: includes/admin/class-wc-admin-assets.php:254
 #: includes/admin/meta-boxes/views/html-product-attribute.php:76
 msgid "Visible on the product page"
 msgstr "Näkyy tuotesivulla"
 
-#: includes/admin/class-wc-admin-assets.php:251
+#: includes/admin/class-wc-admin-assets.php:253
 msgid "Enter some text, or some attributes by pipe (|) separating values."
 msgstr "Kirjoita tekstiä tai lisää ominaisuuksia. Erota pystyviivalla (|)."
 
-#: includes/admin/class-wc-admin-assets.php:250
+#: includes/admin/class-wc-admin-assets.php:252
 #: includes/admin/meta-boxes/views/html-product-attribute.php:24
 msgid "Value(s)"
 msgstr "Arvo(t)"
 
-#: includes/admin/class-wc-admin-assets.php:249
+#: includes/admin/class-wc-admin-assets.php:251
 #: includes/admin/meta-boxes/views/html-order-download-permission.php:10
 #: includes/admin/meta-boxes/views/html-product-attribute.php:4
 #: includes/admin/meta-boxes/views/html-variation-admin.php:17
 msgid "Click to toggle"
 msgstr "Vaihda tila painamalla"
 
-#: includes/admin/class-wc-admin-assets.php:248
+#: includes/admin/class-wc-admin-assets.php:250
 #: includes/admin/meta-boxes/views/html-product-attribute.php:3
 #: includes/admin/meta-boxes/views/html-variation-admin.php:16
 #: includes/admin/settings/views/html-admin-page-shipping-classes.php:48
 msgid "Remove"
 msgstr "Poista"
 
-#: includes/admin/class-wc-admin-assets.php:247
+#: includes/admin/class-wc-admin-assets.php:249
 #: includes/admin/class-wc-admin-attributes.php:280
 #: includes/admin/class-wc-admin-attributes.php:334
 #: includes/admin/class-wc-admin-attributes.php:369
@@ -16789,42 +16751,42 @@ msgstr "Poista"
 #: includes/admin/meta-boxes/views/html-product-data-general.php:61
 #: includes/admin/meta-boxes/views/html-variation-admin.php:320
 #: includes/admin/settings/views/html-webhooks-edit.php:15
-#: includes/admin/views/html-admin-page-status-report.php:551
+#: includes/admin/views/html-admin-page-status-report.php:556
 #: includes/widgets/class-wc-widget-product-categories.php:52
 #: templates/single-product-reviews.php:77
 msgid "Name"
 msgstr "Nimi"
 
-#: includes/admin/class-wc-admin-assets.php:246
+#: includes/admin/class-wc-admin-assets.php:248
 msgid "Remove this attribute?"
 msgstr "Poistetaanko tämä ominaisuus?"
 
-#: includes/admin/class-wc-admin-assets.php:245
+#: includes/admin/class-wc-admin-assets.php:247
 msgid "Remove this item meta?"
 msgstr "Poista kohteen lisätieto?"
 
-#: includes/admin/class-wc-admin-assets.php:244
+#: includes/admin/class-wc-admin-assets.php:246
 msgid "Are you sure you wish to delete this tax column? This action cannot be undone."
 msgstr "Oletko varma, että haluat poistaa tämän vero sarakkeen? Toimintoa ei voi perua."
 
-#: includes/admin/class-wc-admin-assets.php:243
+#: includes/admin/class-wc-admin-assets.php:245
 msgid "Are you sure you wish to delete this refund? This action cannot be undone."
 msgstr "Oletko varma, että haluat poistaa tämän hyvityksen? Toimintoa ei voi perua."
 
-#: includes/admin/class-wc-admin-assets.php:242
+#: includes/admin/class-wc-admin-assets.php:244
 msgid "Are you sure you wish to process this refund? This action cannot be undone."
 msgstr "Oletko varma, että haluat toteuttaa tämän hyvityksen? Toimintoa ei voi perua."
 
-#: includes/admin/class-wc-admin-assets.php:241
+#: includes/admin/class-wc-admin-assets.php:243
 msgid "Please select some items."
 msgstr "Valitse joitakin tuotteita, ole hyvä."
 
-#: includes/admin/class-wc-admin-assets.php:240
+#: includes/admin/class-wc-admin-assets.php:242
 msgid "Are you sure you want to remove the selected items? If you have previously reduced this item's stock, or this order was submitted by a customer, you will need to manually restore the item's stock."
 msgstr "Oletko varma, että haluat poistaa valitut tuotteet? Jos olet aiemmin vähentänyt tämän tuotteen varastosta tai asiakas teki tilauksen (jolloin varastoa vähennettiin), niin tuotteen varastosaldo on manuaalisesti korotettava."
 
 #: includes/admin/class-wc-admin-assets.php:222
-#: includes/admin/class-wc-admin-assets.php:359
+#: includes/admin/class-wc-admin-assets.php:360
 #: includes/admin/settings/views/html-webhooks-edit.php:54
 #: includes/class-wc-frontend-scripts.php:543
 msgid "Select an option&hellip;"
@@ -17090,7 +17052,7 @@ msgstr "Asiakkaan avain loppuu"
 #: includes/admin/class-wc-admin-post-types.php:286
 #: includes/admin/class-wc-admin-setup-wizard.php:248
 #: includes/admin/meta-boxes/views/html-variation-admin.php:307
-#: includes/admin/settings/class-wc-settings-shipping.php:339
+#: includes/admin/settings/class-wc-settings-shipping.php:343
 #: includes/admin/settings/views/html-admin-page-shipping-zone-methods.php:73
 #: includes/admin/settings/views/html-keys-edit.php:16
 #: includes/gateways/bacs/class-wc-gateway-bacs.php:86
@@ -17098,64 +17060,64 @@ msgstr "Asiakkaan avain loppuu"
 #: includes/gateways/cod/class-wc-gateway-cod.php:82
 #: includes/gateways/paypal/includes/settings-paypal.php:25
 #: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:204
-#: includes/wc-template-functions.php:1122
+#: includes/wc-template-functions.php:1140
 #: templates/single-product/tabs/description.php:25
 msgid "Description"
 msgstr "Kuvaus"
 
-#: includes/wc-template-functions.php:2539
+#: includes/wc-template-functions.php:2557
 msgid "out of 5"
 msgstr "/ 5"
 
-#: includes/wc-template-functions.php:2538
+#: includes/wc-template-functions.php:2556
 #: includes/widgets/class-wc-widget-layered-nav-filters.php:166
 #: includes/widgets/class-wc-widget-rating-filter.php:188
 msgid "Rated %s out of 5"
 msgstr "Arvostelu tuotteesta: %s / 5"
 
-#: includes/wc-template-functions.php:2554
+#: includes/wc-template-functions.php:2572
 msgctxt "min_price"
 msgid "From:"
 msgstr "Alkaen:"
 
-#: includes/abstracts/abstract-wc-product.php:1868
+#: includes/abstracts/abstract-wc-product.php:1866
 #: includes/admin/class-wc-admin-post-types.php:438
 #: includes/admin/class-wc-admin-reports.php:100
 #: includes/admin/reports/class-wc-report-stock.php:114
-#: includes/wc-product-functions.php:808
+#: includes/wc-product-functions.php:815
 msgid "Out of stock"
 msgstr "Varasto loppu"
 
-#: includes/abstracts/abstract-wc-product.php:1870 templates/cart/cart.php:91
+#: includes/abstracts/abstract-wc-product.php:1868 templates/cart/cart.php:91
 msgid "Available on backorder"
 msgstr "Ei varastossa, vain jälkitoimituksena"
 
-#: includes/wc-formatting-functions.php:978
+#: includes/wc-formatting-functions.php:979
 msgid "%s in stock"
 msgstr "%s varastossa"
 
-#: includes/wc-formatting-functions.php:983
+#: includes/wc-formatting-functions.php:984
 msgid "(can be backordered)"
 msgstr "(voidaan jälkitoimittaa)"
 
-#: includes/wc-formatting-functions.php:974
+#: includes/wc-formatting-functions.php:975
 msgid "Only %s left in stock"
 msgstr "Vain %s varastossa"
 
 #: includes/admin/class-wc-admin-post-types.php:436
 #: includes/admin/reports/class-wc-report-stock.php:112
-#: includes/wc-formatting-functions.php:968
-#: includes/wc-product-functions.php:807
+#: includes/wc-formatting-functions.php:969
+#: includes/wc-product-functions.php:814
 msgid "In stock"
 msgstr "Varastossa"
 
-#: includes/abstracts/abstract-wc-product.php:1716
+#: includes/abstracts/abstract-wc-product.php:1714
 #: includes/class-wc-embed.php:112 includes/class-wc-product-simple.php:54
 #: includes/class-wc-product-variable.php:60
 msgid "Read more"
 msgstr "Lue Lisää"
 
-#: includes/abstracts/abstract-wc-product.php:1707
+#: includes/abstracts/abstract-wc-product.php:1705
 #: includes/class-wc-product-simple.php:54
 msgid "Add to cart"
 msgstr "Lisää ostoskoriin"
@@ -17190,30 +17152,30 @@ msgstr "Tuotteen %1$s varastoa lisätty määrästä %2$s määrään %3$s."
 msgid "Order status changed from %1$s to %2$s."
 msgstr "Tilaus vaihdettu %1$s -tilasta %2$s -tilaan."
 
-#. #-#-#-#-#  tmp-woocommerce.pot (WooCommerce 3.0.3)  #-#-#-#-#
+#. #-#-#-#-#  woocommerce-code.pot (WooCommerce 3.0.6)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: includes/admin/class-wc-admin-assets.php:91
 #: includes/admin/class-wc-admin-menus.php:60
 #: includes/admin/meta-boxes/class-wc-meta-box-order-notes.php:50
 #: includes/admin/meta-boxes/class-wc-meta-box-order-notes.php:60
-#: includes/admin/wc-admin-functions.php:22 includes/class-wc-order.php:1448
-#: includes/class-wc-order.php:1449 includes/class-wc-webhook.php:395
+#: includes/admin/wc-admin-functions.php:22 includes/class-wc-order.php:1464
+#: includes/class-wc-order.php:1465 includes/class-wc-webhook.php:395
 #: includes/class-wc-webhook.php:396
 msgid "WooCommerce"
 msgstr "WooCommerce"
 
 #: includes/legacy/abstract-wc-legacy-order.php:504
-#: includes/wc-template-functions.php:2452 templates/myaccount/downloads.php:76
+#: includes/wc-template-functions.php:2470 templates/myaccount/downloads.php:76
 msgid "Download"
 msgstr "Lataa"
 
 #. translators: 1: current item count
 #: includes/legacy/abstract-wc-legacy-order.php:504
-#: includes/wc-template-functions.php:2452
+#: includes/wc-template-functions.php:2470
 msgid "Download %d"
 msgstr "Lataus %d"
 
-#: includes/abstracts/abstract-wc-order.php:1516
+#: includes/abstracts/abstract-wc-order.php:1535
 #: includes/admin/meta-boxes/views/html-order-item.php:97
 #: includes/admin/meta-boxes/views/html-order-item.php:143
 #: includes/shortcodes/class-wc-shortcode-checkout.php:144
@@ -17222,7 +17184,7 @@ msgid "Total:"
 msgstr "Yhteensä:"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:328
-#: includes/class-wc-order.php:1747
+#: includes/class-wc-order.php:1763
 #: includes/shortcodes/class-wc-shortcode-checkout.php:149
 #: templates/checkout/thankyou.php:63
 msgid "Payment method:"
@@ -17233,28 +17195,28 @@ msgstr "Maksutapa:"
 msgid "Fee"
 msgstr "Maksu"
 
-#: includes/abstracts/abstract-wc-order.php:1457
+#: includes/abstracts/abstract-wc-order.php:1476
 #: includes/admin/meta-boxes/views/html-order-items.php:131
 msgid "Shipping:"
 msgstr "Toimitus:"
 
-#: includes/abstracts/abstract-wc-order.php:1442
+#: includes/abstracts/abstract-wc-order.php:1461
 #: includes/admin/meta-boxes/views/html-order-items.php:121
 msgid "Discount:"
 msgstr "Alennus:"
 
-#: includes/abstracts/abstract-wc-order.php:1427
+#: includes/abstracts/abstract-wc-order.php:1446
 msgid "Subtotal:"
 msgstr "Välisumma:"
 
-#: includes/abstracts/abstract-wc-order.php:1402
+#: includes/abstracts/abstract-wc-order.php:1421
 #: includes/class-wc-cart.php:1614 includes/class-wc-product-grouped.php:100
 msgid "Free!"
 msgstr "Maksuton!"
 
 #. translators: 1: first name 2: last name
 #: includes/admin/class-wc-admin-post-types.php:621
-#: includes/class-wc-order.php:779 includes/class-wc-order.php:789
+#: includes/class-wc-order.php:785 includes/class-wc-order.php:795
 msgctxt "full name"
 msgid "%1$s %2$s"
 msgstr "%1$s %2$s"
@@ -17266,7 +17228,7 @@ msgstr "Jälkitoimitus"
 
 #: includes/admin/class-wc-admin-menus.php:80
 #: includes/admin/settings/class-wc-settings-api.php:45
-#: includes/admin/views/html-admin-page-status-report.php:432
+#: includes/admin/views/html-admin-page-status-report.php:437
 #: includes/class-wc-install.php:893
 msgid "Settings"
 msgstr "Asetukset"

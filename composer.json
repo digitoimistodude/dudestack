@@ -45,10 +45,6 @@
     {
       "type": "vcs",
       "url": "https://github.com/digitoimistodude/gulp-sitemap-generator"
-    },
-    {
-      "type": "vcs",
-      "url": "https://github.com/digitoimistodude/air-helper"
     }
   ],
   "require": {
@@ -65,8 +61,8 @@
     "wpackagist-plugin/sendgrid-email-delivery-simplified": "*",
     "wpackagist-plugin/wp-sanitize-accented-uploads": "*",
     "digitoimistodude/gulp-sitemap-generator":"dev-master",
-    "digitoimistodude/air-helper": "^1.0",
-    "johnpbloch/wordpress": "^4.7"
+    "johnpbloch/wordpress": "^4.7",
+    "digitoimistodude/air-helper": "*"
   },
   "extra": {
     "dropin-paths": {
@@ -82,8 +78,7 @@
         "wpackagist-plugin/sendgrid-email-delivery-simplified",
 	      "wpackagist-plugin/wp-sanitize-accented-uploads",
         "wpackagist-plugin/wp-cerber",
-        "digitoimistodude/gulp-sitemap-generator",
-        "digitoimistodude/air-helper"
+        "digitoimistodude/gulp-sitemap-generator"
       ],
       "content/plugins/{$name}/": ["type:wordpress-plugin"],
       "content/themes/{$name}/": ["type:wordpress-theme"]
