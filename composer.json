@@ -78,7 +78,8 @@
         "wpackagist-plugin/sendgrid-email-delivery-simplified",
 	      "wpackagist-plugin/wp-sanitize-accented-uploads",
         "wpackagist-plugin/wp-cerber",
-        "digitoimistodude/gulp-sitemap-generator"
+        "digitoimistodude/gulp-sitemap-generator",
+        "digitoimistodude/air-helper"
       ],
       "content/plugins/{$name}/": ["type:wordpress-plugin"],
       "content/themes/{$name}/": ["type:wordpress-theme"]
