@@ -294,14 +294,11 @@ echo "server {
     listen 80;
     #listen [::]:80 default ipv6only=on;
 
-    access_log /var/www/$PROJECTNAME/access.log;
-    error_log /var/www/$PROJECTNAME/error.log;
-
     root /var/www/$PROJECTNAME;
     index index.html index.htm index.php;
 
     server_name $PROJECTNAME.dev www.$PROJECTNAME.dev;
-    include hhvm.conf;
+    include php7.conf;
     include global/wordpress.conf;
 }" > "$HOME/Projects/marlin-vagrant/vhosts/$PROJECTNAME.dev"
 
