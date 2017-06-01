@@ -224,6 +224,8 @@ sed -i -e "s/database_password/YOUR_DEFAULT_DATABASE_PASSWORD_HERE/g" .env
 sed -i -e "s/database_host/localhost/g" .env
 sed -i -e "s/example.com/${PROJECTNAME}.dev/g" .env
 sed -i -e "s/example.com/${PROJECTNAME}.dev/g" .env
+echo -e '
+SENDGRID_API_KEY=YOUR_SENDGRID_API_KEY_HERE' >> .env
 
 # If you are using MAMP you may want to enable these:
 
