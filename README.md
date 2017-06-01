@@ -109,7 +109,7 @@ When you run `createproject` it looks like this:
 
 1. First it runs `composer create-project` with dudestack settings
 2. Installs default WordPress plugins and updates them
-3. Creates MySQL repository automatically with project name (assumes by default that you have [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant)) installed with default settings and paired with your host computer, for MAMP you'll need to edit createproject.sh and edit `YOURMAMPMYSQLPASSWORD`). **For nginx users**, please use `createproject_nginx.sh` and edit it to your needs or just use [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant)) which is just like [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant)) but with nginx + hhvm instead of apache + apc.
+3. Creates MySQL repository automatically with project name (assumes by default that you have [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant)) installed with default settings and paired with your host computer, for MAMP you'll need to edit createproject.sh and edit `YOURMAMPMYSQLPASSWORD`).
 4. Installs capistrano
 5. Generates capistrano configs (config/deploy.rb, config/deploy/staging.rb, config/deploy/production.rb) with your bitbucket details and paths
 6. Creates a Sublime Text 3 project

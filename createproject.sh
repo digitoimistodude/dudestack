@@ -38,7 +38,7 @@ cd $HOME/Projects/${PROJECTNAME}
 composer update
 echo "${yellow}Creating a MySQL database for ${PROJECTNAME}${txtreset}"
 # NOTE: this needs auto-login to local vm
-ssh vagrant@10.1.2.3 "mysql -u root -pvagrant -e \"CREATE DATABASE ${PROJECTNAME}\""
+ssh vagrant@10.1.2.4 "mysql -u root -pvagrant -e \"CREATE DATABASE ${PROJECTNAME}\""
 # For MAMP:
 #/Applications/MAMP/Library/bin/mysql -u root -pYOURMAMPMYSQLPASSWORD -e "create database ${PROJECTNAME}"
 echo "${boldgreen}Attempt to create MySQL database successful.${txtreset}"
@@ -211,9 +211,6 @@ cd "$HOME/Projects/$PROJECTNAME/"
 #rm CHANGELOG.md
 #rm CONTRIBUTING.md
 rm README.md
-rm createproject_nginx.sh
-rm createproject.sh
-rm .env.example
 #rm LICENSE.md
 echo "${yellow}Updating WordPress related stuff...:${txtreset}"
 cp $HOME/Projects/dudestack/composer.json "$HOME/Projects/$PROJECTNAME/composer.json"
@@ -227,6 +224,8 @@ sed -i -e "s/database_password/YOUR_DEFAULT_DATABASE_PASSWORD_HERE/g" .env
 sed -i -e "s/database_host/localhost/g" .env
 sed -i -e "s/example.com/${PROJECTNAME}.dev/g" .env
 sed -i -e "s/example.com/${PROJECTNAME}.dev/g" .env
+echo -e '
+SENDGRID_API_KEY=YOUR_SENDGRID_API_KEY_HERE' >> .env
 
 # If you are using MAMP you may want to enable these:
 
@@ -253,56 +252,35 @@ core install:
 
 # These syntaxes are for vagrant:
 
-ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp core install --title=$PROJECTNAME --admin_email=YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE"
+ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp core install --title=$PROJECTNAME --admin_email=YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE"
 echo "${yellow}Removing default WordPress posts...:${txtreset}"
-ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp post delete 1 --force"
-ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp post delete 2 --force"
-ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update blogdescription ''"
-ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp theme delete twentytwelve"
-ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp theme delete twentythirteen"
-ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update permalink_structure '/%postname%'"
-ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update timezone_string 'Europe/Helsinki'"
-ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update default_pingback_flag '0'"
+ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp post delete 1 --force"
+ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp post delete 2 --force"
+ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update blogdescription ''"
+ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp theme delete twentytwelve"
+ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp theme delete twentythirteen"
+ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update permalink_structure '/%postname%'"
+ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update timezone_string 'Europe/Helsinki'"
+ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update default_pingback_flag '0'"
 echo "${yellow}Activating necessary plugins, mainly for theme development...:${txtreset}"
-ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin activate wordpress-seo"
-ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin activate simple-history"
-ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin activate clean-image-filenames"
+ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin activate wordpress-seo"
+ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin activate simple-history"
+ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin activate clean-image-filenames"
 chmod 777 "$HOME/Projects/$PROJECTNAME/content"
 
 ## You can set up extra users here - if you want, uncomment next lines
 #####################################################################
 
 #echo "${yellow}Setting up users...:${txtreset}"
-#ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp user update admin --display_name=\"Your Company Ltd\""
-#ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp user update admin --first_name=\"Your Company Ltd\""
-#ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp user create user1 user1@yourcompanyltd.com --role=administrator --user_pass=somepass --first_name=John --last_name=Doe --display_name=John"
-#ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp user create user2 user2@yourcompanyltd.com --role=administrator --user_pass=somepass --first_name=Marilyn --last_name=Manson --display_name=Marilyn"
-
-echo "${yellow}Set up .htaccess for pretty urls...:${txtreset}"
-echo "<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
-RewriteRule ^index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
-</IfModule>
-
-AddType font/ttf .ttf
-AddType font/eot .eot
-AddType font/otf .otf
-AddType font/woff .woff
-
-<FilesMatch \"\.(ttf|otf|eot|woff)$\">
-    <IfModule mod_headers.c>
-        Header set Access-Control-Allow-Origin "*"
-    </IfModule>
-</FilesMatch>" > .htaccess
-chmod 777 .htaccess
+#ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp user update admin --display_name=\"Your Company Ltd\""
+#ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp user update admin --first_name=\"Your Company Ltd\""
+#ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp user create user1 user1@yourcompanyltd.com --role=administrator --user_pass=somepass --first_name=John --last_name=Doe --display_name=John"
+#ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp user create user2 user2@yourcompanyltd.com --role=administrator --user_pass=somepass --first_name=Marilyn --last_name=Manson --display_name=Marilyn"
 
 rm "$HOME/Projects/$PROJECTNAME/createproject.sh"
 rm "$HOME/Projects/$PROJECTNAME/createproject_nginx.sh"
 rm "$HOME/Projects/$PROJECTNAME/setup.sh"
+rm "$HOME/Projects/$PROJECTNAME/.env.example"
 echo "${yellow}Creating a bitbucket repo...${txtreset}"
 curl -X POST -v -u YOUR_BITBUCKET_ACCOUNT_HERE:YOUR_BITBUCKET_PASSWORD_HERE "https://api.bitbucket.org/2.0/repositories/YOUR_BITBUCKET_TEAM_HERE/${PROJECTNAME}" -H "Content-Type: application/json"  -d '{"is_private": true, "project": {"key": "PROJECTS'"${YEAR}"'"}}'
 
@@ -314,25 +292,24 @@ git add --all
 git commit -m 'First commit - project started'
 git push -u origin --all
 
-# If you are using MAMP instead of jolliest-vagrant, please comment out all but the last line:
-echo "<VirtualHost *:80>
+echo "server {
+    listen 80;
+    #listen [::]:80 default ipv6only=on;
 
-  ServerAdmin webmaster@$PROJECTNAME
-  ServerName  $PROJECTNAME.dev
-  ServerAlias www.$PROJECTNAME.dev
-  DirectoryIndex index.html index.php
-  DocumentRoot /var/www/$PROJECTNAME
-  LogLevel warn
-  ErrorLog  /var/www/$PROJECTNAME/error.log
-  CustomLog /var/www/$PROJECTNAME/access.log combined
+    root /var/www/$PROJECTNAME;
+    index index.html index.htm index.php;
 
-</VirtualHost>" > "$HOME/Projects/jolliest-vagrant/vhosts/$PROJECTNAME.dev.conf"
-echo "${boldgreen}Added vhost, $PROJECTNAME.dev.conf added to vagrant sites-enabled.${txtreset}"
+    server_name $PROJECTNAME.dev www.$PROJECTNAME.dev;
+    include php7.conf;
+    include global/wordpress.conf;
+}" > "$HOME/Projects/marlin-vagrant/vhosts/$PROJECTNAME.dev"
+
+echo "${boldgreen}Added vhost, $PROJECTNAME.dev added to vagrant sites-enabled.${txtreset}"
 echo "${yellow}Reprovisioning vagrant...${txtreset}"
-cd ~/Projects/jolliest-vagrant
+cd ~/Projects/marlin-vagrant
 vagrant provision
 echo "${boldgreen}VM provisioned, local environment up and running.${txtreset}"
 echo "${yellow}Updating hosts file...${txtreset}"
-sudo -- sh -c "echo 10.1.2.3 ${PROJECTNAME}.dev >> /etc/hosts"
+sudo -- sh -c "echo 10.1.2.4 ${PROJECTNAME}.dev >> /etc/hosts"
 echo "${boldgreen}All done! Start coding at http://${PROJECTNAME}.dev!${txtreset}"
 fi
