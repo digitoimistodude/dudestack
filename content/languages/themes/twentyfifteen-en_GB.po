@@ -7,7 +7,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/2.3.0-alpha\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: en_GB\n"
 "Project-Id-Version: Themes - Twenty Fifteen\n"
 
@@ -220,7 +220,7 @@ msgstr "Primary Menu"
 msgid "Proudly powered by %s"
 msgstr "Proudly powered by %s"
 
-#. #-#-#-#-#  twentyfifteen.pot (Twenty Fifteen 1.7)  #-#-#-#-#
+#. #-#-#-#-#  twentyfifteen.pot (Twenty Fifteen 1.8)  #-#-#-#-#
 #. Author URI of the plugin/theme
 #: footer.php:25
 msgid "https://wordpress.org/"

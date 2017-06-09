@@ -1,5 +1,5 @@
-# Translation of Twenty Ten in Finnish
-# This file is distributed under the same license as the Twenty Ten package.
+# Translation of Themes - Twenty Ten in Finnish
+# This file is distributed under the same license as the Themes - Twenty Ten package.
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2015-07-18 11:08:37+0000\n"
@@ -7,8 +7,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/2.1.0-alpha\n"
-"Project-Id-Version: Twenty Ten\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: fi\n"
+"Project-Id-Version: Themes - Twenty Ten\n"
 
 #. Description of the plugin/theme
 msgid "The 2010 theme for WordPress is stylish, customizable, simple, and readable -- make it yours with a custom menu, header image, and background. Twenty Ten supports six widgetized areas (two in the sidebar, four in the footer) and featured images (thumbnails for gallery posts and custom header images for posts and pages). It includes stylesheets for print and the admin Visual Editor, special styles for posts in the \"Asides\" and \"Gallery\" categories, and has an optional one-column page template that removes the sidebar."
@@ -367,7 +368,7 @@ msgstr "Valitettavasti etsimääsi ei löytynyt. Ehkä hakutoiminnosta voisi oll
 msgid "Not Found"
 msgstr "Ei löytynyt"
 
-#. #-#-#-#-#  twentyten.pot (Twenty Ten 2.2)  #-#-#-#-#
+#. #-#-#-#-#  twentyten.pot (Twenty Ten 2.3)  #-#-#-#-#
 #. Author URI of the plugin/theme
 #: footer.php:40
 msgid "https://wordpress.org/"

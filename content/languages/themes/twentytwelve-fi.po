@@ -7,7 +7,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/2.3.0-alpha\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: fi\n"
 "Project-Id-Version: Themes - Twenty Twelve\n"
 
@@ -312,7 +312,7 @@ msgstr "Emme valitettavasti löytäneet etsimääsi. Ehkä hakutoiminnosta on ap
 msgid "This is somewhat embarrassing, isn&rsquo;t it?"
 msgstr "Tämäpä on jokseenkin noloa."
 
-#. #-#-#-#-#  twentytwelve.pot (Twenty Twelve 2.2)  #-#-#-#-#
+#. #-#-#-#-#  twentytwelve.pot (Twenty Twelve 2.3)  #-#-#-#-#
 #. Author URI of the plugin/theme
 #: footer.php:16
 msgid "https://wordpress.org/"

@@ -1,5 +1,5 @@
-# Translation of Twenty Eleven in Finnish
-# This file is distributed under the same license as the Twenty Eleven package.
+# Translation of Themes - Twenty Eleven in Finnish
+# This file is distributed under the same license as the Themes - Twenty Eleven package.
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2016-02-21 15:33:52+0000\n"
@@ -7,8 +7,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/2.1.0-alpha\n"
-"Project-Id-Version: Twenty Eleven\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: fi\n"
+"Project-Id-Version: Themes - Twenty Eleven\n"
 
 #. Description of the plugin/theme
 msgid "The 2011 theme for WordPress is sophisticated, lightweight, and adaptable. Make it yours with a custom menu, header image, and background -- then go further with available theme options for light or dark color scheme, custom link colors, and three layout choices. Twenty Eleven comes equipped with a Showcase page template that transforms your front page into a showcase to show off your best content, widget support galore (sidebar, three footer areas, and a Showcase page widget area), and a custom \"Ephemera\" widget to display your Aside, Link, Quote, or Status posts. Included are styles for print and for the admin editor, support for featured images (as custom header images on posts and pages and as large images on featured \"sticky\" posts), and special styles for six different post formats."
@@ -142,13 +143,13 @@ msgstr "Vaalea"
 msgid "Overview"
 msgstr "Yleiskatsaus"
 
-#: inc/theme-options.php:120
-msgid "<a href=\"https://codex.wordpress.org/Appearance_Theme_Options_Screen\" target=\"_blank\">Documentation on Theme Options</a>"
-msgstr "<a href=\"https://codex.wordpress.org/Appearance_Theme_Options_Screen\" target=\"_blank\">Teema-asetusten dokumentaatio</a>"
-
 #: inc/theme-options.php:121
 msgid "<a href=\"https://wordpress.org/support/\" target=\"_blank\">Support Forums</a>"
 msgstr "<a href=\"https://wordpress.org/support/\" target=\"_blank\">Tukifoorumi</a>"
+
+#: inc/theme-options.php:120
+msgid "<a href=\"https://codex.wordpress.org/Appearance_Theme_Options_Screen\" target=\"_blank\">Documentation on Theme Options</a>"
+msgstr "<a href=\"https://codex.wordpress.org/Appearance_Theme_Options_Screen\" target=\"_blank\">Teema-asetusten dokumentaatio</a>"
 
 #: inc/theme-options.php:119
 msgid "For more information:"
@@ -309,14 +310,14 @@ msgid "Chessboard"
 msgstr "Shakkilauta"
 
 #. translators: header image description
-#: functions.php:196
-msgid "Trolley"
-msgstr "Raitiovaunu"
-
-#. translators: header image description
 #: functions.php:202
 msgid "Pine Cone"
 msgstr "Männynkäpy"
+
+#. translators: header image description
+#: functions.php:196
+msgid "Trolley"
+msgstr "Raitiovaunu"
 
 #. translators: header image description
 #: functions.php:190
@@ -574,7 +575,7 @@ msgstr "Emme valitettavasti löytäneet etsimääsi. Ehkä hakutoiminnosta tai a
 msgid "This is somewhat embarrassing, isn&rsquo;t it?"
 msgstr "Tämäpä on jokseenkin noloa."
 
-#. #-#-#-#-#  twentyeleven.pot (Twenty Eleven 2.5)  #-#-#-#-#
+#. #-#-#-#-#  twentyeleven.pot (Twenty Eleven 2.6)  #-#-#-#-#
 #. Author URI of the plugin/theme
 #: footer.php:28
 msgid "https://wordpress.org/"

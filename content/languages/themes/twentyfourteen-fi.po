@@ -7,7 +7,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/2.3.0-alpha\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: fi\n"
 "Project-Id-Version: Themes - Twenty Fourteen\n"
 
@@ -174,7 +174,7 @@ msgstr "Paranna sivustosi ulkoasua käyttämällä <a href=\"%s\">artikkelikuvia
 msgid "The home page features your choice of up to 6 posts prominently displayed in a grid or slider, controlled by a <a href=\"%1$s\">tag</a>; you can change the tag and layout in <a href=\"%2$s\">Appearance &rarr; Customize</a>. If no posts match the tag, <a href=\"%3$s\">sticky posts</a> will be displayed instead."
 msgstr "Etusivulla on valintasi mukaan enintään 6 nostettua artikkelia joko ruudukkona tai karusellina. Nostot valitaan <a href=\"%1$s\">avainsanan</a> perusteella; voit vaihtaa käytetyn avainsanan ja asettelun sivulta <a href=\"%2$s\">Ulkoasu &rarr; Mukauta</a>. Jos avainsanalla ei löydy yhtään artikkelia, <a href=\"%3$s\">kiinnitetyt artikkelit</a> näytetään niiden sijasta."
 
-#. #-#-#-#-#  twentyfourteen.pot (Twenty Fourteen 1.9)  #-#-#-#-#
+#. #-#-#-#-#  twentyfourteen.pot (Twenty Fourteen 2.0)  #-#-#-#-#
 #. Theme Name of the plugin/theme
 #: inc/customizer.php:142
 msgid "Twenty Fourteen"
@@ -432,7 +432,7 @@ msgstr "Näyttää siltä että täällä ei ole mitään. Kokeilepa hakua?"
 msgid "Not Found"
 msgstr "Ei löytynyt"
 
-#. #-#-#-#-#  twentyfourteen.pot (Twenty Fourteen 1.9)  #-#-#-#-#
+#. #-#-#-#-#  twentyfourteen.pot (Twenty Fourteen 2.0)  #-#-#-#-#
 #. Author URI of the plugin/theme
 #: footer.php:21
 msgid "https://wordpress.org/"
