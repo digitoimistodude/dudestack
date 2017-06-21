@@ -53,7 +53,7 @@ set :repo_url,  \"git@bitbucket.org:YOUR_BITBUCKET_ACCOUNT_HERE/$PROJECTNAME.git
 set :branch, :master
 set :log_level, :debug
 set :linked_files, %w{.env}
-set :linked_dirs, %w{content/uploads}
+set :linked_dirs, %w{media}
 set :composer_install_flags, '--no-dev --prefer-dist --no-scripts --optimize-autoloader'
 set :composer_roles, :all
 
