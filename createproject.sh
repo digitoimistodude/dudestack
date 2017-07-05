@@ -311,5 +311,5 @@ vagrant provision
 echo "${boldgreen}VM provisioned, local environment up and running.${txtreset}"
 echo "${yellow}Updating hosts file...${txtreset}"
 sudo -- sh -c "echo 10.1.2.4 ${PROJECTNAME}.dev >> /etc/hosts"
-echo "${boldgreen}All done! Start coding at http://${PROJECTNAME}.dev!${txtreset}"
+echo "${boldgreen}All done! Start coding at http://${PROJECTNAME}.dev!${txtreset} (Please note! no themes installed, so you may see a white page. We recommend air which is designed for dudestack: https://github.com/digitoimistodude/air)"
 fi
