@@ -14,20 +14,20 @@ white=$(tput setaf 7)
 txtreset=$(tput sgr0)
 
 while true; do
-echo "${boldyellow}Which vagrant you are using (Type: 1 for jolliest-vagrant or 2 for marlin-vagrant):${txtreset} "
+echo "${boldyellow}Which local environment you are using (Type: 1 for marlin-vagrant (nginx), 2 for native OS X (LEMP stack installed via homebrew)):${txtreset} "
 read choice
 echo
 
 case $choice in
      1)
-      choice="jolliest-vagrant"
-      vagrantip="10.1.2.3"
+      choice="marlin-vagrant"
+      vagrantip="10.1.2.4"
       break
       # Choose $choice
      ;;
      2)
-      choice="marlin-vagrant"
-      vagrantip="10.1.2.4"
+      choice="osxlemp"
+      vagrantip="127.0.0.1"
       break
       # Choose $choice
      ;;
@@ -35,13 +35,15 @@ case $choice in
      echo "${red}Please type either 1 or 2.${txtreset}
 
 Info:
-https://github.com/digitoimistodude/jolliest-vagrant
 https://github.com/digitoimistodude/marlin-vagrant
+https://medium.com/@rolle/moving-from-vagrant-to-a-lemp-stack-directly-on-a-macbook-pro-e935b1bc5a38
 ${txtreset}"
      ;;
 esac
 done
 
+if [ "$choice" == "marlin-vagrant" ] ;
+then
 echo "${boldyellow}Starting $choice... (type password if prompted)${txtreset} "
 cd ~/Projects/$choice && vagrant up --provision
 
@@ -56,11 +58,12 @@ done
 
 echo "${boldyellow}Pairing vagrant with your computer...${txtreset} "
 cat ~/.ssh/id_rsa.pub | ssh vagrant@$vagrantip 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys' && chmod -Rv 755 ~/.ssh && chmod 400 ~/.ssh/id_rsa
+fi
 
-echo "${boldyellow}Bitbucket account username:${txtreset} "
+echo "${boldyellow}Bitbucket account email:${txtreset} "
 read -e YOUR_BITBUCKET_ACCOUNT_HERE
 
-echo "${boldyellow}Bitbucket password username:${txtreset} "
+echo "${boldyellow}Bitbucket password:${txtreset} "
 read -e YOUR_BITBUCKET_PASSWORD_HERE
 
 echo "${boldyellow}Bitbucket team name (lowercase account name):${txtreset} "
@@ -97,11 +100,11 @@ echo "${boldyellow}Default admin email for WordPress:${txtreset} "
 read -e YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE
 
 echo "${boldyellow}Generating createscript with your information (requires root):${txtreset} "
-if [ $choice = "marlin-vagrant" ]
+if [ $choice == "marlin-vagrant" ]
 then
 sed -e "s;\YOUR_BITBUCKET_ACCOUNT_HERE;$YOUR_BITBUCKET_ACCOUNT_HERE;" -e "s;\YOUR_BITBUCKET_PASSWORD_HERE;$YOUR_BITBUCKET_PASSWORD_HERE;" -e "s;\YOUR_BITBUCKET_TEAM_HERE;$YOUR_BITBUCKET_TEAM_HERE;" -e "s;\YOUR_STAGING_SERVER_HERE;$YOUR_STAGING_SERVER_HERE;" -e "s;\YOUR_STAGING_USERNAME_HERE;$YOUR_STAGING_USERNAME_HERE;" -e "s;\YOUR_STAGING_SERVER_PASSWORD_HERE;$YOUR_STAGING_SERVER_PASSWORD_HERE;" -e "s;\YOUR_STAGING_SERVER_HOME_PATH_HERE;$YOUR_STAGING_SERVER_HOME_PATH_HERE;" -e "s;\YOUR_DEFAULT_DATABASE_USERNAME_HERE;$YOUR_DEFAULT_DATABASE_USERNAME_HERE;" -e "s;\YOUR_DEFAULT_DATABASE_PASSWORD_HERE;$YOUR_DEFAULT_DATABASE_PASSWORD_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE;" ~/Projects/dudestack/createproject_nginx.sh > ~/Projects/dudestack/createproject_generated.sh
 else
-sed -e "s;\YOUR_BITBUCKET_ACCOUNT_HERE;$YOUR_BITBUCKET_ACCOUNT_HERE;" -e "s;\YOUR_BITBUCKET_PASSWORD_HERE;$YOUR_BITBUCKET_PASSWORD_HERE;" -e "s;\YOUR_BITBUCKET_TEAM_HERE;$YOUR_BITBUCKET_TEAM_HERE;" -e "s;\YOUR_STAGING_SERVER_HERE;$YOUR_STAGING_SERVER_HERE;" -e "s;\YOUR_STAGING_USERNAME_HERE;$YOUR_STAGING_USERNAME_HERE;" -e "s;\YOUR_STAGING_SERVER_PASSWORD_HERE;$YOUR_STAGING_SERVER_PASSWORD_HERE;" -e "s;\YOUR_STAGING_SERVER_HOME_PATH_HERE;$YOUR_STAGING_SERVER_HOME_PATH_HERE;" -e "s;\YOUR_DEFAULT_DATABASE_USERNAME_HERE;$YOUR_DEFAULT_DATABASE_USERNAME_HERE;" -e "s;\YOUR_DEFAULT_DATABASE_PASSWORD_HERE;$YOUR_DEFAULT_DATABASE_PASSWORD_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE;" ~/Projects/dudestack/createproject.sh > ~/Projects/dudestack/createproject_generated.sh
+sed -e "s;\YOUR_BITBUCKET_ACCOUNT_HERE;$YOUR_BITBUCKET_ACCOUNT_HERE;" -e "s;\YOUR_BITBUCKET_PASSWORD_HERE;$YOUR_BITBUCKET_PASSWORD_HERE;" -e "s;\YOUR_BITBUCKET_TEAM_HERE;$YOUR_BITBUCKET_TEAM_HERE;" -e "s;\YOUR_STAGING_SERVER_HERE;$YOUR_STAGING_SERVER_HERE;" -e "s;\YOUR_STAGING_USERNAME_HERE;$YOUR_STAGING_USERNAME_HERE;" -e "s;\YOUR_STAGING_SERVER_PASSWORD_HERE;$YOUR_STAGING_SERVER_PASSWORD_HERE;" -e "s;\YOUR_STAGING_SERVER_HOME_PATH_HERE;$YOUR_STAGING_SERVER_HOME_PATH_HERE;" -e "s;\YOUR_DEFAULT_DATABASE_USERNAME_HERE;$YOUR_DEFAULT_DATABASE_USERNAME_HERE;" -e "s;\YOUR_DEFAULT_DATABASE_PASSWORD_HERE;$YOUR_DEFAULT_DATABASE_PASSWORD_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE;" ~/Projects/dudestack/osxlemp.sh > ~/Projects/dudestack/createproject_generated.sh
 fi
 
 sudo mv ~/Projects/dudestack/createproject_generated.sh /usr/local/bin/createproject
