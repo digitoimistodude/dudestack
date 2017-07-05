@@ -38,7 +38,7 @@ cd $HOME/Projects/${PROJECTNAME}
 composer update
 echo "${yellow}Creating a MySQL database for ${PROJECTNAME}${txtreset}"
 # NOTE: this needs auto-login to local vm
-ssh vagrant@10.1.2.4 "mysql -u root -pvagrant -e \"CREATE DATABASE ${PROJECTNAME}\""
+ssh vagrant@10.1.2.4 "mysql -u root -pYOUR_DEFAULT_DATABASE_PASSWORD_HERE -e \"CREATE DATABASE ${PROJECTNAME}\""
 # For MAMP:
 #/Applications/MAMP/Library/bin/mysql -u root -pYOURMAMPMYSQLPASSWORD -e "create database ${PROJECTNAME}"
 echo "${boldgreen}Attempt to create MySQL database successful.${txtreset}"
