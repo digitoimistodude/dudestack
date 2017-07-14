@@ -43,7 +43,7 @@ Despite the fact we love most of Bedrock, we noticed there are some things we do
 * Stuff were originally in `app/` by default, then in `web/`. We prefer `content/`, like it was `wp-content` for a reason. It describes it better, since we do not want this to be too programming-oriented, but more front end developer -friendly (for developing WordPress themes and functions)
 * Composer modifications, for installing more packages, like Finnish based language packs etc. that are not originally part of Bedrock
 * Automation. I mean composer's `create-project` is awesome, but we need more. You still need to do stuff after `create-project` and our `createproject` -starting script is designed for automating the rest.
-* Baked in local server environment for Vagrant, native OS X (MAMP or homebrew LEMP) and Docker
+* Baked in local server environment for Vagrant, native OS X (MAMP or homebrew LEMP)
 
 **You should modify things to your needs. Please note: This is not in any way tested with other people or or in different environments. Yet. Please address an issue if something goes south.**
 
@@ -59,12 +59,12 @@ Despite the fact we love most of Bedrock, we noticed there are some things we do
  - [Capistrano 3](http://capistranorb.com/) deployment templates bundled in createproject.sh
  - [Composer](https://getcomposer.org/) to take care of WordPress installation and plugin dependencies and updates
  - [Dotenv](https://github.com/vlucas/phpdotenv)-environments for development, staging and production
- - Support for MAMP, LEMP, Vagrant and Docker development environments (mainly Vagrant and Docker supported)
+ - Support for MAMP, LEMP and Vagrant development environments (mainly Vagrant supported for now)
 
 ## Requirements
 
 * Basic knowledge about bash scripting, deployment with capistrano, npm packages, bundle, composer etc.
-* Vagrant ([marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant)), but can be configured for MAMP, Lemp or Docker too
+* Vagrant ([marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant)), but can be configured for MAMP or LEMP too (Docker in planning)
 * Bitbucket account
 * Unix-based OS (built for Mac OS X by default)
 * Access to staging and production servers that supports sftp and git
