@@ -29,7 +29,7 @@ composer create-project -n ronilaukkarinen/dudestack $HOME/Projects/${PROJECTNAM
 cd $HOME/Projects/${PROJECTNAME}
 composer update
 echo "${yellow}Creating a MySQL database for ${PROJECTNAME}${txtreset}"
-mysql -u root -pYOUR_DEFAULT_DATABASE_PASSWORD_HERE -e "CREATE DATABASE ${PROJECTNAME}"
+mysql -u root -p'YOUR_DEFAULT_DATABASE_PASSWORD_HERE' -e "CREATE DATABASE ${PROJECTNAME}"
 echo "${boldgreen}Attempt to create MySQL database successful.${txtreset}"
 echo "${yellow}Installing Capistrano in the project directory${txtreset}"
 cap install

@@ -87,7 +87,7 @@ read -e YOUR_STAGING_SERVER_PUBLIC_PATH_HERE
 echo "${boldyellow}Default MySQL-username (default: 'root'):${txtreset} "
 read -e YOUR_DEFAULT_DATABASE_USERNAME_HERE
 
-echo "${boldyellow}Default MySQL-password (default: 'vagrant'):${txtreset} "
+echo "${boldyellow}Default MySQL-password (do not use / or \ characters, it may break the script):${txtreset} "
 read -e YOUR_DEFAULT_DATABASE_PASSWORD_HERE
 
 echo "${boldyellow}Default admin username for WordPress:${txtreset} "
