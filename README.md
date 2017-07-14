@@ -1,8 +1,15 @@
 # Dudestack
-[![Packagist](https://img.shields.io/packagist/v/ronilaukkarinen/wpstack-rolle.svg?style=flat-square)](https://packagist.org/packages/ronilaukkarinen/dudestack)
-[![Build Status](https://img.shields.io/travis/digitoimistodude/dudestack.svg?style=flat-square)](https://travis-ci.org/digitoimistodude/dudestack)
+[![Packagist](https://img.shields.io/packagist/v/ronilaukkarinen/wpstack-rolle.svg?style=flat-square)](https://packagist.org/packages/ronilaukkarinen/dudestack) [![Build Status](https://img.shields.io/travis/digitoimistodude/dudestack.svg?style=flat-square)](https://travis-ci.org/digitoimistodude/dudestack)
 
 Dudestack is a modern WordPress toolkit that helps you get started with the best development tools and project structure - just like [Bedrock](https://github.com/roots/bedrock).
+
+The idea is to have just one command for starting the project. After initial setup, you can start just by running:
+
+```` bash
+createproject
+````
+
+Saves 10 hours easily in each project start when *Dont-Repeat-Yourself* -stuff are fully automated!
 
 ## Table of contents
 
@@ -35,7 +42,7 @@ Despite the fact we love most of Bedrock, we noticed there are some things we do
 
 * Stuff were originally in app/ by default. We prefer content/, like it was `wp-content` for a reason. It describes it better, since we do not want this to be too programming-oriented, but more front end developer -friendly (for developing WordPress themes and functions)
 * Composer modifications, for installing more packages, like Finnish based language packs etc. that are not originally part of Bedrock
-* Automation. I mean composer's `create-project` is awesome, but we need more. You still need to do stuff after `create-project` and our createproject -starting script is designed for automating the rest.
+* Automation. I mean composer's `create-project` is awesome, but we need more. You still need to do stuff after `create-project` and our `createproject` -starting script is designed for automating the rest.
 
 **You should modify things to your needs. Please note: This is not in any way tested with other people or or in different environments. Yet. Please address an issue if something goes south.**
 
@@ -136,9 +143,7 @@ When you run `createproject` it looks like this:
 
 1. Everything assumes your projects are in **~/Projects**. You should make sure that folder exists. You can also decide to use another folder, but then you need a lot of search&replace and using this would be quite pointless.
 2. Run [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant) (if you use MAMP Pro server, you need to edit createproject.sh accordingly)
-3. Edit `createproject.sh` and `composer.json` based on your own needs
-4. Please do a lot of other editing if you need. It will eventually shape to the right form.
-5. **Optional**: Get gulpfile.js and package.json from [devpackages](https://github.com/digitoimistodude/devpackages), edit them to your needs, run `npm install && npm-check-updates -u && npm update && gulp watch` and start developing your theme/plugin.
+3. Edit `createproject.sh` and `composer.json` based on your own needs.
 
 To start a new project, run `createproject` and have fun.
 
