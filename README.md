@@ -11,6 +11,8 @@ createproject
 
 Saves 10 hours easily in each project start when *Dont-Repeat-Yourself* -stuff are fully automated!
 
+**TL;DR:** You can test this right away in just two minutes by following our [Air starter theme instructions](https://github.com/digitoimistodude/air#air-development).
+
 ## Table of contents
 
 1. [Background](#background)
