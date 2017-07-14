@@ -3,15 +3,15 @@
 
 Dudestack is a modern WordPress toolkit that helps you get started with the best development tools and project structure - just like [Bedrock](https://github.com/roots/bedrock).
 
-The idea is to have just one command for starting the project. After initial setup, you can start just by running:
+The idea is to have just one command for starting the project. Saves 10 hours easily in each project start when *Dont-Repeat-Yourself* -stuff are fully automated! 
+
+After setting up, you can start a new project just by running:
 
 ```` bash
 createproject
 ````
 
-Saves 10 hours easily in each project start when *Dont-Repeat-Yourself* -stuff are fully automated!
-
-**TL;DR:** You can test this right away in just two minutes by following our [Air starter theme instructions](https://github.com/digitoimistodude/air#air-development).
+**TL;DR:** You can test dudestack right away in just two minutes by following our [Air starter theme instructions](https://github.com/digitoimistodude/air#air-development).
 
 ## Table of contents
 
