@@ -58,7 +58,7 @@ Despite the fact we love most of Bedrock, we noticed there are some things we do
  - Automatic Bitbucket repo initializition
  - Automatic Project-related host settings for vagrant
  - Cleaning default WordPress stuff with wp-cli
- - [Capistrano 3](http://capistranorb.com/) deployment templates bundled in createproject.sh
+ - [Capistrano 3](http://capistranorb.com/) deployment templates bundled in bin/createproject.sh
  - [Composer](https://getcomposer.org/) to take care of WordPress installation and plugin dependencies and updates
  - [Dotenv](https://github.com/vlucas/phpdotenv)-environments for development, staging and production
  - Support for MAMP, LEMP and Vagrant development environments (mainly Vagrant supported for now)
@@ -79,7 +79,7 @@ Despite the fact we love most of Bedrock, we noticed there are some things we do
 # Installation
 
 1. Clone this repo to your ~/Projects directory
-2. Go to dudestack directory and run setup script (`cd ~/Projects/dudestack && sh setup.sh`).
+2. Go to dudestack directory and run setup script (`cd ~/Projects/dudestack && sh bin/setup.sh`).
 3. Edit `/usr/bin/createproject` to your needs. See [documentation](#documentation) and **[Getting started](#getting-started)**.
 
 If you are using vagrant, you need to "pair" your machine with the VM (I presume you are already set up keypairs, if not, run without password: `ssh-keygen -t rsa`), marlin-vagrant example:
@@ -119,13 +119,13 @@ When you run `createproject` it looks like this:
 
 1. First it runs `composer create-project` with dudestack settings
 2. Installs default WordPress plugins and updates them
-3. Creates MySQL repository automatically with project name (assumes by default that you have [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant)) installed with default settings and paired with your host computer, for MAMP you'll need to edit createproject.sh and edit `YOURMAMPMYSQLPASSWORD`).
+3. Creates MySQL repository automatically with project name (assumes by default that you have [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant)) installed with default settings and paired with your host computer, for MAMP you'll need to edit bin/createproject.sh and edit `YOURMAMPMYSQLPASSWORD`).
 4. Installs capistrano
 5. Generates capistrano configs (config/deploy.rb, config/deploy/staging.rb, config/deploy/production.rb) with your bitbucket details and paths
 6. Creates a Sublime Text 3 project
 7. Sets up WordPress configs and salts automatically
 8. Installs WordPress under its own subdirectory /wp (thus, admin located in example.dev/wp/wp-admin)
-9. Sets up default admin user (extra users can be configured in createproject.sh)
+9. Sets up default admin user (extra users can be configured in bin/createproject.sh)
 10. Removes default WordPress posts, themes and plugins
 11. Activates default plugins, timezones, permalinks
 12. Updates .htaccess, adds support for mod_rewrite/permalinks and webfonts
@@ -136,7 +136,7 @@ When you run `createproject` it looks like this:
 
 ### What you most probably need to edit in every project
 
-- Production server SSH-credentials and paths in config/deploy/production.rb because they are usually different in every project. If you have the same directory structure on your servers, you can edit createproject.sh so you don't repeat yourself in every project.
+- Production server SSH-credentials and paths in config/deploy/production.rb because they are usually different in every project. If you have the same directory structure on your servers, you can edit bin/createproject.sh so you don't repeat yourself in every project.
 - You will need gulp or grunt, feel free to use [our devpackages - gulpfile and npm package settings etc.](https://github.com/digitoimistodude/devpackages) designed for this purpose
 
 **Note:**
@@ -145,7 +145,7 @@ When you run `createproject` it looks like this:
 ## Getting started
 
 1. Everything assumes your projects are in **~/Projects**. You should make sure that folder exists. You can also decide to use another folder, but then you need a lot of search&replace and using this would be quite pointless.
-2. Run [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant) (if you use MAMP Pro server, you need to edit createproject.sh accordingly)
+2. Run [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant) (if you use MAMP Pro server, you need to edit bin/createproject.sh accordingly)
 3. Edit `createproject.sh` and `composer.json` based on your own needs.
 
 To start a new project, run `createproject` and have fun.
