@@ -1,6 +1,6 @@
 #!/bin/bash
-# Project starting bash script for OS X native LEMP by rolle.
-# More info: https://github.com/digitoimistodude/osx-lemp-setup
+# Project starting bash script for Docker by rolle.
+# More info: https://github.com/digitoimistodude/dudestack-docker
 
 # Helpers:
 currentfile=`basename $0`
@@ -27,10 +27,11 @@ read -e PROJECTNAME
 cd $HOME/Projects/dudestack
 composer create-project -n ronilaukkarinen/dudestack $HOME/Projects/${PROJECTNAME} dev-master
 cd $HOME/Projects/${PROJECTNAME}
-composer update
-echo "${yellow}Creating a MySQL database for ${PROJECTNAME}${txtreset}"
-mysql -u root -p'YOUR_DEFAULT_DATABASE_PASSWORD_HERE' -e "CREATE DATABASE ${PROJECTNAME}"
-echo "${boldgreen}Attempt to create MySQL database successful.${txtreset}"
+git clone git@github.com:digitoimistodude/dudestack-docker.git $HOME/Projects/dudestack-docker
+cp -R $HOME/Projects/dudestack-docker/* $HOME/Projects/${PROJECTNAME}
+echo "${yellow}Updating .dev url in docker-compose.yml...:${txtreset}"
+sed -i -e "s/PROJECTNAME/${PROJECTNAME}/g" docker-compose.yml
+docker-compose up -d
 echo "${yellow}Installing Capistrano in the project directory${txtreset}"
 cap install
 echo "${boldgreen}Capistrano installed${txtreset}"
@@ -200,7 +201,7 @@ echo "${yellow}Updating WordPress related stuff...:${txtreset}"
 cp $HOME/Projects/dudestack/composer.json "$HOME/Projects/$PROJECTNAME/composer.json"
 cd "$HOME/Projects/$PROJECTNAME/"
 rm -rf .git
-composer update
+sh bin/composer.sh update
 echo "${yellow}Updating .env (db credentials)...:${txtreset}"
 sed -i -e "s/database_name/${PROJECTNAME}/g" .env
 sed -i -e "s/database_user/YOUR_DEFAULT_DATABASE_USERNAME_HERE/g" .env
@@ -222,21 +223,21 @@ core install:
   title: \"${PROJECTNAME}\"" > wp-cli.yml
 
 
-cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp core install --title=$PROJECTNAME --admin_email=YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE
+docker-compose exec --user www-data phpfpm ./vendor/wp-cli/wp-cli/bin/wp core install --title=$PROJECTNAME --admin_email=YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE
 echo "${yellow}Removing default WordPress posts...:${txtreset}"
-cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp post delete 1 --force
-cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp post delete 2 --force
-cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update blogdescription ''
-cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp theme delete twentytwelve
-cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp theme delete twentythirteen
-cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update permalink_structure '/%postname%'
-cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update timezone_string 'Europe/Helsinki'
-cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update default_pingback_flag '0'
+docker-compose exec --user www-data phpfpm ./vendor/wp-cli/wp-cli/bin/wp post delete 1 --force
+docker-compose exec --user www-data phpfpm ./vendor/wp-cli/wp-cli/bin/wp post delete 2 --force
+docker-compose exec --user www-data phpfpm ./vendor/wp-cli/wp-cli/bin/wp option update blogdescription ''
+docker-compose exec --user www-data phpfpm ./vendor/wp-cli/wp-cli/bin/wp theme delete twentytwelve
+docker-compose exec --user www-data phpfpm ./vendor/wp-cli/wp-cli/bin/wp theme delete twentythirteen
+docker-compose exec --user www-data phpfpm ./vendor/wp-cli/wp-cli/bin/wp option update permalink_structure '/%postname%'
+docker-compose exec --user www-data phpfpm ./vendor/wp-cli/wp-cli/bin/wp option update timezone_string 'Europe/Helsinki'
+docker-compose exec --user www-data phpfpm ./vendor/wp-cli/wp-cli/bin/wp option update default_pingback_flag '0'
 #echo "${yellow}Activating necessary plugins, mainly for theme development...:${txtreset}"
-#cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin activate wordpress-seo
-#cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin activate simple-history
-#cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin activate clean-image-filenames
-chmod -R 775 /var/www/$PROJECTNAME/content
+#docker-compose exec --user www-data phpfpm ./vendor/wp-cli/wp-cli/bin/wp plugin activate wordpress-seo
+#docker-compose exec --user www-data phpfpm ./vendor/wp-cli/wp-cli/bin/wp plugin activate simple-history
+#docker-compose exec --user www-data phpfpm ./vendor/wp-cli/wp-cli/bin/wp plugin activate clean-image-filenames
+docker-compose exec --user root phpfpm chmod -R 775 content
 
 rm "$HOME/Projects/$PROJECTNAME/.env.example"
 echo "${yellow}Creating a bitbucket repo...${txtreset}"
@@ -250,22 +251,5 @@ git add --all
 git commit -m 'First commit - project started'
 git push -u origin --all
 
-sudo echo "server {
-    listen 80;
-    root /var/www/$PROJECTNAME;
-    index index.html index.htm index.php;
-    server_name $PROJECTNAME.dev www.$PROJECTNAME.dev;
-    include php7.conf;
-    include global/wordpress.conf;
-}" > "/etc/nginx/sites-available/$PROJECTNAME.dev"
-sudo ln -s /etc/nginx/sites-available/$PROJECTNAME.dev /etc/nginx/sites-enabled/$PROJECTNAME.dev
-
-echo "${boldgreen}Added vhost, $PROJECTNAME.dev added to /etc/nginx/sites-enabled/${txtreset}"
-echo "${yellow}Restarting nginx...${txtreset}"
-sudo launchctl unload /Library/LaunchDaemons/homebrew.mxcl.nginx.plist
-sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.nginx.plist
-echo "${boldgreen}Local environment up and running.${txtreset}"
-echo "${yellow}Updating hosts file...${txtreset}"
-sudo -- sh -c "echo 127.0.0.1 ${PROJECTNAME}.dev >> /etc/hosts"
 echo "${boldgreen}All done! Start coding at http://${PROJECTNAME}.dev!${txtreset} (Please note! no themes installed, so you may see a white page. We recommend air which is designed for dudestack: https://github.com/digitoimistodude/air)"
 fi

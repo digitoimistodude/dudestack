@@ -262,11 +262,11 @@ ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp them
 ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update permalink_structure '/%postname%'"
 ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update timezone_string 'Europe/Helsinki'"
 ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update default_pingback_flag '0'"
-echo "${yellow}Activating necessary plugins, mainly for theme development...:${txtreset}"
-ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin activate wordpress-seo"
-ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin activate simple-history"
-ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin activate clean-image-filenames"
-chmod 777 "$HOME/Projects/$PROJECTNAME/content"
+#echo "${yellow}Activating necessary plugins, mainly for theme development...:${txtreset}"
+#ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin activate wordpress-seo"
+#ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin activate simple-history"
+#ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin activate clean-image-filenames"
+chmod -R 775 $HOME/Projects/$PROJECTNAME/content
 
 ## You can set up extra users here - if you want, uncomment next lines
 #####################################################################
@@ -277,7 +277,6 @@ chmod 777 "$HOME/Projects/$PROJECTNAME/content"
 #ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp user create user1 user1@yourcompanyltd.com --role=administrator --user_pass=somepass --first_name=John --last_name=Doe --display_name=John"
 #ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp user create user2 user2@yourcompanyltd.com --role=administrator --user_pass=somepass --first_name=Marilyn --last_name=Manson --display_name=Marilyn"
 
-rm -rf "$HOME/Projects/$PROJECTNAME/bin/createproject.sh"
 rm "$HOME/Projects/$PROJECTNAME/.env.example"
 echo "${yellow}Creating a bitbucket repo...${txtreset}"
 curl -X POST -v -u YOUR_BITBUCKET_ACCOUNT_HERE:YOUR_BITBUCKET_PASSWORD_HERE "https://api.bitbucket.org/2.0/repositories/YOUR_BITBUCKET_TEAM_HERE/${PROJECTNAME}" -H "Content-Type: application/json"  -d '{"is_private": true, "project": {"key": "PROJECTS'"${YEAR}"'"}}'
