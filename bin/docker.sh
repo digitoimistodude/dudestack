@@ -31,7 +31,7 @@ git clone git@github.com:digitoimistodude/dudestack-docker.git $HOME/Projects/du
 cp -R $HOME/Projects/dudestack-docker/* $HOME/Projects/${PROJECTNAME}
 echo "${yellow}Updating .dev url in docker-compose.yml...:${txtreset}"
 sed -i -e "s/PROJECTNAME/${PROJECTNAME}/g" docker-compose.yml
-docker-compose up -d
+docker-compose up --build -d
 echo "${yellow}Installing Capistrano in the project directory${txtreset}"
 cap install
 echo "${boldgreen}Capistrano installed${txtreset}"
@@ -204,9 +204,9 @@ rm -rf .git
 sh bin/composer.sh update
 echo "${yellow}Updating .env (db credentials)...:${txtreset}"
 sed -i -e "s/database_name/${PROJECTNAME}/g" .env
-sed -i -e "s/database_user/YOUR_DEFAULT_DATABASE_USERNAME_HERE/g" .env
-sed -i -e "s/database_password/YOUR_DEFAULT_DATABASE_PASSWORD_HERE/g" .env
-sed -i -e "s/database_host/localhost/g" .env
+sed -i -e "s/database_user/wordpress/g" .env
+sed -i -e "s/database_password/docker/g" .env
+sed -i -e "s/database_host/mysql/g" .env
 sed -i -e "s/example.com/${PROJECTNAME}.dev/g" .env
 sed -i -e "s/example.com/${PROJECTNAME}.dev/g" .env
 echo '
@@ -250,6 +250,7 @@ git remote add origin git@bitbucket.org:YOUR_BITBUCKET_TEAM_HERE/$PROJECTNAME.gi
 git add --all
 git commit -m 'First commit - project started'
 git push -u origin --all
-
+docker-compose stop
+docker-compose up -d
 echo "${boldgreen}All done! Start coding at http://${PROJECTNAME}.dev!${txtreset} (Please note! no themes installed, so you may see a white page. We recommend air which is designed for dudestack: https://github.com/digitoimistodude/air)"
 fi
