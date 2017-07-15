@@ -20,7 +20,8 @@ Type:
 
 1 for marlin-vagrant: https://github.com/digitoimistodude/marlin-vagrant
 2 for native OS X: https://github.com/digitoimistodude/osx-lemp-setup
-3 for Docker: https://github.com/digitoimistodude/dudestack-docker"
+3 for Docker: https://github.com/digitoimistodude/dudestack-docker
+"
 read choice
 echo
 
