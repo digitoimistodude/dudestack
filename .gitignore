@@ -23,7 +23,6 @@ vendor/
 vendor/*
 !vendor/.gitkeep
 node_modules/
-bin
 .vagrant
 config/deploy/
 wp-cli.yml
