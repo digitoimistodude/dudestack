@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the Plugins - bbPress - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-11-10 01:47:55+0000\n"
+"PO-Revision-Date: 2017-03-01 09:05:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/2.3.0-alpha\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: en_GB\n"
 "Project-Id-Version: Plugins - bbPress - Stable (latest release)\n"
 
@@ -53,9 +53,9 @@ msgstr "bbPress"
 msgid "bbPress is forum software with a twist from the creators of WordPress."
 msgstr "bbPress is forum software with a twist from the creators of WordPress."
 
-#. #-#-#-#-#  tmp-bbpress.pot (bbPress 2.5.12)  #-#-#-#-#
+#. #-#-#-#-#  bbpress-code.pot (bbPress 2.5.13)  #-#-#-#-#
 #. Plugin URI of the plugin/theme
-#. #-#-#-#-#  tmp-bbpress.pot (bbPress 2.5.12)  #-#-#-#-#
+#. #-#-#-#-#  bbpress-code.pot (bbPress 2.5.13)  #-#-#-#-#
 #. Author URI of the plugin/theme
 msgid "https://bbpress.org"
 msgstr "https://bbpress.org"
@@ -1777,11 +1777,11 @@ msgstr "Create a discussion forum to allow members of this group to communicate 
 msgid "Group Forum Settings"
 msgstr "Group Forum Settings"
 
-#: includes/extend/buddypress/activity.php:565
+#: includes/extend/buddypress/activity.php:566
 msgid "%1$s replied to the topic %2$s in the forum %3$s"
 msgstr "%1$s replied to the topic %2$s in the forum %3$s"
 
-#: includes/extend/buddypress/activity.php:420
+#: includes/extend/buddypress/activity.php:421
 msgid "%1$s started the topic %2$s in the forum %3$s"
 msgstr "%1$s started the topic %2$s in the forum %3$s"
 
@@ -2163,7 +2163,7 @@ msgstr "No forums available"
 msgid "No topics available"
 msgstr "No topics available"
 
-#: includes/common/functions.php:2024
+#: includes/common/functions.php:2026
 msgid "Conditional query tags do not work before the query is run. Before then, they always return false."
 msgstr "Conditional query tags do not work before the query is run. Before then, they always return false."
 
@@ -3822,7 +3822,7 @@ msgstr "Users &amp; Moderation"
 msgid "Topic Tag"
 msgid_plural "Topic Tags"
 msgstr[0] "Topic Tag"
-msgstr[1] ""
+msgstr[1] "Topic Tags"
 
 #: includes/admin/metaboxes.php:84 includes/admin/settings.php:325
 #: includes/replies/template.php:49 includes/replies/template.php:1621
@@ -3920,7 +3920,7 @@ msgstr "Creator"
 #: includes/admin/forums.php:411 includes/admin/settings.php:230
 #: includes/admin/settings.php:251 includes/admin/topics.php:634
 #: includes/core/theme-compat.php:646
-#: includes/extend/buddypress/activity.php:355
+#: includes/extend/buddypress/activity.php:356
 #: includes/forums/template.php:2665 includes/replies/template.php:47
 #: includes/replies/template.php:48
 #: templates/default/bbpress/content-statistics.php:32
@@ -3933,7 +3933,7 @@ msgstr "Replies"
 
 #: includes/admin/forums.php:410 includes/admin/settings.php:222
 #: includes/admin/settings.php:243 includes/admin/topics.php:632
-#: includes/extend/buddypress/activity.php:354
+#: includes/extend/buddypress/activity.php:355
 #: includes/forums/template.php:2601 includes/topics/template.php:47
 #: includes/topics/template.php:48
 #: templates/default/bbpress/content-statistics.php:27

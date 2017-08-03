@@ -62,7 +62,7 @@
     "wpackagist-plugin/wp-sanitize-accented-uploads": "*",
     "wpackagist-plugin/query-monitor": "*",
     "digitoimistodude/gulp-sitemap-generator":"dev-master",
-    "johnpbloch/wordpress": "4.8.0",
+    "johnpbloch/wordpress": "4.8.1",
     "digitoimistodude/air-helper": "*"
   },
   "extra": {

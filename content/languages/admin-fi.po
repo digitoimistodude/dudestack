@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.8.x - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-06-06 06:24:39+0000\n"
+"PO-Revision-Date: 2017-07-28 11:00:29+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -226,6 +226,10 @@ msgstr "Uusia herkkuja kehittäjille %s"
 msgid "Sorry, you are not allowed to delete users."
 msgstr "Sinulla ei ole oikeuksia poistaa käyttäjiä."
 
+#: wp-admin/user-new.php:23 wp-admin/user-new.php:117
+msgid "Sorry, you are not allowed to create users."
+msgstr "Sinulla ei ole oikeuksia muokata kyseistä käyttäjää."
+
 #: wp-admin/customize.php:163
 msgid "The Customizer allows you to preview changes to your site before publishing them. You can navigate to different pages on your site within the preview. Edit shortcuts are shown for some editable elements."
 msgstr "Mukautin sallii sinun esikatsella sivustosi muutoksia ennen niiden julkaisua. Voit navigoida eri sivuille esikatsellessasi sivustoasi. Muokkaamisen pikalinkit näytetään joillekin muokattaville kohteille."
@@ -241,7 +245,7 @@ msgstr "Laajenna sivupalkki"
 
 #: wp-admin/nav-menus.php:814
 msgid "Display location"
-msgstr "Näytä sijainti"
+msgstr "Näytä valikko sijainnissa"
 
 #. translators: 1: user id, 2: user login
 #: wp-admin/users.php:378
@@ -466,9 +470,9 @@ msgstr "Asennettujen lisäosien haku etsii hakusanoilla lisäosan nimestä, kuva
 msgid "Custom Logo"
 msgstr "Oma logo"
 
-#: wp-admin/user-new.php:23 wp-admin/user-new.php:117
-msgid "Sorry, you are not allowed to create users."
-msgstr "Sinulla ei ole oikeutta luoda uusia käyttäjiä."
+#: wp-admin/users.php:317 wp-admin/users.php:348
+msgid "Sorry, you are not allowed to remove users."
+msgstr "Sinulla ei ole oikeutta poistaa käyttäjiä."
 
 #: wp-admin/user-new.php:16 wp-admin/user-new.php:56
 msgid "Sorry, you are not allowed to add users to this network."
@@ -660,10 +664,6 @@ msgstr "Tämä korvaa tekstieditorin sisällön viimeisimmän varmuuskopion sis�
 #: wp-admin/includes/template.php:1523
 msgid "Close media attachment panel"
 msgstr "Sulje medialiitteen osio"
-
-#: wp-admin/users.php:317 wp-admin/users.php:348
-msgid "Sorry, you are not allowed to remove users."
-msgstr "Sinulla ei ole oikeuksia poistaa käyttäjiä."
 
 #: wp-admin/includes/ms.php:1096
 msgid "Info"
@@ -1197,16 +1197,16 @@ msgstr "Roskakorissa"
 msgid "The ssh2 PHP extension is available, however, we require the PHP5 function %s"
 msgstr "PHP-laajennus \"ssh2\" on saatavilla, mutta edellytämme myös PHP5-funktiota %s"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:588
+#: wp-admin/includes/class-wp-comments-list-table.php:593
 msgid "Quick edit this comment inline"
 msgstr "Kommentin pikamuokkaus"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:584
+#: wp-admin/includes/class-wp-comments-list-table.php:589
 #: wp-admin/includes/dashboard.php:634
 msgid "Edit this comment"
 msgstr "Muokkaa tätä kommenttia"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:570
+#: wp-admin/includes/class-wp-comments-list-table.php:575
 msgid "Restore this comment from the spam"
 msgstr "Kommentti ei ole roskaviesti"
 
@@ -1716,7 +1716,7 @@ msgstr "Ei julkaisua odottavia kommentteja"
 msgid "Failed to initialize a SFTP subsystem session with the SSH2 Server %s"
 msgstr "SFTP-yhteyden muodostaminen SSH2-palvelimen %s kanssa epäonnistui."
 
-#: wp-admin/includes/class-wp-comments-list-table.php:405
+#: wp-admin/includes/class-wp-comments-list-table.php:410
 msgctxt "column name"
 msgid "Submitted On"
 msgstr "Lähetetty"
@@ -1872,7 +1872,7 @@ msgstr "Nykyinen teema ei tue räätälöidyn otsakekuvan lataamista."
 
 #. translators: %s: comment link
 #: wp-admin/comment.php:187
-#: wp-admin/includes/class-wp-comments-list-table.php:648
+#: wp-admin/includes/class-wp-comments-list-table.php:653
 msgid "In reply to %s."
 msgstr "Vastauksena kommenttiin %s."
 
@@ -1967,7 +1967,7 @@ msgstr "Vahvista salasana"
 msgid "While you are editing your %1$s file, take a moment to make sure you have all 8 keys and that they are unique. You can generate these using the <a href=\"%2$s\">WordPress.org secret key service</a>."
 msgstr "Kun muokkaat %1$s-tiedostoasi, varmista samalla, että siellä on kaikki kahdeksan avainta ja ne ovat uniikkeja. Voit luoda avaimet <a href=\"%2$s\">WordPress.orgin salainen avain -palvelulla</a>."
 
-#: wp-admin/includes/class-wp-comments-list-table.php:616
+#: wp-admin/includes/class-wp-comments-list-table.php:621
 #: wp-admin/includes/class-wp-list-table.php:523
 #: wp-admin/includes/class-wp-list-table.php:1324
 #: wp-admin/includes/update.php:687
@@ -2755,7 +2755,7 @@ msgstr "d.m.Y H:i:s"
 
 #. translators: column name or table row header
 #: wp-admin/comment.php:169
-#: wp-admin/includes/class-wp-comments-list-table.php:402
+#: wp-admin/includes/class-wp-comments-list-table.php:407
 msgid "In Response To"
 msgstr "Vastauksena artikkeliin"
 
@@ -2876,7 +2876,7 @@ msgstr "%s on kirjattu ulos."
 msgid "You are now logged out everywhere else."
 msgstr "Olet nyt kirjautunut ulos kaikkialta muualta."
 
-#: wp-admin/includes/class-wp-comments-list-table.php:327
+#: wp-admin/includes/class-wp-comments-list-table.php:332
 msgid "Filter by comment type"
 msgstr "Suodata kommenttityypin mukaan"
 
@@ -3158,7 +3158,7 @@ msgstr "Voit suhteellisesti skaalata alkuperäistä kuvaa. Parhaiden tulosten sa
 msgid "To crop the image, click on it and drag to make your selection."
 msgstr "Rajaa kuva napsauttamalla sitä ja valitsemalla haluamasi alue raahaamalla."
 
-#: wp-admin/includes/class-wp-comments-list-table.php:329
+#: wp-admin/includes/class-wp-comments-list-table.php:334
 msgid "All comment types"
 msgstr "Kaikki kommenttityypit"
 
@@ -4697,7 +4697,7 @@ msgstr "Avainsanat voidaan muuntaa valikoivasti kategorioiksi käyttämällä <a
 msgid "Select %s"
 msgstr "Valitse %s"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:627
+#: wp-admin/includes/class-wp-comments-list-table.php:632
 msgid "Select comment"
 msgstr "Valitse kommentti"
 
@@ -4919,7 +4919,7 @@ msgid "%s ago"
 msgstr "%s sitten"
 
 #: wp-admin/includes/class-wp-comments-list-table.php:300
-#: wp-admin/includes/class-wp-comments-list-table.php:574
+#: wp-admin/includes/class-wp-comments-list-table.php:579
 #: wp-admin/includes/class-wp-media-list-table.php:144
 #: wp-admin/includes/class-wp-media-list-table.php:715
 #: wp-admin/includes/class-wp-posts-list-table.php:397
@@ -7110,12 +7110,12 @@ msgstr "Rajaa otsakekuvaa"
 msgid "Default Images"
 msgstr "Oletuskuvat"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:578
+#: wp-admin/includes/class-wp-comments-list-table.php:583
 #: wp-admin/includes/dashboard.php:639
 msgid "Delete this comment permanently"
 msgstr "Poista tämä kommentti pysyvästi"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:574
+#: wp-admin/includes/class-wp-comments-list-table.php:579
 msgid "Restore this comment from the Trash"
 msgstr "Palauta tämä kommentti roskakorista"
 
@@ -7228,7 +7228,7 @@ msgid "You have version %1$s installed. Update to %2$s."
 msgstr "Sinulla on asennettuna versio %1$s. Päivitä versioon %2$s."
 
 #: wp-admin/includes/class-wp-comments-list-table.php:302
-#: wp-admin/includes/class-wp-comments-list-table.php:570
+#: wp-admin/includes/class-wp-comments-list-table.php:575
 msgctxt "comment"
 msgid "Not Spam"
 msgstr "Ei roskaa"
@@ -9114,7 +9114,7 @@ msgstr "Näkyvä"
 msgid "Relationship"
 msgstr "Linkkisuhde (XFN)"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:398
+#: wp-admin/includes/class-wp-comments-list-table.php:403
 #: wp-admin/includes/class-wp-post-comments-list-table.php:28
 msgctxt "column name"
 msgid "Comment"
@@ -9138,7 +9138,7 @@ msgctxt "column name"
 msgid "Title"
 msgstr "Otsikko"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:588
+#: wp-admin/includes/class-wp-comments-list-table.php:593
 #: wp-admin/includes/class-wp-posts-list-table.php:1253
 #: wp-admin/includes/class-wp-terms-list-table.php:449
 msgid "Quick&nbsp;Edit"
@@ -10064,36 +10064,36 @@ msgstr "[Tarkastettavana]"
 msgid "From %1$s on %2$s %3$s"
 msgstr "Käyttäjältä %1$s artikkeliin %2$s %3$s"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:580
+#: wp-admin/includes/class-wp-comments-list-table.php:585
 #: wp-admin/includes/dashboard.php:641
 msgid "Move this comment to the Trash"
 msgstr "Siirrä tämä kommentti roskakoriin"
 
 #. translators: mark as spam link
-#: wp-admin/includes/class-wp-comments-list-table.php:568
+#: wp-admin/includes/class-wp-comments-list-table.php:573
 #: wp-admin/includes/dashboard.php:636
 msgctxt "verb"
 msgid "Spam"
 msgstr "Roskaviesti"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:568
+#: wp-admin/includes/class-wp-comments-list-table.php:573
 #: wp-admin/includes/dashboard.php:636
 msgid "Mark this comment as spam"
 msgstr "Merkitse tämä kommentti roskaksi"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:590
+#: wp-admin/includes/class-wp-comments-list-table.php:595
 #: wp-admin/includes/dashboard.php:635
 msgid "Reply to this comment"
 msgstr "Vastaa tähän kommenttiin"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:558
-#: wp-admin/includes/class-wp-comments-list-table.php:564
+#: wp-admin/includes/class-wp-comments-list-table.php:563
+#: wp-admin/includes/class-wp-comments-list-table.php:569
 #: wp-admin/includes/dashboard.php:633
 msgid "Unapprove this comment"
 msgstr "Hylkää tämä kommentti"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:560
-#: wp-admin/includes/class-wp-comments-list-table.php:563
+#: wp-admin/includes/class-wp-comments-list-table.php:565
+#: wp-admin/includes/class-wp-comments-list-table.php:568
 #: wp-admin/includes/dashboard.php:632
 msgid "Approve this comment"
 msgstr "Hyväksy tämä kommentti"
@@ -10647,24 +10647,24 @@ msgstr "Lisäkenttä päivitetty"
 msgid "No comments found."
 msgstr "Ei kommentteja."
 
-#: wp-admin/includes/class-wp-comments-list-table.php:359
+#: wp-admin/includes/class-wp-comments-list-table.php:364
 #: wp-admin/includes/class-wp-media-list-table.php:181
 #: wp-admin/includes/class-wp-posts-list-table.php:493
 msgid "Empty Trash"
 msgstr "Tyhjennä roskakori"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:359
+#: wp-admin/includes/class-wp-comments-list-table.php:364
 msgid "Empty Spam"
 msgstr "Poista roskaviestit"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:354
+#: wp-admin/includes/class-wp-comments-list-table.php:359
 #: wp-admin/includes/class-wp-links-list-table.php:115
 #: wp-admin/includes/class-wp-media-list-table.php:177
 #: wp-admin/includes/class-wp-posts-list-table.php:488
 msgid "Filter"
 msgstr "Suodata"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:340
+#: wp-admin/includes/class-wp-comments-list-table.php:345
 #: wp-admin/includes/class-wp-posts-list-table.php:1612
 msgid "Pings"
 msgstr "Päivitysilmoitukset"
@@ -10677,15 +10677,15 @@ msgid "Move to Trash"
 msgstr "Siirrä roskakoriin"
 
 #: wp-admin/includes/class-wp-comments-list-table.php:295
-#: wp-admin/includes/class-wp-comments-list-table.php:560
-#: wp-admin/includes/class-wp-comments-list-table.php:563
+#: wp-admin/includes/class-wp-comments-list-table.php:565
+#: wp-admin/includes/class-wp-comments-list-table.php:568
 #: wp-admin/includes/dashboard.php:632
 msgid "Approve"
 msgstr "Hyväksy"
 
 #: wp-admin/includes/class-wp-comments-list-table.php:293
-#: wp-admin/includes/class-wp-comments-list-table.php:558
-#: wp-admin/includes/class-wp-comments-list-table.php:564
+#: wp-admin/includes/class-wp-comments-list-table.php:563
+#: wp-admin/includes/class-wp-comments-list-table.php:569
 #: wp-admin/includes/dashboard.php:633
 msgid "Unapprove"
 msgstr "Hylkää"
