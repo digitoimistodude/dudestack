@@ -74,7 +74,7 @@
     },
     "installer-paths": {
       "content/mu-plugins/{$name}/": ["type:wordpress-muplugin",
-        "digitoimistodude/gulp-sitemap-generator",
+        "digitoimistodude/gulp-sitemap-generator"
       ],
       "content/plugins/{$name}/": ["type:wordpress-plugin"],
       "content/themes/{$name}/": ["type:wordpress-theme"]
