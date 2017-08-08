@@ -222,8 +222,8 @@ sed -i -e "s/database_name/${PROJECTNAME}/g" .env
 sed -i -e "s/database_user/YOUR_DEFAULT_DATABASE_USERNAME_HERE/g" .env
 sed -i -e "s/database_password/YOUR_DEFAULT_DATABASE_PASSWORD_HERE/g" .env
 sed -i -e "s/database_host/localhost/g" .env
-sed -i -e "s/example.com/${PROJECTNAME}.dev/g" .env
-sed -i -e "s/example.com/${PROJECTNAME}.dev/g" .env
+sed -i -e "s/example.com/${PROJECTNAME}.test/g" .env
+sed -i -e "s/example.com/${PROJECTNAME}.test/g" .env
 echo '
 SENDGRID_API_KEY=YOUR_SENDGRID_API_KEY_HERE' >> .env
 
@@ -239,7 +239,7 @@ SENDGRID_API_KEY=YOUR_SENDGRID_API_KEY_HERE' >> .env
 
 echo "${yellow}Installing WordPress...:${txtreset}"
 echo "path: wp
-url: http://${PROJECTNAME}.dev
+url: http://${PROJECTNAME}.test
 
 core install:
   admin_user: YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE
@@ -296,17 +296,17 @@ echo "server {
     root /var/www/$PROJECTNAME;
     index index.html index.htm index.php;
 
-    server_name $PROJECTNAME.dev www.$PROJECTNAME.dev;
+    server_name $PROJECTNAME.test www.$PROJECTNAME.test;
     include php7.conf;
     include global/wordpress.conf;
-}" > "$HOME/Projects/marlin-vagrant/vhosts/$PROJECTNAME.dev"
+}" > "$HOME/Projects/marlin-vagrant/vhosts/$PROJECTNAME.test"
 
-echo "${boldgreen}Added vhost, $PROJECTNAME.dev added to vagrant sites-enabled.${txtreset}"
+echo "${boldgreen}Added vhost, $PROJECTNAME.test added to vagrant sites-enabled.${txtreset}"
 echo "${yellow}Reprovisioning vagrant...${txtreset}"
 cd ~/Projects/marlin-vagrant
 vagrant provision
 echo "${boldgreen}VM provisioned, local environment up and running.${txtreset}"
 echo "${yellow}Updating hosts file...${txtreset}"
-sudo -- sh -c "echo 10.1.2.4 ${PROJECTNAME}.dev >> /etc/hosts"
-echo "${boldgreen}All done! Start coding at http://${PROJECTNAME}.dev!${txtreset} (Please note! no themes installed, so you may see a white page. We recommend air which is designed for dudestack: https://github.com/digitoimistodude/air)"
+sudo -- sh -c "echo 10.1.2.4 ${PROJECTNAME}.test >> /etc/hosts"
+echo "${boldgreen}All done! Start coding at http://${PROJECTNAME}.test!${txtreset} (Please note! no themes installed, so you may see a white page. We recommend air which is designed for dudestack: https://github.com/digitoimistodude/air)"
 fi

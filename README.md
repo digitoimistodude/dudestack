@@ -105,7 +105,7 @@ Creating a new project has a lot of configs to do. We wanted to automate most of
 - You are using separate production server that may necessarily not have all the permissions like writing in /tmp dir
 - You use [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant) or MAMP Pro (MAMP needs extensive editing and testing, [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant) works out of the box)
 - Your repositories are stored in Bitbucket
-- Your project hostname is project.dev
+- Your project hostname is project.test
 - You use gulp, grunt or CodeKit2+
 - WordPress dependencies are controlled by composer
 - Your project's name is your customer's name and also the server's account name (can be easily changed per project though, like everything else in this stack)
@@ -124,7 +124,7 @@ When you run `createproject` it looks like this:
 5. Generates capistrano configs (config/deploy.rb, config/deploy/staging.rb, config/deploy/production.rb) with your bitbucket details and paths
 6. Creates a Sublime Text 3 project
 7. Sets up WordPress configs and salts automatically
-8. Installs WordPress under its own subdirectory /wp (thus, admin located in example.dev/wp/wp-admin)
+8. Installs WordPress under its own subdirectory /wp (thus, admin located in example.test/wp/wp-admin)
 9. Sets up default admin user (extra users can be configured in bin/createproject.sh)
 10. Removes default WordPress posts, themes and plugins
 11. Activates default plugins, timezones, permalinks

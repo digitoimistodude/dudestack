@@ -206,14 +206,14 @@ sed -i -e "s/database_name/${PROJECTNAME}/g" .env
 sed -i -e "s/database_user/YOUR_DEFAULT_DATABASE_USERNAME_HERE/g" .env
 sed -i -e "s/database_password/YOUR_DEFAULT_DATABASE_PASSWORD_HERE/g" .env
 sed -i -e "s/database_host/localhost/g" .env
-sed -i -e "s/example.com/${PROJECTNAME}.dev/g" .env
-sed -i -e "s/example.com/${PROJECTNAME}.dev/g" .env
+sed -i -e "s/example.com/${PROJECTNAME}.test/g" .env
+sed -i -e "s/example.com/${PROJECTNAME}.test/g" .env
 echo '
 SENDGRID_API_KEY=YOUR_SENDGRID_API_KEY_HERE' >> .env
 
 echo "${yellow}Installing WordPress...:${txtreset}"
 echo "path: wp
-url: http://${PROJECTNAME}.dev
+url: http://${PROJECTNAME}.test
 
 core install:
   admin_user: YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE
@@ -254,18 +254,18 @@ sudo echo "server {
     listen 80;
     root /var/www/$PROJECTNAME;
     index index.html index.htm index.php;
-    server_name $PROJECTNAME.dev www.$PROJECTNAME.dev;
+    server_name $PROJECTNAME.test www.$PROJECTNAME.test;
     include php7.conf;
     include global/wordpress.conf;
-}" > "/etc/nginx/sites-available/$PROJECTNAME.dev"
-sudo ln -s /etc/nginx/sites-available/$PROJECTNAME.dev /etc/nginx/sites-enabled/$PROJECTNAME.dev
+}" > "/etc/nginx/sites-available/$PROJECTNAME.test"
+sudo ln -s /etc/nginx/sites-available/$PROJECTNAME.test /etc/nginx/sites-enabled/$PROJECTNAME.test
 
-echo "${boldgreen}Added vhost, $PROJECTNAME.dev added to /etc/nginx/sites-enabled/${txtreset}"
+echo "${boldgreen}Added vhost, $PROJECTNAME.test added to /etc/nginx/sites-enabled/${txtreset}"
 echo "${yellow}Restarting nginx...${txtreset}"
 sudo launchctl unload /Library/LaunchDaemons/homebrew.mxcl.nginx.plist
 sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.nginx.plist
 echo "${boldgreen}Local environment up and running.${txtreset}"
 echo "${yellow}Updating hosts file...${txtreset}"
-sudo -- sh -c "echo 127.0.0.1 ${PROJECTNAME}.dev >> /etc/hosts"
-echo "${boldgreen}All done! Start coding at http://${PROJECTNAME}.dev!${txtreset} (Please note! no themes installed, so you may see a white page. We recommend air which is designed for dudestack: https://github.com/digitoimistodude/air)"
+sudo -- sh -c "echo 127.0.0.1 ${PROJECTNAME}.test >> /etc/hosts"
+echo "${boldgreen}All done! Start coding at http://${PROJECTNAME}.test!${txtreset} (Please note! no themes installed, so you may see a white page. We recommend air which is designed for dudestack: https://github.com/digitoimistodude/air)"
 fi

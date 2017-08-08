@@ -29,7 +29,7 @@ composer create-project -n ronilaukkarinen/dudestack $HOME/Projects/${PROJECTNAM
 cd $HOME/Projects/${PROJECTNAME}
 git clone git@github.com:digitoimistodude/dudestack-docker.git $HOME/Projects/dudestack-docker
 cp -R $HOME/Projects/dudestack-docker/* $HOME/Projects/${PROJECTNAME}
-echo "${yellow}Updating .dev url in docker-compose.yml...:${txtreset}"
+echo "${yellow}Updating .test url in docker-compose.yml...:${txtreset}"
 sed -i -e "s/PROJECTNAME/${PROJECTNAME}/g" docker-compose.yml
 docker-compose up --build -d
 echo "${yellow}Installing Capistrano in the project directory${txtreset}"
@@ -207,14 +207,14 @@ sed -i -e "s/database_name/${PROJECTNAME}/g" .env
 sed -i -e "s/database_user/wordpress/g" .env
 sed -i -e "s/database_password/docker/g" .env
 sed -i -e "s/database_host/mysql/g" .env
-sed -i -e "s/example.com/${PROJECTNAME}.dev/g" .env
-sed -i -e "s/example.com/${PROJECTNAME}.dev/g" .env
+sed -i -e "s/example.com/${PROJECTNAME}.test/g" .env
+sed -i -e "s/example.com/${PROJECTNAME}.test/g" .env
 echo '
 SENDGRID_API_KEY=YOUR_SENDGRID_API_KEY_HERE' >> .env
 
 echo "${yellow}Installing WordPress...:${txtreset}"
 echo "path: wp
-url: http://${PROJECTNAME}.dev
+url: http://${PROJECTNAME}.test
 
 core install:
   admin_user: YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE
@@ -252,5 +252,5 @@ git commit -m 'First commit - project started'
 git push -u origin --all
 docker-compose stop
 docker-compose up -d
-echo "${boldgreen}All done! Start coding at http://${PROJECTNAME}.dev!${txtreset} (Please note! no themes installed, so you may see a white page. We recommend air which is designed for dudestack: https://github.com/digitoimistodude/air)"
+echo "${boldgreen}All done! Start coding at http://${PROJECTNAME}.test!${txtreset} (Please note! no themes installed, so you may see a white page. We recommend air which is designed for dudestack: https://github.com/digitoimistodude/air)"
 fi
