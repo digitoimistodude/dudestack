@@ -74,15 +74,7 @@
     },
     "installer-paths": {
       "content/mu-plugins/{$name}/": ["type:wordpress-muplugin",
-        "wpackagist-plugin/google-analytics-dashboard-for-wp",
-        "wpackagist-plugin/imagify",
-        "wpackagist-plugin/simple-history",
-        "wpackagist-plugin/sendgrid-email-delivery-simplified",
-	"wpackagist-plugin/wp-sanitize-accented-uploads",
-        "wpackagist-plugin/wp-cerber",
         "digitoimistodude/gulp-sitemap-generator",
-        "digitoimistodude/air-helper",
-	"aucor/dynamic-mo-loader"
       ],
       "content/plugins/{$name}/": ["type:wordpress-plugin"],
       "content/themes/{$name}/": ["type:wordpress-theme"]
