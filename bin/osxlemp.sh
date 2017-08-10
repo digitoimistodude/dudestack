@@ -195,11 +195,18 @@ namespace :deploy do
 end" > "$HOME/Projects/$PROJECTNAME/config/deploy/production.rb"
 
 cd "$HOME/Projects/$PROJECTNAME/"
-rm README.md
 echo "${yellow}Updating WordPress related stuff...:${txtreset}"
 cp $HOME/Projects/dudestack/composer.json "$HOME/Projects/$PROJECTNAME/composer.json"
 cd "$HOME/Projects/$PROJECTNAME/"
+
+# Clean ups
+rm README.md
+rm LICENSE
 rm -rf .git
+rm .travis.yml
+rm package-lock.json
+rm .DS_Store
+
 composer update
 echo "${yellow}Updating .env (db credentials)...:${txtreset}"
 sed -i -e "s/database_name/${PROJECTNAME}/g" .env
@@ -220,7 +227,6 @@ core install:
   admin_password: YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE
   admin_email: YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE
   title: \"${PROJECTNAME}\"" > wp-cli.yml
-
 
 cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp core install --title=$PROJECTNAME --admin_email=YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE
 echo "${yellow}Removing default WordPress posts...:${txtreset}"

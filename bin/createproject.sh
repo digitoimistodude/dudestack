@@ -208,14 +208,18 @@ namespace :deploy do
 end" > "$HOME/Projects/$PROJECTNAME/config/deploy/production.rb"
 
 cd "$HOME/Projects/$PROJECTNAME/"
-#rm CHANGELOG.md
-#rm CONTRIBUTING.md
-rm README.md
-#rm LICENSE.md
 echo "${yellow}Updating WordPress related stuff...:${txtreset}"
 cp $HOME/Projects/dudestack/composer.json "$HOME/Projects/$PROJECTNAME/composer.json"
 cd "$HOME/Projects/$PROJECTNAME/"
+
+# Clean ups
+rm README.md
+rm LICENSE
 rm -rf .git
+rm .travis.yml
+rm package-lock.json
+rm .DS_Store
+
 composer update
 echo "${yellow}Updating .env (db credentials)...:${txtreset}"
 sed -i -e "s/database_name/${PROJECTNAME}/g" .env
