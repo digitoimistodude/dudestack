@@ -241,9 +241,7 @@ docker-compose exec --user www-data phpfpm ./vendor/wp-cli/wp-cli/bin/wp option 
 docker-compose exec --user www-data phpfpm ./vendor/wp-cli/wp-cli/bin/wp option update timezone_string 'Europe/Helsinki'
 docker-compose exec --user www-data phpfpm ./vendor/wp-cli/wp-cli/bin/wp option update default_pingback_flag '0'
 #echo "${yellow}Activating necessary plugins, mainly for theme development...:${txtreset}"
-#docker-compose exec --user www-data phpfpm ./vendor/wp-cli/wp-cli/bin/wp plugin activate wordpress-seo
-#docker-compose exec --user www-data phpfpm ./vendor/wp-cli/wp-cli/bin/wp plugin activate simple-history
-#docker-compose exec --user www-data phpfpm ./vendor/wp-cli/wp-cli/bin/wp plugin activate clean-image-filenames
+#docker-compose exec --user www-data phpfpm ./vendor/wp-cli/wp-cli/bin/wp plugin activate --all
 docker-compose exec --user root phpfpm chmod -R 775 content
 
 rm "$HOME/Projects/$PROJECTNAME/.env.example"
