@@ -72,6 +72,9 @@ fi
 echo "${boldyellow}Bitbucket account email:${txtreset} "
 read -e YOUR_BITBUCKET_ACCOUNT_HERE
 
+echo "${boldyellow}Bitbucket username (this is used for repo url):${txtreset} "
+read -e YOUR_BITBUCKET_USERNAME_HERE
+
 echo "${boldyellow}Bitbucket password:${txtreset} "
 read -e YOUR_BITBUCKET_PASSWORD_HERE
 

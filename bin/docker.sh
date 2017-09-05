@@ -37,7 +37,7 @@ cap install
 echo "${boldgreen}Capistrano installed${txtreset}"
 echo "${yellow}Generating config/deploy.rb${txtreset}"
 echo "set :application, \"$PROJECTNAME\"
-set :repo_url,  \"git@bitbucket.org:YOUR_BITBUCKET_ACCOUNT_HERE/$PROJECTNAME.git\"
+set :repo_url,  \"git@bitbucket.org:YOUR_BITBUCKET_USERNAME_HERE/$PROJECTNAME.git\"
 set :branch, :master
 set :log_level, :debug
 set :linked_files, %w{.env}
