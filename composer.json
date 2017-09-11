@@ -40,15 +40,11 @@
     },
     {
       "type": "vcs",
-      "url": "git@github.com:Koodimonni/Composer-Dropin-Installer.git"
-    },
-    {
-      "type": "vcs",
       "url": "https://github.com/digitoimistodude/gulp-sitemap-generator"
     }
   ],
   "require": {
-    "koodimonni/composer-dropin-installer": "*",
+    "koodimonni/composer-dropin-installer": "dev-master",
     "php": ">=5.6",
     "koodimonni-language/fi": "*",
     "koodimonni-language/en_gb": "*",

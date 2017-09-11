@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-07-19 16:52:43+0000\n"
+"PO-Revision-Date: 2017-08-09 16:32:00+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -32,7 +32,7 @@ msgstr "Products that the voucher will not be applied to, or that cannot be in t
 msgid "Products that the coupon will be applied to, or that need to be in the cart in order for the \"Fixed cart discount\" to be applied."
 msgstr "Products that the voucher will be applied to, or that need to be in the basket in order for the \"Fixed basket discount\" to be applied."
 
-#: includes/wc-product-functions.php:751
+#: includes/wc-product-functions.php:753
 msgid "Search results only"
 msgstr "Search results only"
 
@@ -47,11 +47,11 @@ msgid_plural "Rated %1$s out of 5 based on %2$s customer ratings"
 msgstr[0] "Rated %1$s out of 5 based on %2$s customer rating"
 msgstr[1] "Rated %1$s out of 5 based on %2$s customer ratings"
 
-#: includes/wc-product-functions.php:750
+#: includes/wc-product-functions.php:752
 msgid "Shop only"
 msgstr "Shop only"
 
-#: includes/wc-product-functions.php:749
+#: includes/wc-product-functions.php:751
 msgid "Shop and search results"
 msgstr "Shop and search results"
 
@@ -97,23 +97,23 @@ msgstr "This order cannot be paid for. Please contact us if you need assistance.
 msgid "Please log in to your account below to continue to the payment form."
 msgstr "Please log in to your account below to continue to the payment form."
 
-#: includes/import/class-wc-product-csv-importer.php:767
+#: includes/import/class-wc-product-csv-importer.php:833
 msgid "A product with this SKU already exists."
 msgstr "A product with this SKU already exists."
 
-#: includes/import/class-wc-product-csv-importer.php:762
+#: includes/import/class-wc-product-csv-importer.php:828
 msgid "A product with this ID already exists."
 msgstr "A product with this ID already exists."
 
-#: includes/import/class-wc-product-csv-importer.php:721
+#: includes/import/class-wc-product-csv-importer.php:787
 msgid "SKU %s"
 msgstr "SKU %s"
 
-#: includes/import/class-wc-product-csv-importer.php:718
+#: includes/import/class-wc-product-csv-importer.php:784
 msgid "ID %d"
 msgstr "ID %d"
 
-#: includes/import/abstract-wc-product-importer.php:556
+#: includes/import/abstract-wc-product-importer.php:554
 msgid "Not able to attach \"%s\"."
 msgstr "Not able to attach \"%s\"."
 
@@ -146,7 +146,7 @@ msgstr "House number and street name"
 msgid "API Key generated successfully. Make sure to copy your new keys now as the secret key will be hidden once you leave this page."
 msgstr "API Key generated successfully. Make sure to copy your new keys now as the secret key will be hidden once you leave this page."
 
-#: includes/import/class-wc-product-csv-importer.php:772
+#: includes/import/class-wc-product-csv-importer.php:838
 msgid "No matching product exists to update."
 msgstr "No matching product exists to update."
 
@@ -1145,7 +1145,7 @@ msgstr "Chuquisaca"
 msgid "Are you sure you want to log out? <a href=\"%s\">Confirm and log out</a>"
 msgstr "Are you sure you want to log out? <a href=\"%s\">Confirm and log out</a>"
 
-#: includes/api/class-wc-rest-authentication.php:538
+#: includes/api/class-wc-rest-authentication.php:540
 msgid "Unknown request method."
 msgstr "Unknown request method."
 
@@ -1766,11 +1766,11 @@ msgstr "Invalid variation ID"
 msgid "Order status set to %s."
 msgstr "Order status set to %s."
 
-#: includes/class-wc-order-item-product.php:182
+#: includes/class-wc-order-item-product.php:184
 msgid "Invalid product"
 msgstr "Invalid product"
 
-#: includes/class-wc-install.php:920
+#: includes/class-wc-install.php:923
 msgid "Visit premium customer support"
 msgstr "Visit premium customer support"
 
@@ -4902,7 +4902,7 @@ msgstr "Order on-hold"
 msgid "This is an order notification sent to customers containing order details after an order is placed on-hold."
 msgstr "This is an order notification sent to customers containing order details after an order is placed on hold."
 
-#: includes/class-wc-install.php:1088
+#: includes/class-wc-install.php:1091
 msgid "%1$s was installed but could not be activated. <a href=\"%2$s\">Please activate it manually by clicking here.</a>"
 msgstr "%1$s was installed but could not be activated. <a href=\"%2$s\">Please activate it manually by clicking here.</a>"
 
@@ -4910,7 +4910,7 @@ msgstr "%1$s was installed but could not be activated. <a href=\"%2$s\">Please a
 msgid "Return to emails"
 msgstr "Return to emails"
 
-#: includes/class-wc-install.php:1062 includes/class-wc-install.php:1144
+#: includes/class-wc-install.php:1065 includes/class-wc-install.php:1147
 msgid "%1$s could not be installed (%2$s). <a href=\"%3$s\">Please install it manually by clicking here.</a>"
 msgstr "%1$s could not be installed (%2$s). <a href=\"%3$s\">Please install it manually by clicking here.</a>"
 
@@ -7549,13 +7549,6 @@ msgstr "A simple offline gateway that lets you accept cash on delivery."
 msgid "Sorry, you are not allowed to batch manipulate this resource."
 msgstr "Sorry, you are not allowed to batch manipulate this resource."
 
-#: includes/admin/class-wc-admin-setup-wizard.php:684
-#: includes/gateways/cheque/class-wc-gateway-cheque.php:27
-#: includes/gateways/cheque/class-wc-gateway-cheque.php:63
-msgctxt "Check payment method"
-msgid "Check payments"
-msgstr "Check payments"
-
 #: includes/admin/class-wc-admin-help.php:204
 msgid "Community forum"
 msgstr "Community forum"
@@ -7628,6 +7621,13 @@ msgstr "Invalid ID."
 #: includes/abstracts/abstract-wc-payment-gateway.php:456
 msgid "Save to account"
 msgstr "Save to account"
+
+#: includes/admin/class-wc-admin-setup-wizard.php:684
+#: includes/gateways/cheque/class-wc-gateway-cheque.php:27
+#: includes/gateways/cheque/class-wc-gateway-cheque.php:63
+msgctxt "Check payment method"
+msgid "Check payments"
+msgstr "Cheque payments"
 
 #: i18n/locale-info.php:91 i18n/locale-info.php:101 i18n/locale-info.php:111
 msgctxt "Canadian Tax Rates"
@@ -8249,7 +8249,7 @@ msgstr "Drag and drop, or click to set admin variation order"
 msgid "%s removed."
 msgstr "%s removed."
 
-#: includes/class-wc-install.php:287
+#: includes/class-wc-install.php:291
 msgid "Monthly"
 msgstr "Monthly"
 
@@ -9613,7 +9613,7 @@ msgid "Your {site_title} order from {order_date}"
 msgstr "Your {site_title} order from {order_date}"
 
 #: includes/emails/class-wc-email-customer-invoice.php:77
-#: includes/emails/class-wc-email-customer-refunded-order.php:77
+#: includes/emails/class-wc-email-customer-refunded-order.php:79
 msgid "Order {order_number} details"
 msgstr "Order {order_number} details"
 
@@ -10230,7 +10230,7 @@ msgstr "Your {site_title} order from {order_date} has been partially refunded"
 msgid "Your {site_title} order from {order_date} has been refunded"
 msgstr "Your {site_title} order from {order_date} has been refunded"
 
-#: includes/emails/class-wc-email-customer-refunded-order.php:79
+#: includes/emails/class-wc-email-customer-refunded-order.php:77
 msgid "Your order has been partially refunded"
 msgstr "Your order has been partially refunded"
 
@@ -11208,22 +11208,22 @@ msgid_plural "Refunded <span class=\"count\">(%s)</span>"
 msgstr[0] "Refunded <span class=\"count\">(%s)</span>"
 msgstr[1] "Refunded <span class=\"count\">(%s)</span>"
 
-#: includes/class-wc-install.php:325
+#: includes/class-wc-install.php:329
 msgctxt "Page slug"
 msgid "shop"
 msgstr "shop"
 
-#: includes/class-wc-install.php:330
+#: includes/class-wc-install.php:334
 msgctxt "Page slug"
 msgid "cart"
 msgstr "basket"
 
-#: includes/class-wc-install.php:335
+#: includes/class-wc-install.php:339
 msgctxt "Page slug"
 msgid "checkout"
 msgstr "checkout"
 
-#: includes/class-wc-install.php:340
+#: includes/class-wc-install.php:344
 msgctxt "Page slug"
 msgid "my-account"
 msgstr "my-account"
@@ -11611,27 +11611,27 @@ msgctxt "Admin menu name"
 msgid "Shipping classes"
 msgstr "Shipping classes"
 
-#: includes/class-wc-install.php:920
+#: includes/class-wc-install.php:923
 msgid "Premium support"
 msgstr "Premium support"
 
-#: includes/class-wc-install.php:919
+#: includes/class-wc-install.php:922
 msgid "API docs"
 msgstr "API docs"
 
-#: includes/class-wc-install.php:919
+#: includes/class-wc-install.php:922
 msgid "View WooCommerce API docs"
 msgstr "View WooCommerce API docs"
 
-#: includes/class-wc-install.php:918
+#: includes/class-wc-install.php:921
 msgid "View WooCommerce documentation"
 msgstr "View WooCommerce documentation"
 
-#: includes/class-wc-install.php:902
+#: includes/class-wc-install.php:905
 msgid "View WooCommerce settings"
 msgstr "View WooCommerce settings"
 
-#: includes/class-wc-install.php:665
+#: includes/class-wc-install.php:669
 msgid "Shop manager"
 msgstr "Shop manager"
 
@@ -12719,7 +12719,7 @@ msgstr "Provided order currency is invalid."
 msgid "Invalid customer email"
 msgstr "Invalid customer email"
 
-#: includes/api/class-wc-rest-authentication.php:569
+#: includes/api/class-wc-rest-authentication.php:571
 #: includes/api/legacy/v3/class-wc-api-authentication.php:111
 msgid "WooCommerce API. Use a consumer key in the username field and a consumer secret in the password field."
 msgstr "WooCommerce API. Use a consumer key in the username field and a consumer secret in the password field."
@@ -14324,7 +14324,7 @@ msgid "Discount amount"
 msgstr "Discount amount"
 
 #: includes/admin/settings/class-wc-settings-emails.php:265
-#: includes/class-wc-install.php:660
+#: includes/class-wc-install.php:664
 msgid "Customer"
 msgstr "Customer"
 
@@ -15091,7 +15091,7 @@ msgstr "Up-sells are products which you recommend instead of the currently viewe
 
 #: includes/admin/class-wc-admin-setup-wizard.php:878
 #: includes/admin/views/html-notice-tracking.php:13
-#: includes/wc-product-functions.php:835
+#: includes/wc-product-functions.php:837
 msgid "Allow"
 msgstr "Allow"
 
@@ -15300,7 +15300,7 @@ msgstr "&lsaquo; Previous"
 msgid "Next &rsaquo;"
 msgstr "Next &rsaquo;"
 
-#: includes/class-wc-install.php:918
+#: includes/class-wc-install.php:921
 msgid "Docs"
 msgstr "Docs"
 
@@ -15743,7 +15743,7 @@ msgstr "Shipping only"
 #: includes/admin/views/html-bulk-edit-product.php:95
 #: includes/admin/views/html-quick-edit-product.php:73
 #: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:217
-#: includes/wc-product-functions.php:802
+#: includes/wc-product-functions.php:804
 msgid "Standard"
 msgstr "Standard"
 
@@ -15762,11 +15762,11 @@ msgstr "Enable stock management at product level"
 msgid "Stock quantity. If this is a variable product this value will be used to control stock for all variations, unless you define stock at variation level."
 msgstr "Stock quantity. If this is a variable product this value will be used to control stock for all variations, unless you define stock at variation level."
 
-#: includes/wc-product-functions.php:833
+#: includes/wc-product-functions.php:835
 msgid "Do not allow"
 msgstr "Do not allow"
 
-#: includes/wc-product-functions.php:834
+#: includes/wc-product-functions.php:836
 msgid "Allow, but notify customer"
 msgstr "Allow, but notify customer"
 
@@ -16437,22 +16437,22 @@ msgstr[0] "Order status changed."
 msgstr[1] "%s order statuses changed."
 
 #: includes/admin/class-wc-admin-post-types.php:1487
-#: includes/wc-product-functions.php:534
+#: includes/wc-product-functions.php:536
 msgid "Grouped product"
 msgstr "Grouped product"
 
 #: includes/admin/class-wc-admin-post-types.php:1490
-#: includes/wc-product-functions.php:535
+#: includes/wc-product-functions.php:537
 msgid "External/Affiliate product"
 msgstr "External/Affiliate product"
 
 #: includes/admin/class-wc-admin-post-types.php:1493
-#: includes/wc-product-functions.php:536
+#: includes/wc-product-functions.php:538
 msgid "Variable product"
 msgstr "Variable product"
 
 #: includes/admin/class-wc-admin-post-types.php:1496
-#: includes/wc-product-functions.php:533
+#: includes/wc-product-functions.php:535
 msgid "Simple product"
 msgstr "Simple product"
 
@@ -16485,7 +16485,7 @@ msgstr "Search"
 
 #: includes/admin/views/html-bulk-edit-product.php:190
 #: includes/admin/views/html-quick-edit-product.php:147
-#: includes/wc-product-functions.php:752
+#: includes/wc-product-functions.php:754
 msgid "Hidden"
 msgstr "Hidden"
 
@@ -16730,19 +16730,19 @@ msgid "State"
 msgstr "State"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:263
-#: includes/class-wc-install.php:326
+#: includes/class-wc-install.php:330
 msgctxt "Page title"
 msgid "Shop"
 msgstr "Shop"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:267
-#: includes/class-wc-install.php:331
+#: includes/class-wc-install.php:335
 msgctxt "Page title"
 msgid "Cart"
 msgstr "Basket"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:271
-#: includes/class-wc-install.php:336
+#: includes/class-wc-install.php:340
 msgctxt "Page title"
 msgid "Checkout"
 msgstr "Checkout"
@@ -17045,7 +17045,7 @@ msgid "Currency position."
 msgstr "Currency position."
 
 #: includes/admin/class-wc-admin-setup-wizard.php:277
-#: includes/class-wc-install.php:341
+#: includes/class-wc-install.php:345
 msgctxt "Page title"
 msgid "My account"
 msgstr "My account"
@@ -17201,7 +17201,7 @@ msgstr "Read/Write"
 msgid "Action failed. Please refresh the page and retry."
 msgstr "Action failed. Please refresh the page and retry."
 
-#. #-#-#-#-#  woocommerce-code.pot (WooCommerce 3.1.1)  #-#-#-#-#
+#. #-#-#-#-#  woocommerce-code.pot (WooCommerce 3.1.2)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: includes/admin/class-wc-admin-assets.php:90
 #: includes/admin/class-wc-admin-menus.php:60
@@ -17415,7 +17415,7 @@ msgstr "You cannot add the same tax rate twice!"
 #: includes/api/legacy/v2/class-wc-api-products.php:1989
 #: includes/api/legacy/v3/class-wc-api-products.php:2547
 #: includes/api/v1/class-wc-rest-product-attributes-controller.php:645
-#: includes/import/abstract-wc-product-importer.php:600
+#: includes/import/abstract-wc-product-importer.php:602
 msgid "Slug \"%s\" is too long (28 characters max). Shorten it, please."
 msgstr "Slug \"%s\" is too long (28 characters max). Shorten it, please."
 
@@ -17424,7 +17424,7 @@ msgstr "Slug \"%s\" is too long (28 characters max). Shorten it, please."
 #: includes/api/legacy/v2/class-wc-api-products.php:1991
 #: includes/api/legacy/v3/class-wc-api-products.php:2549
 #: includes/api/v1/class-wc-rest-product-attributes-controller.php:647
-#: includes/import/abstract-wc-product-importer.php:602
+#: includes/import/abstract-wc-product-importer.php:604
 msgid "Slug \"%s\" is not allowed because it is a reserved term. Change it, please."
 msgstr "Slug \"%s\" is not allowed because it is a reserved term. Change it, please."
 
@@ -17439,7 +17439,7 @@ msgstr "Please, provide an attribute name and slug."
 #: includes/api/legacy/v2/class-wc-api-products.php:1993
 #: includes/api/legacy/v3/class-wc-api-products.php:2551
 #: includes/api/v1/class-wc-rest-product-attributes-controller.php:649
-#: includes/import/abstract-wc-product-importer.php:604
+#: includes/import/abstract-wc-product-importer.php:606
 msgid "Slug \"%s\" is already in use. Change it, please."
 msgstr "Slug \"%s\" is already in use. Change it, please."
 
@@ -17676,7 +17676,7 @@ msgstr "Shipping Classes"
 #: includes/admin/class-wc-admin-menus.php:80
 #: includes/admin/settings/class-wc-settings-api.php:45
 #: includes/admin/views/html-admin-page-status-report.php:437
-#: includes/class-wc-install.php:902
+#: includes/class-wc-install.php:905
 msgid "Settings"
 msgstr "Settings"
 
@@ -17739,7 +17739,7 @@ msgstr "Enter a custom base to use. A base <strong>must</strong> be set or WordP
 #: includes/admin/class-wc-admin-post-types.php:442
 #: includes/admin/reports/class-wc-report-stock.php:112
 #: includes/wc-formatting-functions.php:1016
-#: includes/wc-product-functions.php:820
+#: includes/wc-product-functions.php:822
 msgid "In stock"
 msgstr "In stock"
 
@@ -17747,7 +17747,7 @@ msgstr "In stock"
 #: includes/admin/class-wc-admin-post-types.php:444
 #: includes/admin/class-wc-admin-reports.php:100
 #: includes/admin/reports/class-wc-report-stock.php:114
-#: includes/wc-product-functions.php:821
+#: includes/wc-product-functions.php:823
 msgid "Out of stock"
 msgstr "Out of stock"
 
@@ -18133,7 +18133,7 @@ msgstr "Sale end date (YYYY-MM-DD format or leave blank)"
 msgid "Order status changed from %1$s to %2$s."
 msgstr "Order status changed from %1$s to %2$s."
 
-#: includes/class-wc-order-item-product.php:201
+#: includes/class-wc-order-item-product.php:203
 #: includes/legacy/abstract-wc-legacy-order.php:164
 msgid "Backordered"
 msgstr "Back-ordered"
