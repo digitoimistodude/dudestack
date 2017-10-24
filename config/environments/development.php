@@ -12,3 +12,5 @@ define('SAVEQUERIES', true);
 define('WP_DEBUG', true);
 define('SCRIPT_DEBUG', false);
 define('FS_METHOD', 'direct');
+
+define('PLL_CACHE_LANGUAGES', false);
