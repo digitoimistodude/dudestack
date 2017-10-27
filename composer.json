@@ -51,6 +51,9 @@
     "composer/installers": "~1.2.0",
     "wp-cli/wp-cli": "*",
     "vlucas/phpdotenv": "^2.0.1",
+    "johnpbloch/wordpress": "4.8.2",
+    "rarst/wps": "*",
+    "digitoimistodude/air-helper": "*",
     "wpackagist-plugin/google-analytics-dashboard-for-wp": "*",
     "wpackagist-plugin/imagify": "*",
     "wpackagist-plugin/simple-history": "*",
@@ -58,8 +61,6 @@
     "wpackagist-plugin/wp-sanitize-accented-uploads": "*",
     "wpackagist-plugin/query-monitor": "*",
     "digitoimistodude/gulp-sitemap-generator":"dev-master",
-    "johnpbloch/wordpress": "4.8.2",
-    "digitoimistodude/air-helper": "*",
     "aucor/dynamic-mo-loader": "*"
   },
   "extra": {
