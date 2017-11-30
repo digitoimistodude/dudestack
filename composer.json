@@ -64,12 +64,12 @@
     "wpackagist-plugin/sendgrid-email-delivery-simplified": "*",
     "wpackagist-plugin/wp-sanitize-accented-uploads": "*",
     "wpackagist-plugin/worker": "*",
-    "digitoimistodude/gulp-sitemap-generator":"dev-master",
     "aucor/dynamic-mo-loader": "*"
   },
   "require-dev": {
     "rarst/wps": "*",
-    "wpackagist-plugin/query-monitor": "*"
+    "wpackagist-plugin/query-monitor": "*",
+    "digitoimistodude/gulp-sitemap-generator":"dev-master"
   },
   "extra": {
     "dropin-paths": {
