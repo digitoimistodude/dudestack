@@ -52,17 +52,19 @@
     "wp-cli/wp-cli": "*",
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "4.9.0",
-    "rarst/wps": "*",
     "digitoimistodude/air-helper": "*",
     "wpackagist-plugin/google-analytics-dashboard-for-wp": "*",
     "wpackagist-plugin/imagify": "*",
     "wpackagist-plugin/simple-history": "*",
     "wpackagist-plugin/sendgrid-email-delivery-simplified": "*",
     "wpackagist-plugin/wp-sanitize-accented-uploads": "*",
-    "wpackagist-plugin/query-monitor": "*",
     "wpackagist-plugin/worker": "*",
     "digitoimistodude/gulp-sitemap-generator":"dev-master",
     "aucor/dynamic-mo-loader": "*"
+  },
+  "require-dev": {
+    "rarst/wps": "*",
+    "wpackagist-plugin/query-monitor": "*"
   },
   "extra": {
     "dropin-paths": {
