@@ -58,6 +58,7 @@
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "4.9.1",
     "digitoimistodude/air-helper": "*",
+    "wpackagist-plugin/classic-editor": "*",
     "wpackagist-plugin/google-analytics-dashboard-for-wp": "*",
     "wpackagist-plugin/imagify": "*",
     "wpackagist-plugin/simple-history": "*",
