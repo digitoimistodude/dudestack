@@ -1,44 +1,49 @@
-log/
-content/db.php
-package-lock.json
-access.log
-error.log
-.sass-cache/
-.git/
-wp/
-.htaccess
-db-sync
-sql-dump-*.sql
+# Dotfiles and directories
 .env
 .env*
 !.env.example
-content/uploads
-tiedostot
-media
-media/*
+.htaccess
+.vagrant
+.sass-cache/
+.git/
+
+# Logs
+package-lock.json
+access.log
+error.log
+log/
+
+# Composer and npm
+vendor/
+vendor/*
+!vendor/.gitkeep
+node_modules/
+
+# WordPress core
+wp/
 content/upgrade
+
+# Plugins and translations coming from composer
 content/plugins/*
 !content/plugins/.gitkeep
 content/mu-plugins/*
 !content/mu-plugins/register-theme-directory.php
 !content/mu-plugins/bedrock-autoloader.php
-vendor/
-vendor/*
-!vendor/.gitkeep
-node_modules/
-.vagrant
-config/deploy/
-wp-cli.yml
+content/languages/themes
+content/languages/plugins
+
+# Dynamic content
+content/db.php
+content/uploads
+tiedostot
+media
+media/*
+
+# Misc
 *.codekit
+db-sync
+sql-dump-*.sql
 createproject.todo
 project.todo
-content/w3-total-cache-config.php
-content/w3-total-cache-config-preview.php
-content/w3tc/objectcache/*
-content/w3tc/min/*
-!content/w3tc/min/.htaccess
-!content/w3tc/min/index.php
-content/w3tc/dbcache/*
-!content/w3tc/dbcache/.htaccess
-!content/w3tc/dbcache/index.php
-content/w3tc/pgcache/*
+config/deploy/
+wp-cli.yml
