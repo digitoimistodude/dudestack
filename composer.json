@@ -64,6 +64,7 @@
     "wpackagist-plugin/simple-history": "*",
     "wpackagist-plugin/sendgrid-email-delivery-simplified": "*",
     "wpackagist-plugin/wp-sanitize-accented-uploads": "*",
+    "wpackagist-plugin/email-address-encoder": "*",
     "wpackagist-plugin/worker": "*",
     "aucor/dynamic-mo-loader": "*"
   },
