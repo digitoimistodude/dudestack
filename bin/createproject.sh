@@ -266,7 +266,7 @@ WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp theme delete 
 WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update permalink_structure '/%postname%'WP_CLI_SUFFIX
 WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update timezone_string 'Europe/Helsinki'WP_CLI_SUFFIX
 WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update default_pingback_flag '0'WP_CLI_SUFFIX
-date_format=$(wp eval "echo __( 'l, j.n.Y' );")
+date_format=$(vendor/wp-cli/wp-cli/bin/wp eval "echo __( 'j.n.Y' );")
 WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update date_format $date_formatWP_CLI_SUFFIX
 #echo "${yellow}Activating necessary plugins, mainly for theme development...:${txtreset}"
 #WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin activate --allWP_CLI_SUFFIX
