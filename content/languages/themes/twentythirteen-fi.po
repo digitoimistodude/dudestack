@@ -31,42 +31,42 @@ msgstr "Avainsana-arkisto: %s"
 msgid "Search Results for: %s"
 msgstr "Hakutulokset kohteelle: %s"
 
-#: inc/custom-header.php:59
+#: inc/custom-header.php:60
 msgctxt "header image description"
 msgid "Star"
 msgstr "Tähti"
 
-#: inc/custom-header.php:54
+#: inc/custom-header.php:55
 msgctxt "header image description"
 msgid "Diamond"
 msgstr "Timantti"
 
-#: inc/custom-header.php:49
+#: inc/custom-header.php:50
 msgctxt "header image description"
 msgid "Circle"
 msgstr "Ympyrä"
 
-#: inc/back-compat.php:37 inc/back-compat.php:47 inc/back-compat.php:60
+#: inc/back-compat.php:37 inc/back-compat.php:48 inc/back-compat.php:62
 msgid "Twenty Thirteen requires at least WordPress version 3.6. You are running version %s. Please upgrade and try again."
 msgstr "Twenty Thirteen vaatii vähintään WordPressin version 3.6. Käytät versiota %s. Päivitä ja yritä uudelleen."
 
-#: image.php:58
+#: image.php:62
 msgid "Next <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Seuraava <span class=\"meta-nav\">&rarr;</span>"
 
-#: image.php:57
+#: image.php:61
 msgid "<span class=\"meta-nav\">&larr;</span> Previous"
 msgstr "<span class=\"meta-nav\">&larr;</span> Edellinen"
 
-#: image.php:45
+#: image.php:49
 msgid "Full resolution"
 msgstr "Täysi resoluutio"
 
-#: image.php:44
+#: image.php:48
 msgid "Link to full-size image"
 msgstr "Linkki täysikokoiseen kuvaan"
 
-#: image.php:28
+#: image.php:29
 msgid "<span class=\"attachment-meta\">Published on <time class=\"entry-date\" datetime=\"%1$s\">%2$s</time> in <a href=\"%3$s\" title=\"Return to %4$s\" rel=\"gallery\">%5$s</a></span>"
 msgstr "<span class=\"attachment-meta\">Julkaistu <time class=\"entry-date\" datetime=\"%1$s\">%2$s</time> artikkeliin <a href=\"%3$s\" title=\"Palaa artikkeliin %4$s\" rel=\"gallery\">%5$s</a></span>"
 
@@ -78,77 +78,77 @@ msgstr "Siirry sisältöön"
 msgid "Menu"
 msgstr "Valikko"
 
-#: functions.php:397
+#: functions.php:433
 msgid "Permalink to %s"
 msgstr "Kestolinkki: %s"
 
-#: functions.php:391
+#: functions.php:425
 msgctxt "1: post format name. 2: date"
 msgid "%1$s on %2$s"
 msgstr "%1$s %2$s"
 
-#: functions.php:371
+#: functions.php:405
 msgid "View all posts by %s"
 msgstr "Näytä kaikki artikkelit kirjoittajalta %s"
 
 #. Translators: used between list items, there is a space after the comma.
-#: functions.php:356 functions.php:362
+#: functions.php:389 functions.php:395
 msgid ", "
 msgstr ", "
 
-#: functions.php:350
+#: functions.php:381
 msgid "Sticky"
 msgstr "Kiinnitetty"
 
-#: functions.php:332
+#: functions.php:363
 msgctxt "Next post link"
 msgid "%title <span class=\"meta-nav\">&rarr;</span>"
 msgstr "%title <span class=\"meta-nav\">&rarr;</span>"
 
-#: functions.php:331
+#: functions.php:362
 msgctxt "Previous post link"
 msgid "<span class=\"meta-nav\">&larr;</span> %title"
 msgstr "<span class=\"meta-nav\">&larr;</span> %title"
 
-#: functions.php:328
+#: functions.php:359
 msgid "Post navigation"
 msgstr "Artikkelien selaus"
 
-#: functions.php:302
+#: functions.php:332
 msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Uudemmat artikkelit <span class=\"meta-nav\">&rarr;</span>"
 
-#: functions.php:298
+#: functions.php:328
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
 msgstr "<span class=\"meta-nav\">&larr;</span> Vanhemmat artikkelit"
 
-#: functions.php:294
+#: functions.php:324
 msgid "Posts navigation"
 msgstr "Artikkelien selaus"
 
-#: functions.php:271
+#: functions.php:299
 msgid "Appears on posts and pages in the sidebar."
 msgstr "Näytetään artikkelien ja sivujen sivupalkissa."
 
-#: functions.php:269
+#: functions.php:297
 msgid "Secondary Widget Area"
 msgstr "Vimpainalue 2"
 
-#: functions.php:261
+#: functions.php:287
 msgid "Appears in the footer section of the site."
 msgstr "Näkyy sivuston alatunnisteessa."
 
-#: functions.php:259
+#: functions.php:285
 msgid "Main Widget Area"
 msgstr "Ensisijainen vimpainalue"
 
-#: functions.php:246
+#: functions.php:270
 msgid "Page %s"
 msgstr "Sivu %s"
 
 #. Translators: If there are characters in your language that are not supported
 #. by Bitter, translate this to 'off'. Do not translate into your own language.
-#: functions.php:137
+#: functions.php:155
 msgctxt "Bitter font: on or off"
 msgid "on"
 msgstr "on"
@@ -156,16 +156,16 @@ msgstr "on"
 #. Translators: If there are characters in your language that are not supported
 #. by Source Sans Pro, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:131
+#: functions.php:149
 msgctxt "Source Sans Pro font: on or off"
 msgid "on"
 msgstr "on"
 
-#: functions.php:97
+#: functions.php:115
 msgid "Navigation Menu"
 msgstr "Navigaatiovalikko"
 
-#: footer.php:19
+#: footer.php:25
 msgid "Proudly powered by %s"
 msgstr "Voimanlähteenä %s"
 
@@ -185,60 +185,60 @@ msgstr "Oletko valmis julkaisemaan ensimmäisen kirjoituksesi? <a href=\"%1$s\">
 msgid "Nothing Found"
 msgstr "Mitään ei löytynyt."
 
-#: content-gallery.php:43 content-image.php:39 content-quote.php:29
-#: content-video.php:39 content.php:56
+#: content-gallery.php:52 content-image.php:48 content-quote.php:38
+#: content-video.php:48 content.php:65
 msgid "View all % comments"
 msgstr "Näytä kaikki % kommenttia"
 
-#: content-gallery.php:43 content-image.php:39 content-quote.php:29
-#: content-video.php:39 content.php:56
+#: content-gallery.php:52 content-image.php:48 content-quote.php:38
+#: content-video.php:48 content.php:65
 msgid "One comment so far"
 msgstr "Yksi kommentti tällä hetkellä"
 
-#: content-gallery.php:43 content-image.php:39 content-quote.php:29
-#: content-video.php:39 content.php:56
+#: content-gallery.php:52 content-image.php:48 content-quote.php:38
+#: content-video.php:48 content.php:65
 msgid "Leave a comment"
 msgstr "Jätä kommentti"
 
-#: content-aside.php:27 content-aside.php:35 content-audio.php:38
-#: content-chat.php:36 content-gallery.php:46 content-image.php:42
-#: content-link.php:19 content-quote.php:32 content-status.php:26
-#: content-video.php:42 content.php:31 image.php:50 page.php:39
+#: content-aside.php:36 content-aside.php:44 content-audio.php:47
+#: content-chat.php:45 content-gallery.php:55 content-image.php:51
+#: content-link.php:19 content-quote.php:41 content-status.php:35
+#: content-video.php:51 content.php:31 image.php:54 page.php:51
 msgid "Edit"
 msgstr "Muokkaa"
 
-#: content-aside.php:20 content-audio.php:31 content-chat.php:30
-#: content-gallery.php:31 content-image.php:30 content-link.php:31
-#: content-quote.php:20 content-status.php:20 content-video.php:30
-#: content.php:48 image.php:76 page.php:35
+#: content-aside.php:24 content-audio.php:35 content-chat.php:34
+#: content-gallery.php:35 content-image.php:34 content-link.php:35
+#: content-quote.php:24 content-status.php:24 content-video.php:34
+#: content.php:52 image.php:83 page.php:41
 msgid "Pages:"
 msgstr "Sivut:"
 
 #. translators: %s: Name of current post
-#: content-aside.php:16 content-audio.php:27 content-chat.php:26
-#: content-gallery.php:27 content-image.php:26 content-link.php:27
-#: content-quote.php:16 content-status.php:16 content-video.php:26
-#: content.php:44 functions.php:506
+#: content-aside.php:17 content-audio.php:28 content-chat.php:27
+#: content-gallery.php:28 content-image.php:27 content-link.php:28
+#: content-quote.php:17 content-status.php:17 content-video.php:27
+#: content.php:45 functions.php:547
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Jatka lukemista %s <span class=\"meta-nav\">&rarr;</span>"
 
-#: comments.php:52
+#: comments.php:57
 msgid "Comments are closed."
 msgstr "Kommentointi on suljettu."
 
-#: comments.php:47
+#: comments.php:52
 msgid "Newer Comments &rarr;"
 msgstr "Uudemmat kommentit &rarr;"
 
-#: comments.php:46
+#: comments.php:51
 msgid "&larr; Older Comments"
 msgstr "&larr; Vanhemmat kommentit"
 
-#: comments.php:45
+#: comments.php:50
 msgid "Comment navigation"
 msgstr "Kommenttien selaus"
 
-#: comments.php:25
+#: comments.php:27
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
@@ -261,29 +261,29 @@ msgstr "Katso kaikki artikkelit kirjoittajalta %s <span class=\"meta-nav\">&rarr
 msgid "About %s"
 msgstr "Tietoja %s"
 
-#: archive.php:35
+#: archive.php:36
 msgid "Archives"
 msgstr "Arkistot"
 
-#: archive.php:33
+#: archive.php:34
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr "Y"
 
-#: archive.php:33
+#: archive.php:34
 msgid "Yearly Archives: %s"
 msgstr "Arkistot vuoden mukaan: %s"
 
-#: archive.php:31
+#: archive.php:32
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "F Y"
 
-#: archive.php:31
+#: archive.php:32
 msgid "Monthly Archives: %s"
 msgstr "Arkistot kuukauden mukaan: %s"
 
-#: archive.php:29
+#: archive.php:30
 msgid "Daily Archives: %s"
 msgstr "Arkistot päivämäärän mukaan: %s"
 
@@ -299,9 +299,9 @@ msgstr "Tämäpä on jokseenkin noloa."
 msgid "Not Found"
 msgstr "Ei löytynyt"
 
-#. #-#-#-#-#  twentythirteen.pot (Twenty Thirteen 2.2)  #-#-#-#-#
+#. #-#-#-#-#  twentythirteen.pot (Twenty Thirteen 2.4)  #-#-#-#-#
 #. Author URI of the plugin/theme
-#: footer.php:19
+#: footer.php:24
 msgid "https://wordpress.org/"
 msgstr "https://fi.wordpress.org/"
 

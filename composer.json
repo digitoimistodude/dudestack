@@ -54,7 +54,7 @@
     "koodimonni-language/fi": "*",
     "koodimonni-language/en_gb": "*",
     "composer/installers": "~1.2.0",
-    "wp-cli/wp-cli": "*",
+    "wp-cli/wp-cli-bundle": "*",
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "4.9.4",
     "digitoimistodude/air-helper": "*",

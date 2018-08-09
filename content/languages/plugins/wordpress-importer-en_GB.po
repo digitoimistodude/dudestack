@@ -1,42 +1,57 @@
-# Translation of Stable (latest release) in English (UK)
-# This file is distributed under the same license as the Stable (latest release) package.
+# Translation of Plugins - WordPress Importer - Stable (latest release) in English (UK)
+# This file is distributed under the same license as the Plugins - WordPress Importer - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-11-14 18:28:49+0000\n"
+"PO-Revision-Date: 2018-03-03 09:48:48+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/2.1.0-alpha\n"
-"Project-Id-Version: Stable (latest release)\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: en_GB\n"
+"Project-Id-Version: Plugins - WordPress Importer - Stable (latest release)\n"
 
-#. Author URI of the plugin/theme
-msgid "http://wordpress.org/"
-msgstr "http://wordpress.org/"
+#: parsers.php:43
+msgid "Details are shown above. The importer will now try again with a different parser..."
+msgstr "Details are shown above. The importer will now try again with a different parser..."
 
-#. Author of the plugin/theme
-msgid "wordpressdotorg"
-msgstr "wordpressdotorg"
+#: parsers.php:42 parsers.php:72 parsers.php:80
+msgid "There was an error when reading this WXR file"
+msgstr "There was an error when reading this WXR file"
 
-#: wordpress-importer.php:264
-msgid "Assign Authors"
-msgstr "Assign Authors"
+#: parsers.php:84 parsers.php:89 parsers.php:306 parsers.php:502
+msgid "This does not appear to be a WXR file, missing/invalid WXR version number"
+msgstr "This does not appear to be a WXR file, missing/invalid WXR version number"
 
-#: wordpress-importer.php:284
-msgid "Submit"
-msgstr "Submit"
+#: wordpress-importer.php:132 wordpress-importer.php:141
+#: wordpress-importer.php:192 wordpress-importer.php:196
+#: wordpress-importer.php:205
+msgid "Sorry, there has been an error."
+msgstr "Sorry, there has been an error."
 
-#: wordpress-importer.php:1142
-msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
-msgstr "Choose a WXR (.xml) file to upload, then click Upload file and import."
+#: wordpress-importer.php:133
+msgid "The file does not exist, please try again."
+msgstr "The file does not exist, please try again."
 
-#: wordpress-importer.php:1014
-msgid "Zero size file downloaded"
-msgstr "Zero size file downloaded"
+#: wordpress-importer.php:176
+msgid "All done."
+msgstr "All done."
 
-#: wordpress-importer.php:1002
-msgid "Remote server returned error response %1$d %2$s"
-msgstr "Remote server returned error response %1$d %2$s"
+#: wordpress-importer.php:177
+msgid "Remember to update the passwords and roles of imported users."
+msgstr "Remember to update the passwords and roles of imported users."
+
+#: wordpress-importer.php:176
+msgid "Have fun!"
+msgstr "Have fun!"
+
+#: wordpress-importer.php:197
+msgid "The export file could not be found at <code>%s</code>. It is likely that this was caused by a permissions problem."
+msgstr "The export file could not be found at <code>%s</code>. It is likely that this was caused by a permissions problem."
+
+#: wordpress-importer.php:213
+msgid "This WXR file (version %s) may not be supported by this version of the importer. Please consider updating."
+msgstr "This WXR file (version %s) may not be supported by this version of the importer. Please consider updating."
 
 #: wordpress-importer.php:238
 msgid "Failed to import author %s. Their posts will be attributed to the current user."
@@ -46,27 +61,71 @@ msgstr "Failed to import author %s. Their posts will be attributed to the curren
 msgid "To make it easier for you to edit and save the imported content, you may want to reassign the author of the imported item to an existing user of this site. For example, you may want to import all the entries as <code>admin</code>s entries."
 msgstr "To make it easier for you to edit and save the imported content, you may want to reassign the author of the imported item to an existing user of this site. For example, you may want to import all the entries as <code>admin</code>s entries."
 
-#: wordpress-importer.php:605
-msgid "Failed to import &#8220;%s&#8221;: Invalid post type %s"
-msgstr "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+#: wordpress-importer.php:264
+msgid "Assign Authors"
+msgstr "Assign Authors"
 
-#: wordpress-importer.php:516 wordpress-importer.php:738
-msgid "Failed to import %s %s"
-msgstr "Failed to import %s %s"
+#: wordpress-importer.php:267
+msgid "If a new user is created by WordPress, a new password will be randomly generated and the new user&#8217;s role will be set as %s. Manually changing the new user&#8217;s details will be necessary."
+msgstr "If a new user is created by WordPress, a new password will be randomly generated and the new user&#8217;s role will be set as %s. Manually changing the new user&#8217;s details will be necessary."
 
-#: wordpress-importer.php:424
-msgid "Failed to import category %s"
-msgstr "Failed to import category %s"
+#: wordpress-importer.php:277
+msgid "Import Attachments"
+msgstr "Import Attachments"
+
+#: wordpress-importer.php:280
+msgid "Download and import file attachments"
+msgstr "Download and import file attachments"
+
+#: wordpress-importer.php:284
+msgid "Submit"
+msgstr "Submit"
+
+#: wordpress-importer.php:297
+msgid "Import author:"
+msgstr "Import author:"
+
+#: wordpress-importer.php:311
+msgid "as a new user:"
+msgstr "as a new user:"
+
+#: wordpress-importer.php:308
+msgid "or create new user with login name:"
+msgstr "or create new user with login name:"
+
+#: wordpress-importer.php:319
+msgid "assign posts to an existing user:"
+msgstr "assign posts to an existing user:"
+
+#: wordpress-importer.php:322
+msgid "- Select -"
+msgstr "- Select -"
+
+#: wordpress-importer.php:321
+msgid "or assign posts to an existing user:"
+msgstr "or assign posts to an existing user:"
+
+#: wordpress-importer.php:372
+msgid "Failed to create new user for %s. Their posts will be attributed to the current user."
+msgstr "Failed to create new user for %s. Their posts will be attributed to the current user."
 
 #: wordpress-importer.php:467
 msgid "Failed to import post tag %s"
 msgstr "Failed to import post tag %s"
 
-#: wordpress-importer.php:642
-msgid "%s &#8220;%s&#8221; already exists."
-msgstr "%s &#8220;%s&#8221; already exists."
+#: wordpress-importer.php:424
+msgid "Failed to import category %s"
+msgstr "Failed to import category %s"
 
-#: wordpress-importer.php:869
+#: wordpress-importer.php:516 wordpress-importer.php:738
+msgid "Failed to import %s %s"
+msgstr "Failed to import %s %s"
+
+#: wordpress-importer.php:605
+msgid "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+msgstr "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+
+#: wordpress-importer.php:870
 msgid "Menu item skipped due to missing menu slug"
 msgstr "Menu item skipped due to missing menu slug"
 
@@ -74,136 +133,78 @@ msgstr "Menu item skipped due to missing menu slug"
 msgid "Failed to import %s &#8220;%s&#8221;"
 msgstr "Failed to import %s &#8220;%s&#8221;"
 
-#: wordpress-importer.php:319
-msgid "assign posts to an existing user:"
-msgstr "assign posts to an existing user:"
+#: wordpress-importer.php:642
+msgid "%s &#8220;%s&#8221; already exists."
+msgstr "%s &#8220;%s&#8221; already exists."
 
-#: wordpress-importer.php:311
-msgid "as a new user:"
-msgstr "as a new user:"
-
-#: wordpress-importer.php:213
-msgid "This WXR file (version %s) may not be supported by this version of the importer. Please consider updating."
-msgstr "This WXR file (version %s) may not be supported by this version of the importer. Please consider updating."
-
-#: wordpress-importer.php:267
-msgid "If a new user is created by WordPress, a new password will be randomly generated and the new user&#8217;s role will be set as %s. Manually changing the new user&#8217;s details will be necessary."
-msgstr "If a new user is created by WordPress, a new password will be randomly generated and the new user&#8217;s role will be set as %s. Manually changing the new user&#8217;s details will be necessary."
-
-#: wordpress-importer.php:876
+#: wordpress-importer.php:877
 msgid "Menu item skipped due to invalid menu slug: %s"
 msgstr "Menu item skipped due to invalid menu slug: %s"
 
-#: wordpress-importer.php:939
+#: wordpress-importer.php:940
 msgid "Fetching attachments is not enabled"
 msgstr "Fetching attachments is not enabled"
 
-#: wordpress-importer.php:177
-msgid "Remember to update the passwords and roles of imported users."
-msgstr "Remember to update the passwords and roles of imported users."
+#: wordpress-importer.php:953
+msgid "Invalid file type"
+msgstr "Invalid file type"
 
-#: wordpress-importer.php:133
-msgid "The file does not exist, please try again."
-msgstr "The file does not exist, please try again."
+#: wordpress-importer.php:1003
+msgid "Remote server did not respond"
+msgstr "Remote server did not respond"
 
-#: parsers.php:84 parsers.php:89 parsers.php:306 parsers.php:495
-msgid "This does not appear to be a WXR file, missing/invalid WXR version number"
-msgstr "This does not appear to be a WXR file, missing/invalid WXR version number"
-
-#: parsers.php:43
-msgid "Details are shown above. The importer will now try again with a different parser..."
-msgstr "Details are shown above. The importer will now try again with a different parser..."
-
-#. Description of the plugin/theme
-msgid "Import posts, pages, comments, custom fields, categories, tags and more from a WordPress export file."
-msgstr "Import posts, pages, comments, custom fields, categories, tags and more from a WordPress export file."
-
-#: wordpress-importer.php:1126
-msgid "A new version of this importer is available. Please update to version %s to ensure compatibility with newer export files."
-msgstr "A new version of this importer is available. Please update to version %s to ensure compatibility with newer export files."
-
-#: parsers.php:42 parsers.php:72 parsers.php:80
-msgid "There was an error when reading this WXR file"
-msgstr "There was an error when reading this WXR file"
-
-#: wordpress-importer.php:308
-msgid "or create new user with login name:"
-msgstr "or create new user with login name:"
-
-#: wordpress-importer.php:372
-msgid "Failed to create new user for %s. Their posts will be attributed to the current user."
-msgstr "Failed to create new user for %s. Their posts will be attributed to the current user."
-
-#: wordpress-importer.php:321
-msgid "or assign posts to an existing user:"
-msgstr "or assign posts to an existing user:"
-
-#: wordpress-importer.php:1009
+#: wordpress-importer.php:1018
 msgid "Remote file is incorrect size"
 msgstr "Remote file is incorrect size"
 
-#: wordpress-importer.php:280
-msgid "Download and import file attachments"
-msgstr "Download and import file attachments"
+#: wordpress-importer.php:1011
+msgid "Remote server returned error response %1$d %2$s"
+msgstr "Remote server returned error response %1$d %2$s"
+
+#: wordpress-importer.php:1029
+msgid "Remote file is too large, limit is %s"
+msgstr "Remote file is too large, limit is %s"
+
+#: wordpress-importer.php:1023
+msgid "Zero size file downloaded"
+msgstr "Zero size file downloaded"
+
+#: wordpress-importer.php:1136
+msgid "A new version of this importer is available. Please update to version %s to ensure compatibility with newer export files."
+msgstr "A new version of this importer is available. Please update to version %s to ensure compatibility with newer export files."
+
+#: wordpress-importer.php:1129
+msgid "Import WordPress"
+msgstr "Import WordPress"
+
+#: wordpress-importer.php:1151
+msgid "Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import the posts, pages, comments, custom fields, categories, and tags into this site."
+msgstr "Hi there! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import the posts, pages, comments, custom fields, categories, and tags into this site."
+
+#: wordpress-importer.php:1152
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr "Choose a WXR (.xml) file to upload, then click Upload file and import."
+
+#: wordpress-importer.php:1226
+msgid "Import <strong>posts, pages, comments, custom fields, categories, and tags</strong> from a WordPress export file."
+msgstr "Import <strong>posts, pages, comments, custom fields, categories, and tags</strong> from a WordPress export file."
+
+#. Plugin URI of the plugin/theme
+msgid "https://wordpress.org/plugins/wordpress-importer/"
+msgstr "https://en-gb.wordpress.org/plugins/wordpress-importer/"
 
 #. Plugin Name of the plugin/theme
 msgid "WordPress Importer"
 msgstr "WordPress Importer"
 
-#: wordpress-importer.php:322
-msgid "- Select -"
-msgstr "- Select -"
+#. Description of the plugin/theme
+msgid "Import posts, pages, comments, custom fields, categories, tags and more from a WordPress export file."
+msgstr "Import posts, pages, comments, custom fields, categories, tags and more from a WordPress export file."
 
-#: wordpress-importer.php:1020
-msgid "Remote file is too large, limit is %s"
-msgstr "Remote file is too large, limit is %s"
+#. Author of the plugin/theme
+msgid "wordpressdotorg"
+msgstr "wordpressdotorg"
 
-#: wordpress-importer.php:176
-msgid "All done."
-msgstr "All done."
-
-#: wordpress-importer.php:176
-msgid "Have fun!"
-msgstr "Have fun!"
-
-#: wordpress-importer.php:952
-msgid "Invalid file type"
-msgstr "Invalid file type"
-
-#: wordpress-importer.php:297
-msgid "Import author:"
-msgstr "Import author:"
-
-#: wordpress-importer.php:277
-msgid "Import Attachments"
-msgstr "Import Attachments"
-
-#: wordpress-importer.php:996
-msgid "Remote server did not respond"
-msgstr "Remote server did not respond"
-
-#: wordpress-importer.php:1216
-msgid "Import <strong>posts, pages, comments, custom fields, categories, and tags</strong> from a WordPress export file."
-msgstr "Import <strong>posts, pages, comments, custom fields, categories, and tags</strong> from a WordPress export file."
-
-#: wordpress-importer.php:132 wordpress-importer.php:141
-#: wordpress-importer.php:192 wordpress-importer.php:196
-#: wordpress-importer.php:205
-msgid "Sorry, there has been an error."
-msgstr "Sorry, there has been an error."
-
-#. Plugin URI of the plugin/theme
-msgid "http://wordpress.org/extend/plugins/wordpress-importer/"
-msgstr "http://wordpress.org/extend/plugins/wordpress-importer/"
-
-#: wordpress-importer.php:1119
-msgid "Import WordPress"
-msgstr "Import WordPress"
-
-#: wordpress-importer.php:1141
-msgid "Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import the posts, pages, comments, custom fields, categories, and tags into this site."
-msgstr "Hi there! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import the posts, pages, comments, custom fields, categories, and tags into this site."
-
-#: wordpress-importer.php:197
-msgid "The export file could not be found at <code>%s</code>. It is likely that this was caused by a permissions problem."
-msgstr "The export file could not be found at <code>%s</code>. It is likely that this was caused by a permissions problem."
+#. Author URI of the plugin/theme
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"

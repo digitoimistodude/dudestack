@@ -20,23 +20,23 @@ msgid "Twenty Fifteen"
 msgstr "Twenty Fifteen"
 
 #. translators: %s: post title
-#: inc/template-tags.php:123
+#: inc/template-tags.php:130
 msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "Jätä kommentti<span class=\"screen-reader-text\"> artikkeliin %s</span>"
 
-#: single.php:37
+#: single.php:39
 msgid "Previous post:"
 msgstr "Edellinen artikkeli:"
 
-#: single.php:36
+#: single.php:38
 msgid "Previous"
 msgstr "Edellinen"
 
-#: single.php:34
+#: single.php:36
 msgid "Next post:"
 msgstr "Seuraava artikkeli:"
 
-#: single.php:33
+#: single.php:35
 msgid "Next"
 msgstr "Seuraava"
 
@@ -44,37 +44,37 @@ msgstr "Seuraava"
 msgid "Search Results for: %s"
 msgstr "Hakutulokset kohteelle: %s"
 
-#: inc/template-tags.php:113
+#: inc/template-tags.php:120
 msgctxt "Used before full size attachment link."
 msgid "Full size"
 msgstr "Täysikokoinen"
 
-#: inc/template-tags.php:102
+#: inc/template-tags.php:108
 msgctxt "Used before tag names."
 msgid "Tags"
 msgstr "Avainsanat"
 
-#: inc/template-tags.php:94
+#: inc/template-tags.php:99
 msgctxt "Used before category names."
 msgid "Categories"
 msgstr "Kategoriat"
 
-#: inc/template-tags.php:91 inc/template-tags.php:99
+#: inc/template-tags.php:95 inc/template-tags.php:104
 msgctxt "Used between list items, there is a space after the comma."
 msgid ", "
 msgstr ", "
 
-#: inc/template-tags.php:85
+#: inc/template-tags.php:89
 msgctxt "Used before post author name."
 msgid "Author"
 msgstr "Kirjoittaja"
 
-#: inc/template-tags.php:76
+#: inc/template-tags.php:79
 msgctxt "Used before publish date."
 msgid "Posted on"
 msgstr "Julkaistu"
 
-#: inc/template-tags.php:55
+#: inc/template-tags.php:56
 msgctxt "Used before post format."
 msgid "Format"
 msgstr "Muoto"
@@ -95,64 +95,64 @@ msgstr "Vanhemmat kommentit"
 msgid "Comment navigation"
 msgstr "Kommenttien selaus"
 
-#: inc/customizer.php:205
+#: inc/customizer.php:226
 msgid "Blue"
 msgstr "Sininen"
 
-#: inc/customizer.php:194
+#: inc/customizer.php:215
 msgid "Purple"
 msgstr "Lila"
 
-#: inc/customizer.php:183
+#: inc/customizer.php:204
 msgid "Pink"
 msgstr "Vaaleanpunainen"
 
-#: inc/customizer.php:172
+#: inc/customizer.php:193
 msgid "Yellow"
 msgstr "Keltainen"
 
-#: inc/customizer.php:161
+#: inc/customizer.php:182
 msgid "Dark"
 msgstr "Tumma"
 
-#: inc/customizer.php:150
+#: inc/customizer.php:171
 msgid "Default"
 msgstr "Oletus"
 
-#: inc/customizer.php:75
+#: inc/customizer.php:93
 msgid "Header and Sidebar Background Color"
 msgstr "Otsakkeen ja sivupalkin taustaväri"
 
-#: inc/customizer.php:60 inc/customizer.php:76 inc/customizer.php:81
+#: inc/customizer.php:72 inc/customizer.php:94 inc/customizer.php:101
 msgid "Applied to the header on small screens and the sidebar on wide screens."
 msgstr "Käytetään otsakkeessa pienillä näytöillä ja sivupalkissa isoilla näytöillä."
 
-#: inc/customizer.php:59
+#: inc/customizer.php:71
 msgid "Header and Sidebar Text Color"
 msgstr "Otsakkeen ja sivupalkin tekstin väri"
 
-#: inc/customizer.php:44
+#: inc/customizer.php:51
 msgid "Base Color Scheme"
 msgstr "Väriteema"
 
-#: inc/back-compat.php:37 inc/back-compat.php:47 inc/back-compat.php:60
+#: inc/back-compat.php:37 inc/back-compat.php:48 inc/back-compat.php:62
 msgid "Twenty Fifteen requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again."
 msgstr "Twenty Fifteen vaatii vähintään WordPress-version 4.1. Käytät versiota %s. Ole hyvä ja päivitä ja kokeile uudelleen."
 
-#: image.php:84
+#: image.php:88
 msgctxt "Parent post link"
 msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%title</span>"
 msgstr "<span class=\"meta-nav\">Julkaistu artikkelissa</span><span class=\"post-title\">%title</span>"
 
-#: image.php:24
+#: image.php:25
 msgid "Next Image"
 msgstr "Seuraava kuva"
 
-#: image.php:24
+#: image.php:25
 msgid "Previous Image"
 msgstr "Edellinen kuva"
 
-#: header.php:45
+#: header.php:49
 msgid "Menu and widgets"
 msgstr "Valikko ja vimpaimet"
 
@@ -160,18 +160,18 @@ msgstr "Valikko ja vimpaimet"
 msgid "Skip to content"
 msgstr "Siirry sisältöön"
 
-#: functions.php:283
+#: functions.php:312
 msgid "collapse child menu"
 msgstr "piilota alavalikko"
 
-#: functions.php:282
+#: functions.php:311
 msgid "expand child menu"
 msgstr "näytä alavalikko"
 
 #. Translators: To add an additional character subset specific to your
 #. language, translate this to 'greek', 'cyrillic', 'devanagari' or
 #. 'vietnamese'. Do not translate into your own language.
-#: functions.php:212
+#: functions.php:238
 msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
 msgid "no-subset"
 msgstr "no-subset"
@@ -179,7 +179,7 @@ msgstr "no-subset"
 #. Translators: If there are characters in your language that are not supported
 #. by Inconsolata, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:204
+#: functions.php:230
 msgctxt "Inconsolata font: on or off"
 msgid "on"
 msgstr "on"
@@ -187,7 +187,7 @@ msgstr "on"
 #. Translators: If there are characters in your language that are not supported
 #. by Noto Serif, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:196
+#: functions.php:222
 msgctxt "Noto Serif font: on or off"
 msgid "on"
 msgstr "on"
@@ -195,34 +195,34 @@ msgstr "on"
 #. Translators: If there are characters in your language that are not supported
 #. by Noto Sans, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:188
+#: functions.php:214
 msgctxt "Noto Sans font: on or off"
 msgid "on"
 msgstr "on"
 
-#: functions.php:162
+#: functions.php:187
 msgid "Add widgets here to appear in your sidebar."
 msgstr "Lisää vimpaimia sivupalkkiin."
 
-#: functions.php:160
+#: functions.php:185
 msgid "Widget Area"
 msgstr "Vimpainalue"
 
-#: functions.php:86
+#: functions.php:87
 msgid "Social Links Menu"
 msgstr "Some-valikko"
 
-#: functions.php:85
+#: functions.php:86
 msgid "Primary Menu"
 msgstr "Ensisijainen valikko"
 
-#: footer.php:25
+#: footer.php:31
 msgid "Proudly powered by %s"
 msgstr "Voimanlähteenä %s"
 
-#. #-#-#-#-#  twentyfifteen.pot (Twenty Fifteen 1.8)  #-#-#-#-#
+#. #-#-#-#-#  twentyfifteen.pot (Twenty Fifteen 2.0)  #-#-#-#-#
 #. Author URI of the plugin/theme
-#: footer.php:25
+#: footer.php:30
 msgid "https://wordpress.org/"
 msgstr "https://fi.wordpress.org/"
 
@@ -242,30 +242,23 @@ msgstr "Oletko valmis julkaisemaan ensimmäisen kirjoituksesi? <a href=\"%1$s\">
 msgid "Nothing Found"
 msgstr "Mitään ei löytynyt."
 
-#: content-link.php:56 content-page.php:35 content-search.php:28
-#: content-search.php:33 content.php:57 image.php:71
+#: content-link.php:60 content-page.php:37 content-search.php:28
+#: content-search.php:33 content.php:61 image.php:74
 msgid "Edit"
 msgstr "Muokkaa"
 
-#: content-link.php:36 content-page.php:25 content.php:38 image.php:59
+#: content-link.php:39 content-page.php:26 content.php:41 image.php:61
 msgid "Pages:"
 msgstr "Sivut:"
 
 #. translators: %s: Name of current post
-#: content-link.php:31 content.php:33 inc/template-tags.php:238
+#: content-link.php:32 content.php:34 inc/template-tags.php:249
 msgid "Continue reading %s"
 msgstr "Jatka artikkeliin %s"
 
-#: comments.php:53
+#: comments.php:71
 msgid "Comments are closed."
 msgstr "Kommentointi on suljettu."
-
-#: comments.php:28
-msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "Yksi kommentti artikkeliin &rdquo;%2$s&rdquo;"
-msgstr[1] "%1$s kommenttia artikkeliin &rdquo;%2$s&rdquo;"
 
 #: author-bio.php:34
 msgid "View all posts by %s"
@@ -275,16 +268,16 @@ msgstr "Näytä kaikki artikkelit kirjoittajalta %s"
 msgid "Published by"
 msgstr "Tietoa kirjoittajasta"
 
-#: archive.php:51 content-link.php:40 content-page.php:29 content.php:42
-#: image.php:63 index.php:48 search.php:40
+#: archive.php:53 content-link.php:43 content-page.php:30 content.php:45
+#: image.php:65 index.php:50 search.php:43
 msgid "Page"
 msgstr "Sivu"
 
-#: archive.php:50 index.php:47 search.php:39
+#: archive.php:52 index.php:49 search.php:42
 msgid "Next page"
 msgstr "Seuraava sivu"
 
-#: archive.php:49 index.php:46 search.php:38
+#: archive.php:51 index.php:48 search.php:41
 msgid "Previous page"
 msgstr "Edellinen sivu"
 
