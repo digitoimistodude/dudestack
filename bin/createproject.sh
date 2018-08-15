@@ -230,6 +230,8 @@ sed -i -e "s/example.com/${PROJECTNAME}.test/g" .env
 sed -i -e "s/example.com/${PROJECTNAME}.test/g" .env
 echo '
 SENDGRID_API_KEY=YOUR_SENDGRID_API_KEY_HERE' >> .env
+echo -e '
+IMAGIFY_API_KEY=YOUR_IMAGIFY_API_KEY_HERE' >> .env
 
 # If you are using MAMP you may want to enable these:
 
