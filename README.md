@@ -22,7 +22,7 @@ createproject
 5. [Installation](#installation)
 6. [Documentation](#documentation)
   1. [Starting a new project with createproject bash script](#starting-a-new-project-with-createproject-bash-script)
-    1. [What createproject.sh does](#what-createprojectsh-does)
+      1. [What createproject.sh does](#what-createprojectsh-does)
   2. [What you most probably need to edit in every project](#what-you-most-probably-need-to-edit-in-every-project)
   3. [Getting started](#getting-started)
   4. [Paid or Premium plugins](#paid-or-premium-plugins)
