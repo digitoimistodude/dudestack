@@ -6,6 +6,7 @@
 .vagrant
 .sass-cache/
 .git/
+.DS_Store
 
 # Logs
 package-lock.json
