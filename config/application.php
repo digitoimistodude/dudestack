@@ -63,7 +63,7 @@ define( 'WP_REDIS_MAXTTL',          43200 ); // max cache half day
 define( 'AUTOMATIC_UPDATER_DISABLED', false );
 define( 'DISABLE_WP_CRON', false );
 define( 'DISALLOW_FILE_EDIT', true );
-define( 'WP_POST_REVISIONS', 50 );
+define( 'WP_POST_REVISIONS', 25 );
 
 /**
  * Bootstrap WordPress
