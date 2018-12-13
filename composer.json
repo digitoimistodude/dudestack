@@ -56,7 +56,7 @@
     "composer/installers": "~1.2.0",
     "wp-cli/wp-cli-bundle": "*",
     "vlucas/phpdotenv": "^2.0.1",
-    "johnpbloch/wordpress": "4.9.8",
+    "johnpbloch/wordpress": "5.0.1",
     "digitoimistodude/air-helper": "*",
     "wpackagist-plugin/classic-editor": "*",
     "wpackagist-plugin/google-analytics-dashboard-for-wp": "*",
