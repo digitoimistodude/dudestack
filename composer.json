@@ -66,6 +66,8 @@
     "wpackagist-plugin/wp-sanitize-accented-uploads": "*",
     "wpackagist-plugin/email-address-encoder": "*",
     "wpackagist-plugin/worker": "*",
+    "wpackagist-plugin/redis-cache": "*",
+    "wpackagist-plugin/autodescription": "*",
     "aucor/dynamic-mo-loader": "*"
   },
   "require-dev": {
