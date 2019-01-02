@@ -72,6 +72,7 @@
   },
   "require-dev": {
     "rarst/wps": "*",
+    "rarst/laps": "*",
     "wpackagist-plugin/query-monitor": "*",
     "digitoimistodude/gulp-sitemap-generator":"dev-master"
   },
