@@ -64,6 +64,7 @@ define( 'AUTOMATIC_UPDATER_DISABLED', false );
 define( 'DISABLE_WP_CRON', false );
 define( 'DISALLOW_FILE_EDIT', true );
 define( 'WP_POST_REVISIONS', 25 );
+define( 'PLL_CACHE_HOME_URL', false );
 
 /**
  * Bootstrap WordPress
