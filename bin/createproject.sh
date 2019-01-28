@@ -219,6 +219,7 @@ rm -rf .git
 rm .travis.yml
 rm package-lock.json
 rm .DS_Store
+rm -rf bin
 
 composer update
 echo "${yellow}Updating .env (db credentials)...:${txtreset}"
