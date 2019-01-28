@@ -284,16 +284,19 @@ chmod -R 775 $HOME/Projects/$PROJECTNAME/content
 #WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp user create user2 user2@yourcompanyltd.com --role=administrator --user_pass=somepass --first_name=Marilyn --last_name=Manson --display_name=MarilynWP_CLI_SUFFIX
 
 rm "$HOME/Projects/$PROJECTNAME/.env.example"
-echo "${yellow}Creating a bitbucket repo...${txtreset}"
-curl -X POST -v -u YOUR_BITBUCKET_ACCOUNT_HERE:YOUR_BITBUCKET_PASSWORD_HERE "https://api.bitbucket.org/2.0/repositories/YOUR_BITBUCKET_TEAM_HERE/${PROJECTNAME}" -H "Content-Type: application/json"  -d '{"is_private": true, "project": {"key": "PROJECTS'"${YEAR}"'"}}'
+#echo "${yellow}Creating a bitbucket repo...${txtreset}"
+#curl -X POST -v -u YOUR_BITBUCKET_ACCOUNT_HERE:YOUR_BITBUCKET_PASSWORD_HERE "https://api.bitbucket.org/2.0/repositories/YOUR_BITBUCKET_TEAM_HERE/${PROJECTNAME}" -H "Content-Type: application/json"  -d '{"is_private": true, "project": {"key": "PROJECTS'"${YEAR}"'"}}'
 
-echo "${yellow}Initializing the bitbucket repo...${txtreset}"
+# For GitHub:
+curl -u 'YOUR_COMPANY_USERNAME':'YOUR_ACCESS_TOKEN' https://api.github.com/orgs/YOUR_COMPANY_USERNAME/repos -d '{"name": "${PROJECTNAME}","auto_init": false,"private": true,"description": "A repository for ${PROJECTNAME} site"}'
+
+#echo "${yellow}Initializing the bitbucket repo...${txtreset}"
 cd "$HOME/Projects/$PROJECTNAME"
 git init
-git remote add origin git@bitbucket.org:YOUR_BITBUCKET_TEAM_HERE/$PROJECTNAME.git
+#git remote add origin git@bitbucket.org:YOUR_BITBUCKET_TEAM_HERE/$PROJECTNAME.git
 git add --all
 git commit -m 'First commit - project started'
-git push -u origin --all
+#git push -u origin --all
 
 echo "server {
     listen 80;
