@@ -3,7 +3,7 @@
 
 Dudestack is a modern WordPress toolkit that helps you get started with the best development tools and project structure - just like [Bedrock](https://github.com/roots/bedrock).
 
-The idea is to have just one command for starting the project. Saves 10 hours easily in each project start when *Dont-Repeat-Yourself* -stuff are fully automated! 
+The idea is to have just one command for starting the project. Saves 10 hours easily in each project start when *Dont-Repeat-Yourself* -stuff are fully automated!
 
 After setting up, you can start a new project just by running:
 
@@ -55,13 +55,13 @@ Despite the fact we love most of Bedrock, we noticed there are some things we do
  - Fast and easy templates for development and deployment
  - Customizable bash script for creating new WordPress projects
  - Automatic MySQL-database generation
- - Automatic Bitbucket repo initializition
  - Automatic Project-related host settings for vagrant
  - Cleaning default WordPress stuff with wp-cli
  - [Capistrano 3](http://capistranorb.com/) deployment templates bundled in bin/createproject.sh
  - [Composer](https://getcomposer.org/) to take care of WordPress installation and plugin dependencies and updates
  - [Dotenv](https://github.com/vlucas/phpdotenv)-environments for development, staging and production
  - Support for LEMP and Vagrant development environments
+ - Support for Bitbucket and Github repo initialization
 
 ## Requirements
 

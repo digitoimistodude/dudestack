@@ -49,7 +49,7 @@ case $choice in
       wp_cli_command_suffix=''
       break
       # Choose $choice
-     ;;     
+     ;;
      *)
      echo "${red}Please type, 1, 2 or 3 only.${txtreset}
      "
@@ -75,17 +75,48 @@ echo "${boldyellow}Pairing vagrant with your computer...${txtreset} "
 cat ~/.ssh/id_rsa.pub | ssh vagrant@$localip 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys' && chmod -Rv 755 ~/.ssh && chmod 400 ~/.ssh/id_rsa
 fi
 
-echo "${boldyellow}Bitbucket account email:${txtreset} "
-read -e YOUR_BITBUCKET_ACCOUNT_HERE
+while true; do
+echo "${boldyellow}Which service you are using for private repositories?${txtreset}
 
-echo "${boldyellow}Bitbucket username (this is used for repo url):${txtreset} "
-read -e YOUR_BITBUCKET_USERNAME_HERE
+Type:
 
-echo "${boldyellow}Bitbucket password:${txtreset} "
-read -e YOUR_BITBUCKET_PASSWORD_HERE
+1 for GitHub
+2 Bitbucket
+"
+read repochoice
+echo
 
-echo "${boldyellow}Bitbucket team name (lowercase account name):${txtreset} "
-read -e YOUR_BITBUCKET_TEAM_HERE
+case $repochoice in
+     1)
+      repochoice="github"
+      echo "${boldyellow}GitHub company username (this is used for repo url):${txtreset} "
+      read -e YOUR_GITHUB_COMPANY_USERNAME
+
+      echo "${boldyellow}GitHub access token (Tutorial: https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/):${txtreset} "
+      read -e YOUR_GITHUB_ACCESS_TOKEN
+      break
+     ;;
+     2)
+      repochoice="bitbucket"
+      echo "${boldyellow}Bitbucket account email:${txtreset} "
+      read -e YOUR_BITBUCKET_ACCOUNT_HERE
+
+      echo "${boldyellow}Bitbucket username (this is used for repo url):${txtreset} "
+      read -e YOUR_BITBUCKET_USERNAME_HERE
+
+      echo "${boldyellow}Bitbucket password:${txtreset} "
+      read -e YOUR_BITBUCKET_PASSWORD_HERE
+
+      echo "${boldyellow}Bitbucket team name (lowercase account name):${txtreset} "
+      read -e YOUR_BITBUCKET_TEAM_HERE
+      break
+     ;;
+     *)
+     echo "${red}Please type, 1 or 2.${txtreset}
+     "
+     ;;
+esac
+done
 
 echo "${boldyellow}Staging server hostname (for example myawesomeserver.com):${txtreset} "
 read -e YOUR_STAGING_SERVER_HERE
@@ -122,18 +153,28 @@ read -e YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE
 echo "${boldyellow}Generating createscript with your information (requires root):${txtreset} "
 if [ $choice == "marlin-vagrant" ]
 then
-sed -e "s;\YOUR_BITBUCKET_ACCOUNT_HERE;$YOUR_BITBUCKET_ACCOUNT_HERE;" -e "s;\YOUR_BITBUCKET_PASSWORD_HERE;$YOUR_BITBUCKET_PASSWORD_HERE;" -e "s;\YOUR_BITBUCKET_TEAM_HERE;$YOUR_BITBUCKET_TEAM_HERE;" -e "s;\YOUR_STAGING_SERVER_HERE;$YOUR_STAGING_SERVER_HERE;" -e "s;\YOUR_STAGING_USERNAME_HERE;$YOUR_STAGING_USERNAME_HERE;" -e "s;\YOUR_STAGING_SERVER_PASSWORD_HERE;$YOUR_STAGING_SERVER_PASSWORD_HERE;" -e "s;\YOUR_STAGING_SERVER_HOME_PATH_HERE;$YOUR_STAGING_SERVER_HOME_PATH_HERE;" -e "s;\YOUR_DEFAULT_DATABASE_USERNAME_HERE;$YOUR_DEFAULT_DATABASE_USERNAME_HERE;" -e "s;\YOUR_DEFAULT_DATABASE_PASSWORD_HERE;$YOUR_DEFAULT_DATABASE_PASSWORD_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE;" -e "s;\WP_CLI_PREFIX;$wp_cli_command_prefix;" -e "s;\WP_CLI_SUFFIX;$wp_cli_command_suffix;" ~/Projects/dudestack/bin/createproject.sh > ~/Projects/dudestack/bin/createproject_generated.sh
+sed -e "s;\YOUR_STAGING_SERVER_HERE;$YOUR_STAGING_SERVER_HERE;" -e "s;\YOUR_STAGING_USERNAME_HERE;$YOUR_STAGING_USERNAME_HERE;" -e "s;\YOUR_STAGING_SERVER_PASSWORD_HERE;$YOUR_STAGING_SERVER_PASSWORD_HERE;" -e "s;\YOUR_STAGING_SERVER_HOME_PATH_HERE;$YOUR_STAGING_SERVER_HOME_PATH_HERE;" -e "s;\YOUR_DEFAULT_DATABASE_USERNAME_HERE;$YOUR_DEFAULT_DATABASE_USERNAME_HERE;" -e "s;\YOUR_DEFAULT_DATABASE_PASSWORD_HERE;$YOUR_DEFAULT_DATABASE_PASSWORD_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE;" -e "s;\WP_CLI_PREFIX;$wp_cli_command_prefix;" -e "s;\WP_CLI_SUFFIX;$wp_cli_command_suffix;" ~/Projects/dudestack/bin/createproject.sh > ~/Projects/dudestack/bin/createproject_generated.sh
 fi
 if [ $choice == "osxlemp" ] ;
 then
-sed -e "s;\YOUR_BITBUCKET_ACCOUNT_HERE;$YOUR_BITBUCKET_ACCOUNT_HERE;" -e "s;\YOUR_BITBUCKET_PASSWORD_HERE;$YOUR_BITBUCKET_PASSWORD_HERE;" -e "s;\YOUR_BITBUCKET_TEAM_HERE;$YOUR_BITBUCKET_TEAM_HERE;" -e "s;\YOUR_STAGING_SERVER_HERE;$YOUR_STAGING_SERVER_HERE;" -e "s;\YOUR_STAGING_USERNAME_HERE;$YOUR_STAGING_USERNAME_HERE;" -e "s;\YOUR_STAGING_SERVER_PASSWORD_HERE;$YOUR_STAGING_SERVER_PASSWORD_HERE;" -e "s;\YOUR_STAGING_SERVER_HOME_PATH_HERE;$YOUR_STAGING_SERVER_HOME_PATH_HERE;" -e "s;\YOUR_DEFAULT_DATABASE_USERNAME_HERE;$YOUR_DEFAULT_DATABASE_USERNAME_HERE;" -e "s;\YOUR_DEFAULT_DATABASE_PASSWORD_HERE;$YOUR_DEFAULT_DATABASE_PASSWORD_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE;" -e "s;\WP_CLI_PREFIX;$wp_cli_command_prefix;" -e "s;\WP_CLI_SUFFIX;$wp_cli_command_suffix;" ~/Projects/dudestack/bin/osxlemp.sh > ~/Projects/dudestack/bin/createproject_generated.sh
+sed -e "s;\YOUR_STAGING_SERVER_HERE;$YOUR_STAGING_SERVER_HERE;" -e "s;\YOUR_STAGING_USERNAME_HERE;$YOUR_STAGING_USERNAME_HERE;" -e "s;\YOUR_STAGING_SERVER_PASSWORD_HERE;$YOUR_STAGING_SERVER_PASSWORD_HERE;" -e "s;\YOUR_STAGING_SERVER_HOME_PATH_HERE;$YOUR_STAGING_SERVER_HOME_PATH_HERE;" -e "s;\YOUR_DEFAULT_DATABASE_USERNAME_HERE;$YOUR_DEFAULT_DATABASE_USERNAME_HERE;" -e "s;\YOUR_DEFAULT_DATABASE_PASSWORD_HERE;$YOUR_DEFAULT_DATABASE_PASSWORD_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE;" -e "s;\WP_CLI_PREFIX;$wp_cli_command_prefix;" -e "s;\WP_CLI_SUFFIX;$wp_cli_command_suffix;" ~/Projects/dudestack/bin/osxlemp.sh > ~/Projects/dudestack/bin/createproject_generated.sh
 fi
 if [ $choice == "docker" ] ;
 then
-sed -e "s;\YOUR_BITBUCKET_ACCOUNT_HERE;$YOUR_BITBUCKET_ACCOUNT_HERE;" -e "s;\YOUR_BITBUCKET_PASSWORD_HERE;$YOUR_BITBUCKET_PASSWORD_HERE;" -e "s;\YOUR_BITBUCKET_TEAM_HERE;$YOUR_BITBUCKET_TEAM_HERE;" -e "s;\YOUR_STAGING_SERVER_HERE;$YOUR_STAGING_SERVER_HERE;" -e "s;\YOUR_STAGING_USERNAME_HERE;$YOUR_STAGING_USERNAME_HERE;" -e "s;\YOUR_STAGING_SERVER_PASSWORD_HERE;$YOUR_STAGING_SERVER_PASSWORD_HERE;" -e "s;\YOUR_STAGING_SERVER_HOME_PATH_HERE;$YOUR_STAGING_SERVER_HOME_PATH_HERE;" -e "s;\YOUR_DEFAULT_DATABASE_USERNAME_HERE;$YOUR_DEFAULT_DATABASE_USERNAME_HERE;" -e "s;\YOUR_DEFAULT_DATABASE_PASSWORD_HERE;$YOUR_DEFAULT_DATABASE_PASSWORD_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE;" -e "s;\WP_CLI_PREFIX;$wp_cli_command_prefix;" -e "s;\WP_CLI_SUFFIX;$wp_cli_command_suffix;" ~/Projects/dudestack/bin/docker.sh > ~/Projects/dudestack/bin/createproject_generated.sh
+sed -e "s;\YOUR_STAGING_SERVER_HERE;$YOUR_STAGING_SERVER_HERE;" -e "s;\YOUR_STAGING_USERNAME_HERE;$YOUR_STAGING_USERNAME_HERE;" -e "s;\YOUR_STAGING_SERVER_PASSWORD_HERE;$YOUR_STAGING_SERVER_PASSWORD_HERE;" -e "s;\YOUR_STAGING_SERVER_HOME_PATH_HERE;$YOUR_STAGING_SERVER_HOME_PATH_HERE;" -e "s;\YOUR_DEFAULT_DATABASE_USERNAME_HERE;$YOUR_DEFAULT_DATABASE_USERNAME_HERE;" -e "s;\YOUR_DEFAULT_DATABASE_PASSWORD_HERE;$YOUR_DEFAULT_DATABASE_PASSWORD_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_PASSWORD_HERE;" -e "s;\YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE;$YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE;" -e "s;\WP_CLI_PREFIX;$wp_cli_command_prefix;" -e "s;\WP_CLI_SUFFIX;$wp_cli_command_suffix;" ~/Projects/dudestack/bin/docker.sh > ~/Projects/dudestack/bin/createproject_generated.sh
 fi
 
-sudo mv ~/Projects/dudestack/bin/createproject_generated.sh /usr/local/bin/createproject
+if [ $repochoice == "github" ]
+then
+sed -e "s;\YOUR_GITHUB_ACCESS_TOKEN;$YOUR_GITHUB_ACCESS_TOKEN;" -e "s;\YOUR_GITHUB_COMPANY_USERNAME;$YOUR_GITHUB_COMPANY_USERNAME;" ~/Projects/dudestack/bin/createproject_generated.sh > ~/Projects/dudestack/bin/createproject_generated_2.sh
+fi
+if [ $repochoice == "bitbucket" ] ;
+then
+sed -e "s;\YOUR_BITBUCKET_ACCOUNT_HERE;$YOUR_BITBUCKET_ACCOUNT_HERE;" -e "s;\YOUR_BITBUCKET_PASSWORD_HERE;$YOUR_BITBUCKET_PASSWORD_HERE;" -e "s;\YOUR_BITBUCKET_TEAM_HERE;$YOUR_BITBUCKET_TEAM_HERE;" ~/Projects/dudestack/bin/createproject_generated.sh > ~/Projects/dudestack/bin/createproject_generated_2.sh
+fi
+
+sudo rm ~/Projects/dudestack/bin/createproject_generated.sh
+sudo mv ~/Projects/dudestack/bin/createproject_generated_2.sh /usr/local/bin/createproject
 sudo chmod +x /usr/local/bin/createproject
 
 echo "${boldgreen}Setup successful. Please run createproject before starting a project. Double check out source code of /usr/local/bin/createproject before using."
