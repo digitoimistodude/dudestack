@@ -263,16 +263,23 @@ WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp core install 
 echo "${yellow}Removing default WordPress posts...:${txtreset}"
 WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp post delete 1 --forceWP_CLI_SUFFIX
 WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp post delete 2 --forceWP_CLI_SUFFIX
+
+echo "${yellow}Updating WordPress settings...:${txtreset}"
+WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update WPLANG 'fi'WP_CLI_SUFFIX
 WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update blogdescription ''WP_CLI_SUFFIX
 WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp theme delete twentytwelveWP_CLI_SUFFIX
 WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp theme delete twentythirteenWP_CLI_SUFFIX
 WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update permalink_structure '/%postname%'WP_CLI_SUFFIX
 WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update timezone_string 'Europe/Helsinki'WP_CLI_SUFFIX
 WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update default_pingback_flag '0'WP_CLI_SUFFIX
-date_format=$(vendor/wp-cli/wp-cli/bin/wp eval "echo __( 'j.n.Y' );")
-WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update date_format $date_formatWP_CLI_SUFFIX
+WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update default_ping_status 'closed'WP_CLI_SUFFIX
+WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update default_comment_status 'closed'WP_CLI_SUFFIX
+WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update date_format 'j.n.Y'WP_CLI_SUFFIX
+WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update time_format 'H.i'WP_CLI_SUFFIX
+
 #echo "${yellow}Activating necessary plugins, mainly for theme development...:${txtreset}"
 #WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin activate --allWP_CLI_SUFFIX
+
 chmod -R 775 $HOME/Projects/$PROJECTNAME/content
 
 ## You can set up extra users here - if you want, uncomment next lines
