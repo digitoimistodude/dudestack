@@ -33,7 +33,7 @@ else
 echo "${boldyellow}Project name in lowercase (without spaces or special characters):${txtreset} "
 read -e PROJECTNAME
 cd $HOME/Projects/dudestack
-composer create-project -n digitoimistodude/dudestack $HOME/Projects/${PROJECTNAME} dev-master
+composer create-project -n ronilaukkarinen/dudestack $HOME/Projects/${PROJECTNAME} dev-master
 cd $HOME/Projects/${PROJECTNAME}
 composer update
 echo "${yellow}Creating a MySQL database for ${PROJECTNAME}${txtreset}"
