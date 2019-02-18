@@ -15,6 +15,10 @@ access.log
 error.log
 log/
 
+# Special git hooks
+!.githooks
+!.githooks/*
+
 # Composer and npm
 vendor/
 vendor/*
