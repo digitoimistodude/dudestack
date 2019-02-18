@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# git hook to run a command after `git pull` if a specified file was changed
+# Run `chmod +x post-merge` to make it executable.
+
+changed_files="$(git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD)"
+
+check_run() {
+  echo "$changed_files" | grep --quiet "$1" && echo "$2"
+}
+
+# Test files
+check_run package.json "package.json changed, run npm install!"
+check_run composer.json "composer.json changed, run composer update!"
