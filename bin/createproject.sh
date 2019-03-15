@@ -277,6 +277,8 @@ WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update
 WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update default_comment_status 'closed'WP_CLI_SUFFIX
 WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update date_format 'j.n.Y'WP_CLI_SUFFIX
 WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update time_format 'H.i'WP_CLI_SUFFIX
+WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update admin_email 'koodarit@dude.fi'WP_CLI_SUFFIX
+WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option delete new_admin_emailWP_CLI_SUFFIX
 
 #echo "${yellow}Activating necessary plugins, mainly for theme development...:${txtreset}"
 #WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin activate --allWP_CLI_SUFFIX
