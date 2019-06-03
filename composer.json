@@ -46,10 +46,6 @@
     {
       "type": "vcs",
       "url": "https://github.com/digitoimistodude/gulp-sitemap-generator"
-    },
-    {
-      "type": "composer",
-      "url": "https://encoder.till.im"
     }
   ],
   "require": {
@@ -68,7 +64,6 @@
     "wpackagist-plugin/simple-history": "*",
     "wpackagist-plugin/sendgrid-email-delivery-simplified": "*",
     "wpackagist-plugin/wp-sanitize-accented-uploads": "*",
-    "tillkruss/email-encoder-premium": "*",
     "wpackagist-plugin/worker": "*",
     "wpackagist-plugin/redis-cache": "*",
     "wpackagist-plugin/autodescription": "*",
