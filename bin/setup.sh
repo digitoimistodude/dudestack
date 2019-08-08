@@ -13,6 +13,9 @@ green=$(tput setaf 2)
 white=$(tput setaf 7)
 txtreset=$(tput sgr0)
 
+cd ~/Projects/dudestack
+git pull
+
 while true; do
 echo "${boldyellow}Which local environment you are using?${txtreset}
 
