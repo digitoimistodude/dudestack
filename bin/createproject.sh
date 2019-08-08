@@ -300,7 +300,7 @@ rm "$HOME/Projects/$PROJECTNAME/.env.example"
 
 # For GitHub:
 #echo "${yellow}Creating a GitHub repo...${txtreset}"
-#curl -u 'YOUR_GITHUB_COMPANY_USERNAME':'YOUR_GITHUB_ACCESS_TOKEN' https://api.github.com/orgs/YOUR_GITHUB_COMPANY_USERNAME/repos -d '{"name": "${PROJECTNAME}","auto_init": false,"private": true,"description": "A repository for ${PROJECTNAME} site"}'
+#curl -u 'YOUR_GITHUB_COMPANY_USERNAME':'YOUR_GITHUB_ACCESS_TOKEN' https://api.github.com/orgs/YOUR_GITHUB_COMPANY_USERNAME/repos -d '{"name": "'${PROJECTNAME}'","auto_init": false,"private": true,"description": "A repository for '${PROJECTNAME}' site"}'
 
 #echo "${yellow}Initializing the bitbucket repo...${txtreset}"
 cd "$HOME/Projects/$PROJECTNAME"
