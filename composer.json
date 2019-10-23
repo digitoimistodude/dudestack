@@ -68,7 +68,7 @@
     "wpackagist-plugin/redis-cache": "*",
     "wpackagist-plugin/autodescription": "*",
     "wpackagist-plugin/force-strong-passwords": "*",
-    "aucor/dynamic-mo-loader": "*"
+    "wpackagist-plugin/dynamic-mo-loader": "*"
   },
   "require-dev": {
     "rarst/wps": "*",
