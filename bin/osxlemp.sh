@@ -271,5 +271,7 @@ sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.nginx.plist
 echo "${boldgreen}Local environment up and running.${txtreset}"
 echo "${yellow}Updating hosts file...${txtreset}"
 sudo -- sh -c "echo 127.0.0.1 ${PROJECTNAME}.test >> /etc/hosts"
+sudo brew services stop nginx
+sudo brew services start nginx
 echo "${boldgreen}All done! Start coding at http://${PROJECTNAME}.test!${txtreset} (Please note! no themes installed, so you may see a white page. We recommend air which is designed for dudestack: https://github.com/digitoimistodude/air)"
 fi
