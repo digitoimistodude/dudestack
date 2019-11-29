@@ -56,7 +56,7 @@
     "composer/installers": "~1.2.0",
     "wp-cli/wp-cli-bundle": "*",
     "vlucas/phpdotenv": "^2.0.1",
-    "johnpbloch/wordpress": "5.2.4",
+    "johnpbloch/wordpress": "5.3",
     "digitoimistodude/air-helper": "*",
     "wpackagist-plugin/classic-editor": "*",
     "wpackagist-plugin/google-analytics-dashboard-for-wp": "*",
@@ -68,7 +68,6 @@
     "wpackagist-plugin/redis-cache": "*",
     "wpackagist-plugin/autodescription": "*",
     "wpackagist-plugin/force-strong-passwords": "*",
-    "wpackagist-plugin/dynamic-mo-loader": "*"
   },
   "require-dev": {
     "rarst/wps": "*",
