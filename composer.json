@@ -67,7 +67,7 @@
     "wpackagist-plugin/worker": "*",
     "wpackagist-plugin/redis-cache": "*",
     "wpackagist-plugin/autodescription": "*",
-    "wpackagist-plugin/force-strong-passwords": "*",
+    "wpackagist-plugin/force-strong-passwords": "*"
   },
   "require-dev": {
     "rarst/wps": "*",
