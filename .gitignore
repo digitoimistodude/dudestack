@@ -8,6 +8,7 @@
 .sass-cache/
 .git/
 .DS_Store
+composer.lock
 
 # Logs
 package-lock.json
