@@ -61,13 +61,13 @@ Despite the fact we love most of Bedrock, we noticed there are some things we do
  - [Composer](https://getcomposer.org/) to take care of WordPress installation and plugin dependencies and updates
  - [Dotenv](https://github.com/vlucas/phpdotenv)-environments for development, staging and production
  - Support for LEMP and Vagrant development environments
- - Support for Bitbucket and Github repo initialization
+ - Support for Github repo initialization
 
 ## Requirements
 
 * Basic knowledge about bash scripting, deployment with capistrano, npm packages, bundle, composer etc.
 * Vagrant ([marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant)) OR [osx-lemp-setup](https://github.com/digitoimistodude/osx-lemp-setup) but can be configured for MAMP or even Docker (in planning)
-* Bitbucket account
+* GitHub account
 * Unix-based OS (built for Mac OS X by default)
 * Access to staging and production servers that supports sftp and git
 * Projects located under $HOME/Projects
@@ -88,8 +88,6 @@ If you are using vagrant, you need to "pair" your machine with the VM (I presume
 cat ~/.ssh/id_rsa.pub | ssh vagrant@10.1.2.4 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys' && chmod -Rv 755 ~/.ssh && chmod 400 ~/.ssh/id_rsa
 ```
 
-If you are starting from clean slate, better yet, run Bitbucket's tutorial [Set up SSH for Git](https://confluence.atlassian.com/display/BITBUCKET/Set+up+SSH+for+Git).
-
 # Documentation
 1. [Starting a new project with createproject bash script](#starting-a-new-project-with-createproject-bash-script)
   1. [What createproject.sh does](#what-createprojectsh-does)
@@ -104,7 +102,7 @@ Creating a new project has a lot of configs to do. We wanted to automate most of
 - You are using staging server like customer.example.com and you store your customers' sites like customer.example.com/customerone. Your staging server user has proper permissions like making changes to /tmp
 - You are using separate production server that may necessarily not have all the permissions like writing in /tmp dir
 - You use [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant) or MAMP Pro (MAMP needs extensive editing and testing, [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant) works out of the box)
-- Your repositories are stored in Bitbucket
+- Your repositories are stored in GitHub
 - Your project hostname is project.test
 - You use gulp, grunt or CodeKit2+
 - WordPress dependencies are controlled by composer
@@ -121,7 +119,7 @@ When you run `createproject` it looks like this:
 2. Installs default WordPress plugins and updates them
 3. Creates MySQL repository automatically with project name (assumes by default that you have [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant)) installed with default settings and paired with your host computer, for MAMP you'll need to edit bin/createproject.sh and edit `YOURMAMPMYSQLPASSWORD`).
 4. Installs capistrano
-5. Generates capistrano configs (config/deploy.rb, config/deploy/staging.rb, config/deploy/production.rb) with your bitbucket details and paths
+5. Generates capistrano configs (config/deploy.rb, config/deploy/staging.rb, config/deploy/production.rb) with your GitHub details and paths
 6. Creates a Sublime Text 3 project
 7. Sets up WordPress configs and salts automatically
 8. Installs WordPress under its own subdirectory /wp (thus, admin located in example.test/wp/wp-admin)
@@ -130,7 +128,7 @@ When you run `createproject` it looks like this:
 11. Activates default plugins, timezones, permalinks
 12. Updates .htaccess, adds support for mod_rewrite/permalinks and webfonts
 13. Sets up file permissions
-14. Inits bitbucket repository
+14. Inits a GitHub repository
 15. Sets up a vagrant virtual host
 16. Updates /etc/hosts file
 
