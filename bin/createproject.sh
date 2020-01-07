@@ -261,7 +261,7 @@ core install:
 
 # These syntaxes are for vagrant:
 
-WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp core install --title=$PROJECTNAME --admin_email=YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HEREWP_CLI_SUFFIX
+WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp core install --debug --title=$PROJECTNAME --admin_email=YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HEREWP_CLI_SUFFIX
 echo "${yellow}Removing default WordPress posts...:${txtreset}"
 WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp post delete 1 --forceWP_CLI_SUFFIX
 WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp post delete 2 --forceWP_CLI_SUFFIX
