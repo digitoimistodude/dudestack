@@ -9,6 +9,7 @@
 .git/
 .DS_Store
 composer.lock
+.vscode/
 
 # Logs
 package-lock.json
