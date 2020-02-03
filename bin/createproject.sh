@@ -36,6 +36,10 @@ cd $HOME/Projects/dudestack
 composer create-project -n ronilaukkarinen/dudestack $HOME/Projects/${PROJECTNAME} dev-master
 cd $HOME/Projects/${PROJECTNAME}
 composer update
+echo "${yellow}Ensuring mysql is on (macOS)${txtreset}"
+sudo mkdir -p /usr/local/etc/my.cnf.d
+sudo brew services stop nginx
+sudo brew services start nginx
 echo "${yellow}Creating a MySQL database for ${PROJECTNAME}${txtreset}"
 # NOTE: this needs auto-login to local vm
 WP_CLI_PREFIXmysql -u root -p'YOUR_DEFAULT_DATABASE_PASSWORD_HERE' -e \"CREATE DATABASE ${PROJECTNAME}\"WP_CLI_SUFFIX
