@@ -242,6 +242,8 @@ echo '
 SENDGRID_API_KEY=YOUR_SENDGRID_API_KEY_HERE' >> .env
 echo -e '
 IMAGIFY_API_KEY=YOUR_IMAGIFY_API_KEY_HERE' >> .env
+echo -e '
+HS_BEACON_ID=YOUR_HS_BEACON_ID_HERE' >> .env
 
 # If you are using MAMP you may want to enable these:
 
