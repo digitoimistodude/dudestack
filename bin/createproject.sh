@@ -315,6 +315,7 @@ echo "${yellow}Initializing the GitHub repo...${txtreset}"
 cd "$HOME/Projects/$PROJECTNAME"
 git init
 git remote add origin git@github.com:YOUR_GITHUB_COMPANY_USERNAME/$PROJECTNAME.git
+git config core.fileMode false
 git add --all
 git commit -m 'First commit - project started'
 git push -u origin --all
