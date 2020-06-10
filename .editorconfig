@@ -9,7 +9,7 @@ insert_final_newline = true
 [*.js]
 quote_type = single
 
-[README.md]
+[*.md]
 charset = unset
 end_of_line = unset
 insert_final_newline = unset
