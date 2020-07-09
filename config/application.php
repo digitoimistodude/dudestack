@@ -52,7 +52,7 @@ define( 'NONCE_SALT',       getenv( 'NONCE_SALT' ) );
  *  Redis object cache settings for
  *  https://wordpress.org/plugins/redis-cache/
  */
-define( 'WP_CACHE_KEY_SALT',        getenv( 'DB_NAME' ) );
+define( 'WP_REDIS_PREFIX',          getenv( 'DB_NAME' ) );
 define( 'WP_REDIS_SELECTIVE_FLUSH', true );
 define( 'WP_REDIS_MAXTTL',          43200 ); // max cache half day
 
