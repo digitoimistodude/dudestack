@@ -7,35 +7,27 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/2.4.0-alpha\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
 "Language: fi\n"
 "Project-Id-Version: Themes - Twenty Sixteen\n"
 
-#. Theme Name of the plugin/theme
-msgid "Twenty Sixteen"
-msgstr "Twenty Sixteen"
-
-#. Description of the plugin/theme
-msgid "Twenty Sixteen is a modernized take on an ever-popular WordPress layout — the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere."
-msgstr "Twenty Sixteen on moderni näkemys ikivihreästä WordPress-asettelusta – vaakasuuntainen ylätunniste valinnaisen oikean sivupalkin kanssa toimii täydellisesti blogeissa ja verkkosivuilla. Sillä on räätälöitävät värivalinnat kauniilla oletusväriyhdistelmillä, harmoninen joustava rakenne käyttäen mobiili ensin -lähestymistapaa ja huoliteltu jokaisen yksityiskohdan viimeistely. Twenty Sixteen saa WordPressisi näyttämään kauniilta kaikkialla."
-
-#. translators: %s: Name of current post
-#: inc/template-tags.php:194 template-parts/content.php:29
-msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr "Jatka lukemista<span class=\"screen-reader-text\"> \"%s\"</span>"
-
-#. translators: %s: Name of current post
+#. translators: %s: Post title.
 #: image.php:88 template-parts/content-page.php:39
-#: template-parts/content-search.php:28 template-parts/content-search.php:43
-#: template-parts/content-single.php:47 template-parts/content.php:53
+#: template-parts/content.php:53 template-parts/content-search.php:28
+#: template-parts/content-search.php:43 template-parts/content-single.php:47
 msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "Muokkaa<span class=\"screen-reader-text\"> \"%s\"</span>"
 
-#: inc/customizer.php:324
+#. translators: %s: Post title.
+#: template-parts/content.php:29 inc/template-tags.php:195
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Jatka lukemista<span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#: inc/customizer.php:347
 msgid "Red"
 msgstr "Punainen"
 
-#. translators: %s: post title
+#. translators: %s: Post title.
 #: comments.php:31
 msgctxt "comments title"
 msgid "One thought on &ldquo;%s&rdquo;"
@@ -56,15 +48,15 @@ msgctxt "label"
 msgid "Search for:"
 msgstr "Etsi:"
 
-#: footer.php:30
-msgid "Footer Social Links Menu"
-msgstr "Alatunnisteen sosiaaliset linkit -valikko"
-
 #: footer.php:17
 msgid "Footer Primary Menu"
 msgstr "Alatunnisteen ensisijainen valikko"
 
-#: functions.php:167
+#: footer.php:30
+msgid "Footer Social Links Menu"
+msgstr "Alatunnisteen sosiaaliset linkit -valikko"
+
+#: functions.php:269
 msgid "Add widgets here to appear in your sidebar."
 msgstr "Lisää vimpaimia sivupalkkiin."
 
@@ -72,15 +64,16 @@ msgstr "Lisää vimpaimia sivupalkkiin."
 msgid "Featured"
 msgstr "Suositellut"
 
-#: template-parts/content-none.php:28
+#: template-parts/content-none.php:33
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr "Emme valitettavasti löytäneet etsimääsi. Ehkä hakutoiminnosta on apua."
 
-#: template-parts/content-none.php:23
+#: template-parts/content-none.php:28
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr "Pahoittelut mutta mitään ei löytynyt hakuehdoillasi. Kokeile uudelleen joillakin toisilla hakusanoilla."
 
-#: template-parts/content-none.php:19
+#. translators: %s: Post editor URL.
+#: template-parts/content-none.php:22
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr "Oletko valmis julkaisemaan ensimmäisen kirjoituksesi? <a href=\"%1$s\">Aloita tästä</a>."
 
@@ -88,7 +81,8 @@ msgstr "Oletko valmis julkaisemaan ensimmäisen kirjoituksesi? <a href=\"%1$s\">
 msgid "Nothing Found"
 msgstr "Mitään ei löytynyt"
 
-#: template-parts/biography.php:33
+#. translators: %s: The post author display name.
+#: template-parts/biography.php:35
 msgid "View all posts by %s"
 msgstr "Näytä kaikki käyttäjän %s artikkelit"
 
@@ -100,38 +94,39 @@ msgstr "Tekijä:"
 msgid "Previous post:"
 msgstr "Edellinen artikkeli:"
 
-#: single.php:41
-msgid "Previous"
-msgstr "Edellinen"
-
 #: single.php:39
 msgid "Next post:"
 msgstr "Seuraava artikkeli:"
+
+#: single.php:41
+msgid "Previous"
+msgstr "Edellinen"
 
 #: single.php:38
 msgid "Next"
 msgstr "Seuraava"
 
-#: search.php:18
+#. translators: %s: The search query.
+#: search.php:21
 msgid "Search Results for: %s"
 msgstr "Hakutulokset: %s"
 
-#: inc/template-tags.php:112
+#: inc/template-tags.php:113
 msgctxt "Used before tag names."
 msgid "Tags"
 msgstr "Avainsanat"
 
-#: inc/template-tags.php:103
+#: inc/template-tags.php:104
 msgctxt "Used before category names."
 msgid "Categories"
 msgstr "Kategoriat"
 
-#: inc/template-tags.php:99 inc/template-tags.php:108
+#: inc/template-tags.php:100 inc/template-tags.php:109
 msgctxt "Used between list items, there is a space after the comma."
 msgid ", "
 msgstr ", "
 
-#: inc/template-tags.php:83
+#: inc/template-tags.php:84
 msgctxt "Used before publish date."
 msgid "Posted on"
 msgstr "Julkaistu"
@@ -141,7 +136,8 @@ msgctxt "Used before post format."
 msgid "Format"
 msgstr "Artikkelimuoto"
 
-#: inc/template-tags.php:52
+#. translators: %s: Post title.
+#: inc/template-tags.php:53
 msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "Jätä kommentti<span class=\"screen-reader-text\"> artikkeliin %s</span>"
 
@@ -150,50 +146,51 @@ msgctxt "Used before post author name."
 msgid "Author"
 msgstr "Kirjoittaja"
 
-#: inc/customizer.php:334
+#: functions.php:209 inc/customizer.php:357
 msgid "Yellow"
 msgstr "Keltainen"
 
-#: inc/customizer.php:314
+#: inc/customizer.php:337
 msgid "Gray"
 msgstr "Harmaa"
 
-#: inc/customizer.php:304
+#: inc/customizer.php:327
 msgid "Dark"
 msgstr "Tumma"
 
-#: inc/customizer.php:204
-msgid "Main Text Color"
-msgstr "Pääasiallinen tekstin väri"
-
-#: inc/customizer.php:294
+#: inc/customizer.php:317
 msgid "Default"
 msgstr "Oletus"
 
-#: inc/customizer.php:222
+#: inc/customizer.php:242
 msgid "Secondary Text Color"
 msgstr "Toissijainen tekstin väri"
 
-#: inc/customizer.php:186
+#: inc/customizer.php:221
+msgid "Main Text Color"
+msgstr "Pääasiallinen tekstin väri"
+
+#: inc/customizer.php:200
 msgid "Link Color"
 msgstr "Linkin väri"
 
-#: inc/customizer.php:165
+#: inc/customizer.php:176
 msgid "Page Background Color"
 msgstr "Sivun taustaväri"
 
-#: image.php:107 single.php:31
+#: single.php:31 image.php:107
 msgctxt "Parent post link"
 msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%title</span>"
 msgstr "<span class=\"meta-nav\">Julkaistu artikkelissa</span><span class=\"post-title\">%title</span>"
 
-#: inc/back-compat.php:41 inc/back-compat.php:54 inc/back-compat.php:70
-msgid "Twenty Sixteen requires at least WordPress version 4.4. You are running version %s. Please upgrade and try again."
-msgstr "Twenty Sixteen vaatii vähintään WordPressin version 4.4. Sinulla on käytössä versio %s. Päivitä ja yritä uudelleen."
-
-#: inc/customizer.php:145
+#: inc/customizer.php:153
 msgid "Base Color Scheme"
 msgstr "Väriteema"
+
+#. translators: %s: The current WordPress version.
+#: inc/back-compat.php:42 inc/back-compat.php:56 inc/back-compat.php:75
+msgid "Twenty Sixteen requires at least WordPress version 4.4. You are running version %s. Please upgrade and try again."
+msgstr "Twenty Sixteen vaatii vähintään WordPressin version 4.4. Sinulla on käytössä versio %s. Päivitä ja yritä uudelleen."
 
 #: image.php:77
 msgctxt "Used before full size attachment link."
@@ -201,7 +198,7 @@ msgid "Full size"
 msgstr "Täysikokoinen"
 
 #: image.php:58 template-parts/content-page.php:24
-#: template-parts/content-single.php:26 template-parts/content.php:36
+#: template-parts/content.php:36 template-parts/content-single.php:26
 msgid "Pages:"
 msgstr "Sivut:"
 
@@ -213,71 +210,63 @@ msgstr "Seuraava kuva"
 msgid "Previous Image"
 msgstr "Edellinen kuva"
 
-#: header.php:49
+#: header.php:50
 msgid "Menu"
 msgstr "Valikko"
 
-#: header.php:27
+#: header.php:28
 msgid "Skip to content"
 msgstr "Siirry sisältöön"
 
-#: functions.php:301
+#: functions.php:419
 msgid "expand child menu"
 msgstr "näytä alavalikko"
 
-#: functions.php:302
+#: functions.php:420
 msgid "collapse child menu"
 msgstr "piilota alavalikko"
 
-#. translators: If there are characters in your language that are not supported
-#. by Inconsolata, translate this to 'off'. Do not translate into your own
-#. language.
-#: functions.php:227
-msgctxt "Inconsolata font: on or off"
-msgid "on"
-msgstr "on"
-
-#: functions.php:177
-msgid "Content Bottom 1"
-msgstr "Sisältö ala 1"
-
-#: functions.php:179 functions.php:191
-msgid "Appears at the bottom of the content on posts and pages."
-msgstr "Näkyy sisällön jälkeen artikkeleissa ja sivuissa."
-
-#: functions.php:189
-msgid "Content Bottom 2"
-msgstr "Sisältö ala 2"
-
-#. translators: If there are characters in your language that are not supported
-#. by Merriweather, translate this to 'off'. Do not translate into your own
-#. language.
-#: functions.php:217
-msgctxt "Merriweather font: on or off"
-msgid "on"
-msgstr "on"
-
-#. translators: If there are characters in your language that are not supported
-#. by Montserrat, translate this to 'off'. Do not translate into your own
-#. language.
-#: functions.php:222
+#: functions.php:330
 msgctxt "Montserrat font: on or off"
 msgid "on"
 msgstr "on"
 
-#: functions.php:165
+#: functions.php:338
+msgctxt "Inconsolata font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:322
+msgctxt "Merriweather font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:281 functions.php:293
+msgid "Appears at the bottom of the content on posts and pages."
+msgstr "Näkyy sisällön jälkeen artikkeleissa ja sivuissa."
+
+#: functions.php:279
+msgid "Content Bottom 1"
+msgstr "Sisältö ala 1"
+
+#: functions.php:291
+msgid "Content Bottom 2"
+msgstr "Sisältö ala 2"
+
+#: functions.php:267
 msgid "Sidebar"
 msgstr "Sivupalkki"
 
-#: functions.php:92 header.php:66
+#: functions.php:93 header.php:67
 msgid "Social Links Menu"
 msgstr "Some-valikko"
 
-#: functions.php:91 header.php:53
+#: functions.php:92 header.php:54
 msgid "Primary Menu"
 msgstr "Ensisijainen valikko"
 
-#: footer.php:61
+#. translators: %s: WordPress
+#: footer.php:63
 msgid "Proudly powered by %s"
 msgstr "Palvelun tarjoaa %s"
 
@@ -285,7 +274,7 @@ msgstr "Palvelun tarjoaa %s"
 msgid "Comments are closed."
 msgstr "Kommentit on suljettu."
 
-#. translators: 1: number of comments, 2: post title
+#. translators: 1: Number of comments, 2: Post title.
 #: comments.php:35
 msgctxt "comments title"
 msgid "%1$s thought on &ldquo;%2$s&rdquo;"
@@ -293,17 +282,17 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] "%1$s vastaus artikkeliin &ldquo;%2$s&rdquo;"
 msgstr[1] "%1$s vastausta artikkeliin &ldquo;%2$s&rdquo;"
 
-#: archive.php:53 image.php:62 index.php:50 search.php:41
-#: template-parts/content-page.php:28 template-parts/content-single.php:30
-#: template-parts/content.php:40
+#: image.php:62 template-parts/content-page.php:28
+#: template-parts/content.php:40 template-parts/content-single.php:30
+#: search.php:46 archive.php:54 index.php:51
 msgid "Page"
 msgstr "Sivu"
 
-#: archive.php:52 index.php:49 search.php:40
+#: search.php:45 archive.php:53 index.php:50
 msgid "Next page"
 msgstr "Seuraava sivu"
 
-#: archive.php:51 index.php:48 search.php:39
+#: search.php:44 archive.php:52 index.php:49
 msgid "Previous page"
 msgstr "Edellinen sivu"
 
@@ -315,16 +304,7 @@ msgstr "Näyttää siltä että täällä ei ole mitään. Kokeilepa hakua?"
 msgid "Oops! That page can&rsquo;t be found."
 msgstr "Hups! Etsimääsi sivua ei löytynyt."
 
-#. Theme URI of the plugin/theme
-msgid "https://wordpress.org/themes/twentysixteen/"
-msgstr "https://wordpress.org/themes/twentysixteen/"
-
-#. Author of the plugin/theme
-msgid "the WordPress team"
-msgstr "WordPress-tiimi"
-
-#. #-#-#-#-#  twentysixteen.pot (Twenty Sixteen 1.5)  #-#-#-#-#
-#. Author URI of the plugin/theme
+#. Author URI of the theme
 #: footer.php:60
 msgid "https://wordpress.org/"
 msgstr "https://wordpress.org/"

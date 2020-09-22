@@ -7,118 +7,114 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/2.4.0-alpha\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
 "Language: fi\n"
 "Project-Id-Version: Themes - Twenty Fourteen\n"
 
-#. Description of the plugin/theme
-msgid "In 2014, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier."
-msgstr "Vuoden 2014 oletusteema on mukautuva, moderni ja huoliteltu verkkolehden toteuttamiseen tarkoitettu teema. Voit nostaa etusivulle halutut artikkelit joko ruudukkona (grid) tai karusellina (slider). Teemassa on kolme vimpainaluetta ja kaksi sivupohjaa. Toinen sivupohja mahdollistaa täyslevyisen sivun ilman vimpaimia ja toinen sivupohja esittelee kirjoittajat. Verkkolehden luominen ei ole koskaan ollut helpompaa."
+#. Theme Name of the theme
+#: inc/customizer.php:162
+msgid "Twenty Fourteen"
+msgstr "Twenty Fourteen"
 
-#. Template Name of the plugin/theme
-msgid "Full Width Page"
-msgstr "Täysi leveys -sivu"
-
-#. Template Name of the plugin/theme
-msgid "Contributor Page"
-msgstr "Kirjoittajat-sivu"
-
-#: tag.php:22
+#. translators: %s: Tag title.
+#: tag.php:25
 msgid "Tag Archives: %s"
 msgstr "Avainsana-arkisto: %s"
 
-#: search.php:18
+#. translators: %s: Search query.
+#: search.php:21
 msgid "Search Results for: %s"
 msgstr "Hakutulokset kohteelle: %s"
 
-#: inc/widgets.php:290
+#: inc/widgets.php:303
 msgid "Post format to show:"
 msgstr "Näytettävät artikkelimuodot:"
 
-#: inc/widgets.php:287
+#: inc/widgets.php:300
 msgid "Number of posts to show:"
 msgstr "Näytettävien artikkeleiden lukumäärä:"
 
-#: inc/widgets.php:284
+#: inc/widgets.php:297
 msgid "Title:"
 msgstr "Otsikko:"
 
-#. translators: used with More archives link
-#: inc/widgets.php:235
+#. translators: Used with More archives link.
+#: inc/widgets.php:243
 msgid "%s <span class=\"meta-nav\">&rarr;</span>"
 msgstr "%s <span class=\"meta-nav\">&rarr;</span>"
 
-#: inc/widgets.php:190
+#. translators: 1: Post permalink, 2: Number of images in the gallery.
+#: inc/widgets.php:198
 msgid "This gallery contains <a href=\"%1$s\" rel=\"bookmark\">%2$s photo</a>."
 msgid_plural "This gallery contains <a href=\"%1$s\" rel=\"bookmark\">%2$s photos</a>."
 msgstr[0] "Tässä galleriassa on <a href=\"%1$s\" rel=\"bookmark\">%2$s kuva</a>."
 msgstr[1] "Tässä galleriassa on <a href=\"%1$s\" rel=\"bookmark\">%2$s kuvaa</a>."
 
-#: inc/widgets.php:151 inc/widgets.php:200
+#: inc/widgets.php:158 inc/widgets.php:208
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Lue loppuun <span class=\"meta-nav\">&rarr;</span>"
 
-#: inc/widgets.php:102
+#: inc/widgets.php:108
 msgid "More asides"
 msgstr "Lisää sivuhuomautuksia"
 
-#: inc/widgets.php:101 taxonomy-post_format.php:30
+#: taxonomy-post_format.php:30 inc/widgets.php:107
 msgid "Asides"
 msgstr "Sivuhuomautukset"
 
-#: inc/widgets.php:97
+#: inc/widgets.php:103
 msgid "More galleries"
 msgstr "Lisää gallerioita"
 
-#: inc/widgets.php:96 taxonomy-post_format.php:48
+#: taxonomy-post_format.php:48 inc/widgets.php:102
 msgid "Galleries"
 msgstr "Galleriat"
 
-#: inc/widgets.php:93
+#: inc/widgets.php:99
 msgid "More links"
 msgstr "Lisää linkkejä"
 
-#: inc/widgets.php:92 taxonomy-post_format.php:45
+#: taxonomy-post_format.php:45 inc/widgets.php:98
 msgid "Links"
 msgstr "Linkit"
 
-#: inc/widgets.php:89
+#: inc/widgets.php:95
 msgid "More quotes"
 msgstr "Lisää lainauksia"
 
-#: inc/widgets.php:88 taxonomy-post_format.php:42
+#: taxonomy-post_format.php:42 inc/widgets.php:94
 msgid "Quotes"
 msgstr "Lainaukset"
 
-#: inc/widgets.php:85
+#: inc/widgets.php:91
 msgid "More audio"
 msgstr "Lisää äänitiedostoja"
 
-#: inc/widgets.php:84 taxonomy-post_format.php:39
+#: taxonomy-post_format.php:39 inc/widgets.php:90
 msgid "Audio"
 msgstr "Ääni"
 
-#: inc/widgets.php:81
+#: inc/widgets.php:87
 msgid "More videos"
 msgstr "Lisää videoita"
 
-#: inc/widgets.php:80 taxonomy-post_format.php:36
+#: taxonomy-post_format.php:36 inc/widgets.php:86
 msgid "Videos"
 msgstr "Videot"
 
-#: inc/widgets.php:77
+#: inc/widgets.php:83
 msgid "More images"
 msgstr "Lisää kuvia"
 
-#: inc/widgets.php:76 taxonomy-post_format.php:33
+#: taxonomy-post_format.php:33 inc/widgets.php:82
 msgid "Images"
 msgstr "Kuvat"
 
-#: inc/widgets.php:36
+#: inc/widgets.php:38
 msgid "Use this widget to list your recent Aside, Quote, Video, Audio, Image, Gallery, and Link posts."
 msgstr "Käytä tätä vimpainta uusimpien sivuhuomautusten, lainausten, videoiden, äänitiedostojen, kuvien, gallerioiden ja linkkien listaamiseen."
 
-#: inc/widgets.php:34
+#: inc/widgets.php:35
 msgid "Twenty Fourteen Ephemera"
 msgstr "Twenty Fourteen Ephemera"
 
@@ -154,75 +150,77 @@ msgstr "Seuraava &rarr;"
 msgid "&larr; Previous"
 msgstr "&larr; Edellinen"
 
-#: inc/featured-content.php:417
+#: inc/featured-content.php:423
 msgid "Don&rsquo;t display tag on front end."
 msgstr "Älä näytä avainsanaa sivulla."
 
-#: inc/featured-content.php:410
+#: inc/featured-content.php:415
 msgid "Tag Name"
 msgstr "Avainsanan nimi"
 
-#: inc/customizer.php:159
+#. translators: %s: Twenty Fourteen documentation URL.
+#: inc/customizer.php:170
 msgid "For an in-depth tutorial, and more tips and tricks, visit the <a href=\"%s\">Twenty Fourteen documentation</a>."
 msgstr "Ohjeet ja vinkit löytyvät <a href=\"%s\">Twenty Fourteen ohje-sivulta</a>."
 
-#: inc/customizer.php:158
+#. translators: %s: Featured images documentation URL.
+#: inc/customizer.php:168
 msgid "Enhance your site design by using <a href=\"%s\">Featured Images</a> for posts you&rsquo;d like to stand out (also known as post thumbnails). This allows you to associate an image with your post without inserting it. Twenty Fourteen uses featured images for posts and pages&mdash;above the title&mdash;and in the Featured Content area on the home page."
 msgstr "Paranna sivustosi ulkoasua käyttämällä <a href=\"%s\">artikkelikuvia</a> niihin artikkeleihin, joita haluat korostaa. Twenty Fourteen näyttää artikkelikuvat otsikon yläpuolella ja etusivulla nostettujen artikkelien kohdalla."
 
-#: inc/customizer.php:157
+#. translators: 1: Featured tag editor URL, 2: Post editor URL, 3: Customizer
+#. URL, 4: Post editor URL.
+#: inc/customizer.php:166
 msgid "The home page features your choice of up to 6 posts prominently displayed in a grid or slider, controlled by a <a href=\"%1$s\">tag</a>; you can change the tag and layout in <a href=\"%2$s\">Appearance &rarr; Customize</a>. If no posts match the tag, <a href=\"%3$s\">sticky posts</a> will be displayed instead."
 msgstr "Etusivulla on valintasi mukaan enintään 6 nostettua artikkelia joko ruudukkona tai karusellina. Nostot valitaan <a href=\"%1$s\">avainsanan</a> perusteella; voit vaihtaa käytetyn avainsanan ja asettelun sivulta <a href=\"%2$s\">Ulkoasu &rarr; Mukauta</a>. Jos avainsanalla ei löydy yhtään artikkelia, <a href=\"%3$s\">kiinnitetyt artikkelit</a> näytetään niiden sijasta."
 
-#. #-#-#-#-#  twentyfourteen.pot (Twenty Fourteen 2.2)  #-#-#-#-#
-#. Theme Name of the plugin/theme
-#: inc/customizer.php:154
-msgid "Twenty Fourteen"
-msgstr "Twenty Fourteen"
-
-#: inc/customizer.php:84
+#: inc/customizer.php:90
 msgid "Slider"
 msgstr "Karuselli"
 
-#: inc/customizer.php:83
+#: inc/customizer.php:89
 msgid "Grid"
 msgstr "Ruudukko"
 
-#: inc/customizer.php:79
+#: inc/customizer.php:85
 msgid "Layout"
 msgstr "Asettelu"
 
-#: inc/customizer.php:61 inc/customizer.php:157 inc/featured-content.php:383
-#: inc/featured-content.php:394 inc/featured-content.php:457
+#. translators: 1: Featured tag editor URL, 2: Post editor URL, 3: Customizer
+#. URL, 4: Post editor URL.
+#: inc/featured-content.php:385 inc/featured-content.php:397
+#: inc/featured-content.php:463 inc/customizer.php:65 inc/customizer.php:166
 msgctxt "featured content default tag slug"
 msgid "featured"
 msgstr "nosto"
 
-#: inc/customizer.php:60 inc/featured-content.php:382
+#. translators: 1: Featured tag editor URL, 2: Post editor URL.
+#: inc/featured-content.php:384 inc/customizer.php:64
 msgid "Use a <a href=\"%1$s\">tag</a> to feature your posts. If no posts match the tag, <a href=\"%2$s\">sticky posts</a> will be displayed instead."
 msgstr "Nosta artikkeleita etusivulle <a href=\"%1$s\">avainsanan</a> perusteella. Jos sopivia artikkeleita ei löydy, näytetään niiden sijaan <a href=\"%2$s\">kiinnitettyjä artikkeleita</a>."
 
-#: inc/customizer.php:58 inc/featured-content.php:380
+#: inc/featured-content.php:381 inc/customizer.php:61
 msgid "Featured Content"
 msgstr "Etusivun nostetut artikkelit"
 
-#: inc/customizer.php:51 inc/customizer.php:52
+#: inc/customizer.php:53 inc/customizer.php:54
 msgid "Background may only be visible on wide screens."
 msgstr "Tausta saattaa olla näkyvissä vain isommalla näyttöresoluutiolla."
 
-#: inc/customizer.php:48 inc/customizer.php:49
+#: inc/customizer.php:50 inc/customizer.php:51
 msgid "May only be visible on wide screens."
 msgstr "Saattaa näkyä vain leveillä näytölillä."
 
-#: inc/customizer.php:44
+#: inc/customizer.php:46
 msgid "Display Site Title &amp; Tagline"
 msgstr "Näytä sivuston otsikko &amp; kuvaus"
 
-#: inc/customizer.php:41
+#: inc/customizer.php:43
 msgid "Site Title Color"
 msgstr "Sivuston otsikon väri"
 
-#: inc/back-compat.php:37 inc/back-compat.php:48 inc/back-compat.php:62
+#. translators: %s: WordPress version.
+#: inc/back-compat.php:38 inc/back-compat.php:50 inc/back-compat.php:67
 msgid "Twenty Fourteen requires at least WordPress version 3.6. You are running version %s. Please upgrade and try again."
 msgstr "Twenty Fourteen vaatii vähintään WordPress-version 3.6. Sinulla on käytössäsi versio %s. Päivitä ja yritä uudestaan."
 
@@ -234,136 +232,133 @@ msgstr "Seuraava kuva"
 msgid "Previous Image"
 msgstr "Edellinen kuva"
 
-#: header.php:53
+#: header.php:54
 msgid "Skip to content"
 msgstr "Siirry sisältöön"
 
-#: header.php:52
+#: header.php:53
 msgid "Primary Menu"
 msgstr "Ensisijainen valikko"
 
-#: header.php:48
+#: header.php:49
 msgid "Search"
 msgstr "Etsi"
 
-#: functions.php:556
+#. translators: %s: Page number.
+#: functions.php:643
 msgid "Page %s"
 msgstr "Sivu %s"
 
-#: functions.php:437
+#. translators: %d: Post count.
+#: functions.php:522
 msgid "%d Article"
 msgid_plural "%d Articles"
 msgstr[0] "%d Artikkeli"
 msgstr[1] "%d Artikkelia"
 
-#: functions.php:291
+#: functions.php:361
 msgid "Next"
 msgstr "Seuraava"
 
-#: functions.php:290
+#: functions.php:360
 msgid "Previous"
 msgstr "Edellinen"
 
-#. Translators: If there are characters in your language that are not supported
-#. by Lato, translate this to 'off'. Do not translate into your own language.
-#: functions.php:244
+#: functions.php:308
 msgctxt "Lato font: on or off"
 msgid "on"
 msgstr "on"
 
-#: functions.php:221
+#: functions.php:285
 msgid "Appears in the footer section of the site."
 msgstr "Näkyy sivuston alatunnisteessa."
 
-#: functions.php:219
+#: functions.php:283
 msgid "Footer Widget Area"
 msgstr "Alapalkin vimpainalue"
 
-#: functions.php:210
+#: functions.php:274
 msgid "Additional sidebar that appears on the right."
 msgstr "Sivupalkki, joka näkyy oikealla."
 
-#: functions.php:208
+#: functions.php:272
 msgid "Content Sidebar"
 msgstr "Sisällön sivupalkki"
 
-#: functions.php:199
+#: functions.php:263
 msgid "Main sidebar that appears on the left."
 msgstr "Sivupalkki, joka sijaitsee vasemmalla."
 
-#: functions.php:197
+#: functions.php:261
 msgid "Primary Sidebar"
 msgstr "Ensisijainen vimpainalue"
 
-#: functions.php:85
+#: functions.php:131
 msgid "Secondary menu in left sidebar"
 msgstr "Valikko vasemmassa sivupalkissa"
 
-#: functions.php:84
+#: functions.php:130
 msgid "Top primary menu"
 msgstr "Ylävalikko"
 
-#: footer.php:27
+#. translators: %s: WordPress
+#: footer.php:29
 msgid "Proudly powered by %s"
 msgstr "Voimanlähteenä %s"
 
-#: content-none.php:27
+#: content-none.php:32
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr "Emme valitettavasti löytäneet etsimääsi. Ehkä hakutoiminnosta on apua."
 
-#: content-none.php:22
+#: content-none.php:27
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr "Pahoittelut mutta mitään ei löytynyt hakuehdoillasi. Kokeile uudelleen joillakin toisilla hakusanoilla."
-
-#: content-none.php:18
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "Oletko valmis julkaisemaan ensimmäisen kirjoituksesi? <a href=\"%1$s\">Aloita tästä</a>."
 
 #: content-none.php:12
 msgid "Nothing Found"
 msgstr "Mitään ei löytynyt."
 
-#: content-aside.php:56 content-audio.php:56 content-gallery.php:56
-#: content-image.php:56 content-link.php:56 content-page.php:23
-#: content-quote.php:56 content-video.php:56 content.php:65 image.php:56
+#: content-image.php:56 content-page.php:23 content-gallery.php:56
+#: content.php:65 content-video.php:56 content-audio.php:56 image.php:56
+#: content-quote.php:56 content-aside.php:56 content-link.php:56
 msgid "Pages:"
 msgstr "Sivut:"
 
-#. translators: %s: Name of current post
-#: content-aside.php:49 content-audio.php:49 content-gallery.php:49
-#: content-image.php:49 content-link.php:49 content-quote.php:49
-#: content-video.php:49 content.php:58 inc/template-tags.php:229
+#. translators: %s: Post title.
+#: content-image.php:49 content-gallery.php:49 content.php:58
+#: content-video.php:49 content-audio.php:49 content-quote.php:49
+#: content-aside.php:49 inc/template-tags.php:230 content-link.php:49
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Jatka lukemista %s <span class=\"meta-nav\">&rarr;</span>"
 
-#: content-aside.php:40 content-audio.php:40 content-gallery.php:40
-#: content-image.php:40 content-link.php:40 content-page.php:30
-#: content-quote.php:40 content-video.php:40 content.php:43 image.php:35
-#: page-templates/contributors.php:36
+#: content-image.php:40 content-page.php:30 content-gallery.php:40
+#: content.php:43 content-video.php:40 content-audio.php:40 image.php:35
+#: page-templates/contributors.php:36 content-quote.php:40 content-aside.php:40
+#: content-link.php:40
 msgid "Edit"
 msgstr "Muokkaa"
 
-#: content-aside.php:37 content-audio.php:37 content-gallery.php:37
-#: content-image.php:37 content-link.php:37 content-quote.php:37
-#: content-video.php:37 content.php:39 inc/widgets.php:223
+#: content-image.php:37 content-gallery.php:37 content.php:39
+#: content-video.php:37 content-audio.php:37 content-quote.php:37
+#: content-aside.php:37 inc/widgets.php:231 content-link.php:37
 msgid "% Comments"
 msgstr "% kommenttia"
 
-#: content-aside.php:37 content-audio.php:37 content-gallery.php:37
-#: content-image.php:37 content-link.php:37 content-quote.php:37
-#: content-video.php:37 content.php:39 inc/widgets.php:223
+#: content-image.php:37 content-gallery.php:37 content.php:39
+#: content-video.php:37 content-audio.php:37 content-quote.php:37
+#: content-aside.php:37 inc/widgets.php:231 content-link.php:37
 msgid "1 Comment"
 msgstr "1 kommentti"
 
-#: content-aside.php:37 content-audio.php:37 content-gallery.php:37
-#: content-image.php:37 content-link.php:37 content-quote.php:37
-#: content-video.php:37 content.php:39 inc/widgets.php:223
+#: content-image.php:37 content-gallery.php:37 content.php:39
+#: content-video.php:37 content-audio.php:37 content-quote.php:37
+#: content-aside.php:37 inc/widgets.php:231 content-link.php:37
 msgid "Leave a comment"
 msgstr "Jätä kommentti"
 
-#: content-aside.php:17 content-audio.php:17 content-featured-post.php:28
-#: content-gallery.php:17 content-image.php:17 content-link.php:17
-#: content-quote.php:17 content-video.php:17 content.php:19
+#: content-image.php:17 content-gallery.php:17 content.php:19
+#: content-video.php:17 content-audio.php:17 content-featured-post.php:28
+#: content-quote.php:17 content-aside.php:17 content-link.php:17
 msgctxt "Used between list items, there is a space after the comma."
 msgid ", "
 msgstr ", "
@@ -384,37 +379,44 @@ msgstr "&larr; Vanhemmat kommentit"
 msgid "Comment navigation"
 msgstr "Kommenttien selaus"
 
-#: category.php:20
+#. translators: %s: Category title.
+#: category.php:23
 msgid "Category Archives: %s"
 msgstr "Aihearkisto: %s"
 
-#: author.php:31
+#. translators: %s: Author display name.
+#: author.php:32
 msgid "All posts by %s"
 msgstr "Kaikki kirjoittajan %s artikkelit"
 
-#: archive.php:40 taxonomy-post_format.php:51
+#: taxonomy-post_format.php:51 archive.php:40
 msgid "Archives"
 msgstr "Arkistot"
 
-#: archive.php:37
+#. translators: %s: Date.
+#: archive.php:38
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr "Y"
 
-#: archive.php:37
+#. translators: %s: Date.
+#: archive.php:38
 msgid "Yearly Archives: %s"
 msgstr "Arkistot vuoden mukaan: %s"
 
-#: archive.php:34
+#. translators: %s: Date.
+#: archive.php:35
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "F Y"
 
-#: archive.php:34
+#. translators: %s: Date.
+#: archive.php:35
 msgid "Monthly Archives: %s"
 msgstr "Arkistot kuukauden mukaan: %s"
 
-#: archive.php:31
+#. translators: %s: Date.
+#: archive.php:32
 msgid "Daily Archives: %s"
 msgstr "Arkistot päivämäärän mukaan: %s"
 
@@ -426,16 +428,7 @@ msgstr "Näyttää siltä että täällä ei ole mitään. Kokeilepa hakua?"
 msgid "Not Found"
 msgstr "Ei löytynyt"
 
-#. #-#-#-#-#  twentyfourteen.pot (Twenty Fourteen 2.2)  #-#-#-#-#
-#. Author URI of the plugin/theme
+#. Author URI of the theme
 #: footer.php:26
 msgid "https://wordpress.org/"
 msgstr "https://fi.wordpress.org/"
-
-#. Author of the plugin/theme
-msgid "the WordPress team"
-msgstr "WordPress-tiimi"
-
-#. Theme URI of the plugin/theme
-msgid "https://wordpress.org/themes/twentyfourteen/"
-msgstr "https://wordpress.org/themes/twentyfourteen/"
