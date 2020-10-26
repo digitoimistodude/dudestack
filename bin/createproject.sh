@@ -33,6 +33,7 @@ else
 echo "${boldyellow}Project name in lowercase (without spaces or special characters):${txtreset} "
 read -e PROJECTNAME
 cd $HOME/Projects/dudestack
+git pull
 composer create-project -n ronilaukkarinen/dudestack $HOME/Projects/${PROJECTNAME} dev-master
 cd $HOME/Projects/${PROJECTNAME}
 composer update
