@@ -42,10 +42,6 @@
     {
       "type": "composer",
       "url": "https://wp-languages.github.io"
-    },
-    {
-      "type": "vcs",
-      "url": "https://github.com/digitoimistodude/gulp-sitemap-generator"
     }
   ],
   "require": {
@@ -74,8 +70,7 @@
   "require-dev": {
     "rarst/wps": "*",
     "rarst/laps": "*",
-    "wpackagist-plugin/query-monitor": "*",
-    "digitoimistodude/gulp-sitemap-generator":"dev-master"
+    "wpackagist-plugin/query-monitor": "*"
   },
   "extra": {
     "dropin-paths": {
@@ -84,8 +79,7 @@
       "content/languages/themes/": ["vendor:koodimonni-theme-language"]
     },
     "installer-paths": {
-      "content/mu-plugins/{$name}/": ["type:wordpress-muplugin",
-        "digitoimistodude/gulp-sitemap-generator"
+      "content/mu-plugins/{$name}/": ["type:wordpress-muplugin"
       ],
       "content/plugins/{$name}/": ["type:wordpress-plugin"],
       "content/themes/{$name}/": ["type:wordpress-theme"]
