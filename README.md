@@ -45,7 +45,7 @@ Despite the fact we love most of Bedrock, we noticed there are some things we do
 * Stuff were originally in `app/` by default, then in `web/`. We prefer `content/`, like it was `wp-content` for a reason. It describes it better, since we do not want this to be too programming-oriented, but more front end developer -friendly (for developing WordPress themes and functions)
 * Composer modifications, for installing more packages, like Finnish based language packs etc. that are not originally part of Bedrock
 * Automation. I mean composer's `create-project` is awesome, but we need more. You still need to do stuff after `create-project` and our `createproject` -starting script is designed for automating the rest.
-* Baked in local server environment for Vagrant, native OS X (Homebrew LEMP)
+* Baked in local server environment for [Vagrant](https://github.com/digitoimistodude/marlin-vagrant) and [native macOS (Homebrew LEMP)](https://github.com/digitoimistodude/macos-lemp-setup)
 
 **You should modify things to your needs. Please note: This is not in any way tested with other people or or in different environments. Yet. Please address an issue if something goes south.**
 
