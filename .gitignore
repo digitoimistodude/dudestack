@@ -38,8 +38,6 @@ content/mu-plugins/*
 !content/mu-plugins/register-theme-directory.php
 !content/mu-plugins/bedrock-autoloader.php
 content/languages/*
-content/languages/themes
-content/languages/plugins
 
 # Dynamic content
 content/db.php
