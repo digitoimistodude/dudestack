@@ -101,7 +101,7 @@ Creating a new project has a lot of configs to do. We wanted to automate most of
 
 - You are using staging server like customer.example.com and you store your customers' sites like customer.example.com/customerone. Your staging server user has proper permissions like making changes to /tmp
 - You are using separate production server that may necessarily not have all the permissions like writing in /tmp dir
-- You use [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant) or MAMP Pro (MAMP needs extensive editing and testing, [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant) works out of the box)
+- You use [native macOS (Homebrew LEMP)](https://github.com/digitoimistodude/macos-lemp-setup) or [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant) or MAMP Pro (MAMP needs extensive editing and testing, [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant) works out of the box)
 - Your repositories are stored in GitHub
 - Your project hostname is project.test
 - You use gulp, grunt or CodeKit2+
