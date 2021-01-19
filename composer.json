@@ -63,7 +63,6 @@
     "wpackagist-plugin/redis-cache": "*",
     "wpackagist-plugin/wordpress-seo": "*",
     "wpackagist-plugin/so-clean-up-wp-seo": "*",
-    "wpackagist-plugin/force-strong-passwords": "*",
     "wpackagist-plugin/gravity-forms-wcag-20-form-fields": "*"
   },
   "require-dev": {
