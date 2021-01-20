@@ -25,6 +25,7 @@ else
 echo "${boldyellow}Project name in lowercase (without spaces or special characters):${txtreset} "
 read -e PROJECTNAME
 cd $HOME/Projects/dudestack
+git pull
 composer create-project -n ronilaukkarinen/dudestack $HOME/Projects/${PROJECTNAME} dev-master
 cd $HOME/Projects/${PROJECTNAME}
 composer update
@@ -32,11 +33,12 @@ echo "${yellow}Creating a MySQL database for ${PROJECTNAME}${txtreset}"
 mysql -u root -p'YOUR_DEFAULT_DATABASE_PASSWORD_HERE' -e "CREATE DATABASE ${PROJECTNAME}"
 echo "${boldgreen}Attempt to create MySQL database successful.${txtreset}"
 echo "${yellow}Installing Capistrano in the project directory${txtreset}"
+sudo gem install capistrano
 cap install
 echo "${boldgreen}Capistrano installed${txtreset}"
 echo "${yellow}Generating config/deploy.rb${txtreset}"
-echo "set :application, \"$PROJECTNAME\"
-set :repo_url,  \"git@bitbucket.org:YOUR_BITBUCKET_USERNAME_HERE/$PROJECTNAME.git\"
+cho "set :application, \"$PROJECTNAME\"
+set :repo_url, \"git@github.com:YOUR_GITHUB_COMPANY_USERNAME/$PROJECTNAME.git\"
 set :branch, :master
 set :log_level, :debug
 set :linked_files, %w{.env}
@@ -206,6 +208,9 @@ rm -rf .git
 rm .travis.yml
 rm package-lock.json
 rm .DS_Store
+rm -rf bin
+rm .env-e
+rm .env.example
 
 composer update
 echo "${yellow}Updating .env (db credentials)...:${txtreset}"
@@ -217,6 +222,10 @@ sed -i -e "s/example.com/${PROJECTNAME}.test/g" .env
 sed -i -e "s/example.com/${PROJECTNAME}.test/g" .env
 echo '
 SENDGRID_API_KEY=YOUR_SENDGRID_API_KEY_HERE' >> .env
+echo -e '
+IMAGIFY_API_KEY=YOUR_IMAGIFY_API_KEY_HERE' >> .env
+echo -e '
+HS_BEACON_ID=YOUR_HS_BEACON_ID_HERE' >> .env
 
 echo "${yellow}Installing WordPress...:${txtreset}"
 echo "path: wp
@@ -233,23 +242,35 @@ echo "${yellow}Removing default WordPress posts...:${txtreset}"
 cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp post delete 1 --force
 cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp post delete 2 --force
 cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update blogdescription ''
+cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update WPLANG 'fi'
+cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update current_theme
 cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp theme delete twentytwelve
 cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp theme delete twentythirteen
 cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update permalink_structure '/%postname%'
 cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update timezone_string 'Europe/Helsinki'
 cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update default_pingback_flag '0'
+cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update default_ping_status 'closed'
+cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update default_comment_status 'closed'
+cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update date_format 'j.n.Y'
+cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update time_format 'H.i'
+cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update admin_email 'koodarit@dude.fi'
+cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option delete new_admin_email
 #echo "${yellow}Activating necessary plugins, mainly for theme development...:${txtreset}"
 #cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin activate --all
-chmod -R 775 /var/www/$PROJECTNAME/content
 
-rm "$HOME/Projects/$PROJECTNAME/.env.example"
-echo "${yellow}Creating a bitbucket repo...${txtreset}"
-curl -X POST -v -u YOUR_BITBUCKET_ACCOUNT_HERE:YOUR_BITBUCKET_PASSWORD_HERE "https://api.bitbucket.org/2.0/repositories/YOUR_BITBUCKET_TEAM_HERE/${PROJECTNAME}" -H "Content-Type: application/json"  -d '{"is_private": true, "project": {"key": "PROJECTS'"${YEAR}"'"}}'
+echo "${yellow}Disable git filemodes and chmod project for local...${txtreset}"
+git config core.fileMode false
+chmod -R 777 $HOME/Projects/$PROJECTNAME
 
-echo "${yellow}Initializing the bitbucket repo...${txtreset}"
+# For GitHub:
+echo "${yellow}Creating a GitHub repo...${txtreset}"
+curl -u 'YOUR_GITHUB_COMPANY_USERNAME':'YOUR_GITHUB_ACCESS_TOKEN' https://api.github.com/orgs/YOUR_GITHUB_COMPANY_USERNAME/repos -d '{"name": "'${PROJECTNAME}'","auto_init": false,"private": true,"description": "A repository for '${PROJECTNAME}' site"}'
+
+echo "${yellow}Initializing the GitHub repo...${txtreset}"
 cd "$HOME/Projects/$PROJECTNAME"
 git init
-git remote add origin git@bitbucket.org:YOUR_BITBUCKET_TEAM_HERE/$PROJECTNAME.git
+git remote add origin git@github.com:YOUR_GITHUB_COMPANY_USERNAME/$PROJECTNAME.git
+git config core.fileMode false
 git add --all
 git commit -m 'First commit - project started'
 git push -u origin --all

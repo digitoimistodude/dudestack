@@ -53,6 +53,7 @@ echo "${boldgreen}Attempt to create MySQL database successful.${txtreset}"
 echo "${yellow}Installing Capistrano in the project directory${txtreset}"
 #bundle install
 #bundle exec cap install
+sudo gem install capistrano
 cap install
 echo "${boldgreen}Capistrano installed${txtreset}"
 echo "${yellow}Generating config/deploy.rb${txtreset}"
@@ -295,7 +296,9 @@ WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option delete
 #echo "${yellow}Activating necessary plugins, mainly for theme development...:${txtreset}"
 #WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin activate --allWP_CLI_SUFFIX
 
-chmod -R 775 $HOME/Projects/$PROJECTNAME/content
+echo "${yellow}Disable git filemodes and chmod project for local...${txtreset}"
+git config core.fileMode false
+chmod -R 777 $HOME/Projects/$PROJECTNAME
 
 ## You can set up extra users here - if you want, uncomment next lines
 #####################################################################
