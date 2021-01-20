@@ -296,8 +296,7 @@ WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option delete
 #echo "${yellow}Activating necessary plugins, mainly for theme development...:${txtreset}"
 #WP_CLI_PREFIXcd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin activate --allWP_CLI_SUFFIX
 
-echo "${yellow}Disable git filemodes and chmod project for local...${txtreset}"
-git config core.fileMode false
+echo "${yellow}Setting file permissions for local...${txtreset}"
 chmod -R 777 $HOME/Projects/$PROJECTNAME
 
 ## You can set up extra users here - if you want, uncomment next lines

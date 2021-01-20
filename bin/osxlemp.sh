@@ -258,8 +258,7 @@ cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option delete new_admin_em
 #echo "${yellow}Activating necessary plugins, mainly for theme development...:${txtreset}"
 #cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin activate --all
 
-echo "${yellow}Disable git filemodes and chmod project for local...${txtreset}"
-git config core.fileMode false
+echo "${yellow}Setting file permissions for local...${txtreset}"
 chmod -R 777 $HOME/Projects/$PROJECTNAME
 
 # For GitHub:
