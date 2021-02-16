@@ -79,6 +79,8 @@ Despite the fact we love most of Bedrock, we noticed there are some things we do
 
 # Installation
 
+If you are a Finnish person, you might want to check out our [Handbook guide for developers](https://handbook.dude.fi/tyoskenteleminen-dudella/kehittajalle).
+
 1. Clone this repo to your ~/Projects directory
 2. Go to dudestack directory and run setup script (`cd ~/Projects/dudestack && sh bin/setup.sh`).
 3. Edit `/usr/bin/createproject` to your needs. See [documentation](#documentation) and **[Getting started](#getting-started)**.
