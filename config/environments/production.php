@@ -13,13 +13,13 @@ use Roots\WPConfig\Config;
  * Example: `Config::define('DISALLOW_FILE_MODS', false);`
  */
 
-Config::define('SAVEQUERIES', false);
-Config::define('WP_DEBUG', false);
-Config::define('WP_DEBUG_DISPLAY', false);
-Config::define('WP_DISABLE_FATAL_ERROR_HANDLER', false);
-Config::define('SCRIPT_DEBUG', false);
+Config::define( 'SAVEQUERIES', false );
+Config::define( 'WP_DEBUG', false );
+Config::define( 'WP_DEBUG_DISPLAY', false );
+Config::define( 'WP_DISABLE_FATAL_ERROR_HANDLER', false );
+Config::define( 'SCRIPT_DEBUG', false );
 
-ini_set('display_errors', '0');
+ini_set( 'display_errors', '0' );
 
 // Enable plugin and theme updates and installation from the admin
-Config::define('DISALLOW_FILE_MODS', false);
+Config::define( 'DISALLOW_FILE_MODS', false );
