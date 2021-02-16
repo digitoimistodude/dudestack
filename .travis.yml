@@ -31,6 +31,10 @@ matrix:
     allow_failures:
         - php: 'nightly'
 
+before_install:
+  - phpenv config-rm xdebug.ini || true
+  - composer self-update
+
 # Use this to prepare your build for testing.
 # e.g. copy database configurations, environment variables, etc.
 # Failures in this section will result in build status 'errored'.
@@ -54,10 +58,6 @@ before_script:
     - if [[ "$SNIFF" == "1" ]]; then git clone -b master --depth 1 https://github.com/wimg/PHPCompatibility.git $PHPCOMPAT_DIR; fi
     # Pull in the dudestack phpcs rules.
     - if [[ "$SNIFF" == "1" ]]; then wget https://raw.githubusercontent.com/digitoimistodude/dudestack/dev/phpcs.xml; fi
-
-before_install:
-  - phpenv config-rm xdebug.ini || true
-  - composer self-update
 
 install:
   - composer install -o --prefer-dist --no-interaction
