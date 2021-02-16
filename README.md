@@ -73,8 +73,8 @@ Despite the fact we love most of Bedrock, we noticed there are some things we do
 * Access to staging and production servers that supports sftp and git
 * Projects located under $HOME/Projects
 * Git
-* PHP >= 5.6
-* Ruby >= 2.2
+* PHP >= 7.1
+* Ruby >= 2.6
 * Perl
 
 # Installation
