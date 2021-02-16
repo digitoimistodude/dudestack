@@ -3,7 +3,7 @@
 
 Dudestack is a modern WordPress toolkit that helps you get started with the best development tools and project structure - just like [Bedrock](https://github.com/roots/bedrock).
 
-The idea is to have just one command for starting the project. Saves 10 hours easily in each project start when *Dont-Repeat-Yourself* -stuff are fully automated!
+The idea is to have just one command for starting the project. Saves dozens of hours easily in each project start when DRY (*Dont-Repeat-Yourself*) stuff are fully automated!
 
 After setting up, you can start a new project just by running:
 
@@ -65,6 +65,7 @@ Despite the fact we love most of Bedrock, we noticed there are some things we do
 
 ## Requirements
 
+* Composer v2
 * Basic knowledge about bash scripting, deployment with capistrano, npm packages, bundle, composer etc.
 * Vagrant ([marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant)) OR [osx-lemp-setup](https://github.com/digitoimistodude/osx-lemp-setup) but can be configured for MAMP or even Docker (in planning)
 * GitHub account
@@ -154,58 +155,52 @@ Edit your `composer.json` and add these lines inside respository, separated by c
 
 ### Advanced Custom Fields Pro
 
+Add to "repositories" section:
+
 ```json
     {
-      "type": "package",
-      "package": {
-        "name": "advanced-custom-fields/advanced-custom-fields-pro",
-        "version": "5.0",
-        "type": "wordpress-muplugin",
-        "dist": {
-          "type": "zip",
-          "url": "YOUR_DOWNLOAD_URL (get it from ACF website)"
-        }
-      }
+      "type": "composer",
+      "url": "https://pivvenit.github.io/acf-composer-bridge/composer/v3/wordpress-plugin/"
+    },
+    {
+      "type": "composer",
+      "url": "https://pivvenit.github.io/acf-composer-bridge/composer/v3/wordpress-plugin/"
     }
 ```
 
-### WPML
+Then to "requires":
 
 ```json
+    "advanced-custom-fields/advanced-custom-fields-pro": "^5.9",
+```
+
+### Polylang Pro
+
+Add to "repositories":
+
+```json
+,
     {
       "type": "package",
       "package": {
-        "name": "wpml/sitepress-multilingual-cms",
+        "name": "polylang/polylang-pro",
         "type": "wordpress-plugin",
-        "version": "3.1.8.4",
+        "version": "2.7.4",
         "dist": {
           "type": "zip",
-          "url": "YOUR_DOWNLOAD_URL (get it from WPML website)"
+          "url": "https://xxxxxxxxx:xxxxxxxx@plugins.dude.fi/polylang-pro_2.7.4.zip"
         }
       }
-    }
+    },
 ```
 
-### Gravity Forms
-
-Gravityforms and some other plugins have urls that expire after some time, so to not having always get the url after new version, use your own private plugin repository to store zip files on remote server with basic HTTP auth and add package like this:
+Then to "requires":
 
 ```json
-      {
-        "type": "package",
-        "package": {
-          "name": "gravityforms",
-          "type": "wordpress-plugin",
-          "version": "1.8.20.5",
-          "dist": {
-            "type": "zip",
-            "url": "http://YOURUSERNAME:YOURPASSWORD@www.yoursite.com/path/to/plugins/gravityforms_1.8.20.5.zip"
-          }
-        }
-      }
+    "polylang/polylang-pro": "2.7.4",
 ```
 
-In the similar manner you can add other plugins. I've covered with this almost every plugin we use.
+In the similar manner you can add other plugins like Gravity Forms. We've covered with this almost every plugin we use.
 
 When getting the new zip, I use this function in my `~/.bashrc`:
 

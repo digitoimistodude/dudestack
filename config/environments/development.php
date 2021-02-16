@@ -1,18 +1,19 @@
 <?php
-/* Development */
-define('DB_NAME', getenv('DB_NAME'));
-define('DB_USER', getenv('DB_USER'));
-define('DB_PASSWORD', getenv('DB_PASSWORD'));
-define('DB_HOST', getenv('DB_HOST') ? getenv('DB_HOST') : 'localhost');
+/**
+ * Configuration overrides for WP_ENV === 'development'
+ */
 
-define('WP_HOME', getenv('WP_HOME'));
-define('WP_SITEURL', getenv('WP_SITEURL'));
+use Roots\WPConfig\Config;
 
-define('FS_METHOD', 'direct');
+Config::define('SAVEQUERIES', true);
+Config::define('WP_DEBUG', true);
+Config::define('WP_DEBUG_DISPLAY', true);
+Config::define('WP_DISABLE_FATAL_ERROR_HANDLER', true);
+Config::define('SCRIPT_DEBUG', true);
+Config::define('FS_METHOD', 'direct');
+Config::define('PLL_CACHE_HOME_URL', false);
 
-define('SAVEQUERIES', true);
-define('WP_DEBUG', true);
-define('SCRIPT_DEBUG', true);
-define('WP_DISABLE_FATAL_ERROR_HANDLER', true);
+ini_set('display_errors', '1');
 
-define( 'PLL_CACHE_HOME_URL', false );
+// Enable plugin and theme updates and installation from the admin
+Config::define('DISALLOW_FILE_MODS', false);

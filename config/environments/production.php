@@ -1,13 +1,25 @@
 <?php
-/* Production */
-define('DB_NAME', getenv('DB_NAME'));
-define('DB_USER', getenv('DB_USER'));
-define('DB_PASSWORD', getenv('DB_PASSWORD'));
-define('DB_HOST', getenv('DB_HOST') ? getenv('DB_HOST') : 'localhost');
+/**
+ * Configuration overrides for WP_ENV === 'production'
+ */
 
-define('WP_HOME', getenv('WP_HOME'));
-define('WP_SITEURL', getenv('WP_SITEURL'));
+use Roots\WPConfig\Config;
+/**
+ * You should try to keep staging as close to production as possible. However,
+ * should you need to, you can always override production configuration values
+ * with `Config::define`.
+ *
+ * Example: `Config::define('WP_DEBUG', true);`
+ * Example: `Config::define('DISALLOW_FILE_MODS', false);`
+ */
 
-ini_set('display_errors', 0);
-define('WP_DEBUG_DISPLAY', false);
-define('SCRIPT_DEBUG', false);
+Config::define('SAVEQUERIES', false);
+Config::define('WP_DEBUG', false);
+Config::define('WP_DEBUG_DISPLAY', false);
+Config::define('WP_DISABLE_FATAL_ERROR_HANDLER', false);
+Config::define('SCRIPT_DEBUG', false);
+
+ini_set('display_errors', '0');
+
+// Enable plugin and theme updates and installation from the admin
+Config::define('DISALLOW_FILE_MODS', false);
