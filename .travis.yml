@@ -73,4 +73,4 @@ script:
     # for example: `--standard=wpcs.xml`.
     # You can use any of the normal PHPCS command line arguments in the command:
     # https://github.com/squizlabs/PHP_CodeSniffer/wiki/Usage
-    - if [[ "$SNIFF" == "1" ]]; then $PHPCS_DIR/bin/phpcs -p . --ignore=node_modules,wp,*/css/* --standard=phpcs.xml; fi
+    - if [[ "$SNIFF" == "1" ]]; then $PHPCS_DIR/bin/phpcs -p . --ignore=node_modules,content,wp,*/css/* --standard=phpcs.xml; fi
