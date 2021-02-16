@@ -67,7 +67,7 @@ install:
 # All commands must exit with code 0 on success. Anything else is considered failure.
 script:
     # Search for PHP syntax errors.
-    - find -L . -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l
+    # - find -L . -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l
     # Run against WordPress Coding Standards.
     # If you use a custom ruleset, change `--standard=WordPress` to point to your ruleset file,
     # for example: `--standard=wpcs.xml`.
