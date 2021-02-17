@@ -22,11 +22,14 @@ createproject
 5. [Installation](#installation)
 6. [Documentation](#documentation)
   1. [Starting a new project with createproject bash script](#starting-a-new-project-with-createproject-bash-script)
-      1. [What createproject.sh does](#what-createprojectsh-does)
-  2. [What you most probably need to edit in every project](#what-you-most-probably-need-to-edit-in-every-project)
-  3. [Getting started](#getting-started)
-  4. [Paid or Premium plugins](#paid-or-premium-plugins)
-  5. [WP-CLI alias](#wp-cli-alias)
+  2. [What createproject.sh does](#what-createprojectsh-does)
+  3. [What you most probably need to edit in every project](#what-you-most-probably-need-to-edit-in-every-project)
+  4. [Getting started](#getting-started)
+  5. [Paid or Premium plugins](#paid-or-premium-plugins)
+    1. [Advanced Custom Fields Pro](#advanced-custom-fields-pro)
+    2. [Polylang Pro](#polylang-pro)
+  6. [WP-CLI alias](#wp-cli-alias)
+  7. [Issues](#issues)
 
 #### Background
 
@@ -92,12 +95,6 @@ cat ~/.ssh/id_rsa.pub | ssh vagrant@10.1.2.4 'mkdir -p ~/.ssh && cat >> ~/.ssh/a
 ```
 
 # Documentation
-1. [Starting a new project with createproject bash script](#starting-a-new-project-with-createproject-bash-script)
-  1. [What createproject.sh does](#what-createprojectsh-does)
-2. [What you most probably need to edit in every project](#what-you-most-probably-need-to-edit-in-every-project)
-3. [Getting started](#getting-started)
-4. [Paid or Premium plugins](#paid-or-premium-plugins)
-
 ## Starting a new project with createproject bash script
 
 Creating a new project has a lot of configs to do. We wanted to automate most of it by creating a bash script called `createproject.sh`. The script assumes:
