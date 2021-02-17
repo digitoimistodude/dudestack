@@ -170,7 +170,7 @@ Add to "repositories" section:
 Then to "requires":
 
 ```json
-    "advanced-custom-fields/advanced-custom-fields-pro": "^5.9",
+    "advanced-custom-fields/advanced-custom-fields-pro": "5.9.4",
 ```
 
 ### Polylang Pro
