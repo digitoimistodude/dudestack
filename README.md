@@ -48,7 +48,7 @@ Despite the fact we love most of Bedrock, we noticed there are some things we do
 * Stuff were originally in `app/` by default, then in `web/`. We prefer `content/`, like it was `wp-content` for a reason. It describes it better, since we do not want this to be too programming-oriented, but more front end developer -friendly (for developing WordPress themes and functions)
 * Composer modifications, for installing more packages, like Finnish based language packs etc. that are not originally part of Bedrock
 * Automation. I mean composer's `create-project` is awesome, but we need more. You still need to do stuff after `create-project` and our `createproject` -starting script is designed for automating the rest.
-* Baked in local server environment for [Vagrant](https://github.com/digitoimistodude/marlin-vagrant) and [native macOS (Homebrew LEMP)](https://github.com/digitoimistodude/macos-lemp-setup)
+* Baked in local server environment settings for our [native macOS LEMP server](https://github.com/digitoimistodude/macos-lemp-setup)
 
 **You should modify things to your needs. Please note: This is not in any way tested with other people or or in different environments. Yet. Please address an issue if something goes south.**
 
@@ -57,25 +57,25 @@ Despite the fact we love most of Bedrock, we noticed there are some things we do
  - HTTPS support
  - Designed for pure WordPress development
  - Fast and easy templates for development and deployment
- - Customizable bash script for creating new WordPress projects
+ - Customizable bash script for creating new WordPress project automation
+ - Automatic Github repo initialization
  - Automatic MySQL-database generation
- - Automatic Project-related host settings for vagrant
+ - Automatic Project-related host settings for development server
  - Cleaning default WordPress stuff with wp-cli
  - [Capistrano 3](http://capistranorb.com/) deployment templates bundled in bin/createproject.sh
  - [Composer](https://getcomposer.org/) to take care of WordPress installation and plugin dependencies and updates
  - [Dotenv](https://github.com/vlucas/phpdotenv)-environments for development, staging and production
- - Support for LEMP and Vagrant development environments
- - Support for Github repo initialization
+ - Supports local LEMP ([macOS](https://github.com/digitoimistodude/macos-lemp-setup) / [Windows](https://github.com/digitoimistodude/windows-lemp-setup)) and Vagrant ([marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant)) development environments
 
 ## Requirements
 
 * [mkcert](https://github.com/FiloSottile/mkcert)
 * [Composer](https://getcomposer.org/) v2
 * Basic knowledge about bash scripting, deployment with capistrano, npm packages, bundle, composer etc.
-* Vagrant ([marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant)) OR [macos-lemp](https://github.com/digitoimistodude/macos-lemp-setup) but can be configured for MAMP or even Docker (in planning)
+* Local server environment preferably [macos-lemp](https://github.com/digitoimistodude/macos-lemp-setup), legacy support for Vagrant ([marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant)). Can possibly be configured for MAMP or even Docker but we will not provide any kind of support for those.
 * GitHub account
-* Unix-based OS (built for Mac OS X by default)
-* Access to staging and production servers that supports sftp and git
+* Unix-based OS or Windows [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+* Optional: Access to staging and production servers that supports sftp and git
 * Projects located under $HOME/Projects
 * Git
 * PHP >= 7.2
