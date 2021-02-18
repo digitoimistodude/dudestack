@@ -72,7 +72,7 @@ Despite the fact we love most of Bedrock, we noticed there are some things we do
 * [mkcert](https://github.com/FiloSottile/mkcert)
 * [Composer](https://getcomposer.org/) v2
 * Basic knowledge about bash scripting, deployment with capistrano, npm packages, bundle, composer etc.
-* Vagrant ([marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant)) OR [osx-lemp-setup](https://github.com/digitoimistodude/osx-lemp-setup) but can be configured for MAMP or even Docker (in planning)
+* Vagrant ([marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant)) OR [macos-lemp](https://github.com/digitoimistodude/macos-lemp-setup) but can be configured for MAMP or even Docker (in planning)
 * GitHub account
 * Unix-based OS (built for Mac OS X by default)
 * Access to staging and production servers that supports sftp and git
