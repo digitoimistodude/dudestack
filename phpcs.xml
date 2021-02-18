@@ -108,6 +108,6 @@
     </rule>
 
     <!-- Include sniffs for PHP cross-version compatibility. -->
-    <config name="testVersion" value="7.1-99.0"/>
+    <config name="testVersion" value="7.2-99.0"/>
     <rule ref="PHPCompatibility"/>
 </ruleset>
