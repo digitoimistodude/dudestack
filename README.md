@@ -118,29 +118,31 @@ When you run `createproject` it looks like this:
 ![createproject.sh](https://www.dude.fi/createproject.png "Screenshot")
 
 1. First it runs `composer create-project` with dudestack settings
-2. Installs default WordPress plugins and updates them
-3. Creates MySQL repository automatically with project name (assumes by default that you have [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant)) installed with default settings and paired with your host computer, for MAMP you'll need to edit bin/createproject.sh and edit `YOURMAMPMYSQLPASSWORD`).
-4. Installs capistrano
-5. Generates capistrano configs (config/deploy.rb, config/deploy/staging.rb, config/deploy/production.rb) with your GitHub details and paths
-6. Creates a Sublime Text 3 project
-7. Sets up WordPress configs and salts automatically
-8. Installs WordPress under its own subdirectory /wp (thus, admin located in example.test/wp/wp-admin)
-9. Sets up default admin user (extra users can be configured in bin/createproject.sh)
-10. Removes default WordPress posts, themes and plugins
-11. Activates default plugins, timezones, permalinks
-12. Updates .htaccess, adds support for mod_rewrite/permalinks and webfonts
-13. Sets up file permissions
-14. Inits a GitHub repository
-15. Sets up a vagrant virtual host
+2. Installs our default WordPress plugins and updates them
+3. Creates MySQL repository automatically with project name (assumes by default that you have [macos-lemp](https://github.com/digitoimistodude/macos-lemp-setup) installed for anything else like MAMP or [vagrant](https://github.com/digitoimistodude/marlin-vagrant) you'll need to edit bin/createproject.sh and edit `YOURMAMPMYSQLPASSWORD`. **NB!** This will not work with Local by Flywheel or any other GUI style dev server and we will NOT provide support for those).
+4. Installs capistrano deployment tool
+5. Generates default capistrano configs (config/deploy.rb, config/deploy/staging.rb, config/deploy/production.rb) with your GitHub project details and paths
+6. Sets up WordPress configs (wp-config credentials to .env) and salts automatically
+7. Installs WordPress under its own subdirectory /wp (thus, admin located in example.test/wp/wp-admin)
+8. Sets up default admin user as not "admin" for security (extra users can be configured in bin/createproject.sh)
+9. Removes default WordPress posts, themes and plugins and everything else not so useful
+10. Activates default plugins, timezones, permalinks
+11. Flushes rewrites, adds support for permalinks and webfonts
+12. Sets up file permissions
+13. Inits a GitHub repository
+14. Creates a HTTPS certificate
+15. Sets up a virtual host for development environment
 16. Updates /etc/hosts file
+17. Restarts development server
 
 ### What you most probably need to edit in every project
 
-- Production server SSH-credentials and paths in config/deploy/production.rb because they are usually different in every project. If you have the same directory structure on your servers, you can edit bin/createproject.sh so you don't repeat yourself in every project.
-- You will need gulp or grunt, feel free to use [our devpackages - gulpfile and npm package settings etc.](https://github.com/digitoimistodude/devpackages) designed for this purpose
+- After running `createproject` you should run newtheme.sh under [air-light](https://github.com/digitoimistodude/air-light)/bin. This will generate the WordPress theme and import latest [devpackages](https://github.com/digitoimistodude/devpackages) that contain gulp, stylelint, webpack, etc. for modern WordPress Theme development
+- To release your project staging/production: Production server SSH-credentials and paths in config/deploy/production.rb because they are usually different in every project. If you have the same directory structure on your servers, you can edit bin/createproject.sh so you don't repeat yourself in every project.
+- You will need gulp or grunt so if you are not using our starter theme [air-light](https://github.com/digitoimistodude/air-light), feel free to use [our devpackages - gulpfile and npm package settings etc.](https://github.com/digitoimistodude/devpackages) designed for this purpose
 
-**Note:**
-- This is a starter package without theme configs. We leave theme development up to you entirely. We have our own starter theme that can be used with dudestack, see [air](https://github.com/digitoimistodude/air).
+**Please note:**
+- Dudestack is only a starter package without ANY theme configs. We leave theme development up to you entirely. We have our own starter theme that can be used with dudestack, see [air-light](https://github.com/digitoimistodude/air-light).
 
 ## Getting started
 
