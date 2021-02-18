@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<ruleset name="WordPress-Core">
+    <!-- See https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-ruleset.xml -->
+    <!-- See https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards -->
+    <!-- See https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/wiki -->
+    <!-- See https://github.com/wimg/PHPCompatibility -->
+
+    <!-- Set a description for this ruleset. -->
+    <description>A custom set of code standard rules to check for WordPress themes.</description>
+
+    <!-- Pass some flags to PHPCS:
+         p flag: Show progress of the run.
+         s flag: Show sniff codes in all reports.
+         v flag: Print verbose output.
+         n flag: Do not print warnings.
+     -->
+     <arg value="psvn"/>
+
+     <!-- Only check the PHP, CSS and SCSS files. JS files are checked separately with JSCS and JSHint. -->
+     <arg name="extensions" value="php,css,scss/css"/>
+
+     <!-- Check all files in this directory and the directories below it. -->
+     <file>.</file>
+
+     <!-- Include the WordPress ruleset, with exclusions. -->
+     <rule ref="WordPress">
+
+        <!-- Nazi-strict intendation rules we want to exclude -->
+        <exclude name="Generic.WhiteSpace.ScopeIndent.IncorrectExact" />
+        <exclude name="Generic.WhiteSpace.ScopeIndent.Incorrect" />
+        <exclude name="Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed" />
+        <exclude name="WordPress.WhiteSpace.PrecisionAlignment" />
+        <exclude name="PEAR.Functions.FunctionCallSignature.Indent" />
+        <exclude name="WordPress.Arrays.ArrayIndentation.ItemNotAligned" />
+        <exclude name="WordPress.Arrays.ArrayIndentation.MultiLineArrayItemNotAligned" />
+        <exclude name="WordPress.WhiteSpace.DisallowInlineTabs.NonIndentTabsUsed" />
+        <exclude name="WordPress.Arrays.ArrayIndentation.CloseBraceNotAligned" />
+        <exclude name="PEAR.Functions.FunctionCallSignature.OpeningIndent" />
+
+        <!-- Don't require too strict inline commenting, it's a good thing to documentate, let's not make it frustrating -->
+        <exclude name="Squiz.Commenting.FunctionComment.WrongStyle" />
+        <exclude name="Squiz.Commenting.ClassComment.WrongStyle" />
+        <exclude name="Squiz.Commenting.InlineComment.InvalidEndChar" />
+        <exclude name="Squiz.Commenting.FunctionComment.Missing" />
+        <exclude name="Squiz.Commenting.FunctionComment.MissingParamTag" />
+        <exclude name="Squiz.Commenting.InlineComment.SpacingAfter" />
+        <exclude name="Squiz.Commenting.FileComment.Missing" />
+        <exclude name="Squiz.Commenting.LongConditionClosingComment.Missing" />
+        <exclude name="Squiz.Commenting.FunctionComment.ParamCommentFullStop" />
+
+        <!-- General code style related excludes -->
+        <exclude name="Squiz.PHP.DisallowMultipleAssignments.Found" />
+        <exclude name="Squiz.PHP.EmbeddedPhp.MultipleStatements" />
+        <exclude name="Squiz.PHP.EmbeddedPhp.ContentAfterOpen" />
+        <exclude name="Squiz.PHP.EmbeddedPhp.ContentBeforeEnd" />
+        <exclude name="Generic.Formatting.DisallowMultipleStatements.SameLine" />
+        <exclude name="WordPress.Arrays.ArrayDeclarationSpacing.AssociativeKeyFound" />
+        <exclude name="WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound" />
+        <exclude name="Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace" />
+        <exclude name="PHPCompatibility.PHP.NewFunctionArrayDereferencing.Found" />
+        <exclude name="Generic.Arrays.DisallowShortArraySyntax" />
+
+        <!-- General WordPress stuff we like to overrule -->
+        <exclude name="WordPress.Files.FileName.InvalidClassFileName" />
+
+        <!-- Very strict VIP/discouraged rules that are not needed -->
+        <exclude name="WordPress.XSS.EscapeOutput.OutputNotEscaped" />
+        <exclude name="WordPress.Functions.DontExtract.extract_extract" />
+        <exclude name="Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma" />
+        <exclude name="Generic.Commenting.DocComment.MissingShort" />
+        <exclude name="Generic.Commenting.DocComment.SpacingBeforeTags" />
+        <exclude name="Squiz.PHP.EmbeddedPhp.NoSemicolon" />
+        <exclude name="PHPCompatibility.PHP.NewClosure.Found" />
+        <exclude name="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket" />
+        <exclude name="PEAR.Functions.FunctionCallSignature.CloseBracketLine" />
+        <exclude name="PEAR.Functions.FunctionCallSignature.MultipleArguments" />
+        <exclude name="WordPress.PHP.DontExtract.extract_extract" />
+
+        <!-- Translations related, not always necessary, too strict -->
+        <exclude name="WordPress.WP.I18n.MissingTranslatorsComment" />
+
+        <!-- EditorConfig makes sure this happens anyway & false positives happen with this -->
+        <exclude name="Generic.Files.EndFileNewline.NotFound" />
+
+        <!-- Many times when developing a customer case we have placeholders for SVG includes, so unnecessary error reports happen with this rule -->
+        <exclude name="Squiz.PHP.EmbeddedPhp.Empty" />
+
+        <!-- Other useful excludes -->
+        <exclude name="WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned" />
+        <exclude name="WordPress.WP.GlobalVariablesOverride.Prohibited" />
+        <exclude name="PEAR.NamingConventions.ValidClassName.StartWithCapital" />
+        <exclude name="WordPress.Security.ValidatedSanitizedInput.MissingUnslash" />
+        <exclude name="Generic.ControlStructures.InlineControlStructure.NotAllowed" />
+        <exclude name="Squiz.PHP.EmbeddedPhp.ContentBeforeOpen" />
+        <exclude name="Generic.Formatting.MultipleStatementAlignment.NotSameWarning" />
+        <exclude name="PEAR.Files.IncludingFile.UseRequire" />
+        <exclude name="WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned" />
+        <exclude name="WordPress.PHP.DiscouragedPHPFunctions.obfuscation_base64_encode" />
+        <exclude name="WordPress.DB.SlowDBQuery.slow_db_query_tax_query" />
+        <exclude name="WordPress.PHP.DisallowShortTernary.Found" />
+
+        <!-- Dudestack based -->
+        <exclude name="Squiz.PHP.CommentedOutCode.Found" />
+        <exclude name="Squiz.Commenting.FileComment.MissingPackageTag" />
+        <exclude name="WordPress.PHP.IniSet.display_errors_Blacklisted" />
+        <exclude name="WordPress.PHP.YodaConditions.NotYoda" />
+        <exclude name="WordPress.WP.AlternativeFunctions.parse_url_parse_url" />
+    </rule>
+
+    <!-- Include sniffs for PHP cross-version compatibility. -->
+    <config name="testVersion" value="7.2-99.0"/>
+    <rule ref="PHPCompatibility"/>
+</ruleset>

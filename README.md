@@ -3,7 +3,7 @@
 
 Dudestack is a modern WordPress toolkit that helps you get started with the best development tools and project structure - just like [Bedrock](https://github.com/roots/bedrock).
 
-The idea is to have just one command for starting the project. Saves 10 hours easily in each project start when *Dont-Repeat-Yourself* -stuff are fully automated!
+The idea is to have just one command for starting the project. Saves dozens of hours easily in each project start when DRY (*Dont-Repeat-Yourself*) stuff are fully automated!
 
 After setting up, you can start a new project just by running:
 
@@ -21,12 +21,15 @@ createproject
 4. [Requirements](#requirements)
 5. [Installation](#installation)
 6. [Documentation](#documentation)
-  1. [Starting a new project with createproject bash script](#starting-a-new-project-with-createproject-bash-script)
-      1. [What createproject.sh does](#what-createprojectsh-does)
-  2. [What you most probably need to edit in every project](#what-you-most-probably-need-to-edit-in-every-project)
-  3. [Getting started](#getting-started)
-  4. [Paid or Premium plugins](#paid-or-premium-plugins)
-  5. [WP-CLI alias](#wp-cli-alias)
+    1. [Starting a new project with createproject bash script](#starting-a-new-project-with-createproject-bash-script)
+    2. [What createproject.sh does](#what-createprojectsh-does)
+    3. [What you most probably need to edit in every project](#what-you-most-probably-need-to-edit-in-every-project)
+    4. [Getting started](#getting-started)
+    5. [Paid or Premium plugins](#paid-or-premium-plugins)
+        1. [Advanced Custom Fields Pro](#advanced-custom-fields-pro)
+        2. [Polylang Pro](#polylang-pro)
+    6. [WP-CLI alias](#wp-cli-alias)
+    7. [Issues](#issues)
 
 #### Background
 
@@ -65,6 +68,7 @@ Despite the fact we love most of Bedrock, we noticed there are some things we do
 
 ## Requirements
 
+* Composer v2
 * Basic knowledge about bash scripting, deployment with capistrano, npm packages, bundle, composer etc.
 * Vagrant ([marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant)) OR [osx-lemp-setup](https://github.com/digitoimistodude/osx-lemp-setup) but can be configured for MAMP or even Docker (in planning)
 * GitHub account
@@ -72,11 +76,13 @@ Despite the fact we love most of Bedrock, we noticed there are some things we do
 * Access to staging and production servers that supports sftp and git
 * Projects located under $HOME/Projects
 * Git
-* PHP >= 5.6
-* Ruby >= 2.2
+* PHP >= 7.2
+* Ruby >= 2.6
 * Perl
 
 # Installation
+
+If you are a Finnish person, you might want to check out our [Handbook guide for developers](https://handbook.dude.fi/tyoskenteleminen-dudella/kehittajalle).
 
 1. Clone this repo to your ~/Projects directory
 2. Go to dudestack directory and run setup script (`cd ~/Projects/dudestack && sh bin/setup.sh`).
@@ -89,12 +95,6 @@ cat ~/.ssh/id_rsa.pub | ssh vagrant@10.1.2.4 'mkdir -p ~/.ssh && cat >> ~/.ssh/a
 ```
 
 # Documentation
-1. [Starting a new project with createproject bash script](#starting-a-new-project-with-createproject-bash-script)
-  1. [What createproject.sh does](#what-createprojectsh-does)
-2. [What you most probably need to edit in every project](#what-you-most-probably-need-to-edit-in-every-project)
-3. [Getting started](#getting-started)
-4. [Paid or Premium plugins](#paid-or-premium-plugins)
-
 ## Starting a new project with createproject bash script
 
 Creating a new project has a lot of configs to do. We wanted to automate most of it by creating a bash script called `createproject.sh`. The script assumes:
@@ -154,58 +154,52 @@ Edit your `composer.json` and add these lines inside respository, separated by c
 
 ### Advanced Custom Fields Pro
 
+Add to "repositories" section:
+
 ```json
     {
-      "type": "package",
-      "package": {
-        "name": "advanced-custom-fields/advanced-custom-fields-pro",
-        "version": "5.0",
-        "type": "wordpress-muplugin",
-        "dist": {
-          "type": "zip",
-          "url": "YOUR_DOWNLOAD_URL (get it from ACF website)"
-        }
-      }
+      "type": "composer",
+      "url": "https://pivvenit.github.io/acf-composer-bridge/composer/v3/wordpress-plugin/"
+    },
+    {
+      "type": "composer",
+      "url": "https://pivvenit.github.io/acf-composer-bridge/composer/v3/wordpress-plugin/"
     }
 ```
 
-### WPML
+Then to "requires":
 
 ```json
+    "advanced-custom-fields/advanced-custom-fields-pro": "5.9.4",
+```
+
+### Polylang Pro
+
+Add to "repositories":
+
+```json
+,
     {
       "type": "package",
       "package": {
-        "name": "wpml/sitepress-multilingual-cms",
+        "name": "polylang/polylang-pro",
         "type": "wordpress-plugin",
-        "version": "3.1.8.4",
+        "version": "2.7.4",
         "dist": {
           "type": "zip",
-          "url": "YOUR_DOWNLOAD_URL (get it from WPML website)"
+          "url": "https://xxxxxxxxx:xxxxxxxx@plugins.dude.fi/polylang-pro_2.7.4.zip"
         }
       }
-    }
+    },
 ```
 
-### Gravity Forms
-
-Gravityforms and some other plugins have urls that expire after some time, so to not having always get the url after new version, use your own private plugin repository to store zip files on remote server with basic HTTP auth and add package like this:
+Then to "requires":
 
 ```json
-      {
-        "type": "package",
-        "package": {
-          "name": "gravityforms",
-          "type": "wordpress-plugin",
-          "version": "1.8.20.5",
-          "dist": {
-            "type": "zip",
-            "url": "http://YOURUSERNAME:YOURPASSWORD@www.yoursite.com/path/to/plugins/gravityforms_1.8.20.5.zip"
-          }
-        }
-      }
+    "polylang/polylang-pro": "2.7.4",
 ```
 
-In the similar manner you can add other plugins. I've covered with this almost every plugin we use.
+In the similar manner you can add other plugins like Gravity Forms. We've covered with this almost every plugin we use.
 
 When getting the new zip, I use this function in my `~/.bashrc`:
 

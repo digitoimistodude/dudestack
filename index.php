@@ -1,4 +1,7 @@
 <?php
-// WordPress view bootstrapper
-define('WP_USE_THEMES', true);
-require(dirname( __FILE__ ) . '/wp/wp-blog-header.php');
+/**
+ * WordPress View Bootstrapper
+ */
+
+define( 'WP_USE_THEMES', true );
+require __DIR__ . '/wp/wp-blog-header.php';

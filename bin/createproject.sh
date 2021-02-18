@@ -231,6 +231,7 @@ rm .DS_Store
 rm -rf bin
 rm .env-e
 rm .env.example
+rm phpcs.xml
 
 composer update
 echo "${yellow}Updating .env (db credentials)...:${txtreset}"
