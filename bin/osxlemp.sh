@@ -221,6 +221,7 @@ sed -i -e "s/database_password/YOUR_DEFAULT_DATABASE_PASSWORD_HERE/g" .env
 sed -i -e "s/database_host/localhost/g" .env
 sed -i -e "s/example.com/${PROJECTNAME}.test/g" .env
 sed -i -e "s/example.com/${PROJECTNAME}.test/g" .env
+sed -i -e "s/http/https/g" .env
 echo '
 SENDGRID_API_KEY=YOUR_SENDGRID_API_KEY_HERE' >> .env
 echo -e '
@@ -230,7 +231,7 @@ HS_BEACON_ID=YOUR_HS_BEACON_ID_HERE' >> .env
 
 echo "${yellow}Installing WordPress...:${txtreset}"
 echo "path: wp
-url: http://${PROJECTNAME}.test
+url: https://${PROJECTNAME}.test
 
 core install:
   admin_user: YOUR_DEFAULT_WORDPRESS_ADMIN_USERNAME_HERE
@@ -262,6 +263,9 @@ cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option delete new_admin_em
 echo "${yellow}Setting file permissions for local...${txtreset}"
 chmod -R 777 $HOME/Projects/$PROJECTNAME
 
+echo "${yellow}Generating HTTPS cert for project...${txtreset}"
+mkdir -p /var/www/certs && cd /var/www/certs && mkcert "$PROJECTNAME.test"
+
 # For GitHub:
 echo "${yellow}Creating a GitHub repo...${txtreset}"
 curl -u 'YOUR_GITHUB_COMPANY_USERNAME':'YOUR_GITHUB_ACCESS_TOKEN' https://api.github.com/orgs/YOUR_GITHUB_COMPANY_USERNAME/repos -d '{"name": "'${PROJECTNAME}'","auto_init": false,"private": true,"description": "A repository for '${PROJECTNAME}' site"}'
@@ -275,13 +279,31 @@ git add --all
 git commit -m 'First commit - project started'
 git push -u origin --all
 
-sudo echo "server {
-    listen 80;
+echo "server {
+    listen 443 ssl http2;
     root /var/www/$PROJECTNAME;
-    index index.html index.htm index.php;
+    index index.php;
     server_name $PROJECTNAME.test www.$PROJECTNAME.test;
+
     include php7.conf;
     include global/wordpress.conf;
+
+    ssl_certificate /var/www/certs/$PROJECTNAME.test.pem;
+    ssl_certificate_key /var/www/certs/$PROJECTNAME.test-key.pem;
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+    ssl_prefer_server_ciphers on;
+    ssl_dhparam /etc/ssl/certs/dhparam.pem;
+    ssl_ciphers 'ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-DSS-AES128-GCM-SHA256:kEDH+AESGCM:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-DSS-AES128-SHA256:DHE-RSA-AES256-SHA256:DHE-DSS-AES256-SHA:DHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:AES:CAMELLIA:DES-CBC3-SHA:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!aECDH:!EDH-DSS-DES-CBC3-SHA:!EDH-RSA-DES-CBC3-SHA:!KRB5-DES-CBC3-SHA';
+    ssl_session_timeout 1d;
+    ssl_session_cache shared:SSL:50m;
+    ssl_stapling_verify on;
+    add_header Strict-Transport-Security max-age=15768000;
+}
+
+server {
+    listen 80;
+    server_name $PROJECTNAME.test;
+    return 301 https://\$host\$request_uri;
 }" > "/etc/nginx/sites-available/$PROJECTNAME.test"
 sudo ln -s /etc/nginx/sites-available/$PROJECTNAME.test /etc/nginx/sites-enabled/$PROJECTNAME.test
 
@@ -294,5 +316,5 @@ echo "${yellow}Updating hosts file...${txtreset}"
 sudo -- sh -c "echo 127.0.0.1 ${PROJECTNAME}.test >> /etc/hosts"
 sudo brew services stop nginx
 sudo brew services start nginx
-echo "${boldgreen}All done! Start coding at http://${PROJECTNAME}.test!${txtreset} (Please note! no themes installed, so you may see a white page. We recommend air which is designed for dudestack: https://github.com/digitoimistodude/air)"
+echo "${boldgreen}All done! Start coding at https://${PROJECTNAME}.test!${txtreset} (Please note! no themes installed, so you may see a white page. We recommend air which is designed for dudestack: https://github.com/digitoimistodude/air)"
 fi

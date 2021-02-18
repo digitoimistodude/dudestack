@@ -54,6 +54,7 @@ Despite the fact we love most of Bedrock, we noticed there are some things we do
 
 ## Features
 
+ - HTTPS support
  - Designed for pure WordPress development
  - Fast and easy templates for development and deployment
  - Customizable bash script for creating new WordPress projects
@@ -68,7 +69,8 @@ Despite the fact we love most of Bedrock, we noticed there are some things we do
 
 ## Requirements
 
-* Composer v2
+* [mkcert](https://github.com/FiloSottile/mkcert)
+* [Composer](https://getcomposer.org/) v2
 * Basic knowledge about bash scripting, deployment with capistrano, npm packages, bundle, composer etc.
 * Vagrant ([marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant)) OR [osx-lemp-setup](https://github.com/digitoimistodude/osx-lemp-setup) but can be configured for MAMP or even Docker (in planning)
 * GitHub account
@@ -82,10 +84,10 @@ Despite the fact we love most of Bedrock, we noticed there are some things we do
 
 # Installation
 
-If you are a Finnish person, you might want to check out our [Handbook guide for developers](https://handbook.dude.fi/tyoskenteleminen-dudella/kehittajalle).
-
-1. Clone this repo to your ~/Projects directory
-2. Go to dudestack directory and run setup script (`cd ~/Projects/dudestack && sh bin/setup.sh`).
+1. Install prequisites, `xcode-select --install` and [homebrew](https://brew.sh/) with latest updates
+2. Install latest [Composer](https://getcomposer.org/) and [mkcert](https://github.com/FiloSottile/mkcert)
+3. Clone this repo to your ~/Projects directory, `mkdir -p ~/Projects && cd ~/Projects && git clone https://github.com/digitoimistodude/dudestack`
+4. Go to dudestack directory and run setup script (`cd ~/Projects/dudestack && sh bin/setup.sh`).
 3. Edit `/usr/bin/createproject` to your needs. See [documentation](#documentation) and **[Getting started](#getting-started)**.
 
 If you are using vagrant, you need to "pair" your machine with the VM (I presume you are already set up keypairs, if not, run without password: `ssh-keygen -t rsa`), marlin-vagrant example:
@@ -143,7 +145,7 @@ When you run `createproject` it looks like this:
 ## Getting started
 
 1. Everything assumes your projects are in **~/Projects**. You should make sure that folder exists. You can also decide to use another folder, but then you need a lot of search&replace and using this would be quite pointless.
-2. Run [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant) (if you use MAMP Pro server, you need to edit bin/createproject.sh accordingly)
+2. Run [macos-lemp-stack](https://github.com/digitoimistodude/macos-lemp-setup#) (if you use other development environment like MAMP Pro server, you need to edit bin/createproject.sh accordingly. **We don't provide support for all environments**)
 3. Edit `createproject.sh` and `composer.json` based on your own needs.
 
 To start a new project, run `createproject` and have fun.
@@ -217,7 +219,7 @@ WP-Cli is included in dudestack per project within `composer.json` and won't wor
 alias wp='ssh vagrant@10.1.2.4 "cd /var/www/"$(basename "$PWD")"; /var/www/"$(basename "$PWD")"/vendor/wp-cli/wp-cli/bin/wp"'
 ```
 
-If you are using [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant), please use IP address `10.1.2.4`, if [jolliest-vagrant](https://github.com/digitoimistodude/jolliest-vagrant), use `10.1.2.3`. After restarting Terminal or running `. ~/.bashrc` or `. ~/.bash_profile` you will be able to use `wp` command directly on your host machine without having to ssh into vagrant.
+Legacy: If you are using [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant), please use IP address `10.1.2.4`, if [jolliest-vagrant](https://github.com/digitoimistodude/jolliest-vagrant), use `10.1.2.3`. After restarting Terminal or running `. ~/.bashrc` or `. ~/.bash_profile` you will be able to use `wp` command directly on your host machine without having to ssh into vagrant.
 
 ## Issues
 
