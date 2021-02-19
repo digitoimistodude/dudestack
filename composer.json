@@ -57,7 +57,7 @@
     "johnpbloch/wordpress": "5.6.1",
     "digitoimistodude/air-helper": "*",
     "wpackagist-plugin/classic-editor": "*",
-    "wpackagist-plugin/ga-in": "*",
+    "wpackagist-plugin/koko-analytics": "*",
     "wpackagist-plugin/imagify": "*",
     "wpackagist-plugin/simple-history": "*",
     "wpackagist-plugin/sendgrid-email-delivery-simplified": "*",
