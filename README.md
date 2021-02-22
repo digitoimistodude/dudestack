@@ -29,7 +29,8 @@ createproject
         1. [Advanced Custom Fields Pro](#advanced-custom-fields-pro)
         2. [Polylang Pro](#polylang-pro)
     6. [WP-CLI alias](#wp-cli-alias)
-    7. [Issues](#issues)
+    7. [SEO Plugin](#seo-plugin)
+    8. [Issues](#issues)
 
 #### Background
 
@@ -222,6 +223,12 @@ alias wp='ssh vagrant@10.1.2.4 "cd /var/www/"$(basename "$PWD")"; /var/www/"$(ba
 ```
 
 Legacy: If you are using [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant), please use IP address `10.1.2.4`, if [jolliest-vagrant](https://github.com/digitoimistodude/jolliest-vagrant), use `10.1.2.3`. After restarting Terminal or running `. ~/.bashrc` or `. ~/.bash_profile` you will be able to use `wp` command directly on your host machine without having to ssh into vagrant.
+
+## SEO Plugin
+
+Our default choice for the SEO plugin is [The SEO Framework](https://wordpress.org/plugins/autodescription/) whihc is nice, clean and simple solution that suits most of the projects.
+
+In case client is familiar with Yoast, requests it or the project is blog-centric, switching to Yoast SEO is possible. In that case, replace the `wpackagist-plugin/autodescription` package in `composer.json` with `wpackagist-plugin/wordpress-seo`. It's also highly recommended to install `wpackagist-plugin/so-clean-up-wp-seo` to clean the bloat from UI.
 
 ## Issues
 

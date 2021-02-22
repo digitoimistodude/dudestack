@@ -63,8 +63,7 @@
     "wpackagist-plugin/sendgrid-email-delivery-simplified": "*",
     "wpackagist-plugin/worker": "*",
     "wpackagist-plugin/redis-cache": "*",
-    "wpackagist-plugin/wordpress-seo": "*",
-    "wpackagist-plugin/so-clean-up-wp-seo": "*",
+    "wpackagist-plugin/autodescription": "*",
     "wpackagist-plugin/gravity-forms-wcag-20-form-fields": "*"
   },
   "require-dev": {
