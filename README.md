@@ -166,10 +166,6 @@ Add to "repositories" section:
       "type": "composer",
       "url": "https://pivvenit.github.io/acf-composer-bridge/composer/v3/wordpress-plugin/"
     },
-    {
-      "type": "composer",
-      "url": "https://pivvenit.github.io/acf-composer-bridge/composer/v3/wordpress-plugin/"
-    }
 ```
 
 Then to "requires":
