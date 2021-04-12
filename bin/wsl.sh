@@ -18,6 +18,7 @@ YEAR=$(date +%y)
 PROJECTS_HOME='/var/www'
 
 if [ ! -f ~/.env ]; then
+  # Ask credetials
   echo "${boldyellow}What is your MySQL root password (asked only first time):${txtreset} "
   read -e MYSQL_ROOT_PASSWORD
 
@@ -29,14 +30,16 @@ if [ ! -f ~/.env ]; then
 
   echo "${boldyellow}What is the email address you want to use with your wp-admin admin user by default (asked only first time):${txtreset} "
   read -e WP_ADMIN_USER_EMAIL
+
+  # Add credentials to .env under HOME dir
+  touch ~/.env
+  echo -e "MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}" >> ~/.env
+  echo -e "WP_ADMIN_USER=${WP_ADMIN_USER}" >> ~/.env
+  echo -e "WP_ADMIN_USER_PASSWORD=${WP_ADMIN_USER_PASSWORD}" >> ~/.env
+  echo -e "WP_ADMIN_USER_EMAIL=${WP_ADMIN_USER_EMAIL}" >> ~/.env
 fi
 
-touch ~/.env
-echo -e "MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}" >> ~/.env
-echo -e "WP_ADMIN_USER=${WP_ADMIN_USER}" >> ~/.env
-echo -e "WP_ADMIN_USER_PASSWORD=${WP_ADMIN_USER_PASSWORD}" >> ~/.env
-echo -e "WP_ADMIN_USER_EMAIL=${WP_ADMIN_USER_EMAIL}" >> ~/.env
-
+# Credential vars
 MYSQL_ROOT_PASSWORD_ENV=$(grep MYSQL_ROOT_PASSWORD ~/.env | cut -d '=' -f2)
 WP_ADMIN_USER_ENV=$(grep WP_ADMIN_USER ~/.env | cut -d '=' -f2)
 WP_ADMIN_USER_PASSWORD_ENV=$(grep WP_ADMIN_USER_PASSWORD ~/.env | cut -d '=' -f2)
