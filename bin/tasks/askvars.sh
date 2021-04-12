@@ -33,40 +33,47 @@ if [ ! -f ${ENV_FILE} ]; then
 fi
 
 # Do we use GitHub settings or not
-echo ""
-read -p "${BOLDYELLOW}Do you want to use automatic GitHub organisation repositories for your projects? (y/n)${TXTRESET} " yngithub
-  if [ "$yngithub" = "y" ]; then
+if grep -Fxq "GITHUB_COMPANY_USERNAME" ${ENV_FILE}
+then
+  # If found
+  echo ""
+else
+  # If not found
+  echo ""
+  read -p "${BOLDYELLOW}Do you want to use automatic GitHub organisation repositories for your projects? (y/n)${TXTRESET} " yngithub
+    if [ "$yngithub" = "y" ]; then
 
-    # GitHub username
-    if grep -Fxq "GITHUB_COMPANY_USERNAME" ${ENV_FILE}
-    then
-      # If found
-      echo ""
-    else
-      # If not found
-      echo ""
-      echo "${BOLDYELLOW}GitHub company username (this is used for repo url):${TXTRESET} "
-      read -e GITHUB_COMPANY_USERNAME
+      # GitHub username
+      if grep -Fxq "GITHUB_COMPANY_USERNAME" ${ENV_FILE}
+      then
+        # If found
+        echo ""
+      else
+        # If not found
+        echo ""
+        echo "${BOLDYELLOW}GitHub company username (this is used for repo url):${TXTRESET} "
+        read -e GITHUB_COMPANY_USERNAME
 
-      # Add Credentials to .env
-      echo -e "GITHUB_COMPANY_USERNAME=${GITHUB_COMPANY_USERNAME}" >> ${ENV_FILE}
+        # Add Credentials to .env
+        echo -e "GITHUB_COMPANY_USERNAME=${GITHUB_COMPANY_USERNAME}" >> ${ENV_FILE}
+      fi
+
+      # GitHub access token
+      if grep -Fxq "GITHUB_ACCESS_TOKEN" ${ENV_FILE}
+      then
+        # If found
+        echo ""
+      else
+        # If not found
+        echo ""
+        echo "${BOLDYELLOW}GitHub access token (Tutorial: https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/):${TXTRESET} "
+        read -e GITHUB_ACCESS_TOKEN
+
+        # Add Credentials to .env
+        echo -e "GITHUB_ACCESS_TOKEN=${GITHUB_ACCESS_TOKEN}" >> ${ENV_FILE}
+      fi
     fi
-
-    # GitHub access token
-    if grep -Fxq "GITHUB_ACCESS_TOKEN" ${ENV_FILE}
-    then
-      # If found
-      echo ""
-    else
-      # If not found
-      echo ""
-      echo "${BOLDYELLOW}GitHub access token (Tutorial: https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/):${TXTRESET} "
-      read -e GITHUB_ACCESS_TOKEN
-
-      # Add Credentials to .env
-      echo -e "GITHUB_ACCESS_TOKEN=${GITHUB_ACCESS_TOKEN}" >> ${ENV_FILE}
-    fi
-  fi
+fi
 
 # Asked vars in env
 MYSQL_ROOT_PASSWORD_ENV=$(grep MYSQL_ROOT_PASSWORD $ENV_FILE | cut -d '=' -f2)
