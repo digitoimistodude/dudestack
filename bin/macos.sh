@@ -58,8 +58,6 @@ source ${DUDESTACK_LOCATION}/bin/tasks/github.sh
 source ${DUDESTACK_LOCATION}/bin/tasks/vhosts.sh
 
 # MacOS Specific restarts and reloads
-sudo launchctl unload /Library/LaunchDaemons/homebrew.mxcl.nginx.plist
-sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.nginx.plist
 echo "${BOLDGREEN}Local environment up and running.${TXTRESET}"
 echo "${YELLOW}Updating hosts file...${TXTRESET}"
 sudo -- sh -c "echo 127.0.0.1 ${PROJECTNAME}.test >> /etc/hosts"
