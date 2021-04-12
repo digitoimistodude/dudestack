@@ -1,42 +1,66 @@
 #!/bin/bash
-# Project starting bash script for OS X native LEMP by rolle.
-# More info: https://github.com/digitoimistodude/osx-lemp-setup
+# Project starting bash script for macOS native LEMP.
+# More info: https://github.com/digitoimistodude/macos-lemp-setup
 
 # Helpers:
-currentfile=`basename $0`
-txtbold=$(tput bold)
-boldyellow=${txtbold}$(tput setaf 3)
-boldgreen=${txtbold}$(tput setaf 2)
-boldwhite=${txtbold}$(tput setaf 7)
-yellow=$(tput setaf 3)
-red=$(tput setaf 1)
-green=$(tput setaf 2)
-white=$(tput setaf 7)
-txtreset=$(tput sgr0)
+SCRIPT_VERSION='1.0.2'
+CURRENTFILE=`basename $0`
+TXTBOLD=$(tput bold)
+BOLDYELLOW=${TXTBOLD}$(tput setaf 3)
+BOLDGREEN=${TXTBOLD}$(tput setaf 2)
+BOLDWHITE=${TXTBOLD}$(tput setaf 7)
+YELLOW=$(tput setaf 3)
+RED=$(tput setaf 1)
+GREEN=$(tput setaf 2)
+WHITE=$(tput setaf 7)
+TXTRESET=$(tput sgr0)
 LOCAL_IP=$(ifconfig | grep -Eo "inet (addr:)?([0-9]*\.){3}[0-9]*" | grep -Eo "([0-9]*\.){3}[0-9]*" | grep -v "127.0.0.1")
 YEAR=$(date +%y)
+DIR_TO_FILE=$(cd "$(dirname "$1")"; pwd -P)/$(basename "$1")
+
+# Note about running directly as we can't prevent people running this via sh or bash pre-cmd
+echo "-----------------------------------------------------"
+echo "createproject start script for macOS, v${SCRIPT_VERSION}"
+echo "-----------------------------------------------------"
+echo ""
+if [ $0 != '/usr/local/bin/createproject' ]; then
+echo "${TXTBOLD}Please note: ${TXTRESET}${WHITE}Please do NOT prepend sh or bash to run this script. Run this script directly instead."
+echo ""
+echo "Wrong: ${RED}sh $CURRENTFILE${WHITE} or ${RED}bash $CURRENTFILE${WHITE}"
+echo "Right: ${GREEN}./$CURRENTFILE${WHITE} (if no executable permissions, run ${GREEN}sudo chmod +x $CURRENTFILE first)${WHITE}" 1>&2
+echo ""
+fi
+if [ ! -f /usr/local/bin/createproject ]; then
+echo "${TXTRESET}${TXTBOLD}PreferRED way to run:${TXTRESET}${WHITE} Link this file to system level with this command:${TXTRESET}"
+echo ""
+echo "${GREEN}sudo ln -s ${DIR_TO_FILE}${CURRENTFILE} /usr/local/bin/createproject${TXTRESET}" 1>&2
+echo ""
+echo "After this you can just run:"
+echo "${GREEN}createproject${TXTRESET}"
+echo ""
+fi
 
 # Did you run setup.sh first? let's see about that...
 if [ ! -f /usr/local/bin/createproject ]; then
-  echo "${red}It seems you did not run setup.sh. Run sh setup.sh and try again.${txtreset}"
+  echo "${RED}It seems you did not run setup.sh. Run sh setup.sh and try again.${TXTRESET}"
   exit
 else
 
-echo "${boldyellow}Project name in lowercase (without spaces or special characters):${txtreset} "
+echo "${BOLDYELLOW}Project name in lowercase (without spaces or special characters):${TXTRESET} "
 read -e PROJECTNAME
 cd $HOME/Projects/dudestack
 git pull
 composer create-project -n ronilaukkarinen/dudestack $HOME/Projects/${PROJECTNAME} dev-master
 cd $HOME/Projects/${PROJECTNAME}
 composer update
-echo "${yellow}Creating a MySQL database for ${PROJECTNAME}${txtreset}"
+echo "${YELLOW}Creating a MySQL database for ${PROJECTNAME}${TXTRESET}"
 mysql -u root -p'YOUR_DEFAULT_DATABASE_PASSWORD_HERE' -e "CREATE DATABASE ${PROJECTNAME}"
-echo "${boldgreen}Attempt to create MySQL database successful.${txtreset}"
-echo "${yellow}Installing Capistrano in the project directory${txtreset}"
+echo "${BOLDGREEN}Attempt to create MySQL database successful.${TXTRESET}"
+echo "${YELLOW}Installing Capistrano in the project directory${TXTRESET}"
 sudo gem install capistrano
 cap install
-echo "${boldgreen}Capistrano installed${txtreset}"
-echo "${yellow}Generating config/deploy.rb${txtreset}"
+echo "${BOLDGREEN}Capistrano installed${TXTRESET}"
+echo "${YELLOW}Generating config/deploy.rb${TXTRESET}"
 cho "set :application, \"$PROJECTNAME\"
 set :repo_url, \"git@github.com:YOUR_GITHUB_COMPANY_USERNAME/$PROJECTNAME.git\"
 set :branch, :master
@@ -51,15 +75,15 @@ namespace :deploy do
   desc 'Restart application'
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
-      # This task is required by Capistrano but can be a no-op
+      # This task is requiRED by Capistrano but can be a no-op
       # Your restart mechanism here, for example:
       # execute :service, :nginx, :reload
     end
   end
 
 end" > "$HOME/Projects/$PROJECTNAME/config/deploy.rb"
-echo "${boldgreen}deploy.rb generated${txtreset}"
-echo "${yellow}Generating staging.rb${txtreset}"
+echo "${BOLDGREEN}deploy.rb generated${TXTRESET}"
+echo "${YELLOW}Generating staging.rb${TXTRESET}"
 echo "role :app, %w{YOUR_STAGING_USERNAME_HERE@YOUR_STAGING_SERVER_HERE}
 
 set :ssh_options, {
@@ -120,7 +144,7 @@ namespace :deploy do
     after :updated, 'deploy:composer_install'
 
 end" > "$HOME/Projects/$PROJECTNAME/config/deploy/staging.rb"
-echo "${yellow}Generating production.rb${txtreset}"
+echo "${YELLOW}Generating production.rb${TXTRESET}"
 echo "role :app, %w{$PROJECTNAME@YOUR_PRODUCTION_SERVER_HERE}
 
 set :ssh_options, {
@@ -197,7 +221,7 @@ namespace :deploy do
 end" > "$HOME/Projects/$PROJECTNAME/config/deploy/production.rb"
 
 cd "$HOME/Projects/$PROJECTNAME/"
-echo "${yellow}Updating WordPress related stuff...:${txtreset}"
+echo "${YELLOW}Updating WordPress related stuff...:${TXTRESET}"
 cp $HOME/Projects/dudestack/composer.json "$HOME/Projects/$PROJECTNAME/composer.json"
 cd "$HOME/Projects/$PROJECTNAME/"
 
@@ -214,7 +238,7 @@ rm .env.example
 rm phpcs.xml
 
 composer update
-echo "${yellow}Updating .env (db credentials)...:${txtreset}"
+echo "${YELLOW}Updating .env (db cREDentials)...:${TXTRESET}"
 sed -i -e "s/database_name/${PROJECTNAME}/g" .env
 sed -i -e "s/database_user/YOUR_DEFAULT_DATABASE_USERNAME_HERE/g" .env
 sed -i -e "s/database_password/YOUR_DEFAULT_DATABASE_PASSWORD_HERE/g" .env
@@ -229,7 +253,7 @@ IMAGIFY_API_KEY=YOUR_IMAGIFY_API_KEY_HERE' >> .env
 echo -e '
 HS_BEACON_ID=YOUR_HS_BEACON_ID_HERE' >> .env
 
-echo "${yellow}Installing WordPress...:${txtreset}"
+echo "${YELLOW}Installing WordPress...:${TXTRESET}"
 echo "path: wp
 url: https://${PROJECTNAME}.test
 
@@ -240,7 +264,7 @@ core install:
   title: \"${PROJECTNAME}\"" > wp-cli.yml
 
 cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp core install --title=$PROJECTNAME --admin_email=YOUR_DEFAULT_WORDPRESS_ADMIN_EMAIL_HERE
-echo "${yellow}Removing default WordPress posts...:${txtreset}"
+echo "${YELLOW}Removing default WordPress posts...:${TXTRESET}"
 cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp post delete 1 --force
 cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp post delete 2 --force
 cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update blogdescription ''
@@ -257,20 +281,20 @@ cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update date_format 
 cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update time_format 'H.i'
 cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update admin_email 'koodarit@dude.fi'
 cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option delete new_admin_email
-#echo "${yellow}Activating necessary plugins, mainly for theme development...:${txtreset}"
+#echo "${YELLOW}Activating necessary plugins, mainly for theme development...:${TXTRESET}"
 #cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin activate --all
 
-echo "${yellow}Setting file permissions for local...${txtreset}"
+echo "${YELLOW}Setting file permissions for local...${TXTRESET}"
 chmod -R 777 $HOME/Projects/$PROJECTNAME
 
-echo "${yellow}Generating HTTPS cert for project...${txtreset}"
+echo "${YELLOW}Generating HTTPS cert for project...${TXTRESET}"
 mkdir -p /var/www/certs && cd /var/www/certs && mkcert "$PROJECTNAME.test"
 
 # For GitHub:
-echo "${yellow}Creating a GitHub repo...${txtreset}"
+echo "${YELLOW}Creating a GitHub repo...${TXTRESET}"
 curl -u 'YOUR_GITHUB_COMPANY_USERNAME':'YOUR_GITHUB_ACCESS_TOKEN' https://api.github.com/orgs/YOUR_GITHUB_COMPANY_USERNAME/repos -d '{"name": "'${PROJECTNAME}'","auto_init": false,"private": true,"description": "A repository for '${PROJECTNAME}' site"}'
 
-echo "${yellow}Initializing the GitHub repo...${txtreset}"
+echo "${YELLOW}Initializing the GitHub repo...${TXTRESET}"
 cd "$HOME/Projects/$PROJECTNAME"
 git init
 git remote add origin git@github.com:YOUR_GITHUB_COMPANY_USERNAME/$PROJECTNAME.git
@@ -295,7 +319,7 @@ echo "server {
     ssl_dhparam /etc/ssl/certs/dhparam.pem;
     ssl_ciphers 'ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-DSS-AES128-GCM-SHA256:kEDH+AESGCM:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-DSS-AES128-SHA256:DHE-RSA-AES256-SHA256:DHE-DSS-AES256-SHA:DHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:AES:CAMELLIA:DES-CBC3-SHA:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!aECDH:!EDH-DSS-DES-CBC3-SHA:!EDH-RSA-DES-CBC3-SHA:!KRB5-DES-CBC3-SHA';
     ssl_session_timeout 1d;
-    ssl_session_cache shared:SSL:50m;
+    ssl_session_cache shaRED:SSL:50m;
     ssl_stapling_verify on;
     add_header Strict-Transport-Security max-age=15768000;
 }
@@ -307,14 +331,14 @@ server {
 }" > "/etc/nginx/sites-available/$PROJECTNAME.test"
 sudo ln -s /etc/nginx/sites-available/$PROJECTNAME.test /etc/nginx/sites-enabled/$PROJECTNAME.test
 
-echo "${boldgreen}Added vhost, $PROJECTNAME.test added to /etc/nginx/sites-enabled/${txtreset}"
-echo "${yellow}Restarting nginx...${txtreset}"
+echo "${BOLDGREEN}Added vhost, $PROJECTNAME.test added to /etc/nginx/sites-enabled/${TXTRESET}"
+echo "${YELLOW}Restarting nginx...${TXTRESET}"
 sudo launchctl unload /Library/LaunchDaemons/homebrew.mxcl.nginx.plist
 sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.nginx.plist
-echo "${boldgreen}Local environment up and running.${txtreset}"
-echo "${yellow}Updating hosts file...${txtreset}"
+echo "${BOLDGREEN}Local environment up and running.${TXTRESET}"
+echo "${YELLOW}Updating hosts file...${TXTRESET}"
 sudo -- sh -c "echo 127.0.0.1 ${PROJECTNAME}.test >> /etc/hosts"
 sudo brew services stop nginx
 sudo brew services start nginx
-echo "${boldgreen}All done! Start coding at https://${PROJECTNAME}.test!${txtreset} (Please note! no themes installed, so you may see a white page. We recommend air which is designed for dudestack: https://github.com/digitoimistodude/air)"
+echo "${BOLDGREEN}All done! Start coding at https://${PROJECTNAME}.test!${TXTRESET} (Please note! no themes installed, so you may see a WHITE page. We recommend air which is designed for dudestack: https://github.com/digitoimistodude/air)"
 fi
