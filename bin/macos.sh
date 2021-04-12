@@ -67,7 +67,7 @@ sudo brew services stop nginx
 sudo brew services start nginx
 
 # macOS specific complete message
-echo "${BOLDGREEN}All done!"
+echo "${BOLDGREEN}All done!${TXTRESET}"
 
 # The end
 source ${DUDESTACK_LOCATION}/bin/tasks/footer.sh
