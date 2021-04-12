@@ -10,18 +10,17 @@ SCRIPT_VERSION='1.0.4'
 PROJECTS_HOME="/var/www"
 DUDESTACK_LOCATION="${PROJECTS_HOME}/dudestack"
 
-# Import required variables
-source ${DUDESTACK_LOCATION}/bin/tasks/variables.sh
-
-# Script header
-source ${DUDESTACK_LOCATION}/bin/tasks/header.sh
-
 # Final note about server requirements
 echo ""
 echo "${WHITE}Using this start script requires you have dev server installed and working:
 https://github.com/digitoimistodude/windows-lemp-setup
 ${TXTRESET}"
-echo ""
+
+# Import required variables
+source ${DUDESTACK_LOCATION}/bin/tasks/variables.sh
+
+# Script header
+source ${DUDESTACK_LOCATION}/bin/tasks/header.sh
 
 # Ask names and credentials
 source ${DUDESTACK_LOCATION}/bin/tasks/askvars.sh
