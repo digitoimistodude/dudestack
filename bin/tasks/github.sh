@@ -4,7 +4,7 @@ if grep -q "GITHUB_COMPANY_USERNAME" ${ENV_FILE}; then
   # If found
   echo ""
   echo "${YELLOW}Creating a GitHub repo...${TXTRESET}"
-  curl -u '${GITHUB_COMPANY_USERNAME_ENV}':'${GITHUB_ACCESS_TOKEN_ENV}' https://api.github.com/orgs/YOUR_GITHUB_COMPANY_USERNAME/repos -d '{"name": "'${PROJECTNAME}'","auto_init": false,"private": true,"description": "A repository for '${PROJECTNAME}' site"}'
+  curl -u $GITHUB_COMPANY_USERNAME_ENV:$GITHUB_ACCESS_TOKEN_ENV https://api.github.com/orgs/YOUR_GITHUB_COMPANY_USERNAME/repos -d '{"name": "'${PROJECTNAME}'","auto_init": false,"private": true,"description": "A repository for '${PROJECTNAME}' site"}'
 
   echo "${YELLOW}Initializing the GitHub repo...${TXTRESET}"
   cd "$PROJECTS_HOME/$PROJECTNAME"
