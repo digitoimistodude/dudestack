@@ -9,7 +9,7 @@ core install:
   title: \"${PROJECTNAME}\"" > wp-cli.yml
 
 # Actual install command
-cd ${PROJECTS_HOME}/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp core install --title=$PROJECTNAME --admin_email=${WP_ADMIN_USER_EMAIL_ENV}
+cd ${PROJECTS_HOME}/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp core install --title=${PROJECTNAME} --admin_email=${WP_ADMIN_USER_EMAIL_ENV}
 
 # Update settings
 echo "${YELLOW}Removing default WordPress posts and applying settings via WP-CLI...${TXTRESET}"
