@@ -1,6 +1,6 @@
 echo ""
 echo "Front end: https://${PROJECTNAME}.test"
-echo "WP-admin:  https://${PROJECTNAME}/wp/wp-login.php"
+echo "WP-admin:  https://${PROJECTNAME}.test/wp/wp-login.php"
 echo ""
 echo "Please note! There are no themes installed so you may see a WHITE page. We recommend Air-light which is designed for dudestack: https://github.com/digitoimistodude/air-light - So next git clone air-light and run newtheme.sh or newtheme-wsl.sh under bin/."
 echo ""
