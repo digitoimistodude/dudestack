@@ -1,64 +1,11 @@
 #!/bin/bash
 # First setup.
 
-# Helpers:
-currentfile=`basename $0`
-txtbold=$(tput bold)
-boldyellow=${txtbold}$(tput setaf 3)
-boldgreen=${txtbold}$(tput setaf 2)
-boldwhite=${txtbold}$(tput setaf 7)
-yellow=$(tput setaf 3)
-red=$(tput setaf 1)
-green=$(tput setaf 2)
-white=$(tput setaf 7)
-txtreset=$(tput sgr0)
+# Import required files
+source helpers/variables.sh
 
 cd ~/Projects/dudestack
 git pull
-
-while true; do
-echo "${boldyellow}Which local environment you are using?${txtreset}
-
-Type:
-
-1 for marlin-vagrant: https://github.com/digitoimistodude/marlin-vagrant
-2 for native OS X: https://github.com/digitoimistodude/osx-lemp-setup
-3 for Docker: https://github.com/digitoimistodude/dudestack-docker
-"
-read choice
-echo
-
-case $choice in
-     1)
-      choice="marlin-vagrant"
-      localip="10.1.2.4"
-      wp_cli_command_prefix='ssh vagrant@10.1.2.4 "'
-      wp_cli_command_suffix='"'
-      break
-      # Choose $choice
-     ;;
-     2)
-      choice="osxlemp"
-      localip="127.0.0.1"
-      wp_cli_command_prefix=''
-      wp_cli_command_suffix=''
-      break
-      # Choose $choice
-     ;;
-     3)
-      choice="docker"
-      localip="127.0.0.1"
-      wp_cli_command_prefix=''
-      wp_cli_command_suffix=''
-      break
-      # Choose $choice
-     ;;
-     *)
-     echo "${red}Please type, 1, 2 or 3 only.${txtreset}
-     "
-     ;;
-esac
-done
 
 if [ "$choice" == "marlin-vagrant" ] ;
 then

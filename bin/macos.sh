@@ -2,49 +2,22 @@
 # Project starting bash script for macOS native LEMP.
 # More info: https://github.com/digitoimistodude/macos-lemp-setup
 
-# Helpers:
+# Import required variables
+source helpers/variables.sh
+
+# Script specific vars
+SCRIPT_LABEL='for macOS'
 SCRIPT_VERSION='1.0.2'
-CURRENTFILE=`basename $0`
-TXTBOLD=$(tput bold)
-BOLDYELLOW=${TXTBOLD}$(tput setaf 3)
-BOLDGREEN=${TXTBOLD}$(tput setaf 2)
-BOLDWHITE=${TXTBOLD}$(tput setaf 7)
-YELLOW=$(tput setaf 3)
-RED=$(tput setaf 1)
-GREEN=$(tput setaf 2)
-WHITE=$(tput setaf 7)
-TXTRESET=$(tput sgr0)
-LOCAL_IP=$(ifconfig | grep -Eo "inet (addr:)?([0-9]*\.){3}[0-9]*" | grep -Eo "([0-9]*\.){3}[0-9]*" | grep -v "127.0.0.1")
-YEAR=$(date +%y)
-DIR_TO_FILE=$(cd "$(dirname "$1")"; pwd -P)/$(basename "$1")
 
-# Note about running directly as we can't prevent people running this via sh or bash pre-cmd
-echo "-----------------------------------------------------"
-echo "createproject start script for macOS, v${SCRIPT_VERSION}"
-echo "-----------------------------------------------------"
+# Final note about server requirements
 echo ""
-if [ $0 != '/usr/local/bin/createproject' ]; then
-echo "${TXTBOLD}Please note: ${TXTRESET}${WHITE}Please do NOT prepend sh or bash to run this script. Run this script directly instead."
+echo "${WHITE}Using this start script requires you have dev server installed and working:
+https://github.com/digitoimistodude/macos-lemp-setup
+${TXTRESET}"
 echo ""
-echo "Wrong: ${RED}sh $CURRENTFILE${WHITE} or ${RED}bash $CURRENTFILE${WHITE}"
-echo "Right: ${GREEN}./$CURRENTFILE${WHITE} (if no executable permissions, run ${GREEN}sudo chmod +x $CURRENTFILE first)${WHITE}" 1>&2
-echo ""
-fi
-if [ ! -f /usr/local/bin/createproject ]; then
-echo "${TXTRESET}${TXTBOLD}PreferRED way to run:${TXTRESET}${WHITE} Link this file to system level with this command:${TXTRESET}"
-echo ""
-echo "${GREEN}sudo ln -s ${DIR_TO_FILE}${CURRENTFILE} /usr/local/bin/createproject${TXTRESET}" 1>&2
-echo ""
-echo "After this you can just run:"
-echo "${GREEN}createproject${TXTRESET}"
-echo ""
-fi
 
-# Did you run setup.sh first? let's see about that...
-if [ ! -f /usr/local/bin/createproject ]; then
-  echo "${RED}It seems you did not run setup.sh. Run sh setup.sh and try again.${TXTRESET}"
-  exit
-else
+# Script header
+source helpers/header.sh
 
 echo "${BOLDYELLOW}Project name in lowercase (without spaces or special characters):${TXTRESET} "
 read -e PROJECTNAME

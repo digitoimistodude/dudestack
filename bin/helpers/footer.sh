@@ -1,0 +1,7 @@
+echo "${WHITE}${TXTBOLD}Front end: ${WHITE}https://${PROJECTNAME}.test${TXTRESET}"
+echo "${WHITE}${TXTBOLD}WP-admin:  ${WHITE}https://${PROJECTNAME}/wp/wp-login.php${TXTRESET}"
+echo ""
+echo "${WHITE}${TXTBOLD}Please note!${WHITE} There are no themes installed so you may see a WHITE page. We recommend Air-light which is designed for dudestack: https://github.com/digitoimistodude/air-light - So next git clone air-light and run newtheme.sh or newtheme-wsl.sh under bin/.${TXTRESET}"
+echo ""
+echo "Thanks for using createproject start script ${SCRIPT_LABEL}, v${SCRIPT_VERSION}!"
+echo ""
