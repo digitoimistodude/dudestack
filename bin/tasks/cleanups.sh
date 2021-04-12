@@ -9,3 +9,4 @@ rm .travis.yml
 rm -rf bin
 rm .env.example
 rm phpcs.xml
+rm wp-cli.yml

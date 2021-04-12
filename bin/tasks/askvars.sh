@@ -26,10 +26,10 @@ if [ ! -f ${ENV_FILE} ]; then
 
   # Add Credentials to .env
   touch ${ENV_FILE}
-  echo -e "MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}" >> ${ENV_FILE}
-  echo -e "WP_ADMIN_USER=${WP_ADMIN_USER}" >> ${ENV_FILE}
-  echo -e "WP_ADMIN_USER_PASSWORD=${WP_ADMIN_USER_PASSWORD}" >> ${ENV_FILE}
-  echo -e "WP_ADMIN_USER_EMAIL=${WP_ADMIN_USER_EMAIL}" >> ${ENV_FILE}
+  echo "MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}" >> ${ENV_FILE}
+  echo "WP_ADMIN_USER=${WP_ADMIN_USER}" >> ${ENV_FILE}
+  echo "WP_ADMIN_USER_PASSWORD=${WP_ADMIN_USER_PASSWORD}" >> ${ENV_FILE}
+  echo "WP_ADMIN_USER_EMAIL=${WP_ADMIN_USER_EMAIL}" >> ${ENV_FILE}
 fi
 
 # Do we use GitHub settings or not
