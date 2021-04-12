@@ -1,3 +1,4 @@
+echo ""
 echo "${WHITE}${TXTBOLD}Front end: ${WHITE}https://${PROJECTNAME}.test${TXTRESET}"
 echo "${WHITE}${TXTBOLD}WP-admin:  ${WHITE}https://${PROJECTNAME}/wp/wp-login.php${TXTRESET}"
 echo ""

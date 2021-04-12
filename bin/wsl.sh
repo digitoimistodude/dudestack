@@ -3,14 +3,14 @@
 # More info: https://rolle.design/local-server-on-windows-10-for-wordpress-theme-development
 
 # Import required variables
-source helpers/variables.sh
+source tasks/variables.sh
 
 # Script specific vars
 SCRIPT_LABEL='with WSL support'
-SCRIPT_VERSION='1.0.2'
+SCRIPT_VERSION='1.0.3'
 
 # Script header
-source helpers/header.sh
+source tasks/header.sh
 
 # Final note about server requirements
 echo ""
@@ -20,41 +20,43 @@ ${TXTRESET}"
 echo ""
 
 # Ask names and credentials
-source helpers/askvars.sh
+source tasks/askvars.sh
 
 # Init project and run composer
-source helpers/initproject.sh
+source tasks/initproject.sh
 
 # Create database
-source helpers/initdb.sh
+source tasks/initdb.sh
 
 # Clean up files that are not needed
-source helpers/cleanups.sh
+source tasks/cleanups.sh
 
 # Update .env
-source helpers/dotenv.sh
-
-# Update .env
-source helpers/installwp.sh
+source tasks/dotenv.sh
 
 # WP-Cli and WP installation
-source helpers/wp-cli.sh
+source tasks/wp-cli.sh
 
 # Set up permissions
-source helpers/permissions.sh
+source tasks/permissions.sh
 
 # SSL certificates
-source helpers/certs.sh
+source tasks/certs.sh
+
+# Init GitHub company repository
+source tasks/github.sh
 
 # Set up virtual hosts
-source helpers/vhosts.sh
+source tasks/vhosts.sh
 
-# Restarts
-source helpers/restarts.sh
+# WSL specific restarts
+echo "${YELLOW}Restarting nginx...${TXTRESET}"
+sudo service nginx stop
+sudo service nginx start
+echo "${BOLDGREEN}Local environment up and running.${TXTRESET}"
 
 # WSL specific complete message
 echo "${BOLDYELLOW}Almost done! Use HostsFileEditor https://github.com/scottlerch/HostsFileEditor and add 127.0.0.1 $PROJECTNAME.test to your Windows hosts file (Windows does not let to update this via command line).${TXTRESET}"
-echo ""
 
 # The end
-source helpers/footer.sh
+source tasks/footer.sh
