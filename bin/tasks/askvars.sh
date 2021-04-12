@@ -33,8 +33,7 @@ if [ ! -f ${ENV_FILE} ]; then
 fi
 
 # Do we use GitHub settings or not
-if grep -Fxq "GITHUB_COMPANY_USERNAME" ${ENV_FILE}
-then
+if grep -q "GITHUB_COMPANY_USERNAME" ${ENV_FILE}; then
   # If found
   echo ""
 else
@@ -44,8 +43,7 @@ else
     if [ "$yngithub" = "y" ]; then
 
       # GitHub username
-      if grep -Fxq "GITHUB_COMPANY_USERNAME" ${ENV_FILE}
-      then
+      if grep -q "GITHUB_COMPANY_USERNAME" ${ENV_FILE}; then
         # If found
         echo ""
       else
@@ -55,12 +53,11 @@ else
         read -e GITHUB_COMPANY_USERNAME
 
         # Add Credentials to .env
-        echo -e "GITHUB_COMPANY_USERNAME=${GITHUB_COMPANY_USERNAME}" >> ${ENV_FILE}
+        echo "GITHUB_COMPANY_USERNAME=${GITHUB_COMPANY_USERNAME}" >> ${ENV_FILE}
       fi
 
       # GitHub access token
-      if grep -Fxq "GITHUB_ACCESS_TOKEN" ${ENV_FILE}
-      then
+      if grep -q "GITHUB_ACCESS_TOKEN" ${ENV_FILE}; then
         # If found
         echo ""
       else
@@ -70,7 +67,7 @@ else
         read -e GITHUB_ACCESS_TOKEN
 
         # Add Credentials to .env
-        echo -e "GITHUB_ACCESS_TOKEN=${GITHUB_ACCESS_TOKEN}" >> ${ENV_FILE}
+        echo "GITHUB_ACCESS_TOKEN=${GITHUB_ACCESS_TOKEN}" >> ${ENV_FILE}
       fi
     fi
 fi
