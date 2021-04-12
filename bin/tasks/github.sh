@@ -1,5 +1,10 @@
 # We asked do we use GitHub in askvars.sh
-if [ "$yngithub" = "y" ]; then
+# General vars
+ENV_FILE="${HOME}/.env_createproject"
+if grep -Fxq "GITHUB_COMPANY_USERNAME" ${ENV_FILE}
+then
+  # If found
+  echo ""
   echo "${YELLOW}Creating a GitHub repo...${TXTRESET}"
   curl -u '${GITHUB_COMPANY_USERNAME_ENV}':'${GITHUB_ACCESS_TOKEN_ENV}' https://api.github.com/orgs/YOUR_GITHUB_COMPANY_USERNAME/repos -d '{"name": "'${PROJECTNAME}'","auto_init": false,"private": true,"description": "A repository for '${PROJECTNAME}' site"}'
 

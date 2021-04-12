@@ -24,7 +24,7 @@ if [ ! -f ${ENV_FILE} ]; then
   echo "${BOLDYELLOW}What is the email address you want to use with your wp-admin admin user by default (asked only first time):${TXTRESET} "
   read -e WP_ADMIN_USER_EMAIL
 
-  # Add Credentials to .env under HOME dir
+  # Add Credentials to .env
   touch ${ENV_FILE}
   echo -e "MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}" >> ${ENV_FILE}
   echo -e "WP_ADMIN_USER=${WP_ADMIN_USER}" >> ${ENV_FILE}
@@ -46,7 +46,10 @@ read -p "${BOLDYELLOW}Do you want to use automatic GitHub organisation repositor
       # If not found
       echo ""
       echo "${BOLDYELLOW}GitHub company username (this is used for repo url):${TXTRESET} "
-      read -e GITHUB_COMPANY_USERNAME >> ${ENV_FILE}
+      read -e GITHUB_COMPANY_USERNAME
+
+      # Add Credentials to .env
+      echo -e "GITHUB_COMPANY_USERNAME=${GITHUB_COMPANY_USERNAME}" >> ${ENV_FILE}
     fi
 
     # GitHub access token
@@ -58,7 +61,10 @@ read -p "${BOLDYELLOW}Do you want to use automatic GitHub organisation repositor
       # If not found
       echo ""
       echo "${BOLDYELLOW}GitHub access token (Tutorial: https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/):${TXTRESET} "
-      read -e GITHUB_ACCESS_TOKEN >> ${ENV_FILE}
+      read -e GITHUB_ACCESS_TOKEN
+
+      # Add Credentials to .env
+      echo -e "GITHUB_ACCESS_TOKEN=${GITHUB_ACCESS_TOKEN}" >> ${ENV_FILE}
     fi
   fi
 
