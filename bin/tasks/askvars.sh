@@ -27,9 +27,9 @@ if [ ! -f ${ENV_FILE} ]; then
   # Add Credentials to .env
   touch ${ENV_FILE}
   echo "MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}" >> ${ENV_FILE}
-  echo "WP_ADMIN_USER=${WP_ADMIN_USER}" >> ${ENV_FILE}
-  echo "WP_ADMIN_USER_PASSWORD=${WP_ADMIN_USER_PASSWORD}" >> ${ENV_FILE}
-  echo "WP_ADMIN_USER_EMAIL=${WP_ADMIN_USER_EMAIL}" >> ${ENV_FILE}
+  echo "WPUSERNAME=${WP_ADMIN_USER}" >> ${ENV_FILE}
+  echo "ADMINLOGINPASS=${WP_ADMIN_USER_PASSWORD}" >> ${ENV_FILE}
+  echo "WPEMAIL=${WP_ADMIN_USER_EMAIL}" >> ${ENV_FILE}
 fi
 
 # Do we use GitHub settings or not
@@ -74,9 +74,9 @@ fi
 
 # Asked vars in env
 MYSQL_ROOT_PASSWORD_ENV=$(grep MYSQL_ROOT_PASSWORD $ENV_FILE | cut -d '=' -f2)
-WP_ADMIN_USER_ENV=$(grep WP_ADMIN_USER $ENV_FILE | cut -d '=' -f2)
-WP_ADMIN_USER_PASSWORD_ENV=$(grep WP_ADMIN_USER_PASSWORD $ENV_FILE | cut -d '=' -f2)
-WP_ADMIN_USER_EMAIL_ENV=$(grep WP_ADMIN_USER_EMAIL $ENV_FILE | cut -d '=' -f2)
+WP_ADMIN_USER_ENV=$(grep WPUSERNAME $ENV_FILE | cut -d '=' -f2)
+WP_ADMIN_USER_PASSWORD_ENV=$(grep ADMINLOGINPASS $ENV_FILE | cut -d '=' -f2)
+WP_ADMIN_USER_EMAIL_ENV=$(grep WPEMAIL $ENV_FILE | cut -d '=' -f2)
 GITHUB_ACCESS_TOKEN_ENV=$(grep GITHUB_ACCESS_TOKEN $ENV_FILE | cut -d '=' -f2)
 GITHUB_COMPANY_USERNAME_ENV=$(grep GITHUB_COMPANY_USERNAME $ENV_FILE | cut -d '=' -f2)
 echo ""
