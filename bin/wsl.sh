@@ -1,5 +1,5 @@
 #!/bin/bash
-# Project starting bash script for WSL native LEMP by rolle.
+# Project starting bash script for WSL native LEMP.
 # More info: https://rolle.design/local-server-on-windows-10-for-wordpress-theme-development
 
 # Import required variables
