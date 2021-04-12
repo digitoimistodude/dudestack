@@ -1,11 +1,14 @@
 # Check if PROJECTS_HOME directory exists
 if [ ! -d ${PROJECTS_HOME} ]; then
-  mkdir -p ~/Projects
-  sudo ln -s ~/Projects ${PROJECTS_HOME}
+  # But only for Mac
+  if [[ $SCRIPT_LABEL =~ 'for macOS' ]]; then
+    mkdir -p ${HOME}/Projects
+    sudo ln -s ${HOME}/Projects ${PROJECTS_HOME}
+  fi
 fi
 
 # Check if dudestack exists in the right location
-if [ ! -d $PROJECTS_HOME/dudestack ]; then
+if [ ! -d ${DUDESTACK_LOCATION} ]; then
     echo "${RED}dudestack not found under $PROJECTS_HOME. Please double check your installation.${TXTRESET}"
   exit
 fi
@@ -17,7 +20,7 @@ if [ ! -f /usr/bin/git ]; then
 fi
 
 # Get latest version of dudestack if not already for some reason
-cd $PROJECTS_HOME/dudestack
+cd ${DUDESTACK_LOCATION}
 git pull
 
 echo "${YELLOW}Ensuring composer is installed...${TXTRESET}"
@@ -40,6 +43,6 @@ composer update
 # Check that everything is up to date once again
 cd "$PROJECTS_HOME/$PROJECTNAME/"
 echo "${YELLOW}Updating WordPress related stuff...:${TXTRESET}"
-cp $PROJECTS_HOME/dudestack/composer.json "$PROJECTS_HOME/$PROJECTNAME/composer.json"
+cp ${DUDESTACK_LOCATION}/composer.json "$PROJECTS_HOME/$PROJECTNAME/composer.json"
 cd "$PROJECTS_HOME/$PROJECTNAME/"
 composer update
