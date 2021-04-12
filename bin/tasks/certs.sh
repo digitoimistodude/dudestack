@@ -24,9 +24,9 @@ if [ ! -f /etc/ssl/certs/dhparam.pem ]; then
 fi
 
 echo "${YELLOW}Generating HTTPS cert for project...${TXTRESET}"
-mkdir -p /var/www/certs && cd /var/www/certs && mkcert "$PROJECTNAME.test"
+mkdir -p ${PROJECTS_HOME}/certs && cd ${PROJECTS_HOME}/certs && mkcert "$PROJECTNAME.test"
 
 echo "${YELLOW}Ensuring browsersync certs are is installed...${TXTRESET}"
-if [ ! -f /var/www/certs/localhost-key.pem ]; then
-  mkdir -p /var/www/certs && cd /var/www/certs && mkcert localhost
+if [ ! -f ${PROJECTS_HOME}/certs/localhost-key.pem ]; then
+  mkdir -p ${PROJECTS_HOME}/certs && cd ${PROJECTS_HOME}/certs && mkcert localhost
 fi

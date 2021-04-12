@@ -1,14 +1,14 @@
 echo "server {
     listen 443 ssl http2;
-    root /var/www/$PROJECTNAME;
+    root ${PROJECTS_HOME}/$PROJECTNAME;
     index index.php;
     server_name $PROJECTNAME.test www.$PROJECTNAME.test;
 
     include php7.conf;
     include global/wordpress.conf;
 
-    ssl_certificate /var/www/certs/$PROJECTNAME.test.pem;
-    ssl_certificate_key /var/www/certs/$PROJECTNAME.test-key.pem;
+    ssl_certificate ${PROJECTS_HOME}/certs/$PROJECTNAME.test.pem;
+    ssl_certificate_key ${PROJECTS_HOME}/certs/$PROJECTNAME.test-key.pem;
     ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
     ssl_prefer_server_ciphers on;
     ssl_dhparam /etc/ssl/certs/dhparam.pem;
