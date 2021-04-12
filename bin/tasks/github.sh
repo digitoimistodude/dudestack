@@ -1,6 +1,5 @@
 # We asked do we use GitHub in askvars.sh
 # General vars
-ENV_FILE="${HOME}/.env_createproject"
 if grep -Fxq "GITHUB_COMPANY_USERNAME" ${ENV_FILE}
 then
   # If found
