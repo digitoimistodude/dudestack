@@ -1,4 +1,4 @@
-echo "${YELLOW}Updating .env (credentials for database and plugins)...:${TXTRESET}"
+echo "${YELLOW}Updating .env (credentials for database and plugins)...${TXTRESET}"
 sed -i -e "s/database_name/${PROJECTNAME}/g" .env
 sed -i -e "s/database_user/root/g" .env
 sed -i -e "s/database_password/${MYSQL_ROOT_PASSWORD_ENV}/g" .env

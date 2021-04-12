@@ -42,7 +42,7 @@ composer update
 
 # Check that everything is up to date once again
 cd "$PROJECTS_HOME/$PROJECTNAME/"
-echo "${YELLOW}Updating WordPress related stuff...:${TXTRESET}"
+echo "${YELLOW}Updating WordPress related stuff...${TXTRESET}"
 cp ${DUDESTACK_LOCATION}/composer.json "$PROJECTS_HOME/$PROJECTNAME/composer.json"
 cd "$PROJECTS_HOME/$PROJECTNAME/"
 composer update

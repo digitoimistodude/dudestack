@@ -1,4 +1,4 @@
-echo "${YELLOW}Installing WordPress...:${TXTRESET}"
+echo "${YELLOW}Installing WordPress...${TXTRESET}"
 echo "path: wp
 url: https://${PROJECTNAME}.test
 
@@ -12,7 +12,7 @@ core install:
 cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp core install --title=$PROJECTNAME --admin_email=${WP_ADMIN_USER_EMAIL_ENV}
 
 # Update settings
-echo "${YELLOW}Removing default WordPress posts and applying settings via WP-CLI...:${TXTRESET}"
+echo "${YELLOW}Removing default WordPress posts and applying settings via WP-CLI...${TXTRESET}"
 cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp post delete 1 --force
 cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp post delete 2 --force
 cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update blogdescription ''
