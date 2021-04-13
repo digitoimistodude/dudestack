@@ -1,35 +1,35 @@
 # Import required variables
-source ${DUDESTACK_LOCATION}/bin/tasks/variables.sh
+source ${SCRIPTS_LOCATION}/tasks/variables.sh
 
 # Script header
-source ${DUDESTACK_LOCATION}/bin/tasks/header.sh
+source ${SCRIPTS_LOCATION}/tasks/header.sh
 
 # Ask names and credentials
-source ${DUDESTACK_LOCATION}/bin/tasks/askvars.sh
+source ${SCRIPTS_LOCATION}/tasks/askvars.sh
 
 # Init project and run composer
-source ${DUDESTACK_LOCATION}/bin/tasks/initproject.sh
+source ${SCRIPTS_LOCATION}/tasks/initproject.sh
 
 # Create database
-source ${DUDESTACK_LOCATION}/bin/tasks/initdb.sh
+source ${SCRIPTS_LOCATION}/tasks/initdb.sh
 
 # Update .env
-source ${DUDESTACK_LOCATION}/bin/tasks/dotenv.sh
+source ${SCRIPTS_LOCATION}/tasks/dotenv.sh
 
 # WP-Cli and WP installation
-source ${DUDESTACK_LOCATION}/bin/tasks/wp-cli.sh
+source ${SCRIPTS_LOCATION}/tasks/wp-cli.sh
 
 # Clean up files that are not needed
-source ${DUDESTACK_LOCATION}/bin/tasks/cleanups.sh
+source ${SCRIPTS_LOCATION}/tasks/cleanups.sh
 
 # Set up permissions
-source ${DUDESTACK_LOCATION}/bin/tasks/permissions.sh
+source ${SCRIPTS_LOCATION}/tasks/permissions.sh
 
 # SSL certificates
-source ${DUDESTACK_LOCATION}/bin/tasks/certs.sh
+source ${SCRIPTS_LOCATION}/tasks/certs.sh
 
 # Init GitHub company repository
-source ${DUDESTACK_LOCATION}/bin/tasks/github.sh
+source ${SCRIPTS_LOCATION}/tasks/github.sh
 
 # Set up virtual hosts
-source ${DUDESTACK_LOCATION}/bin/tasks/vhosts.sh
+source ${SCRIPTS_LOCATION}/tasks/vhosts.sh

@@ -8,7 +8,7 @@ SCRIPT_VERSION='1.0.4'
 
 # Vars needed for this file to function globally
 PROJECTS_HOME="/var/www"
-DUDESTACK_LOCATION="${PROJECTS_HOME}/dudestack"
+SCRIPTS_LOCATION="${PROJECTS_HOME}/dudestack"
 
 # Final note about server requirements
 echo ""
@@ -17,7 +17,7 @@ https://github.com/digitoimistodude/windows-lemp-setup
 ${TXTRESET}"
 
 # Import required tasks
-source ${DUDESTACK_LOCATION}/bin/tasks/imports.sh
+source ${SCRIPTS_LOCATION}/tasks/imports.sh
 
 # WSL specific restarts
 echo "${YELLOW}Restarting nginx...${TXTRESET}"
@@ -29,4 +29,4 @@ echo "${BOLDGREEN}Local environment up and running.${TXTRESET}"
 echo "${BOLDYELLOW}Almost done! Use HostsFileEditor https://github.com/scottlerch/HostsFileEditor and add 127.0.0.1 $PROJECTNAME.test to your Windows hosts file (Windows does not let to update this via command line).${TXTRESET}"
 
 # The end
-source ${DUDESTACK_LOCATION}/bin/tasks/footer.sh
+source ${SCRIPTS_LOCATION}/tasks/footer.sh
