@@ -177,6 +177,8 @@ Then to "requires":
 
 ### Object Cache Pro
 
+You will need Redis and PHP Redis installed in order to install this package.
+
 Add to "repositories":
 
 ```json
