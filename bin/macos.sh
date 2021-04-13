@@ -35,6 +35,8 @@ source ${SCRIPTS_LOCATION}/tasks/imports.sh
 echo "${BOLDGREEN}Local environment up and running.${TXTRESET}"
 echo "${YELLOW}Updating hosts file...${TXTRESET}"
 sudo -- sh -c "echo 127.0.0.1 ${PROJECTNAME}.test >> /etc/hosts"
+
+echo "${YELLOW}Restarting nginx...${TXTRESET}"
 sudo brew services stop nginx
 sudo brew services start nginx
 
