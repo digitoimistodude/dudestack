@@ -12,7 +12,7 @@ PROJECTS_HOME="/var/www"
 
 # Determine scripts location to get imports right
 if [ "$CURRENTFILE" = "macos.sh" ]; then
-  SCRIPTS_LOCATION="$PROJECTS_HOME/dudestack/bin"
+  SCRIPTS_LOCATION="$( pwd )"
   source ${SCRIPTS_LOCATION}/tasks/variables.sh
   source ${SCRIPTS_LOCATION}/tasks/header.sh
   exit
