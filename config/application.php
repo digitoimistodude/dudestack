@@ -110,6 +110,31 @@ Config::define( 'SCRIPT_DEBUG', false );
 ini_set( 'display_errors', '0' );
 
 /**
+ *  Redis object cache settings for
+ *  https://objectcache.pro/docs/configuration-options/
+ */
+Config::define( 'WP_REDIS_CONFIG', [
+  'token'             => env( 'REDIS_TOKEN' ),
+  'host'              => '127.0.0.1',
+  'port'              => 6379,
+  'password'          => env( 'REDIS_PASSWORD' ),
+  'prefix'            => env( 'DB_NAME' ),
+  'database'          => 0,
+  'maxttl'            => 43200, // max cache half day
+  'timeout'           => 1.0,
+  'read_timeout'      => 1.0,
+  'split_alloptions'  => true,
+  'async_flush'       => true,
+  'debug'             => false,
+] );
+
+if ( 'production' === WP_ENV ) {
+  Config::define( 'WP_REDIS_DISABLED', false );
+} else {
+  Config::define( 'WP_REDIS_DISABLED', true );
+}
+
+/**
  * Allow WordPress to detect HTTPS when used behind a reverse proxy or a load balancer
  * See https://codex.wordpress.org/Function_Reference/is_ssl#Notes
  */
@@ -130,16 +155,4 @@ Config::apply();
  */
 if ( ! defined( 'ABSPATH' ) ) {
     define( 'ABSPATH', $webroot_dir . '/wp/' );
-}
-
-/**
- *  Redis object cache settings for
- *  https://wordpress.org/plugins/redis-cache/
- */
-Config::define( 'WP_REDIS_PREFIX', getenv( 'DB_NAME' ) );
-Config::define( 'WP_REDIS_SELECTIVE_FLUSH', true );
-Config::define( 'WP_REDIS_MAXTTL', 43200 ); // max cache half day
-
-if ( 'development' !== WP_ENV ) {
-  Config::define( 'WP_REDIS_PASSWORD', getenv( 'REDIS_PASSWORD' ) );
 }
