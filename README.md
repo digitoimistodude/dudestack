@@ -13,6 +13,13 @@ createproject
 
 **TL;DR:** You can test dudestack right away in just two minutes by following our [Air starter theme instructions](https://github.com/digitoimistodude/air#air-development).
 
+**Please note: The main focus of dudestack is on how it works for our company and staff. This means it may not work for you without tweaking. Please ask a question by addressing an [issue](https://github.com/digitoimistodude/dudestack/issues) if something goes south.**
+
+## Documentation & guides
+
+- See [Wiki](https://github.com/digitoimistodude/dudestack/wiki)
+- Currently we have only comprehensive written tutorial In English and for [Windows (WSL)](https://rolle.design/local-server-on-windows-10-for-wordpress-theme-development)
+
 ## Table of contents
 
 1. [Background](#background)
@@ -50,8 +57,6 @@ Despite the fact we love most of Bedrock, we noticed there are some things we do
 * Composer modifications, for installing more packages, like Finnish based language packs etc. that are not originally part of Bedrock
 * Automation. I mean composer's `create-project` is awesome, but we need more. You still need to do stuff after `create-project` and our `createproject` -starting script is designed for automating the rest.
 * Baked in local server environment settings for our [native macOS LEMP server](https://github.com/digitoimistodude/macos-lemp-setup)
-
-**You should modify things to your needs. Please note: This is not in any way tested with other people or or in different environments. Yet. Please address an issue if something goes south.**
 
 ## Features
 
