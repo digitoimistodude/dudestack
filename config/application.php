@@ -119,7 +119,7 @@ Config::define( 'WP_REDIS_CONFIG', [
   'port'              => 6379,
   'password'          => env( 'REDIS_PASSWORD' ),
   'prefix'            => env( 'DB_NAME' ),
-  'database'          => 0,
+  'database'          => env( 'REDIS_DATABASE' ) ?: 0,
   'maxttl'            => 43200, // max cache half day
   'timeout'           => 1.0,
   'read_timeout'      => 1.0,
