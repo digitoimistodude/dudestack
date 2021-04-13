@@ -1,4 +1,5 @@
 PROJECTS_HOME="/var/www"
+DIR_TO_FILE=$(cd "$(dirname "$1")"; pwd -P)/$(basename "$1")
 CURRENTFILE=`basename $0`
 TXTBOLD=$(tput bold)
 BOLDYELLOW=${TXTBOLD}$(tput setaf 3)

@@ -6,7 +6,7 @@ echo ""
 if [ ! -f /usr/local/bin/createproject ]; then
 echo "${TXTRESET}${TXTBOLD}ACTION REQUIRED:${TXTRESET}${WHITE} Link this file to system level and start from there with this oneliner:${TXTRESET}"
 echo ""
-echo "${GREEN}sudo ln -s ${ORIGINAL_FILE} /usr/local/bin/createproject && sudo chmod +x /usr/local/bin/createproject && createproject${TXTRESET}" 1>&2
+echo "${GREEN}sudo ln -s ${DIR_TO_FILE}${CURRENTFILE} /usr/local/bin/createproject && sudo chmod +x /usr/local/bin/createproject && createproject${TXTRESET}" 1>&2
 echo ""
 exit
 fi
