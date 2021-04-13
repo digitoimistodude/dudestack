@@ -8,7 +8,6 @@ SCRIPT_VERSION='1.0.4'
 
 # Vars needed for this file to function globally
 CURRENTFILE=`basename $0`
-PROJECTS_HOME="/var/www"
 
 # Determine scripts location to get imports right
 if [ "$CURRENTFILE" = "macos.sh" ]; then
