@@ -36,13 +36,7 @@ if [ ! -f /usr/local/bin/composer ]; then
 fi
 
 # Create project via roots/bedrock based command create-project from our packagist package
+echo "${YELLOW}Creating project via composer create-project command...${TXTRESET}"
 composer create-project -n ronilaukkarinen/dudestack $PROJECTS_HOME/${PROJECTNAME} dev-master
 cd $PROJECTS_HOME/${PROJECTNAME}
-composer update
-
-# Check that everything is up to date once again
-cd "$PROJECTS_HOME/$PROJECTNAME/"
-echo "${YELLOW}Updating WordPress related stuff...${TXTRESET}"
-cp ${SCRIPTS_LOCATION}/composer.json "$PROJECTS_HOME/$PROJECTNAME/composer.json"
-cd "$PROJECTS_HOME/$PROJECTNAME/"
 composer update
