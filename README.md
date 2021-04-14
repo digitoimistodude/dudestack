@@ -13,6 +13,13 @@ createproject
 
 **TL;DR:** You can test dudestack right away in just two minutes by following our [Air starter theme instructions](https://github.com/digitoimistodude/air#air-development).
 
+**Please note: The main focus of dudestack is on how it works for our company and staff. This means it may not work for you without tweaking. Please ask a question by addressing an [issue](https://github.com/digitoimistodude/dudestack/issues) if something goes south.**
+
+## Documentation & guides
+
+- See [Wiki](https://github.com/digitoimistodude/dudestack/wiki)
+- Currently we have only comprehensive written tutorial In English and for [Windows (WSL)](https://rolle.design/local-server-on-windows-10-for-wordpress-theme-development)
+
 ## Table of contents
 
 1. [Background](#background)
@@ -51,8 +58,6 @@ Despite the fact we love most of Bedrock, we noticed there are some things we do
 * Automation. I mean composer's `create-project` is awesome, but we need more. You still need to do stuff after `create-project` and our `createproject` -starting script is designed for automating the rest.
 * Baked in local server environment settings for our [native macOS LEMP server](https://github.com/digitoimistodude/macos-lemp-setup)
 
-**You should modify things to your needs. Please note: This is not in any way tested with other people or or in different environments. Yet. Please address an issue if something goes south.**
-
 ## Features
 
  - HTTPS support
@@ -66,14 +71,14 @@ Despite the fact we love most of Bedrock, we noticed there are some things we do
  - [Capistrano 3](http://capistranorb.com/) deployment templates bundled in bin/createproject.sh
  - [Composer](https://getcomposer.org/) to take care of WordPress installation and plugin dependencies and updates
  - [Dotenv](https://github.com/vlucas/phpdotenv)-environments for development, staging and production
- - Supports local LEMP ([macOS](https://github.com/digitoimistodude/macos-lemp-setup) / [Windows](https://github.com/digitoimistodude/windows-lemp-setup)) and Vagrant ([marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant)) development environments
+ - Supports local LEMP ([macOS](https://github.com/digitoimistodude/macos-lemp-setup) / [Windows](https://github.com/digitoimistodude/windows-lemp-setup)) development environments
 
 ## Requirements
 
 * [mkcert](https://github.com/FiloSottile/mkcert)
 * [Composer](https://getcomposer.org/) v2
 * Basic knowledge about bash scripting, deployment with capistrano, npm packages, bundle, composer etc.
-* Local server environment preferably [macos-lemp](https://github.com/digitoimistodude/macos-lemp-setup), legacy support for Vagrant ([marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant)). Can possibly be configured for MAMP or even Docker but we will not provide any kind of support for those.
+* Local server environment [macos-lemp](https://github.com/digitoimistodude/macos-lemp-setup). Can possibly be configured for MAMP or even Docker (we have no experience or support for 3rd party environments).
 * GitHub account
 * Unix-based OS or Windows [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 * Optional: Access to staging and production servers that supports sftp and git
@@ -91,12 +96,6 @@ Despite the fact we love most of Bedrock, we noticed there are some things we do
 4. Go to dudestack directory and run setup script (`cd ~/Projects/dudestack && sh bin/setup.sh`).
 3. Edit `/usr/bin/createproject` to your needs. See [documentation](#documentation) and **[Getting started](#getting-started)**.
 
-If you are using vagrant, you need to "pair" your machine with the VM (I presume you are already set up keypairs, if not, run without password: `ssh-keygen -t rsa`), marlin-vagrant example:
-
-```shell
-cat ~/.ssh/id_rsa.pub | ssh vagrant@10.1.2.4 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys' && chmod -Rv 755 ~/.ssh && chmod 400 ~/.ssh/id_rsa
-```
-
 # Documentation
 ## Starting a new project with createproject bash script
 
@@ -104,13 +103,11 @@ Creating a new project has a lot of configs to do. We wanted to automate most of
 
 - You are using staging server like customer.example.com and you store your customers' sites like customer.example.com/customerone. Your staging server user has proper permissions like making changes to /tmp
 - You are using separate production server that may necessarily not have all the permissions like writing in /tmp dir
-- You use [native macOS (Homebrew LEMP)](https://github.com/digitoimistodude/macos-lemp-setup) or [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant) or MAMP Pro (MAMP needs extensive editing and testing, [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant) works out of the box)
+- You use [native macOS LEMP](https://github.com/digitoimistodude/macos-lemp-setup)
 - Your repositories are stored in GitHub
 - Your project hostname is project.test
-- You use gulp, grunt or CodeKit2+
+- You are fine with gulp, npm and webpack
 - WordPress dependencies are controlled by composer
-- Your project's name is your customer's name and also the server's account name (can be easily changed per project though, like everything else in this stack)
-- Executables are stored in your server's $HOME/bin
 
 ### What createproject.sh does
 
@@ -120,7 +117,7 @@ When you run `createproject` it looks like this:
 
 1. First it runs `composer create-project` with dudestack settings
 2. Installs our default WordPress plugins and updates them
-3. Creates MySQL repository automatically with project name (assumes by default that you have [macos-lemp](https://github.com/digitoimistodude/macos-lemp-setup) installed for anything else like MAMP or [vagrant](https://github.com/digitoimistodude/marlin-vagrant) you'll need to edit bin/createproject.sh and edit `YOURMAMPMYSQLPASSWORD`. **NB!** This will not work with Local by Flywheel or any other GUI style dev server and we will NOT provide support for those).
+3. Creates MySQL repository automatically with project name (assumes by default that you have [macos-lemp](https://github.com/digitoimistodude/macos-lemp-setup) installed)
 4. Installs capistrano deployment tool
 5. Generates default capistrano configs (config/deploy.rb, config/deploy/staging.rb, config/deploy/production.rb) with your GitHub project details and paths
 6. Sets up WordPress configs (wp-config credentials to .env) and salts automatically
@@ -212,13 +209,11 @@ So with simple ssh-pairing (passwordless login), I can upload a plugin by simple
 
 ## WP-CLI alias
 
-WP-Cli is included in dudestack per project within `composer.json` and won't work by default. You'll need this alias on your Mac or Linux `.bashrc` or `.bash_profile` file:
+WP-Cli is included in dudestack per project via `composer.json` and won't work by default globally. You'll need this alias on your Mac or Linux `.bashrc` or `.bash_profile` file:
 
 ```shell
-alias wp='ssh vagrant@10.1.2.4 "cd /var/www/"$(basename "$PWD")"; /var/www/"$(basename "$PWD")"/vendor/wp-cli/wp-cli/bin/wp"'
+alias wp='./vendor/wp-cli/wp-cli/bin/wp'
 ```
-
-Legacy: If you are using [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant), please use IP address `10.1.2.4`, if [jolliest-vagrant](https://github.com/digitoimistodude/jolliest-vagrant), use `10.1.2.3`. After restarting Terminal or running `. ~/.bashrc` or `. ~/.bash_profile` you will be able to use `wp` command directly on your host machine without having to ssh into vagrant.
 
 ## SEO Plugin
 

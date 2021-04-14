@@ -1,16 +1,16 @@
 #!/bin/bash
-# Project starting bash script for WSL native LEMP.
-# More info: https://rolle.design/local-server-on-windows-10-for-wordpress-theme-development
+# Project starting bash script for macOS native LEMP.
+# More info: https://github.com/digitoimistodude/macos-lemp-setup
 
 # Script specific vars
-SCRIPT_LABEL='with WSL support'
+SCRIPT_LABEL='for macOS'
 SCRIPT_VERSION='1.0.4'
 
 # Vars needed for this file to function globally
 CURRENTFILE=`basename $0`
 
 # Determine scripts location to get imports right
-if [ "$CURRENTFILE" = "wsl.sh" ]; then
+if [ "$CURRENTFILE" = "macos.sh" ]; then
   SCRIPTS_LOCATION="$( pwd )"
   source ${SCRIPTS_LOCATION}/tasks/variables.sh
   source ${SCRIPTS_LOCATION}/tasks/header.sh
@@ -24,26 +24,23 @@ fi
 # Final note about server requirements
 echo ""
 echo "${WHITE}Using this start script requires you have dev server installed and working:
-https://github.com/digitoimistodude/windows-lemp-setup
+https://github.com/digitoimistodude/macos-lemp-setup
 ${TXTRESET}"
-
-# Server on WSL needs to be on before starting
-echo "${YELLOW}Starting web server...${TXTRESET}"
-sudo service nginx start
-sudo service php7.3-fpm start
-sudo service mysql start
 
 # Import required tasks
 source ${SCRIPTS_LOCATION}/tasks/imports.sh
 
-# WSL specific restarts
-echo "${YELLOW}Restarting nginx...${TXTRESET}"
-sudo service nginx stop
-sudo service nginx start
+# MacOS Specific restarts and reloads
 echo "${BOLDGREEN}Local environment up and running.${TXTRESET}"
+echo "${YELLOW}Updating hosts file...${TXTRESET}"
+sudo -- sh -c "echo 127.0.0.1 ${PROJECTNAME}.test >> /etc/hosts"
 
-# WSL specific complete message
-echo "${BOLDYELLOW}Almost done! Use HostsFileEditor https://github.com/scottlerch/HostsFileEditor and add 127.0.0.1 $PROJECTNAME.test to your Windows hosts file (Windows does not let to update this via command line).${TXTRESET}"
+echo "${YELLOW}Restarting nginx...${TXTRESET}"
+sudo brew services stop nginx
+sudo brew services start nginx
+
+# macOS specific complete message
+echo "${BOLDGREEN}All done!${TXTRESET}"
 
 # The end
 source ${SCRIPTS_LOCATION}/tasks/footer.sh
