@@ -1,3 +1,7 @@
+### 2.0.3: 2021-04-14
+
+* Add laragon support (bin/laragon.bat, huge thanks to @divn)
+
 ### 2.0.2: 2021-04-14
 
 Project start scripts have been refactored completely.
