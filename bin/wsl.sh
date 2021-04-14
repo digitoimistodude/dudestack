@@ -27,6 +27,12 @@ echo "${WHITE}Using this start script requires you have dev server installed and
 https://github.com/digitoimistodude/windows-lemp-setup
 ${TXTRESET}"
 
+# Server on WSL needs to be on before starting
+echo "${YELLOW}Starting web server...${TXTRESET}"
+sudo service nginx start
+sudo service php7.3-fpm start
+sudo service mysql start
+
 # Import required tasks
 source ${SCRIPTS_LOCATION}/tasks/imports.sh
 
