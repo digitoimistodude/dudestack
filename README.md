@@ -34,7 +34,8 @@ createproject
     4. [Getting started](#getting-started)
     5. [Paid or Premium plugins](#paid-or-premium-plugins)
         1. [Advanced Custom Fields Pro](#advanced-custom-fields-pro)
-        2. [Polylang Pro](#polylang-pro)
+        2. [Object Cache Pro](#object-cache-pro)
+        3. [Polylang Pro](#polylang-pro)
     6. [WP-CLI alias](#wp-cli-alias)
     7. [SEO Plugin](#seo-plugin)
     8. [Issues](#issues)
@@ -169,6 +170,25 @@ Then to "requires":
 
 ```json
     "advanced-custom-fields/advanced-custom-fields-pro": "5.9.4",
+```
+
+### Object Cache Pro
+
+You will need Redis and PHP Redis installed in order to install this package.
+
+Add to "repositories":
+
+```json
+{
+  "type": "composer",
+  "url": "https://xxx-organization-xxx:xxx-token-xxx@rhubarbgroup.repo.packagist.com/xxx-organization-xxx/"
+}
+```
+
+Then to "requires":
+
+```json
+"rhubarbgroup/object-cache-pro": "^1.13.0
 ```
 
 ### Polylang Pro
