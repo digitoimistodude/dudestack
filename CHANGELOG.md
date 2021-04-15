@@ -1,3 +1,7 @@
+### 2.0.4: 2021-04-15
+
+* Improved laragon support, see PR #13 (Huge thanks to @divn!)
+
 ### 2.0.3: 2021-04-14
 
 * Add laragon support (bin/laragon.bat, huge thanks to @divn)
