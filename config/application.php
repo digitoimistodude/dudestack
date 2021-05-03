@@ -125,7 +125,7 @@ Config::define( 'WP_REDIS_CONFIG', [
   'debug'             => false,
 ] );
 
-if ( 'production' === WP_ENV ) {
+if ( 'production' === getenv( 'WP_ENV' ) ) {
   Config::define( 'WP_REDIS_DISABLED', false );
 } else {
   Config::define( 'WP_REDIS_DISABLED', true );
@@ -139,7 +139,7 @@ if ( isset( $_SERVER['HTTP_X_FORWARDED_PROTO'] ) && $_SERVER['HTTP_X_FORWARDED_P
   $_SERVER['HTTPS'] = 'on';
 }
 
-$env_config = __DIR__ . '/environments/' . WP_ENV . '.php';
+$env_config = __DIR__ . '/environments/' . env( 'WP_ENV' ) . '.php';
 
 if ( file_exists( $env_config ) ) {
   require_once $env_config;
