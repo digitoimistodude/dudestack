@@ -1,3 +1,7 @@
+### 2.0.6: 2021-05-03
+
+* Fix EOL settings
+
 ### 2.0.5: 2021-05-03
 
 * Fix getting WP_ENV from .env, Fixes #14
