@@ -1,3 +1,7 @@
+### 2.0.5: 2021-05-03
+
+* Fix getting WP_ENV from .env, Fixes #14
+
 ### 2.0.4: 2021-04-15
 
 * Improved laragon support, see PR #13 (Huge thanks to @divn!)
