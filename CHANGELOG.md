@@ -1,3 +1,8 @@
+### 2.0.7: 2021-05-04
+
+* Ensure github repo is created
+* Export variables
+
 ### 2.0.6: 2021-05-03
 
 * Fix EOL settings
