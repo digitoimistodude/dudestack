@@ -36,6 +36,7 @@ createproject
         1. [Advanced Custom Fields Pro](#advanced-custom-fields-pro)
         2. [Object Cache Pro](#object-cache-pro)
         3. [Polylang Pro](#polylang-pro)
+        4. [Relevanssi](#relevanssi)
     6. [WP-CLI alias](#wp-cli-alias)
     7. [SEO Plugin](#seo-plugin)
     8. [Issues](#issues)
@@ -218,6 +219,31 @@ Then to "requires":
 ```
 
 In the similar manner you can add other plugins like Gravity Forms. We've covered with this almost every plugin we use.
+
+### Relevanssi
+
+Add to "repositories":
+
+```json
+{
+      "type": "package",
+      "package": {
+        "name": "relevanssi/relevanssi-premium",
+        "version": "2.15",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://www.relevanssi.com/update/get_version.php?api_key=xxx&version=2.15"
+        }
+      }
+    },
+```
+
+Then to "requires":
+
+```json
+    "relevanssi/relevanssi-premium": "2.15",
+```
 
 When getting the new zip, I use this function in my `~/.bashrc`:
 
