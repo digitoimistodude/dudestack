@@ -1,3 +1,7 @@
+### 2.0.8: 2021-05-19
+
+* Change default mysql host to localhost instead of 127.0.0.1
+
 ### 2.0.7: 2021-05-04
 
 * Ensure github repo is created
