@@ -1,3 +1,7 @@
+### 2.0.9: 2021-06-2021
+
+* Change default mysql host back to 127.0.0.1 instead of localhost as [macos-lemp-stack](https://github.com/digitoimistodude/macos-lemp-setup) and newest brew mariadb updates seem to depend on it
+
 ### 2.0.8: 2021-05-19
 
 * Change default mysql host to localhost instead of 127.0.0.1
