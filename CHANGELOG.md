@@ -1,4 +1,8 @@
-### 2.0.9: 2021-06-2021
+### 2.1.0: 2021-06-21
+
+* Bump WordPress to 5.7.2
+
+### 2.0.9: 2021-06-21
 
 * Change default mysql host back to 127.0.0.1 instead of localhost as [macos-lemp-stack](https://github.com/digitoimistodude/macos-lemp-setup) and newest brew mariadb updates seem to depend on it
 
