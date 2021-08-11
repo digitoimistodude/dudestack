@@ -63,7 +63,8 @@
     "wpackagist-plugin/mailgun": "*",
     "wpackagist-plugin/worker": "*",
     "wpackagist-plugin/autodescription": "*",
-    "wpackagist-plugin/gravity-forms-wcag-20-form-fields": "*"
+    "wpackagist-plugin/gravity-forms-wcag-20-form-fields": "*",
+    "wpackagist-plugin/disable-media-pages": "*"
   },
   "require-dev": {
     "rarst/wps": "*",
