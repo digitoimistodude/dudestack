@@ -97,6 +97,7 @@ Config::define( 'DISABLE_WP_CRON', env( 'DISABLE_WP_CRON' ) ?: false );
 Config::define( 'DISALLOW_FILE_EDIT', true ); // Disable the plugin and theme file editor in the admin
 Config::define( 'DISALLOW_FILE_MODS', false ); // Disable plugin and theme updates and installation from the admin
 Config::define( 'WP_POST_REVISIONS', env( 'WP_POST_REVISIONS' ) ?: 15 ); // Limit the number of post revisions that WordPress stores
+Config::define( 'MAILGUN_USEAPI', true );
 
 /**
  * Debugging Settings
