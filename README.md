@@ -1,5 +1,5 @@
 # Dudestack
-[![Packagist](https://img.shields.io/packagist/v/ronilaukkarinen/wpstack-rolle.svg?style=flat-square)](https://packagist.org/packages/ronilaukkarinen/dudestack) [![Build Status](https://img.shields.io/travis/com/digitoimistodude/dudestack.svg?style=flat-square)](https://travis-ci.com/digitoimistodude/dudestack)
+[![Packagist](https://img.shields.io/packagist/v/ronilaukkarinen/dudestack.svg?style=flat-square)](https://packagist.org/packages/ronilaukkarinen/dudestack) [![Build Status](https://img.shields.io/travis/com/digitoimistodude/dudestack.svg?style=flat-square)](https://travis-ci.com/digitoimistodude/dudestack)
 
 Dudestack is a modern WordPress toolkit that helps you get started with the best development tools and project structure - just like [Bedrock](https://github.com/roots/bedrock).
 
