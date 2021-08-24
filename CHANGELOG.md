@@ -1,3 +1,7 @@
+### 2.1.2: 2021-08-24
+
+* Remove Classic Editor from default plugins as these things are nowadays defined by theme
+
 ### 2.1.1: 2021-08-24
 
 * Fix GitHub repository init in start script

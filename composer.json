@@ -56,7 +56,6 @@
     "roots/wp-config": "^1.0",
     "johnpbloch/wordpress": "5.8",
     "digitoimistodude/air-helper": "*",
-    "wpackagist-plugin/classic-editor": "*",
     "wpackagist-plugin/koko-analytics": "*",
     "wpackagist-plugin/imagify": "*",
     "wpackagist-plugin/simple-history": "*",
