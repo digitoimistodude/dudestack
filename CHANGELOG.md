@@ -1,3 +1,7 @@
+### 2.1.1: 2021-08-24
+
+* Fix GitHub repository init in start script
+
 ### 2.1.0: 2021-06-21
 
 * Bump WordPress to 5.7.2
