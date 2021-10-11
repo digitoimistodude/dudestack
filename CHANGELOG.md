@@ -1,3 +1,7 @@
+### 2.1.3: 2021-10-11
+
+* Change .env default host back to localhost
+
 ### 2.1.2: 2021-08-24
 
 * Remove Classic Editor from default plugins as these things are nowadays defined by theme
