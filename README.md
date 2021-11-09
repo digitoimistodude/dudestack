@@ -95,8 +95,7 @@ Despite the fact we love most of Bedrock, we noticed there are some things we do
 1. Install prequisites, `xcode-select --install` and [homebrew](https://brew.sh/) with latest updates
 2. Install latest [Composer](https://getcomposer.org/) and [mkcert](https://github.com/FiloSottile/mkcert)
 3. Clone this repo to your ~/Projects directory, `mkdir -p ~/Projects && cd ~/Projects && git clone https://github.com/digitoimistodude/dudestack`
-4. Go to dudestack directory and run setup script (`cd ~/Projects/dudestack && sh bin/setup.sh`).
-3. Edit `/usr/bin/createproject` to your needs. See [documentation](#documentation) and **[Getting started](#getting-started)**.
+4. Go to dudestack directory and run setup script (`cd ~/Projects/dudestack/bin && bash macos.sh`, or wsl.sh if you use Windows etc.).
 
 # Documentation
 ## Starting a new project with createproject bash script
