@@ -20,7 +20,7 @@ if [ ! -f /etc/ssl/certs/dhparam.pem ]; then
   echo "${YELLOW}Generating dhparam${TXTRESET}"
   sudo mkdir -p /etc/ssl/certs
   cd /etc/ssl/certs
-  sudo openssl dhparam -out dhparam.pem 4096
+  sudo openssl dhparam -dsaparam -out dhparam.pem 4096
 fi
 
 echo "${YELLOW}Generating HTTPS cert for project...${TXTRESET}"

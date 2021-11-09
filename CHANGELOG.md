@@ -1,3 +1,7 @@
+### 2.1.4: 2021-11-09
+
+* Generate Diffie-Hellman 4096-bit key with less time
+
 ### 2.1.3: 2021-10-11
 
 * Change .env default host back to localhost
