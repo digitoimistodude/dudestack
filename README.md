@@ -157,7 +157,7 @@ Edit your `composer.json` and add these lines inside respository, separated by c
 
 ### Advanced Custom Fields Pro
 
-Add to "repositories" section:
+As per [pivvenit/acf-composer-bridge](https://github.com/pivvenit/acf-composer-bridge), add to "repositories" section:
 
 ```json
     {
@@ -170,6 +170,35 @@ Then to "requires":
 
 ```json
     "advanced-custom-fields/advanced-custom-fields-pro": "*",
+```
+
+### Gravity Forms
+
+As per [gtap-dev/gravityforms-composer-installer](https://github.com/gtap-dev/gravityforms-composer-installer), add to "repositories" section (remember to update to the latest version from [here](https://docs.gravityforms.com/gravityforms-change-log/)):
+
+```json
+{
+  "type": "package",
+  "package": {
+    "name": "gravityforms/gravityforms",
+    "version": "2.5.14.3",
+    "type": "wordpress-plugin",
+    "dist": {
+      "type": "zip",
+      "url": "https://www.gravityhelp.com/wp-content/plugins/gravitymanager/api.php?op=get_plugin&slug=gravityforms&key={%WP_PLUGIN_GF_KEY}"
+    },
+    "require": {
+      "composer/installers": "^1.4",
+      "gotoandplay/gravityforms-composer-installer": "^2.3"
+    }
+  }
+},
+```
+
+Then to "requires":
+
+```json
+    "gravityforms/gravityforms": "*",
 ```
 
 ### Object Cache Pro
@@ -190,34 +219,6 @@ Then to "requires":
 ```json
 "rhubarbgroup/object-cache-pro": "^1.13.0
 ```
-
-### Polylang Pro
-
-Add to "repositories":
-
-```json
-,
-    {
-      "type": "package",
-      "package": {
-        "name": "polylang/polylang-pro",
-        "type": "wordpress-plugin",
-        "version": "2.7.4",
-        "dist": {
-          "type": "zip",
-          "url": "https://xxxxxxxxx:xxxxxxxx@plugins.dude.fi/polylang-pro_2.7.4.zip"
-        }
-      }
-    },
-```
-
-Then to "requires":
-
-```json
-    "polylang/polylang-pro": "2.7.4",
-```
-
-In the similar manner you can add other plugins like Gravity Forms. We've covered with this almost every plugin we use.
 
 ### Relevanssi
 
@@ -243,6 +244,34 @@ Then to "requires":
 ```json
     "relevanssi/relevanssi-premium": "2.15",
 ```
+
+### Polylang Pro (and others that don't have a repo)
+
+Add to "repositories":
+
+```json
+,
+    {
+      "type": "package",
+      "package": {
+        "name": "polylang/polylang-pro",
+        "type": "wordpress-plugin",
+        "version": "2.7.4",
+        "dist": {
+          "type": "zip",
+          "url": "https://xxxxxxxxx:xxxxxxxx@plugins.dude.fi/polylang-pro_2.7.4.zip"
+        }
+      }
+    },
+```
+
+Then to "requires":
+
+```json
+    "polylang/polylang-pro": "2.7.4",
+```
+
+In the similar manner you can add other paid plugins that don't have composer repository. We've covered with this almost every such plugin we use.
 
 When getting the new zip, I use this function in my `~/.bashrc`:
 
