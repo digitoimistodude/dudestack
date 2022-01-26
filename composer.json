@@ -54,7 +54,7 @@
     "vlucas/phpdotenv": "^5.3",
     "oscarotero/env": "^2.1",
     "roots/wp-config": "^1.0",
-    "johnpbloch/wordpress": "5.8.3",
+    "johnpbloch/wordpress": "5.9",
     "digitoimistodude/air-helper": "*",
     "wpackagist-plugin/koko-analytics": "*",
     "wpackagist-plugin/imagify": "*",
