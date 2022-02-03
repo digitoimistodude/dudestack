@@ -42,6 +42,10 @@
     {
       "type": "composer",
       "url": "https://wp-languages.github.io"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/digitoimistodude/air-blocks-acf-example-data"
     }
   ],
   "require": {
@@ -56,6 +60,7 @@
     "roots/wp-config": "^1.0",
     "johnpbloch/wordpress": "5.9",
     "digitoimistodude/air-helper": "*",
+    "digitoimistodude/air-blocks-acf-example-data": "dev-master",
     "wpackagist-plugin/koko-analytics": "*",
     "wpackagist-plugin/imagify": "*",
     "wpackagist-plugin/simple-history": "*",
