@@ -40,19 +40,12 @@
       "minimum-stability": "dev"
     },
     {
-      "type": "composer",
-      "url": "https://wp-languages.github.io"
-    },
-    {
       "type": "vcs",
       "url": "https://github.com/digitoimistodude/air-blocks-acf-example-data"
     }
   ],
   "require": {
-    "koodimonni/composer-dropin-installer": "dev-master",
     "php": ">=7.2",
-    "koodimonni-language/fi": "*",
-    "koodimonni-language/en_gb": "*",
     "composer/installers": "^1.10.0",
     "wp-cli/wp-cli-bundle": "*",
     "vlucas/phpdotenv": "^5.3",
@@ -76,11 +69,6 @@
     "wpackagist-plugin/query-monitor": "*"
   },
   "extra": {
-    "dropin-paths": {
-      "content/languages/": ["vendor:koodimonni-language"],
-      "content/languages/plugins/": ["vendor:koodimonni-plugin-language"],
-      "content/languages/themes/": ["vendor:koodimonni-theme-language"]
-    },
     "installer-paths": {
       "content/mu-plugins/{$name}/": ["type:wordpress-muplugin"
       ],
