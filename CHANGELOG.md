@@ -1,3 +1,7 @@
+### 2.1.5: 2022-03-21
+
+* Require devgeniem/wp-sanitize-accented-uploads since core's similar feature doesn't do enough
+
 ### 2.1.4: 2021-11-09
 
 * Generate Diffie-Hellman 4096-bit key with less time

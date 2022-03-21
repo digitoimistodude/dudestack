@@ -61,7 +61,8 @@
     "wpackagist-plugin/worker": "*",
     "wpackagist-plugin/autodescription": "*",
     "wpackagist-plugin/gravity-forms-wcag-20-form-fields": "*",
-    "wpackagist-plugin/disable-media-pages": "*"
+    "wpackagist-plugin/disable-media-pages": "*",
+    "devgeniem/wp-sanitize-accented-uploads": "^1.2"
   },
   "require-dev": {
     "rarst/wps": "*",
