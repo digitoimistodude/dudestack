@@ -1,3 +1,7 @@
+### 2.1.6: 2021-04-11
+
+* Bump WordPress to 5.9.3
+
 ### 2.1.5: 2022-03-21
 
 * Require devgeniem/wp-sanitize-accented-uploads since core's similar feature doesn't do enough
