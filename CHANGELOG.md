@@ -1,3 +1,8 @@
+### 2.1.7: 2021-04-19
+
+* Activate all plugins on new project startup
+* Deactivate certain non-production plugins by default
+
 ### 2.1.6: 2021-04-11
 
 * Bump WordPress to 5.9.3
