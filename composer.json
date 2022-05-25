@@ -51,7 +51,7 @@
     "vlucas/phpdotenv": "^5.3",
     "oscarotero/env": "^2.1",
     "roots/wp-config": "^1.0",
-    "johnpbloch/wordpress": "5.9.3",
+    "johnpbloch/wordpress": "6.0",
     "digitoimistodude/air-helper": "*",
     "digitoimistodude/air-blocks-acf-example-data": "dev-master",
     "wpackagist-plugin/koko-analytics": "*",
