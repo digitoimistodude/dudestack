@@ -217,7 +217,7 @@ Add to "repositories":
 Then to "requires":
 
 ```json
-"rhubarbgroup/object-cache-pro": "^1.13.0
+"rhubarbgroup/object-cache-pro": "^1.13.0"
 ```
 
 ### Relevanssi
