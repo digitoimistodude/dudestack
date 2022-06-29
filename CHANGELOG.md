@@ -1,3 +1,8 @@
+### 2.1.8: 2022-06-29
+
+* Add the newest version of wp-languages
+* Remove imagify
+
 ### 2.1.7: 2021-04-19
 
 * Activate all plugins on new project startup

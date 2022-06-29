@@ -17,27 +17,41 @@
     }
   ],
   "keywords": [
-    "bedrock", "roots", "wordpress", "stack", "composer", "vagrant", "wp"
+    "bedrock",
+    "roots",
+    "wordpress",
+    "stack",
+    "composer",
+    "vagrant",
+    "wp"
   ],
   "support": {
     "issues": "https://github.com/digitoimistodude/dudestack/issues"
   },
-   "config": {
+  "config": {
     "preferred-install": "dist",
     "generate-salts": true,
     "secure-http": true
   },
   "autoload": {
-    "psr-4": {"Roots\\Bedrock\\": "scripts/Roots/Bedrock"}
+    "psr-4": {
+      "Roots\\Bedrock\\": "scripts/Roots/Bedrock"
+    }
   },
   "scripts": {
-    "post-root-package-install": ["Roots\\Bedrock\\Installer::addSalts"]
-   },
+    "post-root-package-install": [
+      "Roots\\Bedrock\\Installer::addSalts"
+    ]
+  },
   "repositories": [
     {
       "type": "composer",
       "url": "https://wpackagist.org",
       "minimum-stability": "dev"
+    },
+    {
+      "type": "composer",
+      "url": "https://wp-languages.github.io"
     },
     {
       "type": "vcs",
@@ -55,14 +69,16 @@
     "digitoimistodude/air-helper": "*",
     "digitoimistodude/air-blocks-acf-example-data": "dev-master",
     "wpackagist-plugin/koko-analytics": "*",
-    "wpackagist-plugin/imagify": "*",
     "wpackagist-plugin/simple-history": "*",
     "wpackagist-plugin/mailgun": "*",
     "wpackagist-plugin/worker": "*",
     "wpackagist-plugin/autodescription": "*",
     "wpackagist-plugin/gravity-forms-wcag-20-form-fields": "*",
     "wpackagist-plugin/disable-media-pages": "*",
-    "devgeniem/wp-sanitize-accented-uploads": "*"
+    "devgeniem/wp-sanitize-accented-uploads": "*",
+    "koodimonni/composer-dropin-installer": "dev-master",
+    "koodimonni-language/fi": "*",
+    "koodimonni-language/en_gb": "*"
   },
   "require-dev": {
     "rarst/wps": "*",
@@ -70,11 +86,27 @@
     "wpackagist-plugin/query-monitor": "*"
   },
   "extra": {
-    "installer-paths": {
-      "content/mu-plugins/{$name}/": ["type:wordpress-muplugin"
+    "dropin-paths": {
+      "content/languages/": [
+        "vendor:koodimonni-language"
       ],
-      "content/plugins/{$name}/": ["type:wordpress-plugin"],
-      "content/themes/{$name}/": ["type:wordpress-theme"]
+      "content/languages/plugins/": [
+        "vendor:koodimonni-plugin-language"
+      ],
+      "content/languages/themes/": [
+        "vendor:koodimonni-theme-language"
+      ]
+    },
+    "installer-paths": {
+      "content/mu-plugins/{$name}/": [
+        "type:wordpress-muplugin"
+      ],
+      "content/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "content/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
     },
     "wordpress-install-dir": "wp"
   }
