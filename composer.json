@@ -66,6 +66,9 @@
     "oscarotero/env": "^2.1",
     "roots/wp-config": "^1.0",
     "johnpbloch/wordpress": "6.0",
+    "koodimonni/composer-dropin-installer": "dev-master",
+    "koodimonni-language/fi": "*",
+    "koodimonni-language/en_gb": "*",
     "digitoimistodude/air-helper": "*",
     "digitoimistodude/air-blocks-acf-example-data": "dev-master",
     "wpackagist-plugin/koko-analytics": "*",
@@ -75,10 +78,7 @@
     "wpackagist-plugin/autodescription": "*",
     "wpackagist-plugin/gravity-forms-wcag-20-form-fields": "*",
     "wpackagist-plugin/disable-media-pages": "*",
-    "devgeniem/wp-sanitize-accented-uploads": "*",
-    "koodimonni/composer-dropin-installer": "dev-master",
-    "koodimonni-language/fi": "*",
-    "koodimonni-language/en_gb": "*"
+    "devgeniem/wp-sanitize-accented-uploads": "*"
   },
   "require-dev": {
     "rarst/wps": "*",
