@@ -271,10 +271,10 @@ Add to "repositories":
       "package": {
         "name": "polylang/polylang-pro",
         "type": "wordpress-plugin",
-        "version": "2.7.4",
+        "version": "3.2.5",
         "dist": {
           "type": "zip",
-          "url": "https://xxxxxxxxx:xxxxxxxx@plugins.dude.fi/polylang-pro_2.7.4.zip"
+          "url": "https://xxxxxxxxx:xxxxxxxx@plugins.dude.fi/polylang-pro_3.2.5.zip"
         }
       }
     },
