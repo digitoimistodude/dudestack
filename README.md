@@ -283,7 +283,7 @@ Add to "repositories":
 Then to "requires":
 
 ```json
-    "polylang/polylang-pro": "2.7.4",
+    "polylang/polylang-pro": "3.2.5",
 ```
 
 In the similar manner you can add other paid plugins that don't have composer repository. We've covered with this almost every such plugin we use.
