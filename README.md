@@ -225,7 +225,7 @@ Add to "repositories":
 ```json
 {
   "type": "composer",
-  "url": "https://xxx-organization-xxx:xxx-token-xxx@rhubarbgroup.repo.packagist.com/xxx-organization-xxx/"
+  "url": "https://token:xxx-token-xxx@objectcache.pro/repo/"
 }
 ```
 
