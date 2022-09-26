@@ -1,3 +1,7 @@
+### 2.1.9: 2022-09-26
+
+* Change SEO Framework to Yoast SEO + Hide SEO Bloat
+
 ### 2.1.8: 2022-06-29
 
 * Add the newest version of wp-languages

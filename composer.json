@@ -75,9 +75,10 @@
     "wpackagist-plugin/simple-history": "*",
     "wpackagist-plugin/mailgun": "*",
     "wpackagist-plugin/worker": "*",
-    "wpackagist-plugin/autodescription": "*",
     "wpackagist-plugin/gravity-forms-wcag-20-form-fields": "*",
     "wpackagist-plugin/disable-media-pages": "*",
+    "wpackagist-plugin/wordpress-seo": "*",
+    "wpackagist-plugin/so-clean-up-wp-seo": "*",
     "devgeniem/wp-sanitize-accented-uploads": "*"
   },
   "require-dev": {
