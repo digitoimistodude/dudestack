@@ -225,7 +225,7 @@ Add to "repositories":
 ```json
 {
   "type": "composer",
-  "url": "https://token:xxx-token-xxx@objectcache.pro/repo/"
+  "url": "https://objectcache.pro/repo/"
 }
 ```
 
@@ -274,7 +274,7 @@ Add to "repositories":
         "version": "3.2.5",
         "dist": {
           "type": "zip",
-          "url": "https://xxxxxxxxx:xxxxxxxx@plugins.dude.fi/polylang-pro_3.2.5.zip"
+          "url": "https://plugins.dude.fi/polylang-pro_3.2.5.zip"
         }
       }
     },
