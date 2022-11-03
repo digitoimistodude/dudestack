@@ -65,7 +65,7 @@
     "vlucas/phpdotenv": "^5.3",
     "oscarotero/env": "^2.1",
     "roots/wp-config": "^1.0",
-    "johnpbloch/wordpress": "6.0.2",
+    "johnpbloch/wordpress": "6.1.0",
     "koodimonni/composer-dropin-installer": "dev-master",
     "koodimonni-language/fi": "*",
     "koodimonni-language/en_gb": "*",
