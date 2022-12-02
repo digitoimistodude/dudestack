@@ -244,11 +244,11 @@ Add to "repositories":
       "type": "package",
       "package": {
         "name": "relevanssi/relevanssi-premium",
-        "version": "2.15",
+        "version": "2.20.3",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://www.relevanssi.com/update/get_version.php?api_key=xxx&version=2.15"
+          "url": "https://www.relevanssi.com/update/get_version.php?api_key=xxx&version=2.20.3"
         }
       }
     },
@@ -257,7 +257,7 @@ Add to "repositories":
 Then to "requires":
 
 ```json
-    "relevanssi/relevanssi-premium": "2.15",
+    "relevanssi/relevanssi-premium": "2.20.3",
 ```
 
 ### Polylang Pro (and others that don't have a repo)
