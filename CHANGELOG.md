@@ -1,6 +1,7 @@
-### [Unreleased]
+### 2.2.0: 2022-12-05
 
 * Add .env-e to cleanups
+* Bump Wordpress to 6.1.1
 
 ### 2.1.9: 2022-09-26
 
