@@ -1,3 +1,7 @@
+### [Unreleased]
+
+* Add .env-e to cleanups
+
 ### 2.1.9: 2022-09-26
 
 * Change SEO Framework to Yoast SEO + Hide SEO Bloat
