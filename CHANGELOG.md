@@ -5,12 +5,12 @@
 ### 2.2.0: 2022-12-05
 
 * Add .env-e to cleanups
-* Bump Wordpress to 6.1.1
+* Bump WordPress to 6.1.1
 
 ### 2.1.9: 2022-09-26
 
 * Change SEO Framework to Yoast SEO + Hide SEO Bloat
-* Bump Wordpress to 6.0.2
+* Bump WordPress to 6.0.2
 
 ### 2.1.8: 2022-06-29
 
