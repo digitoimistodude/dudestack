@@ -1,3 +1,7 @@
+### 2.2.1: 2022-18-04
+
+* Bump WordPress to 6.2.0
+
 ### 2.2.0: 2022-12-05
 
 * Add .env-e to cleanups
