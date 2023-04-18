@@ -1,6 +1,8 @@
 ### 2.2.1: 2022-18-04
 
 * Bump WordPress to 6.2.0
+* Remove double variable in variables.sh
+* Add support for --existing option in createproject script for macOS
 
 ### 2.2.0: 2022-12-05
 

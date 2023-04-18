@@ -4,7 +4,7 @@
 
 # Script specific vars
 SCRIPT_LABEL='for macOS'
-SCRIPT_VERSION='1.0.5'
+SCRIPT_VERSION='1.0.6 (2023-04-18)'
 
 # Vars needed for this file to function globally
 CURRENTFILE=`basename $0`
@@ -20,6 +20,9 @@ else
   ORIGINAL_FILE=$( readlink $DIR/$CURRENTFILE )
   SCRIPTS_LOCATION=$( dirname $ORIGINAL_FILE )
 fi
+
+# Existing project import for macOS only
+source ${SCRIPTS_LOCATION}/tasks/existing.sh
 
 # Final note about server requirements
 echo ""

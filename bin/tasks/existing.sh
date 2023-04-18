@@ -1,0 +1,136 @@
+
+parse_args() {
+  case "$1" in
+    "--existing")
+
+      # Script header
+      source ${SCRIPTS_LOCATION}/tasks/variables.sh
+
+      # Script header
+      source ${SCRIPTS_LOCATION}/tasks/header.sh
+
+      # We asked do we use GitHub in askvars.sh
+      # General vars
+      ENV_FILE="${HOME}/.env_createproject"
+
+      # Check if local .env found
+      if [ ! -f ${ENV_FILE} ]; then
+        echo "${RED}No .env file found. Please run the script without --existing flag first.${TXTRESET}"
+        echo ""
+        exit
+      fi
+
+      # Tell the user we are using existing project
+      echo "${BOLDPURPLE}--existing${BOLDWHITE} flag detected. Make sure you know what you're doing.
+
+Documentation on what this script does:
+https://app.gitbook.com/o/PedExJWZmbCiZe4gDwKC/s/VVikkYgIZ9miBzwYDCYh/project-stages/joining-the-project-later-on
+      ${TXTRESET}"
+
+      # Check if company username is set
+      if grep -q "GITHUB_COMPANY_USERNAME" ${ENV_FILE}; then
+        GITHUB_COMPANY_USERNAME_ENV=$(grep GITHUB_COMPANY_USERNAME $ENV_FILE | cut -d '=' -f2)
+
+        # If found
+        cd "$PROJECTS_HOME"
+
+        # Ask the existing project name
+        echo "${YELLOW}What is the name of the existing project?
+(The end slug here: https://github.com/${GITHUB_COMPANY_USERNAME_ENV}/${UNDERLINEDYELLOW}your-project-name-here${YELLOW})${TXTRESET} "
+        read -e PROJECTNAME
+
+        # If empty, bail
+        if [ -z "$PROJECTNAME" ]; then
+          echo "${RED}No project name given. Please give the correct project name.${TXTRESET}"
+          echo ""
+          exit
+        fi
+
+        # If clone already exists, bail
+        if [ -d "$PROJECTS_HOME/$PROJECTNAME" ]; then
+          echo "${RED}Project already exists. Please give the correct project name.${TXTRESET}"
+          echo ""
+          exit
+        fi
+
+        # If clone command fails, bail
+        if ! git clone git@github.com:${GITHUB_COMPANY_USERNAME_ENV}/${PROJECTNAME}.git
+        then
+          echo "${RED}Project does not exist? Please give the correct project name.${TXTRESET}"
+          echo ""
+          exit
+
+        else
+          # If clone command succeeds, continue
+          cd "$PROJECTS_HOME/$PROJECTNAME"
+
+          # Check for nvm
+          if [ -f "$HOME/.nvm/nvm.sh" ]; then
+            # If found
+            source "$HOME/.nvm/nvm.sh"
+
+            # Run npm install in project root
+            echo "${YELLOW}Running npm install in project root...${TXTRESET}"
+            nvm install
+            nvm use
+            npm install
+
+            # Run npm install in theme directory
+            echo "${YELLOW}Running npm install in theme directory...${TXTRESET}"
+            cd "$PROJECTS_HOME/$PROJECTNAME/content/themes/$PROJECTNAME"
+            npm install
+
+            # Go back to project root
+            cd "$PROJECTS_HOME/$PROJECTNAME"
+
+          else
+            echo ""
+          fi
+
+          # Add project to hosts file
+          echo "${YELLOW}Updating hosts file...${TXTRESET}"
+          sudo -- sh -c "echo 127.0.0.1 ${PROJECTNAME}.test >> /etc/hosts"
+
+          # Set up virtual hosts
+          source ${SCRIPTS_LOCATION}/tasks/vhosts.sh
+
+          # Add cert with mkcert
+          echo "${YELLOW}Adding certificate...${TXTRESET}"
+          cd $PROJECTS_HOME/certs
+          mkcert $PROJECTNAME.test
+
+          echo "${YELLOW}Restarting nginx...${TXTRESET}"
+          sudo brew services stop nginx
+          sudo brew services start nginx
+
+          # Tell to add .env
+          echo "${BOLDGREEN}All done! Except...${TXTRESET}"
+          echo ""
+          echo "${YELLOW}Next:
+1. Please add .env file to project root (from 1Password)
+2. Run composer install
+3. Setup Syncthing for media.${TXTRESET}"
+          echo ""
+
+          echo "${YELLOW}After these tasks you canstart developing at https://${PROJECTNAME}.test${TXTRESET}"
+          echo ""
+
+          exit
+        fi
+      else
+        # If not found
+        echo "${RED}No GitHub company username found. Please run the script without --existing flag first.${TXTRESET}"
+        echo ""
+        exit
+      fi
+
+      exit
+    ;;
+    *)
+      export DIR_TO_FILE=$(cd "$(dirname "$1")"; pwd -P)/$(basename "$1")
+    ;;
+    esac
+}
+
+# Parse args
+parse_args "$@"

@@ -1,8 +1,9 @@
 # Note about running directly as we can't prevent people running this via sh or bash pre-cmd
-echo "-----------------------------------------------------"
+echo "---------------------------------------------------------"
 echo "createproject start script ${SCRIPT_LABEL}, v${SCRIPT_VERSION}"
-echo "-----------------------------------------------------"
+echo "---------------------------------------------------------"
 echo ""
+
 if [ ! -f /usr/local/bin/createproject ]; then
 echo "${TXTRESET}${TXTBOLD}ACTION REQUIRED:${TXTRESET}${WHITE} Link this file to system level and start from there with this oneliner:${TXTRESET}"
 echo ""
