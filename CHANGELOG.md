@@ -1,3 +1,7 @@
+### 2.2.2: 2023-05-08
+
+* Remove old unused gem dependencies
+
 ### 2.2.1: 2022-18-04
 
 * Bump WordPress to 6.2.0
