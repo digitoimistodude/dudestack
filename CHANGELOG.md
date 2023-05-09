@@ -1,3 +1,7 @@
+### 2.2.3: 2023-05-09
+
+* Add `"default_branch": "master"` to github API call
+
 ### 2.2.2: 2023-05-08
 
 * Remove old unused gem dependencies
