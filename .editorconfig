@@ -9,6 +9,9 @@ insert_final_newline = true
 [*.js]
 quote_type = single
 
+[*.scss]
+quote_type = single
+
 [*.md]
 charset = unset
 end_of_line = unset
