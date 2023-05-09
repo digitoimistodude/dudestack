@@ -6,6 +6,12 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
+[*.js]
+quote_type = single
+
+[*.scss]
+quote_type = single
+
 [*.md]
 charset = unset
 end_of_line = unset
