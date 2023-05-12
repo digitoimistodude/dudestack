@@ -1,3 +1,8 @@
+### 2.2.4: 2023-05-12
+
+* Add .editorconfig
+* Fix github doc link
+
 ### 2.2.3: 2023-05-09
 
 * Add `"default_branch": "master"` to github API call
