@@ -63,7 +63,7 @@ else
       else
         # If not found
         echo ""
-        echo "${BOLDYELLOW}GitHub access token (Tutorial: https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/):${TXTRESET} "
+        echo "${BOLDYELLOW}GitHub access token (Tutorial, use Classic: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#personal-access-tokens-classic):${TXTRESET} "
         read -e GITHUB_ACCESS_TOKEN
 
         # Add Credentials to .env
