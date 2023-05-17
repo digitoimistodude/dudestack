@@ -1,6 +1,7 @@
 ### 2.2.5: 2023-05-17
 
 * Make sure main branch is master with git commands
+* Bump WordPress to 6.2.1
 
 ### 2.2.4: 2023-05-12
 
