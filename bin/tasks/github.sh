@@ -13,7 +13,7 @@ if grep -q "GITHUB_COMPANY_USERNAME" ${ENV_FILE}; then
   echo ""
   echo "${YELLOW}Creating a GitHub repo...${TXTRESET}"
 
-  curl -u "${GITHUB_COMPANY_USERNAME_ENV}":"${GITHUB_ACCESS_TOKEN_ENV}" https://api.github.com/orgs/"${GITHUB_COMPANY_USERNAME_ENV}"/repos -d '{"name": "'${PROJECTNAME}'","default_branch": "master","auto_init": false, "private": true, "description": "A repository for '${PROJECTNAME}' site"}'
+  curl -u "${GITHUB_COMPANY_USERNAME_ENV}":"${GITHUB_ACCESS_TOKEN_ENV}" https://api.github.com/orgs/"${GITHUB_COMPANY_USERNAME_ENV}"/repos -d '{"name": "'${PROJECTNAME}'", "default_branch": "master", "auto_init": false, "private": true, "description": "A repository for '${PROJECTNAME}' site"}'
 
   echo "${YELLOW}Initializing the GitHub repo...${TXTRESET}"
   cd "$PROJECTS_HOME/$PROJECTNAME"
@@ -25,4 +25,14 @@ if grep -q "GITHUB_COMPANY_USERNAME" ${ENV_FILE}; then
   git add --all
   git commit -m 'First commit - project started'
   git push -u origin --all
+
+  # Make sure main branch is master
+  git checkout main
+  git branch -m master
+  git push origin -u master
+  git push origin --delete main
+  git branch -m main master
+  git fetch origin
+  git branch -u origin/master master
+  git remote set-head origin -a
 fi

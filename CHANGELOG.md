@@ -1,3 +1,7 @@
+### 2.2.5: 2023-05-17
+
+* Make sure main branch is master with git commands
+
 ### 2.2.4: 2023-05-12
 
 * Add .editorconfig
