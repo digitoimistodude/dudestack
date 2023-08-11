@@ -12,6 +12,7 @@ Config::define( 'WP_DISABLE_FATAL_ERROR_HANDLER', true );
 Config::define( 'SCRIPT_DEBUG', true );
 Config::define( 'FS_METHOD', 'direct' );
 Config::define( 'PLL_CACHE_HOME_URL', false );
+Config::define( 'WP_DEVELOPMENT_MODE', 'all' );
 
 ini_set( 'display_errors', '1' );
 
