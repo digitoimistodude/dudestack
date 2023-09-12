@@ -1,3 +1,7 @@
+### 2.2.6: 2023-09-12
+
+* Bump WordPress to 6.3.1
+
 ### 2.2.5: 2023-05-17
 
 * Make sure main branch is master with git commands
