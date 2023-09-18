@@ -1,3 +1,7 @@
+### 2.2.7: 2023-09-12
+
+* Start script --existing: Add link to remote media setup
+
 ### 2.2.6: 2023-09-12
 
 * Bump WordPress to 6.3.1
