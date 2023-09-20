@@ -109,7 +109,8 @@ https://app.gitbook.com/o/PedExJWZmbCiZe4gDwKC/s/VVikkYgIZ9miBzwYDCYh/project-st
           echo "${YELLOW}Next:
 1. Please add .env file to project root (from 1Password)
 2. Run composer install
-3. Setup media load from production: https://app.gitbook.com/o/PedExJWZmbCiZe4gDwKC/s/VVikkYgIZ9miBzwYDCYh/project-stages/joining-the-project-later-on/set-up-media-load-from-production${TXTRESET}"
+3. If project is work in progress, set up syncthing: https://app.gitbook.com/o/PedExJWZmbCiZe4gDwKC/s/VVikkYgIZ9miBzwYDCYh/how-tos/setting-up-syncthing-on-macos/syncing-a-folder-with-syncthing
+   If the project is done and you just need to work on some updates, setup media load from production: https://app.gitbook.com/o/PedExJWZmbCiZe4gDwKC/s/VVikkYgIZ9miBzwYDCYh/project-stages/joining-the-project-later-on/set-up-media-load-from-production${TXTRESET}"
           echo ""
 
           echo "${YELLOW}After these tasks you canstart developing at https://${PROJECTNAME}.test${TXTRESET}"
