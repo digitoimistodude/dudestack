@@ -7,6 +7,9 @@ source ${SCRIPTS_LOCATION}/tasks/header.sh
 # Ask names and credentials
 source ${SCRIPTS_LOCATION}/tasks/askvars.sh
 
+# Checks if a Github repository with name exists
+source ${SCRIPTS_LOCATION}/tasks/check-github.sh
+
 # Init project and run composer
 source ${SCRIPTS_LOCATION}/tasks/initproject.sh
 
@@ -33,3 +36,4 @@ source ${SCRIPTS_LOCATION}/tasks/github.sh
 
 # Set up virtual hosts
 source ${SCRIPTS_LOCATION}/tasks/vhosts.sh
+

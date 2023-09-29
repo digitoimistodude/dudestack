@@ -22,6 +22,7 @@ else
 fi
 
 # Existing project import for macOS only
+PACKAGE_MANAGER='brew'
 source ${SCRIPTS_LOCATION}/tasks/existing.sh
 
 # Final note about server requirements

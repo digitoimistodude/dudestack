@@ -54,7 +54,7 @@ https://app.gitbook.com/o/PedExJWZmbCiZe4gDwKC/s/VVikkYgIZ9miBzwYDCYh/project-st
         fi
 
         # If clone command fails, bail
-        if ! git clone git@github.com:${GITHUB_COMPANY_USERNAME_ENV}/${PROJECTNAME}.git
+        if ! git clone ssh://git@github.com/${GITHUB_COMPANY_USERNAME_ENV}/${PROJECTNAME}
         then
           echo "${RED}Project does not exist? Please give the correct project name.${TXTRESET}"
           echo ""
@@ -100,8 +100,13 @@ https://app.gitbook.com/o/PedExJWZmbCiZe4gDwKC/s/VVikkYgIZ9miBzwYDCYh/project-st
           mkcert $PROJECTNAME.test
 
           echo "${YELLOW}Restarting nginx...${TXTRESET}"
-          sudo brew services stop nginx
-          sudo brew services start nginx
+          
+          if [ "$SCRIPT_LABEL" == "with Pop!_OS support" ]; then
+            sudo systemctl restart nginx
+          else
+            sudo brew services stop nginx
+            sudo brew services start nginx
+          fi
 
           # Tell to add .env
           echo "${BOLDGREEN}All done! Except...${TXTRESET}"
