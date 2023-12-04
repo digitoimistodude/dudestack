@@ -1,3 +1,7 @@
+### 2.2.8: 2023-12-04
+
+* Make mysql CREATE DATABASE command safer by adding IF NOT EXISTS + backslashes to cmd
+
 ### 2.2.7: 2023-09-12
 
 * Start script --existing: Add link to remote media setup
