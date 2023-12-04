@@ -1,3 +1,7 @@
+### 2.2.9: 2023-12-04
+
+* Ensure initial branch is master
+
 ### 2.2.8: 2023-12-04
 
 * Make mysql CREATE DATABASE command safer by adding IF NOT EXISTS + backslashes to cmd

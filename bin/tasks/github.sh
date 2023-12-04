@@ -19,20 +19,11 @@ if grep -q "GITHUB_COMPANY_USERNAME" ${ENV_FILE}; then
   cd "$PROJECTS_HOME/$PROJECTNAME"
 
   # We ensured earlier in the main script that git is installed so it's safe to run these
-  git init
+  git init --initial-branch=master
+  git init -b master
   git remote add origin git@github.com:${GITHUB_COMPANY_USERNAME_ENV}/${PROJECTNAME}.git
   git config core.fileMode false
   git add --all
   git commit -m 'First commit - project started'
   git push -u origin --all
-
-  # Make sure main branch is master
-  git checkout main
-  git branch -m master
-  git push origin -u master
-  git push origin --delete main
-  git branch -m main master
-  git fetch origin
-  git branch -u origin/master master
-  git remote set-head origin -a
 fi
