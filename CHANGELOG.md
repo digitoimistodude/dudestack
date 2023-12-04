@@ -1,3 +1,7 @@
+### 2.3.1: 2023-12-04
+
+* Fix a mysql cmd syntax regression presented in 2.2.8
+
 ### 2.3.0: 2023-12-04
 
 * Add script support for Pop!_OS #16 (thanks @raikasdev!)
