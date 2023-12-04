@@ -1,3 +1,7 @@
+### 2.3.0: 2023-12-04
+
+* Add script support for Pop!_OS #16 (thanks @raikasdev!)
+
 ### 2.2.9: 2023-12-04
 
 * Ensure initial branch is master
