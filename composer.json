@@ -84,7 +84,9 @@
     "wpackagist-plugin/disable-media-pages": "*",
     "wpackagist-plugin/wordpress-seo": "*",
     "wpackagist-plugin/so-clean-up-wp-seo": "*",
-    "devgeniem/wp-sanitize-accented-uploads": "*"
+    "devgeniem/wp-sanitize-accented-uploads": "*",
+    "wpackagist-plugin/tiny-compress-images": "*",
+    "wpackagist-plugin/png-to-jpg": "*"
   },
   "require-dev": {
     "rarst/wps": "*",
