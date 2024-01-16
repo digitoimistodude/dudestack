@@ -1,3 +1,8 @@
+### 2.3.2: 2024-01-16
+
+* Bump WordPress to 6.4.2
+* Add tiny-compress-images and png-to-jpg to stack
+
 ### 2.3.1: 2023-12-04
 
 * Fix a mysql cmd syntax regression presented in 2.2.8
