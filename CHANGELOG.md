@@ -1,3 +1,7 @@
+### 2.3.3: 2024-01-18
+
+* Add new http2 syntax for nginx vhosts
+
 ### 2.3.2: 2024-01-16
 
 * Bump WordPress to 6.4.2

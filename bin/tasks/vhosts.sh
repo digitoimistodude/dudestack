@@ -1,5 +1,6 @@
 echo "server {
-    listen 443 ssl http2;
+    listen 443 ssl;
+    http2 on;
     root ${PROJECTS_HOME}/$PROJECTNAME;
     index index.php;
     server_name $PROJECTNAME.test www.$PROJECTNAME.test;
