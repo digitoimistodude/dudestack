@@ -100,7 +100,7 @@ https://app.gitbook.com/o/PedExJWZmbCiZe4gDwKC/s/VVikkYgIZ9miBzwYDCYh/project-st
           mkcert $PROJECTNAME.test
 
           echo "${YELLOW}Restarting nginx...${TXTRESET}"
-          
+
           if [ "$SCRIPT_LABEL" == "with Pop!_OS support" ]; then
             sudo systemctl restart nginx
           else
@@ -118,7 +118,7 @@ https://app.gitbook.com/o/PedExJWZmbCiZe4gDwKC/s/VVikkYgIZ9miBzwYDCYh/project-st
    If the project is done and you just need to work on some updates, setup media load from production: https://app.gitbook.com/o/PedExJWZmbCiZe4gDwKC/s/VVikkYgIZ9miBzwYDCYh/project-stages/joining-the-project-later-on/set-up-media-load-from-production${TXTRESET}"
           echo ""
 
-          echo "${YELLOW}After these tasks you canstart developing at https://${PROJECTNAME}.test${TXTRESET}"
+          echo "${YELLOW}After these tasks you can start developing at https://${PROJECTNAME}.test${TXTRESET}"
           echo ""
 
           exit
