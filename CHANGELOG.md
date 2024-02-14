@@ -1,3 +1,8 @@
+### 2.3.4: 2024-02-14
+
+* Add two factor authentication to default plugins
+* Bump WordPress to 6.4.3
+
 ### 2.3.3: 2024-01-18
 
 * Add new http2 syntax for nginx vhosts

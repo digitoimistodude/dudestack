@@ -70,7 +70,7 @@
     "vlucas/phpdotenv": "^5.3",
     "oscarotero/env": "^2.1",
     "roots/wp-config": "^1.0",
-    "johnpbloch/wordpress": "6.4.2",
+    "johnpbloch/wordpress": "6.4.3",
     "koodimonni/composer-dropin-installer": "dev-master",
     "koodimonni-language/fi": "*",
     "koodimonni-language/en_gb": "*",
@@ -86,7 +86,8 @@
     "wpackagist-plugin/so-clean-up-wp-seo": "*",
     "devgeniem/wp-sanitize-accented-uploads": "*",
     "wpackagist-plugin/tiny-compress-images": "*",
-    "wpackagist-plugin/png-to-jpg": "*"
+    "wpackagist-plugin/png-to-jpg": "*",
+    "wpackagist-plugin/two-factor": "*"
   },
   "require-dev": {
     "rarst/wps": "*",
