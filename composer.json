@@ -90,7 +90,6 @@
     "wpackagist-plugin/two-factor": "*"
   },
   "require-dev": {
-    "rarst/wps": "*",
     "rarst/laps": "*",
     "wpackagist-plugin/query-monitor": "*"
   },

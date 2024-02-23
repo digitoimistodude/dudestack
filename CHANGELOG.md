@@ -1,3 +1,7 @@
+### 2.3.5: 2024-02-23
+
+* Remove wps
+
 ### 2.3.4: 2024-02-14
 
 * Add two factor authentication to default plugins
