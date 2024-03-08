@@ -1,3 +1,8 @@
+### 2.3.6: 2024-02-08
+
+* Allow .editorconfig to be exported
+* PHP 8.3 support
+
 ### 2.3.5: 2024-02-23
 
 * Remove wps
