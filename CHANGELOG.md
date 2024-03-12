@@ -1,4 +1,4 @@
-### 2.3.6rc: 2024-02-12
+### 2.3.6: 2024-03-12
 
 * Allow .editorconfig to be exported
 * PHP 8.3 support
