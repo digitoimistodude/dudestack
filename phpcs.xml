@@ -29,7 +29,6 @@
         <exclude name="Generic.WhiteSpace.ScopeIndent.IncorrectExact" />
         <exclude name="Generic.WhiteSpace.ScopeIndent.Incorrect" />
         <exclude name="Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed" />
-        <exclude name="WordPress.WhiteSpace.PrecisionAlignment" />
         <exclude name="PEAR.Functions.FunctionCallSignature.Indent" />
         <exclude name="WordPress.Arrays.ArrayIndentation.ItemNotAligned" />
         <exclude name="WordPress.Arrays.ArrayIndentation.MultiLineArrayItemNotAligned" />
@@ -105,6 +104,11 @@
         <exclude name="WordPress.PHP.IniSet.display_errors_Blacklisted" />
         <exclude name="WordPress.PHP.YodaConditions.NotYoda" />
         <exclude name="WordPress.WP.AlternativeFunctions.parse_url_parse_url" />
+        <exclude name="Squiz.Commenting.ClassComment.Missing" />
+        <exclude name="Squiz.Commenting.VariableComment.Missing" />
+        <exclude name="Universal.Arrays.DisallowShortArraySyntax.Found" />
+        <exclude name="Universal.WhiteSpace.PrecisionAlignment.Found" />
+        <exclude name="WordPress.Files.FileName.NotHyphenatedLowercase" />
     </rule>
 
     <!-- Include sniffs for PHP cross-version compatibility. -->
