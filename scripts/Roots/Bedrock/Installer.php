@@ -7,7 +7,7 @@
  * @Author: Roni Laukkarinen
  * @Date: 2022-06-28 13:14:24
  * @Last Modified by:   Roni Laukkarinen
- * @Last Modified time: 2024-03-12 15:31:15
+ * @Last Modified time: 2024-03-12 15:34:00
  *
  * @package dudestack
  * @link https://github.com/roots/bedrock
@@ -51,7 +51,7 @@ class Installer {
 		$env_file = "{$root}/.env";
 
 		if ( copy( "{$root}/.env.example", $env_file ) ) {
-		  file_put_contents( $env_file, implode( '', "\n", $salts ), FILE_APPEND | LOCK_EX ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_file_put_contents
+		  file_put_contents( $env_file, implode( "\n", $salts ), FILE_APPEND | LOCK_EX ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_file_put_contents
 		} else {
 		  $io->write( '<error>An error occured while copying your .env file</error>' );
 		  return 1;
