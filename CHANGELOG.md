@@ -5,6 +5,7 @@
 * Fix PHP_CodeSniffer rules for 8.3
 * Add PHP_CodeSniffer and WPCS composer packages
 * Add unit tests
+* Fix implode() in bedrock Installer.php for PHP 8.3
 
 ### 2.3.5: 2024-02-23
 
