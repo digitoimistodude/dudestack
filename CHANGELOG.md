@@ -1,7 +1,10 @@
-### 2.3.6: 2024-02-08
+### 2.3.6rc: 2024-02-12
 
 * Allow .editorconfig to be exported
 * PHP 8.3 support
+* Fix PHP_CodeSniffer rules for 8.3
+* Add PHP_CodeSniffer and WPCS composer packages
+* Add unit tests
 
 ### 2.3.5: 2024-02-23
 

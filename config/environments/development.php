@@ -14,7 +14,7 @@ Config::define( 'FS_METHOD', 'direct' );
 Config::define( 'PLL_CACHE_HOME_URL', false );
 Config::define( 'WP_DEVELOPMENT_MODE', 'all' );
 
-ini_set( 'display_errors', '1' );
+ini_set( 'display_errors', '1' ); // phpcs:ignore
 
 // Enable plugin and theme updates and installation from the admin
 Config::define( 'DISALLOW_FILE_MODS', false );

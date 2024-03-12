@@ -19,7 +19,7 @@ Config::define( 'WP_DEBUG_DISPLAY', false );
 Config::define( 'WP_DISABLE_FATAL_ERROR_HANDLER', false );
 Config::define( 'SCRIPT_DEBUG', false );
 
-ini_set( 'display_errors', '0' );
+ini_set( 'display_errors', '0' ); // phpcs:ignore
 
 // Enable plugin and theme updates and installation from the admin
 Config::define( 'DISALLOW_FILE_MODS', false );

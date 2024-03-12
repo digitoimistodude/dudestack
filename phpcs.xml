@@ -109,9 +109,12 @@
         <exclude name="Universal.Arrays.DisallowShortArraySyntax.Found" />
         <exclude name="Universal.WhiteSpace.PrecisionAlignment.Found" />
         <exclude name="WordPress.Files.FileName.NotHyphenatedLowercase" />
+        <exclude name="Squiz.Commenting.VariableComment.WrongStyle" />
+        <exclude name="PSR2.Classes.PropertyDeclaration.Underscore" />
+        <exclude name="Universal.Operators.DisallowShortTernary.Found" />
     </rule>
 
     <!-- Include sniffs for PHP cross-version compatibility. -->
-    <config name="testVersion" value="7.2-99.0"/>
+    <config name="testVersion" value="8.3"/>
     <rule ref="PHPCompatibility"/>
 </ruleset>
