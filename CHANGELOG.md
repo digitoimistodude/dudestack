@@ -1,6 +1,7 @@
 ### 2.3.7: 2024-04-03
 
 * Ensure $DIR_TO_FILE is set in createproject init
+* Bump WordPress to 6.5
 
 ### 2.3.6: 2024-03-12
 
