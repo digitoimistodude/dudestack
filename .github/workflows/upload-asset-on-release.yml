@@ -25,6 +25,12 @@ jobs:
           echo ::set-output name=DIST::${PWD}/dist
           echo ::set-output name=PACKAGE::${REPO##*/}
 
+      - name: Setup PHP with Xdebug 2.x
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          coverage: xdebug2
+
       - name: PHP version
         run: php --version
 
