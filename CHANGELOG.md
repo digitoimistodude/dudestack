@@ -1,6 +1,6 @@
 ### 2.3.8: 2024-04-03
 
-* Fix upload asset on release workflow
+* Remove leftover workflow
 
 ### 2.3.7: 2024-04-03
 
