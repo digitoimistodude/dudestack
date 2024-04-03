@@ -2,6 +2,8 @@
 
 * Ensure $DIR_TO_FILE is set in createproject init
 * Bump WordPress to 6.5
+* Do not remove root phpcs.xml in cleanups
+* Remove travis from cleanups
 
 ### 2.3.6: 2024-03-12
 
