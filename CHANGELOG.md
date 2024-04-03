@@ -1,3 +1,7 @@
+### 2.3.8: 2024-04-03
+
+* Fix upload asset on release workflow
+
 ### 2.3.7: 2024-04-03
 
 * Ensure $DIR_TO_FILE is set in createproject init
