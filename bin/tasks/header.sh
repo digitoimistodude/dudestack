@@ -1,4 +1,6 @@
 # Note about running directly as we can't prevent people running this via sh or bash pre-cmd
+export DIR_TO_FILE=$(cd "$(dirname "$1")"; pwd -P)/$(basename "$1")
+
 echo "---------------------------------------------------------"
 echo "createproject start script ${SCRIPT_LABEL}, v${SCRIPT_VERSION}"
 echo "---------------------------------------------------------"
