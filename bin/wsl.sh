@@ -4,7 +4,7 @@
 
 # Script specific vars
 SCRIPT_LABEL='with WSL support'
-SCRIPT_VERSION='1.0.4'
+SCRIPT_VERSION='1.0.5 (2024-04-15)'
 
 # Vars needed for this file to function globally
 CURRENTFILE=`basename $0`
@@ -30,7 +30,7 @@ ${TXTRESET}"
 # Server on WSL needs to be on before starting
 echo "${YELLOW}Starting web server...${TXTRESET}"
 sudo service nginx start
-sudo service php7.3-fpm start
+sudo service php8.3-fpm start
 sudo service mysql start
 
 # Import required tasks

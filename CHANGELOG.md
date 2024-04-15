@@ -1,3 +1,9 @@
+### 2.3.9: 2024-04-15
+
+Please note: This version contains breaking change, if you are using older macos-lemp-setup and still have PHP 7.4 installed.
+
+* Add PHP 8.3 and macos-lemp-setup 1.0.8 support
+
 ### 2.3.8: 2024-04-03
 
 * Remove leftover workflow

@@ -3,7 +3,7 @@
 
 # Script specific vars
 SCRIPT_LABEL='with Pop!_OS support'
-SCRIPT_VERSION='1.0.0'
+SCRIPT_VERSION='1.0.1 (2024-04-15)'
 
 # Vars needed for this file to function globally
 CURRENTFILE=`basename $0`
@@ -33,10 +33,10 @@ echo ""
 echo "${YELLOW}Ensuring web server is on...${TXTRESET}"
 function ensure_server_on {
     # Let's just check the status to not require sudo
-    systemctl is-active --quiet nginx && systemctl is-active --quiet php7.4-fpm && systemctl is-active --quiet mysql && return 0
- 
+    systemctl is-active --quiet nginx && systemctl is-active --quiet php8.3-fpm && systemctl is-active --quiet mysql && return 0
+
     # If all services start without problem, this function will return and exit
-    sudo systemctl start nginx && sudo systemctl start php7.4-fpm && sudo systemctl start mysql && return 0
+    sudo systemctl start nginx && sudo systemctl start php8.3-fpm && sudo systemctl start mysql && return 0
 
     # If some service fails to start, the function will not return and the createproject program will exit.
     echo "${RED}LEMP stack failed to start! Exiting.${TXTRESET}"

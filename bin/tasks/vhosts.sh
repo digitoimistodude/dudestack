@@ -5,7 +5,7 @@ echo "server {
     index index.php;
     server_name $PROJECTNAME.test www.$PROJECTNAME.test;
 
-    include php7.conf;
+    include php.conf;
     include global/wordpress.conf;
 
     ssl_certificate ${PROJECTS_HOME}/certs/$PROJECTNAME.test.pem;
