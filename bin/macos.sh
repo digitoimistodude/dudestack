@@ -4,7 +4,7 @@
 
 # Script specific vars
 SCRIPT_LABEL='for macOS'
-SCRIPT_VERSION='1.1.3 (2024-04-15)'
+SCRIPT_VERSION='1.1.4 (2024-04-16)'
 
 # Vars needed for this file to function globally
 CURRENTFILE=`basename $0`
@@ -30,6 +30,9 @@ echo ""
 echo "${WHITE}Using this start script requires you have dev server installed and working:
 https://github.com/digitoimistodude/macos-lemp-setup
 ${TXTRESET}"
+
+# First, let's check updates to self
+source ${SCRIPTS_LOCATION}/tasks/self-update.sh
 
 # Import required tasks
 source ${SCRIPTS_LOCATION}/tasks/imports.sh

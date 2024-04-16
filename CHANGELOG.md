@@ -1,3 +1,7 @@
+### 2.4.0: 2024-04-16
+
+* Add self-updater
+
 ### 2.3.9: 2024-04-15
 
 Please note: This version contains breaking change, if you are using older macos-lemp-setup and still have PHP 7.4 installed.
