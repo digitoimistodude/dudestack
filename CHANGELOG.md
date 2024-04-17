@@ -1,3 +1,7 @@
+### 2.4.1: 2024-04-17
+
+* Ensure php.conf exists
+
 ### 2.4.0: 2024-04-16
 
 * Add self-updater

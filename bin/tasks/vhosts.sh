@@ -28,4 +28,16 @@ server {
 sudo mv ~/$PROJECTNAME.test /etc/nginx/sites-available/$PROJECTNAME.test
 sudo ln -s /etc/nginx/sites-available/$PROJECTNAME.test /etc/nginx/sites-enabled/$PROJECTNAME.test
 
+# Ensure php.conf is actually there
+if [ ! -f /etc/nginx/php.conf ]; then
+  # Check if php7.conf found, if yes, then symlink it
+  if [ -f /etc/nginx/php7.conf ]; then
+    sudo ln -s /etc/nginx/php7.conf /etc/nginx/php.conf
+  else
+    echo "${BOLDRED}php.conf or php7.conf not found in /etc/nginx/${TXTRESET}"
+    echo "${BOLDRED}Please refer to https://github.com/digitoimistodude/macos-lemp-setup for instructions.${TXTRESET}"
+    exit 1
+  fi
+fi
+
 echo "${BOLDGREEN}Added vhost, $PROJECTNAME.test added to /etc/nginx/sites-enabled/${TXTRESET}"
