@@ -1,3 +1,7 @@
+### 2.4.2: 2024-04-19
+
+* Re-add missing wpackagist-plugin/query-monitor back to require-dev
+
 ### 2.4.1: 2024-04-17
 
 * Ensure php.conf exists
