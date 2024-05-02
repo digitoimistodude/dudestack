@@ -65,7 +65,7 @@
     }
   ],
   "require": {
-    "php": ">=8.2",
+    "php": ">=8.3",
     "composer/installers": "^1.10.0",
     "wp-cli/wp-cli-bundle": "*",
     "vlucas/phpdotenv": "^5.3",
