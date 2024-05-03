@@ -1,3 +1,7 @@
+### 2.4.4: 2024-05-03
+
+* Fix check for existing if the project is found on GitHub
+
 ### 2.4.3: 2024-05-02
 
 * Bump composer.json PHP from 8.2 to 8.3
