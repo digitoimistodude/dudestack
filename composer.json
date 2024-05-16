@@ -4,18 +4,6 @@
   "license": "MIT",
   "description": "A modern WordPress stack",
   "homepage": "https://github.com/digitoimistodude/dudestack",
-  "authors": [
-    {
-      "name": "Roni Laukkarinen",
-      "email": "roni@dude.fi",
-      "homepage": "https://github.com/ronilaukkarinen"
-    },
-    {
-      "name": "Timi Wahalahti",
-      "email": "timi@dude.fi",
-      "homepage": "https://github.com/timiwahalahti"
-    }
-  ],
   "keywords": [
     "bedrock",
     "roots",
