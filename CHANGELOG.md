@@ -1,7 +1,8 @@
-### 2.4.5rc: 2024-06-11
+### 2.4.5: 2024-06-11
 
 * Remove Koko Analytics and WCAG 2.0 form fields for Gravity Forms from default plugins
 * Remove vagrant keyword
+* Bump WordPress to 6.5.4
 
 ### 2.4.4: 2024-05-03
 
