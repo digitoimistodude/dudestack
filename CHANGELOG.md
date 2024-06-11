@@ -1,3 +1,7 @@
+### 2.4.5rc: 2024-06-11
+
+* Remove Koko Analytics and WCAG 2.0 form fields for Gravity Forms from default plugins
+
 ### 2.4.4: 2024-05-03
 
 * Fix check for existing if the project is found on GitHub
