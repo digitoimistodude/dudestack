@@ -1,3 +1,8 @@
+### 2.4.7: 2024-06-20
+
+* Update bedrock-autoloader.php
+* Remove wrong option from Redis config
+
 ### 2.4.6: 2024-06-20
 
 * Use High performance Redis settings by default
