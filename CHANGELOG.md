@@ -1,3 +1,7 @@
+### 2.4.6: 2024-06-20
+
+* Use High performance Redis settings by default
+
 ### 2.4.5: 2024-06-11
 
 * Remove Koko Analytics and WCAG 2.0 form fields for Gravity Forms from default plugins
