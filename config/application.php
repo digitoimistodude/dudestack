@@ -119,7 +119,6 @@ Config::define( 'WP_REDIS_CONFIG', [
   'prefix'            => env( 'DB_NAME' ),
   'database'          => env( 'REDIS_DATABASE' ) ?: 0,
   'maxttl'            => 43200, // Max cache half day
-  'maxmemory-policy'  => 'allkeys-lru',
   'timeout'           => 0.5,
   'read_timeout'      => 0.5,
   'retry_interval'    => 10,
