@@ -1,6 +1,7 @@
 ### 2.4.8: 2024-06-25
 
 * Fix fatal error with unexisting function countPlugins()
+* Bump WordPress to 6.5.5
 
 ### 2.4.7: 2024-06-20
 
