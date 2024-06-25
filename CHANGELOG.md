@@ -1,3 +1,7 @@
+### 2.4.8: 2024-06-25
+
+* Fix fatal error with unexisting function countPlugins()
+
 ### 2.4.7: 2024-06-20
 
 * Update bedrock-autoloader.php

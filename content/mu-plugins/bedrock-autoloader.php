@@ -66,7 +66,7 @@ class Autoloader {
 	public function load_plugins() {
     $this->check_cache();
     $this->validate_plugins();
-    $this->countPlugins();
+    $this->count_plugins();
 
     array_map(static function () {
         include_once WPMU_PLUGIN_DIR . '/' . func_get_args()[0];
