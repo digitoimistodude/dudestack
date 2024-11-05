@@ -2,17 +2,44 @@ echo "${YELLOW}Ensuring mkcert is installed...${TXTRESET}"
 cd "$PROJECTS_HOME/$PROJECTNAME/"
 if [ ! -f /usr/local/bin/mkcert ]; then
   echo "${YELLOW}Installing mkcert${TXTRESET}"
-  sudo apt update
-  sudo apt install linuxbrew-wrapper -y
-  brew update
-  brew install mkcert
 
-  # Just to make sure it's installed:
-  brew install mkcert
+  # Check if apt update succeeds
+  if ! sudo apt update; then
+    echo "${RED}Failed to update apt${TXTRESET}"
+    exit 1
+  fi
 
-  # Link
-  sudo ln -s /home/linuxbrew/.linuxbrew/bin/mkcert /usr/local/bin/mkcert
-  sudo chmod +x /usr/local/bin/mkcert
+  # Install linuxbrew-wrapper
+  if ! sudo apt install linuxbrew-wrapper -y; then
+    echo "${RED}Failed to install linuxbrew-wrapper${TXTRESET}"
+    exit 1
+  fi
+
+  # Update brew
+  if ! brew update; then
+    echo "${RED}Failed to update brew${TXTRESET}"
+    exit 1
+  fi
+
+  # Install mkcert
+  if ! brew install mkcert; then
+    echo "${RED}Failed to install mkcert${TXTRESET}"
+    exit 1
+  fi
+
+  # Create symlink if it doesn't exist
+  if [ ! -L /usr/local/bin/mkcert ]; then
+    if ! sudo ln -s /home/linuxbrew/.linuxbrew/bin/mkcert /usr/local/bin/mkcert; then
+      echo "${RED}Failed to create symlink for mkcert${TXTRESET}"
+      exit 1
+    fi
+  fi
+
+  # Make executable
+  if ! sudo chmod +x /usr/local/bin/mkcert; then
+    echo "${RED}Failed to make mkcert executable${TXTRESET}"
+    exit 1
+  fi
 fi
 
 echo "${YELLOW}Ensuring dhparam is generated...${TXTRESET}"

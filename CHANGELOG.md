@@ -1,3 +1,8 @@
+
+### [Unreleased]
+
+* Add checks to commands and symlinks
+
 ### 2.4.8: 2024-06-25
 
 * Fix fatal error with unexisting function countPlugins()
