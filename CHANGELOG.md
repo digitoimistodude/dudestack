@@ -2,6 +2,7 @@
 ### [Unreleased]
 
 * Add checks to commands and symlinks
+* Bump WordPress to 6.6.2
 
 ### 2.4.8: 2024-06-25
 
