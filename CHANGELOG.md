@@ -4,6 +4,7 @@
 * Add checks to commands and symlinks
 * Bump WordPress to 6.6.2
 * Fix mkcert installation for macOS
+* Remove the deactivation of gravity-forms-wcag-20-form-fields
 
 ### 2.4.8: 2024-06-25
 

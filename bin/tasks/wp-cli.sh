@@ -32,5 +32,4 @@ cd ${PROJECTS_HOME}/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update time
 cd ${PROJECTS_HOME}/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option update admin_email 'koodarit@dude.fi'
 cd ${PROJECTS_HOME}/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp option delete new_admin_email
 cd ${PROJECTS_HOME}/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin activate --all
-cd ${PROJECTS_HOME}/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin deactivate gravity-forms-wcag-20-form-fields
 cd ${PROJECTS_HOME}/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp plugin deactivate worker
