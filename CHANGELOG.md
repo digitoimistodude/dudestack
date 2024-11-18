@@ -3,6 +3,7 @@
 
 * Add checks to commands and symlinks
 * Bump WordPress to 6.6.2
+* Fix mkcert installation for macOS
 
 ### 2.4.8: 2024-06-25
 

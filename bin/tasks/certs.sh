@@ -1,44 +1,41 @@
 echo "${YELLOW}Ensuring mkcert is installed...${TXTRESET}"
 cd "$PROJECTS_HOME/$PROJECTNAME/"
+
+# Function to check if a command exists
+command_exists() {
+  command -v "$1" >/dev/null 2>&1
+}
+
 if [ ! -f /usr/local/bin/mkcert ]; then
   echo "${YELLOW}Installing mkcert${TXTRESET}"
 
-  # Check if apt update succeeds
-  if ! sudo apt update; then
-    echo "${RED}Failed to update apt${TXTRESET}"
-    exit 1
-  fi
-
-  # Install linuxbrew-wrapper
-  if ! sudo apt install linuxbrew-wrapper -y; then
-    echo "${RED}Failed to install linuxbrew-wrapper${TXTRESET}"
-    exit 1
-  fi
-
-  # Update brew
-  if ! brew update; then
-    echo "${RED}Failed to update brew${TXTRESET}"
-    exit 1
-  fi
-
-  # Install mkcert
-  if ! brew install mkcert; then
-    echo "${RED}Failed to install mkcert${TXTRESET}"
-    exit 1
-  fi
-
-  # Create symlink if it doesn't exist
-  if [ ! -L /usr/local/bin/mkcert ]; then
-    if ! sudo ln -s /home/linuxbrew/.linuxbrew/bin/mkcert /usr/local/bin/mkcert; then
-      echo "${RED}Failed to create symlink for mkcert${TXTRESET}"
-      exit 1
+  # Check if we're on macOS
+  if [[ "$OSTYPE" == "darwin"* ]]; then
+    # Install via Homebrew on macOS
+    if ! command_exists brew; then
+      echo "${YELLOW}Homebrew not found. Installing Homebrew...${TXTRESET}"
+      /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" || {
+        echo "${RED}Failed to install Homebrew, but continuing...${TXTRESET}"
+      }
     fi
-  fi
+    brew install mkcert || echo "${YELLOW}Failed to install mkcert via brew, but continuing...${TXTRESET}"
+  else
+    # Linux installation
+    sudo apt update || echo "${YELLOW}Failed to update apt, but continuing...${TXTRESET}"
 
-  # Make executable
-  if ! sudo chmod +x /usr/local/bin/mkcert; then
-    echo "${RED}Failed to make mkcert executable${TXTRESET}"
-    exit 1
+    if ! command_exists brew; then
+      echo "${YELLOW}Installing Linuxbrew...${TXTRESET}"
+      sudo apt install linuxbrew-wrapper -y || echo "${YELLOW}Failed to install linuxbrew-wrapper, but continuing...${TXTRESET}"
+    fi
+
+    brew update || echo "${YELLOW}Failed to update brew, but continuing...${TXTRESET}"
+    brew install mkcert || echo "${YELLOW}Failed to install mkcert via brew, but continuing...${TXTRESET}"
+
+    # Create symlink if it doesn't exist
+    if [ ! -L /usr/local/bin/mkcert ] && [ -f /home/linuxbrew/.linuxbrew/bin/mkcert ]; then
+      sudo ln -s /home/linuxbrew/.linuxbrew/bin/mkcert /usr/local/bin/mkcert || echo "${YELLOW}Failed to create symlink for mkcert, but continuing...${TXTRESET}"
+      sudo chmod +x /usr/local/bin/mkcert || echo "${YELLOW}Failed to make mkcert executable, but continuing...${TXTRESET}"
+    fi
   fi
 fi
 
