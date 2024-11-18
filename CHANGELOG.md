@@ -5,6 +5,7 @@
 * Bump WordPress to 6.6.2
 * Fix mkcert installation for macOS
 * Remove the deactivation of gravity-forms-wcag-20-form-fields
+* Bump WordPress to 6.7.0
 
 ### 2.4.8: 2024-06-25
 
