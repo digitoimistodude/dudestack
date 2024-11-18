@@ -1,6 +1,7 @@
 {
   "name": "digitoimistodude/dudestack",
   "type": "project",
+  "version": "2.4.9",
   "license": "MIT",
   "description": "A modern WordPress stack",
   "homepage": "https://github.com/digitoimistodude/dudestack",

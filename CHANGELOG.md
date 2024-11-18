@@ -1,5 +1,5 @@
 
-### [Unreleased]
+### 2.4.9: 2024-11-18
 
 * Add checks to commands and symlinks
 * Bump WordPress to 6.6.2
