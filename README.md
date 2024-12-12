@@ -172,20 +172,7 @@ Edit your `composer.json` and add these lines inside respository, separated by c
 
 ### Advanced Custom Fields Pro
 
-As per [pivvenit/acf-composer-bridge](https://github.com/pivvenit/acf-composer-bridge), add to "repositories" section:
-
-```json
-    {
-      "type": "composer",
-      "url": "https://pivvenit.github.io/acf-composer-bridge/composer/v3/wordpress-plugin/"
-    },
-```
-
-Then to "requires":
-
-```json
-    "advanced-custom-fields/advanced-custom-fields-pro": "*",
-```
+Follow [the official documentation (Install using Composer) under your account settings](https://www.advancedcustomfields.com/my-account/view-licenses/).
 
 ### Gravity Forms
 
