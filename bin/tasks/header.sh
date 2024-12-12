@@ -1,8 +1,21 @@
 # Note about running directly as we can't prevent people running this via sh or bash pre-cmd
-export DIR_TO_FILE=$(cd "$(dirname "$1")"; pwd -P)/$(basename "$1")
+if [ "$1" = "--existing" ]; then
+  # Skip dirname/basename for --existing flag
+  export DIR_TO_FILE=""
+else
+  # Only try to get directory for non-flag arguments
+  export DIR_TO_FILE=$(cd "$(dirname "$1")"; pwd -P)/$(basename "$1")
+fi
+
+# Get dudestack version from composer.json
+DUDEDESTACK_VERSION=$(grep '"version":' composer.json | cut -d'"' -f4)
+
+# Get version date from CHANGELOG.md
+DUDESTACK_DATE=$(grep '^### ' CHANGELOG.md | head -n 1 | cut -d' ' -f3)
 
 echo "---------------------------------------------------------"
 echo "createproject start script ${SCRIPT_LABEL}, v${SCRIPT_VERSION}"
+echo "dudestack v${DUDEDESTACK_VERSION} (${DUDESTACK_DATE})"
 echo "---------------------------------------------------------"
 echo ""
 

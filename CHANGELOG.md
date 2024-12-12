@@ -1,3 +1,7 @@
+### 2.5.0: 2024-12-12
+
+* Fix illegal option errors in `--existing` flag of the createproject script
+* Include dudestack version and date in start in the macos version of the createproject script
 
 ### 2.4.9: 2024-11-18
 
