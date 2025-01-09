@@ -1,3 +1,7 @@
+### 2.5.1: 2025-01-09
+
+* Bump WordPress to 6.7.1
+
 ### 2.5.0: 2024-12-12
 
 * Fix illegal option errors in `--existing` flag of the createproject script
