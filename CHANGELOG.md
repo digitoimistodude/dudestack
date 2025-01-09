@@ -1,6 +1,7 @@
 ### 2.5.1: 2025-01-09
 
 * Bump WordPress to 6.7.1
+* Change from wpackagist-plugin/so-clean-up-wp-seo to digitoimistodude/so-clean-up-wp-seo
 
 ### 2.5.0: 2024-12-12
 

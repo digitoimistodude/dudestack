@@ -1,7 +1,7 @@
 {
   "name": "digitoimistodude/dudestack",
   "type": "project",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "license": "MIT",
   "description": "A modern WordPress stack",
   "homepage": "https://github.com/digitoimistodude/dudestack",
@@ -50,6 +50,10 @@
     {
       "type": "vcs",
       "url": "https://github.com/digitoimistodude/air-blocks-acf-example-data"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/digitoimistodude/so-clean-up-wp-seo"
     }
   ],
   "require": {
@@ -65,12 +69,12 @@
     "koodimonni-language/en_gb": "*",
     "digitoimistodude/air-helper": "*",
     "digitoimistodude/air-blocks-acf-example-data": "dev-master",
+    "digitoimistodude/so-clean-up-wp-seo": "dev-develop",
     "wpackagist-plugin/simple-history": "*",
     "wpackagist-plugin/mailgun": "*",
     "wpackagist-plugin/worker": "*",
     "wpackagist-plugin/disable-media-pages": "*",
     "wpackagist-plugin/wordpress-seo": "*",
-    "wpackagist-plugin/so-clean-up-wp-seo": "*",
     "devgeniem/wp-sanitize-accented-uploads": "*",
     "wpackagist-plugin/tiny-compress-images": "*",
     "wpackagist-plugin/png-to-jpg": "*",
