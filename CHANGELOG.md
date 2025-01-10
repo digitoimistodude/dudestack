@@ -1,3 +1,7 @@
+### [Unreleased]
+
+* Add ACF Content Analysis for Yoast SEO plugin (T-23997)
+
 ### 2.5.1: 2025-01-09
 
 * Bump WordPress to 6.7.1

@@ -78,7 +78,8 @@
     "devgeniem/wp-sanitize-accented-uploads": "*",
     "wpackagist-plugin/tiny-compress-images": "*",
     "wpackagist-plugin/png-to-jpg": "*",
-    "wpackagist-plugin/two-factor": "*"
+    "wpackagist-plugin/two-factor": "*",
+    "wpackagist-plugin/acf-content-analysis-for-yoast-seo": "*"
   },
   "require-dev": {
     "wpackagist-plugin/query-monitor": "*",
