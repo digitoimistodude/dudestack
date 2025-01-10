@@ -7,6 +7,7 @@ env:
   PHPCOMPAT_DIR: /tmp/phpcompatibility
   SNIFFS_DIR: /tmp/sniffs
   WPCS_DIR: /tmp/wpcs
+  COMPOSER_AUTH: '{"github-oauth": {"github.com": "${{ secrets.GITHUB_TOKEN }}"}}'
 
 jobs:
   build:
@@ -27,6 +28,7 @@ jobs:
       uses: php-actions/composer@v6
       env:
         COMPOSER: "composer.json"
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         php_version: "8.3"
         version: "2.3.7"
