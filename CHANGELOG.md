@@ -1,3 +1,7 @@
+### 2.5.2: 2025-01-15
+
+* Fix mistake in exporting createproject script version number
+
 ### 2.5.1: 2025-01-09
 
 * Bump WordPress to 6.7.1

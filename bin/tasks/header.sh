@@ -8,7 +8,7 @@ else
 fi
 
 # Get dudestack version from composer.json
-DUDEDESTACK_VERSION=$(grep '"version":' composer.json | cut -d'"' -f4)
+DUDEDESTACK_VERSION=$(grep -m 1 '"version":' composer.json | cut -d'"' -f4)
 
 # Get version date from CHANGELOG.md
 DUDESTACK_DATE=$(grep '^### ' CHANGELOG.md | head -n 1 | cut -d' ' -f3)
