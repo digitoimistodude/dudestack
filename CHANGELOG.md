@@ -1,3 +1,7 @@
+### 2.5.3: 2025-01-24
+
+* Add ACF Content Analysis for Yoast SEO plugin (T-23997)
+
 ### 2.5.2: 2025-01-15
 
 * Fix mistake in exporting createproject script version number
