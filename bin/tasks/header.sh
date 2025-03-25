@@ -7,11 +7,11 @@ else
   export DIR_TO_FILE=$(cd "$(dirname "$1")"; pwd -P)/$(basename "$1")
 fi
 
-# Get dudestack version from composer.json
-DUDEDESTACK_VERSION=$(grep -m 1 '"version":' composer.json | cut -d'"' -f4)
+# Get dudestack version from composer.json in the dudestack root directory
+DUDEDESTACK_VERSION=$(grep -m 1 '"version":' "${SCRIPTS_LOCATION}/../composer.json" | cut -d'"' -f4)
 
-# Get version date from CHANGELOG.md
-DUDESTACK_DATE=$(grep '^### ' CHANGELOG.md | head -n 1 | cut -d' ' -f3)
+# Get version date from CHANGELOG.md in the dudestack root directory
+DUDESTACK_DATE=$(grep '^### ' "${SCRIPTS_LOCATION}/../CHANGELOG.md" | head -n 1 | cut -d' ' -f3)
 
 echo "---------------------------------------------------------"
 echo "createproject start script ${SCRIPT_LABEL}, v${SCRIPT_VERSION}"
