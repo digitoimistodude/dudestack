@@ -1,3 +1,7 @@
+### 2.5.4: 2025-03-25
+
+* Fix --existing flag throws error when not inside the repo, Fixes D-16
+
 ### 2.5.3: 2025-01-24
 
 * Add ACF Content Analysis for Yoast SEO plugin (T-23997)
