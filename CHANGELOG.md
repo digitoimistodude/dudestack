@@ -2,6 +2,7 @@
 
 * Add Dude ASCII art logo to scripts
 * Fix version number not outputting properly
+* Bump WordPress to 6.8.0
 
 ### 2.5.4: 2025-03-25
 
