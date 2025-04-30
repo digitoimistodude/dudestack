@@ -1,3 +1,8 @@
+### 2.5.5: 2025-04-30
+
+* Add Dude ASCII art logo to scripts
+* Fix version number not outputting properly
+
 ### 2.5.4: 2025-03-25
 
 * Fix --existing flag throws error when not inside the repo, Fixes D-16

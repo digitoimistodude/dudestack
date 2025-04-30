@@ -7,16 +7,23 @@ else
   export DIR_TO_FILE=$(cd "$(dirname "$1")"; pwd -P)/$(basename "$1")
 fi
 
-# Get dudestack version from composer.json in the dudestack root directory
-DUDEDESTACK_VERSION=$(grep -m 1 '"version":' "${SCRIPTS_LOCATION}/../composer.json" | cut -d'"' -f4)
+# Get dudestack version from CHANGELOG.md first line, format: "### 1.2.3: YYYY-MM-DD"
+DUDESTACK_VERSION=$(grep '^### ' "${SCRIPTS_LOCATION}/../CHANGELOG.md" | head -n 1 | cut -d' ' -f2 | tr -d ':')
 
 # Get version date from CHANGELOG.md in the dudestack root directory
 DUDESTACK_DATE=$(grep '^### ' "${SCRIPTS_LOCATION}/../CHANGELOG.md" | head -n 1 | cut -d' ' -f3)
 
-echo "---------------------------------------------------------"
+# Source the logo
+source "$SCRIPTS_LOCATION/tasks/logo.sh"
+
+# Print the logo
+print_logo
+
+echo ""
+echo "-----------------------------------------------------------------------"
 echo "createproject start script ${SCRIPT_LABEL}, v${SCRIPT_VERSION}"
-echo "dudestack v${DUDEDESTACK_VERSION} (${DUDESTACK_DATE})"
-echo "---------------------------------------------------------"
+echo "dudestack v${DUDESTACK_VERSION} (${DUDESTACK_DATE})"
+echo "-----------------------------------------------------------------------"
 echo ""
 
 if [ ! -f /usr/local/bin/createproject ]; then
