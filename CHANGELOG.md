@@ -1,6 +1,7 @@
 ### 2.5.6: 2025-05-28
 
 * Fix build, update CI workflow ubuntu to ubuntu-22.04
+* Bump WordPress to 6.8.1
 
 ### 2.5.5: 2025-04-30
 
