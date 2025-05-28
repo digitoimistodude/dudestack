@@ -1,3 +1,7 @@
+### 2.5.6: 2025-05-28
+
+* Fix build, update CI workflow ubuntu to ubuntu-22.04
+
 ### 2.5.5: 2025-04-30
 
 * Add Dude ASCII art logo to scripts
