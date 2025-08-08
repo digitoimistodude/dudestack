@@ -151,9 +151,9 @@ When you run `createproject` it looks like this:
 
 ### What you most probably need to edit in every project
 
-- After running `createproject` you should run newtheme.sh under [air-light](https://github.com/digitoimistodude/air-light)/bin. This will generate the WordPress theme and import latest [devpackages](https://github.com/digitoimistodude/devpackages) that contain gulp, stylelint, webpack, etc. for modern WordPress Theme development
+- After running `createproject` you should run newtheme.sh under [air-light](https://github.com/digitoimistodude/air-light)/bin. This will generate the WordPress theme with built-in gulp, stylelint, webpack, etc. for modern WordPress Theme development
 - To release your project staging/production: Production server SSH-credentials and paths in config/deploy/production.rb because they are usually different in every project. If you have the same directory structure on your servers, you can edit bin/createproject.sh so you don't repeat yourself in every project.
-- You will need gulp or grunt so if you are not using our starter theme [air-light](https://github.com/digitoimistodude/air-light), feel free to use [our devpackages - gulpfile and npm package settings etc.](https://github.com/digitoimistodude/devpackages) designed for this purpose
+- You will need gulp or grunt so if you are not using our starter theme [air-light](https://github.com/digitoimistodude/air-light), you'll need to set up your own build tools for modern WordPress theme development
 
 **Please note:**
 - Dudestack is only a starter package without ANY theme configs. We leave theme development up to you entirely. We have our own starter theme that can be used with dudestack, see [air-light](https://github.com/digitoimistodude/air-light).

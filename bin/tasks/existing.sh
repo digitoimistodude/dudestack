@@ -69,13 +69,7 @@ https://app.gitbook.com/o/PedExJWZmbCiZe4gDwKC/s/VVikkYgIZ9miBzwYDCYh/project-st
             # If found
             source "$HOME/.nvm/nvm.sh"
 
-            # Run npm install in project root
-            echo "${YELLOW}Running npm install in project root...${TXTRESET}"
-            nvm install
-            nvm use
-            npm install
-
-            # Run npm install in theme directory
+            # Run npm install in theme directory (DEV-334: no longer using root-level gulp)
             echo "${YELLOW}Running npm install in theme directory...${TXTRESET}"
             cd "$PROJECTS_HOME/$PROJECTNAME/content/themes/$PROJECTNAME"
             npm install
