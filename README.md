@@ -291,12 +291,6 @@ WP-Cli is included in dudestack per project via `composer.json` and won't work b
 alias wp='./vendor/wp-cli/wp-cli/bin/wp'
 ```
 
-## SEO Plugin
-
-Our default choice for the SEO plugin is [The SEO Framework](https://wordpress.org/plugins/autodescription/) whihc is nice, clean and simple solution that suits most of the projects.
-
-In case client is familiar with Yoast, requests it or the project is blog-centric, switching to Yoast SEO is possible. In that case, replace the `wpackagist-plugin/autodescription` package in `composer.json` with `wpackagist-plugin/wordpress-seo`. It's also highly recommended to install `wpackagist-plugin/so-clean-up-wp-seo` to clean the bloat from UI.
-
 ## Issues
 
 Feel free to post any issue or question if you have one.
