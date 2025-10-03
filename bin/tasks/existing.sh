@@ -85,8 +85,21 @@ https://app.gitbook.com/o/PedExJWZmbCiZe4gDwKC/s/VVikkYgIZ9miBzwYDCYh/project-st
           echo "${YELLOW}Updating hosts file...${TXTRESET}"
           sudo -- sh -c "echo 127.0.0.1 ${PROJECTNAME}.test >> /etc/hosts"
 
+          # Detect if project is multisite
+          IS_MULTISITE=false
+          if [ -f "$PROJECTS_HOME/$PROJECTNAME/config/application.php" ]; then
+            if grep -q "MULTISITE.*true" "$PROJECTS_HOME/$PROJECTNAME/config/application.php"; then
+              IS_MULTISITE=true
+              echo "${YELLOW}Multisite detected!${TXTRESET}"
+            fi
+          fi
+
           # Set up virtual hosts
-          source ${SCRIPTS_LOCATION}/tasks/vhosts.sh
+          if [ "$IS_MULTISITE" = true ]; then
+            source ${SCRIPTS_LOCATION}/tasks/vhosts-multisite.sh
+          else
+            source ${SCRIPTS_LOCATION}/tasks/vhosts.sh
+          fi
 
           # Add cert with mkcert
           echo "${YELLOW}Adding certificate...${TXTRESET}"

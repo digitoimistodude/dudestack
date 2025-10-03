@@ -1,3 +1,7 @@
+### 2.5.7: 2025-10-03
+
+* Add Multisite support for `createproject --existing`, Ref: DEV-545
+
 ### 2.5.6: 2025-05-28
 
 * Fix build, update CI workflow ubuntu to ubuntu-22.04
