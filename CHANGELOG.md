@@ -1,6 +1,7 @@
 ### 2.5.7: 2025-10-03
 
 * Add Multisite support for `createproject --existing`, Ref: DEV-545
+* Add `$_SERVER['HTTP_HOST']` based `WP_CONTENT_URL` for multisite, Ref: DEV-330
 
 ### 2.5.6: 2025-05-28
 

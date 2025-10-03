@@ -55,7 +55,11 @@ Config::define( 'WP_SITEURL', env( 'WP_SITEURL' ) );
  */
 Config::define( 'CONTENT_DIR', '/content' );
 Config::define( 'WP_CONTENT_DIR', $webroot_dir . Config::get( 'CONTENT_DIR' ) );
-Config::define( 'WP_CONTENT_URL', Config::get( 'WP_HOME' ) . Config::get( 'CONTENT_DIR' ) );
+if ( isset( $_SERVER['HTTP_HOST'] ) ) {
+  Config::define( 'WP_CONTENT_URL', 'https://' . $_SERVER['HTTP_HOST'] . Config::get( 'CONTENT_DIR' ) );
+} else {
+  Config::define( 'WP_CONTENT_URL', Config::get( 'WP_HOME' ) . Config::get( 'CONTENT_DIR' ) );
+}
 
 /**
  * DB settings
