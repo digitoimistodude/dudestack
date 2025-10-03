@@ -1,5 +1,6 @@
 ### 2.5.7: 2025-10-03
 
+* Bump WordPress to 6.8.3
 * Add Multisite support for `createproject --existing`, Ref: DEV-545
 * Add `$_SERVER['HTTP_HOST']` based `WP_CONTENT_URL` for multisite, Ref: DEV-330
 * Add `WP_DEBUG_LOG` to development.php with `/logs/wp-debug.log` path, Ref: DEV-292
