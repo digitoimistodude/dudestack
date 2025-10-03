@@ -15,7 +15,7 @@ createproject
 
 **Please note: The main focus of dudestack is on how it works for our company and staff. This means it may not work for you without tweaking. Please ask a question by addressing an [issue](https://github.com/digitoimistodude/dudestack/issues) if something goes south.**
 
-<img width="841" height="600" alt="image" src="https://github.com/user-attachments/assets/b4ebf73e-1349-44eb-8116-40b835bfafa0" />
+<img width="830" height="606" alt="497078890-cb12bbb1-9563-4ef8-8694-99927f5f10ca" src="https://github.com/user-attachments/assets/26b7dd4d-5aaf-4ba8-abe8-44b042842bcc" />
 
 ## Documentation & guides
 
