@@ -2,6 +2,11 @@
 
 * Add Multisite support for `createproject --existing`, Ref: DEV-545
 * Add `$_SERVER['HTTP_HOST']` based `WP_CONTENT_URL` for multisite, Ref: DEV-330
+* Add `WP_DEBUG_LOG` to development.php with `/logs/wp-debug.log` path, Ref: DEV-292
+  - **Important**: Run this one-liner to enable debug logging:
+    ```bash
+    sed -i '' 's/^php_admin_value\[error_log\]/;php_admin_value[error_log]/' /opt/homebrew/etc/php/8.3/php-fpm.d/www.conf && sudo brew services restart php@8.3
+    ```
 
 ### 2.5.6: 2025-05-28
 

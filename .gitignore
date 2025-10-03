@@ -16,6 +16,8 @@ package-lock.json
 access.log
 error.log
 log/
+logs/*
+!logs/.gitkeep
 
 # Special git hooks
 !.githooks
