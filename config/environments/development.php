@@ -22,7 +22,7 @@ ini_set( 'log_errors', '1' ); // phpcs:ignore
 ini_set( 'error_log', $root_dir . '/logs/wp-debug.log' ); // phpcs:ignore
 ini_set( 'date.timezone', 'Europe/Helsinki' ); // phpcs:ignore
 ini_set( 'log_errors_max_len', '0' ); // phpcs:ignore
-date_default_timezone_set( 'Europe/Helsinki' );
+date_default_timezone_set( 'Europe/Helsinki' ); // phpcs:ignore WordPress.DateTime.RestrictedFunctions.timezone_change_date_default_timezone_set
 
 // Enable plugin and theme updates and installation from the admin
 Config::define( 'DISALLOW_FILE_MODS', false );
