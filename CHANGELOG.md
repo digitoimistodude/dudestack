@@ -1,3 +1,7 @@
+### 2.5.8: 2025-10-30
+
+* Update latest HA Redis object cache settings, make `REDIS_HOST` possible instead of a hardcoded value, Ref: RAD-168
+
 ### 2.5.7: 2025-10-03
 
 * Bump WordPress to 6.8.3

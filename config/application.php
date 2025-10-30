@@ -117,7 +117,9 @@ ini_set( 'display_errors', '0' ); // phpcs:ignore
  */
 Config::define( 'WP_REDIS_CONFIG', [
   'token'             => env( 'REDIS_TOKEN' ),
-  'host'              => '127.0.0.1',
+  'host'              => env( 'REDIS_HOST' ) ?: '127.0.0.1',
+  // Needed for Valkey and Redis 8+
+  'username'          => 'default',
   'port'              => 6379,
   'password'          => env( 'REDIS_PASSWORD' ),
   'prefix'            => env( 'DB_NAME' ),
@@ -128,12 +130,13 @@ Config::define( 'WP_REDIS_CONFIG', [
   'retry_interval'    => 10,
   'retries'           => 3,
   'backoff'           => 'smart',
-  'compression'       => 'zstd',
+  // Needs php8.3-fpm
+  // 'compression'       => 'zstd',
   'serializer'        => 'igbinary',
   'async_flush'       => true,
   'split_alloptions'  => true,
   'prefetch'          => true,
-  'strict'            => true,
+  'strict'            => false,
   'debug'             => false,
   'save_commands'     => false,
 ] );
