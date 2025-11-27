@@ -1,3 +1,10 @@
+### 2.5.9: 2025-11-25
+
+* Update to Dude Coding Standards 1.0 (DCS) phpcs.xml, Ref: DEV-624
+* Update PHP_CodeSniffer to latest stable 3.13.5 with WPCS 3.3.0, Ref: DEV-624
+* Exclude all deprecated sniffs that will be removed in PHP_CodeSniffer 4.0, Ref: DEV-624
+* Update all PHP_CodeSniffer dependencies to latest compatible versions, Ref: DEV-624
+
 ### 2.5.8: 2025-10-30
 
 * Update latest HA Redis object cache settings, make `REDIS_HOST` possible instead of a hardcoded value, Ref: RAD-168
