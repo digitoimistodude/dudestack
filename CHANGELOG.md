@@ -1,3 +1,7 @@
+### 2.5.9: 2025-11-28
+
+* Set default HTTP_HOST for CLI context to prevent warnings
+
 ### 2.5.8: 2025-10-30
 
 * Update latest HA Redis object cache settings, make `REDIS_HOST` possible instead of a hardcoded value, Ref: RAD-168

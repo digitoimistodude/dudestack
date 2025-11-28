@@ -12,6 +12,13 @@ use Roots\WPConfig\Config;
 use function Env\env;
 
 /**
+ * Set default HTTP_HOST for CLI context to prevent warnings
+ */
+if ( ! isset( $_SERVER['HTTP_HOST'] ) ) {
+  $_SERVER['HTTP_HOST'] = getenv( 'WP_HOME' ) ? str_replace( [ 'https://', 'http://' ], '', getenv( 'WP_HOME' ) ) : '';
+}
+
+/**
  * Directory containing all of the site's files
  *
  * @var string
