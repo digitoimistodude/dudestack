@@ -1,0 +1,13 @@
+{
+  "name": "dudestack",
+  "version": "1.0.0",
+  "description": "A modern WordPress stack",
+  "private": true,
+  "devDependencies": {
+    "@digitoimistodude/code-quality-checks": "^2.0.2",
+    "husky": "^9.1.7"
+  },
+  "scripts": {
+    "prepare": "husky node_modules/@digitoimistodude/code-quality-checks/.husky"
+  }
+}
