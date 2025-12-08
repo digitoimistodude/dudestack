@@ -1,3 +1,6 @@
+### Unreleased
+* Fix php-compatibility and php_codesniffer versions
+
 ### 2.5.9: 2025-11-28
 
 * Set default HTTP_HOST for CLI context to prevent warnings
