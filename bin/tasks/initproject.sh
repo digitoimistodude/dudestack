@@ -40,3 +40,10 @@ echo "${YELLOW}Creating project via composer create-project command...${TXTRESET
 composer create-project -n ronilaukkarinen/dudestack $PROJECTS_HOME/${PROJECTNAME} dev-master
 cd $PROJECTS_HOME/${PROJECTNAME}
 composer update
+
+# Add Dude internal plugins (fails silently for non-Dude users without access)
+# Ref: DEV-662
+echo "${YELLOW}Adding Dude internal plugins...${TXTRESET}"
+composer config repositories.dude-wordpress-upkeep vcs git@github.com:digitoimistodude/dude-wordpress-upkeep.git 2>/dev/null
+composer require digitoimistodude/dude-wordpress-upkeep:* --no-update 2>/dev/null || true
+composer update --no-interaction 2>/dev/null || composer update --no-interaction
