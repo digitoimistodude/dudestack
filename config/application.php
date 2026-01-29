@@ -63,7 +63,8 @@ Config::define( 'WP_SITEURL', env( 'WP_SITEURL' ) );
 Config::define( 'CONTENT_DIR', '/content' );
 Config::define( 'WP_CONTENT_DIR', $webroot_dir . Config::get( 'CONTENT_DIR' ) );
 if ( isset( $_SERVER['HTTP_HOST'] ) ) {
-  Config::define( 'WP_CONTENT_URL', 'https://' . $_SERVER['HTTP_HOST'] . Config::get( 'CONTENT_DIR' ) ); // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
+  // phpcs:ignore WordPress.Security.ValidatedSanitizedInput
+  Config::define( 'WP_CONTENT_URL', 'https://' . $_SERVER['HTTP_HOST'] . Config::get( 'CONTENT_DIR' ) );
 } else {
   Config::define( 'WP_CONTENT_URL', Config::get( 'WP_HOME' ) . Config::get( 'CONTENT_DIR' ) );
 }
@@ -80,7 +81,7 @@ Config::define( 'DB_COLLATE', '' );
 $table_prefix = env( 'DB_PREFIX' ) ?: 'wp_';
 
 if ( env( 'DATABASE_URL' ) ) {
-  $dsn = (object) parse_url( env( 'DATABASE_URL' ) );
+  $dsn = (object) parse_url( env( 'DATABASE_URL' ) ); // phpcs:ignore WordPress.WP.AlternativeFunctions.parse_url_parse_url
 
   Config::define( 'DB_NAME', substr( $dsn->path, 1 ) );
   Config::define( 'DB_USER', $dsn->user );
