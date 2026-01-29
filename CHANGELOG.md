@@ -1,3 +1,9 @@
+### [Unreleased]
+
+* Update to use DCS package `digitoimistodude/dude-coding-standards` ^1.0.5, Ref: DEV-624
+* Simplify phpcs.xml to reference DCS standard instead of managing rules directly, Ref: DEV-624
+* Remove individual phpcs dependencies in favor of DCS package, Ref: DEV-624
+
 ### 2.5.9: 2025-11-25
 
 * Update to Dude Coding Standards 1.0 (DCS) phpcs.xml, Ref: DEV-624
