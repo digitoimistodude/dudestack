@@ -3,9 +3,11 @@
 * Update to use DCS package `digitoimistodude/dude-coding-standards` ^1.0.5, Ref: DEV-624
 * Simplify phpcs.xml to reference DCS standard instead of managing rules directly, Ref: DEV-624
 * Remove individual phpcs dependencies in favor of DCS package, Ref: DEV-624
+* Fix php-compatibility and php_codesniffer versions
 
-### 2.5.9: 2025-11-25
+### 2.5.9: 2025-11-28
 
+* Set default HTTP_HOST for CLI context to prevent warnings
 * Update to Dude Coding Standards 1.0 (DCS) phpcs.xml, Ref: DEV-624
 * Update PHP_CodeSniffer to latest stable 3.13.5 with WPCS 3.3.0, Ref: DEV-624
 * Exclude all deprecated sniffs that will be removed in PHP_CodeSniffer 4.0, Ref: DEV-624
