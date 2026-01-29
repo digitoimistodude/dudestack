@@ -1,4 +1,4 @@
-### [Unreleased]
+### 2.6.0: 2026-01-29
 
 * Update to use DCS package `digitoimistodude/dude-coding-standards` ^1.0.5, Ref: DEV-624
 * Simplify phpcs.xml to reference DCS standard instead of managing rules directly, Ref: DEV-624
