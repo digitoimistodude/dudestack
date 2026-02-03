@@ -83,7 +83,7 @@
   },
   "require-dev": {
     "wpackagist-plugin/query-monitor": "*",
-    "digitoimistodude/dude-coding-standards": "^1.0.5"
+    "digitoimistodude/dude-coding-standards": "*"
   },
   "extra": {
     "dropin-paths": {
