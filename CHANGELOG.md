@@ -1,3 +1,7 @@
+### 2.6.2: 2026-02-03
+
+* Bump WordPress to 6.9
+
 ### 2.6.1: 2026-01-29
 
 * Fix phpcs errors in application.php with proper ignore comments, Ref: DEV-624
