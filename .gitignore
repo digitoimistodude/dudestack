@@ -1,4 +1,5 @@
 # Dotfiles and directories
+*.parcel-cache
 .DS_Store
 .env
 .env*
