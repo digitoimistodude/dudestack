@@ -1,3 +1,7 @@
+### [Unreleased]
+
+* Ignore twenty* themes, Ref: DEV-327
+
 ### 2.6.2: 2026-02-03
 
 * Bump WordPress to 6.9

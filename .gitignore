@@ -11,6 +11,7 @@
 .DS_Store
 composer.lock
 .vscode/
+content/themes/twenty*
 
 # Logs
 package-lock.json
