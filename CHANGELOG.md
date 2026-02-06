@@ -1,8 +1,9 @@
-### [Unreleased]
+### 2.6.3: 2026-02-06
 
 * Explicitly run husky setup after npm install in existing project workflow to ensure hooks are configured, Ref: DEV-742
 * Remove phpcs.xml from export-ignore so it's included in composer packages, Ref: DEV-743
 * Ignore twenty* themes, Ref: DEV-327
+* Update createproject script to 1.2.0
 
 ### 2.6.2: 2026-02-03
 
