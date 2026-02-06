@@ -74,6 +74,10 @@ https://app.gitbook.com/o/PedExJWZmbCiZe4gDwKC/s/VVikkYgIZ9miBzwYDCYh/project-st
             cd "$PROJECTS_HOME/$PROJECTNAME/content/themes/$PROJECTNAME"
             npm install
 
+            # Ensure husky hooks are configured (DEV-742)
+            echo "${YELLOW}Configuring pre-commit hooks...${TXTRESET}"
+            node node_modules/@digitoimistodude/code-quality-checks/bin/setup.js
+
             # Go back to project root
             cd "$PROJECTS_HOME/$PROJECTNAME"
 
