@@ -7,7 +7,6 @@ env:
   PHPCOMPAT_DIR: /tmp/phpcompatibility
   SNIFFS_DIR: /tmp/sniffs
   WPCS_DIR: /tmp/wpcs
-  COMPOSER_AUTH: '{"github-oauth": {"github.com": "${{ secrets.GITHUB_TOKEN }}"}}'
 
 jobs:
   build:
@@ -31,7 +30,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         php_version: "8.3"
-        version: "2.3.7"
+        version: "2.10.2"
         args: "--ignore-platform-reqs --optimize-autoloader"
 
     - name: Run PHP_CodeSniffer

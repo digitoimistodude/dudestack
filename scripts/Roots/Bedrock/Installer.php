@@ -4,9 +4,9 @@
  *
  * Description: Bedrock installer.
  *
- * @Author: Roni Laukkarinen
+ * @Author: Rolle Laukkarinen
  * @Date: 2022-06-28 13:14:24
- * @Last Modified by:   Roni Laukkarinen
+ * @Last Modified by:   Rolle Laukkarinen
  * @Last Modified time: 2024-03-12 15:34:00
  *
  * @package dudestack

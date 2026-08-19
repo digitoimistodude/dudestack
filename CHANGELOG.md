@@ -1,3 +1,10 @@
+### 2.6.4: 2026-08-19
+
+* Bump WordPress to 7.0.4
+* Fix GitHub token auth in PHP workflow
+* Bump workflow Composer to 2.10.2
+* Update author name to Rolle Laukkarinen
+
 ### 2.6.3: 2026-02-06
 
 * Explicitly run husky setup after npm install in existing project workflow to ensure hooks are configured, Ref: DEV-742
