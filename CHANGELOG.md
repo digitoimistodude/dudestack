@@ -1,3 +1,8 @@
+### 2.6.5: 2026-08-19
+
+* Restore composer auth in PHP workflow
+* Allow dev stability for language packs
+
 ### 2.6.4: 2026-08-19
 
 * Bump WordPress to 7.0.4

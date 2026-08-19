@@ -7,6 +7,7 @@ env:
   PHPCOMPAT_DIR: /tmp/phpcompatibility
   SNIFFS_DIR: /tmp/sniffs
   WPCS_DIR: /tmp/wpcs
+  COMPOSER_AUTH: '{"github-oauth": {"github.com": "${{ secrets.GITHUB_TOKEN }}"}}'
 
 jobs:
   build:
