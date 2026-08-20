@@ -70,20 +70,21 @@ https://app.gitbook.com/o/PedExJWZmbCiZe4gDwKC/s/VVikkYgIZ9miBzwYDCYh/project-st
             source "$HOME/.nvm/nvm.sh"
 
             # Run npm install in theme directory (DEV-334: no longer using root-level gulp)
-            echo "${YELLOW}Running npm install in theme directory...${TXTRESET}"
-            cd "$PROJECTS_HOME/$PROJECTNAME/content/themes/$PROJECTNAME"
-            npm install
+            # Projects joined before the theme exists have nothing to install yet
+            if [ -d "$PROJECTS_HOME/$PROJECTNAME/content/themes/$PROJECTNAME" ]; then
+              echo "${YELLOW}Running npm install in theme directory...${TXTRESET}"
+              cd "$PROJECTS_HOME/$PROJECTNAME/content/themes/$PROJECTNAME"
+              npm install
 
-            # Ensure husky hooks are configured (DEV-742)
-            echo "${YELLOW}Configuring pre-commit hooks...${TXTRESET}"
-            node node_modules/@digitoimistodude/code-quality-checks/bin/setup.js
-
-            # Go back to project root
-            cd "$PROJECTS_HOME/$PROJECTNAME"
-
-          else
-            echo ""
+              # Go back to project root
+              cd "$PROJECTS_HOME/$PROJECTNAME"
+            else
+              echo "${YELLOW}No theme in this project yet, skipping npm install.${TXTRESET}"
+            fi
           fi
+
+          # Hooks are mandatory with or without a theme (DEV-1254)
+          source ${SCRIPTS_LOCATION}/tasks/husky.sh
 
           # Add project to hosts file
           echo "${YELLOW}Updating hosts file...${TXTRESET}"

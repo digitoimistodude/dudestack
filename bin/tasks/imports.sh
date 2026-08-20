@@ -13,6 +13,9 @@ source ${SCRIPTS_LOCATION}/tasks/check-github.sh
 # Init project and run composer
 source ${SCRIPTS_LOCATION}/tasks/initproject.sh
 
+# Configure pre-commit hooks (DEV-1254)
+source ${SCRIPTS_LOCATION}/tasks/husky.sh
+
 # Create database
 source ${SCRIPTS_LOCATION}/tasks/initdb.sh
 

@@ -1,3 +1,10 @@
+### 2.6.6: 2026-08-20
+
+* Bump WordPress to 7.1
+* Skip npm install when project has no theme yet
+* Always configure pre-commit hooks, Ref: DEV-1254
+* Configure pre-commit hooks for new projects too, Ref: DEV-1254
+
 ### 2.6.5: 2026-08-19
 
 * Restore composer auth in PHP workflow
