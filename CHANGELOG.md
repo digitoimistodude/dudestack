@@ -1,3 +1,7 @@
+### 2.6.7: 2026-08-20
+
+* Ignore required WordPress global override in application.php, Ref: DEV-1254
+
 ### 2.6.6: 2026-08-20
 
 * Bump WordPress to 7.1

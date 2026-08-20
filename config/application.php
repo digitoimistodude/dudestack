@@ -78,7 +78,7 @@ Config::define( 'DB_PASSWORD', env( 'DB_PASSWORD' ) );
 Config::define( 'DB_HOST', env( 'DB_HOST' ) ?: 'localhost' );
 Config::define( 'DB_CHARSET', 'utf8mb4' );
 Config::define( 'DB_COLLATE', '' );
-$table_prefix = env( 'DB_PREFIX' ) ?: 'wp_';
+$table_prefix = env( 'DB_PREFIX' ) ?: 'wp_'; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited -- WordPress requires this global
 
 if ( env( 'DATABASE_URL' ) ) {
   $dsn = (object) parse_url( env( 'DATABASE_URL' ) ); // phpcs:ignore WordPress.WP.AlternativeFunctions.parse_url_parse_url
