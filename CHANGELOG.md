@@ -1,3 +1,7 @@
+### 2.6.9: 2026-08-21
+
+* Stop composer probing every vcs tag via GitHub API, Ref: DEV-1273
+
 ### 2.6.8: 2026-08-20
 
 * Stop running hook setup when creating a new project, Ref: DEV-1254

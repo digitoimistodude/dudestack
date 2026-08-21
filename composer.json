@@ -48,11 +48,13 @@
     },
     {
       "type": "vcs",
-      "url": "https://github.com/digitoimistodude/air-blocks-acf-example-data"
+      "url": "https://github.com/digitoimistodude/air-blocks-acf-example-data",
+      "no-api": true
     },
     {
       "type": "vcs",
-      "url": "https://github.com/digitoimistodude/so-clean-up-wp-seo"
+      "url": "https://github.com/digitoimistodude/so-clean-up-wp-seo",
+      "no-api": true
     }
   ],
   "minimum-stability": "dev",
