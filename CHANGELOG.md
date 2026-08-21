@@ -1,3 +1,8 @@
+### 2.6.8: 2026-08-20
+
+* Stop running hook setup when creating a new project, Ref: DEV-1254
+* Never abort createproject when hook setup fails, Ref: DEV-1254
+
 ### 2.6.7: 2026-08-20
 
 * Ignore required WordPress global override in application.php, Ref: DEV-1254
