@@ -1,3 +1,7 @@
+### 2.6.10: 2026-11-12
+
+* Stop copying GitHub Actions workflows into new projects, Ref: DEV-335
+
 ### 2.6.9: 2026-08-21
 
 * Stop composer probing every vcs tag via GitHub API, Ref: DEV-1273

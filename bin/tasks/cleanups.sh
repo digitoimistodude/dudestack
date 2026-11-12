@@ -9,3 +9,4 @@ rm -rf bin
 rm .env.example
 rm .env-e
 rm wp-cli.yml
+rm -rf .github
