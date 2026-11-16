@@ -1,3 +1,7 @@
+### 2.6.11: 2026-11-16
+
+* Install dude-wordpress-upkeep in new projects, Ref: DEV-662
+
 ### 2.6.10: 2026-11-12
 
 * Stop copying GitHub Actions workflows into new projects, Ref: DEV-335

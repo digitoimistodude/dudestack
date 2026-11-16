@@ -40,3 +40,11 @@ echo "${YELLOW}Creating project via composer create-project command...${TXTRESET
 composer create-project -n ronilaukkarinen/dudestack $PROJECTS_HOME/${PROJECTNAME} dev-master
 cd $PROJECTS_HOME/${PROJECTNAME}
 composer update
+
+# Dude's private upkeep plugin, skipped without access to the repo, Ref: DEV-662
+echo "${YELLOW}Adding dude-wordpress-upkeep...${TXTRESET}"
+composer config repositories.dude-wordpress-upkeep vcs git@github.com:digitoimistodude/dude-wordpress-upkeep.git
+if ! composer require digitoimistodude/dude-wordpress-upkeep:^1.1 --no-interaction 2>/dev/null; then
+  composer config --unset repositories.dude-wordpress-upkeep
+  echo "${YELLOW}No access to dude-wordpress-upkeep, skipped.${TXTRESET}"
+fi
